@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Open Postal Codes publishes static CSV data for postal-code datasets."
+    />
+    <base href="/open-postal-codes/" />
+    <title>Open Postal Codes</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --page: #f6f8fb;
+        --ink: #102033;
+        --muted: #5b6b7d;
+        --line: #d7dee8;
+        --accent: #176b5b;
+        --accent-strong: #0e4d40;
+        --panel: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--page);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.55;
+        margin: 0;
+      }
+
+      a {
+        color: var(--accent-strong);
+      }
+
+      .shell {
+        margin: 0 auto;
+        max-width: 1080px;
+        padding: 40px 20px;
+      }
+
+      .hero {
+        border-bottom: 1px solid var(--line);
+        display: grid;
+        gap: 24px;
+        padding-bottom: 32px;
+      }
+
+      .label {
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(2.3rem, 7vw, 5.2rem);
+        letter-spacing: 0;
+        line-height: 0.95;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 1.12rem;
+        max-width: 66ch;
+      }
+
+      .actions,
+      .grid {
+        display: grid;
+        gap: 12px;
+      }
+
+      .actions {
+        grid-template-columns: repeat(auto-fit, minmax(180px, max-content));
+      }
+
+      .button {
+        align-items: center;
+        background: var(--accent);
+        border-radius: 6px;
+        color: #ffffff;
+        display: inline-flex;
+        font-weight: 700;
+        min-height: 44px;
+        padding: 10px 14px;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: #e7efed;
+        color: var(--accent-strong);
+      }
+
+      .section {
+        padding: 28px 0 0;
+      }
+
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-top: 14px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        display: grid;
+        gap: 8px;
+        padding: 16px;
+      }
+
+      code {
+        overflow-wrap: anywhere;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        margin-top: 32px;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="label">Static postal-code data</p>
+        <h1>Open Postal Codes</h1>
+        <p class="lede">
+          Versioned CSV files for postal-code datasets, distributed through a
+          static GitHub Pages file API with hashes, row counts, and compressed
+          downloads.
+        </p>
+        <div class="actions">
+          <a class="button" href="api/v1/index.json">Open API index</a>
+          <a class="button secondary" href="api/v1/de/osm/streets.csv">
+            Download German streets
+          </a>
+          <a class="button secondary" href="api/v1/li/communes.csv">
+            Download Liechtenstein communes
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="label">Published files</p>
+        <div class="grid">
+          <a class="card" href="api/v1/de/osm/streets.csv">
+            <strong>de/osm/streets.csv</strong>
+            <span>Filtered German street and postal-code data.</span>
+          </a>
+          <a class="card" href="api/v1/de/osm/streets.raw.csv">
+            <strong>de/osm/streets.raw.csv</strong>
+            <span>Raw German street export before curation.</span>
+          </a>
+          <a class="card" href="api/v1/de/osm/streets.ignore.csv">
+            <strong>de/osm/streets.ignore.csv</strong>
+            <span>Curated rows removed from the filtered dataset.</span>
+          </a>
+          <a class="card" href="api/v1/li/communes.csv">
+            <strong>li/communes.csv</strong>
+            <span>Liechtenstein commune reference data.</span>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Data is published under the ODC Open Database License (ODbL).
+          Attribution: OpenStreetMap contributors, Frank Stueber, and
+          Schoenfeld Solutions.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

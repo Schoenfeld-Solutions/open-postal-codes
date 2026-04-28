@@ -1,0 +1,40 @@
+"""Run all deterministic repository checks."""
+
+from __future__ import annotations
+
+from collections.abc import Callable
+
+from tools.repo_checks import (
+    adr_check,
+    changelog_check,
+    language_policy_check,
+    license_credit_check,
+    pages_contract_check,
+    plans_check,
+    project_structure_check,
+    readme_check,
+    reference_policy_check,
+)
+
+CHECKS: tuple[Callable[[], int], ...] = (
+    project_structure_check.main,
+    adr_check.main,
+    plans_check.main,
+    readme_check.main,
+    changelog_check.main,
+    language_policy_check.main,
+    license_credit_check.main,
+    pages_contract_check.main,
+    reference_policy_check.main,
+)
+
+
+def main() -> int:
+    status = 0
+    for check in CHECKS:
+        status = max(status, check())
+    return status
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
