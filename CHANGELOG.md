@@ -21,3 +21,4 @@ The format follows Keep a Changelog.
 - The previous diff logic was restructured as a testable Python module.
 - Azure pipeline and legacy diff workflow files were replaced with GitHub-first workflows.
 - Repository documentation is now English-only.
+- Pull request Dependency Review runs as a best-effort signal until Dependency graph support is enabled for the repository.

@@ -26,11 +26,13 @@ Fast deterministic checks provide early feedback and keep CI costs low. Grouped 
 - No OpenStreetMap downloads run in pull request CI.
 - No Pages deployments run for pull requests.
 - Security updates remain separately visible.
+- Dependency Review remains visible in pull request CI and is treated as best-effort until Dependency graph support is enabled for the repository.
 
 ## Enforcement
 
 - `.github/dependabot.yml` defines weekly grouped updates.
-- The pull request workflow installs only development dependencies and runs local gates.
+- The pull request workflow installs only development dependencies and runs local gates as blocking checks.
+- Dependency Review should be made blocking after the repository supports the feature.
 - The Pages workflow runs only for `main` or manual dispatch.
 
 ## Rollout

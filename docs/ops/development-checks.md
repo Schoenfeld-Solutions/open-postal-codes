@@ -21,3 +21,7 @@ pre-commit install --hook-type pre-push
 ## Goal
 
 The checks protect CSV contracts, API packaging, credits, structure, documentation baseline, Python style, types, coverage, and the English-only repository text policy.
+
+## Pull Request Dependency Review
+
+The pull request workflow runs GitHub Dependency Review as a best-effort supply-chain signal. Python quality gates remain blocking. Dependency Review should become a blocking gate after the repository has Dependency graph support enabled.
