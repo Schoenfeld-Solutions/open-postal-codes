@@ -5,7 +5,7 @@
 ## Active State
 
 - `CURRENT.md` names the active major version.
-- `v1/` contains the initial v1 contracts for CSV files and the static API.
+- `v1/` contains the active post code data contract and the static API contract.
 
 ## Rules
 

@@ -13,6 +13,8 @@ The Pages workflow runs after a push to `main` or through `workflow_dispatch`.
 5. Upload `out/` as the GitHub Pages artifact.
 6. Deploy GitHub Pages.
 
+The Pages workflow publishes committed public data only. It does not download Geofabrik PBF files or run data extraction.
+
 ## Permissions
 
 The deploy job needs only `contents: read`, `pages: write`, and `id-token: write`.

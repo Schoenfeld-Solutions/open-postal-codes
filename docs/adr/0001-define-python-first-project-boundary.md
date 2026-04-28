@@ -15,7 +15,7 @@ The repository previously contained data, a small Python script, and legacy publ
 
 ## Decision
 
-The repository is maintained as a Python-first data project. Production Python code lives under `src/open_postal_codes/`. Published CSV data lives under `data/public/v1/`. GitHub Pages artifacts are built from these sources and remain unversioned.
+The repository is maintained as a Python-first data project. Production Python code lives under `src/open_postal_codes/`. Published data lives under `data/public/v1/`. GitHub Pages artifacts are built from these sources and remain unversioned.
 
 ## Rationale
 
@@ -24,7 +24,7 @@ A `src` layout reduces implicit import paths and keeps code testable. Data under
 ## Consequences
 
 - `src/` contains Python code only.
-- CSV files are part of the versioned data surface, not part of the code package.
+- Public data files are part of the versioned data surface, not part of the code package.
 - New runtime languages or production roots require a new ADR.
 
 ## Enforcement

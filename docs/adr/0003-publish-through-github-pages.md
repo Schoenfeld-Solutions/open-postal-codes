@@ -11,7 +11,7 @@ Proposed.
 
 ## Context
 
-The project needs public delivery for CSV files and metadata. The previous Azure mirror path no longer matches the desired GitHub-first operation model.
+The project needs public delivery for static data files and metadata. The previous Azure mirror path no longer matches the desired GitHub-first operation model.
 
 ## Decision
 

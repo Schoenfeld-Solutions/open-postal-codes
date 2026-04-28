@@ -1,13 +1,13 @@
 # Attribution and License Notes
 
-This repository continues OpenPLZ API Data as an independently maintained data foundation under the same database license.
+This repository continues OpenPLZ API Data as an independently maintained Germany-only data foundation under the same database license.
 
 ## Origin
 
-- German street, postal-code, locality, and regional-key data is based on an extract from OpenStreetMap data.
+- German post code records are derived from OpenStreetMap data.
+- Regional Germany PBF files are provided by Geofabrik GmbH at https://www.geofabrik.de/.
 - The original project work and data description came from Frank Stueber in the OpenPLZ API Data project.
-- The continuation and new repository structure are maintained by Schoenfeld Solutions.
-- Liechtenstein communes remain available as a curated CSV reference.
+- The continuation, extraction tooling, static API, and repository structure are maintained by Schoenfeld Solutions.
 
 ## License
 

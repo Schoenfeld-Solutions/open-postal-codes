@@ -2,5 +2,5 @@
 
 ## Active Version
 
-- CSV data: `v1`
+- Post code data: `v1`
 - Static file API: `v1`

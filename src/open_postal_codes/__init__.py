@@ -1,8 +1,8 @@
 """Utilities for the Open Postal Codes data repository."""
 
-from open_postal_codes.csv_filter import CsvFilterResult, filter_csv
+from open_postal_codes.post_code import PostCodeRecord, dedupe_records
 
 __all__ = (
-    "CsvFilterResult",
-    "filter_csv",
+    "PostCodeRecord",
+    "dedupe_records",
 )

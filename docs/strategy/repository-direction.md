@@ -2,12 +2,11 @@
 
 ## Guiding Direction
 
-Open Postal Codes remains a lean data repository with a static file API, traceable license and origin documentation, and low-cost GitHub-first automation.
+Open Postal Codes remains a lean Germany-only data repository with a static file API, traceable license and origin documentation, and low-cost GitHub-first automation.
 
 ## Possible Next Expansions
 
-- Full OpenStreetMap re-extraction as a dedicated Python workstream.
-- Additional country data only with a dedicated CSV contract.
+- Additional country data only with a dedicated contract and versioning decision.
 - Additional machine-readable metadata only when it can be reproduced from versioned data.
 
 ## Alignment Notes
@@ -18,7 +17,8 @@ Open Postal Codes remains a lean data repository with a static file API, traceab
 - `docs/adr/0002-define-data-layout-and-static-api.md`
 - `docs/adr/0003-publish-through-github-pages.md`
 - `docs/adr/0006-defer-osm-extraction-dependencies.md`
+- `docs/adr/0007-extract-germany-post-codes-from-geofabrik-regions.md`
 
 ### Open Items / ADR Needed
 
-- No open items for the initialization.
+- No open items for the active post code extraction model.

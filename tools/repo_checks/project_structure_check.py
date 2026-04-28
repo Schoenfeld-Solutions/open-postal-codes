@@ -8,8 +8,9 @@ from tools.repo_checks.common import fail
 
 REQUIRED_DIRECTORIES = (
     Path(".github/workflows"),
-    Path("data/public/v1/de/osm"),
-    Path("data/public/v1/li"),
+    Path("data/public/v1/de"),
+    Path("data/regional/v1/de/post_code"),
+    Path("data/sources"),
     Path("docs/adr"),
     Path("docs/architecture"),
     Path("docs/contracts/v1"),
@@ -28,6 +29,7 @@ REQUIRED_DIRECTORIES = (
 REQUIRED_FILES = (
     Path(".gitattributes"),
     Path(".github/dependabot.yml"),
+    Path(".github/workflows/data-refresh.yml"),
     Path(".github/workflows/pages.yml"),
     Path(".github/workflows/pull-request.yml"),
     Path(".gitignore"),
@@ -36,28 +38,38 @@ REQUIRED_FILES = (
     Path("LICENSE"),
     Path("NOTICE.md"),
     Path("README.md"),
-    Path("data/public/v1/de/osm/streets.csv"),
-    Path("data/public/v1/de/osm/streets.ignore.csv"),
-    Path("data/public/v1/de/osm/streets.raw.csv"),
-    Path("data/public/v1/li/communes.csv"),
+    Path("data/public/v1/de/post_code.csv"),
+    Path("data/public/v1/de/post_code.json"),
+    Path("data/public/v1/de/post_code.xml"),
+    Path("data/sources/geofabrik-regions.json"),
     Path("docs/contracts/CURRENT.md"),
     Path("docs/plans/PLANS.md"),
     Path("docs/plans/PLANS-001-initialize-repository-foundation.md"),
+    Path("docs/plans/PLANS-002-germany-post-code-extraction.md"),
     Path("pyproject.toml"),
     Path("site/404.html"),
     Path("site/index.html"),
+    Path("src/open_postal_codes/osm_extract.py"),
+    Path("src/open_postal_codes/post_code.py"),
+    Path("src/open_postal_codes/refresh_data.py"),
     Path("tools/repo_checks/language_policy_check.py"),
 )
 
 FORBIDDEN_FILES = (
     Path("azure-pipelines.yml"),
     Path(".github/workflows/create-osm-update.yaml"),
+    Path("data/public/v1/de/osm/streets.csv"),
+    Path("data/public/v1/de/osm/streets.ignore.csv"),
+    Path("data/public/v1/de/osm/streets.raw.csv"),
+    Path("data/public/v1/li/communes.csv"),
+    Path("src/open_postal_codes/csv_filter.py"),
 )
 
 REQUIRED_GITIGNORE_SNIPPETS = (
     "out/",
     "htmlcov/",
     ".coverage",
+    "*.osm.pbf",
     "AGENTS.md",
     "AGENTS.override.md",
 )

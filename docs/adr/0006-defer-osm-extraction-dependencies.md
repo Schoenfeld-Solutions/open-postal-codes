@@ -1,13 +1,13 @@
 # ADR 0006: Defer OpenStreetMap extraction dependencies
 
 - Date: 2026-04-28
-- Status: Proposed
+- Status: Superseded
 - Decision owner: Gabriel
 - Impacts: OpenStreetMap, dependencies, extraction
 
 ## Status
 
-Proposed.
+Superseded by ADR 0007.
 
 ## Context
 
@@ -23,15 +23,12 @@ The current scope is structure, packaging, and governance. New production depend
 
 ## Consequences
 
-- `pyproject.toml` starts without runtime dependencies.
-- OpenStreetMap extraction remains follow-up work.
-- New dependencies require explicit approval and documented tests.
+- This ADR records the original initialization boundary.
+- ADR 0007 introduces the extraction dependencies and refresh model.
 
 ## Enforcement
 
-- Repository checks do not expect an OpenStreetMap runtime dependency.
-- README describes extraction as outside the initialization scope.
-- Follow-up plans must be specific to this repository.
+- ADR 0007 controls the active OpenStreetMap extraction dependency decision.
 
 ## Rollout
 

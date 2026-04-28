@@ -7,7 +7,7 @@ This repository publishes open data. Even so, secrets, private tokens, and unapp
 ## Rules
 
 - Do not store secrets in files or logs.
-- Do not version local download dumps.
+- Do not version local download dumps or raw Geofabrik PBF files.
 - Error output should describe structural problems without printing unnecessary data volume.
 - Generated artifacts such as `out/`, coverage reports, and local logs remain unversioned.
-- New production dependencies require documented rationale, tests, and approval.
+- Production dependencies require documented rationale, tests, and approval.

@@ -16,15 +16,19 @@ REQUIRED_SECTIONS = (
 )
 
 REQUIRED_SNIPPETS = (
-    "data/public/v1/de/osm/streets.csv",
+    "data/public/v1/de/post_code.csv",
+    "data/public/v1/de/post_code.json",
+    "data/public/v1/de/post_code.xml",
     "python3 -m pytest --cov=open_postal_codes --cov-fail-under=85",
     "python3 -m ruff check .",
     "python3 -m ruff format --check .",
     "python3 -m mypy src tests tools",
     "python3 -m tools.repo_checks.all_checks",
     "/open-postal-codes/api/v1/index.json",
+    "/open-postal-codes/api/v1/de/post_code.csv",
     "ODbL",
     "OpenStreetMap",
+    "Geofabrik GmbH",
     "Frank Stueber",
 )
 

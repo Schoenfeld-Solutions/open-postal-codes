@@ -14,6 +14,7 @@ REQUIRED_ADRS = (
     Path("docs/adr/0004-preserve-odbl-and-visible-attribution.md"),
     Path("docs/adr/0005-keep-ci-and-maintenance-low-cost.md"),
     Path("docs/adr/0006-defer-osm-extraction-dependencies.md"),
+    Path("docs/adr/0007-extract-germany-post-codes-from-geofabrik-regions.md"),
 )
 
 REQUIRED_SECTIONS = (

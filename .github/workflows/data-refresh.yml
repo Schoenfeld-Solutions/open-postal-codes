@@ -1,0 +1,95 @@
+name: Refresh German Post Code Data
+
+on:
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: "Optional comma-separated Geofabrik region names for a scoped refresh"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: data-refresh-post-code
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          cache: pip
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python3 -m pip install -e '.[dev]'
+
+      - name: Refresh regional Geofabrik data
+        run: |
+          python3 -m open_postal_codes.refresh_data \
+            --download-root "${RUNNER_TEMP}/geofabrik-pbf" \
+            --regions "${{ inputs.regions }}"
+
+      - name: Run quality gates
+        run: |
+          python3 -m pytest --cov=open_postal_codes --cov-fail-under=85
+          python3 -m ruff check .
+          python3 -m ruff format --check .
+          python3 -m mypy src tests tools
+          python3 -m tools.repo_checks.all_checks
+
+      - name: Detect data changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "${GITHUB_OUTPUT}"
+          else
+            echo "changed=true" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Commit data changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git switch -c dev/data-refresh-post-code
+          git add data/public/v1/de data/regional/v1/de/post_code data/sources/geofabrik-regions.json
+          git commit -m "data(de): refresh post code outputs"
+          git push --force-with-lease origin HEAD:dev/data-refresh-post-code
+
+      - name: Open or update data pull request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing_pr="$(gh pr list --head dev/data-refresh-post-code --state open --json number --jq '.[0].number // ""')"
+          if [ -n "${existing_pr}" ]; then
+            gh pr edit "${existing_pr}" \
+              --title "data(de): refresh post code outputs" \
+              --body "Refreshes Germany post code outputs from regional Geofabrik PBF files. Quality gates passed in the refresh workflow."
+          else
+            gh pr create \
+              --base main \
+              --head dev/data-refresh-post-code \
+              --title "data(de): refresh post code outputs" \
+              --body "Refreshes Germany post code outputs from regional Geofabrik PBF files. Quality gates passed in the refresh workflow."
+          fi
+
+      - name: Write failure summary
+        if: failure()
+        run: |
+          {
+            echo "## Data refresh failed"
+            echo ""
+            echo "Check the refresh step logs for the failed Geofabrik regions. The workflow continues through remaining regions before it reports the final failure."
+          } >> "${GITHUB_STEP_SUMMARY}"
