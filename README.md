@@ -1,81 +1,85 @@
-# OpenPLZ API Data
+# Open Postal Codes
 
-This repository contains:
+Open Postal Codes publishes versioned CSV files with postal-code and locality data. The repository is maintained as a Python-first data and publication project: Python code lives under `src/open_postal_codes/`, published data lives under `data/public/v1/`, and GitHub Pages serves the static file API.
 
-+ Data export of all German streets (including postal codes, localities and regional keys) from the [OpenStreetMap project](https://www.openstreetmap.org/).
+## Datasets
 
-+ List of communes (municipalities) in Liechtenstein.
+- `data/public/v1/de/osm/streets.raw.csv`: raw German street export from OpenStreetMap data.
+- `data/public/v1/de/osm/streets.ignore.csv`: manually curated exclusion list for incorrect or unusable street rows.
+- `data/public/v1/de/osm/streets.csv`: filtered German street dataset for publication.
+- `data/public/v1/li/communes.csv`: Liechtenstein commune reference data.
 
-## Sources  
+The German CSV files use this header:
 
-### Germany
+```text
+Name,PostalCode,Locality,RegionalKey,Borough,Suburb
+```
 
-#### Data processing
+The Liechtenstein CSV file uses this header:
 
-This dataset is an extract from the regional OpenStreetMap file for Germany [germany-latest.osm.pbf](https://download.geofabrik.de/europe/germany.html). The following algorithm is used:
+```text
+Key,Name,ElectoralDistrict
+```
 
-1. Read in all postal code areas (OSM relations), municipality areas (OSM relations), borough areas (OSM relations), suburb areas (OSM relations) and streets (OSM ways) together with their geometric information.
+## Static File API
 
-2. Include only ways which have one of the the following properties:
+GitHub Pages publishes the data at stable paths:
 
-    Name      | Value
-    --------- | -----
-    `place`   | `square`
-	`leisure` | `park`
-	`highway` | `primary`
-	`highway` | `secondary`
-	`highway` | `tertiary`
-	`highway` | `residential`
-	`highway` | `living_street`
-	`highway` | `road`
-	`highway` | `unclassified`
-	`highway` | `footway`
-	`highway` | `pedestrian`
-	`highway` | `track` (but only for `tracktype=grade1`)
-	`highway` | `service` (but only for `service=alley`)
-	
-	and have NOT any of the following properties:
-	
-    Name      | Value
-    --------- | -----
-    `access`  | `private`
-    `access`  | `forestry`
-    `access`  | `military`
+- `/open-postal-codes/api/v1/index.json`
+- `/open-postal-codes/api/v1/de/osm/streets.csv`
+- `/open-postal-codes/api/v1/de/osm/streets.raw.csv`
+- `/open-postal-codes/api/v1/de/osm/streets.ignore.csv`
+- `/open-postal-codes/api/v1/li/communes.csv`
 
-3. For each OSM Street, determine the geometric centre and in which municipality and postcode area it is located. Where available, the borough area and/or suburb area should also be taken into account.
+The Pages artifact also creates `.gz` files and metadata with hashes, file sizes, and line counts. These generated downloads are not versioned in the repository.
 
-4. Create a new street object (name, postal code, locality, regional key, borough, suburb) from the combination of 5 data objects (OSM street, OSM municipality area, OSM postal code area, borough OSM areas, suburb OSM area).
+## Installation and Development
 
-5. Shorten all street names with `strasse` or `Strasse` to `str.` or `Str.`.
+Requirements:
 
-6. Ignore all streets with names matching the following regular expression: `^(\?|\+|-|_|\d*|\(.*\))$`.
+- Python `3.12` or newer
+- `git`
+- optional `pre-commit` for local hooks
 
-7. Export all street objects to CSV (file `streets.csv`).
+```bash
+python3 -m pip install -e '.[dev]'
+pre-commit install
+pre-commit install --hook-type pre-push
+```
 
-#### Data post-processing
+Standard checks:
 
-Despite filtering the data, the resulting CSV file `streets.csv` contains streets that are unusable or even incorrect. For example:
+```bash
+python3 -m pytest --cov=open_postal_codes --cov-fail-under=85
+python3 -m ruff check .
+python3 -m ruff format --check .
+python3 -m mypy src tests tools
+python3 -m tools.repo_checks.all_checks
+```
 
-+ Small footways (often with strange names) that cannot be distinguished from usable ways.
+Package the Pages site locally:
 
-+ Streets that do not match the postal code area 100% and therefore appear twice with different postal codes and municipal assignments (yes, this is not always wrong).
+```bash
+python3 -m open_postal_codes.pages --output-root out
+```
 
-To solve this problem, we have introduced an additional csv file called `streets.ignore.csv`. This file is used to automatically create (via GitHub Action) a third csv file called `streets.updated.csv` by removing all streets from `streets-csv` that are contained in `streets.ignore.csv`. The `streets.ignore.csv` file is maintained manually.
+## Data Maintenance
 
-#### Data quality
+This initialization does not change the existing extraction algorithm behavior. The previous filtering logic is now available as a testable Python module under `src/open_postal_codes/csv_filter.py`.
 
-The data in the OpenStreetMap project is not perfect, but surprisingly well maintained for Germany.  
+Regenerate the filtered German street data locally:
 
-+ A total of 119 municipality regional keys from the official [GV100AD (Gemeindeleitdatei)](https://www.destatis.de/EN/Themes/Countries-Regions/Regional-Statistics/OnlineListMunicipalities/_inhalt.html) are not represented. This is largely due to the fact that these are areas without buildings and proper roads.
+```bash
+python3 -m open_postal_codes.csv_filter \
+  data/public/v1/de/osm/streets.raw.csv \
+  data/public/v1/de/osm/streets.ignore.csv \
+  data/public/v1/de/osm/streets.csv
+```
 
-+ Streets and their postal codes or their municipality keys are determined on the basis of geometrical comparisons. This procedure is not 100% perfect.
+A full new OpenStreetMap extraction is not part of this initialization. It will be implemented only after a separate dependency and runtime decision.
 
-+ Street names, postal codes and municipality keys are subject to constant change. The OpenStreetMap project as a community project tries as best as possible to update its data regularly. Current changes in streets and postal codes are documented quarterly by Deutsche Post (see [Deutsche Post Direkt](https://www.deutschepost.de/de/d/deutsche-post-direkt/datafactory/download_postleitdaten.html)), current changes in municipality assignment in the [Gemeindeleitdatei](https://www.destatis.de/EN/Themes/Countries-Regions/Regional-Statistics/OnlineListMunicipalities/_inhalt.html) of the Federal Statistical Office (Destatis).
+## Attribution and License
 
-### Liechtenstein
+The data work is based on OpenStreetMap data and the original OpenPLZ API Data work by Frank Stueber. This continuation is maintained by Schoenfeld Solutions.
 
-Since there is no official list of municipalities in Liechtenstein that is machine-readable, we have created our own list as a CSV file based on [information from Wikipedia](https://w.wiki/BEPn).
-
-## Can I help?
-
-Yes, that would be much appreciated. The best way to help is to post a response via the Issue Tracker and/or submit a Pull Request.
+The database remains under the ODC Open Database License (ODbL). The full license text is available in [LICENSE](LICENSE). Additional attribution notes are available in [NOTICE.md](NOTICE.md).

@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-postal-codes"
+version = "0.1.0"
+description = "Static postal code data packaging and repository governance for Open Postal Codes."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "ODbL-1.0" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.16,<2",
+    "pre-commit>=3.7,<5",
+    "pytest>=8,<9",
+    "pytest-cov>=6,<8",
+    "ruff>=0.12,<1",
+]
+
+[project.scripts]
+open-postal-codes-filter = "open_postal_codes.csv_filter:main"
+open-postal-codes-package-pages = "open_postal_codes.pages:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = ["--import-mode=importlib", "--strict-markers"]
+markers = [
+    "repo_smoke: repository-level smoke tests",
+    "unit: fast unit tests",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["open_postal_codes"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "tests", "tools"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
