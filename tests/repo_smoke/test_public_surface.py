@@ -9,8 +9,8 @@ pytestmark = pytest.mark.repo_smoke
 
 def test_package_root_exports_only_curated_surface() -> None:
     assert tuple(open_postal_codes.__all__) == (
-        "CsvFilterResult",
-        "filter_csv",
+        "PostCodeRecord",
+        "dedupe_records",
     )
 
 

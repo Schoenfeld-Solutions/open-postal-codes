@@ -11,7 +11,7 @@ Proposed.
 
 ## Context
 
-The data should be directly and cheaply accessible. A dynamic service would add unnecessary cost and operational complexity for static CSV delivery.
+The data should be directly and cheaply accessible. A dynamic service would add unnecessary cost and operational complexity for static file delivery.
 
 ## Decision
 
@@ -19,20 +19,20 @@ The repository uses `data/public/v1/` as the canonical source for published file
 
 ## Rationale
 
-Static files are cacheable, auditable, and do not require ongoing server costs. The `index.json` manifest makes file paths, hashes, sizes, and line counts machine-readable.
+Static files are cacheable, auditable, and do not require ongoing server costs. The `index.json` manifest makes file paths, hashes, sizes, media types, and record counts machine-readable.
 
 ## Consequences
 
 - API versioning uses path segments such as `v1`.
 - `.gz` downloads are generated in the Pages artifact but are not versioned.
-- Breaking changes to CSV headers require a new contract version.
+- Breaking changes to public fields, titles, or file paths require a new contract version.
 
 ## Enforcement
 
 - `open_postal_codes.pages` packages the API.
-- `tools.repo_checks.pages_contract_check` validates source paths and CSV headers.
-- `docs/contracts/v1/` documents CSV and API contracts.
+- `tools.repo_checks.pages_contract_check` validates source paths and post code formats.
+- `docs/contracts/v1/` documents post code and API contracts.
 
 ## Rollout
 
-The initial publication creates `api/v1/index.json` and copies all v1 CSV files into the Pages artifact.
+The active v1 publication creates `api/v1/index.json` and copies Germany post code CSV, JSON, and XML files into the Pages artifact.

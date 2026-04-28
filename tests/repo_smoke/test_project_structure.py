@@ -8,10 +8,12 @@ pytestmark = pytest.mark.repo_smoke
 
 
 def test_data_files_were_moved_to_public_versioned_api_root() -> None:
-    assert Path("data/public/v1/de/osm/streets.raw.csv").exists()
-    assert Path("data/public/v1/de/osm/streets.ignore.csv").exists()
-    assert Path("data/public/v1/de/osm/streets.csv").exists()
-    assert Path("data/public/v1/li/communes.csv").exists()
+    assert Path("data/public/v1/de/post_code.csv").exists()
+    assert Path("data/public/v1/de/post_code.json").exists()
+    assert Path("data/public/v1/de/post_code.xml").exists()
+    assert Path("data/sources/geofabrik-regions.json").exists()
+    assert not Path("data/public/v1/de/osm/streets.csv").exists()
+    assert not Path("data/public/v1/li/communes.csv").exists()
 
 
 def test_legacy_pipeline_files_are_removed() -> None:

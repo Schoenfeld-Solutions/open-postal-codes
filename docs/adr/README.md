@@ -10,6 +10,7 @@
 4. `0004-preserve-odbl-and-visible-attribution.md`
 5. `0005-keep-ci-and-maintenance-low-cost.md`
 6. `0006-defer-osm-extraction-dependencies.md`
+7. `0007-extract-germany-post-codes-from-geofabrik-regions.md`
 
 ## Rules
 

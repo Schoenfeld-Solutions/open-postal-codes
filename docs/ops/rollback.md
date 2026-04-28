@@ -11,4 +11,4 @@ If a Pages deployment serves incorrect files:
 
 ## Data
 
-For incorrect CSV data, prefer the smallest traceable correction: a row in `streets.ignore.csv`, a corrected CSV file, or a revert of the data refresh.
+For incorrect post code data, prefer the smallest traceable correction: revert the data-refresh pull request, repair the extraction rule with tests, and rerun the refresh workflow.

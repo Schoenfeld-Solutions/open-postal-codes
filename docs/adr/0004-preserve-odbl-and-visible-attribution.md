@@ -15,7 +15,7 @@ The repository continues an existing ODbL data foundation and uses OpenStreetMap
 
 ## Decision
 
-The existing ODbL license text remains unchanged. README, NOTICE, and the Pages site name OpenStreetMap contributors, Frank Stueber, and Schoenfeld Solutions.
+The existing ODbL license text remains unchanged. README, NOTICE, the manifest, and the Pages site name OpenStreetMap contributors, Geofabrik GmbH, Frank Stueber, and Schoenfeld Solutions.
 
 ## Rationale
 
@@ -24,7 +24,7 @@ The ODbL requires clear redistribution and attribution practices. Visible notice
 ## Consequences
 
 - `LICENSE` is not rewritten.
-- Attribution is maintained in README, NOTICE, and the site.
+- Attribution is maintained in README, NOTICE, the manifest, and the site.
 - License and credit checks are part of local repository checks.
 
 ## Enforcement

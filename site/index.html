@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Open Postal Codes publishes static CSV data for postal-code datasets."
+      content="Open Postal Codes publishes static Germany post code data."
     />
     <base href="/open-postal-codes/" />
     <title>Open Postal Codes</title>
@@ -138,20 +138,23 @@
   <body>
     <main class="shell">
       <section class="hero">
-        <p class="label">Static postal-code data</p>
+        <p class="label">Germany post code data</p>
         <h1>Open Postal Codes</h1>
         <p class="lede">
-          Versioned CSV files for postal-code datasets, distributed through a
-          static GitHub Pages file API with hashes, row counts, and compressed
-          downloads.
+          Versioned CSV, JSON, and XML files for German post codes, distributed
+          through a static GitHub Pages file API with hashes, record counts, and
+          compressed downloads.
         </p>
         <div class="actions">
           <a class="button" href="api/v1/index.json">Open API index</a>
-          <a class="button secondary" href="api/v1/de/osm/streets.csv">
-            Download German streets
+          <a class="button secondary" href="api/v1/de/post_code.csv">
+            Download CSV
           </a>
-          <a class="button secondary" href="api/v1/li/communes.csv">
-            Download Liechtenstein communes
+          <a class="button secondary" href="api/v1/de/post_code.json">
+            Download JSON
+          </a>
+          <a class="button secondary" href="api/v1/de/post_code.xml">
+            Download XML
           </a>
         </div>
       </section>
@@ -159,21 +162,17 @@
       <section class="section">
         <p class="label">Published files</p>
         <div class="grid">
-          <a class="card" href="api/v1/de/osm/streets.csv">
-            <strong>de/osm/streets.csv</strong>
-            <span>Filtered German street and postal-code data.</span>
+          <a class="card" href="api/v1/de/post_code.csv">
+            <strong>de/post_code.csv</strong>
+            <span>German post code records as CSV.</span>
           </a>
-          <a class="card" href="api/v1/de/osm/streets.raw.csv">
-            <strong>de/osm/streets.raw.csv</strong>
-            <span>Raw German street export before curation.</span>
+          <a class="card" href="api/v1/de/post_code.json">
+            <strong>de/post_code.json</strong>
+            <span>German post code records as JSON.</span>
           </a>
-          <a class="card" href="api/v1/de/osm/streets.ignore.csv">
-            <strong>de/osm/streets.ignore.csv</strong>
-            <span>Curated rows removed from the filtered dataset.</span>
-          </a>
-          <a class="card" href="api/v1/li/communes.csv">
-            <strong>li/communes.csv</strong>
-            <span>Liechtenstein commune reference data.</span>
+          <a class="card" href="api/v1/de/post_code.xml">
+            <strong>de/post_code.xml</strong>
+            <span>German post code records as XML.</span>
           </a>
         </div>
       </section>
@@ -181,8 +180,8 @@
       <footer>
         <p>
           Data is published under the ODC Open Database License (ODbL).
-          Attribution: OpenStreetMap contributors, Frank Stueber, and
-          Schoenfeld Solutions.
+          Attribution: OpenStreetMap contributors, Geofabrik GmbH, Frank
+          Stueber, and Schoenfeld Solutions.
         </p>
       </footer>
     </main>

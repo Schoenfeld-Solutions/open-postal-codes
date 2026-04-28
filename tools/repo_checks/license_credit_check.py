@@ -24,7 +24,13 @@ def main() -> int:
             errors.append(f"missing attribution file: {path}")
             continue
         text = path.read_text(encoding="utf-8")
-        for snippet in ("ODbL", "OpenStreetMap", "Frank Stueber", "Schoenfeld Solutions"):
+        for snippet in (
+            "ODbL",
+            "OpenStreetMap",
+            "Geofabrik GmbH",
+            "Frank Stueber",
+            "Schoenfeld Solutions",
+        ):
             if snippet not in text:
                 errors.append(f"{path} missing attribution snippet: {snippet}")
 

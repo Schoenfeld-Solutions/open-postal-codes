@@ -11,11 +11,11 @@ Proposed.
 
 ## Context
 
-The CSV files are large, but this initialization does not require expensive data downloads or long extraction jobs. Automated maintenance should be useful without creating excessive pull request or CI churn.
+OpenStreetMap regional PBF files can be large. Automated maintenance should be useful without creating excessive pull request or CI churn.
 
 ## Decision
 
-Pull request CI runs only fast Python, test, coverage, and repository checks. Dependabot groups `pip` and `github-actions` updates weekly with at most one open maintenance pull request.
+Pull request CI runs only fast Python, test, coverage, and repository checks. A dedicated data-refresh workflow downloads regional Geofabrik PBF files on schedule or manual dispatch. Dependabot groups `pip` and `github-actions` updates weekly with at most one open maintenance pull request.
 
 ## Rationale
 
@@ -24,6 +24,7 @@ Fast deterministic checks provide early feedback and keep CI costs low. Grouped 
 ## Consequences
 
 - No OpenStreetMap downloads run in pull request CI.
+- Regional OpenStreetMap downloads run only in the data-refresh workflow.
 - No Pages deployments run for pull requests.
 - Security updates remain separately visible.
 - Dependency Review remains visible in pull request CI and is treated as best-effort until Dependency graph support is enabled for the repository.
@@ -32,6 +33,7 @@ Fast deterministic checks provide early feedback and keep CI costs low. Grouped 
 
 - `.github/dependabot.yml` defines weekly grouped updates.
 - The pull request workflow installs only development dependencies and runs local gates as blocking checks.
+- The data-refresh workflow downloads PBF files into runner-local temporary storage and opens a pull request only when tracked files change.
 - Dependency Review should be made blocking after the repository supports the feature.
 - The Pages workflow runs only for `main` or manual dispatch.
 

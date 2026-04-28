@@ -1,37 +1,31 @@
 # Open Postal Codes
 
-Open Postal Codes publishes versioned CSV files with postal-code and locality data. The repository is maintained as a Python-first data and publication project: Python code lives under `src/open_postal_codes/`, published data lives under `data/public/v1/`, and GitHub Pages serves the static file API.
+Open Postal Codes publishes a Germany-only static file API for post code records. The repository is maintained as a Python-first data and publication project: extraction and packaging code lives under `src/open_postal_codes/`, published data lives under `data/public/v1/`, and GitHub Pages serves the static file API.
 
 ## Datasets
 
-- `data/public/v1/de/osm/streets.raw.csv`: raw German street export from OpenStreetMap data.
-- `data/public/v1/de/osm/streets.ignore.csv`: manually curated exclusion list for incorrect or unusable street rows.
-- `data/public/v1/de/osm/streets.csv`: filtered German street dataset for publication.
-- `data/public/v1/li/communes.csv`: Liechtenstein commune reference data.
+- `data/public/v1/de/post_code.csv`: German post code records as CSV.
+- `data/public/v1/de/post_code.json`: German post code records as JSON.
+- `data/public/v1/de/post_code.xml`: German post code records as XML.
 
-The German CSV files use this header:
-
-```text
-Name,PostalCode,Locality,RegionalKey,Borough,Suburb
-```
-
-The Liechtenstein CSV file uses this header:
+The CSV file uses this header:
 
 ```text
-Key,Name,ElectoralDistrict
+code,city,country,county,time_zone
 ```
+
+JSON uses the title `post_code` and a `records` array. XML uses a `post_code` root element with `record` children.
 
 ## Static File API
 
 GitHub Pages publishes the data at stable paths:
 
 - `/open-postal-codes/api/v1/index.json`
-- `/open-postal-codes/api/v1/de/osm/streets.csv`
-- `/open-postal-codes/api/v1/de/osm/streets.raw.csv`
-- `/open-postal-codes/api/v1/de/osm/streets.ignore.csv`
-- `/open-postal-codes/api/v1/li/communes.csv`
+- `/open-postal-codes/api/v1/de/post_code.csv`
+- `/open-postal-codes/api/v1/de/post_code.json`
+- `/open-postal-codes/api/v1/de/post_code.xml`
 
-The Pages artifact also creates `.gz` files and metadata with hashes, file sizes, and line counts. These generated downloads are not versioned in the repository.
+The Pages artifact also creates `.gz` files and metadata with hashes, file sizes, media types, and record counts. Generated downloads are not versioned in the repository.
 
 ## Installation and Development
 
@@ -65,21 +59,20 @@ python3 -m open_postal_codes.pages --output-root out
 
 ## Data Maintenance
 
-This initialization does not change the existing extraction algorithm behavior. The previous filtering logic is now available as a testable Python module under `src/open_postal_codes/csv_filter.py`.
+The scheduled data-refresh workflow downloads regional Germany PBF files from Geofabrik into runner-local temporary storage, extracts post code records with Python, rebuilds public CSV/JSON/XML files, and opens a pull request only when tracked files change.
 
-Regenerate the filtered German street data locally:
+Manual scoped smoke run:
 
 ```bash
-python3 -m open_postal_codes.csv_filter \
-  data/public/v1/de/osm/streets.raw.csv \
-  data/public/v1/de/osm/streets.ignore.csv \
-  data/public/v1/de/osm/streets.csv
+python3 -m open_postal_codes.refresh_data \
+  --download-root /tmp/open-postal-codes-pbf \
+  --regions bremen
 ```
 
-A full new OpenStreetMap extraction is not part of this initialization. It will be implemented only after a separate dependency and runtime decision.
+Raw PBF files are never committed. Regional normalized CSV outputs under `data/regional/v1/de/post_code/` are committed only by refresh pull requests.
 
 ## Attribution and License
 
-The data work is based on OpenStreetMap data and the original OpenPLZ API Data work by Frank Stueber. This continuation is maintained by Schoenfeld Solutions.
+The data work is based on OpenStreetMap data, regional extracts provided by Geofabrik GmbH, and the original OpenPLZ API Data work by Frank Stueber. This continuation is maintained by Schoenfeld Solutions.
 
 The database remains under the ODC Open Database License (ODbL). The full license text is available in [LICENSE](LICENSE). Additional attribution notes are available in [NOTICE.md](NOTICE.md).

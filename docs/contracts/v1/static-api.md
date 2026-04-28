@@ -9,10 +9,9 @@
 ## Files
 
 - `index.json`
-- `de/osm/streets.csv`
-- `de/osm/streets.raw.csv`
-- `de/osm/streets.ignore.csv`
-- `li/communes.csv`
+- `de/post_code.csv`
+- `de/post_code.json`
+- `de/post_code.xml`
 
 ## Manifest
 
@@ -26,4 +25,4 @@
 
 ## Gzip Files
 
-Each CSV file receives a `.gz` file in the Pages artifact. These files are not versioned under `data/public/v1/`.
+Each public data file receives a `.gz` file in the Pages artifact. These files are not versioned under `data/public/v1/`.

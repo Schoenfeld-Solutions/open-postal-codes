@@ -9,6 +9,7 @@ from typing import Any, cast
 import pytest
 
 from open_postal_codes.pages import main, package_pages_site
+from open_postal_codes.post_code import PostCodeRecord, write_public_post_code_files
 
 pytestmark = pytest.mark.unit
 
@@ -22,28 +23,23 @@ def read_json(path: Path) -> dict[str, Any]:
     return cast(dict[str, Any], json.loads(path.read_text(encoding="utf-8")))
 
 
+def write_public_files(repository_root: Path) -> None:
+    write_public_post_code_files(
+        [
+            PostCodeRecord(code="28195", city="Bremen", county="Bremen"),
+            PostCodeRecord(code="66111", city="Saarbruecken", county="Regionalverband"),
+        ],
+        repository_root / "data/public/v1/de",
+    )
+
+
 def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path) -> None:
     repository_root = tmp_path / "repo"
     output_root = tmp_path / "out"
 
     write_text(repository_root / "site" / "index.html", "<!doctype html><title>Open</title>")
     write_text(repository_root / "site" / "404.html", "<!doctype html><title>Missing</title>")
-    write_text(
-        repository_root / "data/public/v1/de/osm/streets.csv",
-        "Name,PostalCode,Locality,RegionalKey,Borough,Suburb\nA,1,B,2,,\n",
-    )
-    write_text(
-        repository_root / "data/public/v1/de/osm/streets.raw.csv",
-        "Name,PostalCode,Locality,RegionalKey,Borough,Suburb\nA,1,B,2,,\nC,3,D,4,,\n",
-    )
-    write_text(
-        repository_root / "data/public/v1/de/osm/streets.ignore.csv",
-        "Name,PostalCode,Locality,RegionalKey,Borough,Suburb\nC,3,D,4,,\n",
-    )
-    write_text(
-        repository_root / "data/public/v1/li/communes.csv",
-        "Key,Name,ElectoralDistrict\n7001,Vaduz,Oberland\n",
-    )
+    write_public_files(repository_root)
 
     result = package_pages_site(
         repository_root=repository_root,
@@ -53,22 +49,29 @@ def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path
 
     manifest = read_json(result.manifest_path)
     paths = {entry["path"] for entry in manifest["files"]}
+    media_types = {entry["path"]: entry["media_type"] for entry in manifest["files"]}
 
     assert result.manifest_path == output_root / "api/v1/index.json"
     assert (output_root / "index.html").exists()
     assert (output_root / "404.html").exists()
     assert paths == {
-        "de/osm/streets.csv",
-        "de/osm/streets.raw.csv",
-        "de/osm/streets.ignore.csv",
-        "li/communes.csv",
+        "de/post_code.csv",
+        "de/post_code.json",
+        "de/post_code.xml",
+    }
+    assert media_types == {
+        "de/post_code.csv": "text/csv; charset=utf-8",
+        "de/post_code.json": "application/json; charset=utf-8",
+        "de/post_code.xml": "application/xml; charset=utf-8",
     }
     assert manifest["generated_at"] == "2026-04-28T00:00:00Z"
     assert manifest["base_path"] == "/open-postal-codes/api/v1/"
+    assert "Geofabrik GmbH" in manifest["attribution"]
+    assert {entry["records"] for entry in manifest["files"]} == {2}
 
-    gzip_path = output_root / "api/v1/de/osm/streets.csv.gz"
+    gzip_path = output_root / "api/v1/de/post_code.csv.gz"
     with gzip.open(gzip_path, "rt", encoding="utf-8") as stream:
-        assert stream.read().startswith("Name,PostalCode")
+        assert stream.read().startswith("code,city,country,county,time_zone")
 
 
 def test_package_pages_site_keeps_generated_files_outside_repository_data_root(
@@ -79,13 +82,7 @@ def test_package_pages_site_keeps_generated_files_outside_repository_data_root(
 
     write_text(repository_root / "site" / "index.html", "index")
     write_text(repository_root / "site" / "404.html", "missing")
-    for relative_path in (
-        "de/osm/streets.csv",
-        "de/osm/streets.raw.csv",
-        "de/osm/streets.ignore.csv",
-        "li/communes.csv",
-    ):
-        write_text(repository_root / "data/public/v1" / relative_path, "h\nv\n")
+    write_public_files(repository_root)
 
     package_pages_site(repository_root=repository_root, output_root=output_root)
 
@@ -99,15 +96,9 @@ def test_pages_cli_packages_site(tmp_path: Path, capsys: pytest.CaptureFixture[s
 
     write_text(repository_root / "site" / "index.html", "index")
     write_text(repository_root / "site" / "404.html", "missing")
-    for relative_path in (
-        "de/osm/streets.csv",
-        "de/osm/streets.raw.csv",
-        "de/osm/streets.ignore.csv",
-        "li/communes.csv",
-    ):
-        write_text(repository_root / "data/public/v1" / relative_path, "h\nv\n")
+    write_public_files(repository_root)
 
     assert main(["--repository-root", str(repository_root), "--output-root", str(output_root)]) == 0
 
-    assert "Packaged 4 API files" in capsys.readouterr().out
+    assert "Packaged 3 API files" in capsys.readouterr().out
     assert (output_root / "api/v1/index.json").exists()

@@ -7,6 +7,7 @@ import gzip
 import hashlib
 import json
 import shutil
+import xml.etree.ElementTree as ElementTree
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
@@ -16,26 +17,24 @@ API_VERSION = "v1"
 PAGES_BASE_PATH = "/open-postal-codes/"
 API_BASE_PATH = f"{PAGES_BASE_PATH}api/{API_VERSION}/"
 
-DATA_FILES: tuple[tuple[str, str, str], ...] = (
+DATA_FILES: tuple[tuple[str, str, str, str], ...] = (
     (
-        "de-osm-streets",
-        "de/osm/streets.csv",
-        "Filtered German street, postal code, locality, and regional key data.",
+        "de-post-code-csv",
+        "de/post_code.csv",
+        "German post code records as CSV.",
+        "text/csv; charset=utf-8",
     ),
     (
-        "de-osm-streets-raw",
-        "de/osm/streets.raw.csv",
-        "Raw German street export before the curated ignore list is applied.",
+        "de-post-code-json",
+        "de/post_code.json",
+        "German post code records as JSON.",
+        "application/json; charset=utf-8",
     ),
     (
-        "de-osm-streets-ignore",
-        "de/osm/streets.ignore.csv",
-        "Curated German street rows excluded from the public filtered file.",
-    ),
-    (
-        "li-communes",
-        "li/communes.csv",
-        "Liechtenstein commune reference data.",
+        "de-post-code-xml",
+        "de/post_code.xml",
+        "German post code records as XML.",
+        "application/xml; charset=utf-8",
     ),
 )
 
@@ -47,6 +46,7 @@ class PackagedFile:
     identifier: str
     path: str
     description: str
+    media_type: str
     byte_count: int
     gzip_byte_count: int
     line_count: int
@@ -61,7 +61,7 @@ class PackagedFile:
             "url": f"{API_BASE_PATH}{self.path}",
             "gzip_url": f"{API_BASE_PATH}{self.path}.gz",
             "description": self.description,
-            "media_type": "text/csv; charset=utf-8",
+            "media_type": self.media_type,
             "bytes": self.byte_count,
             "gzip_bytes": self.gzip_byte_count,
             "lines": self.line_count,
@@ -104,21 +104,22 @@ def package_pages_site(
     api_root.mkdir(parents=True, exist_ok=True)
 
     packaged_files: list[PackagedFile] = []
-    for identifier, relative_path, description in DATA_FILES:
+    for identifier, relative_path, description, media_type in DATA_FILES:
         source_path = data_root / relative_path
         target_path = api_root / relative_path
         target_path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source_path, target_path)
-        gzip_path = gzip_csv(target_path)
+        gzip_path = gzip_file(target_path)
         packaged_files.append(
             PackagedFile(
                 identifier=identifier,
                 path=relative_path,
                 description=description,
+                media_type=media_type,
                 byte_count=target_path.stat().st_size,
                 gzip_byte_count=gzip_path.stat().st_size,
                 line_count=count_lines(target_path),
-                record_count=max(count_lines(target_path) - 1, 0),
+                record_count=count_records(target_path),
                 sha256=sha256_file(target_path),
                 gzip_sha256=sha256_file(gzip_path),
             )
@@ -159,6 +160,7 @@ def build_manifest(*, generated_at: datetime, files: tuple[PackagedFile, ...]) -
         "license": "ODbL-1.0",
         "attribution": [
             "OpenStreetMap contributors",
+            "Geofabrik GmbH",
             "OpenPLZ API Data by Frank Stueber",
             "Schoenfeld Solutions",
         ],
@@ -166,7 +168,7 @@ def build_manifest(*, generated_at: datetime, files: tuple[PackagedFile, ...]) -
     }
 
 
-def gzip_csv(path: Path) -> Path:
+def gzip_file(path: Path) -> Path:
     gzip_path = path.with_name(f"{path.name}.gz")
     with (
         path.open("rb") as source_stream,
@@ -190,6 +192,21 @@ def count_lines(path: Path) -> int:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             line_count += chunk.count(b"\n")
     return line_count
+
+
+def count_records(path: Path) -> int:
+    if path.suffix == ".csv":
+        return max(count_lines(path) - 1, 0)
+    if path.suffix == ".json":
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        records = payload.get("records", [])
+        if not isinstance(records, list):
+            return 0
+        return len(records)
+    if path.suffix == ".xml":
+        root = ElementTree.parse(path).getroot()
+        return len(root.findall("record"))
+    return 0
 
 
 def parse_arguments(arguments: list[str] | None = None) -> argparse.Namespace:
