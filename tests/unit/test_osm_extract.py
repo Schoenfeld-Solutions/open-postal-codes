@@ -127,6 +127,11 @@ def test_boundary_records_are_canonical_and_county_enriched(tmp_path: Path) -> N
             "country": "DE",
             "county": "County A",
             "time_zone": "W. Europe Standard Time",
+            "is_primary_location": True,
+            "location_rank": 1,
+            "postal_code_rank": 1,
+            "source": "postal_boundary",
+            "evidence_count": 0,
         }
     ]
 
@@ -185,6 +190,11 @@ def test_regional_extract_can_use_state_boundary_when_country_boundary_is_absent
             "country": "DE",
             "county": "County A",
             "time_zone": "W. Europe Standard Time",
+            "is_primary_location": True,
+            "location_rank": 1,
+            "postal_code_rank": 1,
+            "source": "postal_boundary",
+            "evidence_count": 0,
         }
     ]
 
@@ -229,6 +239,11 @@ def test_address_fallback_requires_city_and_never_uses_generic_name(tmp_path: Pa
             "country": "DE",
             "county": "County A",
             "time_zone": "W. Europe Standard Time",
+            "is_primary_location": True,
+            "location_rank": 1,
+            "postal_code_rank": 1,
+            "source": "address_fallback",
+            "evidence_count": 3,
         }
     ]
 
@@ -311,3 +326,144 @@ def test_postal_boundary_can_emit_multiple_counties(tmp_path: Path) -> None:
     result = extract_post_codes_from_osm(path)
 
     assert [record.county for record in result.records] == ["County A", "County B"]
+    assert [record.is_primary_location for record in result.records] == [True, False]
+    assert [record.location_rank for record in result.records] == [1, 2]
+    assert [record.postal_code_rank for record in result.records] == [1, 1]
+
+
+def test_postal_boundary_area_does_not_require_type_boundary_tag(tmp_path: Path) -> None:
+    path = tmp_path / "postal-area-without-type.osm"
+    write_osm(
+        path,
+        boundary_fixture(
+            "\n".join(
+                [
+                    nodes(60, [(1, 1), (1, 4), (4, 4), (4, 1)]),
+                    closed_way(
+                        160,
+                        60,
+                        {
+                            "boundary": "postal_code",
+                            "postal_code_level": "8",
+                            "postal_code": "28195",
+                            "note": "28195 Bremen",
+                        },
+                    ),
+                ]
+            )
+        ),
+    )
+
+    result = extract_post_codes_from_osm(path)
+
+    assert [(record.code, record.city, record.source) for record in result.records] == [
+        ("28195", "Bremen", "postal_boundary")
+    ]
+
+
+def test_multi_city_boundary_uses_address_evidence_for_primary_choice(tmp_path: Path) -> None:
+    path = tmp_path / "primary-evidence.osm"
+    write_osm(
+        path,
+        boundary_fixture(
+            "\n".join(
+                [
+                    nodes(70, [(1, 1), (1, 4), (4, 4), (4, 1)]),
+                    closed_way(
+                        170,
+                        70,
+                        {
+                            "boundary": "postal_code",
+                            "postal_code_level": "8",
+                            "postal_code": "71540",
+                            "note": "71540 Murrhardt, Fichtenberg",
+                        },
+                    ),
+                    nodes(80, [(6, 1), (6, 4), (9, 4), (9, 1)]),
+                    closed_way(
+                        180,
+                        80,
+                        {
+                            "boundary": "postal_code",
+                            "postal_code_level": "8",
+                            "postal_code": "74427",
+                            "note": "74427 Fichtenberg",
+                        },
+                    ),
+                    tagged_node(
+                        500,
+                        2,
+                        2,
+                        {"addr:postcode": "71540", "addr:city": "Murrhardt"},
+                    ),
+                    tagged_node(
+                        501,
+                        2.1,
+                        2,
+                        {"addr:postcode": "71540", "addr:city": "Murrhardt"},
+                    ),
+                    tagged_node(
+                        502,
+                        2.2,
+                        2,
+                        {"addr:postcode": "71540", "addr:city": "Murrhardt"},
+                    ),
+                    tagged_node(
+                        510,
+                        2,
+                        2.1,
+                        {"addr:postcode": "71540", "addr:city": "Fichtenberg"},
+                    ),
+                    tagged_node(
+                        520,
+                        7,
+                        2,
+                        {"addr:postcode": "74427", "addr:city": "Fichtenberg"},
+                    ),
+                    tagged_node(
+                        521,
+                        7.1,
+                        2,
+                        {"addr:postcode": "74427", "addr:city": "Fichtenberg"},
+                    ),
+                    tagged_node(
+                        522,
+                        7.2,
+                        2,
+                        {"addr:postcode": "74427", "addr:city": "Fichtenberg"},
+                    ),
+                    tagged_node(
+                        523,
+                        7.3,
+                        2,
+                        {"addr:postcode": "74427", "addr:city": "Fichtenberg"},
+                    ),
+                ]
+            )
+        ),
+    )
+
+    result = extract_post_codes_from_osm(path)
+
+    primary_by_record = {
+        (record.code, record.city): record.is_primary_location for record in result.records
+    }
+    location_rank_by_record = {
+        (record.code, record.city): record.location_rank for record in result.records
+    }
+    postal_code_rank_by_record = {
+        (record.code, record.city): record.postal_code_rank for record in result.records
+    }
+    evidence_by_record = {
+        (record.code, record.city): record.evidence_count for record in result.records
+    }
+
+    assert primary_by_record[("71540", "Fichtenberg")] is False
+    assert primary_by_record[("74427", "Fichtenberg")] is True
+    assert primary_by_record[("71540", "Murrhardt")] is True
+    assert location_rank_by_record[("71540", "Fichtenberg")] == 2
+    assert location_rank_by_record[("71540", "Murrhardt")] == 1
+    assert postal_code_rank_by_record[("71540", "Fichtenberg")] == 2
+    assert postal_code_rank_by_record[("74427", "Fichtenberg")] == 1
+    assert evidence_by_record[("71540", "Fichtenberg")] == 1
+    assert evidence_by_record[("74427", "Fichtenberg")] == 4

@@ -13,3 +13,4 @@
 - no server-side state
 - reproducible file paths
 - metadata for hashes and sizes in the manifest
+- row-level location-primary, rank, and evidence metadata in the post code files

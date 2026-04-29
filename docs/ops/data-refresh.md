@@ -4,6 +4,8 @@
 
 The `Refresh German Post Code Data` workflow runs on a schedule and by manual dispatch. It downloads regional Germany PBF files from Geofabrik into runner-local temporary storage, extracts normalized regional CSV outputs, rebuilds public CSV/JSON/XML files, and opens or updates a pull request when tracked files change.
 
+The extraction step also recalculates location-primary markers, ranks, and evidence metadata for every public row, so committed regional CSV files must use the same schema as the public export.
+
 ## Manual Scoped Run
 
 ```bash

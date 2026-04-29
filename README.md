@@ -11,10 +11,10 @@ Open Postal Codes publishes a Germany-only static file API for post code records
 The CSV file uses this header:
 
 ```text
-code,city,country,county,time_zone
+code,city,country,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
 ```
 
-JSON uses the title `post_code` and a `records` array. XML uses a `post_code` root element with `record` children.
+JSON uses the title `post_code` and a `records` array. XML uses a `post_code` root element with `record` children. `is_primary_location` marks the highest-ranked location for a post code. `location_rank` sorts locations within the same post code, while `postal_code_rank` sorts post codes within the same normalized city, county, and country combination. A city with many post codes can therefore have many `is_primary_location=true` rows, one per post code; use `postal_code_rank` for city-level ordering. `source` and `evidence_count` expose whether the row came from a postal-code boundary or address fallback evidence.
 
 ## Static File API
 

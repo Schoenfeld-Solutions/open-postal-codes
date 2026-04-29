@@ -14,12 +14,14 @@ from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
 from open_postal_codes.post_code import (
+    ADDRESS_FALLBACK_SOURCE,
     DEFAULT_COUNTRY,
+    POSTAL_BOUNDARY_SOURCE,
     PostCodeRecord,
     dedupe_records,
     normalize_post_code,
     normalize_text,
-    parse_boundary_city,
+    parse_boundary_cities,
     write_post_code_csv,
 )
 
@@ -44,13 +46,21 @@ class PostalBoundaryCandidate:
     """A post code boundary candidate before final enrichment."""
 
     code: str
-    city: str
+    cities: tuple[str, ...]
     geometry: BaseGeometry
 
 
 @dataclass
 class AddressAggregate:
     """Aggregated address evidence for one post code and city."""
+
+    count: int
+    geometry: BaseGeometry | None
+
+
+@dataclass
+class AddressEvidence:
+    """Accepted address evidence for one public record identity."""
 
     count: int
     geometry: BaseGeometry | None
@@ -126,12 +136,12 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
             return
 
         code = normalize_post_code(tags.get("postal_code") or tags.get("postcode"))
-        city = parse_boundary_city(code, (tags.get("note"), tags.get("name")))
-        if not code or not city:
+        cities = parse_boundary_cities(code, (tags.get("note"), tags.get("name")))
+        if not code or not cities:
             self.dropped_candidate_count += 1
             return
         self.postal_boundaries.append(
-            PostalBoundaryCandidate(code=code, city=city, geometry=geometry)
+            PostalBoundaryCandidate(code=code, cities=cities, geometry=geometry)
         )
 
     def _collect_address(
@@ -196,6 +206,12 @@ def extract_post_codes_from_osm(
         for county in handler.counties
         if _geometry_overlaps_germany(county.geometry, germany_geometry)
     ]
+    address_evidence = _accepted_address_evidence(
+        addresses=handler.addresses,
+        germany_geometry=germany_geometry,
+        counties=counties,
+        handler=handler,
+    )
 
     boundary_records: list[PostCodeRecord] = []
     boundary_codes: set[str] = set()
@@ -204,35 +220,43 @@ def extract_post_codes_from_osm(
             handler.dropped_candidate_count += 1
             continue
         county_names = _county_names_for_boundary(candidate.geometry, counties)
-        if county_names:
-            for county_name in county_names:
+        for city in candidate.cities:
+            candidate_counties = _candidate_counties_for_city(
+                code=candidate.code,
+                city=city,
+                county_names=county_names,
+                address_evidence=address_evidence,
+            )
+            for county_name in candidate_counties:
                 boundary_records.append(
                     PostCodeRecord(
                         code=candidate.code,
-                        city=candidate.city,
+                        city=city,
                         county=county_name,
+                        source=POSTAL_BOUNDARY_SOURCE,
+                        evidence_count=_evidence_count(
+                            code=candidate.code,
+                            city=city,
+                            county=county_name,
+                            address_evidence=address_evidence,
+                        ),
                     )
                 )
-        else:
-            boundary_records.append(PostCodeRecord(code=candidate.code, city=candidate.city))
         boundary_codes.add(candidate.code)
 
     address_records: list[PostCodeRecord] = []
-    for (code, city), aggregate in handler.addresses.items():
-        if code in boundary_codes or aggregate.count < min_address_evidence:
+    for (code, city, county_name), evidence in address_evidence.items():
+        if code in boundary_codes or evidence.count < min_address_evidence:
             continue
-        if aggregate.geometry is not None and not _geometry_representative_in_germany(
-            aggregate.geometry, germany_geometry
-        ):
-            handler.dropped_candidate_count += 1
-            continue
-        county_name = ""
-        if aggregate.geometry is not None:
-            county_name = _county_name_for_point(
-                aggregate.geometry.representative_point(),
-                counties,
+        address_records.append(
+            PostCodeRecord(
+                code=code,
+                city=city,
+                county=county_name,
+                source=ADDRESS_FALLBACK_SOURCE,
+                evidence_count=evidence.count,
             )
-        address_records.append(PostCodeRecord(code=code, city=city, county=county_name))
+        )
 
     records = dedupe_records([*boundary_records, *address_records])
     if not records:
@@ -286,7 +310,6 @@ def _is_german_county_boundary(tags: dict[str, str]) -> bool:
 def _is_postal_code_boundary(tags: dict[str, str]) -> bool:
     return (
         tags.get("boundary") == "postal_code"
-        and tags.get("type") == "boundary"
         and tags.get("postal_code_level", "8") == "8"
         and bool(tags.get("postal_code") or tags.get("postcode"))
     )
@@ -341,6 +364,104 @@ def _geometry_representative_in_germany(
     if geometry.is_empty:
         return False
     return bool(germany_geometry.covers(geometry.representative_point()))
+
+
+def _accepted_address_evidence(
+    *,
+    addresses: dict[tuple[str, str], AddressAggregate],
+    germany_geometry: BaseGeometry,
+    counties: list[CountyBoundary],
+    handler: _PostCodeExtractionHandler,
+) -> dict[tuple[str, str, str], AddressEvidence]:
+    evidence: dict[tuple[str, str, str], AddressEvidence] = {}
+    for (code, city), aggregate in addresses.items():
+        if aggregate.geometry is not None and not _geometry_representative_in_germany(
+            aggregate.geometry,
+            germany_geometry,
+        ):
+            handler.dropped_candidate_count += 1
+            continue
+
+        county_name = ""
+        if aggregate.geometry is not None:
+            county_name = _county_name_for_point(
+                aggregate.geometry.representative_point(),
+                counties,
+            )
+
+        key = (code, city, county_name)
+        existing = evidence.get(key)
+        if existing is None:
+            evidence[key] = AddressEvidence(count=aggregate.count, geometry=aggregate.geometry)
+        else:
+            existing.count += aggregate.count
+            if existing.geometry is None and aggregate.geometry is not None:
+                existing.geometry = aggregate.geometry
+    return evidence
+
+
+def _candidate_counties_for_city(
+    *,
+    code: str,
+    city: str,
+    county_names: tuple[str, ...],
+    address_evidence: dict[tuple[str, str, str], AddressEvidence],
+) -> tuple[str, ...]:
+    if not county_names:
+        return ("",)
+
+    counties_with_evidence = tuple(
+        county_name
+        for county_name in county_names
+        if _evidence_count(
+            code=code,
+            city=city,
+            county=county_name,
+            address_evidence=address_evidence,
+        )
+        > 0
+    )
+    if counties_with_evidence:
+        return counties_with_evidence
+
+    evidence_counties = _evidence_counties_for_city(
+        code=code,
+        city=city,
+        address_evidence=address_evidence,
+    )
+    return evidence_counties or county_names
+
+
+def _evidence_counties_for_city(
+    *,
+    code: str,
+    city: str,
+    address_evidence: dict[tuple[str, str, str], AddressEvidence],
+) -> tuple[str, ...]:
+    return tuple(
+        sorted(
+            county
+            for (evidence_code, evidence_city, county), evidence in address_evidence.items()
+            if evidence_code == code and evidence_city == city and county and evidence.count > 0
+        )
+    )
+
+
+def _evidence_count(
+    *,
+    code: str,
+    city: str,
+    county: str,
+    address_evidence: dict[tuple[str, str, str], AddressEvidence],
+) -> int:
+    if county:
+        evidence = address_evidence.get((code, city, county))
+        return evidence.count if evidence is not None else 0
+    return sum(
+        evidence.count
+        for (evidence_code, evidence_city, _), evidence in address_evidence.items()
+        if evidence_code == code and evidence_city == city
+    )
 
 
 def _county_names_for_boundary(
