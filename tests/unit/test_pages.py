@@ -10,6 +10,7 @@ import pytest
 
 from open_postal_codes.pages import main, package_pages_site
 from open_postal_codes.post_code import PostCodeRecord, write_public_post_code_files
+from tools.repo_checks.pages_contract_check import validate_public_records
 
 pytestmark = pytest.mark.unit
 
@@ -71,7 +72,10 @@ def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path
 
     gzip_path = output_root / "api/v1/de/post_code.csv.gz"
     with gzip.open(gzip_path, "rt", encoding="utf-8") as stream:
-        assert stream.read().startswith("code,city,country,county,time_zone")
+        assert stream.read().startswith(
+            "code,city,country,county,time_zone,"
+            "is_primary_location,location_rank,postal_code_rank,source,evidence_count"
+        )
 
 
 def test_package_pages_site_keeps_generated_files_outside_repository_data_root(
@@ -102,3 +106,96 @@ def test_pages_cli_packages_site(tmp_path: Path, capsys: pytest.CaptureFixture[s
 
     assert "Packaged 3 API files" in capsys.readouterr().out
     assert (output_root / "api/v1/index.json").exists()
+
+
+def test_pages_contract_check_accepts_valid_ranked_records(tmp_path: Path) -> None:
+    assert validate_public_records(valid_contract_rows(), tmp_path / "post_code.csv") == []
+
+
+def test_pages_contract_check_rejects_multiple_primary_locations_for_one_post_code(
+    tmp_path: Path,
+) -> None:
+    rows = valid_contract_rows()
+    rows[1]["is_primary_location"] = "true"
+    rows[1]["location_rank"] = "1"
+
+    errors = validate_public_records(rows, tmp_path / "post_code.csv")
+
+    assert any("primary locations" in error for error in errors)
+
+
+def test_pages_contract_check_rejects_missing_primary_location(tmp_path: Path) -> None:
+    rows = valid_contract_rows()
+    rows[0]["is_primary_location"] = "false"
+
+    errors = validate_public_records(rows, tmp_path / "post_code.csv")
+
+    assert any("do not have a primary location" in error for error in errors)
+
+
+def test_pages_contract_check_rejects_non_contiguous_location_ranks(tmp_path: Path) -> None:
+    rows = valid_contract_rows()
+    rows[1]["location_rank"] = "3"
+
+    errors = validate_public_records(rows, tmp_path / "post_code.csv")
+
+    assert any("non-contiguous location ranks" in error for error in errors)
+
+
+def test_pages_contract_check_rejects_non_contiguous_postal_code_ranks(tmp_path: Path) -> None:
+    rows = valid_contract_rows()
+    rows[2]["postal_code_rank"] = "3"
+
+    errors = validate_public_records(rows, tmp_path / "post_code.csv")
+
+    assert any("non-contiguous postal code ranks" in error for error in errors)
+
+
+def test_pages_contract_check_rejects_obsolete_primary_field(tmp_path: Path) -> None:
+    rows = valid_contract_rows()
+    rows[0]["is" + "_primary"] = "true"
+
+    errors = validate_public_records(rows, tmp_path / "post_code.csv")
+
+    assert any("obsolete primary field" in error for error in errors)
+
+
+def valid_contract_rows() -> list[dict[str, str]]:
+    return [
+        {
+            "code": "71540",
+            "city": "Murrhardt",
+            "country": "DE",
+            "county": "Rems-Murr-Kreis",
+            "time_zone": "W. Europe Standard Time",
+            "is_primary_location": "true",
+            "location_rank": "1",
+            "postal_code_rank": "1",
+            "source": "postal_boundary",
+            "evidence_count": "4394",
+        },
+        {
+            "code": "71540",
+            "city": "Fichtenberg",
+            "country": "DE",
+            "county": "Landkreis Schwaebisch Hall",
+            "time_zone": "W. Europe Standard Time",
+            "is_primary_location": "false",
+            "location_rank": "2",
+            "postal_code_rank": "2",
+            "source": "postal_boundary",
+            "evidence_count": "4",
+        },
+        {
+            "code": "74427",
+            "city": "Fichtenberg",
+            "country": "DE",
+            "county": "Landkreis Schwaebisch Hall",
+            "time_zone": "W. Europe Standard Time",
+            "is_primary_location": "true",
+            "location_rank": "1",
+            "postal_code_rank": "1",
+            "source": "postal_boundary",
+            "evidence_count": "1149",
+        },
+    ]
