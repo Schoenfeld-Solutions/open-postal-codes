@@ -13,4 +13,6 @@
 - no server-side state
 - reproducible file paths
 - metadata for hashes and sizes in the manifest
+- first-level administrative subdivision in the `state` field
 - row-level location-primary, rank, and evidence metadata in the post code files
+- private Business Central workbooks remain local `tmp/` artifacts and are not published

@@ -23,6 +23,22 @@ python3 -m open_postal_codes.refresh_data \
   --countries at,ch
 ```
 
+## Local Business Central Export
+
+The unofficial Business Central workbook is generated only on a maintainer workstation. It reads the public v1 CSV files, keeps only `is_primary_location=true` rows, maps the v1 `state` field into the Business Central `Bundesregion` column, and writes ignored files under `tmp/private-outputs/export/`.
+
+```bash
+python3 -m open_postal_codes.business_central --repository-root .
+```
+
+Default paths:
+
+- Template: `tmp/private-outputs/input/PLZ.xlsx`
+- Workbook: `tmp/private-outputs/export/PLZ_BusinessCentral_DACH.xlsx`
+- Guardrails: `tmp/private-outputs/export/PLZ_BusinessCentral_DACH_Guardrails.md`
+
+These files are local artifacts. They are not committed, not uploaded by Pages, and not part of the public static API contract.
+
 ## Rules
 
 - Raw `.osm.pbf` files are never committed.

@@ -18,7 +18,7 @@ Extend the v1 static post code API from Germany to D-A-CH while keeping the exis
 
 - Raw PBF downloads were already protected by `.gitignore` through `*.osm.pbf` and `*.osm.pbf.part`.
 - Local ignored `tmp/` content can affect repository language checks unless artifact directories are excluded by the check itself.
-- Switzerland needs canton-level fallback enrichment when no district-level administrative boundary is available in a source extract.
+- Switzerland needs canton-level first-level subdivision enrichment; district values remain lower-level `county` data when available.
 
 ## Decision Log
 

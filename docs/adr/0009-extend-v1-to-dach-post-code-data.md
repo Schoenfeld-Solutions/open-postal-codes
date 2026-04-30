@@ -11,7 +11,7 @@ Accepted.
 
 ## Context
 
-The v1 post code contract is stable enough to support Austria and Switzerland without changing the public field set. The existing Germany extraction logic already defines the right ranking and evidence model, but country code, post code length, Geofabrik sources, and administrative boundary enrichment must be configurable.
+The v1 post code contract is stable enough to support Austria and Switzerland on the same public paths. The existing Germany extraction logic already defines the right ranking and evidence model, but country code, post code length, Geofabrik sources, and administrative boundary enrichment must be configurable.
 
 ## Decision
 

@@ -19,6 +19,7 @@ The format follows Keep a Changelog.
 - OpenStreetMap extraction support through `osmium` and spatial enrichment through `shapely`.
 - `is_primary_location`, `location_rank`, `postal_code_rank`, `source`, and `evidence_count` metadata for post code exports.
 - D-A-CH country configuration and v1 public paths for Austria and Switzerland.
+- Local Business Central D-A-CH workbook generation from public v1 post code files.
 
 ### Changed
 
@@ -31,6 +32,7 @@ The format follows Keep a Changelog.
 - Attribution now includes Geofabrik GmbH for regional PBF source data.
 - The v1 post code schema now marks one primary location per post code and ranks post codes within each normalized place.
 - The data refresh pipeline now supports country-scoped D-A-CH outputs through `--countries`.
+- The v1 post code schema now includes `state` for Bundesland or canton enrichment.
 
 ### Removed
 
