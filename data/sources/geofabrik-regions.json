@@ -1,7 +1,14 @@
 {
-  "generated_at": "2026-04-28T21:23:50Z",
+  "generated_at": "2026-04-30T13:47:33Z",
   "source": "Geofabrik D-A-CH PBF files",
   "regions": {
+    "at/austria": {
+      "url": "https://download.geofabrik.de/europe/austria-latest.osm.pbf",
+      "content_length": 798510364,
+      "etag": "\"2f984d1c-650a3604cc946\"",
+      "last_modified": "Thu, 30 Apr 2026 01:28:05 GMT",
+      "md5": "bb0006b0164fb51509d9cecabcbc7e6d"
+    },
     "baden-wuerttemberg": {
       "url": "https://download.geofabrik.de/europe/germany/baden-wuerttemberg-latest.osm.pbf",
       "content_length": 636014733,
@@ -36,6 +43,13 @@
       "etag": "\"13f131f-65079bd6a78a7\"",
       "last_modified": "Mon, 27 Apr 2026 23:47:39 GMT",
       "md5": "4d6d4501b0535361fa839fe9452f1cd7"
+    },
+    "ch/switzerland": {
+      "url": "https://download.geofabrik.de/europe/switzerland-latest.osm.pbf",
+      "content_length": 531031619,
+      "etag": "\"1fa6e643-650a35839c45b\"",
+      "last_modified": "Thu, 30 Apr 2026 01:25:50 GMT",
+      "md5": "fd69525a32f3b3979cf3dcf78df17269"
     },
     "hamburg": {
       "url": "https://download.geofabrik.de/europe/germany/hamburg-latest.osm.pbf",
