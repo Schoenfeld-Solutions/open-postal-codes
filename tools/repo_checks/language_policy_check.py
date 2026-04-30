@@ -12,6 +12,7 @@ IGNORED_DIRECTORIES = {
     ".mypy_cache",
     ".pytest_cache",
     ".ruff_cache",
+    ".venv",
     "__pycache__",
     "build",
     "dist",

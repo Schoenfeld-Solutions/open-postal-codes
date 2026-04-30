@@ -17,10 +17,10 @@ Open Postal Codes publishes a D-A-CH static file API for post code records. The 
 The CSV file uses this header:
 
 ```text
-code,city,country,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
+code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
 ```
 
-JSON uses the title `post_code` and a `records` array. XML uses a `post_code` root element with `record` children. `is_primary_location` marks the highest-ranked location for a post code. `location_rank` sorts locations within the same post code, while `postal_code_rank` sorts post codes within the same normalized city, county, and country combination. A city with many post codes can therefore have many `is_primary_location=true` rows, one per post code; use `postal_code_rank` for city-level ordering. `source` and `evidence_count` expose whether the row came from a postal-code boundary or address fallback evidence.
+JSON uses the title `post_code` and a `records` array. XML uses a `post_code` root element with `record` children. `state` is the first-level administrative subdivision: Bundesland for Germany and Austria, canton for Switzerland. `is_primary_location` marks the highest-ranked location for a post code. `location_rank` sorts locations within the same post code, while `postal_code_rank` sorts post codes within the same normalized city, county, state, and country combination. A city with many post codes can therefore have many `is_primary_location=true` rows, one per post code; use `postal_code_rank` for city-level ordering. `source` and `evidence_count` expose whether the row came from a postal-code boundary or address fallback evidence.
 
 ## Static File API
 
@@ -91,6 +91,14 @@ python3 -m open_postal_codes.refresh_data \
 ```
 
 Raw PBF files are never committed. Regional normalized CSV outputs under `data/regional/v1/<country>/post_code/` are committed only by refresh pull requests.
+
+Create the local, private Business Central workbook from the public v1 files and the ignored template under `tmp/private-outputs/input/`:
+
+```bash
+python3 -m open_postal_codes.business_central --repository-root .
+```
+
+The workbook is written to `tmp/private-outputs/export/PLZ_BusinessCentral_DACH.xlsx`. It is intentionally ignored, not published through GitHub Pages, and not part of the repository data contract.
 
 ## Attribution and License
 

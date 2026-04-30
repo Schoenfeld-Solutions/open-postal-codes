@@ -18,6 +18,7 @@ POST_CODE_FIELDS = (
     "code",
     "city",
     "country",
+    "state",
     "county",
     "time_zone",
     "is_primary_location",
@@ -47,6 +48,7 @@ class PostCodeRecord:
     code: str
     city: str
     country: str = DEFAULT_COUNTRY
+    state: str = ""
     county: str = ""
     time_zone: str = DEFAULT_TIME_ZONE
     is_primary_location: bool | str = False
@@ -60,6 +62,7 @@ class PostCodeRecord:
         country_config = get_country_config(normalized_country)
         normalized_code = normalize_post_code(self.code, country=country_config.code)
         normalized_city = normalize_text(self.city)
+        normalized_state = normalize_text(self.state)
         normalized_county = normalize_text(self.county)
         normalized_time_zone = normalize_text(self.time_zone)
         normalized_is_primary_location = normalize_bool(self.is_primary_location)
@@ -86,6 +89,7 @@ class PostCodeRecord:
         object.__setattr__(self, "code", normalized_code)
         object.__setattr__(self, "city", normalized_city)
         object.__setattr__(self, "country", country_config.code)
+        object.__setattr__(self, "state", normalized_state)
         object.__setattr__(self, "county", normalized_county)
         object.__setattr__(self, "time_zone", normalized_time_zone)
         object.__setattr__(self, "is_primary_location", normalized_is_primary_location)
@@ -99,6 +103,7 @@ class PostCodeRecord:
             "code": self.code,
             "city": self.city,
             "country": self.country,
+            "state": self.state,
             "county": self.county,
             "time_zone": self.time_zone,
             "is_primary_location": self.is_primary_location,
@@ -113,6 +118,7 @@ class PostCodeRecord:
             "code": self.code,
             "city": self.city,
             "country": self.country,
+            "state": self.state,
             "county": self.county,
             "time_zone": self.time_zone,
             "is_primary_location": format_bool(self.is_primary_location),
@@ -122,10 +128,10 @@ class PostCodeRecord:
             "evidence_count": str(self.evidence_count),
         }
 
-    def identity_key(self) -> tuple[str, str, str, str, str]:
+    def identity_key(self) -> tuple[str, str, str, str, str, str]:
         return _identity_key(self)
 
-    def place_key(self) -> tuple[str, str, str]:
+    def place_key(self) -> tuple[str, str, str, str]:
         return _place_key(self)
 
     def location_group_key(self) -> tuple[str, str]:
@@ -142,6 +148,7 @@ class PostCodeRecord:
             code=self.code,
             city=self.city,
             country=self.country,
+            state=self.state,
             county=self.county,
             time_zone=self.time_zone,
             is_primary_location=is_primary_location,
@@ -259,7 +266,7 @@ def parse_boundary_cities(
 def dedupe_records(records: Iterable[PostCodeRecord]) -> tuple[PostCodeRecord, ...]:
     """Return deduplicated records with deterministic location and post-code rankings."""
 
-    best_by_identity: dict[tuple[str, str, str, str, str], PostCodeRecord] = {}
+    best_by_identity: dict[tuple[str, str, str, str, str, str], PostCodeRecord] = {}
     for record in records:
         current = best_by_identity.get(record.identity_key())
         if current is None:
@@ -286,8 +293,8 @@ def dedupe_records(records: Iterable[PostCodeRecord]) -> tuple[PostCodeRecord, .
                 )
             )
 
-    postal_code_ranks: dict[tuple[str, str, str, str, str], int] = {}
-    by_place: dict[tuple[str, str, str], list[PostCodeRecord]] = {}
+    postal_code_ranks: dict[tuple[str, str, str, str, str, str], int] = {}
+    by_place: dict[tuple[str, str, str, str], list[PostCodeRecord]] = {}
     for record in location_ranked_records:
         by_place.setdefault(record.place_key(), []).append(record)
 
@@ -321,6 +328,7 @@ def merge_duplicate_records(left: PostCodeRecord, right: PostCodeRecord) -> Post
         code=left.code,
         city=left.city,
         country=left.country,
+        state=left.state,
         county=left.county,
         time_zone=left.time_zone,
         is_primary_location=False,
@@ -331,7 +339,7 @@ def merge_duplicate_records(left: PostCodeRecord, right: PostCodeRecord) -> Post
     )
 
 
-def location_rank_sort_key(record: PostCodeRecord) -> tuple[int, int, str, str]:
+def location_rank_sort_key(record: PostCodeRecord) -> tuple[int, int, str, str, str]:
     """Sort location rows inside one post code by quality."""
 
     evidence_count = normalize_non_negative_int(record.evidence_count, "evidence_count")
@@ -340,6 +348,7 @@ def location_rank_sort_key(record: PostCodeRecord) -> tuple[int, int, str, str]:
         -evidence_count,
         -SOURCE_PRIORITY[source],
         record.city.casefold(),
+        record.state.casefold(),
         record.county.casefold(),
     )
 
@@ -352,12 +361,24 @@ def postal_code_rank_sort_key(record: PostCodeRecord) -> tuple[int, int, str]:
     return (-evidence_count, -SOURCE_PRIORITY[source], record.code)
 
 
-def _identity_key(record: PostCodeRecord) -> tuple[str, str, str, str, str]:
-    return (record.code, record.city, record.country, record.county, record.time_zone)
+def _identity_key(record: PostCodeRecord) -> tuple[str, str, str, str, str, str]:
+    return (
+        record.code,
+        record.city,
+        record.country,
+        record.state,
+        record.county,
+        record.time_zone,
+    )
 
 
-def _place_key(record: PostCodeRecord) -> tuple[str, str, str]:
-    return (record.country, record.county.casefold(), record.city.casefold())
+def _place_key(record: PostCodeRecord) -> tuple[str, str, str, str]:
+    return (
+        record.country,
+        record.state.casefold(),
+        record.county.casefold(),
+        record.city.casefold(),
+    )
 
 
 def _location_group_key(record: PostCodeRecord) -> tuple[str, str]:

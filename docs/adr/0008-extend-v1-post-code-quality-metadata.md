@@ -15,7 +15,7 @@ Post code areas can cover multiple places, and one place can appear with more th
 
 ## Decision
 
-The repository replaces the current v1 `post_code` schema in place with `is_primary_location`, `location_rank`, `postal_code_rank`, `source`, and `evidence_count`. `is_primary_location` is unique per `(country, code)` post code. `postal_code_rank` ranks post codes within each normalized `(country, county, city)` place without claiming that one post code is an official primary code for that place.
+The repository replaces the current v1 `post_code` schema in place with `is_primary_location`, `location_rank`, `postal_code_rank`, `source`, and `evidence_count`. `is_primary_location` is unique per `(country, code)` post code. `postal_code_rank` ranks post codes within each normalized place without claiming that one post code is an official primary code for that place.
 
 ## Rationale
 

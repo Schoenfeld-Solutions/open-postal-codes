@@ -48,6 +48,7 @@ def test_post_code_record_normalizes_and_validates_public_fields() -> None:
     record = PostCodeRecord(
         code=" 28195 ",
         city=" Bremen ",
+        state=" Bremen ",
         county=" Bremen ",
         is_primary_location="true",
         location_rank="1",
@@ -60,6 +61,7 @@ def test_post_code_record_normalizes_and_validates_public_fields() -> None:
         "code": "28195",
         "city": "Bremen",
         "country": "DE",
+        "state": "Bremen",
         "county": "Bremen",
         "time_zone": "W. Europe Standard Time",
         "is_primary_location": True,
@@ -240,11 +242,16 @@ def assert_ranking_invariants(records: Iterable[PostCodeRecord]) -> None:
     rows = tuple(records)
     primary_by_post_code: Counter[tuple[str, str]] = Counter()
     location_ranks: dict[tuple[str, str], list[int]] = {}
-    postal_code_ranks: dict[tuple[str, str, str], list[int]] = {}
+    postal_code_ranks: dict[tuple[str, str, str, str], list[int]] = {}
 
     for record in rows:
         post_code_key = (record.country, record.code)
-        place_key = (record.country, record.county.casefold(), record.city.casefold())
+        place_key = (
+            record.country,
+            record.state.casefold(),
+            record.county.casefold(),
+            record.city.casefold(),
+        )
         is_primary_location = normalize_bool(record.is_primary_location)
         location_rank = normalize_non_negative_int(record.location_rank, "location_rank")
         postal_code_rank = normalize_non_negative_int(

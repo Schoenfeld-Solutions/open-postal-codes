@@ -19,7 +19,7 @@ The repository uses regional Geofabrik Germany PBF files as the Germany data-ref
 
 ## Rationale
 
-Regional refreshes avoid routine full-country downloads, keep failures localized, and let unchanged regions be skipped through tracked source metadata. `osmium` provides streaming PBF processing and `shapely` provides the spatial operations required for country filtering and county enrichment.
+Regional refreshes avoid routine full-country downloads, keep failures localized, and let unchanged regions be skipped through tracked source metadata. `osmium` provides streaming PBF processing and `shapely` provides the spatial operations required for country filtering and administrative-boundary enrichment.
 
 ## Consequences
 

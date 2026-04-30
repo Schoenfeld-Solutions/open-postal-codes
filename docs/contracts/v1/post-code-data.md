@@ -17,7 +17,7 @@ Files:
 CSV header:
 
 ```text
-code,city,country,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
+code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
 ```
 
 Record fields:
@@ -25,13 +25,14 @@ Record fields:
 - `code`: country-specific post code; `DE` uses five digits, `AT` and `CH` use four digits.
 - `city`: city or place label associated with the post code.
 - `country`: ISO 3166-1 alpha-2 country code, one of `DE`, `AT`, or `CH`.
-- `county`: country-specific administrative area name when spatial enrichment can determine it, otherwise empty.
+- `state`: first-level administrative subdivision when spatial enrichment can determine it, otherwise empty. This is a Bundesland for `DE` and `AT`, and a canton for `CH`.
+- `county`: lower administrative area name when spatial enrichment can determine it, otherwise empty. Swiss canton values belong in `state`, not in `county`.
 - `time_zone`: country-specific Windows time zone identifier; D-A-CH records use `W. Europe Standard Time`.
 - `is_primary_location`: boolean marker for the highest-ranked location row within the same `(country, code)` post code.
-- `location_rank`: one-based rank of this `(city, county)` row within the same `(country, code)` post code.
-- `postal_code_rank`: one-based rank of this `code` within the same normalized `(country, county, city)` place.
+- `location_rank`: one-based rank of this `(city, state, county)` row within the same `(country, code)` post code.
+- `postal_code_rank`: one-based rank of this `code` within the same normalized `(country, state, county, city)` place.
 - `source`: either `postal_boundary` or `address_fallback`.
-- `evidence_count`: count of accepted OpenStreetMap address objects supporting the same `(code, city, county)` row.
+- `evidence_count`: count of accepted OpenStreetMap address objects supporting the same `(code, city, state, county)` row.
 
 ## Format Rules
 
@@ -48,4 +49,4 @@ Record fields:
 
 ## Compatibility
 
-ADR 0008 records the intentional in-place v1 schema extension. Future header, field-name, title, or XML-root changes remain breaking changes and require a new contract version or an explicit ADR.
+ADRs 0008 and 0010 record intentional in-place v1 schema extensions. Future header, field-name, title, or XML-root changes remain breaking changes and require a new contract version or an explicit ADR.
