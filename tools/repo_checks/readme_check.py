@@ -16,6 +16,8 @@ REQUIRED_SECTIONS = (
 )
 
 REQUIRED_SNIPPETS = (
+    "data/public/v1/at/post_code.csv",
+    "data/public/v1/ch/post_code.csv",
     "data/public/v1/de/post_code.csv",
     "data/public/v1/de/post_code.json",
     "data/public/v1/de/post_code.xml",
@@ -31,6 +33,8 @@ REQUIRED_SNIPPETS = (
     "postal_code_rank",
     "evidence_count",
     "/open-postal-codes/api/v1/index.json",
+    "/open-postal-codes/api/v1/at/post_code.csv",
+    "/open-postal-codes/api/v1/ch/post_code.csv",
     "/open-postal-codes/api/v1/de/post_code.csv",
     "ODbL",
     "OpenStreetMap",

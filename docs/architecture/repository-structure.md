@@ -4,7 +4,7 @@
 
 - `src/open_postal_codes/`: Python modules for local processing and packaging.
 - `data/public/v1/`: versioned data source for the static file API.
-- `data/regional/v1/de/post_code/`: normalized regional post code CSV outputs created by refresh pull requests.
+- `data/regional/v1/<country>/post_code/`: normalized source post code CSV outputs created by refresh pull requests.
 - `data/sources/`: source metadata used to skip unchanged Geofabrik regional files.
 - `site/`: static HTML surface for GitHub Pages.
 - `docs/`: ADRs, contracts, architecture, ops, security, strategy, and plans.

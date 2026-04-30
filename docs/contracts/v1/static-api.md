@@ -9,6 +9,12 @@
 ## Files
 
 - `index.json`
+- `at/post_code.csv`
+- `at/post_code.json`
+- `at/post_code.xml`
+- `ch/post_code.csv`
+- `ch/post_code.json`
+- `ch/post_code.xml`
 - `de/post_code.csv`
 - `de/post_code.json`
 - `de/post_code.xml`

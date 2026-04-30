@@ -1,4 +1,4 @@
-"""Refresh public German post code files from Geofabrik regional PBFs."""
+"""Refresh public D-A-CH post code files from Geofabrik PBFs."""
 
 from __future__ import annotations
 
@@ -15,6 +15,13 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from open_postal_codes.countries import (
+    COUNTRY_CONFIGS,
+    CountryConfig,
+    GeofabrikRegion,
+    default_geofabrik_regions,
+    get_country_config,
+)
 from open_postal_codes.osm_extract import ExtractionError, extract_region_to_csv
 from open_postal_codes.post_code import (
     PostCodeRecord,
@@ -23,46 +30,11 @@ from open_postal_codes.post_code import (
     write_public_post_code_files,
 )
 
-GEOFABRIK_GERMANY_BASE_URL = "https://download.geofabrik.de/europe/germany"
-REGIONAL_SOURCE_NAMES = (
-    "baden-wuerttemberg",
-    "bayern",
-    "berlin",
-    "brandenburg",
-    "bremen",
-    "hamburg",
-    "hessen",
-    "mecklenburg-vorpommern",
-    "niedersachsen",
-    "nordrhein-westfalen",
-    "rheinland-pfalz",
-    "saarland",
-    "sachsen",
-    "sachsen-anhalt",
-    "schleswig-holstein",
-    "thueringen",
-)
 MD5_PATTERN = re.compile(r"\b(?P<md5>[0-9a-fA-F]{32})\b")
 
 
 class RefreshError(RuntimeError):
     """Raised when a data refresh cannot safely complete."""
-
-
-@dataclass(frozen=True)
-class GeofabrikRegion:
-    """One Geofabrik regional Germany source."""
-
-    name: str
-    url: str
-
-    @property
-    def md5_url(self) -> str:
-        return f"{self.url}.md5"
-
-    @property
-    def output_name(self) -> str:
-        return f"{self.name}.csv"
 
 
 @dataclass(frozen=True)
@@ -86,6 +58,15 @@ class RegionRefreshResult:
     region: str
     status: str
     records: int
+    country: str = "de"
+
+
+@dataclass(frozen=True)
+class CountryRefreshResult:
+    """Summary for one public country output."""
+
+    country: str
+    records: int
 
 
 @dataclass(frozen=True)
@@ -94,16 +75,21 @@ class RefreshResult:
 
     regions: tuple[RegionRefreshResult, ...]
     public_records: int
+    countries: tuple[CountryRefreshResult, ...] = ()
 
 
 def default_regions() -> tuple[GeofabrikRegion, ...]:
-    return tuple(
-        GeofabrikRegion(
-            name=name,
-            url=f"{GEOFABRIK_GERMANY_BASE_URL}/{name}-latest.osm.pbf",
-        )
-        for name in REGIONAL_SOURCE_NAMES
-    )
+    """Return the Germany regional source set used by scoped smoke runs."""
+
+    return get_country_config("de").geofabrik_regions
+
+
+def selected_regions_for_countries(
+    countries: tuple[CountryConfig, ...] | None,
+) -> tuple[GeofabrikRegion, ...]:
+    """Return source files for selected countries or all D-A-CH countries."""
+
+    return default_geofabrik_regions(countries)
 
 
 def refresh_data(
@@ -113,24 +99,34 @@ def refresh_data(
     region_output_root: Path,
     public_output_root: Path,
     regions: tuple[GeofabrikRegion, ...] | None = None,
+    countries: tuple[CountryConfig, ...] | None = None,
 ) -> RefreshResult:
-    """Refresh changed regional outputs and rebuild public post code files."""
+    """Refresh changed source outputs and rebuild public post code files."""
 
-    selected_regions = regions or default_regions()
+    if regions is not None and countries is not None:
+        country_slugs = {country.slug for country in countries}
+        if country_slugs != {"de"}:
+            raise RefreshError("--regions can only be combined with --countries de")
+
+    selected_regions = regions or selected_regions_for_countries(countries)
+    selected_countries = countries_for_regions(selected_regions)
     previous_metadata = load_metadata(metadata_path)
     region_results: list[RegionRefreshResult] = []
+    country_results: list[CountryRefreshResult] = []
     new_metadata: dict[str, RemoteMetadata] = dict(previous_metadata)
     failures: list[str] = []
 
     download_root.mkdir(parents=True, exist_ok=True)
-    region_output_root.mkdir(parents=True, exist_ok=True)
+    for country in selected_countries:
+        country_region_output_root(region_output_root, country).mkdir(parents=True, exist_ok=True)
 
     for region in selected_regions:
+        country_config = get_country_config(region.country)
         try:
             metadata = fetch_remote_metadata(region)
-            new_metadata[region.name] = metadata
-            output_path = region_output_root / region.output_name
-            previous_region_metadata = previous_metadata.get(region.name)
+            new_metadata[region.metadata_key] = metadata
+            output_path = region_output_path(region_output_root, region)
+            previous_region_metadata = previous_metadata.get(region.metadata_key)
 
             if (
                 output_path.exists()
@@ -139,13 +135,22 @@ def refresh_data(
             ):
                 record_count = len(read_post_code_csv(output_path))
                 region_results.append(
-                    RegionRefreshResult(region=region.name, status="skipped", records=record_count)
+                    RegionRefreshResult(
+                        region=region.name,
+                        status="skipped",
+                        records=record_count,
+                        country=country_config.slug,
+                    )
                 )
                 continue
 
-            pbf_path = download_root / f"{region.name}.osm.pbf"
+            pbf_path = download_root / country_config.slug / f"{region.name}.osm.pbf"
             download_region(region=region, metadata=metadata, target_path=pbf_path)
-            extraction = extract_region_to_csv(pbf_path, output_path)
+            extraction = extract_region_to_csv(
+                pbf_path,
+                output_path,
+                country=country_config.code,
+            )
             if not extraction.records:
                 raise RefreshError(f"{region.name} produced zero valid post code records")
             region_results.append(
@@ -153,33 +158,79 @@ def refresh_data(
                     region=region.name,
                     status="refreshed",
                     records=len(extraction.records),
+                    country=country_config.slug,
                 )
             )
         except (ExtractionError, RefreshError) as error:
-            failures.append(f"{region.name}: {error}")
+            failures.append(f"{country_config.slug}/{region.name}: {error}")
             region_results.append(
-                RegionRefreshResult(region=region.name, status="failed", records=0)
+                RegionRefreshResult(
+                    region=region.name,
+                    status="failed",
+                    records=0,
+                    country=country_config.slug,
+                )
             )
 
-    all_records = merge_region_outputs(region_output_root)
-    if not all_records:
-        if failures:
-            joined_failures = "\n".join(failures)
+    public_count = 0
+    for country in selected_countries:
+        all_records = merge_region_outputs(country_region_output_root(region_output_root, country))
+        if not all_records:
+            if failures:
+                joined_failures = "\n".join(failures)
+                raise RefreshError(
+                    f"{country.slug} regional outputs produced zero public post code records "
+                    "after failed sources:\n"
+                    f"{joined_failures}"
+                )
             raise RefreshError(
-                "regional outputs produced zero public post code records after failed regions:\n"
-                f"{joined_failures}"
+                f"{country.slug} regional outputs produced zero public post code records"
             )
-        raise RefreshError("regional outputs produced zero public post code records")
-
-    public_count = write_public_post_code_files(all_records, public_output_root)
+        country_count = write_public_post_code_files(
+            all_records,
+            public_country_output_root(public_output_root, country),
+        )
+        country_results.append(CountryRefreshResult(country=country.slug, records=country_count))
+        public_count += country_count
 
     if failures:
         joined_failures = "\n".join(failures)
-        raise RefreshError(f"data refresh completed with failed regions:\n{joined_failures}")
+        raise RefreshError(f"data refresh completed with failed sources:\n{joined_failures}")
 
     write_metadata(metadata_path, new_metadata)
 
-    return RefreshResult(regions=tuple(region_results), public_records=public_count)
+    return RefreshResult(
+        regions=tuple(region_results),
+        public_records=public_count,
+        countries=tuple(country_results),
+    )
+
+
+def countries_for_regions(regions: tuple[GeofabrikRegion, ...]) -> tuple[CountryConfig, ...]:
+    """Return country configs represented by selected source files."""
+
+    countries_by_slug = {country.slug: country for country in COUNTRY_CONFIGS}
+    selected_slugs = {get_country_config(region.country).slug for region in regions}
+    return tuple(country for slug, country in countries_by_slug.items() if slug in selected_slugs)
+
+
+def country_region_output_root(root: Path, country: CountryConfig) -> Path:
+    """Return the normalized regional CSV output root for one country."""
+
+    return root / country.slug / "post_code"
+
+
+def region_output_path(root: Path, region: GeofabrikRegion) -> Path:
+    """Return the normalized CSV output path for one source file."""
+
+    country_config = get_country_config(region.country)
+    return country_region_output_root(root, country_config) / region.output_name
+
+
+def public_country_output_root(root: Path, country: CountryConfig) -> Path:
+    """Return the public API source root for one country."""
+
+    return root / country.slug
 
 
 def fetch_remote_metadata(region: GeofabrikRegion) -> RemoteMetadata:
@@ -231,6 +282,7 @@ def download_region(
     temporary_path = target_path.with_suffix(f"{target_path.suffix}.part")
     digest = hashlib.md5(usedforsecurity=False)
     byte_count = 0
+    target_path.parent.mkdir(parents=True, exist_ok=True)
 
     try:
         with (
@@ -257,7 +309,6 @@ def download_region(
         temporary_path.unlink(missing_ok=True)
         raise RefreshError(f"{region.url} checksum mismatch")
 
-    target_path.parent.mkdir(parents=True, exist_ok=True)
     shutil.move(str(temporary_path), target_path)
 
 
@@ -304,7 +355,7 @@ def load_metadata(path: Path) -> dict[str, RemoteMetadata]:
 def write_metadata(path: Path, metadata: dict[str, RemoteMetadata]) -> None:
     payload: dict[str, Any] = {
         "generated_at": datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-        "source": "Geofabrik regional Germany PBF files",
+        "source": "Geofabrik D-A-CH PBF files",
         "regions": {
             region: asdict(region_metadata)
             for region, region_metadata in sorted(metadata.items(), key=lambda item: item[0])
@@ -318,10 +369,21 @@ def parse_regions(value: str | None) -> tuple[GeofabrikRegion, ...] | None:
     if not value:
         return None
     requested = {name.strip() for name in value.split(",") if name.strip()}
-    unknown = requested.difference(REGIONAL_SOURCE_NAMES)
+    default_region_names = {region.name for region in default_regions()}
+    unknown = requested.difference(default_region_names)
     if unknown:
         raise RefreshError(f"unknown Geofabrik region names: {', '.join(sorted(unknown))}")
     return tuple(region for region in default_regions() if region.name in requested)
+
+
+def parse_countries(value: str | None) -> tuple[CountryConfig, ...] | None:
+    if not value:
+        return None
+    requested = tuple(country.strip() for country in value.split(",") if country.strip())
+    try:
+        return tuple(get_country_config(country) for country in requested)
+    except ValueError as error:
+        raise RefreshError(str(error)) from error
 
 
 def parse_arguments(arguments: list[str] | None = None) -> argparse.Namespace:
@@ -335,16 +397,20 @@ def parse_arguments(arguments: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--region-output-root",
         type=Path,
-        default=Path("data/regional/v1/de/post_code"),
+        default=Path("data/regional/v1"),
     )
     parser.add_argument(
         "--public-output-root",
         type=Path,
-        default=Path("data/public/v1/de"),
+        default=Path("data/public/v1"),
+    )
+    parser.add_argument(
+        "--countries",
+        help="Optional comma-separated country slugs or ISO codes. Defaults to de,at,ch.",
     )
     parser.add_argument(
         "--regions",
-        help="Optional comma-separated Geofabrik region names for manual smoke runs.",
+        help="Optional comma-separated Germany Geofabrik region names for manual smoke runs.",
     )
     return parser.parse_args(arguments)
 
@@ -352,6 +418,9 @@ def parse_arguments(arguments: list[str] | None = None) -> argparse.Namespace:
 def main(arguments: list[str] | None = None) -> int:
     parsed_arguments = parse_arguments(arguments)
     regions = parse_regions(parsed_arguments.regions)
+    countries = parse_countries(parsed_arguments.countries)
+    if regions is not None and countries is None:
+        countries = (get_country_config("de"),)
     try:
         result = refresh_data(
             download_root=parsed_arguments.download_root,
@@ -359,6 +428,7 @@ def main(arguments: list[str] | None = None) -> int:
             region_output_root=parsed_arguments.region_output_root,
             public_output_root=parsed_arguments.public_output_root,
             regions=regions,
+            countries=countries,
         )
     except RefreshError as error:
         print(f"Data refresh failed: {error}", file=sys.stderr)
@@ -368,8 +438,9 @@ def main(arguments: list[str] | None = None) -> int:
     skipped = sum(1 for region in result.regions if region.status == "skipped")
     print(
         "Data refresh completed: "
-        f"{refreshed} refreshed regions, "
-        f"{skipped} skipped regions, "
+        f"{refreshed} refreshed sources, "
+        f"{skipped} skipped sources, "
+        f"{len(result.countries)} country outputs, "
         f"{result.public_records} public records."
     )
     return 0

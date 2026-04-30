@@ -12,6 +12,7 @@
 6. `0006-defer-osm-extraction-dependencies.md`
 7. `0007-extract-germany-post-codes-from-geofabrik-regions.md`
 8. `0008-extend-v1-post-code-quality-metadata.md`
+9. `0009-extend-v1-to-dach-post-code-data.md`
 
 ## Rules
 

@@ -25,6 +25,8 @@ def read_json(path: Path) -> dict[str, Any]:
 
 
 def write_public_files(repository_root: Path) -> None:
+    write_public_post_code_files([], repository_root / "data/public/v1/at")
+    write_public_post_code_files([], repository_root / "data/public/v1/ch")
     write_public_post_code_files(
         [
             PostCodeRecord(code="28195", city="Bremen", county="Bremen"),
@@ -56,11 +58,23 @@ def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path
     assert (output_root / "index.html").exists()
     assert (output_root / "404.html").exists()
     assert paths == {
+        "at/post_code.csv",
+        "at/post_code.json",
+        "at/post_code.xml",
+        "ch/post_code.csv",
+        "ch/post_code.json",
+        "ch/post_code.xml",
         "de/post_code.csv",
         "de/post_code.json",
         "de/post_code.xml",
     }
     assert media_types == {
+        "at/post_code.csv": "text/csv; charset=utf-8",
+        "at/post_code.json": "application/json; charset=utf-8",
+        "at/post_code.xml": "application/xml; charset=utf-8",
+        "ch/post_code.csv": "text/csv; charset=utf-8",
+        "ch/post_code.json": "application/json; charset=utf-8",
+        "ch/post_code.xml": "application/xml; charset=utf-8",
         "de/post_code.csv": "text/csv; charset=utf-8",
         "de/post_code.json": "application/json; charset=utf-8",
         "de/post_code.xml": "application/xml; charset=utf-8",
@@ -68,7 +82,17 @@ def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path
     assert manifest["generated_at"] == "2026-04-28T00:00:00Z"
     assert manifest["base_path"] == "/open-postal-codes/api/v1/"
     assert "Geofabrik GmbH" in manifest["attribution"]
-    assert {entry["records"] for entry in manifest["files"]} == {2}
+    assert {entry["path"]: entry["records"] for entry in manifest["files"]} == {
+        "at/post_code.csv": 0,
+        "at/post_code.json": 0,
+        "at/post_code.xml": 0,
+        "ch/post_code.csv": 0,
+        "ch/post_code.json": 0,
+        "ch/post_code.xml": 0,
+        "de/post_code.csv": 2,
+        "de/post_code.json": 2,
+        "de/post_code.xml": 2,
+    }
 
     gzip_path = output_root / "api/v1/de/post_code.csv.gz"
     with gzip.open(gzip_path, "rt", encoding="utf-8") as stream:
@@ -104,7 +128,7 @@ def test_pages_cli_packages_site(tmp_path: Path, capsys: pytest.CaptureFixture[s
 
     assert main(["--repository-root", str(repository_root), "--output-root", str(output_root)]) == 0
 
-    assert "Packaged 3 API files" in capsys.readouterr().out
+    assert "Packaged 9 API files" in capsys.readouterr().out
     assert (output_root / "api/v1/index.json").exists()
 
 

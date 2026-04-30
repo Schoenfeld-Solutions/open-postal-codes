@@ -1,12 +1,18 @@
 # Post Code Data Contract v1
 
-## Germany: Post Code Records
+## D-A-CH: Post Code Records
 
 Files:
 
 - `data/public/v1/de/post_code.csv`
 - `data/public/v1/de/post_code.json`
 - `data/public/v1/de/post_code.xml`
+- `data/public/v1/at/post_code.csv`
+- `data/public/v1/at/post_code.json`
+- `data/public/v1/at/post_code.xml`
+- `data/public/v1/ch/post_code.csv`
+- `data/public/v1/ch/post_code.json`
+- `data/public/v1/ch/post_code.xml`
 
 CSV header:
 
@@ -16,11 +22,11 @@ code,city,country,county,time_zone,is_primary_location,location_rank,postal_code
 
 Record fields:
 
-- `code`: five-digit German post code.
+- `code`: country-specific post code; `DE` uses five digits, `AT` and `CH` use four digits.
 - `city`: city or place label associated with the post code.
-- `country`: ISO 3166-1 alpha-2 country code, always `DE`.
-- `county`: German county name when spatial enrichment can determine it, otherwise empty.
-- `time_zone`: always `W. Europe Standard Time`.
+- `country`: ISO 3166-1 alpha-2 country code, one of `DE`, `AT`, or `CH`.
+- `county`: country-specific administrative area name when spatial enrichment can determine it, otherwise empty.
+- `time_zone`: country-specific Windows time zone identifier; D-A-CH records use `W. Europe Standard Time`.
 - `is_primary_location`: boolean marker for the highest-ranked location row within the same `(country, code)` post code.
 - `location_rank`: one-based rank of this `(city, county)` row within the same `(country, code)` post code.
 - `postal_code_rank`: one-based rank of this `code` within the same normalized `(country, county, city)` place.

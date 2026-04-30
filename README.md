@@ -1,12 +1,18 @@
 # Open Postal Codes
 
-Open Postal Codes publishes a Germany-only static file API for post code records. The repository is maintained as a Python-first data and publication project: extraction and packaging code lives under `src/open_postal_codes/`, published data lives under `data/public/v1/`, and GitHub Pages serves the static file API.
+Open Postal Codes publishes a D-A-CH static file API for post code records. The repository is maintained as a Python-first data and publication project: extraction and packaging code lives under `src/open_postal_codes/`, published data lives under `data/public/v1/`, and GitHub Pages serves the static file API.
 
 ## Datasets
 
 - `data/public/v1/de/post_code.csv`: German post code records as CSV.
 - `data/public/v1/de/post_code.json`: German post code records as JSON.
 - `data/public/v1/de/post_code.xml`: German post code records as XML.
+- `data/public/v1/at/post_code.csv`: Austrian post code records as CSV.
+- `data/public/v1/at/post_code.json`: Austrian post code records as JSON.
+- `data/public/v1/at/post_code.xml`: Austrian post code records as XML.
+- `data/public/v1/ch/post_code.csv`: Swiss post code records as CSV.
+- `data/public/v1/ch/post_code.json`: Swiss post code records as JSON.
+- `data/public/v1/ch/post_code.xml`: Swiss post code records as XML.
 
 The CSV file uses this header:
 
@@ -24,6 +30,12 @@ GitHub Pages publishes the data at stable paths:
 - `/open-postal-codes/api/v1/de/post_code.csv`
 - `/open-postal-codes/api/v1/de/post_code.json`
 - `/open-postal-codes/api/v1/de/post_code.xml`
+- `/open-postal-codes/api/v1/at/post_code.csv`
+- `/open-postal-codes/api/v1/at/post_code.json`
+- `/open-postal-codes/api/v1/at/post_code.xml`
+- `/open-postal-codes/api/v1/ch/post_code.csv`
+- `/open-postal-codes/api/v1/ch/post_code.json`
+- `/open-postal-codes/api/v1/ch/post_code.xml`
 
 The Pages artifact also creates `.gz` files and metadata with hashes, file sizes, media types, and record counts. Generated downloads are not versioned in the repository.
 
@@ -59,17 +71,26 @@ python3 -m open_postal_codes.pages --output-root out
 
 ## Data Maintenance
 
-The scheduled data-refresh workflow downloads regional Germany PBF files from Geofabrik into runner-local temporary storage, extracts post code records with Python, rebuilds public CSV/JSON/XML files, and opens a pull request only when tracked files change.
+The scheduled data-refresh workflow downloads D-A-CH PBF files from Geofabrik into runner-local temporary storage, extracts post code records with Python, rebuilds public CSV/JSON/XML files, and opens a pull request only when tracked files change.
 
 Manual scoped smoke run:
 
 ```bash
 python3 -m open_postal_codes.refresh_data \
   --download-root /tmp/open-postal-codes-pbf \
+  --countries de \
   --regions bremen
 ```
 
-Raw PBF files are never committed. Regional normalized CSV outputs under `data/regional/v1/de/post_code/` are committed only by refresh pull requests.
+Refresh only Austria and Switzerland:
+
+```bash
+python3 -m open_postal_codes.refresh_data \
+  --download-root /tmp/open-postal-codes-pbf \
+  --countries at,ch
+```
+
+Raw PBF files are never committed. Regional normalized CSV outputs under `data/regional/v1/<country>/post_code/` are committed only by refresh pull requests.
 
 ## Attribution and License
 
