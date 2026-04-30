@@ -25,6 +25,7 @@ dev = [
 
 [project.scripts]
 open-postal-codes-extract-osm = "open_postal_codes.osm_extract:main"
+open-postal-codes-export-business-central = "open_postal_codes.business_central:main"
 open-postal-codes-package-pages = "open_postal_codes.pages:main"
 open-postal-codes-refresh-data = "open_postal_codes.refresh_data:main"
 
