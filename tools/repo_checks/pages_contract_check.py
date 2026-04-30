@@ -113,7 +113,7 @@ def validate_public_records(
     errors: list[str] = []
     primary_counts: Counter[tuple[str, str]] = Counter()
     location_ranks: dict[tuple[str, str], list[int]] = {}
-    postal_code_ranks: dict[tuple[str, str, str], list[int]] = {}
+    postal_code_ranks: dict[tuple[str, str, str, str], list[int]] = {}
 
     for row_number, record in enumerate(records, start=2):
         if country is not None:
@@ -146,6 +146,7 @@ def validate_public_records(
         post_code_key = (record.get("country", ""), record.get("code", ""))
         place_key = (
             record.get("country", ""),
+            record.get("state", "").casefold(),
             record.get("county", "").casefold(),
             record.get("city", "").casefold(),
         )

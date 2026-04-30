@@ -119,7 +119,7 @@ COUNTRY_CONFIGS: Final = (
         post_code_description="four-digit Swiss post code",
         region_boundary_admin_levels=("4",),
         county_admin_levels=("6",),
-        county_fallback_admin_levels=("4",),
+        county_fallback_admin_levels=(),
         geofabrik_regions=(
             GeofabrikRegion(
                 name="switzerland",

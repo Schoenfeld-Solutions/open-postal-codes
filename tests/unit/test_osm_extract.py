@@ -61,6 +61,17 @@ def boundary_fixture(extra: str) -> str:
                     "ISO3166-1:alpha2": "DE",
                 },
             ),
+            nodes(5, [(0, 0), (0, 10), (10, 10), (10, 0)]),
+            closed_way(
+                105,
+                5,
+                {
+                    "boundary": "administrative",
+                    "admin_level": "4",
+                    "ISO3166-2": "DE-HB",
+                    "name": "Bremen",
+                },
+            ),
             nodes(10, [(0, 0), (0, 5), (10, 5), (10, 0)]),
             closed_way(
                 110,
@@ -95,6 +106,8 @@ def country_boundary_fixture(
     county_name: str,
     extra: str,
     county_iso_code: str | None = None,
+    state_name: str | None = None,
+    state_iso_code: str | None = None,
 ) -> str:
     county_tags = {
         "boundary": "administrative",
@@ -104,23 +117,42 @@ def country_boundary_fixture(
     if county_iso_code is not None:
         county_tags["ISO3166-2"] = county_iso_code
 
-    return "\n".join(
+    parts = [
+        nodes(1, [(0, 0), (0, 10), (10, 10), (10, 0)]),
+        closed_way(
+            100,
+            1,
+            {
+                "boundary": "administrative",
+                "admin_level": "2",
+                "ISO3166-1:alpha2": country,
+            },
+        ),
+    ]
+    if state_name is not None and state_iso_code is not None:
+        parts.extend(
+            [
+                nodes(5, [(0, 0), (0, 10), (10, 10), (10, 0)]),
+                closed_way(
+                    105,
+                    5,
+                    {
+                        "boundary": "administrative",
+                        "admin_level": "4",
+                        "ISO3166-2": state_iso_code,
+                        "name": state_name,
+                    },
+                ),
+            ]
+        )
+    parts.extend(
         [
-            nodes(1, [(0, 0), (0, 10), (10, 10), (10, 0)]),
-            closed_way(
-                100,
-                1,
-                {
-                    "boundary": "administrative",
-                    "admin_level": "2",
-                    "ISO3166-1:alpha2": country,
-                },
-            ),
             nodes(10, [(0, 0), (0, 10), (10, 10), (10, 0)]),
             closed_way(110, 10, county_tags),
             extra,
         ]
     )
+    return "\n".join(parts)
 
 
 def test_boundary_records_are_canonical_and_county_enriched(tmp_path: Path) -> None:
@@ -160,6 +192,7 @@ def test_boundary_records_are_canonical_and_county_enriched(tmp_path: Path) -> N
             "code": "28195",
             "city": "Bremen",
             "country": "DE",
+            "state": "Bremen",
             "county": "County A",
             "time_zone": "W. Europe Standard Time",
             "is_primary_location": True,
@@ -187,6 +220,7 @@ def test_regional_extract_can_use_state_boundary_when_country_boundary_is_absent
                         "boundary": "administrative",
                         "admin_level": "4",
                         "ISO3166-2": "DE-BW",
+                        "name": "Baden-Württemberg",
                     },
                 ),
                 nodes(10, [(0, 0), (0, 5), (10, 5), (10, 0)]),
@@ -223,6 +257,7 @@ def test_regional_extract_can_use_state_boundary_when_country_boundary_is_absent
             "code": "70173",
             "city": "Stuttgart",
             "country": "DE",
+            "state": "Baden-Württemberg",
             "county": "County A",
             "time_zone": "W. Europe Standard Time",
             "is_primary_location": True,
@@ -242,6 +277,8 @@ def test_austrian_boundary_records_use_country_config(tmp_path: Path) -> None:
             country="AT",
             county_admin_level="6",
             county_name="Wien",
+            state_name="Wien",
+            state_iso_code="AT-9",
             extra="\n".join(
                 [
                     nodes(30, [(1, 1), (1, 4), (4, 4), (4, 1)]),
@@ -267,6 +304,7 @@ def test_austrian_boundary_records_use_country_config(tmp_path: Path) -> None:
             "code": "1010",
             "city": "Wien",
             "country": "AT",
+            "state": "Wien",
             "county": "Wien",
             "time_zone": "W. Europe Standard Time",
             "is_primary_location": True,
@@ -278,7 +316,7 @@ def test_austrian_boundary_records_use_country_config(tmp_path: Path) -> None:
     ]
 
 
-def test_swiss_boundary_uses_canton_fallback_when_district_is_absent(tmp_path: Path) -> None:
+def test_swiss_boundary_uses_canton_state_without_county_fallback(tmp_path: Path) -> None:
     path = tmp_path / "switzerland.osm"
     write_osm(
         path,
@@ -308,8 +346,9 @@ def test_swiss_boundary_uses_canton_fallback_when_district_is_absent(tmp_path: P
     result = extract_post_codes_from_osm(path, country="CH")
 
     assert [
-        (record.code, record.city, record.country, record.county) for record in result.records
-    ] == [("8001", "Zuerich", "CH", "Kanton Zuerich")]
+        (record.code, record.city, record.country, record.state, record.county)
+        for record in result.records
+    ] == [("8001", "Zuerich", "CH", "Kanton Zuerich", "")]
 
 
 def test_austrian_address_fallback_rejects_foreign_country_tags(tmp_path: Path) -> None:
@@ -320,6 +359,8 @@ def test_austrian_address_fallback_rejects_foreign_country_tags(tmp_path: Path) 
             country="AT",
             county_admin_level="6",
             county_name="Wien",
+            state_name="Wien",
+            state_iso_code="AT-9",
             extra="\n".join(
                 [
                     tagged_node(
@@ -408,6 +449,7 @@ def test_address_fallback_requires_city_and_never_uses_generic_name(tmp_path: Pa
             "code": "33333",
             "city": "Fallback",
             "country": "DE",
+            "state": "Bremen",
             "county": "County A",
             "time_zone": "W. Europe Standard Time",
             "is_primary_location": True,

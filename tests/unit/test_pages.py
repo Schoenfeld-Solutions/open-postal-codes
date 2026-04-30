@@ -29,8 +29,13 @@ def write_public_files(repository_root: Path) -> None:
     write_public_post_code_files([], repository_root / "data/public/v1/ch")
     write_public_post_code_files(
         [
-            PostCodeRecord(code="28195", city="Bremen", county="Bremen"),
-            PostCodeRecord(code="66111", city="Saarbruecken", county="Regionalverband"),
+            PostCodeRecord(code="28195", city="Bremen", state="Bremen", county="Bremen"),
+            PostCodeRecord(
+                code="66111",
+                city="Saarbruecken",
+                state="Saarland",
+                county="Regionalverband",
+            ),
         ],
         repository_root / "data/public/v1/de",
     )
@@ -97,7 +102,7 @@ def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path
     gzip_path = output_root / "api/v1/de/post_code.csv.gz"
     with gzip.open(gzip_path, "rt", encoding="utf-8") as stream:
         assert stream.read().startswith(
-            "code,city,country,county,time_zone,"
+            "code,city,country,state,county,time_zone,"
             "is_primary_location,location_rank,postal_code_rank,source,evidence_count"
         )
 
@@ -190,6 +195,7 @@ def valid_contract_rows() -> list[dict[str, str]]:
             "code": "71540",
             "city": "Murrhardt",
             "country": "DE",
+            "state": "Baden-Württemberg",
             "county": "Rems-Murr-Kreis",
             "time_zone": "W. Europe Standard Time",
             "is_primary_location": "true",
@@ -202,6 +208,7 @@ def valid_contract_rows() -> list[dict[str, str]]:
             "code": "71540",
             "city": "Fichtenberg",
             "country": "DE",
+            "state": "Baden-Württemberg",
             "county": "Landkreis Schwaebisch Hall",
             "time_zone": "W. Europe Standard Time",
             "is_primary_location": "false",
@@ -214,6 +221,7 @@ def valid_contract_rows() -> list[dict[str, str]]:
             "code": "74427",
             "city": "Fichtenberg",
             "country": "DE",
+            "state": "Baden-Württemberg",
             "county": "Landkreis Schwaebisch Hall",
             "time_zone": "W. Europe Standard Time",
             "is_primary_location": "true",

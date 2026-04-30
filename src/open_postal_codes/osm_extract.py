@@ -34,6 +34,14 @@ class ExtractionError(RuntimeError):
 
 
 @dataclass(frozen=True)
+class StateBoundary:
+    """A first-level administrative boundary used for state enrichment."""
+
+    name: str
+    geometry: BaseGeometry
+
+
+@dataclass(frozen=True)
 class CountyBoundary:
     """An administrative boundary used for spatial enrichment."""
 
@@ -83,6 +91,7 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         self.wkt_factory = osmium.geom.WKTFactory()
         self.country_geometries: list[BaseGeometry] = []
         self.region_geometries: list[BaseGeometry] = []
+        self.states: list[StateBoundary] = []
         self.counties: list[CountyBoundary] = []
         self.fallback_counties: list[CountyBoundary] = []
         self.postal_boundaries: list[PostalBoundaryCandidate] = []
@@ -118,6 +127,9 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
 
         if _is_region_boundary(tags, self.country_config):
             self.region_geometries.append(geometry)
+            name = normalize_text(tags.get("name"))
+            if name:
+                self.states.append(StateBoundary(name=name, geometry=geometry))
 
         if _is_county_boundary(tags, self.country_config):
             name = normalize_text(tags.get("name"))
@@ -211,6 +223,7 @@ def extract_post_codes_from_osm(
     country_source_geometries = (
         handler.country_geometries
         or handler.region_geometries
+        or [state.geometry for state in handler.states]
         or [county.geometry for county in handler.counties]
         or [county.geometry for county in handler.fallback_counties]
     )
@@ -220,6 +233,7 @@ def extract_post_codes_from_osm(
         )
 
     country_geometry = unary_union(country_source_geometries)
+    states = _country_states(country_geometry=country_geometry, states=handler.states)
     counties = _country_counties(
         country_geometry=country_geometry,
         counties=handler.counties,
@@ -228,6 +242,7 @@ def extract_post_codes_from_osm(
     address_evidence = _accepted_address_evidence(
         addresses=handler.addresses,
         country_geometry=country_geometry,
+        states=states,
         counties=counties,
         handler=handler,
     )
@@ -238,35 +253,46 @@ def extract_post_codes_from_osm(
         if not _geometry_representative_in_country(candidate.geometry, country_geometry):
             handler.dropped_candidate_count += 1
             continue
+        state_names = _state_names_for_boundary(candidate.geometry, states)
         county_names = _county_names_for_boundary(candidate.geometry, counties)
         for city in candidate.cities:
-            candidate_counties = _candidate_counties_for_city(
+            candidate_states = _candidate_states_for_city(
                 code=candidate.code,
                 city=city,
-                county_names=county_names,
+                state_names=state_names,
                 address_evidence=address_evidence,
             )
-            for county_name in candidate_counties:
-                boundary_records.append(
-                    PostCodeRecord(
-                        code=candidate.code,
-                        city=city,
-                        country=country_config.code,
-                        time_zone=country_config.time_zone,
-                        county=county_name,
-                        source=POSTAL_BOUNDARY_SOURCE,
-                        evidence_count=_evidence_count(
+            for state_name in candidate_states:
+                candidate_counties = _candidate_counties_for_city(
+                    code=candidate.code,
+                    city=city,
+                    state=state_name,
+                    county_names=county_names,
+                    address_evidence=address_evidence,
+                )
+                for county_name in candidate_counties:
+                    boundary_records.append(
+                        PostCodeRecord(
                             code=candidate.code,
                             city=city,
+                            country=country_config.code,
+                            time_zone=country_config.time_zone,
+                            state=state_name,
                             county=county_name,
-                            address_evidence=address_evidence,
-                        ),
+                            source=POSTAL_BOUNDARY_SOURCE,
+                            evidence_count=_evidence_count(
+                                code=candidate.code,
+                                city=city,
+                                state=state_name,
+                                county=county_name,
+                                address_evidence=address_evidence,
+                            ),
+                        )
                     )
-                )
         boundary_codes.add(candidate.code)
 
     address_records: list[PostCodeRecord] = []
-    for (code, city, county_name), evidence in address_evidence.items():
+    for (code, city, state_name, county_name), evidence in address_evidence.items():
         if code in boundary_codes or evidence.count < min_address_evidence:
             continue
         address_records.append(
@@ -275,6 +301,7 @@ def extract_post_codes_from_osm(
                 city=city,
                 country=country_config.code,
                 time_zone=country_config.time_zone,
+                state=state_name,
                 county=county_name,
                 source=ADDRESS_FALLBACK_SOURCE,
                 evidence_count=evidence.count,
@@ -401,6 +428,18 @@ def _country_counties(
     ]
 
 
+def _country_states(
+    *,
+    country_geometry: BaseGeometry,
+    states: list[StateBoundary],
+) -> list[StateBoundary]:
+    return [
+        state
+        for state in states
+        if _geometry_overlaps_country(geometry=state.geometry, country_geometry=country_geometry)
+    ]
+
+
 def _geometry_overlaps_country(
     *,
     geometry: BaseGeometry,
@@ -425,10 +464,11 @@ def _accepted_address_evidence(
     *,
     addresses: dict[tuple[str, str], AddressAggregate],
     country_geometry: BaseGeometry,
+    states: list[StateBoundary],
     counties: list[CountyBoundary],
     handler: _PostCodeExtractionHandler,
-) -> dict[tuple[str, str, str], AddressEvidence]:
-    evidence: dict[tuple[str, str, str], AddressEvidence] = {}
+) -> dict[tuple[str, str, str, str], AddressEvidence]:
+    evidence: dict[tuple[str, str, str, str], AddressEvidence] = {}
     for (code, city), aggregate in addresses.items():
         if aggregate.geometry is not None and not _geometry_representative_in_country(
             aggregate.geometry,
@@ -437,14 +477,19 @@ def _accepted_address_evidence(
             handler.dropped_candidate_count += 1
             continue
 
+        state_name = ""
         county_name = ""
         if aggregate.geometry is not None:
+            state_name = _state_name_for_point(
+                aggregate.geometry.representative_point(),
+                states,
+            )
             county_name = _county_name_for_point(
                 aggregate.geometry.representative_point(),
                 counties,
             )
 
-        key = (code, city, county_name)
+        key = (code, city, state_name, county_name)
         existing = evidence.get(key)
         if existing is None:
             evidence[key] = AddressEvidence(count=aggregate.count, geometry=aggregate.geometry)
@@ -459,8 +504,9 @@ def _candidate_counties_for_city(
     *,
     code: str,
     city: str,
+    state: str,
     county_names: tuple[str, ...],
-    address_evidence: dict[tuple[str, str, str], AddressEvidence],
+    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
 ) -> tuple[str, ...]:
     if not county_names:
         return ("",)
@@ -471,6 +517,7 @@ def _candidate_counties_for_city(
         if _evidence_count(
             code=code,
             city=city,
+            state=state,
             county=county_name,
             address_evidence=address_evidence,
         )
@@ -482,22 +529,81 @@ def _candidate_counties_for_city(
     evidence_counties = _evidence_counties_for_city(
         code=code,
         city=city,
+        state=state,
         address_evidence=address_evidence,
     )
     return evidence_counties or county_names
+
+
+def _candidate_states_for_city(
+    *,
+    code: str,
+    city: str,
+    state_names: tuple[str, ...],
+    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
+) -> tuple[str, ...]:
+    if not state_names:
+        return ("",)
+
+    states_with_evidence = tuple(
+        state_name
+        for state_name in state_names
+        if _evidence_count(
+            code=code,
+            city=city,
+            state=state_name,
+            county="",
+            address_evidence=address_evidence,
+        )
+        > 0
+    )
+    if states_with_evidence:
+        return states_with_evidence
+
+    evidence_states = _evidence_states_for_city(
+        code=code,
+        city=city,
+        address_evidence=address_evidence,
+    )
+    return evidence_states or state_names
+
+
+def _evidence_states_for_city(
+    *,
+    code: str,
+    city: str,
+    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
+) -> tuple[str, ...]:
+    return tuple(
+        sorted(
+            state
+            for (evidence_code, evidence_city, state, _), evidence in address_evidence.items()
+            if evidence_code == code and evidence_city == city and state and evidence.count > 0
+        )
+    )
 
 
 def _evidence_counties_for_city(
     *,
     code: str,
     city: str,
-    address_evidence: dict[tuple[str, str, str], AddressEvidence],
+    state: str,
+    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
 ) -> tuple[str, ...]:
     return tuple(
         sorted(
             county
-            for (evidence_code, evidence_city, county), evidence in address_evidence.items()
-            if evidence_code == code and evidence_city == city and county and evidence.count > 0
+            for (
+                evidence_code,
+                evidence_city,
+                evidence_state,
+                county,
+            ), evidence in address_evidence.items()
+            if evidence_code == code
+            and evidence_city == city
+            and evidence_state == state
+            and county
+            and evidence.count > 0
         )
     )
 
@@ -506,15 +612,22 @@ def _evidence_count(
     *,
     code: str,
     city: str,
+    state: str,
     county: str,
-    address_evidence: dict[tuple[str, str, str], AddressEvidence],
+    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
 ) -> int:
     if county:
-        evidence = address_evidence.get((code, city, county))
+        evidence = address_evidence.get((code, city, state, county))
         return evidence.count if evidence is not None else 0
+    if state:
+        total = 0
+        for (evidence_code, evidence_city, evidence_state, _), evidence in address_evidence.items():
+            if evidence_code == code and evidence_city == city and evidence_state == state:
+                total += evidence.count
+        return total
     return sum(
         evidence.count
-        for (evidence_code, evidence_city, _), evidence in address_evidence.items()
+        for (evidence_code, evidence_city, _, _), evidence in address_evidence.items()
         if evidence_code == code and evidence_city == city
     )
 
@@ -538,6 +651,34 @@ def _county_names_for_boundary(
         if ratio >= MIN_BOUNDARY_COUNTY_INTERSECTION_RATIO:
             names.append(county.name)
     return tuple(sorted(set(names)))
+
+
+def _state_names_for_boundary(
+    geometry: BaseGeometry,
+    states: list[StateBoundary],
+) -> tuple[str, ...]:
+    if geometry.is_empty:
+        return ()
+    if geometry.area <= 0:
+        state_name = _state_name_for_point(geometry.representative_point(), states)
+        return (state_name,) if state_name else ()
+
+    names: list[str] = []
+    for state in states:
+        if not state.geometry.intersects(geometry):
+            continue
+        intersection = state.geometry.intersection(geometry)
+        ratio = intersection.area / geometry.area
+        if ratio >= MIN_BOUNDARY_COUNTY_INTERSECTION_RATIO:
+            names.append(state.name)
+    return tuple(sorted(set(names)))
+
+
+def _state_name_for_point(point: BaseGeometry, states: list[StateBoundary]) -> str:
+    for state in states:
+        if state.geometry.covers(point):
+            return state.name
+    return ""
 
 
 def _county_name_for_point(point: BaseGeometry, counties: list[CountyBoundary]) -> str:
