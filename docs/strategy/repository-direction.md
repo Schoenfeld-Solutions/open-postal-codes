@@ -2,11 +2,11 @@
 
 ## Guiding Direction
 
-Open Postal Codes remains a lean Germany-only data repository with a static file API, traceable license and origin documentation, and low-cost GitHub-first automation.
+Open Postal Codes remains a lean D-A-CH data repository with a static file API, traceable license and origin documentation, and low-cost GitHub-first automation.
 
 ## Possible Next Expansions
 
-- Additional country data only with a dedicated contract and versioning decision.
+- Additional country data beyond D-A-CH only with a dedicated contract and versioning decision.
 - Additional machine-readable metadata only when it can be reproduced from versioned data.
 
 ## Alignment Notes

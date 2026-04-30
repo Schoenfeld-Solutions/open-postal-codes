@@ -13,7 +13,13 @@ IGNORED_DIRECTORIES = {
     ".pytest_cache",
     ".ruff_cache",
     "__pycache__",
+    "build",
+    "dist",
+    "logs",
     "out",
+    "site-build",
+    "temp",
+    "tmp",
 }
 
 

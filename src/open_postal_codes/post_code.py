@@ -11,6 +11,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
 
+from open_postal_codes.countries import DEFAULT_COUNTRY_CONFIG, get_country_config
+
 POST_CODE_TITLE = "post_code"
 POST_CODE_FIELDS = (
     "code",
@@ -24,14 +26,12 @@ POST_CODE_FIELDS = (
     "source",
     "evidence_count",
 )
-DEFAULT_COUNTRY = "DE"
-DEFAULT_TIME_ZONE = "W. Europe Standard Time"
+DEFAULT_COUNTRY = DEFAULT_COUNTRY_CONFIG.code
+DEFAULT_TIME_ZONE = DEFAULT_COUNTRY_CONFIG.time_zone
 PostCodeSource = Literal["postal_boundary", "address_fallback"]
 POSTAL_BOUNDARY_SOURCE: PostCodeSource = "postal_boundary"
 ADDRESS_FALLBACK_SOURCE: PostCodeSource = "address_fallback"
 POST_CODE_SOURCES = (POSTAL_BOUNDARY_SOURCE, ADDRESS_FALLBACK_SOURCE)
-POST_CODE_PATTERN = re.compile(r"^[0-9]{5}$")
-CODE_CITY_PATTERN = re.compile(r"^(?P<code>[0-9]{5})\s+(?P<city>.+)$")
 TRAILING_NOTE_PATTERN = re.compile(r"\s*\([^)]*\)\s*$")
 CITY_SEPARATOR_PATTERN = re.compile(r"\s*(?:,|;|\s+und\s+)\s*")
 SOURCE_PRIORITY = {
@@ -56,9 +56,10 @@ class PostCodeRecord:
     evidence_count: int | str = 0
 
     def __post_init__(self) -> None:
-        normalized_code = normalize_post_code(self.code)
-        normalized_city = normalize_text(self.city)
         normalized_country = normalize_text(self.country).upper()
+        country_config = get_country_config(normalized_country)
+        normalized_code = normalize_post_code(self.code, country=country_config.code)
+        normalized_city = normalize_text(self.city)
         normalized_county = normalize_text(self.county)
         normalized_time_zone = normalize_text(self.time_zone)
         normalized_is_primary_location = normalize_bool(self.is_primary_location)
@@ -74,17 +75,17 @@ class PostCodeRecord:
         )
 
         if not normalized_code:
-            raise ValueError("post code must be a five-digit German post code")
+            raise ValueError(f"post code must be a {country_config.post_code_description}")
         if not normalized_city:
             raise ValueError("city must not be empty")
-        if normalized_country != DEFAULT_COUNTRY:
-            raise ValueError("country must be DE")
-        if normalized_time_zone != DEFAULT_TIME_ZONE:
-            raise ValueError(f"time_zone must be {DEFAULT_TIME_ZONE}")
+        if normalized_time_zone != country_config.time_zone:
+            raise ValueError(
+                f"time_zone must be {country_config.time_zone} for {country_config.code}"
+            )
 
         object.__setattr__(self, "code", normalized_code)
         object.__setattr__(self, "city", normalized_city)
-        object.__setattr__(self, "country", normalized_country)
+        object.__setattr__(self, "country", country_config.code)
         object.__setattr__(self, "county", normalized_county)
         object.__setattr__(self, "time_zone", normalized_time_zone)
         object.__setattr__(self, "is_primary_location", normalized_is_primary_location)
@@ -159,11 +160,12 @@ def normalize_text(value: str | None) -> str:
     return " ".join(value.strip().split())
 
 
-def normalize_post_code(value: str | None) -> str:
-    """Return a valid German post code or an empty string."""
+def normalize_post_code(value: str | None, *, country: str = DEFAULT_COUNTRY) -> str:
+    """Return a valid country-specific post code or an empty string."""
 
     normalized = normalize_text(value)
-    if not POST_CODE_PATTERN.match(normalized):
+    country_config = get_country_config(country)
+    if not country_config.post_code_pattern.match(normalized):
         return ""
     return normalized
 
@@ -213,24 +215,35 @@ def normalize_non_negative_int(value: int | str, field_name: str) -> int:
     return normalized
 
 
-def parse_boundary_city(post_code: str, values: Sequence[str | None]) -> str:
+def parse_boundary_city(
+    post_code: str,
+    values: Sequence[str | None],
+    *,
+    country: str = DEFAULT_COUNTRY,
+) -> str:
     """Parse a city from boundary labels shaped like ``12345 City``."""
 
-    cities = parse_boundary_cities(post_code, values)
+    cities = parse_boundary_cities(post_code, values, country=country)
     return cities[0] if cities else ""
 
 
-def parse_boundary_cities(post_code: str, values: Sequence[str | None]) -> tuple[str, ...]:
+def parse_boundary_cities(
+    post_code: str,
+    values: Sequence[str | None],
+    *,
+    country: str = DEFAULT_COUNTRY,
+) -> tuple[str, ...]:
     """Parse cities from boundary labels shaped like ``12345 City``."""
 
-    normalized_code = normalize_post_code(post_code)
+    normalized_code = normalize_post_code(post_code, country=country)
     if not normalized_code:
         return ()
+    code_city_pattern = re.compile(rf"^{re.escape(normalized_code)}\s+(?P<city>.+)$")
 
     for value in values:
         normalized_value = normalize_text(value)
-        match = CODE_CITY_PATTERN.match(normalized_value)
-        if not match or match.group("code") != normalized_code:
+        match = code_city_pattern.match(normalized_value)
+        if not match:
             continue
         city = TRAILING_NOTE_PATTERN.sub("", match.group("city")).strip()
         cities = tuple(

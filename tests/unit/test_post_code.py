@@ -38,6 +38,10 @@ def test_parse_boundary_cities_splits_simple_multi_city_labels() -> None:
         "Murrhardt",
         "Fichtenberg",
     )
+    assert parse_boundary_cities("1010", ("1010 Wien, Innere Stadt", None), country="AT") == (
+        "Wien",
+        "Innere Stadt",
+    )
 
 
 def test_post_code_record_normalizes_and_validates_public_fields() -> None:
@@ -74,6 +78,28 @@ def test_post_code_record_normalizes_and_validates_public_fields() -> None:
         PostCodeRecord(code="28195", city="Bremen", source="unknown")
     with pytest.raises(ValueError, match="evidence_count"):
         PostCodeRecord(code="28195", city="Bremen", evidence_count="-1")
+
+
+def test_post_code_record_accepts_country_specific_dach_codes() -> None:
+    austrian_record = PostCodeRecord(code="1010", city="Wien", country="AT")
+    swiss_record = PostCodeRecord(code="8001", city="Zuerich", country="CH")
+
+    assert austrian_record.to_dict()["country"] == "AT"
+    assert swiss_record.to_dict()["country"] == "CH"
+    assert austrian_record.to_dict()["time_zone"] == "W. Europe Standard Time"
+    assert swiss_record.to_dict()["time_zone"] == "W. Europe Standard Time"
+
+    with pytest.raises(ValueError, match="four-digit Austrian"):
+        PostCodeRecord(code="01010", city="Wien", country="AT")
+    with pytest.raises(ValueError, match="four-digit Swiss"):
+        PostCodeRecord(code="08001", city="Zuerich", country="CH")
+    with pytest.raises(ValueError, match="time_zone"):
+        PostCodeRecord(
+            code="8001",
+            city="Zuerich",
+            country="CH",
+            time_zone="UTC",
+        )
 
 
 def test_dedupe_records_ranks_shared_post_code_and_multi_code_place() -> None:

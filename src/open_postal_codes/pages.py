@@ -13,29 +13,27 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from open_postal_codes.countries import COUNTRY_CONFIGS
+
 API_VERSION = "v1"
 PAGES_BASE_PATH = "/open-postal-codes/"
 API_BASE_PATH = f"{PAGES_BASE_PATH}api/{API_VERSION}/"
 
-DATA_FILES: tuple[tuple[str, str, str, str], ...] = (
+DATA_FORMATS: tuple[tuple[str, str, str], ...] = (
+    ("csv", "CSV", "text/csv; charset=utf-8"),
+    ("json", "JSON", "application/json; charset=utf-8"),
+    ("xml", "XML", "application/xml; charset=utf-8"),
+)
+
+DATA_FILES: tuple[tuple[str, str, str, str], ...] = tuple(
     (
-        "de-post-code-csv",
-        "de/post_code.csv",
-        "German post code records as CSV.",
-        "text/csv; charset=utf-8",
-    ),
-    (
-        "de-post-code-json",
-        "de/post_code.json",
-        "German post code records as JSON.",
-        "application/json; charset=utf-8",
-    ),
-    (
-        "de-post-code-xml",
-        "de/post_code.xml",
-        "German post code records as XML.",
-        "application/xml; charset=utf-8",
-    ),
+        f"{country.slug}-post-code-{extension}",
+        f"{country.slug}/post_code.{extension}",
+        f"{country.adjective} post code records as {label}.",
+        media_type,
+    )
+    for country in COUNTRY_CONFIGS
+    for extension, label, media_type in DATA_FORMATS
 )
 
 

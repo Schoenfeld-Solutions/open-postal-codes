@@ -88,6 +88,41 @@ def boundary_fixture(extra: str) -> str:
     )
 
 
+def country_boundary_fixture(
+    *,
+    country: str,
+    county_admin_level: str,
+    county_name: str,
+    extra: str,
+    county_iso_code: str | None = None,
+) -> str:
+    county_tags = {
+        "boundary": "administrative",
+        "admin_level": county_admin_level,
+        "name": county_name,
+    }
+    if county_iso_code is not None:
+        county_tags["ISO3166-2"] = county_iso_code
+
+    return "\n".join(
+        [
+            nodes(1, [(0, 0), (0, 10), (10, 10), (10, 0)]),
+            closed_way(
+                100,
+                1,
+                {
+                    "boundary": "administrative",
+                    "admin_level": "2",
+                    "ISO3166-1:alpha2": country,
+                },
+            ),
+            nodes(10, [(0, 0), (0, 10), (10, 10), (10, 0)]),
+            closed_way(110, 10, county_tags),
+            extra,
+        ]
+    )
+
+
 def test_boundary_records_are_canonical_and_county_enriched(tmp_path: Path) -> None:
     path = tmp_path / "boundary.osm"
     write_osm(
@@ -197,6 +232,142 @@ def test_regional_extract_can_use_state_boundary_when_country_boundary_is_absent
             "evidence_count": 0,
         }
     ]
+
+
+def test_austrian_boundary_records_use_country_config(tmp_path: Path) -> None:
+    path = tmp_path / "austria.osm"
+    write_osm(
+        path,
+        country_boundary_fixture(
+            country="AT",
+            county_admin_level="6",
+            county_name="Wien",
+            extra="\n".join(
+                [
+                    nodes(30, [(1, 1), (1, 4), (4, 4), (4, 1)]),
+                    closed_way(
+                        130,
+                        30,
+                        {
+                            "boundary": "postal_code",
+                            "postal_code_level": "8",
+                            "postal_code": "1010",
+                            "note": "1010 Wien",
+                        },
+                    ),
+                ]
+            ),
+        ),
+    )
+
+    result = extract_post_codes_from_osm(path, country="AT")
+
+    assert [record.to_dict() for record in result.records] == [
+        {
+            "code": "1010",
+            "city": "Wien",
+            "country": "AT",
+            "county": "Wien",
+            "time_zone": "W. Europe Standard Time",
+            "is_primary_location": True,
+            "location_rank": 1,
+            "postal_code_rank": 1,
+            "source": "postal_boundary",
+            "evidence_count": 0,
+        }
+    ]
+
+
+def test_swiss_boundary_uses_canton_fallback_when_district_is_absent(tmp_path: Path) -> None:
+    path = tmp_path / "switzerland.osm"
+    write_osm(
+        path,
+        country_boundary_fixture(
+            country="CH",
+            county_admin_level="4",
+            county_name="Kanton Zuerich",
+            county_iso_code="CH-ZH",
+            extra="\n".join(
+                [
+                    nodes(30, [(1, 1), (1, 4), (4, 4), (4, 1)]),
+                    closed_way(
+                        130,
+                        30,
+                        {
+                            "boundary": "postal_code",
+                            "postal_code_level": "8",
+                            "postal_code": "8001",
+                            "note": "8001 Zuerich",
+                        },
+                    ),
+                ]
+            ),
+        ),
+    )
+
+    result = extract_post_codes_from_osm(path, country="CH")
+
+    assert [
+        (record.code, record.city, record.country, record.county) for record in result.records
+    ] == [("8001", "Zuerich", "CH", "Kanton Zuerich")]
+
+
+def test_austrian_address_fallback_rejects_foreign_country_tags(tmp_path: Path) -> None:
+    path = tmp_path / "austrian-address.osm"
+    write_osm(
+        path,
+        country_boundary_fixture(
+            country="AT",
+            county_admin_level="6",
+            county_name="Wien",
+            extra="\n".join(
+                [
+                    tagged_node(
+                        300,
+                        2,
+                        2,
+                        {"addr:postcode": "1010", "addr:city": "Wien", "addr:country": "AT"},
+                    ),
+                    tagged_node(
+                        301,
+                        2.1,
+                        2,
+                        {"addr:postcode": "1010", "addr:city": "Wien", "addr:country": "AT"},
+                    ),
+                    tagged_node(
+                        302,
+                        2.2,
+                        2,
+                        {"addr:postcode": "1010", "addr:city": "Wien", "addr:country": "AT"},
+                    ),
+                    tagged_node(
+                        400,
+                        2,
+                        2,
+                        {"addr:postcode": "1010", "addr:city": "Foreign", "addr:country": "DE"},
+                    ),
+                    tagged_node(
+                        401,
+                        2.1,
+                        2,
+                        {"addr:postcode": "1010", "addr:city": "Foreign", "addr:country": "DE"},
+                    ),
+                    tagged_node(
+                        402,
+                        2.2,
+                        2,
+                        {"addr:postcode": "1010", "addr:city": "Foreign", "addr:country": "DE"},
+                    ),
+                ]
+            ),
+        ),
+    )
+
+    result = extract_post_codes_from_osm(path, country="AT")
+
+    assert [
+        (record.code, record.city, record.country, record.source) for record in result.records
+    ] == [("1010", "Wien", "AT", "address_fallback")]
 
 
 def test_address_fallback_requires_city_and_never_uses_generic_name(tmp_path: Path) -> None:

@@ -10,10 +10,11 @@ from typing import Any
 import pytest
 
 import open_postal_codes.refresh_data as refresh_module
+from open_postal_codes.countries import GeofabrikRegion, get_country_config
 from open_postal_codes.osm_extract import ExtractionError
 from open_postal_codes.post_code import PostCodeRecord, write_post_code_csv
 from open_postal_codes.refresh_data import (
-    GeofabrikRegion,
+    CountryRefreshResult,
     RefreshError,
     RefreshResult,
     RegionRefreshResult,
@@ -25,6 +26,7 @@ from open_postal_codes.refresh_data import (
     load_metadata,
     merge_region_outputs,
     parse_arguments,
+    parse_countries,
     parse_regions,
     refresh_data,
     remote_headers,
@@ -60,6 +62,22 @@ def test_default_regions_use_geofabrik_germany_pbf_urls() -> None:
         region.url.startswith("https://download.geofabrik.de/europe/germany/") for region in regions
     )
     assert all(region.md5_url.endswith(".osm.pbf.md5") for region in regions)
+
+
+def test_parse_countries_selects_dach_geofabrik_sources() -> None:
+    countries = parse_countries("de,at,ch")
+
+    assert countries == (
+        get_country_config("DE"),
+        get_country_config("AT"),
+        get_country_config("CH"),
+    )
+    assert countries[1].geofabrik_regions[0].url == (
+        "https://download.geofabrik.de/europe/austria-latest.osm.pbf"
+    )
+    assert countries[2].geofabrik_regions[0].url == (
+        "https://download.geofabrik.de/europe/switzerland-latest.osm.pbf"
+    )
 
 
 def test_parse_regions_rejects_unknown_names() -> None:
@@ -122,7 +140,12 @@ def test_refresh_data_refreshes_changed_region_and_rebuilds_public_outputs(
     monkeypatch.setattr(refresh_module, "fetch_remote_metadata", lambda _: metadata)
     monkeypatch.setattr(refresh_module, "download_region", lambda **_: None)
 
-    def fake_extract_region_to_csv(input_path: Path, output_path: Path) -> Any:
+    def fake_extract_region_to_csv(
+        input_path: Path,
+        output_path: Path,
+        *,
+        country: str,
+    ) -> Any:
         write_post_code_csv([PostCodeRecord(code="28195", city="Bremen")], output_path)
         return type("Extraction", (), {"records": (PostCodeRecord(code="28195", city="Bremen"),)})()
 
@@ -138,8 +161,64 @@ def test_refresh_data_refreshes_changed_region_and_rebuilds_public_outputs(
 
     assert result.public_records == 1
     assert result.regions == (RegionRefreshResult(region="bremen", status="refreshed", records=1),)
-    assert (tmp_path / "public/post_code.csv").exists()
+    assert (tmp_path / "public/de/post_code.csv").exists()
     assert load_metadata(tmp_path / "metadata.json")["bremen"].etag == "v1"
+
+
+def test_refresh_data_writes_country_scoped_outputs_for_at_and_ch(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    austria = GeofabrikRegion("austria", "https://example.test/austria.osm.pbf", country="at")
+    switzerland = GeofabrikRegion(
+        "switzerland",
+        "https://example.test/switzerland.osm.pbf",
+        country="ch",
+    )
+
+    def fake_fetch_remote_metadata(region: GeofabrikRegion) -> RemoteMetadata:
+        return RemoteMetadata(
+            url=region.url,
+            content_length=3,
+            etag=f"v1-{region.country}",
+            last_modified="today",
+            md5="900150983cd24fb0d6963f7d28e17f72",
+        )
+
+    monkeypatch.setattr(refresh_module, "fetch_remote_metadata", fake_fetch_remote_metadata)
+    monkeypatch.setattr(refresh_module, "download_region", lambda **_: None)
+
+    def fake_extract_region_to_csv(input_path: Path, output_path: Path, *, country: str) -> Any:
+        record = (
+            PostCodeRecord(code="1010", city="Wien", country=country)
+            if country == "AT"
+            else PostCodeRecord(code="8001", city="Zuerich", country=country)
+        )
+        write_post_code_csv([record], output_path)
+        return type("Extraction", (), {"records": (record,)})()
+
+    monkeypatch.setattr(refresh_module, "extract_region_to_csv", fake_extract_region_to_csv)
+
+    result = refresh_data(
+        download_root=tmp_path / "downloads",
+        metadata_path=tmp_path / "metadata.json",
+        region_output_root=tmp_path / "regions",
+        public_output_root=tmp_path / "public",
+        regions=(austria, switzerland),
+    )
+
+    assert result.public_records == 2
+    assert result.countries == (
+        CountryRefreshResult(country="at", records=1),
+        CountryRefreshResult(country="ch", records=1),
+    )
+    assert (tmp_path / "regions/at/post_code/austria.csv").exists()
+    assert (tmp_path / "regions/ch/post_code/switzerland.csv").exists()
+    assert (tmp_path / "public/at/post_code.csv").exists()
+    assert (tmp_path / "public/ch/post_code.csv").exists()
+    metadata = load_metadata(tmp_path / "metadata.json")
+    assert metadata["at/austria"].etag == "v1-at"
+    assert metadata["ch/switzerland"].etag == "v1-ch"
 
 
 def test_refresh_data_skips_unchanged_region_with_existing_output(
@@ -157,7 +236,10 @@ def test_refresh_data_skips_unchanged_region_with_existing_output(
     metadata_path = tmp_path / "metadata.json"
     region_root = tmp_path / "regions"
     write_metadata(metadata_path, {"bremen": metadata})
-    write_post_code_csv([PostCodeRecord(code="28195", city="Bremen")], region_root / "bremen.csv")
+    write_post_code_csv(
+        [PostCodeRecord(code="28195", city="Bremen")],
+        region_root / "de/post_code/bremen.csv",
+    )
 
     monkeypatch.setattr(refresh_module, "fetch_remote_metadata", lambda _: metadata)
 
@@ -170,7 +252,7 @@ def test_refresh_data_skips_unchanged_region_with_existing_output(
     )
 
     assert result.regions == (RegionRefreshResult(region="bremen", status="skipped", records=1),)
-    assert (tmp_path / "public/post_code.json").exists()
+    assert (tmp_path / "public/de/post_code.json").exists()
 
 
 def test_refresh_data_continues_after_unavailable_region_and_fails_at_end(
@@ -196,7 +278,12 @@ def test_refresh_data_continues_after_unavailable_region_and_fails_at_end(
     def fake_download_region(**kwargs: Any) -> None:
         downloaded_regions.append(kwargs["region"].name)
 
-    def fake_extract_region_to_csv(input_path: Path, output_path: Path) -> Any:
+    def fake_extract_region_to_csv(
+        input_path: Path,
+        output_path: Path,
+        *,
+        country: str,
+    ) -> Any:
         write_post_code_csv([PostCodeRecord(code="66111", city="Saarbruecken")], output_path)
         return type(
             "Extraction",
@@ -218,7 +305,7 @@ def test_refresh_data_continues_after_unavailable_region_and_fails_at_end(
         )
 
     assert downloaded_regions == ["saarland"]
-    assert (tmp_path / "public/post_code.csv").exists()
+    assert (tmp_path / "public/de/post_code.csv").exists()
 
 
 def test_refresh_data_collects_extraction_errors_after_other_regions_complete(
@@ -238,9 +325,14 @@ def test_refresh_data_collects_extraction_errors_after_other_regions_complete(
     monkeypatch.setattr(refresh_module, "fetch_remote_metadata", lambda _: metadata)
     monkeypatch.setattr(refresh_module, "download_region", lambda **_: None)
 
-    def fake_extract_region_to_csv(input_path: Path, output_path: Path) -> Any:
+    def fake_extract_region_to_csv(
+        input_path: Path,
+        output_path: Path,
+        *,
+        country: str,
+    ) -> Any:
         if input_path.name.startswith(failing.name):
-            raise ExtractionError("German administrative boundary was not found")
+            raise ExtractionError("Germany administrative boundary was not found")
         write_post_code_csv([PostCodeRecord(code="66111", city="Saarbruecken")], output_path)
         return type(
             "Extraction",
@@ -259,7 +351,7 @@ def test_refresh_data_collects_extraction_errors_after_other_regions_complete(
             regions=(failing, successful),
         )
 
-    assert (tmp_path / "public/post_code.json").exists()
+    assert (tmp_path / "public/de/post_code.json").exists()
 
 
 class FakeResponse(BytesIO):
@@ -356,12 +448,16 @@ def test_refresh_cli_prints_summary(
                 RegionRefreshResult(region="saarland", status="skipped", records=1),
             ),
             public_records=2,
+            countries=(CountryRefreshResult(country="de", records=2),),
         ),
     )
 
     assert refresh_module.main(["--download-root", str(tmp_path), "--regions", "bremen"]) == 0
 
-    assert "1 refreshed regions, 1 skipped regions, 2 public records" in capsys.readouterr().out
+    assert (
+        "1 refreshed sources, 1 skipped sources, 1 country outputs, 2 public records"
+        in capsys.readouterr().out
+    )
 
 
 def test_refresh_cli_returns_failure_without_traceback(
@@ -384,6 +480,8 @@ def test_parse_arguments_defaults_metadata_paths(tmp_path: Path) -> None:
     parsed = parse_arguments(["--download-root", str(tmp_path)])
 
     assert parsed.metadata_path == Path("data/sources/geofabrik-regions.json")
+    assert parsed.region_output_root == Path("data/regional/v1")
+    assert parsed.public_output_root == Path("data/public/v1")
 
 
 def test_refresh_data_rejects_zero_region_records(

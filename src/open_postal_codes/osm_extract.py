@@ -1,4 +1,4 @@
-"""Extract German post code records from OpenStreetMap files."""
+"""Extract country-specific post code records from OpenStreetMap files."""
 
 from __future__ import annotations
 
@@ -13,9 +13,9 @@ from shapely.geometry import Point
 from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
+from open_postal_codes.countries import DEFAULT_COUNTRY_CONFIG, CountryConfig, get_country_config
 from open_postal_codes.post_code import (
     ADDRESS_FALLBACK_SOURCE,
-    DEFAULT_COUNTRY,
     POSTAL_BOUNDARY_SOURCE,
     PostCodeRecord,
     dedupe_records,
@@ -35,7 +35,7 @@ class ExtractionError(RuntimeError):
 
 @dataclass(frozen=True)
 class CountyBoundary:
-    """A German county boundary used for spatial enrichment."""
+    """An administrative boundary used for spatial enrichment."""
 
     name: str
     geometry: BaseGeometry
@@ -77,12 +77,14 @@ class ExtractionResult:
 
 
 class _PostCodeExtractionHandler(osmium.SimpleHandler):
-    def __init__(self) -> None:
+    def __init__(self, country_config: CountryConfig) -> None:
         super().__init__()
+        self.country_config = country_config
         self.wkt_factory = osmium.geom.WKTFactory()
-        self.germany_geometries: list[BaseGeometry] = []
-        self.german_state_geometries: list[BaseGeometry] = []
+        self.country_geometries: list[BaseGeometry] = []
+        self.region_geometries: list[BaseGeometry] = []
         self.counties: list[CountyBoundary] = []
+        self.fallback_counties: list[CountyBoundary] = []
         self.postal_boundaries: list[PostalBoundaryCandidate] = []
         self.addresses: dict[tuple[str, str], AddressAggregate] = {}
         self.address_candidate_count = 0
@@ -110,18 +112,23 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         if geometry is None:
             return
 
-        if _is_germany_boundary(tags):
-            self.germany_geometries.append(geometry)
+        if _is_country_boundary(tags, self.country_config):
+            self.country_geometries.append(geometry)
             return
 
-        if _is_german_state_boundary(tags):
-            self.german_state_geometries.append(geometry)
-            return
+        if _is_region_boundary(tags, self.country_config):
+            self.region_geometries.append(geometry)
 
-        if _is_german_county_boundary(tags):
+        if _is_county_boundary(tags, self.country_config):
             name = normalize_text(tags.get("name"))
             if name:
                 self.counties.append(CountyBoundary(name=name, geometry=geometry))
+            return
+
+        if _is_county_fallback_boundary(tags, self.country_config):
+            name = normalize_text(tags.get("name"))
+            if name:
+                self.fallback_counties.append(CountyBoundary(name=name, geometry=geometry))
             return
 
         if _is_postal_code_boundary(tags):
@@ -131,12 +138,19 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
             self._collect_address(tags, geometry.representative_point())
 
     def _collect_postal_boundary(self, tags: dict[str, str], geometry: BaseGeometry) -> None:
-        if _has_foreign_country_tag(tags):
+        if _has_foreign_country_tag(tags, self.country_config):
             self.dropped_candidate_count += 1
             return
 
-        code = normalize_post_code(tags.get("postal_code") or tags.get("postcode"))
-        cities = parse_boundary_cities(code, (tags.get("note"), tags.get("name")))
+        code = normalize_post_code(
+            tags.get("postal_code") or tags.get("postcode"),
+            country=self.country_config.code,
+        )
+        cities = parse_boundary_cities(
+            code,
+            (tags.get("note"), tags.get("name")),
+            country=self.country_config.code,
+        )
         if not code or not cities:
             self.dropped_candidate_count += 1
             return
@@ -149,11 +163,11 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         tags: dict[str, str],
         geometry: BaseGeometry | None,
     ) -> None:
-        if _has_foreign_country_tag(tags):
+        if _has_foreign_country_tag(tags, self.country_config):
             self.dropped_candidate_count += 1
             return
 
-        code = normalize_post_code(tags.get("addr:postcode"))
+        code = normalize_post_code(tags.get("addr:postcode"), country=self.country_config.code)
         city = normalize_text(tags.get("addr:city"))
         if not code or not city:
             self.dropped_candidate_count += 1
@@ -173,11 +187,13 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
 def extract_post_codes_from_osm(
     input_path: Path,
     *,
+    country: str = DEFAULT_COUNTRY_CONFIG.code,
     min_address_evidence: int = DEFAULT_MIN_ADDRESS_EVIDENCE,
 ) -> ExtractionResult:
     """Extract post code records from a PBF or OSM XML file."""
 
-    handler = _PostCodeExtractionHandler()
+    country_config = get_country_config(country)
+    handler = _PostCodeExtractionHandler(country_config)
     area_filter = osmium.filter.KeyFilter("boundary", "addr:postcode")
     object_filter = osmium.filter.KeyFilter("boundary", "addr:postcode")
     processor = (
@@ -192,23 +208,26 @@ def extract_post_codes_from_osm(
         elif isinstance(entity, osmium.osm.Area):
             handler.area(entity)
 
-    germany_source_geometries = (
-        handler.germany_geometries
-        or handler.german_state_geometries
+    country_source_geometries = (
+        handler.country_geometries
+        or handler.region_geometries
         or [county.geometry for county in handler.counties]
+        or [county.geometry for county in handler.fallback_counties]
     )
-    if not germany_source_geometries:
-        raise ExtractionError("German administrative boundary was not found in the OSM file")
+    if not country_source_geometries:
+        raise ExtractionError(
+            f"{country_config.name} administrative boundary was not found in the OSM file"
+        )
 
-    germany_geometry = unary_union(germany_source_geometries)
-    counties = [
-        county
-        for county in handler.counties
-        if _geometry_overlaps_germany(county.geometry, germany_geometry)
-    ]
+    country_geometry = unary_union(country_source_geometries)
+    counties = _country_counties(
+        country_geometry=country_geometry,
+        counties=handler.counties,
+        fallback_counties=handler.fallback_counties,
+    )
     address_evidence = _accepted_address_evidence(
         addresses=handler.addresses,
-        germany_geometry=germany_geometry,
+        country_geometry=country_geometry,
         counties=counties,
         handler=handler,
     )
@@ -216,7 +235,7 @@ def extract_post_codes_from_osm(
     boundary_records: list[PostCodeRecord] = []
     boundary_codes: set[str] = set()
     for candidate in handler.postal_boundaries:
-        if not _geometry_representative_in_germany(candidate.geometry, germany_geometry):
+        if not _geometry_representative_in_country(candidate.geometry, country_geometry):
             handler.dropped_candidate_count += 1
             continue
         county_names = _county_names_for_boundary(candidate.geometry, counties)
@@ -232,6 +251,8 @@ def extract_post_codes_from_osm(
                     PostCodeRecord(
                         code=candidate.code,
                         city=city,
+                        country=country_config.code,
+                        time_zone=country_config.time_zone,
                         county=county_name,
                         source=POSTAL_BOUNDARY_SOURCE,
                         evidence_count=_evidence_count(
@@ -252,6 +273,8 @@ def extract_post_codes_from_osm(
             PostCodeRecord(
                 code=code,
                 city=city,
+                country=country_config.code,
+                time_zone=country_config.time_zone,
                 county=county_name,
                 source=ADDRESS_FALLBACK_SOURCE,
                 evidence_count=evidence.count,
@@ -270,10 +293,15 @@ def extract_post_codes_from_osm(
     )
 
 
-def extract_region_to_csv(input_path: Path, output_path: Path) -> ExtractionResult:
+def extract_region_to_csv(
+    input_path: Path,
+    output_path: Path,
+    *,
+    country: str = DEFAULT_COUNTRY_CONFIG.code,
+) -> ExtractionResult:
     """Extract one regional OSM file into a normalized regional CSV file."""
 
-    result = extract_post_codes_from_osm(input_path)
+    result = extract_post_codes_from_osm(input_path, country=country)
     write_post_code_csv(result.records, output_path)
     return result
 
@@ -282,28 +310,36 @@ def _tag_map(tags: Any) -> dict[str, str]:
     return {tag.k: tag.v for tag in tags}
 
 
-def _is_germany_boundary(tags: dict[str, str]) -> bool:
+def _is_country_boundary(tags: dict[str, str], country_config: CountryConfig) -> bool:
     return (
         tags.get("boundary") == "administrative"
         and tags.get("admin_level") == "2"
-        and (tags.get("ISO3166-1:alpha2") or tags.get("ISO3166-1")) == DEFAULT_COUNTRY
+        and (tags.get("ISO3166-1:alpha2") or tags.get("ISO3166-1")) == country_config.code
     )
 
 
-def _is_german_state_boundary(tags: dict[str, str]) -> bool:
+def _is_region_boundary(tags: dict[str, str], country_config: CountryConfig) -> bool:
     iso_code = normalize_text(tags.get("ISO3166-2")).upper()
     return (
         tags.get("boundary") == "administrative"
-        and tags.get("admin_level") == "4"
-        and iso_code.startswith(f"{DEFAULT_COUNTRY}-")
+        and tags.get("admin_level") in country_config.region_boundary_admin_levels
+        and iso_code.startswith(f"{country_config.code}-")
     )
 
 
-def _is_german_county_boundary(tags: dict[str, str]) -> bool:
+def _is_county_boundary(tags: dict[str, str], country_config: CountryConfig) -> bool:
     return (
         tags.get("boundary") == "administrative"
-        and tags.get("admin_level") == "6"
-        and _is_german_admin_key(tags.get("de:amtlicher_gemeindeschluessel"))
+        and tags.get("admin_level") in country_config.county_admin_levels
+        and bool(normalize_text(tags.get("name")))
+    )
+
+
+def _is_county_fallback_boundary(tags: dict[str, str], country_config: CountryConfig) -> bool:
+    return (
+        tags.get("boundary") == "administrative"
+        and tags.get("admin_level") in country_config.county_fallback_admin_levels
+        and bool(normalize_text(tags.get("name")))
     )
 
 
@@ -315,16 +351,11 @@ def _is_postal_code_boundary(tags: dict[str, str]) -> bool:
     )
 
 
-def _is_german_admin_key(value: str | None) -> bool:
-    normalized = normalize_text(value)
-    return normalized.isdigit() and len(normalized) >= 2
-
-
-def _has_foreign_country_tag(tags: dict[str, str]) -> bool:
+def _has_foreign_country_tag(tags: dict[str, str], country_config: CountryConfig) -> bool:
     country = normalize_text(
         tags.get("addr:country") or tags.get("is_in:country_code") or tags.get("country")
     ).upper()
-    return bool(country and country != DEFAULT_COUNTRY)
+    return bool(country and country != country_config.code)
 
 
 def _point_from_node(node: Any) -> BaseGeometry | None:
@@ -350,34 +381,58 @@ def _geometry_from_area(wkt_factory: Any, area: Any) -> BaseGeometry | None:
         return None
 
 
-def _geometry_overlaps_germany(geometry: BaseGeometry, germany_geometry: BaseGeometry) -> bool:
-    if geometry.is_empty:
-        return False
-    representative = geometry.representative_point()
-    return bool(germany_geometry.covers(representative) or germany_geometry.intersects(geometry))
+def _country_counties(
+    *,
+    country_geometry: BaseGeometry,
+    counties: list[CountyBoundary],
+    fallback_counties: list[CountyBoundary],
+) -> list[CountyBoundary]:
+    country_counties = [
+        county
+        for county in counties
+        if _geometry_overlaps_country(geometry=county.geometry, country_geometry=country_geometry)
+    ]
+    if country_counties:
+        return country_counties
+    return [
+        county
+        for county in fallback_counties
+        if _geometry_overlaps_country(geometry=county.geometry, country_geometry=country_geometry)
+    ]
 
 
-def _geometry_representative_in_germany(
+def _geometry_overlaps_country(
+    *,
     geometry: BaseGeometry,
-    germany_geometry: BaseGeometry,
+    country_geometry: BaseGeometry,
 ) -> bool:
     if geometry.is_empty:
         return False
-    return bool(germany_geometry.covers(geometry.representative_point()))
+    representative = geometry.representative_point()
+    return bool(country_geometry.covers(representative) or country_geometry.intersects(geometry))
+
+
+def _geometry_representative_in_country(
+    geometry: BaseGeometry,
+    country_geometry: BaseGeometry,
+) -> bool:
+    if geometry.is_empty:
+        return False
+    return bool(country_geometry.covers(geometry.representative_point()))
 
 
 def _accepted_address_evidence(
     *,
     addresses: dict[tuple[str, str], AddressAggregate],
-    germany_geometry: BaseGeometry,
+    country_geometry: BaseGeometry,
     counties: list[CountyBoundary],
     handler: _PostCodeExtractionHandler,
 ) -> dict[tuple[str, str, str], AddressEvidence]:
     evidence: dict[tuple[str, str, str], AddressEvidence] = {}
     for (code, city), aggregate in addresses.items():
-        if aggregate.geometry is not None and not _geometry_representative_in_germany(
+        if aggregate.geometry is not None and not _geometry_representative_in_country(
             aggregate.geometry,
-            germany_geometry,
+            country_geometry,
         ):
             handler.dropped_candidate_count += 1
             continue
@@ -496,12 +551,21 @@ def parse_arguments(arguments: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", type=Path, help="Input OSM PBF or XML file.")
     parser.add_argument("output", type=Path, help="Output normalized post_code CSV file.")
+    parser.add_argument(
+        "--country",
+        default=DEFAULT_COUNTRY_CONFIG.slug,
+        help="Country slug or ISO code to extract. Supported values: de, at, ch.",
+    )
     return parser.parse_args(arguments)
 
 
 def main(arguments: list[str] | None = None) -> int:
     parsed_arguments = parse_arguments(arguments)
-    result = extract_region_to_csv(parsed_arguments.input, parsed_arguments.output)
+    result = extract_region_to_csv(
+        parsed_arguments.input,
+        parsed_arguments.output,
+        country=parsed_arguments.country,
+    )
     print(
         "Extracted post codes: "
         f"{len(result.records)} records, "

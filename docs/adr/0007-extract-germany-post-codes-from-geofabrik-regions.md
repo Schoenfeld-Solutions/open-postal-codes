@@ -7,15 +7,15 @@
 
 ## Status
 
-Accepted.
+Accepted. ADR 0009 extends the publication scope from Germany to D-A-CH.
 
 ## Context
 
-The repository now publishes Germany-only post code records. The full Germany PBF is large, while Geofabrik publishes smaller regional Germany PBF files that allow scoped retries and lower routine refresh cost.
+This decision introduced Germany post code extraction. The full Germany PBF is large, while Geofabrik publishes smaller regional Germany PBF files that allow scoped retries and lower routine refresh cost.
 
 ## Decision
 
-The repository uses regional Geofabrik Germany PBF files as the data-refresh source. Python extracts post code records with `osmium`, enriches and filters spatial data with `shapely`, writes normalized regional CSV outputs, and builds public CSV, JSON, and XML files.
+The repository uses regional Geofabrik Germany PBF files as the Germany data-refresh source. Python extracts post code records with `osmium`, enriches and filters spatial data with `shapely`, writes normalized regional CSV outputs, and builds public CSV, JSON, and XML files.
 
 ## Rationale
 
@@ -32,7 +32,7 @@ Regional refreshes avoid routine full-country downloads, keep failures localized
 
 - `open_postal_codes.refresh_data` performs metadata checks, download validation, extraction, merge, and public file generation.
 - `open_postal_codes.osm_extract` implements boundary-canonical post code extraction and spatial filtering.
-- Repository checks require Germany-only public v1 files and Geofabrik attribution.
+- Repository checks require the configured public v1 post code files and Geofabrik attribution.
 
 ## Rollout
 

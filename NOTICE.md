@@ -1,11 +1,11 @@
 # Attribution and License Notes
 
-This repository continues OpenPLZ API Data as an independently maintained Germany-only data foundation under the same database license.
+This repository continues OpenPLZ API Data as an independently maintained D-A-CH data foundation under the same database license.
 
 ## Origin
 
-- German post code records are derived from OpenStreetMap data.
-- Regional Germany PBF files are provided by Geofabrik GmbH at https://www.geofabrik.de/.
+- D-A-CH post code records are derived from OpenStreetMap data.
+- Germany regional PBF files and Austria and Switzerland country PBF files are provided by Geofabrik GmbH at https://www.geofabrik.de/.
 - The original project work and data description came from Frank Stueber in the OpenPLZ API Data project.
 - The continuation, extraction tooling, static API, and repository structure are maintained by Schoenfeld Solutions.
 

@@ -16,6 +16,7 @@ REQUIRED_ADRS = (
     Path("docs/adr/0006-defer-osm-extraction-dependencies.md"),
     Path("docs/adr/0007-extract-germany-post-codes-from-geofabrik-regions.md"),
     Path("docs/adr/0008-extend-v1-post-code-quality-metadata.md"),
+    Path("docs/adr/0009-extend-v1-to-dach-post-code-data.md"),
 )
 
 REQUIRED_SECTIONS = (

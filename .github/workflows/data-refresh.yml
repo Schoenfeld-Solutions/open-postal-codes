@@ -1,4 +1,4 @@
-name: Refresh German Post Code Data
+name: Refresh D-A-CH Post Code Data
 
 on:
   schedule:
@@ -7,6 +7,10 @@ on:
     inputs:
       regions:
         description: "Optional comma-separated Geofabrik region names for a scoped refresh"
+        required: false
+        type: string
+      countries:
+        description: "Optional comma-separated country slugs or ISO codes"
         required: false
         type: string
 
@@ -38,6 +42,7 @@ jobs:
         run: |
           python3 -m open_postal_codes.refresh_data \
             --download-root "${RUNNER_TEMP}/geofabrik-pbf" \
+            --countries "${{ inputs.countries }}" \
             --regions "${{ inputs.regions }}"
 
       - name: Run quality gates
@@ -63,8 +68,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git switch -c dev/data-refresh-post-code
-          git add data/public/v1/de data/regional/v1/de/post_code data/sources/geofabrik-regions.json
-          git commit -m "data(de): refresh post code outputs"
+          git add data/public/v1 data/regional/v1 data/sources/geofabrik-regions.json
+          git commit -m "data(dach): refresh post code outputs"
           git push --force-with-lease origin HEAD:dev/data-refresh-post-code
 
       - name: Open or update data pull request
@@ -75,14 +80,14 @@ jobs:
           existing_pr="$(gh pr list --head dev/data-refresh-post-code --state open --json number --jq '.[0].number // ""')"
           if [ -n "${existing_pr}" ]; then
             gh pr edit "${existing_pr}" \
-              --title "data(de): refresh post code outputs" \
-              --body "Refreshes Germany post code outputs from regional Geofabrik PBF files. Quality gates passed in the refresh workflow."
+              --title "data(dach): refresh post code outputs" \
+              --body "Refreshes D-A-CH post code outputs from Geofabrik PBF files. Quality gates passed in the refresh workflow."
           else
             gh pr create \
               --base main \
               --head dev/data-refresh-post-code \
-              --title "data(de): refresh post code outputs" \
-              --body "Refreshes Germany post code outputs from regional Geofabrik PBF files. Quality gates passed in the refresh workflow."
+              --title "data(dach): refresh post code outputs" \
+              --body "Refreshes D-A-CH post code outputs from Geofabrik PBF files. Quality gates passed in the refresh workflow."
           fi
 
       - name: Write failure summary
@@ -91,5 +96,5 @@ jobs:
           {
             echo "## Data refresh failed"
             echo ""
-            echo "Check the refresh step logs for the failed Geofabrik regions. The workflow continues through remaining regions before it reports the final failure."
+            echo "Check the refresh step logs for the failed Geofabrik sources. The workflow continues through remaining sources before it reports the final failure."
           } >> "${GITHUB_STEP_SUMMARY}"

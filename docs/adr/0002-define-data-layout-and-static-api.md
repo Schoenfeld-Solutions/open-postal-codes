@@ -35,4 +35,4 @@ Static files are cacheable, auditable, and do not require ongoing server costs. 
 
 ## Rollout
 
-The active v1 publication creates `api/v1/index.json` and copies Germany post code CSV, JSON, and XML files into the Pages artifact.
+The active v1 publication creates `api/v1/index.json` and copies D-A-CH post code CSV, JSON, and XML files into the Pages artifact.

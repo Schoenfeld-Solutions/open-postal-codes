@@ -14,10 +14,11 @@ The format follows Keep a Changelog.
 - Repository checks, pytest tests, Ruff, Mypy, and coverage gates.
 - GitHub Actions for pull request gates and GitHub Pages publication.
 - English-only documentation policy enforcement for repository-owned text files.
-- Germany-only `post_code` outputs in CSV, JSON, and XML.
+- D-A-CH `post_code` outputs in CSV, JSON, and XML.
 - Regional Geofabrik PBF refresh workflow with no-op handling for unchanged generated outputs.
 - OpenStreetMap extraction support through `osmium` and spatial enrichment through `shapely`.
 - `is_primary_location`, `location_rank`, `postal_code_rank`, `source`, and `evidence_count` metadata for post code exports.
+- D-A-CH country configuration and v1 public paths for Austria and Switzerland.
 
 ### Changed
 
@@ -26,9 +27,10 @@ The format follows Keep a Changelog.
 - Azure pipeline and legacy diff workflow files were replaced with GitHub-first workflows.
 - Repository documentation is now English-only.
 - Pull request Dependency Review runs as a best-effort signal until Dependency graph support is enabled for the repository.
-- The v1 API now publishes Germany-only `post_code` files instead of the previous German street files and Liechtenstein commune file.
+- The v1 API now publishes D-A-CH `post_code` files instead of the previous German street files and Liechtenstein commune file.
 - Attribution now includes Geofabrik GmbH for regional PBF source data.
 - The v1 post code schema now marks one primary location per post code and ranks post codes within each normalized place.
+- The data refresh pipeline now supports country-scoped D-A-CH outputs through `--countries`.
 
 ### Removed
 
