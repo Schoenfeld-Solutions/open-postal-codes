@@ -21,6 +21,7 @@ REQUIRED_SNIPPETS = (
     "data/public/v1/de/post_code.csv",
     "data/public/v1/de/post_code.json",
     "data/public/v1/de/post_code.xml",
+    "CONTRIBUTING.md",
     "python3 -m pytest --cov=open_postal_codes --cov-fail-under=85",
     "python3 -m ruff check .",
     "python3 -m ruff format --check .",

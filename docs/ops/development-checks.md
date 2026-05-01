@@ -22,6 +22,12 @@ pre-commit install --hook-type pre-push
 
 The checks protect post code contracts, API packaging, credits, structure, documentation baseline, Python style, types, coverage, and the English-only repository text policy.
 
+`tools.repo_checks.all_checks` also protects maintainability boundaries:
+
+- source, test, and repository-check modules have line-count limits
+- domain code is kept separate from extraction, network refresh, Pages packaging, and private export code
+- tracked public text is checked for prohibited provenance wording
+
 ## Pull Request Dependency Review
 
 The pull request workflow runs GitHub Dependency Review as a best-effort supply-chain signal. Python quality gates remain blocking. Dependency Review should become a blocking gate after the repository has Dependency graph support enabled.

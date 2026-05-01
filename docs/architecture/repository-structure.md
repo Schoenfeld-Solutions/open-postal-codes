@@ -10,7 +10,10 @@
 - `docs/`: ADRs, contracts, architecture, ops, security, strategy, and plans.
 - `tests/`: unit and repository smoke tests.
 - `tools/repo_checks/`: deterministic structure and governance checks.
+- `CONTRIBUTING.md`: public contributor rules for maintainability, contracts, data artifacts, and commits.
 
 ## Principle
 
 Code, tracked data, source metadata, and generated artifacts stay separate. `out/` and downloaded PBF files are local build results and are not versioned.
+
+Runtime modules stay small and layered. Domain rules, country configuration, OSM extraction, refresh orchestration, Pages packaging, and private exports remain separate responsibilities.

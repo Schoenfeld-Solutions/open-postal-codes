@@ -63,6 +63,8 @@ python3 -m mypy src tests tools
 python3 -m tools.repo_checks.all_checks
 ```
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for module boundaries, data artifact rules, public contract rules, and commit expectations.
+
 Package the Pages site locally:
 
 ```bash

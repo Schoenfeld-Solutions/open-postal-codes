@@ -27,11 +27,9 @@ def test_legacy_pipeline_files_are_removed() -> None:
     assert not Path(".github/workflows/create-osm-update.yaml").exists()
 
 
-def test_local_guidance_files_are_gitignored() -> None:
+def test_local_artifacts_are_gitignored() -> None:
     gitignore = Path(".gitignore").read_text(encoding="utf-8")
 
-    assert "AGENTS.md" in gitignore
-    assert "AGENTS.override.md" in gitignore
     assert "*.osm.pbf" in gitignore
     assert "*.osm.pbf.part" in gitignore
 

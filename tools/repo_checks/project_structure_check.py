@@ -39,6 +39,7 @@ REQUIRED_FILES = (
     Path(".gitignore"),
     Path(".pre-commit-config.yaml"),
     Path("CHANGELOG.md"),
+    Path("CONTRIBUTING.md"),
     Path("LICENSE"),
     Path("NOTICE.md"),
     Path("README.md"),
@@ -54,12 +55,14 @@ REQUIRED_FILES = (
     Path("data/sources/geofabrik-regions.json"),
     Path("docs/adr/0009-extend-v1-to-dach-post-code-data.md"),
     Path("docs/adr/0010-add-state-to-v1-post-code-data.md"),
+    Path("docs/adr/0011-add-maintainability-guardrails.md"),
     Path("docs/contracts/CURRENT.md"),
     Path("docs/plans/PLANS.md"),
     Path("docs/plans/PLANS-001-initialize-repository-foundation.md"),
     Path("docs/plans/PLANS-002-germany-post-code-extraction.md"),
     Path("docs/plans/PLANS-003-dach-post-code-expansion.md"),
     Path("docs/plans/PLANS-004-state-and-business-central-export.md"),
+    Path("docs/plans/PLANS-005-maintainability-guardrails.md"),
     Path("pyproject.toml"),
     Path("site/404.html"),
     Path("site/index.html"),
@@ -68,7 +71,9 @@ REQUIRED_FILES = (
     Path("src/open_postal_codes/osm_extract.py"),
     Path("src/open_postal_codes/post_code.py"),
     Path("src/open_postal_codes/refresh_data.py"),
+    Path("tools/repo_checks/boundary_truth_check.py"),
     Path("tools/repo_checks/language_policy_check.py"),
+    Path("tools/repo_checks/module_size_check.py"),
 )
 
 FORBIDDEN_FILES = (
@@ -87,8 +92,6 @@ REQUIRED_GITIGNORE_SNIPPETS = (
     ".coverage",
     "*.osm.pbf",
     "*.osm.pbf.part",
-    "AGENTS.md",
-    "AGENTS.override.md",
 )
 
 

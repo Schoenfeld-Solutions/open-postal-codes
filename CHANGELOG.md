@@ -20,6 +20,7 @@ The format follows Keep a Changelog.
 - `is_primary_location`, `location_rank`, `postal_code_rank`, `source`, and `evidence_count` metadata for post code exports.
 - D-A-CH country configuration and v1 public paths for Austria and Switzerland.
 - Local Business Central D-A-CH workbook generation from public v1 post code files.
+- Contributor-facing maintainability guardrails for module size, import boundaries, and public provenance wording.
 
 ### Changed
 
