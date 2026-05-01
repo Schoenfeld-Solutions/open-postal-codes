@@ -6,9 +6,11 @@ from collections.abc import Callable
 
 from tools.repo_checks import (
     adr_check,
+    boundary_truth_check,
     changelog_check,
     language_policy_check,
     license_credit_check,
+    module_size_check,
     pages_contract_check,
     plans_check,
     project_structure_check,
@@ -25,6 +27,8 @@ CHECKS: tuple[Callable[[], int], ...] = (
     language_policy_check.main,
     license_credit_check.main,
     pages_contract_check.main,
+    boundary_truth_check.main,
+    module_size_check.main,
     reference_policy_check.main,
 )
 
