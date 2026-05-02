@@ -43,6 +43,9 @@ def package_fixture(tmp_path: Path) -> Path:
     output_root = tmp_path / "out"
     write_text(repository_root / "site/index.html", "<!doctype html><title>Open</title>")
     write_text(repository_root / "site/404.html", "<!doctype html><title>Missing</title>")
+    write_text(repository_root / "site/assets/site.css", "body { color: #102033; }")
+    write_text(repository_root / "site/assets/site.js", "document.title = document.title;")
+    (repository_root / "site/favicon.ico").write_bytes(b"fixture")
     write_fixture_public_data(repository_root)
     package_pages_site(
         repository_root=repository_root,

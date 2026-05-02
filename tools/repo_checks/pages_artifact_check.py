@@ -20,6 +20,14 @@ from open_postal_codes.pages import (
 )
 from tools.repo_checks.common import fail
 
+STATIC_SITE_FILES = (
+    "index.html",
+    "404.html",
+    "favicon.ico",
+    "assets/site.css",
+    "assets/site.js",
+)
+
 
 def expected_files() -> dict[str, tuple[str, str, str]]:
     return {
@@ -46,7 +54,8 @@ def validate_packaged_output(output_root: Path) -> list[str]:
     errors: list[str] = []
     api_root = output_root / "api" / API_VERSION
 
-    for path in (output_root / "index.html", output_root / "404.html"):
+    for file_name in STATIC_SITE_FILES:
+        path = output_root / file_name
         if not path.is_file():
             errors.append(f"missing static Pages file: {path}")
 
