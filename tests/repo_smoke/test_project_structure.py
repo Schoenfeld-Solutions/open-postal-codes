@@ -34,6 +34,21 @@ def test_local_artifacts_are_gitignored() -> None:
     assert "*.osm.pbf.part" in gitignore
 
 
+def test_pages_surface_contains_professional_portal_landmarks() -> None:
+    site_index = Path("site/index.html").read_text(encoding="utf-8")
+
+    assert Path("site/favicon.ico").exists()
+    assert Path("site/assets/site.css").exists()
+    assert Path("site/assets/site.js").exists()
+    assert 'id="themeToggle"' in site_index
+    assert 'id="quickstart"' in site_index
+    assert 'id="downloads"' in site_index
+    assert "data-copy=" in site_index
+    assert "api/v1/index.json" in site_index
+    assert 'href="assets/site.css"' in site_index
+    assert 'src="assets/site.js"' in site_index
+
+
 def test_repository_checks_pass() -> None:
     from tools.repo_checks import all_checks, language_policy_check
 
