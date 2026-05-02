@@ -1,10 +1,18 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
 
-from tools.repo_checks import boundary_truth_check, module_size_check, reference_policy_check
+from open_postal_codes.countries import COUNTRY_CONFIGS
+from open_postal_codes.post_code import PostCodeRecord, write_public_post_code_files
+from tools.repo_checks import (
+    boundary_truth_check,
+    module_size_check,
+    public_data_quality_check,
+    reference_policy_check,
+)
 
 pytestmark = pytest.mark.unit
 
@@ -30,7 +38,83 @@ def test_module_size_check_rejects_large_product_modules(tmp_path: Path) -> None
 
     errors = module_size_check.validate_file_sizes(tmp_path)
 
-    assert errors == ["product module exceeds 850 lines: src/open_postal_codes/large.py (851)"]
+    assert errors == ["product module exceeds 650 lines: src/open_postal_codes/large.py (651)"]
+
+
+def test_public_data_quality_accepts_complete_fixture(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(tmp_path)
+
+    assert (
+        public_data_quality_check.validate_public_data(
+            tmp_path,
+            minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        )
+        == []
+    )
+
+
+def test_public_data_quality_rejects_missing_state(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(
+        tmp_path,
+        records_by_country={
+            "de": [PostCodeRecord(code="28195", city="Bremen", state="Bremen")],
+            "at": [PostCodeRecord(code="1010", city="Wien", country="AT", state="Wien")],
+            "ch": [PostCodeRecord(code="8001", city="Zürich", country="CH", state="")],
+        },
+    )
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+    )
+
+    assert any("without state" in error for error in errors)
+
+
+def test_public_data_quality_rejects_low_record_count(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(tmp_path)
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 2, "at": 1, "ch": 1},
+    )
+
+    assert any("expected at least 2" in error for error in errors)
+
+
+def test_public_data_quality_rejects_missing_metadata_key(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(tmp_path, omitted_metadata_key="ch/switzerland")
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+    )
+
+    assert errors == ["source metadata is missing keys: ch/switzerland"]
+
+
+def test_public_data_quality_rejects_missing_sentinel_row(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(
+        tmp_path,
+        records_by_country={
+            "de": [PostCodeRecord(code="28195", city="Bremen", state="Bremen")],
+            "at": [PostCodeRecord(code="1010", city="Other", country="AT", state="Wien")],
+            "ch": [PostCodeRecord(code="8001", city="Zürich", country="CH", state="Zürich")],
+        },
+    )
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+    )
+
+    assert any("1010 Wien" in error for error in errors)
+
+
+def test_public_data_quality_rejects_tracked_pbf_files() -> None:
+    assert public_data_quality_check.validate_tracked_pbf_files(("austria.osm.pbf",)) == [
+        "raw PBF downloads must not be tracked: austria.osm.pbf"
+    ]
 
 
 def test_boundary_truth_check_accepts_current_layering(tmp_path: Path) -> None:
@@ -94,3 +178,46 @@ def test_reference_policy_allows_normal_project_words(tmp_path: Path) -> None:
     path.write_text("This API is maintained as public data.\n", encoding="utf-8")
 
     assert reference_policy_check.reference_errors_for_path(path) == []
+
+
+def write_public_data_quality_fixture(
+    repository_root: Path,
+    *,
+    records_by_country: dict[str, list[PostCodeRecord]] | None = None,
+    omitted_metadata_key: str | None = None,
+) -> None:
+    records = records_by_country or {
+        "de": [PostCodeRecord(code="28195", city="Bremen", state="Bremen")],
+        "at": [PostCodeRecord(code="1010", city="Wien", country="AT", state="Wien")],
+        "ch": [PostCodeRecord(code="8001", city="Zürich", country="CH", state="Zürich")],
+    }
+    for country, country_records in records.items():
+        write_public_post_code_files(
+            country_records,
+            repository_root / f"data/public/v1/{country}",
+        )
+
+    metadata_keys = {
+        region.metadata_key for country in COUNTRY_CONFIGS for region in country.geofabrik_regions
+    }
+    if omitted_metadata_key is not None:
+        metadata_keys.remove(omitted_metadata_key)
+    metadata_path = repository_root / "data/sources/geofabrik-regions.json"
+    metadata_path.parent.mkdir(parents=True, exist_ok=True)
+    metadata_path.write_text(
+        json.dumps(
+            {
+                "regions": {
+                    key: {
+                        "url": f"https://example.test/{key}.osm.pbf",
+                        "content_length": 1,
+                        "etag": "",
+                        "last_modified": "",
+                        "md5": "900150983cd24fb0d6963f7d28e17f72",
+                    }
+                    for key in sorted(metadata_keys)
+                }
+            }
+        ),
+        encoding="utf-8",
+    )

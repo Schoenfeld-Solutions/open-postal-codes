@@ -6,8 +6,8 @@ from pathlib import Path
 
 from tools.repo_checks.common import fail
 
-MAX_PRODUCT_LINES = 850
-MAX_TEST_LINES = 1_000
+MAX_PRODUCT_LINES = 650
+MAX_TEST_LINES = 600
 MAX_REPO_CHECK_LINES = 350
 
 PRODUCT_ROOT = Path("src")
