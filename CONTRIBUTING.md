@@ -13,7 +13,7 @@ python3 -m pip install -e '.[dev]'
 Run the standard checks before opening a pull request:
 
 ```bash
-python3 -m pytest --cov=open_postal_codes --cov-fail-under=85
+python3 -m pytest --cov=open_postal_codes --cov-fail-under=90
 python3 -m ruff check .
 python3 -m ruff format --check .
 python3 -m mypy src tests tools
@@ -27,6 +27,7 @@ python3 -m tools.repo_checks.all_checks
 - Keep OSM extraction, data refresh, Pages packaging, and private export generation separate.
 - Do not introduce cyclic imports between runtime modules.
 - Split a module before it grows into mixed orchestration, parsing, validation, and output code.
+- Keep public data quality guardrails in repository checks when data contracts evolve.
 
 ## Public Contracts
 

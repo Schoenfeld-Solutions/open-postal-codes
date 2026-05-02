@@ -21,6 +21,7 @@ The format follows Keep a Changelog.
 - D-A-CH country configuration and v1 public paths for Austria and Switzerland.
 - Local Business Central D-A-CH workbook generation from public v1 post code files.
 - Contributor-facing maintainability guardrails for module size, import boundaries, and public provenance wording.
+- Public data-quality guardrails, stricter module-size limits, free CI timeouts, and maintainer scorecard documentation.
 
 ### Changed
 

@@ -16,4 +16,4 @@
 
 Code, tracked data, source metadata, and generated artifacts stay separate. `out/` and downloaded PBF files are local build results and are not versioned.
 
-Runtime modules stay small and layered. Domain rules, country configuration, OSM extraction, refresh orchestration, Pages packaging, and private exports remain separate responsibilities.
+Runtime modules stay small and layered. Domain rules, country configuration, OSM enrichment, OSM extraction, refresh orchestration, Pages packaging, and private exports remain separate responsibilities.

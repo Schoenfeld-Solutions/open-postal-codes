@@ -56,7 +56,7 @@ pre-commit install --hook-type pre-push
 Standard checks:
 
 ```bash
-python3 -m pytest --cov=open_postal_codes --cov-fail-under=85
+python3 -m pytest --cov=open_postal_codes --cov-fail-under=90
 python3 -m ruff check .
 python3 -m ruff format --check .
 python3 -m mypy src tests tools

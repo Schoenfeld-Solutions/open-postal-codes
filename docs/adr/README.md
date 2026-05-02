@@ -15,6 +15,7 @@
 9. `0009-extend-v1-to-dach-post-code-data.md`
 10. `0010-add-state-to-v1-post-code-data.md`
 11. `0011-add-maintainability-guardrails.md`
+12. `0012-balance-repository-hardening-with-solo-maintenance.md`
 
 ## Rules
 
