@@ -16,6 +16,7 @@ concurrency:
 jobs:
   quality:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - uses: actions/checkout@v6
@@ -31,15 +32,17 @@ jobs:
 
       - name: Run quality gates
         run: |
-          python3 -m pytest --cov=open_postal_codes --cov-fail-under=85
+          python3 -m pytest --cov=open_postal_codes --cov-fail-under=90
           python3 -m ruff check .
           python3 -m ruff format --check .
           python3 -m mypy src tests tools
           python3 -m tools.repo_checks.all_checks
+          git diff --check
 
   package-site:
     runs-on: ubuntu-latest
     needs: [quality]
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v6
@@ -67,6 +70,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: [package-site]
+    timeout-minutes: 10
 
     permissions:
       contents: read

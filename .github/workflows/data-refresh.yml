@@ -25,6 +25,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 240
 
     steps:
       - uses: actions/checkout@v6
@@ -47,11 +48,13 @@ jobs:
 
       - name: Run quality gates
         run: |
-          python3 -m pytest --cov=open_postal_codes --cov-fail-under=85
+          python3 -m pytest --cov=open_postal_codes --cov-fail-under=90
           python3 -m ruff check .
           python3 -m ruff format --check .
           python3 -m mypy src tests tools
           python3 -m tools.repo_checks.all_checks
+          python3 -m open_postal_codes.pages --output-root out
+          git diff --check
 
       - name: Detect data changes
         id: changes
@@ -61,6 +64,60 @@ jobs:
           else
             echo "changed=true" >> "${GITHUB_OUTPUT}"
           fi
+
+      - name: Write refresh summary
+        run: |
+          requested_countries="${{ inputs.countries }}"
+          requested_regions="${{ inputs.regions }}"
+          if [ -z "${requested_countries}" ]; then
+            requested_countries="de,at,ch"
+          fi
+          if [ -z "${requested_regions}" ]; then
+            requested_regions="all selected sources"
+          fi
+          {
+            echo "## Data refresh summary"
+            echo ""
+            echo "- Countries: ${requested_countries}"
+            echo "- Regions: ${requested_regions}"
+            echo "- Tracked data changed: ${{ steps.changes.outputs.changed }}"
+            echo ""
+            echo "### Changed files"
+            changed_files="$(git diff --name-only data/public/v1 data/regional/v1 data/sources/geofabrik-regions.json)"
+            if [ -n "${changed_files}" ]; then
+              printf "%s\n" "${changed_files}" | sed "s/^/- \`/" | sed "s/$/\`/"
+            else
+              echo "- None"
+            fi
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+      - name: Prepare data pull request body
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          requested_countries="${{ inputs.countries }}"
+          requested_regions="${{ inputs.regions }}"
+          if [ -z "${requested_countries}" ]; then
+            requested_countries="de,at,ch"
+          fi
+          if [ -z "${requested_regions}" ]; then
+            requested_regions="all selected sources"
+          fi
+          changed_files="$(git diff --name-only data/public/v1 data/regional/v1 data/sources/geofabrik-regions.json)"
+          {
+            echo "Refreshes D-A-CH post code outputs from Geofabrik PBF files."
+            echo ""
+            echo "## Summary"
+            echo "- Countries: ${requested_countries}"
+            echo "- Regions: ${requested_regions}"
+            echo "- Quality gates passed in the refresh workflow."
+            echo ""
+            echo "## Changed files"
+            if [ -n "${changed_files}" ]; then
+              printf "%s\n" "${changed_files}" | sed "s/^/- \`/" | sed "s/$/\`/"
+            else
+              echo "- None"
+            fi
+          } > "${RUNNER_TEMP}/data-refresh-body.md"
 
       - name: Commit data changes
         if: steps.changes.outputs.changed == 'true'
@@ -81,13 +138,13 @@ jobs:
           if [ -n "${existing_pr}" ]; then
             gh pr edit "${existing_pr}" \
               --title "data(dach): refresh post code outputs" \
-              --body "Refreshes D-A-CH post code outputs from Geofabrik PBF files. Quality gates passed in the refresh workflow."
+              --body-file "${RUNNER_TEMP}/data-refresh-body.md"
           else
             gh pr create \
               --base main \
               --head dev/data-refresh-post-code \
               --title "data(dach): refresh post code outputs" \
-              --body "Refreshes D-A-CH post code outputs from Geofabrik PBF files. Quality gates passed in the refresh workflow."
+              --body-file "${RUNNER_TEMP}/data-refresh-body.md"
           fi
 
       - name: Write failure summary
