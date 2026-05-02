@@ -34,6 +34,7 @@ python3 -m tools.repo_checks.all_checks
 - Public CSV, JSON, XML, path, field-order, and manifest changes require matching contract documentation and tests.
 - Backward-compatible expansion is preferred over replacement.
 - Breaking public API changes require an ADR before implementation.
+- Pages and contract documentation should follow established developer-portal practices for clarity, accessibility, discoverability, and no-login data exploration.
 
 ## Data and Local Artifacts
 
