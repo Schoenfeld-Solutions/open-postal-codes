@@ -31,7 +31,7 @@ repos:
         stages: [pre-push, manual]
       - id: pytest
         name: pytest
-        entry: python3 -m pytest --cov=open_postal_codes --cov-fail-under=85
+        entry: python3 -m pytest --cov=open_postal_codes --cov-fail-under=90
         language: system
         pass_filenames: false
         stages: [pre-push, manual]

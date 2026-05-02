@@ -10,7 +10,16 @@ from open_postal_codes.business_central import (
     SPREADSHEET_NS,
     BusinessCentralRow,
     build_business_central_rows,
+    build_table_xml,
+    build_worksheet_xml,
+    cell_reference,
     export_business_central,
+    fit_business_central_text,
+    main,
+    parse_countries,
+    read_country_records,
+    require_length,
+    shorten_at_natural_boundary,
     write_business_central_workbook,
 )
 from open_postal_codes.post_code import PostCodeRecord, write_public_post_code_files
@@ -192,6 +201,107 @@ def test_export_business_central_reads_dach_public_files(tmp_path: Path) -> None
     )
     assert result.output_path.exists()
     assert result.guardrails_path.exists()
+
+
+def test_read_country_records_rejects_missing_public_csv(tmp_path: Path) -> None:
+    with pytest.raises(ValueError, match="missing public"):
+        read_country_records(tmp_path, countries=parse_countries("de"))
+
+
+def test_business_central_text_helpers_validate_required_values() -> None:
+    assert (
+        fit_business_central_text(
+            "Postal area is different from source note",
+            field_name="Ort",
+            limit=30,
+            required=True,
+        )
+        == "Postal area"
+    )
+    assert fit_business_central_text("", field_name="Bundesregion", limit=30, required=False) == ""
+
+    with pytest.raises(ValueError, match="must not be empty"):
+        require_length("", field_name="Code", limit=20)
+    with pytest.raises(ValueError, match="exceeds"):
+        require_length("x" * 21, field_name="Code", limit=20)
+    with pytest.raises(ValueError, match="must not be empty"):
+        fit_business_central_text("", field_name="Ort", limit=30, required=True)
+    with pytest.raises(ValueError, match="cannot be shortened"):
+        shorten_at_natural_boundary("X" * 31, limit=30)
+
+
+def test_workbook_writer_rejects_missing_or_invalid_template(tmp_path: Path) -> None:
+    missing_template = tmp_path / "missing.xlsx"
+    output_path = tmp_path / "out.xlsx"
+
+    with pytest.raises(ValueError, match="does not exist"):
+        write_business_central_workbook(
+            template_path=missing_template,
+            output_path=output_path,
+            rows=(),
+        )
+
+    write_template(output_path)
+    with pytest.raises(ValueError, match="must differ"):
+        write_business_central_workbook(
+            template_path=output_path,
+            output_path=output_path,
+            rows=(),
+        )
+
+
+def test_workbook_writer_deletes_output_when_template_parts_are_missing(tmp_path: Path) -> None:
+    template_path = tmp_path / "missing-table.xlsx"
+    output_path = tmp_path / "out.xlsx"
+    template_path.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(template_path, "w", compression=zipfile.ZIP_DEFLATED) as workbook:
+        workbook.writestr("xl/worksheets/sheet1.xml", TEMPLATE_WORKSHEET_XML)
+
+    with pytest.raises(ValueError, match="missing parts"):
+        write_business_central_workbook(
+            template_path=template_path,
+            output_path=output_path,
+            rows=(),
+        )
+
+    assert not output_path.exists()
+
+
+def test_workbook_xml_helpers_cover_empty_rows_and_missing_autofilter() -> None:
+    worksheet = ElementTree.fromstring(build_worksheet_xml(TEMPLATE_WORKSHEET_XML, ()))
+    assert worksheet_values(worksheet)[4] == ["", "", "", "", "", ""]
+
+    table_xml = f"""<?xml version="1.0" encoding="utf-8"?>
+<x:table xmlns:x="{SPREADSHEET_NS}" id="5" name="Table5" displayName="Table5" ref="A3:F4">
+  <x:tableColumns count="6" />
+</x:table>
+""".encode()
+    table = ElementTree.fromstring(build_table_xml(table_xml, 0))
+    assert table.get("ref") == "A3:F4"
+
+    with pytest.raises(ValueError, match="no sheetData"):
+        build_worksheet_xml(f'<x:worksheet xmlns:x="{SPREADSHEET_NS}" />'.encode(), ())
+    with pytest.raises(ValueError, match="range A:Z"):
+        cell_reference(26, 1)
+
+
+def test_business_central_cli_reports_success_and_failure(
+    tmp_path: Path,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    repository_root = tmp_path / "repo"
+    template_path = repository_root / "tmp/private-outputs/input/PLZ.xlsx"
+    write_template(template_path)
+    write_public_post_code_files(
+        [PostCodeRecord(code="28195", city="Bremen", state="Bremen")],
+        repository_root / "data/public/v1/de",
+    )
+
+    assert main(["--repository-root", str(repository_root), "--countries", "de"]) == 0
+    assert "Business Central export completed" in capsys.readouterr().out
+
+    assert main(["--repository-root", str(repository_root), "--countries", ""]) == 1
+    assert "Business Central export failed" in capsys.readouterr().err
 
 
 def write_template(path: Path) -> None:

@@ -14,6 +14,19 @@ from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
 from open_postal_codes.countries import DEFAULT_COUNTRY_CONFIG, CountryConfig, get_country_config
+from open_postal_codes.osm_enrichment import (
+    CountyBoundary,
+    StateBoundary,
+    accepted_address_evidence,
+    candidate_counties_for_city,
+    candidate_states_for_city,
+    country_counties,
+    country_states,
+    county_names_for_boundary,
+    evidence_count,
+    geometry_representative_in_country,
+    state_names_for_boundary,
+)
 from open_postal_codes.post_code import (
     ADDRESS_FALLBACK_SOURCE,
     POSTAL_BOUNDARY_SOURCE,
@@ -25,28 +38,11 @@ from open_postal_codes.post_code import (
     write_post_code_csv,
 )
 
-MIN_BOUNDARY_COUNTY_INTERSECTION_RATIO = 0.001
 DEFAULT_MIN_ADDRESS_EVIDENCE = 3
 
 
 class ExtractionError(RuntimeError):
     """Raised when an OSM extract cannot produce valid post code data."""
-
-
-@dataclass(frozen=True)
-class StateBoundary:
-    """A first-level administrative boundary used for state enrichment."""
-
-    name: str
-    geometry: BaseGeometry
-
-
-@dataclass(frozen=True)
-class CountyBoundary:
-    """An administrative boundary used for spatial enrichment."""
-
-    name: str
-    geometry: BaseGeometry
 
 
 @dataclass(frozen=True)
@@ -61,14 +57,6 @@ class PostalBoundaryCandidate:
 @dataclass
 class AddressAggregate:
     """Aggregated address evidence for one post code and city."""
-
-    count: int
-    geometry: BaseGeometry | None
-
-
-@dataclass
-class AddressEvidence:
-    """Accepted address evidence for one public record identity."""
 
     count: int
     geometry: BaseGeometry | None
@@ -233,37 +221,38 @@ def extract_post_codes_from_osm(
         )
 
     country_geometry = unary_union(country_source_geometries)
-    states = _country_states(country_geometry=country_geometry, states=handler.states)
-    counties = _country_counties(
+    states = country_states(country_geometry=country_geometry, states=handler.states)
+    counties = country_counties(
         country_geometry=country_geometry,
         counties=handler.counties,
         fallback_counties=handler.fallback_counties,
     )
-    address_evidence = _accepted_address_evidence(
+    address_enrichment = accepted_address_evidence(
         addresses=handler.addresses,
         country_geometry=country_geometry,
         states=states,
         counties=counties,
-        handler=handler,
     )
+    handler.dropped_candidate_count += address_enrichment.dropped_candidate_count
+    address_evidence = address_enrichment.evidence
 
     boundary_records: list[PostCodeRecord] = []
     boundary_codes: set[str] = set()
     for candidate in handler.postal_boundaries:
-        if not _geometry_representative_in_country(candidate.geometry, country_geometry):
+        if not geometry_representative_in_country(candidate.geometry, country_geometry):
             handler.dropped_candidate_count += 1
             continue
-        state_names = _state_names_for_boundary(candidate.geometry, states)
-        county_names = _county_names_for_boundary(candidate.geometry, counties)
+        state_names = state_names_for_boundary(candidate.geometry, states)
+        county_names = county_names_for_boundary(candidate.geometry, counties)
         for city in candidate.cities:
-            candidate_states = _candidate_states_for_city(
+            candidate_states = candidate_states_for_city(
                 code=candidate.code,
                 city=city,
                 state_names=state_names,
                 address_evidence=address_evidence,
             )
             for state_name in candidate_states:
-                candidate_counties = _candidate_counties_for_city(
+                candidate_counties = candidate_counties_for_city(
                     code=candidate.code,
                     city=city,
                     state=state_name,
@@ -280,7 +269,7 @@ def extract_post_codes_from_osm(
                             state=state_name,
                             county=county_name,
                             source=POSTAL_BOUNDARY_SOURCE,
-                            evidence_count=_evidence_count(
+                            evidence_count=evidence_count(
                                 code=candidate.code,
                                 city=city,
                                 state=state_name,
@@ -406,286 +395,6 @@ def _geometry_from_area(wkt_factory: Any, area: Any) -> BaseGeometry | None:
         return wkt.loads(wkt_factory.create_multipolygon(area))
     except (RuntimeError, ValueError):
         return None
-
-
-def _country_counties(
-    *,
-    country_geometry: BaseGeometry,
-    counties: list[CountyBoundary],
-    fallback_counties: list[CountyBoundary],
-) -> list[CountyBoundary]:
-    country_counties = [
-        county
-        for county in counties
-        if _geometry_overlaps_country(geometry=county.geometry, country_geometry=country_geometry)
-    ]
-    if country_counties:
-        return country_counties
-    return [
-        county
-        for county in fallback_counties
-        if _geometry_overlaps_country(geometry=county.geometry, country_geometry=country_geometry)
-    ]
-
-
-def _country_states(
-    *,
-    country_geometry: BaseGeometry,
-    states: list[StateBoundary],
-) -> list[StateBoundary]:
-    return [
-        state
-        for state in states
-        if _geometry_overlaps_country(geometry=state.geometry, country_geometry=country_geometry)
-    ]
-
-
-def _geometry_overlaps_country(
-    *,
-    geometry: BaseGeometry,
-    country_geometry: BaseGeometry,
-) -> bool:
-    if geometry.is_empty:
-        return False
-    representative = geometry.representative_point()
-    return bool(country_geometry.covers(representative) or country_geometry.intersects(geometry))
-
-
-def _geometry_representative_in_country(
-    geometry: BaseGeometry,
-    country_geometry: BaseGeometry,
-) -> bool:
-    if geometry.is_empty:
-        return False
-    return bool(country_geometry.covers(geometry.representative_point()))
-
-
-def _accepted_address_evidence(
-    *,
-    addresses: dict[tuple[str, str], AddressAggregate],
-    country_geometry: BaseGeometry,
-    states: list[StateBoundary],
-    counties: list[CountyBoundary],
-    handler: _PostCodeExtractionHandler,
-) -> dict[tuple[str, str, str, str], AddressEvidence]:
-    evidence: dict[tuple[str, str, str, str], AddressEvidence] = {}
-    for (code, city), aggregate in addresses.items():
-        if aggregate.geometry is not None and not _geometry_representative_in_country(
-            aggregate.geometry,
-            country_geometry,
-        ):
-            handler.dropped_candidate_count += 1
-            continue
-
-        state_name = ""
-        county_name = ""
-        if aggregate.geometry is not None:
-            state_name = _state_name_for_point(
-                aggregate.geometry.representative_point(),
-                states,
-            )
-            county_name = _county_name_for_point(
-                aggregate.geometry.representative_point(),
-                counties,
-            )
-
-        key = (code, city, state_name, county_name)
-        existing = evidence.get(key)
-        if existing is None:
-            evidence[key] = AddressEvidence(count=aggregate.count, geometry=aggregate.geometry)
-        else:
-            existing.count += aggregate.count
-            if existing.geometry is None and aggregate.geometry is not None:
-                existing.geometry = aggregate.geometry
-    return evidence
-
-
-def _candidate_counties_for_city(
-    *,
-    code: str,
-    city: str,
-    state: str,
-    county_names: tuple[str, ...],
-    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
-) -> tuple[str, ...]:
-    if not county_names:
-        return ("",)
-
-    counties_with_evidence = tuple(
-        county_name
-        for county_name in county_names
-        if _evidence_count(
-            code=code,
-            city=city,
-            state=state,
-            county=county_name,
-            address_evidence=address_evidence,
-        )
-        > 0
-    )
-    if counties_with_evidence:
-        return counties_with_evidence
-
-    evidence_counties = _evidence_counties_for_city(
-        code=code,
-        city=city,
-        state=state,
-        address_evidence=address_evidence,
-    )
-    return evidence_counties or county_names
-
-
-def _candidate_states_for_city(
-    *,
-    code: str,
-    city: str,
-    state_names: tuple[str, ...],
-    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
-) -> tuple[str, ...]:
-    if not state_names:
-        return ("",)
-
-    states_with_evidence = tuple(
-        state_name
-        for state_name in state_names
-        if _evidence_count(
-            code=code,
-            city=city,
-            state=state_name,
-            county="",
-            address_evidence=address_evidence,
-        )
-        > 0
-    )
-    if states_with_evidence:
-        return states_with_evidence
-
-    evidence_states = _evidence_states_for_city(
-        code=code,
-        city=city,
-        address_evidence=address_evidence,
-    )
-    return evidence_states or state_names
-
-
-def _evidence_states_for_city(
-    *,
-    code: str,
-    city: str,
-    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
-) -> tuple[str, ...]:
-    return tuple(
-        sorted(
-            state
-            for (evidence_code, evidence_city, state, _), evidence in address_evidence.items()
-            if evidence_code == code and evidence_city == city and state and evidence.count > 0
-        )
-    )
-
-
-def _evidence_counties_for_city(
-    *,
-    code: str,
-    city: str,
-    state: str,
-    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
-) -> tuple[str, ...]:
-    return tuple(
-        sorted(
-            county
-            for (
-                evidence_code,
-                evidence_city,
-                evidence_state,
-                county,
-            ), evidence in address_evidence.items()
-            if evidence_code == code
-            and evidence_city == city
-            and evidence_state == state
-            and county
-            and evidence.count > 0
-        )
-    )
-
-
-def _evidence_count(
-    *,
-    code: str,
-    city: str,
-    state: str,
-    county: str,
-    address_evidence: dict[tuple[str, str, str, str], AddressEvidence],
-) -> int:
-    if county:
-        evidence = address_evidence.get((code, city, state, county))
-        return evidence.count if evidence is not None else 0
-    if state:
-        total = 0
-        for (evidence_code, evidence_city, evidence_state, _), evidence in address_evidence.items():
-            if evidence_code == code and evidence_city == city and evidence_state == state:
-                total += evidence.count
-        return total
-    return sum(
-        evidence.count
-        for (evidence_code, evidence_city, _, _), evidence in address_evidence.items()
-        if evidence_code == code and evidence_city == city
-    )
-
-
-def _county_names_for_boundary(
-    geometry: BaseGeometry,
-    counties: list[CountyBoundary],
-) -> tuple[str, ...]:
-    if geometry.is_empty:
-        return ()
-    if geometry.area <= 0:
-        county_name = _county_name_for_point(geometry.representative_point(), counties)
-        return (county_name,) if county_name else ()
-
-    names: list[str] = []
-    for county in counties:
-        if not county.geometry.intersects(geometry):
-            continue
-        intersection = county.geometry.intersection(geometry)
-        ratio = intersection.area / geometry.area
-        if ratio >= MIN_BOUNDARY_COUNTY_INTERSECTION_RATIO:
-            names.append(county.name)
-    return tuple(sorted(set(names)))
-
-
-def _state_names_for_boundary(
-    geometry: BaseGeometry,
-    states: list[StateBoundary],
-) -> tuple[str, ...]:
-    if geometry.is_empty:
-        return ()
-    if geometry.area <= 0:
-        state_name = _state_name_for_point(geometry.representative_point(), states)
-        return (state_name,) if state_name else ()
-
-    names: list[str] = []
-    for state in states:
-        if not state.geometry.intersects(geometry):
-            continue
-        intersection = state.geometry.intersection(geometry)
-        ratio = intersection.area / geometry.area
-        if ratio >= MIN_BOUNDARY_COUNTY_INTERSECTION_RATIO:
-            names.append(state.name)
-    return tuple(sorted(set(names)))
-
-
-def _state_name_for_point(point: BaseGeometry, states: list[StateBoundary]) -> str:
-    for state in states:
-        if state.geometry.covers(point):
-            return state.name
-    return ""
-
-
-def _county_name_for_point(point: BaseGeometry, counties: list[CountyBoundary]) -> str:
-    for county in counties:
-        if county.geometry.covers(point):
-            return county.name
-    return ""
 
 
 def parse_arguments(arguments: list[str] | None = None) -> argparse.Namespace:

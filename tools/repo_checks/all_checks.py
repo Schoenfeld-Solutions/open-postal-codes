@@ -14,6 +14,7 @@ from tools.repo_checks import (
     pages_contract_check,
     plans_check,
     project_structure_check,
+    public_data_quality_check,
     readme_check,
     reference_policy_check,
 )
@@ -27,6 +28,7 @@ CHECKS: tuple[Callable[[], int], ...] = (
     language_policy_check.main,
     license_credit_check.main,
     pages_contract_check.main,
+    public_data_quality_check.main,
     boundary_truth_check.main,
     module_size_check.main,
     reference_policy_check.main,
