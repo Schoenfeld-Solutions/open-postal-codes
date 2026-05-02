@@ -22,6 +22,7 @@ The format follows Keep a Changelog.
 - Local Business Central D-A-CH workbook generation from public v1 post code files.
 - Contributor-facing maintainability guardrails for module size, import boundaries, and public provenance wording.
 - Public data-quality guardrails, stricter module-size limits, free CI timeouts, and maintainer scorecard documentation.
+- Pages artifact validation, workflow policy checks, stronger public data-quality guards, and release/consumer smoke checklists.
 
 ### Changed
 

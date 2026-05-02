@@ -27,6 +27,10 @@ REQUIRED_SNIPPETS = (
     "python3 -m ruff format --check .",
     "python3 -m mypy src tests tools",
     "python3 -m tools.repo_checks.all_checks",
+    "python3 -m open_postal_codes.pages --output-root out",
+    "git diff --check",
+    "docs/contracts/v1/consumer-smoke.md",
+    "docs/ops/release-readiness.md",
     "code,city,country,state,county,time_zone,"
     "is_primary_location,location_rank,postal_code_rank,source,evidence_count",
     "is_primary_location",

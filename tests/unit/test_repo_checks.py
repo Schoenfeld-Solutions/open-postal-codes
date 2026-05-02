@@ -48,6 +48,7 @@ def test_public_data_quality_accepts_complete_fixture(tmp_path: Path) -> None:
         public_data_quality_check.validate_public_data(
             tmp_path,
             minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+            minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
         )
         == []
     )
@@ -66,6 +67,7 @@ def test_public_data_quality_rejects_missing_state(tmp_path: Path) -> None:
     errors = public_data_quality_check.validate_public_data(
         tmp_path,
         minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
     )
 
     assert any("without state" in error for error in errors)
@@ -77,9 +79,22 @@ def test_public_data_quality_rejects_low_record_count(tmp_path: Path) -> None:
     errors = public_data_quality_check.validate_public_data(
         tmp_path,
         minimum_records_by_country={"de": 2, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
     )
 
     assert any("expected at least 2" in error for error in errors)
+
+
+def test_public_data_quality_rejects_low_unique_post_code_count(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(tmp_path)
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 2, "at": 1, "ch": 1},
+    )
+
+    assert any("unique post codes" in error and "expected at least 2" in error for error in errors)
 
 
 def test_public_data_quality_rejects_missing_metadata_key(tmp_path: Path) -> None:
@@ -88,9 +103,35 @@ def test_public_data_quality_rejects_missing_metadata_key(tmp_path: Path) -> Non
     errors = public_data_quality_check.validate_public_data(
         tmp_path,
         minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
     )
 
     assert errors == ["source metadata is missing keys: ch/switzerland"]
+
+
+def test_public_data_quality_rejects_malformed_metadata_values(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(
+        tmp_path,
+        metadata_overrides={
+            "at/austria": {
+                "url": "https://example.test/austria.osm.pbf",
+                "content_length": 0,
+                "md5": "not-md5",
+                "etag": "",
+            }
+        },
+    )
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
+    )
+
+    assert any("at/austria has unexpected url" in error for error in errors)
+    assert any("at/austria must have positive content_length" in error for error in errors)
+    assert any("at/austria must have a 32-character md5" in error for error in errors)
+    assert any("at/austria has empty etag" in error for error in errors)
 
 
 def test_public_data_quality_rejects_missing_sentinel_row(tmp_path: Path) -> None:
@@ -106,9 +147,27 @@ def test_public_data_quality_rejects_missing_sentinel_row(tmp_path: Path) -> Non
     errors = public_data_quality_check.validate_public_data(
         tmp_path,
         minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
     )
 
     assert any("1010 Wien" in error for error in errors)
+
+
+def test_public_data_quality_rejects_sentinel_row_with_wrong_timezone(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(tmp_path)
+    csv_path = tmp_path / "data/public/v1/at/post_code.csv"
+    csv_path.write_text(
+        csv_path.read_text(encoding="utf-8").replace("W. Europe Standard Time", "UTC"),
+        encoding="utf-8",
+    )
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
+    )
+
+    assert any("1010 Wien with AT, state, and W. Europe Standard Time" in error for error in errors)
 
 
 def test_public_data_quality_rejects_tracked_pbf_files() -> None:
@@ -185,6 +244,7 @@ def write_public_data_quality_fixture(
     *,
     records_by_country: dict[str, list[PostCodeRecord]] | None = None,
     omitted_metadata_key: str | None = None,
+    metadata_overrides: dict[str, dict[str, object]] | None = None,
 ) -> None:
     records = records_by_country or {
         "de": [PostCodeRecord(code="28195", city="Bremen", state="Bremen")],
@@ -197,11 +257,15 @@ def write_public_data_quality_fixture(
             repository_root / f"data/public/v1/{country}",
         )
 
-    metadata_keys = {
-        region.metadata_key for country in COUNTRY_CONFIGS for region in country.geofabrik_regions
+    metadata_regions = {
+        region.metadata_key: region
+        for country in COUNTRY_CONFIGS
+        for region in country.geofabrik_regions
     }
+    metadata_keys = set(metadata_regions)
     if omitted_metadata_key is not None:
         metadata_keys.remove(omitted_metadata_key)
+    metadata_overrides = metadata_overrides or {}
     metadata_path = repository_root / "data/sources/geofabrik-regions.json"
     metadata_path.parent.mkdir(parents=True, exist_ok=True)
     metadata_path.write_text(
@@ -209,12 +273,13 @@ def write_public_data_quality_fixture(
             {
                 "regions": {
                     key: {
-                        "url": f"https://example.test/{key}.osm.pbf",
+                        "url": metadata_regions[key].url,
                         "content_length": 1,
-                        "etag": "",
-                        "last_modified": "",
+                        "etag": '"fixture"',
+                        "last_modified": "Thu, 30 Apr 2026 01:28:05 GMT",
                         "md5": "900150983cd24fb0d6963f7d28e17f72",
                     }
+                    | metadata_overrides.get(key, {})
                     for key in sorted(metadata_keys)
                 }
             }

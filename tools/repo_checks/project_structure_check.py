@@ -60,6 +60,7 @@ REQUIRED_FILES = (
     Path("docs/adr/0011-add-maintainability-guardrails.md"),
     Path("docs/adr/0012-balance-repository-hardening-with-solo-maintenance.md"),
     Path("docs/contracts/CURRENT.md"),
+    Path("docs/contracts/v1/consumer-smoke.md"),
     Path("docs/plans/PLANS.md"),
     Path("docs/plans/PLANS-001-initialize-repository-foundation.md"),
     Path("docs/plans/PLANS-002-germany-post-code-extraction.md"),
@@ -68,6 +69,7 @@ REQUIRED_FILES = (
     Path("docs/plans/PLANS-005-maintainability-guardrails.md"),
     Path("docs/plans/PLANS-006-balanced-repository-hardening.md"),
     Path("docs/ops/maintainer-scorecard.md"),
+    Path("docs/ops/release-readiness.md"),
     Path("pyproject.toml"),
     Path("site/404.html"),
     Path("site/index.html"),
@@ -80,7 +82,9 @@ REQUIRED_FILES = (
     Path("tools/repo_checks/boundary_truth_check.py"),
     Path("tools/repo_checks/language_policy_check.py"),
     Path("tools/repo_checks/module_size_check.py"),
+    Path("tools/repo_checks/pages_artifact_check.py"),
     Path("tools/repo_checks/public_data_quality_check.py"),
+    Path("tools/repo_checks/workflow_policy_check.py"),
 )
 
 FORBIDDEN_FILES = (

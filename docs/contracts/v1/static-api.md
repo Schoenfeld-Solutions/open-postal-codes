@@ -32,3 +32,7 @@
 ## Gzip Files
 
 Each public data file receives a `.gz` file in the Pages artifact. These files are not versioned under `data/public/v1/`.
+
+## Consumer Smoke Checks
+
+Local and published manifest, hash, gzip, and sentinel-row checks are documented in [consumer-smoke.md](consumer-smoke.md).
