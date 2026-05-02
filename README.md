@@ -39,6 +39,8 @@ GitHub Pages publishes the data at stable paths:
 
 The Pages artifact also creates `.gz` files and metadata with hashes, file sizes, media types, and record counts. Generated downloads are not versioned in the repository.
 
+Consumer-oriented manifest, hash, gzip, and sentinel-row checks are documented in [docs/contracts/v1/consumer-smoke.md](docs/contracts/v1/consumer-smoke.md).
+
 ## Installation and Development
 
 Requirements:
@@ -61,9 +63,11 @@ python3 -m ruff check .
 python3 -m ruff format --check .
 python3 -m mypy src tests tools
 python3 -m tools.repo_checks.all_checks
+python3 -m open_postal_codes.pages --output-root out
+git diff --check
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for module boundaries, data artifact rules, public contract rules, and commit expectations.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for module boundaries, data artifact rules, public contract rules, and commit expectations. Release readiness is tracked in [docs/ops/release-readiness.md](docs/ops/release-readiness.md).
 
 Package the Pages site locally:
 
