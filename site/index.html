@@ -1,214 +1,434 @@
 <!doctype html>
 <html lang="en">
-      <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Open Postal Codes publishes static D-A-CH post code data."
+      content="Open Postal Codes publishes versioned D-A-CH post code files through a static API with hashes, compressed downloads, and clear schema documentation."
     />
+    <meta name="theme-color" content="#ffffff" />
     <base href="/open-postal-codes/" />
-    <title>Open Postal Codes</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --page: #f6f8fb;
-        --ink: #102033;
-        --muted: #5b6b7d;
-        --line: #d7dee8;
-        --accent: #176b5b;
-        --accent-strong: #0e4d40;
-        --panel: #ffffff;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        background: var(--page);
-        color: var(--ink);
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
-        line-height: 1.55;
-        margin: 0;
-      }
-
-      a {
-        color: var(--accent-strong);
-      }
-
-      .shell {
-        margin: 0 auto;
-        max-width: 1080px;
-        padding: 40px 20px;
-      }
-
-      .hero {
-        border-bottom: 1px solid var(--line);
-        display: grid;
-        gap: 24px;
-        padding-bottom: 32px;
-      }
-
-      .label {
-        color: var(--accent);
-        font-size: 0.78rem;
-        font-weight: 800;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      h1,
-      h2,
-      p {
-        margin: 0;
-      }
-
-      h1 {
-        font-size: clamp(2.3rem, 7vw, 5.2rem);
-        letter-spacing: 0;
-        line-height: 0.95;
-      }
-
-      .lede {
-        color: var(--muted);
-        font-size: 1.12rem;
-        max-width: 66ch;
-      }
-
-      .actions,
-      .grid {
-        display: grid;
-        gap: 12px;
-      }
-
-      .actions {
-        grid-template-columns: repeat(auto-fit, minmax(180px, max-content));
-      }
-
-      .button {
-        align-items: center;
-        background: var(--accent);
-        border-radius: 6px;
-        color: #ffffff;
-        display: inline-flex;
-        font-weight: 700;
-        min-height: 44px;
-        padding: 10px 14px;
-        text-decoration: none;
-      }
-
-      .button.secondary {
-        background: #e7efed;
-        color: var(--accent-strong);
-      }
-
-      .section {
-        padding: 28px 0 0;
-      }
-
-      .grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        margin-top: 14px;
-      }
-
-      .card {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        display: grid;
-        gap: 8px;
-        padding: 16px;
-      }
-
-      code {
-        overflow-wrap: anywhere;
-      }
-
-      footer {
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        margin-top: 32px;
-        padding-top: 20px;
-      }
-    </style>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <title>Open Postal Codes | Static D-A-CH post code API</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("open-postal-codes-theme");
+          if (savedTheme === "light" || savedTheme === "dark") {
+            document.documentElement.dataset.theme = savedTheme;
+          }
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/site.css" />
   </head>
   <body>
-    <main class="shell">
-      <section class="hero">
-        <p class="label">D-A-CH post code data</p>
-        <h1>Open Postal Codes</h1>
-        <p class="lede">
-          Versioned CSV, JSON, and XML files for D-A-CH post codes, distributed
-          through a static GitHub Pages file API with hashes, record counts, and
-          compressed downloads. Records include one location-primary marker per
-          post code plus ranks for city-level post code ordering.
-        </p>
-        <div class="actions">
-          <a class="button" href="api/v1/index.json">Open API index</a>
-          <a class="button secondary" href="api/v1/de/post_code.csv">
-            Germany CSV
-          </a>
-          <a class="button secondary" href="api/v1/at/post_code.csv">
-            Austria CSV
-          </a>
-          <a class="button secondary" href="api/v1/ch/post_code.csv">
-            Switzerland CSV
-          </a>
-        </div>
-      </section>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Documentation navigation">
+        <a class="brand" href="./" aria-label="Open Postal Codes home">
+          <span class="brand-mark">OPC</span>
+          <span>
+            <strong>Open Postal Codes</strong>
+            <span>Static D-A-CH data API</span>
+          </span>
+        </a>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-pressed="false"
+        >
+          <span>Light mode</span>
+          <span class="theme-toggle-icon" aria-hidden="true">D</span>
+        </button>
+        <p class="nav-label">Documentation</p>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#quickstart">Quickstart</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+            <li><a href="#schema">Schema</a></li>
+            <li><a href="#quality">Quality</a></li>
+            <li><a href="#attribution">Attribution</a></li>
+          </ul>
+        </nav>
+        <p class="nav-label">Files</p>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="api/v1/index.json">Manifest</a></li>
+            <li><a href="api/v1/de/post_code.csv">Germany CSV</a></li>
+            <li><a href="api/v1/at/post_code.csv">Austria CSV</a></li>
+            <li><a href="api/v1/ch/post_code.csv">Switzerland CSV</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-      <section class="section">
-        <p class="label">Published files</p>
-        <div class="grid">
-          <a class="card" href="api/v1/de/post_code.csv">
-            <strong>de/post_code.csv</strong>
-            <span>German post code records as CSV.</span>
-          </a>
-          <a class="card" href="api/v1/de/post_code.json">
-            <strong>de/post_code.json</strong>
-            <span>German post code records as JSON.</span>
-          </a>
-          <a class="card" href="api/v1/de/post_code.xml">
-            <strong>de/post_code.xml</strong>
-            <span>German post code records as XML.</span>
-          </a>
-          <a class="card" href="api/v1/at/post_code.csv">
-            <strong>at/post_code.csv</strong>
-            <span>Austrian post code records as CSV.</span>
-          </a>
-          <a class="card" href="api/v1/at/post_code.json">
-            <strong>at/post_code.json</strong>
-            <span>Austrian post code records as JSON.</span>
-          </a>
-          <a class="card" href="api/v1/at/post_code.xml">
-            <strong>at/post_code.xml</strong>
-            <span>Austrian post code records as XML.</span>
-          </a>
-          <a class="card" href="api/v1/ch/post_code.csv">
-            <strong>ch/post_code.csv</strong>
-            <span>Swiss post code records as CSV.</span>
-          </a>
-          <a class="card" href="api/v1/ch/post_code.json">
-            <strong>ch/post_code.json</strong>
-            <span>Swiss post code records as JSON.</span>
-          </a>
-          <a class="card" href="api/v1/ch/post_code.xml">
-            <strong>ch/post_code.xml</strong>
-            <span>Swiss post code records as XML.</span>
-          </a>
+      <div class="content">
+        <div class="topbar" aria-label="Quick links">
+          <a href="api/v1/index.json">API index</a>
+          <a href="api/v1/de/post_code.csv">DE</a>
+          <a href="api/v1/at/post_code.csv">AT</a>
+          <a href="api/v1/ch/post_code.csv">CH</a>
         </div>
-      </section>
 
-      <footer>
-        <p>
-          Data is published under the ODC Open Database License (ODbL).
-          Attribution: OpenStreetMap contributors, Geofabrik GmbH, Frank
-          Stueber, and Schoenfeld Solutions.
-        </p>
-      </footer>
-    </main>
+        <main>
+          <section class="hero" id="overview">
+            <div>
+              <p class="eyebrow">D-A-CH post code files</p>
+              <h1>Open Postal Codes</h1>
+              <p class="lede">
+                Versioned CSV, JSON, and XML files for Germany, Austria, and
+                Switzerland, delivered through a static file API with manifest
+                hashes, compressed downloads, and stable v1 paths.
+              </p>
+              <div class="badges" aria-label="API summary">
+                <span class="badge"><strong>v1</strong> current version</span>
+                <span class="badge"><strong>9</strong> public files</span>
+                <span class="badge"><strong>D-A-CH</strong> coverage</span>
+              </div>
+              <div class="actions">
+                <a class="button" href="api/v1/index.json">Open API index</a>
+                <a class="button secondary" href="#quickstart">Start with curl</a>
+                <a class="button secondary" href="#downloads">Browse downloads</a>
+                <a
+                  class="button secondary"
+                  href="https://github.com/Schoenfeld-Solutions/open-postal-codes/blob/main/docs/contracts/v1/consumer-smoke.md"
+                >
+                  Consumer smoke checks
+                </a>
+              </div>
+            </div>
+
+            <aside class="hero-panel" aria-label="Publication summary">
+              <div class="hero-panel-row">
+                <span class="metric" id="generatedAt">Loading manifest</span>
+                <span class="metric-label">Last generated</span>
+              </div>
+              <div class="hero-panel-row">
+                <span class="metric" id="totalRecords">18,198</span>
+                <span class="metric-label">Current records across DE, AT, and CH</span>
+              </div>
+              <div class="hero-panel-row">
+                <span class="metric">ODbL-1.0</span>
+                <span class="metric-label">Open database license</span>
+              </div>
+            </aside>
+          </section>
+
+          <section class="section" aria-labelledby="recommended-title">
+            <div class="section-header">
+              <h2 id="recommended-title">Recommended paths</h2>
+              <p>
+                Choose the shortest route for your task: inspect the manifest,
+                download primary CSV files, or verify the published contract.
+              </p>
+            </div>
+            <div class="recommended-grid">
+              <a class="card" href="api/v1/index.json">
+                <span class="card-kicker">Manifest</span>
+                <h3>Start with the API index</h3>
+                <p>
+                  Get file URLs, media types, byte counts, record counts, gzip
+                  hashes, and SHA-256 checksums.
+                </p>
+              </a>
+              <a class="card" href="#downloads">
+                <span class="card-kicker">Downloads</span>
+                <h3>Pick a country file</h3>
+                <p>
+                  Use CSV for imports, JSON for application code, and XML for
+                  systems that require document-style exchange.
+                </p>
+              </a>
+              <a class="card" href="#schema">
+                <span class="card-kicker">Contract</span>
+                <h3>Review the v1 schema</h3>
+                <p>
+                  Confirm field order, country-specific post code length,
+                  `state`, rankings, source, and evidence count.
+                </p>
+              </a>
+            </div>
+          </section>
+
+          <section class="section" id="quickstart" aria-labelledby="quickstart-title">
+            <div class="section-header">
+              <h2 id="quickstart-title">Quickstart</h2>
+              <p>
+                The API is a static file API. No token, account, or server-side
+                negotiation is required.
+              </p>
+            </div>
+            <div class="quick-grid">
+              <article class="code-card">
+                <div class="code-card-header">
+                  <strong>Base URL</strong>
+                  <button
+                    class="copy-button"
+                    type="button"
+                    data-copy="https://schoenfeld-solutions.github.io/open-postal-codes/api/v1"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code>https://schoenfeld-solutions.github.io/open-postal-codes/api/v1</code></pre>
+              </article>
+
+              <article class="code-card">
+                <div class="code-card-header">
+                  <strong>Fetch the manifest</strong>
+                  <button
+                    class="copy-button"
+                    type="button"
+                    data-copy="curl -fsS https://schoenfeld-solutions.github.io/open-postal-codes/api/v1/index.json"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code>curl -fsS https://schoenfeld-solutions.github.io/open-postal-codes/api/v1/index.json</code></pre>
+              </article>
+
+              <article class="code-card">
+                <div class="code-card-header">
+                  <strong>Download Germany CSV</strong>
+                  <button
+                    class="copy-button"
+                    type="button"
+                    data-copy="curl -fsS -O https://schoenfeld-solutions.github.io/open-postal-codes/api/v1/de/post_code.csv"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code>curl -fsS -O https://schoenfeld-solutions.github.io/open-postal-codes/api/v1/de/post_code.csv</code></pre>
+              </article>
+
+              <article class="code-card">
+                <div class="code-card-header">
+                  <strong>Use compressed data</strong>
+                  <button
+                    class="copy-button"
+                    type="button"
+                    data-copy="curl -fsS https://schoenfeld-solutions.github.io/open-postal-codes/api/v1/ch/post_code.csv.gz | gzip -dc"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code>curl -fsS https://schoenfeld-solutions.github.io/open-postal-codes/api/v1/ch/post_code.csv.gz | gzip -dc</code></pre>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="coverage-title">
+            <div class="section-header">
+              <h2 id="coverage-title">Country coverage</h2>
+              <p>
+                Each country publishes CSV, JSON, and XML files with the same
+                record set and the same v1 field contract.
+              </p>
+            </div>
+            <div class="country-grid">
+              <article class="country-card">
+                <div class="country-card-title">
+                  <h3>Germany</h3>
+                  <span class="country-code">DE</span>
+                </div>
+                <p class="metric" id="recordsDe">9,486</p>
+                <p class="muted">Five-digit post codes with Bundesland enrichment.</p>
+                <div class="country-links">
+                  <a class="mini-link" href="api/v1/de/post_code.csv">CSV</a>
+                  <a class="mini-link" href="api/v1/de/post_code.json">JSON</a>
+                  <a class="mini-link" href="api/v1/de/post_code.xml">XML</a>
+                </div>
+              </article>
+
+              <article class="country-card">
+                <div class="country-card-title">
+                  <h3>Austria</h3>
+                  <span class="country-code">AT</span>
+                </div>
+                <p class="metric" id="recordsAt">3,879</p>
+                <p class="muted">Four-digit post codes with Bundesland enrichment.</p>
+                <div class="country-links">
+                  <a class="mini-link" href="api/v1/at/post_code.csv">CSV</a>
+                  <a class="mini-link" href="api/v1/at/post_code.json">JSON</a>
+                  <a class="mini-link" href="api/v1/at/post_code.xml">XML</a>
+                </div>
+              </article>
+
+              <article class="country-card">
+                <div class="country-card-title">
+                  <h3>Switzerland</h3>
+                  <span class="country-code">CH</span>
+                </div>
+                <p class="metric" id="recordsCh">4,833</p>
+                <p class="muted">Four-digit post codes with canton enrichment.</p>
+                <div class="country-links">
+                  <a class="mini-link" href="api/v1/ch/post_code.csv">CSV</a>
+                  <a class="mini-link" href="api/v1/ch/post_code.json">JSON</a>
+                  <a class="mini-link" href="api/v1/ch/post_code.xml">XML</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="downloads" aria-labelledby="downloads-title">
+            <div class="section-header">
+              <h2 id="downloads-title">Downloads</h2>
+              <p>
+                The table is enhanced from the live manifest when available.
+                Static links remain visible for direct access.
+              </p>
+            </div>
+            <div class="file-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>File</th>
+                    <th>Format</th>
+                    <th>Records</th>
+                    <th>Size</th>
+                    <th>Gzip</th>
+                    <th>SHA-256</th>
+                  </tr>
+                </thead>
+                <tbody id="fileRows">
+                  <tr data-path="de/post_code.csv">
+                    <td><a href="api/v1/de/post_code.csv">de/post_code.csv</a></td>
+                    <td>CSV</td>
+                    <td>9,486</td>
+                    <td class="muted">Manifest</td>
+                    <td><a href="api/v1/de/post_code.csv.gz">.gz</a></td>
+                    <td class="mono muted">Manifest</td>
+                  </tr>
+                  <tr data-path="at/post_code.csv">
+                    <td><a href="api/v1/at/post_code.csv">at/post_code.csv</a></td>
+                    <td>CSV</td>
+                    <td>3,879</td>
+                    <td class="muted">Manifest</td>
+                    <td><a href="api/v1/at/post_code.csv.gz">.gz</a></td>
+                    <td class="mono muted">Manifest</td>
+                  </tr>
+                  <tr data-path="ch/post_code.csv">
+                    <td><a href="api/v1/ch/post_code.csv">ch/post_code.csv</a></td>
+                    <td>CSV</td>
+                    <td>4,833</td>
+                    <td class="muted">Manifest</td>
+                    <td><a href="api/v1/ch/post_code.csv.gz">.gz</a></td>
+                    <td class="mono muted">Manifest</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="section" id="schema" aria-labelledby="schema-title">
+            <div class="section-header">
+              <h2 id="schema-title">Schema</h2>
+              <p>
+                CSV uses the field order below. JSON and XML publish the same
+                fields with booleans and ranks typed naturally in JSON.
+              </p>
+            </div>
+            <div class="schema-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Meaning</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mono">code</td>
+                    <td>Post code; DE has five digits, AT and CH have four digits.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">city</td>
+                    <td>City or place label associated with the post code.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">country</td>
+                    <td>ISO country code: DE, AT, or CH.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">state</td>
+                    <td>Bundesland for DE and AT; canton for CH.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">county</td>
+                    <td>Lower administrative area when available.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">time_zone</td>
+                    <td>Windows time zone identifier; D-A-CH uses W. Europe Standard Time.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">is_primary_location</td>
+                    <td>True for the highest-ranked row within a country and post code.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">location_rank</td>
+                    <td>Rank of this place within the same post code.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">postal_code_rank</td>
+                    <td>Rank of this post code within the same normalized place.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">source</td>
+                    <td>Either postal_boundary or address_fallback.</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">evidence_count</td>
+                    <td>Accepted address evidence count behind the row.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="section" id="quality" aria-labelledby="quality-title">
+            <div class="section-header">
+              <h2 id="quality-title">Quality signals</h2>
+              <p>
+                The repository validates contract shape, record floors, source
+                metadata, manifest hashes, and gzip outputs before publication.
+              </p>
+            </div>
+            <div class="quality-grid">
+              <div class="quality-item">
+                <strong>Weekly</strong>
+                <span class="muted">Scheduled data refresh cadence.</span>
+              </div>
+              <div class="quality-item">
+                <strong>Hashes</strong>
+                <span class="muted">SHA-256 for every public file and gzip file.</span>
+              </div>
+              <div class="quality-item">
+                <strong>State</strong>
+                <span class="muted">Bundesland or canton is required for D-A-CH rows.</span>
+              </div>
+              <div class="quality-item">
+                <strong>No PBF</strong>
+                <span class="muted">Raw downloads stay outside the repository.</span>
+              </div>
+            </div>
+          </section>
+
+          <footer id="attribution">
+            <p>
+              Data is published under the ODC Open Database License (ODbL).
+              Attribution: OpenStreetMap contributors, Geofabrik GmbH, Frank
+              Stueber, OpenPLZ API Data, and Schoenfeld Solutions.
+            </p>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <script src="assets/site.js" defer></script>
   </body>
 </html>
