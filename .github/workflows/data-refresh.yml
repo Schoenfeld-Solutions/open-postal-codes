@@ -100,13 +100,13 @@ jobs:
             requested_regions="all selected sources"
           fi
           data_refreshed_at="$(python3 - <<'PY'
-import json
-from pathlib import Path
+          import json
+          from pathlib import Path
 
-payload = json.loads(Path("data/sources/geofabrik-regions.json").read_text(encoding="utf-8"))
-print(payload.get("generated_at", "unknown"))
-PY
-)"
+          payload = json.loads(Path("data/sources/geofabrik-regions.json").read_text(encoding="utf-8"))
+          print(payload.get("generated_at", "unknown"))
+          PY
+          )"
           {
             echo "requested_countries=${requested_countries}"
             echo "requested_regions=${requested_regions}"
