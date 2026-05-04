@@ -24,6 +24,24 @@ def read_json(path: Path) -> dict[str, Any]:
     return cast(dict[str, Any], json.loads(path.read_text(encoding="utf-8")))
 
 
+def write_source_metadata(repository_root: Path, generated_at: str) -> None:
+    metadata_path = repository_root / "data/sources/geofabrik-regions.json"
+    metadata_path.parent.mkdir(parents=True, exist_ok=True)
+    metadata_path.write_text(
+        json.dumps(
+            {
+                "generated_at": generated_at,
+                "source": "Geofabrik D-A-CH PBF files",
+                "regions": {},
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
 def write_public_files(repository_root: Path) -> None:
     write_public_post_code_files([], repository_root / "data/public/v1/at")
     write_public_post_code_files([], repository_root / "data/public/v1/ch")
@@ -47,6 +65,7 @@ def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path
 
     write_text(repository_root / "site" / "index.html", "<!doctype html><title>Open</title>")
     write_text(repository_root / "site" / "404.html", "<!doctype html><title>Missing</title>")
+    write_source_metadata(repository_root, "2026-04-27T03:00:00Z")
     write_public_files(repository_root)
 
     result = package_pages_site(
@@ -85,6 +104,7 @@ def test_package_pages_site_publishes_api_files_manifest_and_gzip(tmp_path: Path
         "de/post_code.xml": "application/xml; charset=utf-8",
     }
     assert manifest["generated_at"] == "2026-04-28T00:00:00Z"
+    assert manifest["data_refreshed_at"] == "2026-04-27T03:00:00Z"
     assert manifest["base_path"] == "/open-postal-codes/api/v1/"
     assert "Geofabrik GmbH" in manifest["attribution"]
     assert {entry["path"]: entry["records"] for entry in manifest["files"]} == {
@@ -121,6 +141,28 @@ def test_package_pages_site_keeps_generated_files_outside_repository_data_root(
 
     assert not list((repository_root / "data/public/v1").rglob("*.gz"))
     assert (output_root / "api/v1/index.json").exists()
+
+
+def test_package_pages_site_uses_null_data_refresh_time_without_source_metadata(
+    tmp_path: Path,
+) -> None:
+    repository_root = tmp_path / "repo"
+    output_root = tmp_path / "out"
+
+    write_text(repository_root / "site" / "index.html", "index")
+    write_text(repository_root / "site" / "404.html", "missing")
+    write_public_files(repository_root)
+
+    result = package_pages_site(
+        repository_root=repository_root,
+        output_root=output_root,
+        generated_at=datetime(2026, 4, 28, tzinfo=UTC),
+    )
+
+    manifest = read_json(result.manifest_path)
+
+    assert manifest["generated_at"] == "2026-04-28T00:00:00Z"
+    assert manifest["data_refreshed_at"] is None
 
 
 def test_pages_cli_packages_site(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
