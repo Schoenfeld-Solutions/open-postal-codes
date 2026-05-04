@@ -193,6 +193,20 @@ def test_workflow_policy_rejects_missing_pr_quality_gates(tmp_path: Path) -> Non
     assert any("git diff --check" in error for error in errors)
 
 
+def test_workflow_policy_rejects_unindented_script_content(tmp_path: Path) -> None:
+    write_workflows(
+        tmp_path,
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
+            "      - run: python3 -m open_postal_codes.refresh_data\n",
+            "      - run: |\n          python3 - <<'PY'\nimport sys\n          PY\n",
+        ),
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("unexpected top-level content" in error for error in errors)
+
+
 def test_workflow_policy_rejects_default_token_for_data_pull_requests(
     tmp_path: Path,
 ) -> None:

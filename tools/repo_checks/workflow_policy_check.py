@@ -52,6 +52,13 @@ DATA_REFRESH_FORBIDDEN_SNIPPETS = (
     "GITHUB_TOKEN: ${{ github.token }}",
     "data(dach): refresh post code outputs",
 )
+ALLOWED_TOP_LEVEL_KEYS = {
+    "name",
+    "on",
+    "permissions",
+    "concurrency",
+    "jobs",
+}
 
 
 def has_top_level_key(text: str, key: str) -> bool:
@@ -76,6 +83,17 @@ def job_blocks(text: str) -> dict[str, str]:
 def validate_workflow_basics(path: Path, text: str, repository_root: Path) -> list[str]:
     errors: list[str] = []
     display_path = path.relative_to(repository_root)
+
+    for line_number, line in enumerate(text.splitlines(), start=1):
+        if not line or line.startswith((" ", "#")):
+            continue
+        key_match = re.match(r"^([A-Za-z_-][A-Za-z0-9_-]*):", line)
+        if key_match is None:
+            errors.append(f"{display_path}:{line_number} has unexpected top-level content")
+            continue
+        key = key_match.group(1)
+        if key not in ALLOWED_TOP_LEVEL_KEYS:
+            errors.append(f"{display_path}:{line_number} has unexpected top-level key: {key}")
 
     if "pull_request_target:" in text:
         errors.append(f"{display_path} must not use pull_request_target")
