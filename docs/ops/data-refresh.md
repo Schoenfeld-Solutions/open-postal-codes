@@ -2,9 +2,14 @@
 
 ## Scheduled Refresh
 
-The `Refresh D-A-CH Post Code Data` workflow runs on a schedule and by manual dispatch. It downloads D-A-CH PBF files from Geofabrik into runner-local temporary storage, extracts normalized source CSV outputs, rebuilds public CSV/JSON/XML files, and opens or updates a pull request when tracked files change.
+The `Refresh D-A-CH Post Code Data` workflow runs on a schedule and by manual dispatch. It downloads D-A-CH PBF files from Geofabrik into runner-local temporary storage, extracts normalized source CSV outputs, rebuilds public CSV/JSON/XML files, and opens or updates a pull request when tracked files change. When required pull request checks pass, the workflow squash-merges the checked data commit and deletes the refresh branch.
 
 The extraction step also recalculates location-primary markers, ranks, and evidence metadata for every public row, so committed regional CSV files must use the same schema as the public export.
+
+The Pages manifest publishes two timestamps:
+
+- `generated_at`: when the Pages artifact was packaged.
+- `data_refreshed_at`: when the Geofabrik source metadata was refreshed.
 
 ## Manual Scoped Run
 
@@ -50,4 +55,13 @@ These files are local artifacts. They are not committed, not uploaded by Pages, 
 
 ## Token Permissions
 
-The normal pull request gates run with read-only repository permissions. The data-refresh workflow is the only workflow that requests `contents: write` and `pull-requests: write`; those permissions are limited to committing generated data on `dev/data-refresh-post-code` and opening or updating the corresponding pull request. If repository or organization policy prevents write permissions for workflow tokens, the refresh can still validate extraction locally in the runner, but pull request publication must be handled with an approved token or manually from a maintainer workstation.
+The normal pull request gates run with read-only repository permissions. The data-refresh workflow also keeps its default workflow token read-only. Data branch publication, pull request creation, required check inspection, and merge use a dedicated GitHub App installation token.
+
+Required repository configuration:
+
+- Variable: `DATA_REFRESH_APP_CLIENT_ID`
+- Secret: `DATA_REFRESH_APP_PRIVATE_KEY`
+
+The installed App needs only repository metadata, contents write, pull requests write, and checks read permissions. It must not need administration, Pages, secrets, or workflow permissions.
+
+The workflow leaves the pull request open if required checks fail. Merge uses squash mode, deletes `dev/data-refresh-post-code`, and is pinned to the exact checked head commit.
