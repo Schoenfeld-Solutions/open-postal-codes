@@ -15,8 +15,7 @@ on:
         type: string
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 concurrency:
   group: data-refresh-post-code
@@ -28,7 +27,31 @@ jobs:
     timeout-minutes: 240
 
     steps:
+      - name: Validate automation configuration
+        env:
+          DATA_REFRESH_APP_CLIENT_ID: ${{ vars.DATA_REFRESH_APP_CLIENT_ID }}
+          DATA_REFRESH_APP_PRIVATE_KEY: ${{ secrets.DATA_REFRESH_APP_PRIVATE_KEY }}
+        run: |
+          if [ -z "${DATA_REFRESH_APP_CLIENT_ID}" ] || [ -z "${DATA_REFRESH_APP_PRIVATE_KEY}" ]; then
+            {
+              echo "DATA_REFRESH_APP_CLIENT_ID and DATA_REFRESH_APP_PRIVATE_KEY must be configured."
+              echo "Use a GitHub App installation token so refresh-created pull requests trigger normal pull request gates."
+            } >&2
+            exit 1
+          fi
+
+      - name: Generate checkout token
+        id: checkout-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ vars.DATA_REFRESH_APP_CLIENT_ID }}
+          private-key: ${{ secrets.DATA_REFRESH_APP_PRIVATE_KEY }}
+          permission-contents: read
+
       - uses: actions/checkout@v6
+        with:
+          token: ${{ steps.checkout-token.outputs.token }}
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -65,7 +88,8 @@ jobs:
             echo "changed=true" >> "${GITHUB_OUTPUT}"
           fi
 
-      - name: Write refresh summary
+      - name: Collect refresh metadata
+        id: metadata
         run: |
           requested_countries="${{ inputs.countries }}"
           requested_regions="${{ inputs.regions }}"
@@ -75,11 +99,34 @@ jobs:
           if [ -z "${requested_regions}" ]; then
             requested_regions="all selected sources"
           fi
+          data_refreshed_at="$(python3 - <<'PY'
+import json
+from pathlib import Path
+
+payload = json.loads(Path("data/sources/geofabrik-regions.json").read_text(encoding="utf-8"))
+print(payload.get("generated_at", "unknown"))
+PY
+)"
+          {
+            echo "requested_countries=${requested_countries}"
+            echo "requested_regions=${requested_regions}"
+            echo "data_refreshed_at=${data_refreshed_at}"
+            echo "records_de=$(python3 -c 'from pathlib import Path; print(max(sum(1 for _ in Path(\"data/public/v1/de/post_code.csv\").open(encoding=\"utf-8\")) - 1, 0))')"
+            echo "records_at=$(python3 -c 'from pathlib import Path; print(max(sum(1 for _ in Path(\"data/public/v1/at/post_code.csv\").open(encoding=\"utf-8\")) - 1, 0))')"
+            echo "records_ch=$(python3 -c 'from pathlib import Path; print(max(sum(1 for _ in Path(\"data/public/v1/ch/post_code.csv\").open(encoding=\"utf-8\")) - 1, 0))')"
+          } >> "${GITHUB_OUTPUT}"
+
+      - name: Write refresh summary
+        run: |
           {
             echo "## Data refresh summary"
             echo ""
-            echo "- Countries: ${requested_countries}"
-            echo "- Regions: ${requested_regions}"
+            echo "- Countries: ${{ steps.metadata.outputs.requested_countries }}"
+            echo "- Regions: ${{ steps.metadata.outputs.requested_regions }}"
+            echo "- Data refreshed at: ${{ steps.metadata.outputs.data_refreshed_at }}"
+            echo "- DE records: ${{ steps.metadata.outputs.records_de }}"
+            echo "- AT records: ${{ steps.metadata.outputs.records_at }}"
+            echo "- CH records: ${{ steps.metadata.outputs.records_ch }}"
             echo "- Tracked data changed: ${{ steps.changes.outputs.changed }}"
             echo ""
             echo "### Changed files"
@@ -94,21 +141,17 @@ jobs:
       - name: Prepare data pull request body
         if: steps.changes.outputs.changed == 'true'
         run: |
-          requested_countries="${{ inputs.countries }}"
-          requested_regions="${{ inputs.regions }}"
-          if [ -z "${requested_countries}" ]; then
-            requested_countries="de,at,ch"
-          fi
-          if [ -z "${requested_regions}" ]; then
-            requested_regions="all selected sources"
-          fi
           changed_files="$(git diff --name-only data/public/v1 data/regional/v1 data/sources/geofabrik-regions.json)"
           {
             echo "Refreshes D-A-CH post code outputs from Geofabrik PBF files."
             echo ""
             echo "## Summary"
-            echo "- Countries: ${requested_countries}"
-            echo "- Regions: ${requested_regions}"
+            echo "- Countries: ${{ steps.metadata.outputs.requested_countries }}"
+            echo "- Regions: ${{ steps.metadata.outputs.requested_regions }}"
+            echo "- Data refreshed at: ${{ steps.metadata.outputs.data_refreshed_at }}"
+            echo "- DE records: ${{ steps.metadata.outputs.records_de }}"
+            echo "- AT records: ${{ steps.metadata.outputs.records_at }}"
+            echo "- CH records: ${{ steps.metadata.outputs.records_ch }}"
             echo "- Quality gates passed in the refresh workflow."
             echo ""
             echo "## Changed files"
@@ -119,33 +162,97 @@ jobs:
             fi
           } > "${RUNNER_TEMP}/data-refresh-body.md"
 
+      - name: Generate publication token
+        if: steps.changes.outputs.changed == 'true'
+        id: publication-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ vars.DATA_REFRESH_APP_CLIENT_ID }}
+          private-key: ${{ secrets.DATA_REFRESH_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+          permission-checks: read
+
+      - name: Resolve GitHub App bot identity
+        if: steps.changes.outputs.changed == 'true'
+        id: app-user
+        env:
+          GH_TOKEN: ${{ steps.publication-token.outputs.token }}
+        run: |
+          echo "user_id=$(gh api "/users/${{ steps.publication-token.outputs.app-slug }}[bot]" --jq .id)" >> "${GITHUB_OUTPUT}"
+
       - name: Commit data changes
         if: steps.changes.outputs.changed == 'true'
+        id: commit
+        env:
+          GH_TOKEN: ${{ steps.publication-token.outputs.token }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads origin dev/data-refresh-post-code >/dev/null 2>&1; then
+            git fetch origin dev/data-refresh-post-code:refs/remotes/origin/dev/data-refresh-post-code
+          fi
+          git config user.name "${{ steps.publication-token.outputs.app-slug }}[bot]"
+          git config user.email "${{ steps.app-user.outputs.user_id }}+${{ steps.publication-token.outputs.app-slug }}[bot]@users.noreply.github.com"
           git switch -c dev/data-refresh-post-code
           git add data/public/v1 data/regional/v1 data/sources/geofabrik-regions.json
-          git commit -m "data(dach): refresh post code outputs"
+          git commit -m "chore(data): refresh post code outputs"
+          echo "head_sha=$(git rev-parse HEAD)" >> "${GITHUB_OUTPUT}"
           git push --force-with-lease origin HEAD:dev/data-refresh-post-code
 
       - name: Open or update data pull request
         if: steps.changes.outputs.changed == 'true'
+        id: data-pr
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.publication-token.outputs.token }}
         run: |
           existing_pr="$(gh pr list --head dev/data-refresh-post-code --state open --json number --jq '.[0].number // ""')"
           if [ -n "${existing_pr}" ]; then
             gh pr edit "${existing_pr}" \
-              --title "data(dach): refresh post code outputs" \
+              --title "chore(data): refresh post code outputs" \
               --body-file "${RUNNER_TEMP}/data-refresh-body.md"
+            pr_number="${existing_pr}"
           else
             gh pr create \
               --base main \
               --head dev/data-refresh-post-code \
-              --title "data(dach): refresh post code outputs" \
+              --title "chore(data): refresh post code outputs" \
               --body-file "${RUNNER_TEMP}/data-refresh-body.md"
+            pr_number="$(gh pr list --head dev/data-refresh-post-code --state open --json number --jq '.[0].number')"
           fi
+          pr_url="$(gh pr view "${pr_number}" --json url --jq .url)"
+          {
+            echo "number=${pr_number}"
+            echo "url=${pr_url}"
+          } >> "${GITHUB_OUTPUT}"
+
+      - name: Wait for required pull request checks
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ steps.publication-token.outputs.token }}
+        run: |
+          sleep 20
+          gh pr checks "${{ steps.data-pr.outputs.number }}" --required --watch --fail-fast
+
+      - name: Merge data pull request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ steps.publication-token.outputs.token }}
+        run: |
+          gh pr merge "${{ steps.data-pr.outputs.number }}" \
+            --squash \
+            --delete-branch \
+            --match-head-commit "${{ steps.commit.outputs.head_sha }}" \
+            --subject "chore(data): refresh post code outputs" \
+            --body "Automated D-A-CH post code data refresh."
+          {
+            echo ""
+            echo "## Data refresh pull request"
+            echo ""
+            echo "- Pull request: ${{ steps.data-pr.outputs.url }}"
+            echo "- Head commit: ${{ steps.commit.outputs.head_sha }}"
+            echo "- Merge method: squash"
+            echo "- Branch deleted: yes"
+          } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Write failure summary
         if: failure()

@@ -41,6 +41,8 @@ def test_pages_surface_contains_professional_portal_landmarks() -> None:
     assert Path("site/assets/site.css").exists()
     assert Path("site/assets/site.js").exists()
     assert 'id="themeToggle"' in site_index
+    assert 'id="dataUpdatedAt"' in site_index
+    assert "Data updated" in site_index
     assert 'id="quickstart"' in site_index
     assert 'id="downloads"' in site_index
     assert "data-copy=" in site_index

@@ -123,7 +123,11 @@ def package_pages_site(
             )
         )
 
-    manifest = build_manifest(generated_at=generated_at, files=tuple(packaged_files))
+    manifest = build_manifest(
+        generated_at=generated_at,
+        data_refreshed_at=read_data_refreshed_at(repository_root),
+        files=tuple(packaged_files),
+    )
     manifest_path = api_root / "index.json"
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
@@ -146,7 +150,12 @@ def copy_static_site(*, site_root: Path, output_root: Path) -> None:
         shutil.copy2(source_path, target_path)
 
 
-def build_manifest(*, generated_at: datetime, files: tuple[PackagedFile, ...]) -> dict[str, Any]:
+def build_manifest(
+    *,
+    generated_at: datetime,
+    data_refreshed_at: str | None = None,
+    files: tuple[PackagedFile, ...],
+) -> dict[str, Any]:
     return {
         "name": "Open Postal Codes",
         "version": API_VERSION,
@@ -154,6 +163,7 @@ def build_manifest(*, generated_at: datetime, files: tuple[PackagedFile, ...]) -
         .replace(microsecond=0)
         .isoformat()
         .replace("+00:00", "Z"),
+        "data_refreshed_at": data_refreshed_at,
         "base_path": API_BASE_PATH,
         "license": "ODbL-1.0",
         "attribution": [
@@ -164,6 +174,19 @@ def build_manifest(*, generated_at: datetime, files: tuple[PackagedFile, ...]) -
         ],
         "files": [packaged_file.to_manifest_entry() for packaged_file in files],
     }
+
+
+def read_data_refreshed_at(repository_root: Path) -> str | None:
+    metadata_path = repository_root / "data" / "sources" / "geofabrik-regions.json"
+    try:
+        payload = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+    generated_at = payload.get("generated_at")
+    if not isinstance(generated_at, str) or not generated_at.strip():
+        return None
+    return generated_at
 
 
 def gzip_file(path: Path) -> Path:

@@ -37,7 +37,7 @@ GitHub Pages publishes the data at stable paths:
 - `/open-postal-codes/api/v1/ch/post_code.json`
 - `/open-postal-codes/api/v1/ch/post_code.xml`
 
-The Pages artifact also creates `.gz` files and metadata with hashes, file sizes, media types, and record counts. Generated downloads are not versioned in the repository.
+The Pages artifact also creates `.gz` files and metadata with hashes, file sizes, media types, record counts, artifact generation time, and source data refresh time. Generated downloads are not versioned in the repository.
 
 Consumer-oriented manifest, hash, gzip, and sentinel-row checks are documented in [docs/contracts/v1/consumer-smoke.md](docs/contracts/v1/consumer-smoke.md).
 
@@ -77,7 +77,7 @@ python3 -m open_postal_codes.pages --output-root out
 
 ## Data Maintenance
 
-The scheduled data-refresh workflow downloads D-A-CH PBF files from Geofabrik into runner-local temporary storage, extracts post code records with Python, rebuilds public CSV/JSON/XML files, and opens a pull request only when tracked files change.
+The scheduled data-refresh workflow downloads D-A-CH PBF files from Geofabrik into runner-local temporary storage, extracts post code records with Python, rebuilds public CSV/JSON/XML files, and opens a pull request only when tracked files change. Refresh publication uses a repository-scoped GitHub App token so the generated pull request runs normal checks and can be squash-merged automatically after those checks pass.
 
 Manual scoped smoke run:
 

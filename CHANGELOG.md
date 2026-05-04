@@ -24,6 +24,7 @@ The format follows Keep a Changelog.
 - Public data-quality guardrails, stricter module-size limits, free CI timeouts, and maintainer scorecard documentation.
 - Pages artifact validation, workflow policy checks, stronger public data-quality guards, and release/consumer smoke checklists.
 - Professionalized static Pages portal with manifest summaries, copyable examples, light and dark modes, and a favicon.
+- GitHub App based data-refresh publication with pull request check waiting, guarded squash merge, and branch deletion.
 
 ### Changed
 
@@ -37,6 +38,7 @@ The format follows Keep a Changelog.
 - The v1 post code schema now marks one primary location per post code and ranks post codes within each normalized place.
 - The data refresh pipeline now supports country-scoped D-A-CH outputs through `--countries`.
 - The v1 post code schema now includes `state` for Bundesland or canton enrichment.
+- The Pages manifest now separates source data refresh time from Pages artifact generation time.
 
 ### Removed
 

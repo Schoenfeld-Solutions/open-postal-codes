@@ -72,6 +72,9 @@ def validate_packaged_output(output_root: Path) -> list[str]:
         errors.append(f"manifest version must be {API_VERSION}")
     if manifest.get("base_path") != API_BASE_PATH:
         errors.append(f"manifest base_path must be {API_BASE_PATH}")
+    data_refreshed_at = manifest.get("data_refreshed_at")
+    if data_refreshed_at is not None and not isinstance(data_refreshed_at, str):
+        errors.append("manifest data_refreshed_at must be a string or null")
 
     files = manifest.get("files")
     if not isinstance(files, list):

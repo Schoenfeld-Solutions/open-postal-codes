@@ -38,6 +38,8 @@ from pathlib import Path
 root = Path("out/api/v1")
 manifest = json.loads((root / "index.json").read_text(encoding="utf-8"))
 assert manifest["base_path"] == "/open-postal-codes/api/v1/"
+assert "generated_at" in manifest
+assert "data_refreshed_at" in manifest
 assert len(manifest["files"]) == 9
 
 for entry in manifest["files"]:

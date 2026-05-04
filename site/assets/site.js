@@ -4,7 +4,7 @@ const bytesFormat = new Intl.NumberFormat("en-US", {
 });
 
 const fileRows = document.getElementById("fileRows");
-const generatedAt = document.getElementById("generatedAt");
+const dataUpdatedAt = document.getElementById("dataUpdatedAt");
 const totalRecords = document.getElementById("totalRecords");
 const recordsByCountry = {
   de: document.getElementById("recordsDe"),
@@ -43,7 +43,9 @@ const formatGeneratedAt = (value) => {
 const formatKind = (path) => path.split(".").pop().toUpperCase();
 
 const updateManifestSummary = (manifest) => {
-  generatedAt.textContent = formatGeneratedAt(manifest.generated_at);
+  dataUpdatedAt.textContent = formatGeneratedAt(
+    manifest.data_refreshed_at || manifest.generated_at,
+  );
   const countryTotals = { de: 0, at: 0, ch: 0 };
   for (const file of manifest.files || []) {
     if (!file.path || !file.path.endsWith(".csv")) continue;
@@ -97,7 +99,7 @@ fetch("api/v1/index.json")
     renderFileRows(manifest);
   })
   .catch(() => {
-    generatedAt.textContent = "Manifest unavailable";
+    dataUpdatedAt.textContent = "Manifest unavailable";
   });
 
 document.querySelectorAll("[data-copy]").forEach((button) => {

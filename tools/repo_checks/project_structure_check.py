@@ -60,6 +60,7 @@ REQUIRED_FILES = (
     Path("docs/adr/0010-add-state-to-v1-post-code-data.md"),
     Path("docs/adr/0011-add-maintainability-guardrails.md"),
     Path("docs/adr/0012-balance-repository-hardening-with-solo-maintenance.md"),
+    Path("docs/adr/0013-automate-data-refresh-pull-request-merge.md"),
     Path("docs/contracts/CURRENT.md"),
     Path("docs/contracts/v1/consumer-smoke.md"),
     Path("docs/plans/PLANS.md"),
