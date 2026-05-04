@@ -29,10 +29,28 @@ PR_FORBIDDEN_SNIPPETS = (
 )
 DATA_REFRESH_REQUIRED_SNIPPETS = (
     "workflow_dispatch:",
-    "contents: write",
-    "pull-requests: write",
+    "actions/create-github-app-token@v3",
+    "DATA_REFRESH_APP_CLIENT_ID",
+    "DATA_REFRESH_APP_PRIVATE_KEY",
+    "permission-contents: write",
+    "permission-pull-requests: write",
+    "permission-checks: read",
+    "persist-credentials: false",
     "open_postal_codes.refresh_data",
     "tools.repo_checks.all_checks",
+    "open_postal_codes.pages --output-root out",
+    "chore(data): refresh post code outputs",
+    "gh pr checks",
+    "--required --watch --fail-fast",
+    "gh pr merge",
+    "--squash",
+    "--delete-branch",
+    "--match-head-commit",
+)
+DATA_REFRESH_FORBIDDEN_SNIPPETS = (
+    "GH_TOKEN: ${{ github.token }}",
+    "GITHUB_TOKEN: ${{ github.token }}",
+    "data(dach): refresh post code outputs",
 )
 
 
@@ -100,6 +118,10 @@ def validate_data_refresh_workflow(text: str) -> list[str]:
             errors.append(
                 f"data-refresh workflow is missing required step or permission: {snippet}"
             )
+
+    for snippet in DATA_REFRESH_FORBIDDEN_SNIPPETS:
+        if snippet in text:
+            errors.append(f"data-refresh workflow must not use: {snippet}")
 
     if "id-token: write" in text or "pages: write" in text:
         errors.append(
