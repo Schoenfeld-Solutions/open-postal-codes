@@ -8,13 +8,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 01993,Schipkau,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,2,postal_boundary,734
 01994,Schipkau,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,1,postal_boundary,761
 01996,Hosena,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,1,postal_boundary,0
-01998,Schipkau,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,3,postal_boundary,414
+01998,Schipkau,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,3,postal_boundary,413
 03042,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,4,postal_boundary,2691
-03044,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,1,postal_boundary,3289
-03046,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,2,postal_boundary,2845
+03044,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,1,postal_boundary,3290
+03046,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,2,postal_boundary,2848
 03048,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,6,postal_boundary,1612
-03050,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,5,postal_boundary,1776
-03051,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,3,postal_boundary,2760
+03050,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,5,postal_boundary,1778
+03051,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,3,postal_boundary,2763
 03052,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,9,postal_boundary,452
 03053,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,10,postal_boundary,224
 03054,Cottbus,DE,Brandenburg,Cottbus - Chóśebuz,W. Europe Standard Time,true,1,8,postal_boundary,796
@@ -39,7 +39,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 03222,Lübbenau/ Spreewald,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,1,postal_boundary,0
 03226,Vetschau,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,1,postal_boundary,3
 03229,Altdöbern,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,1,postal_boundary,856
-03229,Luckaitztal,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,false,2,1,postal_boundary,330
+03229,Luckaitztal,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,false,2,1,postal_boundary,329
 03238,Finsterwalde,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,4201
 03246,Crinitz,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,449
 03249,Sonnewalde,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,1267
@@ -57,198 +57,199 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 04934,Hohenleipisch,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,823
 04936,Schlieben,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,1011
 04938,Uebigau-Wahrenbrück,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,912
-10115,Berlin Mitte,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10117,Berlin Mitte,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10119,Berlin Mitte,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10178,Berlin Mitte,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10179,Berlin Mitte,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-10243,Berlin Friedrichshain,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10245,Berlin Friedrichshain,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10247,Berlin Friedrichshain,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10249,Berlin Friedrichshain,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10315,Berlin Friedrichsfelde,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10317,Berlin Rummelsburg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10318,Berlin Karlshorst,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10319,Berlin Friedrichsfelde,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10365,Berlin Lichtenberg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10367,Berlin Lichtenberg,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10369,Berlin Lichtenberg,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10405,Berlin Prenzlauer Berg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10407,Berlin Prenzlauer Berg,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10409,Berlin Prenzlauer Berg,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10435,Berlin Prenzlauer Berg,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10437,Berlin Prenzlauer Berg,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-10439,Berlin Prenzlauer Berg,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,0
-10551,Berlin Moabit,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10553,Berlin Moabit,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10555,Berlin Moabit,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10557,Berlin Moabit,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10559,Berlin Moabit,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-10585,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10587,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10589,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10623,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10625,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-10627,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,0
-10629,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,7,postal_boundary,0
-10707,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10709,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10711,Berlin Halensee,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10713,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10715,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10717,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-10719,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,0
-10777,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,7,postal_boundary,0
-10779,Berlin Schöneberg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10781,Berlin Schöneberg,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10783,Berlin Schöneberg,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10785,Berlin Tiergarten,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10787,Berlin Tiergarten,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10789,Berlin Schöneberg,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10823,Berlin Schöneberg,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-10825,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,16,postal_boundary,776
-10827,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,12,postal_boundary,1023
-10829,Berlin Schöneberg,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,0
-10961,Berlin Kreuzberg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10963,Berlin Kreuzberg,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-10965,Berlin Kreuzberg,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-10967,Berlin Kreuzberg/Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-10969,Berlin Kreuzberg,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-10997,Berlin Kreuzberg,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-10999,Berlin Kreuzberg,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,0
-12043,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12045,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12047,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-12049,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-12051,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-12053,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,0
-12055,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,7,postal_boundary,0
-12057,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,8,postal_boundary,0
-12059,Berlin Neukölln,DE,Berlin,,W. Europe Standard Time,true,1,9,postal_boundary,0
-12099,Berlin Tempelhof,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12101,Berlin Tempelhof,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12103,Berlin Tempelhof,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-12105,Berlin Mariendorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12107,Berlin Mariendorf,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12109,Berlin Mariendorf,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-12157,Berlin Schöneberg,DE,Berlin,,W. Europe Standard Time,true,1,7,postal_boundary,0
-12159,Berlin Friedenau,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12161,Berlin Friedenau,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12163,Berlin Steglitz,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12165,Berlin Steglitz,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12167,Berlin Steglitz,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-12169,Berlin Steglitz,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-12203,Berlin Lichterfelde,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12205,Berlin Lichterfelde,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12207,Berlin Lichterfelde,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-12209,Berlin Lichterfelde,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-12247,Berlin Lankwitz,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12249,Berlin Lankwitz,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12277,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,7,postal_boundary,2882
-12279,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,13,postal_boundary,1021
-12305,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,4502
-12307,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,3355
-12309,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,2926
-12347,Berlin Britz,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12349,Berlin Buckow,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12351,Berlin Buckow,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12353,Berlin Gropiusstadt,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12355,Berlin Rudow,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12357,Berlin Rudow,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12359,Berlin Britz,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-12435,Berlin Alt-Treptow,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12437,Berlin Baumschulenweg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12439,Berlin Niederschöneweide,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12459,Berlin Oberschöneweide,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12487,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,3193
-12489,Berlin Teltowkanal III,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12524,Berlin Altglienicke,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12526,Berlin Bohnsdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12527,Berlin Schmöckwitz,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10115,Berlin Mitte,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10117,Berlin Mitte,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10119,Berlin Mitte,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10178,Berlin Mitte,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10179,Berlin Mitte,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+10243,Berlin Friedrichshain,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10245,Berlin Friedrichshain,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10247,Berlin Friedrichshain,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10249,Berlin Friedrichshain,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10315,Berlin Friedrichsfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10317,Berlin Rummelsburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10318,Berlin Karlshorst,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10319,Berlin Friedrichsfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10365,Berlin Lichtenberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10367,Berlin Lichtenberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10369,Berlin Lichtenberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10405,Berlin Prenzlauer Berg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10407,Berlin Prenzlauer Berg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10409,Berlin Prenzlauer Berg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10435,Berlin Prenzlauer Berg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10437,Berlin Prenzlauer Berg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+10439,Berlin Prenzlauer Berg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,0
+10551,Berlin Moabit,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10553,Berlin Moabit,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10555,Berlin Moabit,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10557,Berlin Moabit,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10559,Berlin Moabit,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+10585,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10587,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10589,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10623,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10625,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+10627,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,0
+10629,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,7,postal_boundary,0
+10707,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10709,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10711,Berlin Halensee,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10713,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10715,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10717,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+10719,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,0
+10777,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,7,postal_boundary,0
+10779,Berlin Schöneberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10781,Berlin Schöneberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10783,Berlin Schöneberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10785,Berlin Tiergarten,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10787,Berlin Tiergarten,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10789,Berlin Schöneberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10823,Berlin Schöneberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+10825,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,16,postal_boundary,776
+10827,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,12,postal_boundary,1025
+10829,Berlin Schöneberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,0
+10961,Berlin Kreuzberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10963,Berlin Kreuzberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+10965,Berlin Kreuzberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+10967,Berlin Kreuzberg/Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+10969,Berlin Kreuzberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+10997,Berlin Kreuzberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+10999,Berlin Kreuzberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,0
+12043,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12045,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12047,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+12049,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+12051,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+12053,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,0
+12055,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,7,postal_boundary,0
+12057,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,8,postal_boundary,0
+12059,Berlin Neukölln,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,9,postal_boundary,0
+12099,Berlin Tempelhof,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12101,Berlin Tempelhof,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12103,Berlin Tempelhof,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+12105,Berlin Mariendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12107,Berlin Mariendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12109,Berlin Mariendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+12157,Berlin Schöneberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,7,postal_boundary,0
+12159,Berlin Friedenau,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12161,Berlin Friedenau,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12163,Berlin Steglitz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12165,Berlin Steglitz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12167,Berlin Steglitz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+12169,Berlin Steglitz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+12203,Berlin Lichterfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12205,Berlin Lichterfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12207,Berlin Lichterfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+12209,Berlin Lichterfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+12247,Berlin Lankwitz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12249,Berlin Lankwitz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12277,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,7,postal_boundary,2882
+12279,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,13,postal_boundary,1021
+12305,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,4502
+12307,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,3355
+12309,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,2926
+12347,Berlin Britz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12349,Berlin Buckow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12351,Berlin Buckow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12353,Berlin Gropiusstadt,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12355,Berlin Rudow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12357,Berlin Rudow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12359,Berlin Britz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+12435,Berlin Alt-Treptow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12437,Berlin Baumschulenweg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12439,Berlin Niederschöneweide,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12459,Berlin Oberschöneweide,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12487,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,3192
+12489,Berlin Teltowkanal III,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12524,Berlin Altglienicke,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12526,Berlin Bohnsdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12527,Berlin Schmöckwitz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
 12529,Schönefeld,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,4423
-12555,Berlin Köpenick,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12557,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,3796
-12559,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,4220
-12587,Berlin Wiesengrund,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12589,Berlin Rahnsdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12619,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,10,postal_boundary,1489
-12621,Berlin Kaulsdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12623,Berlin Mahlsdorf,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,0
-12627,Berlin Hellersdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12629,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,15,postal_boundary,830
-12679,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,14,postal_boundary,987
-12681,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,8,postal_boundary,1719
-12683,Berlin Biesdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12685,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,9,postal_boundary,1718
-12687,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,17,postal_boundary,625
-12689,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,11,postal_boundary,1050
-13051,Berlin Neu-Schönhausen,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13053,Berlin Alt-Hohenschönhausen,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13055,Berlin Alt-Hohenschönhausen,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13057,Berlin Falkenberg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13059,Berlin Wartenberg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13086,Berlin Weißensee,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13088,Berlin Weißensee,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13089,Berlin Heinelsdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13125,Berlin Buch,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13127,Berlin Französisch Buchholz,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13129,Berlin Blankenburg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13156,Berlin Niederschönhausen,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13158,Berlin Rosenthal,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13159,Berlin Blankenfelde,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13187,Berlin Pankow,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13189,Berlin Pankow,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13347,Berlin Wedding,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13349,Berlin Wedding,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13351,Berlin Wedding,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-13353,Berlin Wedding,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-13355,Berlin Wedding,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,0
-13357,Berlin Gesundbrunnen,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13359,Berlin Gesundbrunnen,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13403,Berlin Reinickendorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13405,Berlin Wedding,DE,Berlin,,W. Europe Standard Time,true,1,6,postal_boundary,0
-13407,Berlin-West,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13409,Berlin-West,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13435,Berlin Märkisches Viertel,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13437,Berlin Reinickendorf,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13439,Berlin Märkisches Viertel,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13465,Berlin-Frohnau,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13467,Berlin Hermsdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13469,Berlin Lübars,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13503,Berlin Tegel,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13505,Berlin Tegel,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13507,Berlin Tegel,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-13509,Berlin Reinickendorf,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-13581,Berlin Spandau,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13583,Berlin Spandau,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-13585,Berlin Spandau,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-13587,Berlin Hakenfelde,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13589,Berlin Falkenhagener Feld,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13591,Berlin Staaken,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13593,Berlin Wilhelmstadt,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13595,Berlin Wlhelmstadt,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13597,Berlin Spandau,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-13599,Berlin Haselhorst,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13627,Berlin Charlottenburg-Nord,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-13629,Berlin Siemensstadt,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14050,Berlin Westend,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14052,Berlin Westend,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-14053,Berlin Westend,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-14055,Berlin Westend,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-14057,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,8,postal_boundary,0
-14059,Berlin Charlottenburg,DE,Berlin,,W. Europe Standard Time,true,1,9,postal_boundary,0
-14089,Berlin Gatow,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14109,Berlin Wannsee,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14129,Berlin Nikolassee,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14163,Berlin Zehlendorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14165,Berlin Zehlendorf,DE,Berlin,,W. Europe Standard Time,true,1,2,postal_boundary,0
-14167,Berlin Zehlendorf,DE,Berlin,,W. Europe Standard Time,true,1,3,postal_boundary,0
-14169,Berlin Zehlendorf,DE,Berlin,,W. Europe Standard Time,true,1,4,postal_boundary,0
-14193,Berlin Grunewald,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14195,Berlin Dahlem,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14197,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,8,postal_boundary,0
-14199,Berlin Schmargendorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-14467,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,5,postal_boundary,2954
+12555,Berlin Köpenick,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12557,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,3799
+12559,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,4221
+12587,Berlin Wiesengrund,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12589,Berlin Rahnsdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12619,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,10,postal_boundary,1489
+12621,Berlin Kaulsdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12623,Berlin Mahlsdorf,DE,Adolf Hitlinosaurus,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,0
+12623,Berlin Mahlsdorf,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,false,2,1,postal_boundary,0
+12627,Berlin Hellersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12629,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,15,postal_boundary,830
+12679,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,14,postal_boundary,987
+12681,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,8,postal_boundary,1721
+12683,Berlin Biesdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+12685,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,9,postal_boundary,1719
+12687,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,17,postal_boundary,625
+12689,Berlin,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,11,postal_boundary,1050
+13051,Berlin Neu-Schönhausen,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13053,Berlin Alt-Hohenschönhausen,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13055,Berlin Alt-Hohenschönhausen,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13057,Berlin Falkenberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13059,Berlin Wartenberg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13086,Berlin Weißensee,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13088,Berlin Weißensee,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13089,Berlin Heinelsdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13125,Berlin Buch,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13127,Berlin Französisch Buchholz,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13129,Berlin Blankenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13156,Berlin Niederschönhausen,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13158,Berlin Rosenthal,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13159,Berlin Blankenfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13187,Berlin Pankow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13189,Berlin Pankow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13347,Berlin Wedding,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13349,Berlin Wedding,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13351,Berlin Wedding,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+13353,Berlin Wedding,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+13355,Berlin Wedding,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,5,postal_boundary,0
+13357,Berlin Gesundbrunnen,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13359,Berlin Gesundbrunnen,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13403,Berlin Reinickendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13405,Berlin Wedding,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,6,postal_boundary,0
+13407,Berlin-West,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13409,Berlin-West,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13435,Berlin Märkisches Viertel,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13437,Berlin Reinickendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13439,Berlin Märkisches Viertel,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13465,Berlin-Frohnau,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13467,Berlin Hermsdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13469,Berlin Lübars,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13503,Berlin Tegel,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13505,Berlin Tegel,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13507,Berlin Tegel,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+13509,Berlin Reinickendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+13581,Berlin Spandau,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13583,Berlin Spandau,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+13585,Berlin Spandau,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+13587,Berlin Hakenfelde,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13589,Berlin Falkenhagener Feld,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13591,Berlin Staaken,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13593,Berlin Wilhelmstadt,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13595,Berlin Wlhelmstadt,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13597,Berlin Spandau,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+13599,Berlin Haselhorst,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13627,Berlin Charlottenburg-Nord,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+13629,Berlin Siemensstadt,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14050,Berlin Westend,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14052,Berlin Westend,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+14053,Berlin Westend,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+14055,Berlin Westend,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+14057,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,8,postal_boundary,0
+14059,Berlin Charlottenburg,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,9,postal_boundary,0
+14089,Berlin Gatow,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14109,Berlin Wannsee,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14129,Berlin Nikolassee,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14163,Berlin Zehlendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14165,Berlin Zehlendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,2,postal_boundary,0
+14167,Berlin Zehlendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,3,postal_boundary,0
+14169,Berlin Zehlendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,4,postal_boundary,0
+14193,Berlin Grunewald,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14195,Berlin Dahlem,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14197,Berlin Wilmersdorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,8,postal_boundary,0
+14199,Berlin Schmargendorf,DE,Adolf Hitlinosaurus,,W. Europe Standard Time,true,1,1,postal_boundary,0
+14467,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,5,postal_boundary,2953
 14469,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,1,postal_boundary,7245
 14471,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,7,postal_boundary,1873
 14473,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,8,postal_boundary,1641
@@ -282,10 +283,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 14715,Stechow-Ferchesar,DE,Brandenburg,Havelland,W. Europe Standard Time,false,3,1,address_fallback,660
 14727,Premnitz,DE,Brandenburg,Havelland,W. Europe Standard Time,true,1,1,postal_boundary,2683
 14728,Rhinow,DE,Brandenburg,Havelland,W. Europe Standard Time,true,1,1,postal_boundary,581
-14770,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,3,postal_boundary,3564
+14770,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,3,postal_boundary,3565
 14772,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,2,postal_boundary,3625
 14774,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,4,postal_boundary,2484
-14776,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,1,postal_boundary,7775
+14776,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,1,postal_boundary,7776
 14778,Beetzsee,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,1413
 14778,Golzow u.a.,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,false,4,1,postal_boundary,0
 14778,Golzow u.a.,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,false,5,1,postal_boundary,0
@@ -306,7 +307,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 14913,Jüterbog,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,3615
 14913,Niederer Fläming,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,false,3,1,postal_boundary,1347
 14913,Niedergörsdorf,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,false,2,1,postal_boundary,2187
-14929,Treuenbrietzen,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,2635
+14929,Treuenbrietzen,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,2636
 14943,Luckenwalde,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,5583
 14947,Nuthe-Urstromtal,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,2709
 14959,Trebbin,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,3214
@@ -332,7 +333,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 15326,Zeschdorf,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,false,2,1,postal_boundary,631
 15328,Golzow,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,337
 15328,Zechin u.a.,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,false,2,1,postal_boundary,0
-15344,Strausberg,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,6135
+15344,Strausberg,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,6151
 15345,Altlandsberg u.a.,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,0
 15345,Lichtenow,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,false,2,1,postal_boundary,0
 15366,Hoppegarten,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,6427
@@ -350,21 +351,21 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 15528,Spreenhagen,DE,Brandenburg,Oder-Spree,W. Europe Standard Time,true,1,1,postal_boundary,1775
 15537,Erkner,DE,Brandenburg,Oder-Spree,W. Europe Standard Time,false,2,1,postal_boundary,3087
 15537,Gosen-Neu Zittau,DE,Brandenburg,Oder-Spree,W. Europe Standard Time,false,3,1,postal_boundary,1655
-15537,Grünheide (Mark),DE,Brandenburg,Oder-Spree,W. Europe Standard Time,true,1,1,postal_boundary,4131
+15537,Grünheide (Mark),DE,Brandenburg,Oder-Spree,W. Europe Standard Time,true,1,1,postal_boundary,4134
 15562,Rüdersdorf,DE,Brandenburg,Märkisch-Oderland,W. Europe Standard Time,true,1,1,postal_boundary,257
 15566,Schöneiche bei Berlin,DE,Brandenburg,Oder-Spree,W. Europe Standard Time,true,1,1,postal_boundary,5354
 15569,Woltersdorf,DE,Brandenburg,Oder-Spree,W. Europe Standard Time,true,1,1,postal_boundary,3496
 15711,Königs Wusterhausen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,6477
-15712,Königs Wusterhausen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,2,postal_boundary,4530
-15713,Königs Wusterhausen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,3,postal_boundary,2578
+15712,Königs Wusterhausen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,2,postal_boundary,4550
+15713,Königs Wusterhausen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,3,postal_boundary,2580
 15732,Schulzendorf b. Eichenwade,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,0
-15738,Zeuthen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,4388
+15738,Zeuthen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,4394
 15741,Bestensee,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,3276
-15745,Wildau,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,2865
-15746,Groß Köris,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,1335
+15745,Wildau,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,2871
+15746,Groß Köris,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,1334
 15748,Märkisch Buchholz,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,390
 15749,Mittenwalde,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,3687
-15754,Heidesee,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,4421
+15754,Heidesee,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,4423
 15755,Teupitz,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,1018
 15757,Halbe,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,1036
 15806,Zossen,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,6633
@@ -390,11 +391,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 15938,Golßen,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,892
 16225,Eberswalde,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,4989
 16227,Eberswalde,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,2,postal_boundary,2837
-16230,Breydin,DE,Brandenburg,Barnim,W. Europe Standard Time,false,5,1,postal_boundary,310
+16230,Breydin,DE,Brandenburg,Barnim,W. Europe Standard Time,false,5,1,postal_boundary,311
 16230,Britz,DE,Brandenburg,Barnim,W. Europe Standard Time,false,2,1,postal_boundary,828
 16230,Chorin,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,1101
 16230,Melchow,DE,Brandenburg,Barnim,W. Europe Standard Time,false,3,1,postal_boundary,563
-16230,Sydower Fließ,DE,Brandenburg,Barnim,W. Europe Standard Time,false,4,1,postal_boundary,365
+16230,Sydower Fließ,DE,Brandenburg,Barnim,W. Europe Standard Time,false,4,1,postal_boundary,366
 16244,Schorfheide,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,4407
 16247,Joachimsthal u.a.,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,0
 16248,Hohenfinow,DE,Brandenburg,Barnim,W. Europe Standard Time,false,6,1,postal_boundary,196
@@ -412,10 +413,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 16321,Bernau,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,150
 16341,Panketal,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,8258
 16348,Wandlitz,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,10826
-16356,Werneuchen,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,3638
+16356,Werneuchen,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,3645
 16359,Biesenthal,DE,Brandenburg,Barnim,W. Europe Standard Time,true,1,1,postal_boundary,2595
 16515,Mühlenbecker Land,DE,Brandenburg,Oberhavel,W. Europe Standard Time,false,2,2,postal_boundary,1519
-16515,Oranienburg,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,16247
+16515,Oranienburg,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,16249
 16540,Hohen Neuendorf,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,5167
 16547,Birkenwerder,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,3243
 16548,Glienicke/Nordbahn,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,3568
@@ -472,7 +473,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 19309,Lenzen,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,0
 19322,Rühstädt,DE,Brandenburg,Prignitz,W. Europe Standard Time,false,2,1,postal_boundary,258
 19322,Wittenberge,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,4819
-19336,Bad Wilsnack,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,1191
+19336,Bad Wilsnack,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,1190
 19336,Legde/Quitzöbel,DE,Brandenburg,Prignitz,W. Europe Standard Time,false,2,1,postal_boundary,324
 19339,Plattenburg,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,1666
 19348,Berge u.a.,DE,Brandenburg,Prignitz,W. Europe Standard Time,false,2,1,postal_boundary,0
