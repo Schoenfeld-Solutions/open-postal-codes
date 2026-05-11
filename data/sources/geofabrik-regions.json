@@ -1,132 +1,132 @@
 {
-  "generated_at": "2026-05-06T12:15:01Z",
+  "generated_at": "2026-05-11T06:40:22Z",
   "source": "Geofabrik D-A-CH PBF files",
   "regions": {
     "at/austria": {
       "url": "https://download.geofabrik.de/europe/austria-latest.osm.pbf",
-      "content_length": 798953785,
-      "etag": "\"2f9f1139-6511bf70ac2a2\"",
-      "last_modified": "Wed, 06 May 2026 01:20:10 GMT",
-      "md5": "c0e27a88b045058560d354392dcf1463"
+      "content_length": 799230259,
+      "etag": "\"2fa34933-6517fdc00fe2b\"",
+      "last_modified": "Mon, 11 May 2026 00:30:54 GMT",
+      "md5": "438642c48a7375be2edd02196a6d9fcf"
     },
     "baden-wuerttemberg": {
       "url": "https://download.geofabrik.de/europe/germany/baden-wuerttemberg-latest.osm.pbf",
-      "content_length": 636752025,
-      "etag": "\"25f41099-6511c1ff41bfc\"",
-      "last_modified": "Wed, 06 May 2026 01:31:37 GMT",
-      "md5": "cc90faace24df6cb57290c74c0466089"
+      "content_length": 637211679,
+      "etag": "\"25fb141f-651803eadcd93\"",
+      "last_modified": "Mon, 11 May 2026 00:58:29 GMT",
+      "md5": "7ae5ba1d98b2d3c8d30ced4582a4723b"
     },
     "bayern": {
       "url": "https://download.geofabrik.de/europe/germany/bayern-latest.osm.pbf",
-      "content_length": 839564483,
-      "etag": "\"320abcc3-6511c1de1a9aa\"",
-      "last_modified": "Wed, 06 May 2026 01:31:02 GMT",
-      "md5": "876abe1a0c9ef3559a495496d70a2ea7"
+      "content_length": 840131860,
+      "etag": "\"32136514-651803d25d4df\"",
+      "last_modified": "Mon, 11 May 2026 00:58:03 GMT",
+      "md5": "8e2c10f335707da11f314388676ee359"
     },
     "berlin": {
       "url": "https://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf",
-      "content_length": 97841913,
-      "etag": "\"5d4f2f9-6511c1ccad60b\"",
-      "last_modified": "Wed, 06 May 2026 01:30:44 GMT",
-      "md5": "ccf40e504e04bfbddf065ad3206bd48c"
+      "content_length": 97898592,
+      "etag": "\"5d5d060-6518038fe7b6c\"",
+      "last_modified": "Mon, 11 May 2026 00:56:54 GMT",
+      "md5": "53b27d605e83e980b821508135d4c4d4"
     },
     "brandenburg": {
       "url": "https://download.geofabrik.de/europe/germany/brandenburg-latest.osm.pbf",
-      "content_length": 295312694,
-      "etag": "\"119a1d36-6511c1c11bec1\"",
-      "last_modified": "Wed, 06 May 2026 01:30:32 GMT",
-      "md5": "d2891dc003e5e90a0f8d341550b55b47"
+      "content_length": 295484239,
+      "etag": "\"119cbb4f-651803a9020b8\"",
+      "last_modified": "Mon, 11 May 2026 00:57:20 GMT",
+      "md5": "08bffa78cdb2fce948d15f2c20ec6630"
     },
     "bremen": {
       "url": "https://download.geofabrik.de/europe/germany/bremen-latest.osm.pbf",
-      "content_length": 20958688,
-      "etag": "\"13fcde0-6511c187d27da\"",
-      "last_modified": "Wed, 06 May 2026 01:29:32 GMT",
-      "md5": "af5b2c1bb6a13b963f9433b9633fd37b"
+      "content_length": 20966267,
+      "etag": "\"13feb7b-65180386efcb1\"",
+      "last_modified": "Mon, 11 May 2026 00:56:44 GMT",
+      "md5": "9a79c01911ef394e697cf603180f54c4"
     },
     "ch/switzerland": {
       "url": "https://download.geofabrik.de/europe/switzerland-latest.osm.pbf",
-      "content_length": 531680628,
-      "etag": "\"1fb0cd74-6511be306f390\"",
-      "last_modified": "Wed, 06 May 2026 01:14:35 GMT",
-      "md5": "022266fdfa38c076d292abf20d96470e"
+      "content_length": 532176590,
+      "etag": "\"1fb85ece-6517fefec5efe\"",
+      "last_modified": "Mon, 11 May 2026 00:36:28 GMT",
+      "md5": "b1eae4489110b3dede227ed2b96d8a19"
     },
     "hamburg": {
       "url": "https://download.geofabrik.de/europe/germany/hamburg-latest.osm.pbf",
-      "content_length": 52999782,
-      "etag": "\"328b666-6511c200f2dbe\"",
-      "last_modified": "Wed, 06 May 2026 01:31:39 GMT",
-      "md5": "3b679fa13740b1bd98e507bd2db3bc91"
+      "content_length": 53047413,
+      "etag": "\"3297075-651803881ec65\"",
+      "last_modified": "Mon, 11 May 2026 00:56:45 GMT",
+      "md5": "027598cac643ee43c65e2dfe15ddf7db"
     },
     "hessen": {
       "url": "https://download.geofabrik.de/europe/germany/hessen-latest.osm.pbf",
-      "content_length": 338009006,
-      "etag": "\"14259bae-6511c2196ff6c\"",
-      "last_modified": "Wed, 06 May 2026 01:32:04 GMT",
-      "md5": "7ee82484ea97a43adac6f8dd39ffef2c"
+      "content_length": 338258069,
+      "etag": "\"14296895-651803953df01\"",
+      "last_modified": "Mon, 11 May 2026 00:56:59 GMT",
+      "md5": "9dc83affdaa9385ef1457c8619443605"
     },
     "mecklenburg-vorpommern": {
       "url": "https://download.geofabrik.de/europe/germany/mecklenburg-vorpommern-latest.osm.pbf",
-      "content_length": 125225028,
-      "etag": "\"776c844-6511c1861c027\"",
-      "last_modified": "Wed, 06 May 2026 01:29:30 GMT",
-      "md5": "d8db7ed30eb409e61f9caec275736f8f"
+      "content_length": 125331868,
+      "etag": "\"778699c-651803d6fedcd\"",
+      "last_modified": "Mon, 11 May 2026 00:58:08 GMT",
+      "md5": "605ec988c9a0c9b5b24ebed80b240615"
     },
     "niedersachsen": {
       "url": "https://download.geofabrik.de/europe/germany/niedersachsen-latest.osm.pbf",
-      "content_length": 493165480,
-      "etag": "\"1d651ba8-6511c1c093723\"",
-      "last_modified": "Wed, 06 May 2026 01:30:31 GMT",
-      "md5": "a59bfe858d4019f31842f484f860378a"
+      "content_length": 493626747,
+      "etag": "\"1d6c257b-651803d9e3592\"",
+      "last_modified": "Mon, 11 May 2026 00:58:11 GMT",
+      "md5": "957a878432998f9d2d6133cbd8c1689d"
     },
     "nordrhein-westfalen": {
       "url": "https://download.geofabrik.de/europe/germany/nordrhein-westfalen-latest.osm.pbf",
-      "content_length": 902128538,
-      "etag": "\"35c5639a-6511c1d6a5a64\"",
-      "last_modified": "Wed, 06 May 2026 01:30:54 GMT",
-      "md5": "bcd4991403a9560c5cbc33a7c2d57bd7"
+      "content_length": 902516558,
+      "etag": "\"35cb4f4e-651803c426d79\"",
+      "last_modified": "Mon, 11 May 2026 00:57:48 GMT",
+      "md5": "3c4b151e02fd46ddb9a717fe5aa2ead3"
     },
     "rheinland-pfalz": {
       "url": "https://download.geofabrik.de/europe/germany/rheinland-pfalz-latest.osm.pbf",
-      "content_length": 259364293,
-      "etag": "\"f7595c5-6511c1f753f19\"",
-      "last_modified": "Wed, 06 May 2026 01:31:28 GMT",
-      "md5": "6763c51e187fd971bcd7bc6c511ad09c"
+      "content_length": 259670184,
+      "etag": "\"f7a40a8-651803b39cea3\"",
+      "last_modified": "Mon, 11 May 2026 00:57:31 GMT",
+      "md5": "fd6200315557a428bb5c87ee37251fcf"
     },
     "saarland": {
       "url": "https://download.geofabrik.de/europe/germany/saarland-latest.osm.pbf",
-      "content_length": 53980065,
-      "etag": "\"337aba1-6511c1d2dc66c\"",
-      "last_modified": "Wed, 06 May 2026 01:30:50 GMT",
-      "md5": "9aff56cdd12d4e8fbd6eda937d44ffaa"
+      "content_length": 53993748,
+      "etag": "\"337e114-651803da941b9\"",
+      "last_modified": "Mon, 11 May 2026 00:58:12 GMT",
+      "md5": "a726846477df96cd5af99d796492af01"
     },
     "sachsen": {
       "url": "https://download.geofabrik.de/europe/germany/sachsen-latest.osm.pbf",
-      "content_length": 261664589,
-      "etag": "\"f98af4d-6511c1fa3d8e8\"",
-      "last_modified": "Wed, 06 May 2026 01:31:32 GMT",
-      "md5": "dada483e8d3f05677d58623f089a4bbc"
+      "content_length": 261876412,
+      "etag": "\"f9beabc-651803beb0e12\"",
+      "last_modified": "Mon, 11 May 2026 00:57:43 GMT",
+      "md5": "97db4dd38548bd887635fa9605358f15"
     },
     "sachsen-anhalt": {
       "url": "https://download.geofabrik.de/europe/germany/sachsen-anhalt-latest.osm.pbf",
-      "content_length": 170930286,
-      "etag": "\"a30306e-6511c1fd18855\"",
-      "last_modified": "Wed, 06 May 2026 01:31:35 GMT",
-      "md5": "cb553130eabb5472a7ffab509c169531"
+      "content_length": 171079882,
+      "etag": "\"a3278ca-6518039713e9c\"",
+      "last_modified": "Mon, 11 May 2026 00:57:01 GMT",
+      "md5": "355d80d3a41903390c220efe54dfec29"
     },
     "schleswig-holstein": {
       "url": "https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf",
-      "content_length": 155867036,
-      "etag": "\"94a579c-6511c1e75859a\"",
-      "last_modified": "Wed, 06 May 2026 01:31:12 GMT",
-      "md5": "e3d8d83d8cd24c3b5ea56b991226b5c7"
+      "content_length": 155918764,
+      "etag": "\"94b21ac-6518039d8e21d\"",
+      "last_modified": "Mon, 11 May 2026 00:57:08 GMT",
+      "md5": "feadb0d466a072e734a26a99c794572b"
     },
     "thueringen": {
       "url": "https://download.geofabrik.de/europe/germany/thueringen-latest.osm.pbf",
-      "content_length": 157557069,
-      "etag": "\"964214d-6511c18f263e0\"",
-      "last_modified": "Wed, 06 May 2026 01:29:39 GMT",
-      "md5": "01296872d03e3576a2ed63e5a088af02"
+      "content_length": 157609693,
+      "etag": "\"964eedd-651803894a181\"",
+      "last_modified": "Mon, 11 May 2026 00:56:47 GMT",
+      "md5": "8b18f480ff11a6d6513b14b8459f6f34"
     }
   }
 }

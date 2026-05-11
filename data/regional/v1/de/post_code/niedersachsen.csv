@@ -6,19 +6,19 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 21218,Seevetal,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,2,postal_boundary,1852
 21220,Seevetal,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,2986
 21224,Rosengarten,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,1787
-21227,Bendestorf,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,37
+21227,Bendestorf,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,44
 21228,Harmstorf,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,8
-21244,Buchholz in der Nordheide,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,14193
+21244,Buchholz in der Nordheide,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,14188
 21255,Dohren,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,4,1,postal_boundary,449
 21255,Drestedt-Valzik Siedlung,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,7,1,postal_boundary,0
 21255,Kakenstorf,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,2,1,postal_boundary,687
 21255,Königsmoor,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,5,1,postal_boundary,194
 21255,Riepshof,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,6,1,postal_boundary,6
 21255,Tostedt,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,4420
-21255,Wistedt,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,3,1,postal_boundary,619
-21256,Handeloh,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,1168
+21255,Wistedt,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,3,1,postal_boundary,620
+21256,Handeloh,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,1166
 21258,Heidenau,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,749
-21259,Otter,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,629
+21259,Otter,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,628
 21261,Welle,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,460
 21266,Jesteburg,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,558
 21271,Asendorf,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,false,2,1,postal_boundary,158
@@ -52,7 +52,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 21388,Oldendorf,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 21388,Soderstorf,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,true,1,1,postal_boundary,524
 21391,Lüneburg,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,false,2,4,postal_boundary,1
-21391,Reppenstedt,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,true,1,1,postal_boundary,2250
+21391,Reppenstedt,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,true,1,1,postal_boundary,2249
 21394,Kirchgellersen,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,true,1,1,postal_boundary,782
 21394,Südergellersen,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,false,3,1,postal_boundary,485
 21394,Westergellersen,DE,Niedersachsen,Landkreis Lüneburg,W. Europe Standard Time,false,2,1,postal_boundary,715
@@ -88,7 +88,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 21640,Neuenkirchen,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,false,4,1,postal_boundary,62
 21640,Nottensdorf,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,false,2,1,postal_boundary,433
 21641,Apensen,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,true,1,1,postal_boundary,54
-21643,Beckdorf,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,true,1,1,postal_boundary,28
+21643,Beckdorf,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,true,1,1,postal_boundary,42
 21644,Sauensiek,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,true,1,1,postal_boundary,330
 21646,Halvesbostel,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,20
 21647,Moisburg,DE,Niedersachsen,Landkreis Harburg,W. Europe Standard Time,true,1,1,postal_boundary,293
@@ -121,11 +121,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 21739,Dollern,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,true,1,1,postal_boundary,113
 21745,Hemmoor,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,3372
 21755,Hechthausen,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,736
-21756,Osten,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,50
+21756,Osten,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,56
 21762,Otterndorf,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,3284
 21763,Neuenkirchen,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,61
 21765,Nordleda,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,426
-21769,Lamstedt,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,742
+21769,Lamstedt,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,743
 21770,Mittelstenahe,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,167
 21772,Stinstedt,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,117
 21775,Ihlienworth,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,23
@@ -136,14 +136,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 21787,Oberndorf,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,120
 21789,Wingst,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,1072
 26121,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,5,postal_boundary,3826
-26122,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,9,postal_boundary,1817
+26122,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,9,postal_boundary,1824
 26123,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,7,postal_boundary,3566
 26125,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,2,postal_boundary,6731
-26127,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,8275
-26129,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,8,postal_boundary,3263
+26127,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,8290
+26129,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,8,postal_boundary,3302
 26131,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,4,postal_boundary,4510
 26133,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,6,postal_boundary,3797
-26135,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,3,postal_boundary,5265
+26135,Oldenburg,DE,Niedersachsen,Oldenburg,W. Europe Standard Time,true,1,3,postal_boundary,5555
 26160,Bad Zwischenahn,DE,Niedersachsen,Landkreis Ammerland,W. Europe Standard Time,true,1,1,postal_boundary,7448
 26169,Friesoythe,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,4952
 26180,Rastede,DE,Niedersachsen,Landkreis Ammerland,W. Europe Standard Time,true,1,1,postal_boundary,7818
@@ -154,15 +154,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 26215,Wiefelstede,DE,Niedersachsen,Landkreis Ammerland,W. Europe Standard Time,true,1,1,postal_boundary,5271
 26219,Bösel,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,1387
 26316,Varel,DE,Niedersachsen,Landkreis Friesland,W. Europe Standard Time,true,1,1,postal_boundary,7289
-26340,Zetel,DE,Niedersachsen,Landkreis Friesland,W. Europe Standard Time,true,1,1,postal_boundary,3986
+26340,Zetel,DE,Niedersachsen,Landkreis Friesland,W. Europe Standard Time,true,1,1,postal_boundary,3987
 26345,Bockhorn,DE,Niedersachsen,Landkreis Friesland,W. Europe Standard Time,true,1,1,postal_boundary,2342
 26349,Jade,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,1673
 26382,Wilhelmshaven,DE,Niedersachsen,Wilhelmshaven,W. Europe Standard Time,true,1,2,postal_boundary,2823
 26384,Wilhelmshaven,DE,Niedersachsen,Wilhelmshaven,W. Europe Standard Time,true,1,4,postal_boundary,2779
 26386,Wilhelmshaven,DE,Niedersachsen,Wilhelmshaven,W. Europe Standard Time,true,1,3,postal_boundary,2784
-26388,Wilhelmshaven,DE,Niedersachsen,Wilhelmshaven,W. Europe Standard Time,true,1,5,postal_boundary,2279
+26388,Wilhelmshaven,DE,Niedersachsen,Wilhelmshaven,W. Europe Standard Time,true,1,5,postal_boundary,2276
 26389,Wilhelmshaven,DE,Niedersachsen,Wilhelmshaven,W. Europe Standard Time,true,1,1,postal_boundary,3728
-26409,Wittmund,DE,Niedersachsen,Landkreis Wittmund,W. Europe Standard Time,true,1,1,postal_boundary,8904
+26409,Wittmund,DE,Niedersachsen,Landkreis Wittmund,W. Europe Standard Time,true,1,1,postal_boundary,8906
 26419,Schortens,DE,Niedersachsen,Landkreis Friesland,W. Europe Standard Time,true,1,1,postal_boundary,6549
 26427,Esens,DE,Niedersachsen,Landkreis Wittmund,W. Europe Standard Time,true,1,1,postal_boundary,2888
 26427,Neuharlingersiel u.a.,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -177,7 +177,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 26487,Blomberg,DE,Niedersachsen,Landkreis Wittmund,W. Europe Standard Time,false,2,1,postal_boundary,36
 26487,Neuschoo,DE,Niedersachsen,Landkreis Wittmund,W. Europe Standard Time,true,1,1,postal_boundary,89
 26489,Ochtersum,DE,Niedersachsen,Landkreis Wittmund,W. Europe Standard Time,true,1,1,postal_boundary,14
-26506,Norden,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,11101
+26506,Norden,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,11107
 26524,Hage,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,2815
 26524,Halbemond u.a.,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,false,2,1,postal_boundary,0
 26529,Osteel u.a.,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -195,33 +195,33 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 26607,Aurich,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,3,postal_boundary,3363
 26624,Südbrookmerland is different from the municipal boundary,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,0
 26629,Großefehn,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,5861
-26632,Ihlow,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,1262
+26632,Ihlow,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,1267
 26639,Wiesmoor,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,5722
-26655,Westerstede,DE,Niedersachsen,Landkreis Ammerland,W. Europe Standard Time,true,1,1,postal_boundary,7566
+26655,Westerstede,DE,Niedersachsen,Landkreis Ammerland,W. Europe Standard Time,true,1,1,postal_boundary,7565
 26670,Uplengen,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,4659
 26676,Barßel,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,2648
 26683,Saterland,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,2818
 26689,Apen,DE,Niedersachsen,Landkreis Ammerland,W. Europe Standard Time,true,1,1,postal_boundary,2810
-26721,Emden,DE,Niedersachsen,Emden,W. Europe Standard Time,true,1,3,postal_boundary,4828
+26721,Emden,DE,Niedersachsen,Emden,W. Europe Standard Time,true,1,3,postal_boundary,4827
 26723,Emden,DE,Niedersachsen,Emden,W. Europe Standard Time,true,1,2,postal_boundary,5019
 26725,Emden,DE,Niedersachsen,Emden,W. Europe Standard Time,true,1,1,postal_boundary,6988
 26736,Krummhörn,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,6794
 26757,Borkum,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,1955
 26759,Hinte is different from the municipal boundary,DE,Niedersachsen,Landkreis Aurich,W. Europe Standard Time,true,1,1,postal_boundary,0
 26789,Leer,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,1497
-26802,Moormerland,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,8622
-26810,Westoverledingen,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,2585
-26817,Rhauderfehn,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,4081
+26802,Moormerland,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,8628
+26810,Westoverledingen,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,2588
+26817,Rhauderfehn,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,4085
 26826,Weener,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,3073
-26831,Bunde,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,1104
+26831,Bunde,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,1143
 26835,Hesel,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,1503
 26835,Neukamperfehn u.a.,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,false,2,1,postal_boundary,0
 26842,Ostrhauderfehn,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,1117
 26844,Jemgum,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,777
-26845,Nortmoor,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,767
+26845,Nortmoor,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,769
 26847,Detern,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,1170
 26849,Filsum,DE,Niedersachsen,Landkreis Leer,W. Europe Standard Time,true,1,1,postal_boundary,851
-26871,Papenburg,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,7296
+26871,Papenburg,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,7362
 26892,Dörpen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,1030
 26892,Lehe,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,286
 26892,u.a.,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,3,1,postal_boundary,0
@@ -230,18 +230,18 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 26901,Lorup,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,832
 26901,Rastdorf,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,403
 26903,Surwold,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,839
-26904,Börger,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,544
+26904,Börger,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,565
 26906,Dersum,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,160
 26907,Walchum,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,300
 26909,Neubörger,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,142
 26909,Neulehe,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,248
-26919,Brake,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,480
+26919,Brake,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,483
 26931,Elsfleth,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,918
 26935,Stadland,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,3,postal_boundary,136
 26936,Stadland,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,2,postal_boundary,238
 26937,Stadland,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,417
 26939,Ovelgönne,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,821
-26954,Nordenham,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,3308
+26954,Nordenham,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,3310
 26969,Butjadingen,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,4272
 27211,Bassum,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,4323
 27232,Sulingen,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,4416
@@ -251,7 +251,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 27243,Harpstedt,DE,Niedersachsen,Landkreis Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,229
 27245,Bahrenborstel,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,3,1,postal_boundary,164
 27245,Barenburg,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,2,1,postal_boundary,463
-27245,Kirchdorf,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,620
+27245,Kirchdorf,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,739
 27246,Borstel,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,68
 27248,Ehrenburg,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,214
 27249,Maasen,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,2,1,postal_boundary,115
@@ -269,14 +269,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 27283,Verden,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,677
 27299,Langwedel,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,4790
 27305,Bruchhausen-Vilsen,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,2535
-27308,Kirchlinteln,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,2900
+27308,Kirchlinteln,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,2898
 27313,Dörverden,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,2985
 27318,Hilgermissen,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,false,2,1,postal_boundary,766
 27318,Hoya,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1646
 27318,Hoyerhagen,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,false,3,1,postal_boundary,54
 27321,Emtinghausen,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,false,2,1,postal_boundary,302
 27321,Thedinghausen,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,2096
-27324,Eystrup,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1127
+27324,Eystrup,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1129
 27324,Hassel u.a.,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,false,2,1,postal_boundary,0
 27327,Martfeld,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,274
 27327,Schwarme,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,2,1,postal_boundary,272
@@ -308,11 +308,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 27442,Gnarrenburg,DE,Niedersachsen,Landkreis Rotenburg (Wümme),W. Europe Standard Time,true,1,1,postal_boundary,2239
 27446,Selsingen,DE,Niedersachsen,Landkreis Rotenburg (Wümme),W. Europe Standard Time,true,1,1,postal_boundary,190
 27449,Kutenholz,DE,Niedersachsen,Landkreis Stade,W. Europe Standard Time,true,1,1,postal_boundary,1447
-27472,Cuxhaven,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,3,postal_boundary,3720
+27472,Cuxhaven,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,3,postal_boundary,3721
 27474,Cuxhaven,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,4,postal_boundary,3207
 27476,Cuxhaven,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,2,postal_boundary,4546
 27478,Cuxhaven,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,4680
-27568,Bremerhaven,DE,Bremen,Bremerhaven,W. Europe Standard Time,true,1,1,postal_boundary,2059
+27568,Bremerhaven,DE,Bremen,Bremerhaven,W. Europe Standard Time,true,1,1,postal_boundary,2060
 27570,Bremerhaven,DE,Bremen,Bremerhaven,W. Europe Standard Time,true,1,2,postal_boundary,1515
 27572,Bremerhaven,DE,Bremen,Bremerhaven,W. Europe Standard Time,true,1,5,postal_boundary,974
 27574,Bremerhaven,DE,Bremen,Bremerhaven,W. Europe Standard Time,true,1,6,postal_boundary,618
@@ -330,7 +330,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 27624,Elmlohe,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,false,6,1,postal_boundary,0
 27624,Fickmühlen,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,false,7,2,postal_boundary,0
 27624,Flögeln,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,false,8,1,postal_boundary,0
-27624,Geestland,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,3394
+27624,Geestland,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,true,1,1,postal_boundary,3475
 27624,Großenhain,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,false,9,1,postal_boundary,0
 27624,Hainmühlen,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,false,10,1,postal_boundary,0
 27624,Köhlen,DE,Niedersachsen,Landkreis Cuxhaven,W. Europe Standard Time,false,11,1,postal_boundary,0
@@ -343,28 +343,28 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 27711,Osterholz-Scharmbeck,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,true,1,1,postal_boundary,8033
 27721,Ritterhude,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,true,1,1,postal_boundary,3780
 27726,Worpswede,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,true,1,1,postal_boundary,3670
-27729,Hambergen,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,true,1,1,postal_boundary,1908
+27729,Hambergen,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,true,1,1,postal_boundary,1911
 27729,Holste u.a.,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,false,2,1,postal_boundary,0
 27749,Delmenhorst,DE,Niedersachsen,Delmenhorst,W. Europe Standard Time,true,1,4,postal_boundary,1681
 27751,Delmenhorst,DE,Niedersachsen,Delmenhorst,W. Europe Standard Time,true,1,1,postal_boundary,5936
 27753,Delmenhorst,DE,Niedersachsen,Delmenhorst,W. Europe Standard Time,true,1,2,postal_boundary,4447
 27755,Delmenhorst,DE,Niedersachsen,Delmenhorst,W. Europe Standard Time,true,1,3,postal_boundary,4133
-27777,Ganderkesee,DE,Niedersachsen,Landkreis Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,8329
+27777,Ganderkesee,DE,Niedersachsen,Landkreis Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,8330
 27793,Wildeshausen,DE,Niedersachsen,Landkreis Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,5999
 27798,Hude,DE,Niedersachsen,Landkreis Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,3409
 27801,Dötlingen,DE,Niedersachsen,Landkreis Oldenburg,W. Europe Standard Time,true,1,1,postal_boundary,1500
 27804,Berne,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,1466
 27809,Lemwerder,DE,Niedersachsen,Landkreis Wesermarsch,W. Europe Standard Time,true,1,1,postal_boundary,613
-28195,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,28,postal_boundary,2205
+28195,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,28,postal_boundary,2206
 28197,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,21,postal_boundary,2820
 28199,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,14,postal_boundary,3924
-28201,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,2,postal_boundary,6825
+28201,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,2,postal_boundary,6823
 28203,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,7,postal_boundary,4931
 28205,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,17,postal_boundary,3434
 28207,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,24,postal_boundary,2742
 28209,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,29,postal_boundary,2195
-28211,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,18,postal_boundary,3170
-28213,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,27,postal_boundary,2342
+28211,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,18,postal_boundary,3191
+28213,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,27,postal_boundary,2343
 28215,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,5,postal_boundary,5571
 28217,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,11,postal_boundary,3994
 28219,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,12,postal_boundary,3962
@@ -374,7 +374,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 28277,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,9,postal_boundary,4335
 28279,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,1,postal_boundary,7227
 28307,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,6,postal_boundary,5283
-28309,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,8,postal_boundary,4540
+28309,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,8,postal_boundary,4541
 28325,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,13,postal_boundary,3934
 28327,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,26,postal_boundary,2485
 28329,Bremen,DE,Bremen,Bremen,W. Europe Standard Time,true,1,16,postal_boundary,3462
@@ -392,7 +392,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 28790,Schwanewede,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,true,1,1,postal_boundary,2153
 28816,Stuhr,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,9032
 28832,Achim,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,10945
-28844,Weyhe,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,9313
+28844,Weyhe,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,9314
 28857,Syke,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,6248
 28865,Lilienthal,DE,Niedersachsen,Landkreis Osterholz,W. Europe Standard Time,true,1,1,postal_boundary,7238
 28870,Ottersberg,DE,Niedersachsen,Landkreis Verden,W. Europe Standard Time,true,1,1,postal_boundary,1590
@@ -412,13 +412,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 29323,Wietze,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,1646
 29328,Faßberg,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,2671
 29331,Lachendorf,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,2338
-29336,Nienhagen,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,2448
+29336,Nienhagen,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,2449
 29339,Wathlingen,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,1993
 29342,Wienhausen,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,1361
 29345,Unterlüß,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,92
 29348,Eschede,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,1306
 29351,Eldingen,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,244
-29352,Adelheidsdorf,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,970
+29352,Adelheidsdorf,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,1011
 29353,Ahnsbeck,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,610
 29355,Beedenbostel,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,370
 29356,Bröckel,DE,Niedersachsen,Landkreis Celle,W. Europe Standard Time,true,1,1,postal_boundary,715
@@ -458,7 +458,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 29481,Karwitz,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,229
 29482,Küsten,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,565
 29484,Langendorf,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,309
-29485,Lemgow,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,581
+29485,Lemgow,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,582
 29487,Luckau,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,0
 29488,Lübbow,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,296
 29490,Neu Darchau,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,635
@@ -468,7 +468,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 29496,Waddeweitz,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,404
 29497,Woltersdorf,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,366
 29499,Zernien,DE,Niedersachsen,Landkreis Lüchow-Dannenberg,W. Europe Standard Time,true,1,1,postal_boundary,368
-29525,Uelzen,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,9481
+29525,Uelzen,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,9482
 29549,Bad Bevensen,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,3090
 29553,Bienenbüttel,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,2064
 29556,Suderburg,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,1378
@@ -481,7 +481,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 29576,Barum,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,320
 29578,Eimke,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,332
 29579,Emmendorf,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,265
-29581,Gerdau,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,333
+29581,Gerdau,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,351
 29582,Hanstedt,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,289
 29584,Himbergen,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,544
 29585,Jelmstorf,DE,Niedersachsen,Landkreis Uelzen,W. Europe Standard Time,true,1,1,postal_boundary,303
@@ -512,16 +512,16 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 29693,Böhme u.a.,DE,Niedersachsen,Heidekreis,W. Europe Standard Time,false,3,1,postal_boundary,0
 29693,Hodenhagen,DE,Niedersachsen,Heidekreis,W. Europe Standard Time,true,1,1,postal_boundary,995
 29699,Bomlitz,DE,Niedersachsen,Heidekreis,W. Europe Standard Time,true,1,1,postal_boundary,0
-30159,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,21,postal_boundary,1693
+30159,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,21,postal_boundary,1694
 30161,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,16,postal_boundary,2089
 30163,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,20,postal_boundary,1825
 30165,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,15,postal_boundary,2188
 30167,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,18,postal_boundary,1916
 30169,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,27,postal_boundary,1026
-30171,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,26,postal_boundary,1147
-30173,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,17,postal_boundary,2066
+30171,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,26,postal_boundary,1148
+30173,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,17,postal_boundary,2068
 30175,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,25,postal_boundary,1177
-30177,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,22,postal_boundary,1525
+30177,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,22,postal_boundary,1526
 30179,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,13,postal_boundary,2280
 30419,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,6266
 30449,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,23,postal_boundary,1364
@@ -533,7 +533,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 30519,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,2,postal_boundary,5602
 30521,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,28,postal_boundary,8
 30539,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,4,postal_boundary,4488
-30559,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,3,postal_boundary,4604
+30559,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,3,postal_boundary,4606
 30625,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,14,postal_boundary,2216
 30627,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,19,postal_boundary,1870
 30629,Hannover,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,9,postal_boundary,3217
@@ -549,13 +549,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 30855,Langenhagen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,4149
 30880,Laatzen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,3614
 30890,Barsinghausen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,10065
-30900,Wedemark,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,8242
+30900,Wedemark,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,8267
 30916,Isernhagen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,7747
 30926,Seelze,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,6069
 30938,Burgwedel,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,6529
 30939,Burgwedel,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,2,address_fallback,17
-30952,Ronnenberg,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,5134
-30966,Hemmingen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,5109
+30952,Ronnenberg,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,5137
+30966,Hemmingen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,5146
 30974,Wennigsen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,2
 30982,Pattensen,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,4676
 30989,Gehrden,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,3412
@@ -579,7 +579,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 31141,Hildesheim,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,2,postal_boundary,1353
 31157,Sarstedt,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,1,postal_boundary,3403
 31162,Bad Salzdetfurth,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,1,postal_boundary,3140
-31167,Bockenem,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,1,postal_boundary,1015
+31167,Bockenem,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,1,postal_boundary,1101
 31171,Nordstemmen,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,1,postal_boundary,3251
 31174,Schellerten,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,1,postal_boundary,1425
 31177,Harsum,DE,Niedersachsen,Landkreis Hildesheim,W. Europe Standard Time,true,1,1,postal_boundary,3812
@@ -600,8 +600,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 31303,Burgdorf,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,8832
 31311,Uetze,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,7192
 31319,Sehnde,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,7565
-31515,Wunstorf,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,7047
-31535,Neustadt am Rübenberge,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,10898
+31515,Wunstorf,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,7255
+31535,Neustadt am Rübenberge,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,11539
 31536,Neustadt am Rübenberge,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,2,postal_boundary,1168
 31542,Bad Nenndorf,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,3077
 31547,Rehburg-Loccum,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,3488
@@ -615,7 +615,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 31559,Haste,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,902
 31559,Hohnhorst,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,false,2,1,postal_boundary,724
 31582,Nienburg/Weser,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,8541
-31592,Stolzenau,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1777
+31592,Stolzenau,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1778
 31595,Steyerberg,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1335
 31600,Uchte,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1476
 31603,Diepenau,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,1339
@@ -632,14 +632,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 31626,Haßbergen,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,539
 31627,Rohrsen,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,278
 31628,Landesbergen,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,533
-31629,Estorf,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,227
+31629,Estorf,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,228
 31632,Husum,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,622
 31633,Leese,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,545
 31634,Steimbke,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,285
 31636,Linsburg,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,201
 31637,Rodewald,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,147
 31638,Stöckse,DE,Niedersachsen,Landkreis Nienburg/Weser,W. Europe Standard Time,true,1,1,postal_boundary,69
-31655,Stadthagen,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,6166
+31655,Stadthagen,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,6171
 31675,Bückeburg,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,5749
 31683,Obernkirchen,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,3082
 31688,Nienstädt,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,1605
@@ -665,9 +665,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 31749,Auetal,DE,Niedersachsen,Landkreis Schaumburg,W. Europe Standard Time,true,1,1,postal_boundary,2167
 31785,Hameln,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,2,postal_boundary,1122
 31787,Hameln,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,1,postal_boundary,1351
-31789,Hameln,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,3,postal_boundary,1061
+31789,Hameln,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,3,postal_boundary,1071
 31812,Bad Pyrmont,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,1,postal_boundary,4324
-31832,Springe,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,7137
+31832,Springe,DE,Niedersachsen,Region Hannover,W. Europe Standard Time,true,1,1,postal_boundary,7147
 31840,Hessisch Oldendorf,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,1,postal_boundary,2360
 31848,Bad Münder am Deister,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,1,postal_boundary,3432
 31855,Aerzen,DE,Niedersachsen,Landkreis Hameln-Pyrmont,W. Europe Standard Time,true,1,1,postal_boundary,2627
@@ -683,7 +683,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 34346,Gutsbezirk Reinhardswald,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,false,2,1,postal_boundary,0
 34346,Hann. Münden,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,true,1,1,postal_boundary,2497
 34355,Staufenberg,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,true,1,1,address_fallback,1829
-37073,Göttingen,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,true,1,2,postal_boundary,4018
+37073,Göttingen,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,true,1,2,postal_boundary,4020
 37075,Göttingen,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,true,1,7,postal_boundary,2826
 37077,Göttingen,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,true,1,5,postal_boundary,3745
 37079,Göttingen,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,true,1,1,postal_boundary,4285
@@ -725,7 +725,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 37539,Teichhütte,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,false,5,1,postal_boundary,0
 37539,Willensen,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,false,6,1,postal_boundary,0
 37539,Windhausen,DE,Niedersachsen,Landkreis Göttingen,W. Europe Standard Time,false,7,1,postal_boundary,0
-37574,Einbeck,DE,Niedersachsen,Landkreis Northeim,W. Europe Standard Time,true,1,1,postal_boundary,7083
+37574,Einbeck,DE,Niedersachsen,Landkreis Northeim,W. Europe Standard Time,true,1,1,postal_boundary,7085
 37574,Kreiensen,DE,Niedersachsen,Landkreis Northeim,W. Europe Standard Time,false,2,1,postal_boundary,0
 37581,Bad Gandersheim,DE,Niedersachsen,Landkreis Northeim,W. Europe Standard Time,true,1,1,postal_boundary,1981
 37586,Dassel,DE,Niedersachsen,Landkreis Northeim,W. Europe Standard Time,true,1,1,postal_boundary,2075
@@ -755,20 +755,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 37691,Derental,DE,Niedersachsen,Landkreis Holzminden,W. Europe Standard Time,false,2,1,postal_boundary,250
 37697,Lauenförde,DE,Niedersachsen,Landkreis Holzminden,W. Europe Standard Time,true,1,1,postal_boundary,871
 37699,Fürstenberg,DE,Niedersachsen,Landkreis Holzminden,W. Europe Standard Time,true,1,1,postal_boundary,389
-38100,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,12,postal_boundary,2292
+38100,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,12,postal_boundary,2297
 38102,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,13,postal_boundary,2231
 38104,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,6,postal_boundary,3941
-38106,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,9,postal_boundary,2792
+38106,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,9,postal_boundary,2794
 38108,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,2,postal_boundary,4840
 38110,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,7,postal_boundary,3900
-38112,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,5,postal_boundary,4142
+38112,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,5,postal_boundary,4147
 38114,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,14,postal_boundary,1888
 38116,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,3,postal_boundary,4752
-38118,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,11,postal_boundary,2459
+38118,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,11,postal_boundary,2461
 38120,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,10,postal_boundary,2479
-38122,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,8,postal_boundary,3763
+38122,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,8,postal_boundary,3765
 38124,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,4,postal_boundary,4616
-38126,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,1,postal_boundary,4981
+38126,Braunschweig,DE,Niedersachsen,Braunschweig,W. Europe Standard Time,true,1,1,postal_boundary,4997
 38154,Königslutter am Elm,DE,Niedersachsen,Landkreis Helmstedt,W. Europe Standard Time,true,1,1,postal_boundary,5926
 38159,Vechelde,DE,Niedersachsen,Landkreis Peine,W. Europe Standard Time,true,1,1,postal_boundary,5742
 38162,Cremlingen,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,1,postal_boundary,4148
@@ -778,8 +778,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 38173,Sickte,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,1,postal_boundary,1838
 38176,Wendeburg,DE,Niedersachsen,Landkreis Peine,W. Europe Standard Time,true,1,1,postal_boundary,3332
 38179,Schwülper,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,2905
-38226,Salzgitter,DE,Niedersachsen,Salzgitter,W. Europe Standard Time,true,1,2,postal_boundary,5956
-38228,Salzgitter,DE,Niedersachsen,Salzgitter,W. Europe Standard Time,true,1,4,postal_boundary,4212
+38226,Salzgitter,DE,Niedersachsen,Salzgitter,W. Europe Standard Time,true,1,2,postal_boundary,5955
+38228,Salzgitter,DE,Niedersachsen,Salzgitter,W. Europe Standard Time,true,1,4,postal_boundary,4213
 38229,Salzgitter,DE,Niedersachsen,Salzgitter,W. Europe Standard Time,true,1,3,postal_boundary,4690
 38239,Salzgitter,DE,Niedersachsen,Salzgitter,W. Europe Standard Time,true,1,5,postal_boundary,3990
 38259,Salzgitter,DE,Niedersachsen,Salzgitter,W. Europe Standard Time,true,1,1,postal_boundary,7905
@@ -792,7 +792,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 38279,Sehlde,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,1,postal_boundary,350
 38300,Wolfenbüttel,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,3,postal_boundary,3777
 38302,Wolfenbüttel,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,1,postal_boundary,5811
-38304,Wolfenbüttel,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,2,postal_boundary,5022
+38304,Wolfenbüttel,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,2,postal_boundary,5020
 38312,Börßum u.a.,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,false,3,1,postal_boundary,0
 38312,Dorstadt,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,false,2,1,postal_boundary,80
 38312,Flöthe,DE,Niedersachsen,Landkreis Wolfenbüttel,W. Europe Standard Time,true,1,1,postal_boundary,420
@@ -823,7 +823,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 38387,Söllingen,DE,Niedersachsen,Landkreis Helmstedt,W. Europe Standard Time,true,1,1,postal_boundary,1028
 38440,Wolfsburg,DE,Niedersachsen,Wolfsburg,W. Europe Standard Time,true,1,4,postal_boundary,4729
 38442,Wolfsburg,DE,Niedersachsen,Wolfsburg,W. Europe Standard Time,true,1,1,postal_boundary,7838
-38444,Wolfsburg,DE,Niedersachsen,Wolfsburg,W. Europe Standard Time,true,1,5,postal_boundary,3768
+38444,Wolfsburg,DE,Niedersachsen,Wolfsburg,W. Europe Standard Time,true,1,5,postal_boundary,3770
 38446,Wolfsburg,DE,Niedersachsen,Wolfsburg,W. Europe Standard Time,true,1,3,postal_boundary,5627
 38448,Wolfsburg,DE,Niedersachsen,Wolfsburg,W. Europe Standard Time,true,1,2,postal_boundary,6945
 38458,Velpke,DE,Niedersachsen,Landkreis Helmstedt,W. Europe Standard Time,true,1,1,postal_boundary,1753
@@ -841,7 +841,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 38476,Barwedel,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,429
 38477,Jembke,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,819
 38479,Tappenbeck,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,302
-38518,Gifhorn,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,12849
+38518,Gifhorn,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,12848
 38524,Sassenburg,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,4856
 38527,Meine,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,3088
 38528,Adenbüttel,DE,Niedersachsen,Landkreis Gifhorn,W. Europe Standard Time,true,1,1,postal_boundary,674
@@ -885,42 +885,42 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 48480,Lünne,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,812
 48480,Schapen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,3,1,postal_boundary,414
 48480,Spelle,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,2296
-48488,Emsbüren,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,3285
+48488,Emsbüren,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,3306
 48499,Salzbergen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,2530
-48527,Nordhorn,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,2,postal_boundary,6230
+48527,Nordhorn,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,2,postal_boundary,6240
 48529,Nordhorn,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,1,postal_boundary,7098
-48531,Nordhorn,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,3,postal_boundary,4902
-49074,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,9,postal_boundary,1914
+48531,Nordhorn,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,3,postal_boundary,4905
+49074,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,9,postal_boundary,1916
 49076,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,6,postal_boundary,3367
 49078,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,7,postal_boundary,2786
 49080,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,8,postal_boundary,2407
-49082,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,5,postal_boundary,3435
+49082,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,5,postal_boundary,3437
 49084,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,4,postal_boundary,3477
 49086,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,5102
 49088,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,3,postal_boundary,3930
 49090,Osnabrück,DE,Niedersachsen,Osnabrück,W. Europe Standard Time,true,1,2,postal_boundary,4531
 49124,Georgsmarienhütte,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,4649
-49134,Wallenhorst,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,6312
-49143,Bissendorf,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2785
+49134,Wallenhorst,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,6314
+49143,Bissendorf,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2786
 49152,Bad Essen,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,4592
 49163,Bohmte,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2848
-49170,Hagen am Teutoburger Wald,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1345
+49170,Hagen am Teutoburger Wald,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1343
 49176,Hilter,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1680
 49179,Ostercappeln,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1835
 49186,Bad Iburg,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1674
-49191,Belm,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2472
+49191,Belm,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2473
 49196,Bad Laer,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2211
 49201,Dissen,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2
 49205,Hasbergen,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,830
 49214,Bad Rothenfelde,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1851
 49219,Glandorf,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2013
-49324,Melle,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,2955
-49326,Melle,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,2,postal_boundary,2694
+49324,Melle,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,3032
+49326,Melle,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,2,postal_boundary,2926
 49328,Melle,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,3,postal_boundary,1426
 49356,Diepholz,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,5748
-49377,Vechta,DE,Niedersachsen,Landkreis Vechta,W. Europe Standard Time,true,1,1,postal_boundary,5336
+49377,Vechta,DE,Niedersachsen,Landkreis Vechta,W. Europe Standard Time,true,1,1,postal_boundary,5337
 49393,Lohne,DE,Niedersachsen,Landkreis Vechta,W. Europe Standard Time,true,1,1,postal_boundary,456
-49401,Damme,DE,Niedersachsen,Landkreis Vechta,W. Europe Standard Time,true,1,1,postal_boundary,2862
+49401,Damme,DE,Niedersachsen,Landkreis Vechta,W. Europe Standard Time,true,1,1,postal_boundary,2866
 49406,Barnstorf,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,2151
 49406,Drentwede,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,3,1,postal_boundary,208
 49406,Eydelstedt,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,2,1,postal_boundary,645
@@ -943,7 +943,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 49453,Rehden,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,894
 49453,Wehrblecker Heide,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,6,1,postal_boundary,0
 49453,Wetschen,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,2,1,postal_boundary,755
-49456,Bakum,DE,Niedersachsen,Landkreis Vechta,W. Europe Standard Time,true,1,1,postal_boundary,1241
+49456,Bakum,DE,Niedersachsen,Landkreis Vechta,W. Europe Standard Time,true,1,1,postal_boundary,1243
 49457,Drebber,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,1107
 49459,Berglage,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,2,1,postal_boundary,0
 49459,Burlage,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,3,1,postal_boundary,0
@@ -952,11 +952,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 49459,Lembruch,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,true,1,1,postal_boundary,770
 49459,Mecklinge,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,6,1,postal_boundary,0
 49459,Quernheimerbruch,DE,Niedersachsen,Landkreis Diepholz,W. Europe Standard Time,false,7,1,postal_boundary,0
-49565,Bramsche,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,8816
-49577,Ankum,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1223
+49565,Bramsche,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,8822
+49577,Ankum,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1226
 49577,Eggermühlen,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,false,3,1,postal_boundary,196
 49577,Kettenkamp,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,false,2,1,postal_boundary,549
-49584,Fürstenau,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,3298
+49584,Fürstenau,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,3300
 49586,Merzen,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,false,2,1,postal_boundary,945
 49586,Neuenkirchen,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,953
 49593,Bersenbrück,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1252
@@ -964,7 +964,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 49596,Gehrde,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,651
 49597,Rieste,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,562
 49599,Voltlage,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,309
-49610,Quakenbrück,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,4641
+49610,Quakenbrück,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,4645
 49616,Meppen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,2,address_fallback,3
 49624,Löningen,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,5425
 49626,Berge,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1448
@@ -972,7 +972,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 49632,Essen,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,2
 49635,Badbergen,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,1430
 49637,Menslage,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,973
-49638,Nortrup,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,742
+49638,Nortrup,DE,Niedersachsen,Landkreis Osnabrück,W. Europe Standard Time,true,1,1,postal_boundary,744
 49661,Cloppenburg,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,10267
 49681,Garrel,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,4307
 49685,Emstek,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,1983
@@ -980,17 +980,17 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 49692,Cappeln,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,107
 49696,Molbergen,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,2268
 49699,Lindern,DE,Niedersachsen,Landkreis Cloppenburg,W. Europe Standard Time,true,1,1,postal_boundary,1060
-49716,Meppen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,9844
+49716,Meppen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,9916
 49733,Haren,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,7
-49740,Haselünne,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,3998
+49740,Haselünne,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,4004
 49744,Geeste,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,4388
 49751,Sögel u.a.,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,0
 49757,Lahn,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,3,1,postal_boundary,266
 49757,Vrees,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,608
-49757,Werlte,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,3424
+49757,Werlte,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,3499
 49762,Lathen u.a.,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,0
 49762,Sustrum,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,53
-49767,Twist,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,1475
+49767,Twist,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,1478
 49770,Dohren,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,307
 49770,Herzlake,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,1882
 49774,Lähden,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,1699
@@ -1006,12 +1006,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 49828,Esche,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,false,4,1,postal_boundary,124
 49828,Georgsdorf,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,false,2,1,postal_boundary,420
 49828,Lage,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,false,3,1,postal_boundary,311
-49828,Neuenhaus,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,1,postal_boundary,3283
+49828,Neuenhaus,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,1,postal_boundary,3284
 49828,Osterwald,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,false,5,1,postal_boundary,114
-49832,Andervenne,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,5,1,postal_boundary,153
+49832,Andervenne,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,4,1,postal_boundary,231
 49832,Beesten,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,2,1,postal_boundary,655
-49832,Freren,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,832
-49832,Messingen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,4,1,postal_boundary,219
+49832,Freren,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,848
+49832,Messingen,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,5,1,postal_boundary,219
 49832,Thuine,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,false,3,1,postal_boundary,543
 49835,Wietmarschen,DE,Niedersachsen,Landkreis Grafschaft Bentheim,W. Europe Standard Time,true,1,1,postal_boundary,3015
 49838,Lengerich u.a.,DE,Niedersachsen,Landkreis Emsland,W. Europe Standard Time,true,1,1,postal_boundary,0
