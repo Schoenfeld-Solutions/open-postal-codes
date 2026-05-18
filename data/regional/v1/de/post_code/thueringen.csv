@@ -1,5 +1,5 @@
 code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
-04600,Altenburg,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,postal_boundary,6777
+04600,Altenburg,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,postal_boundary,6776
 04603,Göhren,DE,Thüringen,Altenburger Land,W. Europe Standard Time,false,3,1,postal_boundary,11
 04603,Nobitz,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,postal_boundary,2975
 04603,Windischleuba,DE,Thüringen,Altenburger Land,W. Europe Standard Time,false,2,1,postal_boundary,350
@@ -11,19 +11,19 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 04618,Langenleuba-Niederhain,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,postal_boundary,670
 04626,Altkirchen,DE,Thüringen,Altenburger Land,W. Europe Standard Time,false,2,1,postal_boundary,0
 04626,Nöbdenitz u.a.,DE,Thüringen,Altenburger Land,W. Europe Standard Time,false,3,1,postal_boundary,0
-04626,Schmölln,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,postal_boundary,4615
+04626,Schmölln,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,postal_boundary,4616
 04639,Gößnitz,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,postal_boundary,1153
 04654,Frohburg,DE,Thüringen,Altenburger Land,W. Europe Standard Time,true,1,1,address_fallback,137
 06556,Artern/Unstrut u.a.,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
-06567,Bad Frankenhausen/Kyffhäuser,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,453
+06567,Bad Frankenhausen/Kyffhäuser,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,735
 06571,Gehofen,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,false,2,1,postal_boundary,321
 06571,Roßleben-Wiehe,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,3018
 06577,An der Schmücke,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,1002
 06577,Etzleben,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,false,3,1,postal_boundary,1
 06577,Oberheldrungen,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,false,2,1,postal_boundary,6
-07318,Saalfeld/Saale,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,5134
-07330,Probstzella,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,613
-07333,Unterwellenborn,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,899
+07318,Saalfeld/Saale,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,5135
+07330,Probstzella,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,616
+07333,Unterwellenborn,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,898
 07338,Kaulsdorf,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,622
 07343,Wurzbach,DE,Thüringen,Saale-Orla-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,492
 07349,Lehesten,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,142
@@ -34,7 +34,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 07387,Krölpa,DE,Thüringen,Saale-Orla-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,647
 07389,Ranis u.a.,DE,Thüringen,Saale-Orla-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,0
 07407,Rudolstadt,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,2775
-07422,Bad Blankenburg,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,1283
+07422,Bad Blankenburg,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,1282
 07426,Königsee-Rottenbach u.a.,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,0
 07427,Schwarzburg,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,true,1,1,postal_boundary,88
 07429,Döschnitz,DE,Thüringen,Landkreis Saalfeld-Rudolstadt,W. Europe Standard Time,false,2,1,postal_boundary,92
@@ -71,7 +71,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 07629,Hermsdorf,DE,Thüringen,Saale-Holzland-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,768
 07639,Bad Klosterlausnitz,DE,Thüringen,Saale-Holzland-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1120
 07646,Stadtroda u.a.,DE,Thüringen,Saale-Holzland-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,0
-07743,Jena,DE,Thüringen,Jena,W. Europe Standard Time,true,1,1,postal_boundary,5328
+07743,Jena,DE,Thüringen,Jena,W. Europe Standard Time,true,1,1,postal_boundary,5327
 07745,Jena,DE,Thüringen,Jena,W. Europe Standard Time,true,1,3,postal_boundary,4207
 07747,Jena,DE,Thüringen,Jena,W. Europe Standard Time,true,1,5,postal_boundary,1392
 07749,Jena,DE,Thüringen,Jena,W. Europe Standard Time,true,1,2,postal_boundary,4334
@@ -120,7 +120,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 37308,Heiligenstadt,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,4
 37318,Arenshausen,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,173
 37318,Uder u.a.,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,false,2,1,postal_boundary,0
-37327,Leinefelde-Worbis,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,1505
+37327,Leinefelde-Worbis,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,1507
 37327,Wingerode,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,false,2,1,postal_boundary,13
 37339,Worbis,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,0
 37345,Am Ohmberg,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,false,2,1,postal_boundary,505
@@ -128,7 +128,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 37351,Dingelstädt,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,2866
 37355,Niederorschel u.a.,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,0
 37359,Küllstedt,DE,Thüringen,Landkreis Eichsfeld,W. Europe Standard Time,true,1,1,postal_boundary,258
-96515,Sonneberg,DE,Thüringen,Landkreis Sonneberg,W. Europe Standard Time,true,1,1,postal_boundary,6353
+96515,Sonneberg,DE,Thüringen,Landkreis Sonneberg,W. Europe Standard Time,true,1,1,postal_boundary,6358
 96523,Steinach,DE,Thüringen,Landkreis Sonneberg,W. Europe Standard Time,true,1,1,postal_boundary,1404
 96524,Föritztal,DE,Thüringen,Landkreis Sonneberg,W. Europe Standard Time,true,1,1,postal_boundary,3133
 96528,Bachfeld,DE,Thüringen,Landkreis Sonneberg,W. Europe Standard Time,false,3,1,postal_boundary,0
@@ -140,7 +140,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 98530,Marisfeld,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,177
 98530,Rohr u.a.,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,false,2,1,postal_boundary,0
 98530,Rohr u.a.,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,false,3,1,postal_boundary,0
-98544,Zella-Mehlis,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,4564
+98544,Zella-Mehlis,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,4565
 98547,Schwarza u.a.,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,0
 98553,Schleusingen u.a.,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,0
 98559,Oberhof,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,425
@@ -150,12 +150,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 98593,Floh-Seligenthal,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,2774
 98596,Brotterode-Trusetal,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,2539
 98597,Breitungen/Werra,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,1287
-98617,Meiningen,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,6203
+98617,Meiningen,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,6202
 98630,Römhild,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,1935
 98631,Grabfeld,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,1456
 98634,Wasungen,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,987
 98639,Rippershausen,DE,Thüringen,Landkreis Schmalkalden-Meiningen,W. Europe Standard Time,true,1,1,postal_boundary,16
-98646,Hildburghausen,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,3995
+98646,Hildburghausen,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,3997
 98660,Themar,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,953
 98663,Bad Colberg-Heldburg,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,0
 98666,Biberau,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -165,7 +165,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 98669,Veilsdorf,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,1451
 98673,Auengrund,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,false,2,1,postal_boundary,1030
 98673,Eisfeld,DE,Thüringen,Landkreis Hildburghausen,W. Europe Standard Time,true,1,1,postal_boundary,2700
-98693,Ilmenau,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,8323
+98693,Ilmenau,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,8328
 98694,Ilmenau,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,2,postal_boundary,2434
 98701,Großbreitenbach,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,861
 98716,Elgersburg,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,421
@@ -178,7 +178,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 99085,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,5,postal_boundary,2804
 99086,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,12,postal_boundary,1705
 99087,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,14,postal_boundary,1083
-99089,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,7,postal_boundary,2440
+99089,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,7,postal_boundary,2441
 99090,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,11,postal_boundary,1757
 99091,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,9,postal_boundary,1955
 99092,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,1,postal_boundary,4509
@@ -186,7 +186,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 99095,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,13,postal_boundary,1618
 99096,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,8,postal_boundary,2345
 99097,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,10,postal_boundary,1810
-99098,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,6,postal_boundary,2736
+99098,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,6,postal_boundary,2737
 99099,Erfurt,DE,Thüringen,Erfurt,W. Europe Standard Time,true,1,3,postal_boundary,3320
 99100,Dachwig u.a.,DE,Thüringen,Landkreis Gotha,W. Europe Standard Time,false,2,1,postal_boundary,0
 99100,Großfahner,DE,Thüringen,Landkreis Gotha,W. Europe Standard Time,true,1,1,postal_boundary,43
@@ -197,17 +197,17 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 99195,Großrudestedt,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,289
 99195,Schloßvippach u.a.,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,false,2,1,postal_boundary,0
 99198,Udestedt,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,36
-99310,Arnstadt,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5859
+99310,Arnstadt,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5860
 99326,Ilmtal,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,0
-99326,Stadtilm,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1795
+99326,Stadtilm,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1801
 99330,Geratal,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1788
 99331,Geratal,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,2,postal_boundary,1720
 99334,Elleben,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,329
 99334,Wachsenburg,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,0
 99338,Martinroda,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,178
 99338,Plaue,DE,Thüringen,Ilm-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,834
-99423,Weimar,DE,Thüringen,Weimar,W. Europe Standard Time,true,1,2,postal_boundary,4101
-99425,Weimar,DE,Thüringen,Weimar,W. Europe Standard Time,true,1,1,postal_boundary,4644
+99423,Weimar,DE,Thüringen,Weimar,W. Europe Standard Time,true,1,2,postal_boundary,4105
+99425,Weimar,DE,Thüringen,Weimar,W. Europe Standard Time,true,1,1,postal_boundary,4645
 99427,Weimar,DE,Thüringen,Weimar,W. Europe Standard Time,true,1,3,postal_boundary,1957
 99428,Grammetal,DE,Thüringen,Landkreis Weimarer Land,W. Europe Standard Time,true,1,1,postal_boundary,1741
 99428,Weimar,DE,Thüringen,Weimar,W. Europe Standard Time,false,2,4,postal_boundary,1195
@@ -223,7 +223,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 99510,Wiegendorf,DE,Thüringen,Landkreis Weimarer Land,W. Europe Standard Time,false,4,1,postal_boundary,35
 99518,Bad Sulza,DE,Thüringen,Landkreis Weimarer Land,W. Europe Standard Time,true,1,1,postal_boundary,1197
 99610,Sömmerda,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,4129
-99625,Kölleda,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,286
+99625,Kölleda,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,285
 99628,Buttstädt,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,595
 99628,Großbrembach,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,false,2,1,postal_boundary,0
 99628,Kleinbrembach,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,false,3,1,postal_boundary,0
@@ -231,11 +231,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 99634,Straußfurt,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,693
 99636,Rastenberg,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,1074
 99638,Kindelbrück,DE,Thüringen,Landkreis Sömmerda,W. Europe Standard Time,true,1,1,postal_boundary,540
-99706,Sondershausen,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,4223
+99706,Sondershausen,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,4222
 99707,Kyffhäuserland,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,875
 99713,Ebeleben,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,195
 99718,Greußen Clingen Großenehrich,DE,Thüringen,Kyffhäuserkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
-99734,Nordhausen,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,true,1,1,postal_boundary,9233
+99734,Nordhausen,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,true,1,1,postal_boundary,9234
 99735,Kleinfurra,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,false,2,1,postal_boundary,512
 99735,Werther,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,true,1,1,postal_boundary,1995
 99752,Bleicherode,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,true,1,1,postal_boundary,3269
@@ -252,7 +252,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 99765,Uthleben,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,false,5,1,postal_boundary,1
 99765,Windehausen,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,false,7,1,postal_boundary,0
 99768,Harztor,DE,Thüringen,Landkreis Nordhausen,W. Europe Standard Time,true,1,1,postal_boundary,1365
-99817,Eisenach,DE,Thüringen,Wartburgkreis,W. Europe Standard Time,true,1,1,postal_boundary,12446
+99817,Eisenach,DE,Thüringen,Wartburgkreis,W. Europe Standard Time,true,1,1,postal_boundary,12444
 99819,Krauthausen u.a.,DE,Thüringen,Wartburgkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
 99819,Marksuhl,DE,Thüringen,Wartburgkreis,W. Europe Standard Time,false,2,1,postal_boundary,0
 99820,Hörselberg-Hainich,DE,Thüringen,Wartburgkreis,W. Europe Standard Time,true,1,1,postal_boundary,4757
