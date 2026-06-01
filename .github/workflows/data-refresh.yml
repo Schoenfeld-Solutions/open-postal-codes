@@ -64,7 +64,7 @@ jobs:
 
       - name: Refresh regional Geofabrik data
         run: |
-          python3 -m open_postal_codes.refresh_data \
+          python3 -u -m open_postal_codes.refresh_data \
             --download-root "${RUNNER_TEMP}/geofabrik-pbf" \
             --countries "${{ inputs.countries }}" \
             --regions "${{ inputs.regions }}"

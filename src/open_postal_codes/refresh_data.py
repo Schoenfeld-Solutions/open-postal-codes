@@ -10,6 +10,7 @@ import shutil
 import sys
 import urllib.error
 import urllib.request
+from collections.abc import Callable
 from dataclasses import asdict, dataclass
 from datetime import UTC, datetime
 from pathlib import Path
@@ -31,6 +32,7 @@ from open_postal_codes.post_code import (
 )
 
 MD5_PATTERN = re.compile(r"\b(?P<md5>[0-9a-fA-F]{32})\b")
+ProgressCallback = Callable[[str], None]
 
 
 class RefreshError(RuntimeError):
@@ -100,6 +102,7 @@ def refresh_data(
     public_output_root: Path,
     regions: tuple[GeofabrikRegion, ...] | None = None,
     countries: tuple[CountryConfig, ...] | None = None,
+    progress: ProgressCallback | None = None,
 ) -> RefreshResult:
     """Refresh changed source outputs and rebuild public post code files."""
 
@@ -110,6 +113,11 @@ def refresh_data(
 
     selected_regions = regions or selected_regions_for_countries(countries)
     selected_countries = countries_for_regions(selected_regions)
+    emit_progress(
+        progress,
+        "Starting data refresh for "
+        f"{len(selected_regions)} sources across {country_list(selected_countries)}.",
+    )
     previous_metadata = load_metadata(metadata_path)
     region_results: list[RegionRefreshResult] = []
     country_results: list[CountryRefreshResult] = []
@@ -120,9 +128,11 @@ def refresh_data(
     for country in selected_countries:
         country_region_output_root(region_output_root, country).mkdir(parents=True, exist_ok=True)
 
-    for region in selected_regions:
+    for index, region in enumerate(selected_regions, start=1):
         country_config = get_country_config(region.country)
+        source_label = progress_source_label(index, len(selected_regions), country_config, region)
         try:
+            emit_progress(progress, f"{source_label}: checking remote metadata")
             metadata = fetch_remote_metadata(region)
             new_metadata[region.metadata_key] = metadata
             output_path = region_output_path(region_output_root, region)
@@ -134,6 +144,10 @@ def refresh_data(
                 and previous_region_metadata.stable_key() == metadata.stable_key()
             ):
                 record_count = len(read_post_code_csv(output_path))
+                emit_progress(
+                    progress,
+                    f"{source_label}: skipped unchanged source with {record_count} records",
+                )
                 region_results.append(
                     RegionRefreshResult(
                         region=region.name,
@@ -145,7 +159,9 @@ def refresh_data(
                 continue
 
             pbf_path = download_root / country_config.slug / f"{region.name}.osm.pbf"
+            emit_progress(progress, f"{source_label}: downloading PBF")
             download_region(region=region, metadata=metadata, target_path=pbf_path)
+            emit_progress(progress, f"{source_label}: extracting post code records")
             extraction = extract_region_to_csv(
                 pbf_path,
                 output_path,
@@ -153,15 +169,18 @@ def refresh_data(
             )
             if not extraction.records:
                 raise RefreshError(f"{region.name} produced zero valid post code records")
+            record_count = len(extraction.records)
+            emit_progress(progress, f"{source_label}: refreshed {record_count} records")
             region_results.append(
                 RegionRefreshResult(
                     region=region.name,
                     status="refreshed",
-                    records=len(extraction.records),
+                    records=record_count,
                     country=country_config.slug,
                 )
             )
         except (ExtractionError, RefreshError) as error:
+            emit_progress(progress, f"{source_label}: failed: {error}")
             failures.append(f"{country_config.slug}/{region.name}: {error}")
             region_results.append(
                 RegionRefreshResult(
@@ -174,6 +193,7 @@ def refresh_data(
 
     public_count = 0
     for country in selected_countries:
+        emit_progress(progress, f"Rebuilding public {country.slug} output from regional CSV files")
         all_records = merge_region_outputs(country_region_output_root(region_output_root, country))
         if not all_records:
             if failures:
@@ -190,6 +210,9 @@ def refresh_data(
             all_records,
             public_country_output_root(public_output_root, country),
         )
+        emit_progress(
+            progress, f"Rebuilt public {country.slug} output with {country_count} records"
+        )
         country_results.append(CountryRefreshResult(country=country.slug, records=country_count))
         public_count += country_count
 
@@ -198,12 +221,37 @@ def refresh_data(
         raise RefreshError(f"data refresh completed with failed sources:\n{joined_failures}")
 
     write_metadata(metadata_path, new_metadata)
+    emit_progress(progress, "Wrote refreshed source metadata")
 
     return RefreshResult(
         regions=tuple(region_results),
         public_records=public_count,
         countries=tuple(country_results),
     )
+
+
+def emit_progress(progress: ProgressCallback | None, message: str) -> None:
+    """Emit one human-readable progress message when progress logging is enabled."""
+
+    if progress is not None:
+        progress(message)
+
+
+def country_list(countries: tuple[CountryConfig, ...]) -> str:
+    """Return selected country slugs for progress output."""
+
+    return ",".join(country.slug for country in countries) or "none"
+
+
+def progress_source_label(
+    index: int,
+    total: int,
+    country: CountryConfig,
+    region: GeofabrikRegion,
+) -> str:
+    """Return the stable source label used in refresh progress output."""
+
+    return f"[{index}/{total}] {country.slug}/{region.name}"
 
 
 def countries_for_regions(regions: tuple[GeofabrikRegion, ...]) -> tuple[CountryConfig, ...]:
@@ -429,6 +477,7 @@ def main(arguments: list[str] | None = None) -> int:
             public_output_root=parsed_arguments.public_output_root,
             regions=regions,
             countries=countries,
+            progress=lambda message: print(message, flush=True),
         )
     except RefreshError as error:
         print(f"Data refresh failed: {error}", file=sys.stderr)
@@ -441,7 +490,8 @@ def main(arguments: list[str] | None = None) -> int:
         f"{refreshed} refreshed sources, "
         f"{skipped} skipped sources, "
         f"{len(result.countries)} country outputs, "
-        f"{result.public_records} public records."
+        f"{result.public_records} public records.",
+        flush=True,
     )
     return 0
 

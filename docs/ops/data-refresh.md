@@ -4,6 +4,8 @@
 
 The `Refresh D-A-CH Post Code Data` workflow runs on a schedule and by manual dispatch. It downloads D-A-CH PBF files from Geofabrik into runner-local temporary storage, extracts normalized source CSV outputs, rebuilds public CSV/JSON/XML files, and opens or updates a pull request when tracked files change. When required pull request checks pass, the workflow squash-merges the checked data commit and deletes the refresh branch.
 
+The refresh command emits flushed per-source progress logs during metadata checks, skipped-source detection, downloads, extraction, record counting, failures, and public output rebuilds. These logs are maintainer observability only; they are not a stable public interface.
+
 The extraction step also recalculates location-primary markers, ranks, and evidence metadata for every public row, so committed regional CSV files must use the same schema as the public export.
 
 The Pages manifest publishes two timestamps:
