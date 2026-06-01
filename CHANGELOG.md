@@ -25,6 +25,7 @@ The format follows Keep a Changelog.
 - Pages artifact validation, workflow policy checks, stronger public data-quality guards, and release/consumer smoke checklists.
 - Professionalized static Pages portal with manifest summaries, copyable examples, light and dark modes, and a favicon.
 - GitHub App based data-refresh publication with pull request check waiting, guarded squash merge, and branch deletion.
+- Per-source data-refresh progress logs for long Geofabrik refresh runs.
 
 ### Changed
 
@@ -41,6 +42,7 @@ The format follows Keep a Changelog.
 - The Pages manifest now separates source data refresh time from Pages artifact generation time.
 - The public data-quality unique post-code floor for Germany now keeps operational headroom while still guarding against extraction collapse.
 - The data-refresh workflow summary now emits per-country record counts without shell escaping failures.
+- The data-refresh workflow now runs refresh execution with unbuffered Python output.
 
 ### Removed
 

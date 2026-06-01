@@ -142,6 +142,7 @@ def test_refresh_data_refreshes_changed_region_and_rebuilds_public_outputs(
         return type("Extraction", (), {"records": (PostCodeRecord(code="28195", city="Bremen"),)})()
 
     monkeypatch.setattr(refresh_module, "extract_region_to_csv", fake_extract_region_to_csv)
+    progress_messages: list[str] = []
 
     result = refresh_data(
         download_root=tmp_path / "downloads",
@@ -149,12 +150,23 @@ def test_refresh_data_refreshes_changed_region_and_rebuilds_public_outputs(
         region_output_root=tmp_path / "regions",
         public_output_root=tmp_path / "public",
         regions=(region,),
+        progress=progress_messages.append,
     )
 
     assert result.public_records == 1
     assert result.regions == (RegionRefreshResult(region="bremen", status="refreshed", records=1),)
     assert (tmp_path / "public/de/post_code.csv").exists()
     assert load_metadata(tmp_path / "metadata.json")["bremen"].etag == "v1"
+    assert progress_messages == [
+        "Starting data refresh for 1 sources across de.",
+        "[1/1] de/bremen: checking remote metadata",
+        "[1/1] de/bremen: downloading PBF",
+        "[1/1] de/bremen: extracting post code records",
+        "[1/1] de/bremen: refreshed 1 records",
+        "Rebuilding public de output from regional CSV files",
+        "Rebuilt public de output with 1 records",
+        "Wrote refreshed source metadata",
+    ]
 
 
 def test_refresh_data_writes_country_scoped_outputs_for_at_and_ch(
@@ -232,6 +244,7 @@ def test_refresh_data_skips_unchanged_region_with_existing_output(
         [PostCodeRecord(code="28195", city="Bremen")],
         region_root / "de/post_code/bremen.csv",
     )
+    progress_messages: list[str] = []
 
     monkeypatch.setattr(refresh_module, "fetch_remote_metadata", lambda _: metadata)
 
@@ -241,10 +254,12 @@ def test_refresh_data_skips_unchanged_region_with_existing_output(
         region_output_root=region_root,
         public_output_root=tmp_path / "public",
         regions=(region,),
+        progress=progress_messages.append,
     )
 
     assert result.regions == (RegionRefreshResult(region="bremen", status="skipped", records=1),)
     assert (tmp_path / "public/de/post_code.json").exists()
+    assert "[1/1] de/bremen: skipped unchanged source with 1 records" in progress_messages
 
 
 def test_refresh_data_continues_after_unavailable_region_and_fails_at_end(
@@ -261,6 +276,7 @@ def test_refresh_data_continues_after_unavailable_region_and_fails_at_end(
         md5="900150983cd24fb0d6963f7d28e17f72",
     )
     downloaded_regions: list[str] = []
+    progress_messages: list[str] = []
 
     def fake_fetch_remote_metadata(region: GeofabrikRegion) -> RemoteMetadata:
         if region.name == unavailable.name:
@@ -294,10 +310,12 @@ def test_refresh_data_continues_after_unavailable_region_and_fails_at_end(
             region_output_root=tmp_path / "regions",
             public_output_root=tmp_path / "public",
             regions=(unavailable, available),
+            progress=progress_messages.append,
         )
 
     assert downloaded_regions == ["saarland"]
     assert (tmp_path / "public/de/post_code.csv").exists()
+    assert "[1/2] de/bremen: failed: required remote file is not available" in progress_messages
 
 
 def test_refresh_data_collects_extraction_errors_after_other_regions_complete(
@@ -351,25 +369,26 @@ def test_refresh_cli_prints_summary(
     capsys: pytest.CaptureFixture[str],
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    monkeypatch.setattr(
-        refresh_module,
-        "refresh_data",
-        lambda **_: RefreshResult(
+    def fake_refresh_data(**kwargs: Any) -> RefreshResult:
+        kwargs["progress"]("Starting data refresh for 2 sources across de.")
+        kwargs["progress"]("[1/2] de/bremen: checking remote metadata")
+        return RefreshResult(
             regions=(
                 RegionRefreshResult(region="bremen", status="refreshed", records=1),
                 RegionRefreshResult(region="saarland", status="skipped", records=1),
             ),
             public_records=2,
             countries=(CountryRefreshResult(country="de", records=2),),
-        ),
-    )
+        )
+
+    monkeypatch.setattr(refresh_module, "refresh_data", fake_refresh_data)
 
     assert refresh_module.main(["--download-root", str(tmp_path), "--regions", "bremen"]) == 0
 
-    assert (
-        "1 refreshed sources, 1 skipped sources, 1 country outputs, 2 public records"
-        in capsys.readouterr().out
-    )
+    stdout = capsys.readouterr().out
+    assert "Starting data refresh for 2 sources across de." in stdout
+    assert "[1/2] de/bremen: checking remote metadata" in stdout
+    assert "1 refreshed sources, 1 skipped sources, 1 country outputs, 2 public records" in stdout
 
 
 def test_refresh_cli_returns_failure_without_traceback(

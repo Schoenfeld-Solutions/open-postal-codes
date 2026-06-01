@@ -69,7 +69,7 @@ jobs:
         with:
           token: ${{ steps.checkout-token.outputs.token }}
           persist-credentials: false
-      - run: python3 -m open_postal_codes.refresh_data
+      - run: python3 -u -m open_postal_codes.refresh_data
       - run: python3 -m tools.repo_checks.all_checks
       - run: python3 -m open_postal_codes.pages --output-root out
       - uses: actions/create-github-app-token@v3
@@ -197,7 +197,7 @@ def test_workflow_policy_rejects_unindented_script_content(tmp_path: Path) -> No
     write_workflows(
         tmp_path,
         data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
-            "      - run: python3 -m open_postal_codes.refresh_data\n",
+            "      - run: python3 -u -m open_postal_codes.refresh_data\n",
             "      - run: |\n          python3 - <<'PY'\nimport sys\n          PY\n",
         ),
     )
@@ -275,3 +275,20 @@ def test_workflow_policy_rejects_escaped_refresh_record_count_commands(
     errors = workflow_policy_check.validate_workflows(tmp_path)
 
     assert any('Path(\\"data/public' in error for error in errors)
+
+
+def test_workflow_policy_rejects_buffered_data_refresh_invocation(
+    tmp_path: Path,
+) -> None:
+    write_workflows(
+        tmp_path,
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
+            "python3 -u -m open_postal_codes.refresh_data",
+            "python3 -m open_postal_codes.refresh_data",
+        ),
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("python3 -u -m open_postal_codes.refresh_data" in error for error in errors)
+    assert any("python3 -m open_postal_codes.refresh_data" in error for error in errors)

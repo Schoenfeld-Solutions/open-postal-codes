@@ -36,6 +36,7 @@ DATA_REFRESH_REQUIRED_SNIPPETS = (
     "permission-pull-requests: write",
     "permission-checks: read",
     "persist-credentials: false",
+    "python3 -u -m open_postal_codes.refresh_data",
     "open_postal_codes.refresh_data",
     "tools.repo_checks.all_checks",
     "open_postal_codes.pages --output-root out",
@@ -52,6 +53,7 @@ DATA_REFRESH_FORBIDDEN_SNIPPETS = (
     "GITHUB_TOKEN: ${{ github.token }}",
     "data(dach): refresh post code outputs",
     'Path(\\"data/public',
+    "python3 -m open_postal_codes.refresh_data",
 )
 ALLOWED_TOP_LEVEL_KEYS = {
     "name",
