@@ -26,6 +26,7 @@ The expected PBF listing is empty.
 - all nine public v1 files exist under `data/public/v1/{de,at,ch}/`
 - every D-A-CH row has a non-empty `state`
 - country record floors and unique post-code floors remain above conservative minimums
+- unique post-code floors include operational headroom and are not exact postal-code inventory expectations
 - sentinel rows for Bremen, Wien, and Zürich include the expected country, state, and time zone
 - Geofabrik metadata has expected keys, URLs, positive content lengths, MD5 values, and non-empty remote metadata when present
 - raw PBF downloads are not tracked

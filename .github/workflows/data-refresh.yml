@@ -260,5 +260,5 @@ jobs:
           {
             echo "## Data refresh failed"
             echo ""
-            echo "Check the refresh step logs for the failed Geofabrik sources. The workflow continues through remaining sources before it reports the final failure."
+            echo "Review the first failed step above. If the refresh step passed and the quality gates failed, the generated data did not satisfy the repository guardrails and no pull request was opened."
           } >> "${GITHUB_STEP_SUMMARY}"
