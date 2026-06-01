@@ -99,21 +99,23 @@ jobs:
           if [ -z "${requested_regions}" ]; then
             requested_regions="all selected sources"
           fi
-          data_refreshed_at="$(python3 - <<'PY'
-          import json
-          from pathlib import Path
-
-          payload = json.loads(Path("data/sources/geofabrik-regions.json").read_text(encoding="utf-8"))
-          print(payload.get("generated_at", "unknown"))
-          PY
-          )"
           {
             echo "requested_countries=${requested_countries}"
             echo "requested_regions=${requested_regions}"
-            echo "data_refreshed_at=${data_refreshed_at}"
-            echo "records_de=$(python3 -c 'from pathlib import Path; print(max(sum(1 for _ in Path(\"data/public/v1/de/post_code.csv\").open(encoding=\"utf-8\")) - 1, 0))')"
-            echo "records_at=$(python3 -c 'from pathlib import Path; print(max(sum(1 for _ in Path(\"data/public/v1/at/post_code.csv\").open(encoding=\"utf-8\")) - 1, 0))')"
-            echo "records_ch=$(python3 -c 'from pathlib import Path; print(max(sum(1 for _ in Path(\"data/public/v1/ch/post_code.csv\").open(encoding=\"utf-8\")) - 1, 0))')"
+            python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          metadata = json.loads(
+              Path("data/sources/geofabrik-regions.json").read_text(encoding="utf-8")
+          )
+
+          print(f"data_refreshed_at={metadata.get('generated_at', 'unknown')}")
+          for country in ("de", "at", "ch"):
+              path = Path(f"data/public/v1/{country}/post_code.csv")
+              records = max(sum(1 for _ in path.open(encoding="utf-8")) - 1, 0)
+              print(f"records_{country}={records}")
+          PY
           } >> "${GITHUB_OUTPUT}"
 
       - name: Write refresh summary
