@@ -39,6 +39,7 @@ The format follows Keep a Changelog.
 - The data refresh pipeline now supports country-scoped D-A-CH outputs through `--countries`.
 - The v1 post code schema now includes `state` for Bundesland or canton enrichment.
 - The Pages manifest now separates source data refresh time from Pages artifact generation time.
+- The public data-quality unique post-code floor for Germany now keeps operational headroom while still guarding against extraction collapse.
 
 ### Removed
 

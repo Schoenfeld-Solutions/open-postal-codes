@@ -50,6 +50,7 @@ These files are local artifacts. They are not committed, not uploaded by Pages, 
 - Normalized CSV outputs under `data/regional/v1/<country>/post_code/` are committed through refresh pull requests.
 - `data/sources/geofabrik-regions.json` stores remote metadata used to skip unchanged sources.
 - A missing, empty, invalid, or checksum-mismatched remote file is skipped for that source, the refresh continues with the remaining sources, and the workflow fails at the end with a source summary.
+- If generated data falls below repository guardrails, the workflow fails before opening a pull request. Record and unique post-code floors are conservative collapse guards with operational headroom, not exact inventory expectations.
 - A refresh with no tracked diff is a successful no-op.
 - Run the standard checks after every data refresh.
 

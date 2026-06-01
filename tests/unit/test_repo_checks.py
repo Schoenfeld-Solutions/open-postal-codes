@@ -97,6 +97,14 @@ def test_public_data_quality_rejects_low_unique_post_code_count(tmp_path: Path) 
     assert any("unique post codes" in error and "expected at least 2" in error for error in errors)
 
 
+def test_public_data_quality_default_unique_floors_leave_operational_headroom() -> None:
+    assert public_data_quality_check.MINIMUM_UNIQUE_POST_CODES_BY_COUNTRY == {
+        "de": 7_800,
+        "at": 2_200,
+        "ch": 3_000,
+    }
+
+
 def test_public_data_quality_rejects_missing_metadata_key(tmp_path: Path) -> None:
     write_public_data_quality_fixture(tmp_path, omitted_metadata_key="ch/switzerland")
 

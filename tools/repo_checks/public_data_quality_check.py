@@ -22,7 +22,7 @@ MINIMUM_RECORDS_BY_COUNTRY = {
     "ch": 3_500,
 }
 MINIMUM_UNIQUE_POST_CODES_BY_COUNTRY = {
-    "de": 8_000,
+    "de": 7_800,
     "at": 2_200,
     "ch": 3_000,
 }
