@@ -40,6 +40,7 @@ The format follows Keep a Changelog.
 - The v1 post code schema now includes `state` for Bundesland or canton enrichment.
 - The Pages manifest now separates source data refresh time from Pages artifact generation time.
 - The public data-quality unique post-code floor for Germany now keeps operational headroom while still guarding against extraction collapse.
+- The data-refresh workflow summary now emits per-country record counts without shell escaping failures.
 
 ### Removed
 

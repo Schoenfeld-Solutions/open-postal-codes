@@ -51,6 +51,7 @@ DATA_REFRESH_FORBIDDEN_SNIPPETS = (
     "GH_TOKEN: ${{ github.token }}",
     "GITHUB_TOKEN: ${{ github.token }}",
     "data(dach): refresh post code outputs",
+    'Path(\\"data/public',
 )
 ALLOWED_TOP_LEVEL_KEYS = {
     "name",

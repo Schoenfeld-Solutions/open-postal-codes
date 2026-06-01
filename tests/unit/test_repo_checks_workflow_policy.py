@@ -260,3 +260,18 @@ def test_workflow_policy_rejects_invalid_data_refresh_commit_title(
     errors = workflow_policy_check.validate_workflows(tmp_path)
 
     assert any("data(dach): refresh post code outputs" in error for error in errors)
+
+
+def test_workflow_policy_rejects_escaped_refresh_record_count_commands(
+    tmp_path: Path,
+) -> None:
+    write_workflows(
+        tmp_path,
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW
+        + "      - run: echo \"records_de=$(python3 -c 'from pathlib import Path; "
+        + 'print(Path(\\"data/public/v1/de/post_code.csv\\"))\')"\n',
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any('Path(\\"data/public' in error for error in errors)
