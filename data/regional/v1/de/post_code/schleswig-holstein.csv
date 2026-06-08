@@ -9,7 +9,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 21483,Gülzow,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,true,1,1,postal_boundary,406
 21493,Schwarzenbek u.a.,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,true,1,1,postal_boundary,0
 21502,Geesthacht,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,true,1,1,postal_boundary,2361
-21509,Glinde,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,3591
+21509,Glinde,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,3592
 21514,Büchen,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,true,1,1,postal_boundary,1096
 21514,Güster u.a.,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 21516,Müssen u.a.,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -28,15 +28,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 22145,Stapelfeld,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,address_fallback,604
 22827,Großhansdorf,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,2,address_fallback,9
 22844,Norderstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,4755
-22846,Norderstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,5,postal_boundary,1591
-22848,Norderstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,3,postal_boundary,2232
+22846,Norderstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,5,postal_boundary,1593
+22848,Norderstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,3,postal_boundary,2233
 22850,Norderstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,2,postal_boundary,2662
 22851,Norderstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,4,postal_boundary,1626
 22869,Schenefeld,DE,Schleswig-Holstein,Kreis Pinneberg,W. Europe Standard Time,true,1,1,postal_boundary,3745
 22880,Wedel,DE,Schleswig-Holstein,Kreis Pinneberg,W. Europe Standard Time,true,1,1,postal_boundary,4961
 22885,Barsbüttel,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,3586
 22889,Tangstedt,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,981
-22926,Ahrensburg,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,6593
+22926,Ahrensburg,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,6606
 22927,Großhansdorf,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,2850
 22929,Hamfelde,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,false,5,1,postal_boundary,1
 22929,Kasseburg,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,false,2,1,postal_boundary,13
@@ -62,13 +62,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 23554,Lübeck St. Lorenz Nord,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,1,postal_boundary,0
 23556,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,6,postal_boundary,4540
 23558,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,8,postal_boundary,4191
-23560,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,2,postal_boundary,4838
+23560,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,2,postal_boundary,4837
 23562,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,1,postal_boundary,4999
 23564,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,9,postal_boundary,3924
 23566,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,4,postal_boundary,4572
 23568,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,7,postal_boundary,4427
 23569,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,3,postal_boundary,4770
-23570,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,5,postal_boundary,4562
+23570,Lübeck,DE,Schleswig-Holstein,Lübeck,W. Europe Standard Time,true,1,5,postal_boundary,4563
 23611,Bad Schwartau,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,5267
 23617,Stockelsdorf,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,4445
 23619,Zarpen,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,225
@@ -80,7 +80,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 23629,Sarkwitz,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,0
 23669,Oeverdiek,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,0
 23669,Timmendorfer Strand mit Neuhof,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,2,1,postal_boundary,0
-23683,Scharbeutz,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,2,postal_boundary,1883
+23683,Scharbeutz,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,2,postal_boundary,1939
 23684,Scharbeutz,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,1982
 23684,Süsel,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,2,2,postal_boundary,0
 23689,Hobbersdorf,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,2,1,postal_boundary,21
@@ -90,14 +90,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 23689,Rohlsdorf,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,6,1,postal_boundary,0
 23689,Rohlsdorfer Beek,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,7,1,postal_boundary,0
 23689,Techau,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,4,1,postal_boundary,1
-23701,Eutin,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,4028
-23701,Süsel,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,2,1,postal_boundary,1221
+23701,Eutin,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,4030
+23701,Süsel,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,false,2,1,postal_boundary,1252
 23714,Kirchnüchel,DE,Schleswig-Holstein,Kreis Plön,W. Europe Standard Time,false,2,1,postal_boundary,3
-23714,Malente,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,1976
+23714,Malente,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,1977
 23715,Bosau,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,332
 23717,Kasseedorf,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,159
 23719,Glasau,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,13
-23730,Neustadt,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,4
+23730,Neustadt,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,6
 23738,Lensahn,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,1792
 23743,Grömitz,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,2629
 23744,Schönwalde am Bungsberg,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,231
@@ -110,7 +110,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 23775,Großenbrode,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,427
 23777,Heringsdorf,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,223
 23779,Neukirchen,DE,Schleswig-Holstein,Kreis Ostholstein,W. Europe Standard Time,true,1,1,postal_boundary,174
-23795,Bad Segeberg,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,3240
+23795,Bad Segeberg,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,3250
 23812,Wahlstedt,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,2398
 23813,Nehms,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,4
 23815,Geschendorf,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,false,2,1,postal_boundary,10
@@ -125,7 +125,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 23826,Bark,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,131
 23827,Wensin,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,83
 23829,Wittenborn,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,115
-23843,Bad Oldesloe,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,5579
+23843,Bad Oldesloe,DE,Schleswig-Holstein,Kreis Stormarn,W. Europe Standard Time,true,1,1,postal_boundary,5582
 23845,Bahrenhof,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,false,5,1,postal_boundary,18
 23845,Borstel,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,false,7,1,postal_boundary,3
 23845,Bühnsdorf,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,false,6,1,postal_boundary,7
@@ -154,14 +154,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 23911,Schmilau,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,false,2,1,postal_boundary,199
 23911,Ziethen,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,true,1,1,postal_boundary,345
 23919,Berkenthin,DE,Schleswig-Holstein,Kreis Herzogtum Lauenburg,W. Europe Standard Time,true,1,1,postal_boundary,389
-24103,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,13,postal_boundary,1558
+24103,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,13,postal_boundary,1560
 24105,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,8,postal_boundary,2269
 24106,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,6,postal_boundary,2604
 24107,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,5,postal_boundary,2679
 24109,Melsdorf,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,111
 24111,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,15,postal_boundary,1392
 24113,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,2,postal_boundary,3579
-24114,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,11,postal_boundary,1672
+24114,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,11,postal_boundary,1679
 24116,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,14,postal_boundary,1439
 24118,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,16,postal_boundary,1230
 24119,Kronshagen,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,2536
@@ -173,7 +173,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24149,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,9,postal_boundary,1906
 24159,Kiel,DE,Schleswig-Holstein,Kiel,W. Europe Standard Time,true,1,3,postal_boundary,3429
 24161,Altenholz,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,1492
-24211,Preetz,DE,Schleswig-Holstein,Kreis Plön,W. Europe Standard Time,true,1,1,postal_boundary,4712
+24211,Preetz,DE,Schleswig-Holstein,Kreis Plön,W. Europe Standard Time,true,1,1,postal_boundary,4711
 24214,Altwittenbek,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,false,8,1,postal_boundary,0
 24214,Gettorf,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,2579
 24214,Großkönigsförde u.a.,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,false,9,1,postal_boundary,0
@@ -235,7 +235,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24327,Kaköhl,DE,Schleswig-Holstein,Kreis Plön,W. Europe Standard Time,false,5,1,postal_boundary,0
 24327,Kletkamp,DE,Schleswig-Holstein,Kreis Plön,W. Europe Standard Time,false,3,1,postal_boundary,9
 24329,Grebin,DE,Schleswig-Holstein,Kreis Plön,W. Europe Standard Time,true,1,1,postal_boundary,217
-24340,Eckernförde,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,6448
+24340,Eckernförde,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,6449
 24351,Damp,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,724
 24354,Bösby,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,false,3,1,postal_boundary,0
 24354,Bösbyfeld,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,false,4,1,postal_boundary,0
@@ -263,7 +263,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24376,Grödersby,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,4,1,postal_boundary,92
 24376,Hasselberg,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,320
 24376,Hauheck,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,6,1,postal_boundary,0
-24376,Kappeln,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,4207
+24376,Kappeln,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,4208
 24376,Rabel,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,3,1,postal_boundary,211
 24376,Wormshöft,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,5,1,postal_boundary,1
 24392,Boren,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,598
@@ -271,7 +271,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24392,Nottfeld,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,7,1,postal_boundary,47
 24392,Saustrup,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,5,1,postal_boundary,69
 24392,Scheggerott,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,4,1,postal_boundary,104
-24392,Süderbrarup,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,1925
+24392,Süderbrarup,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,1926
 24392,Wagersrott,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,6,1,postal_boundary,56
 24395,Gelting,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,857
 24395,Kronsgaard,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,3,1,postal_boundary,146
@@ -288,14 +288,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24399,Marienhof,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 24401,Böel,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,242
 24402,Esgrus,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,234
-24404,Maasholm,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,515
+24404,Maasholm,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,514
 24404,Schleimünde,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 24405,Mohrkirch,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,427
 24405,Rügge,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,81
 24407,Oersberg,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,75
 24407,Rabenkirchen-Faulück,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,239
 24409,Stoltebüll,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,165
-24534,Neumünster,DE,Schleswig-Holstein,Neumünster,W. Europe Standard Time,true,1,4,postal_boundary,1096
+24534,Neumünster,DE,Schleswig-Holstein,Neumünster,W. Europe Standard Time,true,1,4,postal_boundary,1097
 24536,Neumünster,DE,Schleswig-Holstein,Neumünster,W. Europe Standard Time,true,1,3,postal_boundary,2234
 24537,Neumünster,DE,Schleswig-Holstein,Neumünster,W. Europe Standard Time,true,1,2,postal_boundary,3485
 24539,Neumünster,DE,Schleswig-Holstein,Neumünster,W. Europe Standard Time,true,1,1,postal_boundary,5375
@@ -325,7 +325,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24626,Groß Kummerfeld,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,79
 24628,Hartenholm,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,102
 24629,Kisdorf,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,982
-24631,Langwedel,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,140
+24631,Langwedel,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,194
 24632,Lentföhrden,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,154
 24634,Padenstedt,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,454
 24635,Rickling,DE,Schleswig-Holstein,Kreis Segeberg,W. Europe Standard Time,true,1,1,postal_boundary,57
@@ -454,7 +454,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24897,Ulsnis,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,385
 24899,Wohlde,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,1
 24932,Flensburg,DE,Schleswig-Holstein,Flensburg,W. Europe Standard Time,true,1,6,postal_boundary,1
-24937,Flensburg,DE,Schleswig-Holstein,Flensburg,W. Europe Standard Time,true,1,4,postal_boundary,3021
+24937,Flensburg,DE,Schleswig-Holstein,Flensburg,W. Europe Standard Time,true,1,4,postal_boundary,3020
 24939,Flensburg,DE,Schleswig-Holstein,Flensburg,W. Europe Standard Time,true,1,2,postal_boundary,4012
 24941,Flensburg,DE,Schleswig-Holstein,Flensburg,W. Europe Standard Time,true,1,5,postal_boundary,2497
 24943,Flensburg,DE,Schleswig-Holstein,Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,6135
@@ -469,7 +469,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 24972,Steinberg,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,350
 24972,Steinbergkirche,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,1037
 24975,Ausacker,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,3,1,postal_boundary,165
-24975,Husby,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,804
+24975,Husby,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,false,2,1,postal_boundary,807
 24975,Hürup,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,869
 24976,Handewitt,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,1253
 24977,Langballig,DE,Schleswig-Holstein,Kreis Schleswig-Flensburg,W. Europe Standard Time,true,1,1,postal_boundary,566
@@ -489,8 +489,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 25336,Elmshorn,DE,Schleswig-Holstein,Kreis Pinneberg,W. Europe Standard Time,true,1,2,postal_boundary,3324
 25337,Elmshorn,DE,Schleswig-Holstein,Kreis Pinneberg,W. Europe Standard Time,true,1,3,postal_boundary,3084
 25348,Glückstadt,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,3511
-25355,Barmstedt,DE,Schleswig-Holstein,Kreis Pinneberg,W. Europe Standard Time,true,1,1,postal_boundary,2971
-25358,Horst,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,2109
+25355,Barmstedt,DE,Schleswig-Holstein,Kreis Pinneberg,W. Europe Standard Time,true,1,1,postal_boundary,2972
+25358,Horst,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,2110
 25361,Grevenkop,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,false,3,1,postal_boundary,125
 25361,Krempe,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,899
 25361,Muchelndorf,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,false,4,1,postal_boundary,4
@@ -529,7 +529,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 25541,Brunsbüttel,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,4583
 25548,Kellinghusen,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,2474
 25551,Hohenlockstedt,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,2108
-25554,Wilster,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,1615
+25554,Wilster,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,1616
 25557,Hanerau-Hademarschen,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,1251
 25557,Seefeld u.a.,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,false,2,1,postal_boundary,0
 25557,Seefeld u.a.,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,false,3,1,postal_boundary,0
@@ -542,7 +542,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 25573,Klein Kampen,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 25575,Beringstedt,DE,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,W. Europe Standard Time,true,1,1,postal_boundary,301
 25576,Brokdorf,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,430
-25578,Dägeling,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,437
+25578,Dägeling,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,440
 25578,Neuenbrook,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,false,2,1,postal_boundary,232
 25579,Fitzbek,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,175
 25581,Hennstedt,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,265
@@ -556,7 +556,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 25591,Ottenbüttel,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,270
 25593,Reher,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,290
 25594,Nutteln,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,false,2,1,postal_boundary,98
-25594,Vaale,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,460
+25594,Vaale,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,473
 25594,Vaalermoor,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,false,3,1,postal_boundary,56
 25596,Wacken,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,718
 25597,Westermoor,DE,Schleswig-Holstein,Kreis Steinburg,W. Europe Standard Time,true,1,1,postal_boundary,148
@@ -577,7 +577,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 25715,Dingen,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,false,2,1,postal_boundary,301
 25715,Eddelak,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,573
 25715,Ramhusen,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,false,4,1,postal_boundary,70
-25718,Friedrichskoog,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,1980
+25718,Friedrichskoog,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,1983
 25719,Barlt,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,357
 25719,Busenwurth,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,false,2,1,postal_boundary,138
 25721,Eggstedt,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,317
@@ -594,7 +594,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 25746,Norderwöhrden,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,false,5,1,postal_boundary,110
 25746,Ostrohe,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,false,4,1,postal_boundary,396
 25746,Wesseln,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,false,3,1,postal_boundary,609
-25761,Büsum,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,2833
+25761,Büsum,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,2832
 25764,Wesselburen,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,241
 25767,Albersdorf,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,1463
 25770,Hemmingstedt,DE,Schleswig-Holstein,Kreis Dithmarschen,W. Europe Standard Time,true,1,1,postal_boundary,1228
