@@ -115,7 +115,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1171</evidence_count>
+    <evidence_count>1172</evidence_count>
   </record>
   <record>
     <code>1005</code>
@@ -141,7 +141,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>7</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>746</evidence_count>
+    <evidence_count>747</evidence_count>
   </record>
   <record>
     <code>1007</code>
@@ -154,7 +154,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1023</evidence_count>
+    <evidence_count>1024</evidence_count>
   </record>
   <record>
     <code>1008</code>
@@ -193,7 +193,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>370</evidence_count>
+    <evidence_count>376</evidence_count>
   </record>
   <record>
     <code>1008</code>
@@ -336,7 +336,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>202</evidence_count>
+    <evidence_count>203</evidence_count>
   </record>
   <record>
     <code>1020</code>
@@ -401,7 +401,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>491</evidence_count>
+    <evidence_count>492</evidence_count>
   </record>
   <record>
     <code>1024</code>
@@ -518,7 +518,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>30</evidence_count>
+    <evidence_count>31</evidence_count>
   </record>
   <record>
     <code>1029</code>
@@ -2975,7 +2975,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>187</evidence_count>
+    <evidence_count>195</evidence_count>
   </record>
   <record>
     <code>1227</code>
@@ -3378,7 +3378,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2386</evidence_count>
+    <evidence_count>2389</evidence_count>
   </record>
   <record>
     <code>1261</code>
@@ -3755,7 +3755,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>34</evidence_count>
+    <evidence_count>36</evidence_count>
   </record>
   <record>
     <code>1283</code>
@@ -4886,7 +4886,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3809</evidence_count>
+    <evidence_count>3810</evidence_count>
   </record>
   <record>
     <code>1401</code>
@@ -5380,7 +5380,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>256</evidence_count>
+    <evidence_count>257</evidence_count>
   </record>
   <record>
     <code>1424</code>
@@ -5848,7 +5848,7 @@
     <location_rank>4</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>54</evidence_count>
+    <evidence_count>53</evidence_count>
   </record>
   <record>
     <code>1450</code>
@@ -10788,7 +10788,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1907</evidence_count>
+    <evidence_count>1909</evidence_count>
   </record>
   <record>
     <code>1801</code>
@@ -10814,7 +10814,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>73</evidence_count>
+    <evidence_count>76</evidence_count>
   </record>
   <record>
     <code>1803</code>
@@ -12647,7 +12647,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>501</evidence_count>
+    <evidence_count>503</evidence_count>
   </record>
   <record>
     <code>1942</code>
@@ -12660,7 +12660,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>260</evidence_count>
+    <evidence_count>268</evidence_count>
   </record>
   <record>
     <code>1943</code>
@@ -14032,7 +14032,7 @@
     <city>Boudry</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14045,20 +14045,20 @@
     <city>Neuchâtel</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1773</evidence_count>
+    <evidence_count>1774</evidence_count>
   </record>
   <record>
     <code>2001</code>
     <city>Neuchâtel</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14071,20 +14071,20 @@
     <city>Auvernier</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>48</evidence_count>
+    <evidence_count>47</evidence_count>
   </record>
   <record>
     <code>2013</code>
     <city>Colombier</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14097,7 +14097,7 @@
     <city>Colombier (NE)</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>3</location_rank>
@@ -14110,7 +14110,7 @@
     <city>Colombier NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14123,7 +14123,7 @@
     <city>Bôle</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14136,7 +14136,7 @@
     <city>Areuse</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14149,7 +14149,7 @@
     <city>Cortaillod</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14162,7 +14162,7 @@
     <city>Boudry</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14175,7 +14175,7 @@
     <city>Chambrelien</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14188,7 +14188,7 @@
     <city>Rochefort</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14201,7 +14201,7 @@
     <city>Bevaix</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14214,7 +14214,7 @@
     <city>Gorgier</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14227,7 +14227,7 @@
     <city>Saint-Aubin-Sauges</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14240,7 +14240,7 @@
     <city>St-Aubin-Sauges</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14253,7 +14253,7 @@
     <city>Chez-le-Bart</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14266,7 +14266,7 @@
     <city>Fresens</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14279,7 +14279,7 @@
     <city>Montalchez</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14292,7 +14292,7 @@
     <city>Vaumarcus</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14305,7 +14305,7 @@
     <city>Peseux</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14318,7 +14318,7 @@
     <city>Corcelles</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14331,7 +14331,7 @@
     <city>Corcelles-Cormondrèche</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14344,7 +14344,7 @@
     <city>Corcelles-Cormondrèche</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14357,7 +14357,7 @@
     <city>Cormondrèche</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14370,7 +14370,7 @@
     <city>Montezillon</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14383,7 +14383,7 @@
     <city>Montmollin</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14396,7 +14396,7 @@
     <city>Valangin</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14409,7 +14409,7 @@
     <city>Boudevilliers</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14422,7 +14422,7 @@
     <city>Fontaines</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14435,7 +14435,7 @@
     <city>Fontaines NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14448,7 +14448,7 @@
     <city>Fontainemelon</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14461,7 +14461,7 @@
     <city>La Vue-des-Alpes</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14474,7 +14474,7 @@
     <city>Cernier</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14487,7 +14487,7 @@
     <city>Chézard-Saint-Martin</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>3</location_rank>
@@ -14500,7 +14500,7 @@
     <city>Chézard-St-Martin</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14513,7 +14513,7 @@
     <city>Chézard-St.-Martin</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>4</location_rank>
@@ -14526,7 +14526,7 @@
     <city>Les Vieux-Prés</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14539,7 +14539,7 @@
     <city>Dombresson</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14552,7 +14552,7 @@
     <city>Villiers</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14565,7 +14565,7 @@
     <city>Le Pâquier NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14578,7 +14578,7 @@
     <city>Engollon</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>3</location_rank>
@@ -14591,7 +14591,7 @@
     <city>Fenin</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14604,7 +14604,7 @@
     <city>Saules</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14617,7 +14617,7 @@
     <city>Vilars NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>4</location_rank>
@@ -14630,7 +14630,7 @@
     <city>Savagnier</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14643,7 +14643,7 @@
     <city>Chaumont</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14656,7 +14656,7 @@
     <city>Hauterive</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14669,7 +14669,7 @@
     <city>Hauterive (NE)</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>3</location_rank>
@@ -14682,7 +14682,7 @@
     <city>Hauterive NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14695,7 +14695,7 @@
     <city>Saint-Blaise</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14708,7 +14708,7 @@
     <city>St-Blaise</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14721,7 +14721,7 @@
     <city>Enges</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14734,7 +14734,7 @@
     <city>La Tène</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14747,7 +14747,7 @@
     <city>Marin</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>3</location_rank>
@@ -14760,7 +14760,7 @@
     <city>Marin-Epagnier</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14773,7 +14773,7 @@
     <city>Thielle</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14786,7 +14786,7 @@
     <city>Wavre</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14799,7 +14799,7 @@
     <city>Cornaux NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14812,7 +14812,7 @@
     <city>Cressier (NE)</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14825,7 +14825,7 @@
     <city>Cressier NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14838,7 +14838,7 @@
     <city>Noiraigue</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14851,7 +14851,7 @@
     <city>Travers</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14864,7 +14864,7 @@
     <city>Couvet</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14877,7 +14877,7 @@
     <city>Môtiers NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14890,7 +14890,7 @@
     <city>Boveresse</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14903,7 +14903,7 @@
     <city>Fleurier</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14916,7 +14916,7 @@
     <city>Buttes</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14929,7 +14929,7 @@
     <city>Mont-de-Buttes</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14942,7 +14942,7 @@
     <city>La Côte-aux-Fées</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14955,7 +14955,7 @@
     <city>La Côte-aux-fées</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14968,7 +14968,7 @@
     <city>Saint-Sulpice</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -14981,7 +14981,7 @@
     <city>St-Sulpice NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -14994,7 +14994,7 @@
     <city>Les Sagnettes</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15007,7 +15007,7 @@
     <city>Les Verrières</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15020,7 +15020,7 @@
     <city>Les Bayards</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Travers</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15033,7 +15033,7 @@
     <city>Brot-Dessous</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15046,7 +15046,7 @@
     <city>Les Geneveys-sur-Coffrane</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15059,7 +15059,7 @@
     <city>Coffrane</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15072,7 +15072,7 @@
     <city>Les Hauts-Geneveys</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Val-de-Ruz</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15085,20 +15085,20 @@
     <city>La Chaux-de-Fonds</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>4432</evidence_count>
+    <evidence_count>4436</evidence_count>
   </record>
   <record>
     <code>2300</code>
     <city>La Cibourg</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -15111,7 +15111,7 @@
     <city>La-Chaux-de-Fonds</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>3</location_rank>
@@ -15124,7 +15124,7 @@
     <city>Le Locle</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>4</location_rank>
@@ -15137,7 +15137,7 @@
     <city>La Chaux-de-Fonds</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15150,7 +15150,7 @@
     <city>La Sagne</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -15163,7 +15163,7 @@
     <city>La Sagne NE</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15176,7 +15176,7 @@
     <city>Les Ponts-de-Martel</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15189,7 +15189,7 @@
     <city>Petit-Martel</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -15202,7 +15202,7 @@
     <city>Brot-Plamboz</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15215,7 +15215,7 @@
     <city>La Chaux-de-Fonds</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -15228,7 +15228,7 @@
     <city>Le Crêt-du-Locle</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15241,7 +15241,7 @@
     <city>Les Planchettes</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15488,7 +15488,7 @@
     <city>Le Locle</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15501,7 +15501,7 @@
     <city>Le Prévoux</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -15514,7 +15514,7 @@
     <city>La Chaux-du-Milieu</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15527,7 +15527,7 @@
     <city>Le Chaux-du-Milieu</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -15540,7 +15540,7 @@
     <city>La Brévine</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15553,7 +15553,7 @@
     <city>La Châtagne</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>4</location_rank>
@@ -15566,7 +15566,7 @@
     <city>Le Brouillet</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
@@ -15579,7 +15579,7 @@
     <city>Les Taillères</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>3</location_rank>
@@ -15592,7 +15592,7 @@
     <city>Le Cerneux-Péquignot</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15605,7 +15605,7 @@
     <city>Les Brenets</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Montagnes</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15904,7 +15904,7 @@
     <city>Lignières</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -15917,7 +15917,7 @@
     <city>Le Landeron</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -16736,7 +16736,7 @@
     <city>Enges</city>
     <country>CH</country>
     <state>Neuchâtel</state>
-    <county />
+    <county>Région Littoral</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>true</is_primary_location>
     <location_rank>1</location_rank>
@@ -17093,7 +17093,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2645</evidence_count>
+    <evidence_count>2643</evidence_count>
   </record>
   <record>
     <code>2742</code>
@@ -17132,7 +17132,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>237</evidence_count>
+    <evidence_count>235</evidence_count>
   </record>
   <record>
     <code>2745</code>
@@ -17158,7 +17158,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>286</evidence_count>
+    <evidence_count>291</evidence_count>
   </record>
   <record>
     <code>2747</code>
@@ -17171,7 +17171,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
+    <evidence_count>15</evidence_count>
   </record>
   <record>
     <code>2747</code>
@@ -17184,7 +17184,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>132</evidence_count>
+    <evidence_count>122</evidence_count>
   </record>
   <record>
     <code>2747</code>
@@ -17262,7 +17262,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1963</evidence_count>
+    <evidence_count>1962</evidence_count>
   </record>
   <record>
     <code>2802</code>
@@ -18302,7 +18302,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>9</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>1281</evidence_count>
+    <evidence_count>1279</evidence_count>
   </record>
   <record>
     <code>3006</code>
@@ -18328,7 +18328,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>2239</evidence_count>
+    <evidence_count>2241</evidence_count>
   </record>
   <record>
     <code>3008</code>
@@ -18367,7 +18367,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>6</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>1789</evidence_count>
+    <evidence_count>1797</evidence_count>
   </record>
   <record>
     <code>3012</code>
@@ -18887,7 +18887,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>24</evidence_count>
+    <evidence_count>23</evidence_count>
   </record>
   <record>
     <code>3074</code>
@@ -19043,7 +19043,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1737</evidence_count>
+    <evidence_count>1740</evidence_count>
   </record>
   <record>
     <code>3086</code>
@@ -19173,7 +19173,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>660</evidence_count>
+    <evidence_count>659</evidence_count>
   </record>
   <record>
     <code>3097</code>
@@ -20057,7 +20057,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1218</evidence_count>
+    <evidence_count>1219</evidence_count>
   </record>
   <record>
     <code>3212</code>
@@ -21461,7 +21461,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>405</evidence_count>
+    <evidence_count>406</evidence_count>
   </record>
   <record>
     <code>3372</code>
@@ -21604,7 +21604,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>4720</evidence_count>
+    <evidence_count>4733</evidence_count>
   </record>
   <record>
     <code>3401</code>
@@ -22787,7 +22787,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3352</evidence_count>
+    <evidence_count>3350</evidence_count>
   </record>
   <record>
     <code>3601</code>
@@ -22917,7 +22917,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3236</evidence_count>
+    <evidence_count>3237</evidence_count>
   </record>
   <record>
     <code>3613</code>
@@ -23138,7 +23138,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1043</evidence_count>
+    <evidence_count>1044</evidence_count>
   </record>
   <record>
     <code>3627</code>
@@ -23606,7 +23606,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>681</evidence_count>
+    <evidence_count>683</evidence_count>
   </record>
   <record>
     <code>3665</code>
@@ -25816,7 +25816,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>611</evidence_count>
+    <evidence_count>610</evidence_count>
   </record>
   <record>
     <code>3942</code>
@@ -27207,7 +27207,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>339</evidence_count>
+    <evidence_count>340</evidence_count>
   </record>
   <record>
     <code>4001</code>
@@ -27285,7 +27285,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2611</evidence_count>
+    <evidence_count>2610</evidence_count>
   </record>
   <record>
     <code>4052</code>
@@ -27298,7 +27298,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>3</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2687</evidence_count>
+    <evidence_count>2685</evidence_count>
   </record>
   <record>
     <code>4053</code>
@@ -27350,7 +27350,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>5</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2555</evidence_count>
+    <evidence_count>2554</evidence_count>
   </record>
   <record>
     <code>4057</code>
@@ -27363,7 +27363,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>6</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2395</evidence_count>
+    <evidence_count>2396</evidence_count>
   </record>
   <record>
     <code>4058</code>
@@ -27688,7 +27688,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5044</evidence_count>
+    <evidence_count>5043</evidence_count>
   </record>
   <record>
     <code>4126</code>
@@ -28546,7 +28546,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1641</evidence_count>
+    <evidence_count>1640</evidence_count>
   </record>
   <record>
     <code>4410</code>
@@ -28676,7 +28676,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>687</evidence_count>
+    <evidence_count>688</evidence_count>
   </record>
   <record>
     <code>4421</code>
@@ -29339,7 +29339,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>41</evidence_count>
+    <evidence_count>39</evidence_count>
   </record>
   <record>
     <code>4514</code>
@@ -29365,7 +29365,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>185</evidence_count>
+    <evidence_count>184</evidence_count>
   </record>
   <record>
     <code>4515</code>
@@ -29664,7 +29664,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>45</evidence_count>
+    <evidence_count>44</evidence_count>
   </record>
   <record>
     <code>4553</code>
@@ -30587,7 +30587,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>135</evidence_count>
+    <evidence_count>136</evidence_count>
   </record>
   <record>
     <code>4703</code>
@@ -31857,11 +31857,11 @@
     <state>Aargau</state>
     <county>Bezirk Aarau</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>true</is_primary_location>
-    <location_rank>1</location_rank>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>864</evidence_count>
+    <evidence_count>371</evidence_count>
   </record>
   <record>
     <code>5033</code>
@@ -31874,7 +31874,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>174</evidence_count>
+    <evidence_count>34</evidence_count>
   </record>
   <record>
     <code>5033</code>
@@ -31883,11 +31883,11 @@
     <state>Aargau</state>
     <county>Bezirk Aarau</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
+    <is_primary_location>true</is_primary_location>
+    <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>528</evidence_count>
+    <evidence_count>1247</evidence_count>
   </record>
   <record>
     <code>5034</code>
@@ -31913,7 +31913,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1073</evidence_count>
+    <evidence_count>1074</evidence_count>
   </record>
   <record>
     <code>5036</code>
@@ -35293,7 +35293,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2026</evidence_count>
+    <evidence_count>2027</evidence_count>
   </record>
   <record>
     <code>5745</code>
@@ -35384,7 +35384,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>3</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1797</evidence_count>
+    <evidence_count>1798</evidence_count>
   </record>
   <record>
     <code>6004</code>
@@ -35410,7 +35410,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1630</evidence_count>
+    <evidence_count>1631</evidence_count>
   </record>
   <record>
     <code>6005</code>
@@ -35488,7 +35488,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>440</evidence_count>
+    <evidence_count>441</evidence_count>
   </record>
   <record>
     <code>6013</code>
@@ -35748,7 +35748,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>934</evidence_count>
+    <evidence_count>935</evidence_count>
   </record>
   <record>
     <code>6033</code>
@@ -35930,7 +35930,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1667</evidence_count>
+    <evidence_count>1666</evidence_count>
   </record>
   <record>
     <code>6052</code>
@@ -36047,7 +36047,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1221</evidence_count>
+    <evidence_count>1223</evidence_count>
   </record>
   <record>
     <code>6062</code>
@@ -36463,7 +36463,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1580</evidence_count>
+    <evidence_count>1581</evidence_count>
   </record>
   <record>
     <code>6132</code>
@@ -36879,7 +36879,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>262</evidence_count>
+    <evidence_count>263</evidence_count>
   </record>
   <record>
     <code>6204</code>
@@ -37568,7 +37568,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1414</evidence_count>
+    <evidence_count>1415</evidence_count>
   </record>
   <record>
     <code>6280</code>
@@ -41936,7 +41936,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>350</evidence_count>
+    <evidence_count>343</evidence_count>
   </record>
   <record>
     <code>6814</code>
@@ -42105,7 +42105,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>843</evidence_count>
+    <evidence_count>844</evidence_count>
   </record>
   <record>
     <code>6832</code>
@@ -42508,7 +42508,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2663</evidence_count>
+    <evidence_count>2665</evidence_count>
   </record>
   <record>
     <code>6900</code>
@@ -42937,7 +42937,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>82</evidence_count>
+    <evidence_count>88</evidence_count>
   </record>
   <record>
     <code>6944</code>
@@ -43327,7 +43327,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>741</evidence_count>
+    <evidence_count>745</evidence_count>
   </record>
   <record>
     <code>6963</code>
@@ -43700,8 +43700,8 @@
     <state>Ticino</state>
     <county>Distretto di Lugano</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>true</is_primary_location>
-    <location_rank>1</location_rank>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>217</evidence_count>
@@ -43713,11 +43713,11 @@
     <state>Ticino</state>
     <county>Distretto di Lugano</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
+    <is_primary_location>true</is_primary_location>
+    <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>34</evidence_count>
+    <evidence_count>299</evidence_count>
   </record>
   <record>
     <code>6993</code>
@@ -43769,7 +43769,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>448</evidence_count>
+    <evidence_count>451</evidence_count>
   </record>
   <record>
     <code>6998</code>
@@ -43808,7 +43808,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>6537</evidence_count>
+    <evidence_count>6540</evidence_count>
   </record>
   <record>
     <code>7012</code>
@@ -44666,7 +44666,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>11</evidence_count>
+    <evidence_count>122</evidence_count>
   </record>
   <record>
     <code>7143</code>
@@ -45355,7 +45355,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>300</evidence_count>
+    <evidence_count>301</evidence_count>
   </record>
   <record>
     <code>7220</code>
@@ -45680,7 +45680,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>61</evidence_count>
+    <evidence_count>20</evidence_count>
   </record>
   <record>
     <code>7260</code>
@@ -45693,20 +45693,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>732</evidence_count>
-  </record>
-  <record>
-    <code>7265</code>
-    <city>Davos Laret</city>
-    <country>CH</country>
-    <state>Graubünden/Grischun/Grigioni</state>
-    <county>Prättigau/Davos</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>18</evidence_count>
+    <evidence_count>942</evidence_count>
   </record>
   <record>
     <code>7265</code>
@@ -45719,7 +45706,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>138</evidence_count>
+    <evidence_count>289</evidence_count>
   </record>
   <record>
     <code>7270</code>
@@ -45728,11 +45715,11 @@
     <state>Graubünden/Grischun/Grigioni</state>
     <county>Prättigau/Davos</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>true</is_primary_location>
-    <location_rank>1</location_rank>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>457</evidence_count>
+    <evidence_count>394</evidence_count>
   </record>
   <record>
     <code>7270</code>
@@ -45741,11 +45728,11 @@
     <state>Graubünden/Grischun/Grigioni</state>
     <county>Prättigau/Davos</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
+    <is_primary_location>true</is_primary_location>
+    <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>304</evidence_count>
+    <evidence_count>595</evidence_count>
   </record>
   <record>
     <code>7272</code>
@@ -45784,7 +45771,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>25</evidence_count>
+    <evidence_count>26</evidence_count>
   </record>
   <record>
     <code>7277</code>
@@ -46161,7 +46148,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>396</evidence_count>
+    <evidence_count>393</evidence_count>
   </record>
   <record>
     <code>7411</code>
@@ -46967,7 +46954,33 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>17</evidence_count>
+    <evidence_count>231</evidence_count>
+  </record>
+  <record>
+    <code>7452</code>
+    <city>Cunter GR</city>
+    <country>CH</country>
+    <state>Graubünden/Grischun/Grigioni</state>
+    <county>Albula/Alvra</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>25</evidence_count>
+  </record>
+  <record>
+    <code>7452</code>
+    <city>Promastgel</city>
+    <country>CH</country>
+    <state>Graubünden/Grischun/Grigioni</state>
+    <county>Albula/Alvra</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>3</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>16</evidence_count>
   </record>
   <record>
     <code>7453</code>
@@ -46980,7 +46993,20 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>8</evidence_count>
+    <evidence_count>147</evidence_count>
+  </record>
+  <record>
+    <code>7453</code>
+    <city>Tinizong GR</city>
+    <country>CH</country>
+    <state>Graubünden/Grischun/Grigioni</state>
+    <county>Albula/Alvra</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>136</evidence_count>
   </record>
   <record>
     <code>7454</code>
@@ -47097,7 +47123,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>193</evidence_count>
+    <evidence_count>198</evidence_count>
   </record>
   <record>
     <code>7463</code>
@@ -47136,7 +47162,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>140</evidence_count>
+    <evidence_count>254</evidence_count>
   </record>
   <record>
     <code>7473</code>
@@ -47149,7 +47175,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>55</evidence_count>
+    <evidence_count>58</evidence_count>
   </record>
   <record>
     <code>7477</code>
@@ -47279,7 +47305,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>123</evidence_count>
+    <evidence_count>130</evidence_count>
   </record>
   <record>
     <code>7493</code>
@@ -47526,7 +47552,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>329</evidence_count>
+    <evidence_count>330</evidence_count>
   </record>
   <record>
     <code>7517</code>
@@ -48241,7 +48267,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>10</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1852</evidence_count>
+    <evidence_count>1851</evidence_count>
   </record>
   <record>
     <code>8004</code>
@@ -48384,7 +48410,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>12</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1740</evidence_count>
+    <evidence_count>1741</evidence_count>
   </record>
   <record>
     <code>8038</code>
@@ -48397,7 +48423,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>21</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>490</evidence_count>
+    <evidence_count>491</evidence_count>
   </record>
   <record>
     <code>8039</code>
@@ -48501,7 +48527,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>6</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2457</evidence_count>
+    <evidence_count>2458</evidence_count>
   </record>
   <record>
     <code>8049</code>
@@ -48579,7 +48605,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>11</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1844</evidence_count>
+    <evidence_count>1845</evidence_count>
   </record>
   <record>
     <code>8057</code>
@@ -49112,7 +49138,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1167</evidence_count>
+    <evidence_count>1165</evidence_count>
   </record>
   <record>
     <code>8127</code>
@@ -50126,7 +50152,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>15</evidence_count>
+    <evidence_count>16</evidence_count>
   </record>
   <record>
     <code>8224</code>
@@ -51556,7 +51582,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>911</evidence_count>
+    <evidence_count>976</evidence_count>
   </record>
   <record>
     <code>8355</code>
@@ -51582,7 +51608,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>157</evidence_count>
+    <evidence_count>145</evidence_count>
   </record>
   <record>
     <code>8356</code>
@@ -51595,7 +51621,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>268</evidence_count>
+    <evidence_count>289</evidence_count>
   </record>
   <record>
     <code>8357</code>
@@ -51608,7 +51634,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>168</evidence_count>
+    <evidence_count>167</evidence_count>
   </record>
   <record>
     <code>8357</code>
@@ -51621,7 +51647,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>319</evidence_count>
+    <evidence_count>324</evidence_count>
   </record>
   <record>
     <code>8360</code>
@@ -51829,7 +51855,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5773</evidence_count>
+    <evidence_count>5879</evidence_count>
   </record>
   <record>
     <code>8401</code>
@@ -51933,7 +51959,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1127</evidence_count>
+    <evidence_count>1233</evidence_count>
   </record>
   <record>
     <code>8408</code>
@@ -53025,7 +53051,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>722</evidence_count>
+    <evidence_count>721</evidence_count>
   </record>
   <record>
     <code>8495</code>
@@ -53207,7 +53233,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>520</evidence_count>
+    <evidence_count>534</evidence_count>
   </record>
   <record>
     <code>8506</code>
@@ -53974,7 +54000,7 @@
     <location_rank>8</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
+    <evidence_count>4</evidence_count>
   </record>
   <record>
     <code>8564</code>
@@ -54260,7 +54286,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>131</evidence_count>
+    <evidence_count>132</evidence_count>
   </record>
   <record>
     <code>8574</code>
@@ -54455,7 +54481,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>158</evidence_count>
+    <evidence_count>159</evidence_count>
   </record>
   <record>
     <code>8581</code>
@@ -54650,7 +54676,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>103</evidence_count>
+    <evidence_count>104</evidence_count>
   </record>
   <record>
     <code>8585</code>
@@ -54871,7 +54897,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>491</evidence_count>
+    <evidence_count>492</evidence_count>
   </record>
   <record>
     <code>8595</code>
@@ -54949,7 +54975,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>407</evidence_count>
+    <evidence_count>408</evidence_count>
   </record>
   <record>
     <code>8600</code>
@@ -55300,7 +55326,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2137</evidence_count>
+    <evidence_count>2138</evidence_count>
   </record>
   <record>
     <code>8620</code>
@@ -55651,7 +55677,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2185</evidence_count>
+    <evidence_count>2190</evidence_count>
   </record>
   <record>
     <code>8637</code>
@@ -55989,7 +56015,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1454</evidence_count>
+    <evidence_count>1455</evidence_count>
   </record>
   <record>
     <code>8706</code>
@@ -56054,7 +56080,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2126</evidence_count>
+    <evidence_count>2127</evidence_count>
   </record>
   <record>
     <code>8712</code>
@@ -58953,7 +58979,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>860</evidence_count>
+    <evidence_count>861</evidence_count>
   </record>
   <record>
     <code>8966</code>
@@ -59005,7 +59031,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>694</evidence_count>
+    <evidence_count>696</evidence_count>
   </record>
   <record>
     <code>9001</code>
@@ -59187,7 +59213,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>41</evidence_count>
+    <evidence_count>42</evidence_count>
   </record>
   <record>
     <code>9015</code>
@@ -59447,7 +59473,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2881</evidence_count>
+    <evidence_count>2880</evidence_count>
   </record>
   <record>
     <code>9050</code>
@@ -59811,7 +59837,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>387</evidence_count>
+    <evidence_count>409</evidence_count>
   </record>
   <record>
     <code>9107</code>
@@ -59967,7 +59993,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>153</evidence_count>
+    <evidence_count>253</evidence_count>
   </record>
   <record>
     <code>9123</code>
@@ -59993,7 +60019,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>242</evidence_count>
+    <evidence_count>280</evidence_count>
   </record>
   <record>
     <code>9125</code>
@@ -60032,7 +60058,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>22</evidence_count>
+    <evidence_count>47</evidence_count>
   </record>
   <record>
     <code>9200</code>
@@ -60682,7 +60708,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2221</evidence_count>
+    <evidence_count>2220</evidence_count>
   </record>
   <record>
     <code>9320</code>
@@ -61293,7 +61319,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1315</evidence_count>
+    <evidence_count>1314</evidence_count>
   </record>
   <record>
     <code>9450</code>
@@ -61397,7 +61423,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>697</evidence_count>
+    <evidence_count>701</evidence_count>
   </record>
   <record>
     <code>9463</code>
@@ -62437,7 +62463,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>153</evidence_count>
+    <evidence_count>165</evidence_count>
   </record>
   <record>
     <code>9548</code>
@@ -62502,7 +62528,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>168</evidence_count>
+    <evidence_count>173</evidence_count>
   </record>
   <record>
     <code>9555</code>
@@ -62515,7 +62541,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>200</evidence_count>
+    <evidence_count>289</evidence_count>
   </record>
   <record>
     <code>9556</code>
@@ -62879,7 +62905,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>295</evidence_count>
+    <evidence_count>297</evidence_count>
   </record>
   <record>
     <code>9622</code>
@@ -62944,7 +62970,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>200</evidence_count>
+    <evidence_count>202</evidence_count>
   </record>
   <record>
     <code>9633</code>
@@ -62957,7 +62983,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>285</evidence_count>
+    <evidence_count>298</evidence_count>
   </record>
   <record>
     <code>9642</code>
@@ -62980,10 +63006,10 @@
     <county>Wahlkreis Toggenburg</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
+    <location_rank>3</location_rank>
     <postal_code_rank>3</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>11</evidence_count>
+    <evidence_count>4</evidence_count>
   </record>
   <record>
     <code>9642</code>
@@ -62993,7 +63019,7 @@
     <county>Wahlkreis Toggenburg</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
+    <location_rank>2</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>6</evidence_count>
@@ -63009,7 +63035,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>136</evidence_count>
+    <evidence_count>202</evidence_count>
   </record>
   <record>
     <code>9645</code>
@@ -63026,19 +63052,6 @@
   </record>
   <record>
     <code>9650</code>
-    <city>Krinau</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis Toggenburg</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
-  </record>
-  <record>
-    <code>9650</code>
     <city>Krummenau</city>
     <country>CH</country>
     <state>St. Gallen</state>
@@ -63048,7 +63061,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>58</evidence_count>
+    <evidence_count>10</evidence_count>
   </record>
   <record>
     <code>9650</code>
@@ -63061,7 +63074,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>527</evidence_count>
+    <evidence_count>547</evidence_count>
   </record>
   <record>
     <code>9651</code>
@@ -63074,20 +63087,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>214</evidence_count>
-  </record>
-  <record>
-    <code>9652</code>
-    <city>Neu Sankt Johann</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis Toggenburg</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>6</evidence_count>
+    <evidence_count>271</evidence_count>
   </record>
   <record>
     <code>9652</code>
@@ -63100,7 +63100,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>256</evidence_count>
+    <evidence_count>261</evidence_count>
   </record>
   <record>
     <code>9655</code>
@@ -63113,7 +63113,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>110</evidence_count>
+    <evidence_count>149</evidence_count>
   </record>
   <record>
     <code>9656</code>
