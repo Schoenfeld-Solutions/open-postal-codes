@@ -1,13 +1,13 @@
 code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
 32049,Herford,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,6841
-32051,Herford,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,3,postal_boundary,4885
+32051,Herford,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,3,postal_boundary,4886
 32052,Herford,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,2,postal_boundary,5264
-32105,Bad Salzuflen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,3,postal_boundary,4819
-32107,Bad Salzuflen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5452
-32108,Bad Salzuflen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,2,postal_boundary,4945
+32105,Bad Salzuflen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,3,postal_boundary,4820
+32107,Bad Salzuflen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5453
+32108,Bad Salzuflen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,2,postal_boundary,4948
 32120,Hiddenhausen,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,6372
 32130,Enger,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,6324
-32139,Spenge,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,4661
+32139,Spenge,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,4663
 32257,Bünde,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,14170
 32278,Kirchlengern,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,5655
 32289,Rödinghausen,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,6148
@@ -15,7 +15,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 32339,Espelkamp,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,6255
 32351,Stemwede,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,4112
 32361,Preußisch Oldendorf,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,address_fallback,4139
-32369,Rahden,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,4875
+32369,Rahden,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,4876
 32423,Minden,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,2,postal_boundary,6285
 32425,Minden,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,6728
 32427,Minden,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,3,postal_boundary,4398
@@ -28,59 +28,59 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 32549,Bad Oeynhausen,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,7471
 32584,Löhne,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,12456
 32602,Vlotho,DE,Nordrhein-Westfalen,Kreis Herford,W. Europe Standard Time,true,1,1,postal_boundary,6170
-32609,Hüllhorst,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,4449
-32657,Lemgo,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,12609
-32676,Lügde,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,3400
-32683,Barntrup,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,2807
-32689,Kalletal,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,4533
-32694,Dörentrup,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,2608
+32609,Hüllhorst,DE,Nordrhein-Westfalen,Kreis Minden-Lübbecke,W. Europe Standard Time,true,1,1,postal_boundary,4450
+32657,Lemgo,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,12615
+32676,Lügde,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,3404
+32683,Barntrup,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,2809
+32689,Kalletal,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,4534
+32694,Dörentrup,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,2610
 32699,Extertal,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,4060
-32756,Detmold,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,2,postal_boundary,6852
+32756,Detmold,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,2,postal_boundary,6859
 32758,Detmold,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,7386
 32760,Detmold,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,3,postal_boundary,6229
-32791,Lage,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,10131
-32805,Horn-Bad Meinberg,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5324
-32816,Schieder-Schwalenberg,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,2746
-32825,Blomberg,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5361
+32791,Lage,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,10134
+32805,Horn-Bad Meinberg,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5330
+32816,Schieder-Schwalenberg,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,2748
+32825,Blomberg,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5366
 32832,Augustdorf,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,2614
 32839,Steinheim,DE,Nordrhein-Westfalen,Kreis Höxter,W. Europe Standard Time,true,1,1,postal_boundary,4477
 33014,Bad Driburg,DE,Nordrhein-Westfalen,Kreis Höxter,W. Europe Standard Time,true,1,1,postal_boundary,5827
-33034,Brakel,DE,Nordrhein-Westfalen,Kreis Höxter,W. Europe Standard Time,true,1,1,postal_boundary,5230
+33034,Brakel,DE,Nordrhein-Westfalen,Kreis Höxter,W. Europe Standard Time,true,1,1,postal_boundary,5232
 33039,Nieheim,DE,Nordrhein-Westfalen,Kreis Höxter,W. Europe Standard Time,true,1,1,postal_boundary,2370
-33098,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,5,postal_boundary,6193
-33100,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,8408
-33102,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,3,postal_boundary,7846
-33104,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,4,postal_boundary,7620
-33106,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,2,postal_boundary,8247
-33129,Delbrück,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,9568
+33098,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,5,postal_boundary,6194
+33100,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,8409
+33102,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,3,postal_boundary,7849
+33104,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,4,postal_boundary,7622
+33106,Paderborn,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,2,postal_boundary,8249
+33129,Delbrück,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,9569
 33142,Büren,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,7158
-33154,Salzkotten,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,8062
-33161,Hövelhof,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,4832
-33165,Lichtenau,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,3928
-33175,Bad Lippspringe,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,4329
+33154,Salzkotten,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,8064
+33161,Hövelhof,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,4836
+33165,Lichtenau,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,3932
+33175,Bad Lippspringe,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,4331
 33178,Borchen,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,4311
 33181,Wünnenberg,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,0
 33184,Altenbeken,DE,Nordrhein-Westfalen,Kreis Paderborn,W. Europe Standard Time,true,1,1,postal_boundary,3043
-33189,Schlangen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,3024
+33189,Schlangen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,3026
 33330,Gütersloh,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,3,postal_boundary,6735
 33332,Gütersloh,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,7447
 33333,Bertelsmann,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,0
-33334,Gütersloh,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,2,postal_boundary,7318
-33335,Gütersloh,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,4,postal_boundary,6017
-33378,Rheda-Wiedenbrück,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,13362
-33397,Rietberg,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,9348
-33415,Verl,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,7523
-33428,Harsewinkel,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,5835
+33334,Gütersloh,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,2,postal_boundary,7319
+33335,Gütersloh,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,4,postal_boundary,6021
+33378,Rheda-Wiedenbrück,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,13367
+33397,Rietberg,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,9376
+33415,Verl,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,7524
+33428,Harsewinkel,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,5836
 33442,Herzebrock-Clarholz,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,4904
 33449,Langenberg,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,2788
-33602,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,11,postal_boundary,3494
-33604,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,16,postal_boundary,2995
+33602,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,11,postal_boundary,3495
+33604,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,16,postal_boundary,3007
 33605,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,14,postal_boundary,3373
 33607,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,17,postal_boundary,2955
 33609,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,10,postal_boundary,3839
 33611,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,12,postal_boundary,3436
 33613,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,6,postal_boundary,4786
-33615,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,15,postal_boundary,3132
+33615,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,15,postal_boundary,3133
 33617,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,18,postal_boundary,2280
 33619,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,8,postal_boundary,4395
 33647,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,9,postal_boundary,3949
@@ -89,14 +89,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 33689,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,4,postal_boundary,4955
 33699,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,13,postal_boundary,3395
 33719,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,7,postal_boundary,4746
-33729,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,5,postal_boundary,4815
+33729,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,5,postal_boundary,4814
 33739,Bielefeld,DE,Nordrhein-Westfalen,Bielefeld,W. Europe Standard Time,true,1,1,postal_boundary,6431
-33758,Schloß Holte-Stukenbrock,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,8170
+33758,Schloß Holte-Stukenbrock,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,8176
 33775,Versmold,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,6065
 33790,Halle,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,0
 33803,Steinhagen,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,6331
-33813,Oerlinghausen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5171
-33818,Leopoldshöhe,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5209
+33813,Oerlinghausen,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5176
+33818,Leopoldshöhe,DE,Nordrhein-Westfalen,Kreis Lippe,W. Europe Standard Time,true,1,1,postal_boundary,5212
 33824,Werther,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,0
 33829,Borgholzhausen,DE,Nordrhein-Westfalen,Kreis Gütersloh,W. Europe Standard Time,true,1,1,postal_boundary,2921
 34414,Warburg,DE,Nordrhein-Westfalen,Kreis Höxter,W. Europe Standard Time,true,1,1,postal_boundary,7859
@@ -109,13 +109,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 40210,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,36,postal_boundary,829
 40211,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,31,postal_boundary,1218
 40212,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,37,postal_boundary,589
-40213,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,28,postal_boundary,1499
+40213,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,28,postal_boundary,1497
 40215,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,30,postal_boundary,1423
 40217,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,34,postal_boundary,1014
 40219,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,32,postal_boundary,1124
 40221,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,17,postal_boundary,2335
 40223,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,22,postal_boundary,2254
-40225,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,29,postal_boundary,1477
+40225,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,29,postal_boundary,1478
 40227,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,15,postal_boundary,2348
 40229,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,10,postal_boundary,2897
 40231,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,20,postal_boundary,2270
@@ -130,7 +130,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 40476,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,23,postal_boundary,2028
 40477,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,27,postal_boundary,1597
 40479,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,33,postal_boundary,1025
-40489,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,1,postal_boundary,6538
+40489,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,1,postal_boundary,6537
 40545,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,24,postal_boundary,1791
 40547,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,14,postal_boundary,2466
 40549,Düsseldorf,DE,Nordrhein-Westfalen,Düsseldorf,W. Europe Standard Time,true,1,13,postal_boundary,2522
@@ -152,13 +152,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 40723,Hilden,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,3666
 40724,Hilden,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,2,postal_boundary,3553
 40764,Langenfeld,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,8787
-40789,Monheim am Rhein,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,8853
-40822,Mettmann,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,9060
-40878,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,2,postal_boundary,4368
-40880,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,4,postal_boundary,4028
-40882,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,3,postal_boundary,4255
-40883,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,5,postal_boundary,2828
-40885,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,5360
+40789,Monheim am Rhein,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,8855
+40822,Mettmann,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,9062
+40878,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,2,postal_boundary,4408
+40880,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,4,postal_boundary,4039
+40882,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,3,postal_boundary,4272
+40883,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,5,postal_boundary,2851
+40885,Ratingen,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,5409
 41061,Mönchengladbach,DE,Nordrhein-Westfalen,Mönchengladbach,W. Europe Standard Time,true,1,12,postal_boundary,3592
 41063,Mönchengladbach,DE,Nordrhein-Westfalen,Mönchengladbach,W. Europe Standard Time,true,1,6,postal_boundary,4866
 41065,Mönchengladbach,DE,Nordrhein-Westfalen,Mönchengladbach,W. Europe Standard Time,true,1,2,postal_boundary,5848
@@ -172,7 +172,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 41236,Mönchengladbach,DE,Nordrhein-Westfalen,Mönchengladbach,W. Europe Standard Time,true,1,11,postal_boundary,3779
 41238,Mönchengladbach,DE,Nordrhein-Westfalen,Mönchengladbach,W. Europe Standard Time,true,1,1,postal_boundary,7976
 41239,Mönchengladbach,DE,Nordrhein-Westfalen,Mönchengladbach,W. Europe Standard Time,true,1,8,postal_boundary,4243
-41334,Nettetal,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,14044
+41334,Nettetal,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,14043
 41352,Korschenbroich,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,11183
 41363,Jüchen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,7924
 41366,Schwalmtal,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,6681
@@ -180,20 +180,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 41379,Brüggen,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,5917
 41460,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,8,postal_boundary,2782
 41462,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,5527
-41464,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,6,postal_boundary,4038
+41464,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,6,postal_boundary,4040
 41466,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,4,postal_boundary,4270
 41468,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,2,postal_boundary,4427
 41469,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,5,postal_boundary,4044
 41470,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,3,postal_boundary,4287
-41472,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,7,postal_boundary,3740
-41515,Grevenbroich,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,7225
+41472,Neuss,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,7,postal_boundary,3741
+41515,Grevenbroich,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,7239
 41516,Grevenbroich,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,2,postal_boundary,7016
 41517,Grevenbroich,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,3,postal_boundary,4033
 41539,Dormagen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,2,postal_boundary,4226
-41540,Dormagen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,3,postal_boundary,3666
+41540,Dormagen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,3,postal_boundary,3667
 41541,Dormagen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,4,postal_boundary,3004
-41542,Dormagen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,5073
-41564,Kaarst,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,11615
+41542,Dormagen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,5079
+41564,Kaarst,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,11616
 41569,Rommerskirchen,DE,Nordrhein-Westfalen,Rhein-Kreis Neuss,W. Europe Standard Time,true,1,1,postal_boundary,4609
 41747,Viersen,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,4,postal_boundary,4878
 41748,Viersen,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,2,postal_boundary,5769
@@ -223,7 +223,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 42327,Wuppertal,DE,Nordrhein-Westfalen,Wuppertal,W. Europe Standard Time,true,1,3,postal_boundary,3929
 42329,Wuppertal,DE,Nordrhein-Westfalen,Wuppertal,W. Europe Standard Time,true,1,4,postal_boundary,3457
 42349,Wuppertal,DE,Nordrhein-Westfalen,Wuppertal,W. Europe Standard Time,true,1,1,postal_boundary,5966
-42369,Wuppertal,DE,Nordrhein-Westfalen,Wuppertal,W. Europe Standard Time,true,1,2,postal_boundary,4651
+42369,Wuppertal,DE,Nordrhein-Westfalen,Wuppertal,W. Europe Standard Time,true,1,2,postal_boundary,4652
 42389,Wuppertal,DE,Nordrhein-Westfalen,Wuppertal,W. Europe Standard Time,true,1,7,postal_boundary,3104
 42399,Wuppertal,DE,Nordrhein-Westfalen,Wuppertal,W. Europe Standard Time,true,1,22,postal_boundary,1262
 42477,Radevormwald,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5767
@@ -234,15 +234,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 42553,Velbert,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,2,postal_boundary,4277
 42555,Velbert,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,3,postal_boundary,3493
 42579,Heiligenhaus,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,5905
-42651,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,7,postal_boundary,4111
-42653,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,6,postal_boundary,4221
-42655,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,5,postal_boundary,4240
+42651,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,7,postal_boundary,4109
+42653,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,6,postal_boundary,4237
+42655,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,5,postal_boundary,4243
 42657,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,3,postal_boundary,5011
 42659,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,4,postal_boundary,4371
-42697,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,8,postal_boundary,4060
+42697,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,8,postal_boundary,4062
 42699,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,1,postal_boundary,6048
 42719,Solingen,DE,Nordrhein-Westfalen,Solingen,W. Europe Standard Time,true,1,2,postal_boundary,5477
-42781,Haan,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,7966
+42781,Haan,DE,Nordrhein-Westfalen,Kreis Mettmann,W. Europe Standard Time,true,1,1,postal_boundary,7968
 42799,Leichlingen,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2521
 42853,Remscheid,DE,Nordrhein-Westfalen,Remscheid,W. Europe Standard Time,true,1,6,postal_boundary,2400
 42855,Remscheid,DE,Nordrhein-Westfalen,Remscheid,W. Europe Standard Time,true,1,2,postal_boundary,4164
@@ -250,21 +250,21 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 42859,Remscheid,DE,Nordrhein-Westfalen,Remscheid,W. Europe Standard Time,true,1,4,postal_boundary,3951
 42897,Remscheid,DE,Nordrhein-Westfalen,Remscheid,W. Europe Standard Time,true,1,1,postal_boundary,5198
 42899,Remscheid,DE,Nordrhein-Westfalen,Remscheid,W. Europe Standard Time,true,1,5,postal_boundary,3022
-42929,Wermelskirchen,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,9834
+42929,Wermelskirchen,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,9836
 44135,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,27,postal_boundary,1870
-44137,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,22,postal_boundary,3092
+44137,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,22,postal_boundary,3093
 44139,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,26,postal_boundary,2372
 44141,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,19,postal_boundary,3278
 44143,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,12,postal_boundary,4135
 44145,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,23,postal_boundary,3032
 44147,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,25,postal_boundary,2465
-44149,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,6,postal_boundary,4810
+44149,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,6,postal_boundary,4812
 44149,Kley,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,false,2,1,postal_boundary,0
 44149,Oespel,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,false,3,1,postal_boundary,0
 44149,Stadtteile Dorstfeld,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,false,4,1,postal_boundary,0
 44225,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,13,postal_boundary,4093
 44227,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,15,postal_boundary,4013
-44229,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,9,postal_boundary,4504
+44229,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,9,postal_boundary,4503
 44263,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,16,postal_boundary,3836
 44265,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,20,postal_boundary,3266
 44267,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,7,postal_boundary,4656
@@ -280,7 +280,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 44359,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,11,postal_boundary,4251
 44369,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,10,postal_boundary,4429
 44379,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,14,postal_boundary,4077
-44388,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,5,postal_boundary,5201
+44388,Dortmund,DE,Nordrhein-Westfalen,Dortmund,W. Europe Standard Time,true,1,5,postal_boundary,5203
 44532,Lünen,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,1,postal_boundary,7017
 44534,Lünen,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,2,postal_boundary,6946
 44536,Bambauer,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -297,57 +297,57 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 44649,Herne,DE,Nordrhein-Westfalen,Herne,W. Europe Standard Time,true,1,6,postal_boundary,3017
 44651,Herne,DE,Nordrhein-Westfalen,Herne,W. Europe Standard Time,true,1,3,postal_boundary,3750
 44652,Herne,DE,Nordrhein-Westfalen,Herne,W. Europe Standard Time,true,1,8,postal_boundary,1966
-44653,Herne,DE,Nordrhein-Westfalen,Herne,W. Europe Standard Time,true,1,7,postal_boundary,2104
-44787,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,16,postal_boundary,2302
+44653,Herne,DE,Nordrhein-Westfalen,Herne,W. Europe Standard Time,true,1,7,postal_boundary,2105
+44787,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,16,postal_boundary,2304
 44789,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,13,postal_boundary,3210
 44791,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,14,postal_boundary,2959
 44793,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,7,postal_boundary,3866
 44795,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,4,postal_boundary,5386
 44797,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,8,postal_boundary,3850
 44799,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,15,postal_boundary,2856
-44801,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,17,postal_boundary,2051
+44801,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,17,postal_boundary,2052
 44803,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,9,postal_boundary,3746
 44805,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,3,postal_boundary,5955
 44807,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,11,postal_boundary,3352
-44809,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,12,postal_boundary,3245
+44809,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,12,postal_boundary,3246
 44866,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,2,postal_boundary,6044
 44867,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,18,postal_boundary,1592
-44869,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,5,postal_boundary,5122
+44869,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,5,postal_boundary,5121
 44879,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,1,postal_boundary,6106
 44892,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,6,postal_boundary,4884
 44894,Bochum,DE,Nordrhein-Westfalen,Bochum,W. Europe Standard Time,true,1,10,postal_boundary,3587
-45127,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,29,postal_boundary,2060
-45128,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,32,postal_boundary,1537
-45130,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,24,postal_boundary,2460
-45131,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,31,postal_boundary,1714
-45133,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,13,postal_boundary,3489
+45127,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,29,postal_boundary,2062
+45128,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,32,postal_boundary,1541
+45130,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,24,postal_boundary,2461
+45131,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,31,postal_boundary,1717
+45133,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,13,postal_boundary,3490
 45134,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,21,postal_boundary,2852
-45136,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,17,postal_boundary,2977
+45136,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,17,postal_boundary,2980
 45138,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,25,postal_boundary,2333
-45139,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,28,postal_boundary,2201
-45141,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,9,postal_boundary,3645
-45143,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,22,postal_boundary,2651
+45139,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,28,postal_boundary,2202
+45141,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,9,postal_boundary,3646
+45143,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,22,postal_boundary,2658
 45144,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,30,postal_boundary,1924
-45145,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,27,postal_boundary,2286
-45147,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,18,postal_boundary,2943
+45145,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,27,postal_boundary,2289
+45147,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,18,postal_boundary,2944
 45149,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,10,postal_boundary,3641
-45219,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,4,postal_boundary,4335
-45239,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,2,postal_boundary,5113
-45257,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,16,postal_boundary,3286
-45259,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,14,postal_boundary,3386
-45276,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,20,postal_boundary,2858
+45219,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,4,postal_boundary,4338
+45239,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,2,postal_boundary,5116
+45257,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,16,postal_boundary,3300
+45259,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,14,postal_boundary,3390
+45276,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,20,postal_boundary,2856
 45277,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,19,postal_boundary,2901
-45279,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,7,postal_boundary,3775
-45289,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,26,postal_boundary,2296
-45307,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,12,postal_boundary,3502
-45309,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,8,postal_boundary,3690
-45326,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,15,postal_boundary,3342
+45279,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,7,postal_boundary,3776
+45289,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,26,postal_boundary,2302
+45307,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,12,postal_boundary,3505
+45309,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,8,postal_boundary,3694
+45326,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,15,postal_boundary,3349
 45327,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,5,postal_boundary,4324
-45329,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,3,postal_boundary,4796
-45355,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,6,postal_boundary,4015
+45329,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,3,postal_boundary,4799
+45355,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,6,postal_boundary,4020
 45356,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,23,postal_boundary,2630
 45357,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,11,postal_boundary,3584
-45359,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,1,postal_boundary,5137
+45359,Essen,DE,Nordrhein-Westfalen,Essen,W. Europe Standard Time,true,1,1,postal_boundary,5138
 45468,Mülheim an der Ruhr,DE,Nordrhein-Westfalen,Mülheim an der Ruhr,W. Europe Standard Time,true,1,7,postal_boundary,3131
 45470,Mülheim an der Ruhr,DE,Nordrhein-Westfalen,Mülheim an der Ruhr,W. Europe Standard Time,true,1,3,postal_boundary,4509
 45472,Mülheim an der Ruhr,DE,Nordrhein-Westfalen,Mülheim an der Ruhr,W. Europe Standard Time,true,1,2,postal_boundary,5289
@@ -357,9 +357,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 45478,Mülheim an der Ruhr,DE,Nordrhein-Westfalen,Mülheim an der Ruhr,W. Europe Standard Time,true,1,4,postal_boundary,4296
 45479,Mülheim an der Ruhr,DE,Nordrhein-Westfalen,Mülheim an der Ruhr,W. Europe Standard Time,true,1,8,postal_boundary,2522
 45481,Mülheim an der Ruhr,DE,Nordrhein-Westfalen,Mülheim an der Ruhr,W. Europe Standard Time,true,1,1,postal_boundary,6123
-45525,Hattingen,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,3,postal_boundary,3759
+45525,Hattingen,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,3,postal_boundary,3760
 45527,Hattingen,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4353
-45529,Hattingen,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,2,postal_boundary,3814
+45529,Hattingen,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,2,postal_boundary,3825
 45549,Sprockhövel,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6901
 45657,Recklinghausen,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,3,postal_boundary,4794
 45659,Recklinghausen,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,2,postal_boundary,5140
@@ -378,7 +378,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 45879,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,13,postal_boundary,1631
 45881,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,8,postal_boundary,2978
 45883,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,11,postal_boundary,2569
-45884,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,12,postal_boundary,1981
+45884,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,12,postal_boundary,1983
 45886,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,6,postal_boundary,3460
 45888,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,9,postal_boundary,2940
 45889,Gelsenkirchen,DE,Nordrhein-Westfalen,Gelsenkirchen,W. Europe Standard Time,true,1,10,postal_boundary,2572
@@ -391,12 +391,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 45964,Gladbeck,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,3,postal_boundary,3904
 45966,Gladbeck,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,1,postal_boundary,5880
 45968,Gladbeck,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,2,postal_boundary,5822
-46045,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,6,postal_boundary,4156
+46045,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,6,postal_boundary,4158
 46047,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,5,postal_boundary,4435
 46049,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,2,postal_boundary,6417
 46117,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,7,postal_boundary,4076
-46119,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,8,postal_boundary,4014
-46145,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,4,postal_boundary,5428
+46119,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,8,postal_boundary,4013
+46145,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,4,postal_boundary,5426
 46147,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,1,postal_boundary,6809
 46149,Oberhausen,DE,Nordrhein-Westfalen,Oberhausen,W. Europe Standard Time,true,1,3,postal_boundary,5966
 46236,Bottrop,DE,Nordrhein-Westfalen,Bottrop,W. Europe Standard Time,true,1,5,postal_boundary,4292
@@ -407,15 +407,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 46282,Dorsten,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,3,postal_boundary,6342
 46284,Dorsten,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,2,postal_boundary,6897
 46286,Dorsten,DE,Nordrhein-Westfalen,Kreis Recklinghausen,W. Europe Standard Time,true,1,1,postal_boundary,7681
-46325,Borken,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,13821
+46325,Borken,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,13842
 46342,Velen,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,3896
-46348,Raesfeld,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,3334
-46354,Südlohn,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,3142
+46348,Raesfeld,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,3336
+46354,Südlohn,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,3146
 46359,Heiden,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,2645
-46395,Bocholt,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,9757
-46397,Bocholt,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,2,postal_boundary,7389
-46399,Bocholt,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,3,postal_boundary,6265
-46414,Rhede,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,6504
+46395,Bocholt,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,9758
+46397,Bocholt,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,2,postal_boundary,7405
+46399,Bocholt,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,3,postal_boundary,6279
+46414,Rhede,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,6528
 46419,Isselburg,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,3736
 46446,Emmerich am Rhein,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,10056
 46459,Rees,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,7074
@@ -431,33 +431,33 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 46539,Dinslaken,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,2,postal_boundary,5421
 46562,Voerde,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,1,postal_boundary,22
 46569,Hünxe,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,1,postal_boundary,4348
-47051,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,20,postal_boundary,2337
-47053,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,16,postal_boundary,2876
+47051,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,20,postal_boundary,2338
+47053,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,16,postal_boundary,2893
 47055,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,13,postal_boundary,3349
-47057,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,12,postal_boundary,3673
-47058,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,22,postal_boundary,2212
-47059,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,25,postal_boundary,1582
-47119,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,24,postal_boundary,1800
-47137,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,7,postal_boundary,4584
-47138,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,19,postal_boundary,2406
+47057,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,12,postal_boundary,3676
+47058,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,22,postal_boundary,2214
+47059,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,25,postal_boundary,1583
+47119,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,24,postal_boundary,1809
+47137,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,7,postal_boundary,4588
+47138,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,19,postal_boundary,2410
 47139,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,18,postal_boundary,2634
-47166,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,11,postal_boundary,3836
-47167,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,6,postal_boundary,5178
+47166,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,11,postal_boundary,3837
+47167,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,6,postal_boundary,5179
 47169,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,5,postal_boundary,5206
-47178,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,10,postal_boundary,4097
-47179,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,9,postal_boundary,4278
-47198,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,2,postal_boundary,6346
+47178,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,10,postal_boundary,4096
+47179,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,9,postal_boundary,4280
+47198,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,2,postal_boundary,6347
 47199,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,23,postal_boundary,1915
 47226,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,15,postal_boundary,2985
-47228,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,1,postal_boundary,6588
+47228,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,1,postal_boundary,6590
 47229,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,17,postal_boundary,2756
-47239,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,8,postal_boundary,4540
-47249,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,3,postal_boundary,5749
-47259,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,4,postal_boundary,5490
-47269,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,14,postal_boundary,3291
+47239,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,8,postal_boundary,4542
+47249,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,3,postal_boundary,5753
+47259,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,4,postal_boundary,5491
+47269,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,14,postal_boundary,3295
 47279,Duisburg,DE,Nordrhein-Westfalen,Duisburg,W. Europe Standard Time,true,1,21,postal_boundary,2264
-47441,Moers,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,1,postal_boundary,7620
-47443,Moers,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,2,postal_boundary,6933
+47441,Moers,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,1,postal_boundary,7622
+47443,Moers,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,2,postal_boundary,6935
 47445,Moers,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,3,postal_boundary,6776
 47447,Moers,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,4,postal_boundary,6304
 47475,Kamp-Lintfort,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,1,postal_boundary,10188
@@ -468,16 +468,16 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 47546,Kalkar,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,5239
 47551,Bedburg-Hau,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,4822
 47559,Kranenburg,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,3974
-47574,Goch,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,12558
+47574,Goch,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,12559
 47589,Uedem,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,2748
-47608,Geldern,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,11673
+47608,Geldern,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,11717
 47623,Kevelaer-Mitte,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,0
 47624,Kevelaer-Twisteden,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,0
 47625,Kevelaer-Wetten,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,0
 47626,Kevelaer-Winnekendonk,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,0
 47627,Kevelaer-Kervenheim,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,0
 47638,Straelen,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,5544
-47647,Kerken,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,4692
+47647,Kerken,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,4694
 47652,Weeze,DE,Nordrhein-Westfalen,Kreis Kleve,W. Europe Standard Time,true,1,1,postal_boundary,4103
 47661,Issum,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,1,postal_boundary,4335
 47665,Sonsbeck,DE,Nordrhein-Westfalen,Kreis Wesel,W. Europe Standard Time,true,1,1,postal_boundary,2821
@@ -494,30 +494,30 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 47829,Krefeld,DE,Nordrhein-Westfalen,Krefeld,W. Europe Standard Time,true,1,5,postal_boundary,4949
 47839,Krefeld,DE,Nordrhein-Westfalen,Krefeld,W. Europe Standard Time,true,1,6,postal_boundary,4873
 47877,Willich,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,16212
-47906,Kempen,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,10879
+47906,Kempen,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,10881
 47918,Tönisvorst,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,8944
 47929,Grefrath,DE,Nordrhein-Westfalen,Kreis Viersen,W. Europe Standard Time,true,1,1,postal_boundary,5354
-48143,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,13,postal_boundary,2331
+48143,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,13,postal_boundary,2332
 48145,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,12,postal_boundary,3050
-48147,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,8,postal_boundary,4352
+48147,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,8,postal_boundary,4354
 48149,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,10,postal_boundary,3591
 48151,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,9,postal_boundary,4023
 48153,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,11,postal_boundary,3168
-48155,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,6,postal_boundary,5467
-48157,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,5,postal_boundary,6033
-48159,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,7,postal_boundary,5075
+48155,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,6,postal_boundary,5468
+48157,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,5,postal_boundary,6035
+48159,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,7,postal_boundary,5077
 48161,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,2,postal_boundary,7211
-48163,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,3,postal_boundary,6986
+48163,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,3,postal_boundary,6988
 48165,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,4,postal_boundary,6984
-48167,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,1,postal_boundary,7780
-48231,Warendorf,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,12068
+48167,Münster,DE,Nordrhein-Westfalen,Münster,W. Europe Standard Time,true,1,1,postal_boundary,7785
+48231,Warendorf,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,12069
 48249,Dülmen,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,14385
 48268,Greven,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,10638
-48282,Emsdetten,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,11337
-48291,Telgte,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,6401
+48282,Emsdetten,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,11338
+48291,Telgte,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,6402
 48301,Nottuln,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,6877
 48308,Senden,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,6288
-48317,Drensteinfurt,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,5351
+48317,Drensteinfurt,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,5352
 48324,Sendenhorst,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,4293
 48329,Havixbeck,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,3781
 48336,Sassenberg,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,4535
@@ -532,19 +532,19 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 48431,Rheine,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,3,postal_boundary,7524
 48432,Rheine,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,2,postal_boundary,7817
 48477,Hörstel,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,6914
-48485,Neuenkirchen,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,4502
+48485,Neuenkirchen,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,4510
 48493,Wettringen,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,2709
 48496,Hopsten,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,2597
 48565,Steinfurt,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,11410
-48599,Gronau,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,15543
+48599,Gronau,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,15544
 48607,Ochtrup,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,6542
 48612,Horstmar,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,2336
 48619,Heek,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,2800
 48624,Schöppingen,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,2078
 48629,Metelen,DE,Nordrhein-Westfalen,Kreis Steinfurt,W. Europe Standard Time,true,1,1,postal_boundary,2185
-48653,Coesfeld,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,12230
-48683,Ahaus,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,12784
-48691,Vreden,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,7133
+48653,Coesfeld,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,12231
+48683,Ahaus,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,12790
+48691,Vreden,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,7140
 48703,Stadtlohn,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,6399
 48712,Gescher,DE,Nordrhein-Westfalen,Kreis Borken,W. Europe Standard Time,true,1,1,postal_boundary,4970
 48720,Rosendahl,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,3509
@@ -569,45 +569,45 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 50171,Kerpen,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,2,postal_boundary,5878
 50181,Bedburg,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,8153
 50189,Elsdorf,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7033
-50226,Frechen,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,13118
+50226,Frechen,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,13122
 50259,Pulheim,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,17616
 50321,Brühl,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,11307
-50354,Hürth,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,14760
+50354,Hürth,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,14761
 50374,Erftstadt,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,16549
 50389,Wesseling,DE,Nordrhein-Westfalen,Rhein-Erft-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,9655
-50667,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,38,postal_boundary,1804
-50668,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,42,postal_boundary,1563
-50670,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,39,postal_boundary,1798
+50667,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,38,postal_boundary,1813
+50668,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,42,postal_boundary,1565
+50670,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,39,postal_boundary,1800
 50672,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,43,postal_boundary,1346
-50674,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,37,postal_boundary,1902
+50674,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,37,postal_boundary,1903
 50676,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,33,postal_boundary,2076
 50677,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,44,postal_boundary,1195
 50678,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,36,postal_boundary,1931
 50679,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,40,postal_boundary,1716
-50733,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,16,postal_boundary,4014
+50733,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,16,postal_boundary,4013
 50735,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,21,postal_boundary,3650
-50737,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,28,postal_boundary,2979
+50737,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,29,postal_boundary,2978
 50739,Köln Bilderstöckchen,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,1,postal_boundary,0
 50739,Mauenheim,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,false,2,1,postal_boundary,0
 50765,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,12,postal_boundary,4748
 50767,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,14,postal_boundary,4495
-50769,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,3,postal_boundary,6712
-50823,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,29,postal_boundary,2979
-50825,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,25,postal_boundary,3535
+50769,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,3,postal_boundary,6722
+50823,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,28,postal_boundary,2980
+50825,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,25,postal_boundary,3536
 50827,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,18,postal_boundary,3885
 50829,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,17,postal_boundary,4005
-50858,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,13,postal_boundary,4669
-50859,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,1,postal_boundary,6959
+50858,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,13,postal_boundary,4673
+50859,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,1,postal_boundary,6961
 50931,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,34,postal_boundary,2044
 50933,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,26,postal_boundary,3488
 50935,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,30,postal_boundary,2834
 50937,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,31,postal_boundary,2782
 50939,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,41,postal_boundary,1633
-50968,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,19,postal_boundary,3861
+50968,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,19,postal_boundary,3860
 50969,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,35,postal_boundary,1948
-50996,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,20,postal_boundary,3815
+50996,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,20,postal_boundary,3816
 50997,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,9,postal_boundary,5153
-50999,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,8,postal_boundary,5190
+50999,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,8,postal_boundary,5193
 51061,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,2,postal_boundary,6754
 51063,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,24,postal_boundary,3585
 51065,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,32,postal_boundary,2370
@@ -622,12 +622,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 51147,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,7,postal_boundary,5498
 51149,Köln,DE,Nordrhein-Westfalen,Köln,W. Europe Standard Time,true,1,22,postal_boundary,3611
 51371,Leverkusen,DE,Nordrhein-Westfalen,Leverkusen,W. Europe Standard Time,true,1,3,postal_boundary,6057
-51373,Leverkusen,DE,Nordrhein-Westfalen,Leverkusen,W. Europe Standard Time,true,1,4,postal_boundary,5530
+51373,Leverkusen,DE,Nordrhein-Westfalen,Leverkusen,W. Europe Standard Time,true,1,4,postal_boundary,5531
 51375,Leverkusen,DE,Nordrhein-Westfalen,Leverkusen,W. Europe Standard Time,true,1,2,postal_boundary,6298
 51377,Leverkusen,DE,Nordrhein-Westfalen,Leverkusen,W. Europe Standard Time,true,1,5,postal_boundary,4581
 51379,Leverkusen,DE,Nordrhein-Westfalen,Leverkusen,W. Europe Standard Time,true,1,6,postal_boundary,4522
 51381,Leverkusen,DE,Nordrhein-Westfalen,Leverkusen,W. Europe Standard Time,true,1,1,postal_boundary,6492
-51399,Burscheid,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5396
+51399,Burscheid,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5397
 51427,Bergisch Gladbach,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,3,postal_boundary,5654
 51429,Bergisch Gladbach,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7171
 51465,Bergisch Gladbach,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,5,postal_boundary,3539
@@ -638,10 +638,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 51515,Kürten,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6616
 51519,Odenthal,DE,Nordrhein-Westfalen,Rheinisch-Bergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5065
 51545,Waldbröl,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5964
-51570,Windeck,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7921
+51570,Windeck,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7922
 51580,Reichshof,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6582
 51588,Nümbrecht,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5808
-51597,Morsbach,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3841
+51597,Morsbach,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3842
 51643,Gummersbach,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,3,postal_boundary,4340
 51645,Gummersbach,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5257
 51647,Gummersbach,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,2,postal_boundary,4570
@@ -651,31 +651,31 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 51709,Marienheide,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4247
 51766,Engelskirchen,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6608
 51789,Lindlar,DE,Nordrhein-Westfalen,Oberbergischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6923
-52062,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,8,postal_boundary,2986
-52064,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,9,postal_boundary,2663
-52066,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,3,postal_boundary,6058
-52068,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,10,postal_boundary,1672
+52062,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,8,postal_boundary,2987
+52064,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,9,postal_boundary,2678
+52066,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,3,postal_boundary,6063
+52068,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,10,postal_boundary,1674
 52070,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,7,postal_boundary,3488
 52072,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,6,postal_boundary,4854
-52074,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,4,postal_boundary,6030
-52076,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,2,postal_boundary,6092
-52078,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,5,postal_boundary,5969
-52080,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,6178
-52134,Herzogenrath,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,13761
-52146,Würselen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,10135
-52152,Simmerath,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,5922
-52156,Monschau,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,5116
-52159,Roetgen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,3279
-52222,Stolberg,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,2,postal_boundary,935
-52223,Stolberg,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,1663
+52074,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,4,postal_boundary,6034
+52076,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,2,postal_boundary,6102
+52078,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,5,postal_boundary,5975
+52080,Aachen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,6179
+52134,Herzogenrath,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,13768
+52146,Würselen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,10136
+52152,Simmerath,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,5929
+52156,Monschau,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,5128
+52159,Roetgen,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,3283
+52222,Stolberg,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,2,postal_boundary,936
+52223,Stolberg,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,1668
 52224,Stolberg,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,3,postal_boundary,636
-52249,Eschweiler,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,15565
+52249,Eschweiler,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,15568
 52349,Düren,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,4,postal_boundary,3264
 52351,Düren,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,3,postal_boundary,5184
-52353,Düren,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,2,postal_boundary,7512
+52353,Düren,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,2,postal_boundary,7513
 52355,Düren,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,7712
-52372,Kreuzau,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,6465
-52379,Langerwehe,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,5229
+52372,Kreuzau,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,6466
+52379,Langerwehe,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,5225
 52382,Niederzier,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,4860
 52385,Nideggen,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,4119
 52388,Nörvenich,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,3849
@@ -688,38 +688,38 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 52445,Titz,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,3334
 52457,Aldenhoven,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,4320
 52459,Inden,DE,Nordrhein-Westfalen,Kreis Düren,W. Europe Standard Time,true,1,1,postal_boundary,2521
-52477,Alsdorf,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,13392
-52499,Baesweiler,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,8059
+52477,Alsdorf,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,13401
+52499,Baesweiler,DE,Nordrhein-Westfalen,Städteregion Aachen,W. Europe Standard Time,true,1,1,postal_boundary,8068
 52511,Geilenkirchen,DE,Nordrhein-Westfalen,Kreis Heinsberg,W. Europe Standard Time,true,1,1,postal_boundary,9264
 52525,Heinsberg,DE,Nordrhein-Westfalen,Kreis Heinsberg,W. Europe Standard Time,true,1,1,postal_boundary,14822
 52525,Waldfeucht,DE,Nordrhein-Westfalen,Kreis Heinsberg,W. Europe Standard Time,false,2,1,postal_boundary,3800
 52531,Übach-Palenberg,DE,Nordrhein-Westfalen,Kreis Heinsberg,W. Europe Standard Time,true,1,1,postal_boundary,7956
 52538,Gangelt,DE,Nordrhein-Westfalen,Kreis Heinsberg,W. Europe Standard Time,true,1,1,postal_boundary,5199
 52538,Selfkant,DE,Nordrhein-Westfalen,Kreis Heinsberg,W. Europe Standard Time,false,2,1,postal_boundary,4667
-53111,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,9,postal_boundary,3819
+53111,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,9,postal_boundary,3820
 53113,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,16,postal_boundary,2597
-53115,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,11,postal_boundary,3372
+53115,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,11,postal_boundary,3371
 53117,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,7,postal_boundary,4126
-53119,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,15,postal_boundary,2808
-53121,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,13,postal_boundary,3191
-53123,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,2,postal_boundary,4681
-53125,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,8,postal_boundary,3953
+53119,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,15,postal_boundary,2809
+53121,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,13,postal_boundary,3190
+53123,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,2,postal_boundary,4687
+53125,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,8,postal_boundary,3954
 53127,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,10,postal_boundary,3795
-53129,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,14,postal_boundary,3104
+53129,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,14,postal_boundary,3105
 53173,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,17,postal_boundary,2356
-53175,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,3,postal_boundary,4496
-53177,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,6,postal_boundary,4362
+53175,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,3,postal_boundary,4501
+53177,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,6,postal_boundary,4361
 53179,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,12,postal_boundary,3295
 53225,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,4,postal_boundary,4470
 53227,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,5,postal_boundary,4450
 53229,Bonn,DE,Nordrhein-Westfalen,Bonn,W. Europe Standard Time,true,1,1,postal_boundary,6457
 53332,Bornheim,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,14461
 53340,Meckenheim,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,8010
-53343,Wachtberg,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5385
-53347,Alfter,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7495
-53359,Rheinbach,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,8463
-53604,Bad Honnef,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7495
-53639,Königswinter,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,13522
+53343,Wachtberg,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5387
+53347,Alfter,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7496
+53359,Rheinbach,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,8477
+53604,Bad Honnef,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7511
+53639,Königswinter,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,13536
 53721,Siegburg,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,10383
 53757,Sankt Augustin,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,15944
 53773,Hennef,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,437
@@ -737,7 +737,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 53894,Mechernich,DE,Nordrhein-Westfalen,Kreis Euskirchen,W. Europe Standard Time,true,1,1,postal_boundary,10167
 53902,Bad Münstereifel,DE,Nordrhein-Westfalen,Kreis Euskirchen,W. Europe Standard Time,true,1,1,postal_boundary,7054
 53909,Zülpich,DE,Nordrhein-Westfalen,Kreis Euskirchen,W. Europe Standard Time,true,1,1,postal_boundary,7959
-53913,Swisttal,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6232
+53913,Swisttal,DE,Nordrhein-Westfalen,Rhein-Sieg-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6252
 53919,Weilerswist,DE,Nordrhein-Westfalen,Kreis Euskirchen,W. Europe Standard Time,true,1,1,postal_boundary,5847
 53925,Kall,DE,Nordrhein-Westfalen,Kreis Euskirchen,W. Europe Standard Time,true,1,1,postal_boundary,4379
 53937,Schleiden,DE,Nordrhein-Westfalen,Kreis Euskirchen,W. Europe Standard Time,true,1,1,postal_boundary,5142
@@ -764,13 +764,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 57392,Schmallenberg,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,8300
 57399,Kirchhundem,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,4141
 57413,Finnentrop,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,5207
-57439,Attendorn,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,7120
+57439,Attendorn,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,7121
 57462,Olpe,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,7029
 57482,Wenden,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,6334
-57489,Drolshagen,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,3603
+57489,Drolshagen,DE,Nordrhein-Westfalen,Kreis Olpe,W. Europe Standard Time,true,1,1,postal_boundary,3607
 58089,Hagen,DE,Nordrhein-Westfalen,Hagen,W. Europe Standard Time,true,1,7,postal_boundary,3697
 58091,Hagen,DE,Nordrhein-Westfalen,Hagen,W. Europe Standard Time,true,1,5,postal_boundary,3811
-58093,Hagen,DE,Nordrhein-Westfalen,Hagen,W. Europe Standard Time,true,1,1,postal_boundary,6049
+58093,Hagen,DE,Nordrhein-Westfalen,Hagen,W. Europe Standard Time,true,1,1,postal_boundary,6050
 58095,Hagen,DE,Nordrhein-Westfalen,Hagen,W. Europe Standard Time,true,1,8,postal_boundary,2568
 58097,Hagen,DE,Nordrhein-Westfalen,Hagen,W. Europe Standard Time,true,1,6,postal_boundary,3751
 58099,Hagen,DE,Nordrhein-Westfalen,Hagen,W. Europe Standard Time,true,1,4,postal_boundary,4438
@@ -779,9 +779,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 58239,Schwerte,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,1,postal_boundary,11329
 58256,Ennepetal,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7394
 58285,Gevelsberg,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6759
-58300,Wetter,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6
-58313,Herdecke,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5133
-58332,Schwelm,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5585
+58300,Wetter,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7
+58313,Herdecke,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5134
+58332,Schwelm,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5584
 58339,Breckerfeld,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2685
 58452,Witten,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,3,postal_boundary,3858
 58453,Witten,DE,Nordrhein-Westfalen,Ennepe-Ruhr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4236
@@ -799,8 +799,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 58553,Halver,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4148
 58566,Kierspe,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4326
 58579,Schalksmühle,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3024
-58636,Iserlohn,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,2,postal_boundary,4151
-58638,Iserlohn,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,4,postal_boundary,3881
+58636,Iserlohn,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,2,postal_boundary,4152
+58638,Iserlohn,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,4,postal_boundary,3888
 58640,Iserlohn,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5056
 58642,Iserlohn,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,5,postal_boundary,2939
 58644,Iserlohn,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,3,postal_boundary,4139
@@ -818,7 +818,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 58840,Plettenberg,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6891
 58849,Herscheid,DE,Nordrhein-Westfalen,Märkischer Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2345
 59063,Hamm,DE,Nordrhein-Westfalen,Hamm,W. Europe Standard Time,true,1,8,postal_boundary,3815
-59065,Hamm,DE,Nordrhein-Westfalen,Hamm,W. Europe Standard Time,true,1,7,postal_boundary,4063
+59065,Hamm,DE,Nordrhein-Westfalen,Hamm,W. Europe Standard Time,true,1,7,postal_boundary,4064
 59067,Hamm,DE,Nordrhein-Westfalen,Hamm,W. Europe Standard Time,true,1,5,postal_boundary,4386
 59069,Hamm,DE,Nordrhein-Westfalen,Hamm,W. Europe Standard Time,true,1,4,postal_boundary,4838
 59071,Hamm,DE,Nordrhein-Westfalen,Hamm,W. Europe Standard Time,true,1,1,postal_boundary,7484
@@ -828,9 +828,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 59174,Kamen,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,1,postal_boundary,11257
 59192,Bergkamen,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,1,postal_boundary,12158
 59199,Bönen,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,1,postal_boundary,5219
-59227,Ahlen,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,2,postal_boundary,7404
-59229,Ahlen,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,7427
-59269,Beckum,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,11291
+59227,Ahlen,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,2,postal_boundary,7397
+59229,Ahlen,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,7421
+59269,Beckum,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,11293
 59302,Oelde,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,8516
 59320,Ennigerloh,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,6462
 59329,Wadersloh,DE,Nordrhein-Westfalen,Kreis Warendorf,W. Europe Standard Time,true,1,1,postal_boundary,3992
@@ -840,17 +840,17 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 59387,Ascheberg,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,4790
 59394,Nordkirchen,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,3343
 59399,Olfen,DE,Nordrhein-Westfalen,Kreis Coesfeld,W. Europe Standard Time,true,1,1,postal_boundary,4562
-59423,Unna,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,3,postal_boundary,4728
-59425,Unna,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,2,postal_boundary,5536
+59423,Unna,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,3,postal_boundary,4729
+59425,Unna,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,2,postal_boundary,5537
 59427,Unna,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,1,postal_boundary,5682
 59439,Holzwickede,DE,Nordrhein-Westfalen,Kreis Unna,W. Europe Standard Time,true,1,1,postal_boundary,4593
 59457,Werl,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,8601
 59469,Ense,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,4059
-59494,Soest,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,13983
+59494,Soest,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,13984
 59505,Bad Sassendorf,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,3887
 59510,Lippetal,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,4101
 59514,Welver,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,4256
-59519,Möhnesee,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,4238
+59519,Möhnesee,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,1,postal_boundary,4240
 59555,Lippstadt,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,2,postal_boundary,5220
 59556,Lippstadt,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,4,postal_boundary,4133
 59557,Lippstadt,DE,Nordrhein-Westfalen,Kreis Soest,W. Europe Standard Time,true,1,3,postal_boundary,4949
@@ -869,7 +869,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 59872,Meschede,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,9680
 59889,Eslohe,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,1
 59909,Bestwig,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,3426
-59929,Brilon,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,8618
+59929,Brilon,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,8623
 59939,Olsberg,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,4875
 59955,Winterberg,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,5651
 59964,Medebach,DE,Nordrhein-Westfalen,Hochsauerlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,3758
