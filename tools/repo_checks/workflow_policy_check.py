@@ -11,6 +11,16 @@ WORKFLOW_ROOT = Path(".github/workflows")
 PULL_REQUEST_WORKFLOW = WORKFLOW_ROOT / "pull-request.yml"
 DATA_REFRESH_WORKFLOW = WORKFLOW_ROOT / "data-refresh.yml"
 
+USES_LINE_PATTERN = re.compile(
+    r"^\s*(?:-\s*)?uses:\s*(?P<reference>\S+)(?:\s+(?P<comment>#.*))?\s*$"
+)
+EXTERNAL_ACTION_PATTERN = re.compile(
+    r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*@(?P<revision>\S+)"
+)
+IMMUTABLE_ACTION_REVISION_PATTERN = re.compile(r"[0-9a-f]{40}")
+ACTION_VERSION_COMMENT_PATTERN = re.compile(
+    r"# v(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)"
+)
 PR_REQUIRED_SNIPPETS = (
     "pull_request:",
     "pytest --cov=open_postal_codes --cov-fail-under=90",
@@ -39,7 +49,6 @@ DATA_REFRESH_REQUIRED_SNIPPETS = (
     "github.event_name == 'schedule'",
     "github.event_name == 'workflow_dispatch' && inputs.publish",
     "PUBLISH_ENABLED",
-    "actions/create-github-app-token@v3",
     "DATA_REFRESH_APP_CLIENT_ID",
     "DATA_REFRESH_APP_PRIVATE_KEY",
     "permission-contents: write",
@@ -68,7 +77,6 @@ DATA_REFRESH_REQUIRED_SNIPPETS = (
     "--match-head-commit",
     "mergedAt",
     "if: always()",
-    "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
     "retention-days: 14",
 )
 DATA_REFRESH_FORBIDDEN_SNIPPETS = (
@@ -120,6 +128,58 @@ def job_blocks(text: str) -> dict[str, str]:
     return blocks
 
 
+def validate_action_pins(path: Path, text: str, repository_root: Path) -> list[str]:
+    errors: list[str] = []
+    display_path = path.relative_to(repository_root)
+
+    for line_number, line in enumerate(text.splitlines(), start=1):
+        if re.match(r"^\s*(?:-\s*)?uses:\s*", line) is None:
+            continue
+
+        uses_match = USES_LINE_PATTERN.fullmatch(line)
+        if uses_match is None:
+            errors.append(f"{display_path}:{line_number} action reference must be a literal value")
+            continue
+
+        reference = uses_match.group("reference")
+        if len(reference) >= 2 and reference[0] == reference[-1] and reference[0] in "\"'":
+            reference = reference[1:-1]
+        if reference.startswith("./"):
+            action_root = (repository_root / ".github/actions").resolve()
+            local_path = (repository_root / reference).resolve()
+            inside_root = local_path.is_relative_to(action_root)
+            if not reference.startswith("./.github/actions/") or not inside_root:
+                errors.append(
+                    f"{display_path}:{line_number} local action must stay under .github/actions"
+                )
+            continue
+        if reference.startswith("docker://"):
+            continue
+
+        action_match = EXTERNAL_ACTION_PATTERN.fullmatch(reference)
+        if action_match is None:
+            errors.append(
+                f"{display_path}:{line_number} external action must use owner/repository@revision"
+            )
+            continue
+
+        revision = action_match.group("revision")
+        if IMMUTABLE_ACTION_REVISION_PATTERN.fullmatch(revision) is None:
+            errors.append(
+                f"{display_path}:{line_number} external action must pin exactly "
+                "40 lowercase hexadecimal characters"
+            )
+
+        comment = uses_match.group("comment") or ""
+        if ACTION_VERSION_COMMENT_PATTERN.fullmatch(comment) is None:
+            errors.append(
+                f"{display_path}:{line_number} external action must keep an exact "
+                "semantic-version comment such as # v1.2.3"
+            )
+
+    return errors
+
+
 def validate_workflow_basics(path: Path, text: str, repository_root: Path) -> list[str]:
     errors: list[str] = []
     display_path = path.relative_to(repository_root)
@@ -167,6 +227,11 @@ def validate_pull_request_workflow(text: str) -> list[str]:
 
 def validate_data_refresh_workflow(text: str) -> list[str]:
     errors: list[str] = []
+
+    for action in ("actions/create-github-app-token", "actions/upload-artifact"):
+        pattern = rf"(?m)^(?:      - uses:|        uses:)\s*[\"']?{re.escape(action)}@"
+        if re.search(pattern, text) is None:
+            errors.append(f"data-refresh workflow is missing required Action: {action}")
 
     if re.search(r'cron:\s*["\']17 2 \* \* 1["\']', text) is None:
         errors.append("data-refresh workflow must keep the weekly Monday schedule")
@@ -246,7 +311,7 @@ def validate_data_refresh_workflow(text: str) -> list[str]:
 def validate_workflows(repository_root: Path = Path(".")) -> list[str]:
     errors: list[str] = []
     workflow_root = repository_root / WORKFLOW_ROOT
-    workflow_paths = sorted(workflow_root.glob("*.yml"))
+    workflow_paths = sorted((*workflow_root.glob("*.yml"), *workflow_root.glob("*.yaml")))
     if not workflow_paths:
         return [f"missing workflow directory or files: {workflow_root}"]
 
@@ -255,6 +320,12 @@ def validate_workflows(repository_root: Path = Path(".")) -> list[str]:
         text = path.read_text(encoding="utf-8")
         workflow_texts[path.relative_to(repository_root)] = text
         errors.extend(validate_workflow_basics(path, text, repository_root))
+        errors.extend(validate_action_pins(path, text, repository_root))
+
+    action_root = repository_root / ".github/actions"
+    action_paths = sorted((*action_root.rglob("action.yml"), *action_root.rglob("action.yaml")))
+    for path in action_paths:
+        errors.extend(validate_action_pins(path, path.read_text(encoding="utf-8"), repository_root))
 
     pull_request_text = workflow_texts.get(PULL_REQUEST_WORKFLOW)
     if pull_request_text is None:

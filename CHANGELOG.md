@@ -48,6 +48,7 @@ The format follows Keep a Changelog.
 - The data-refresh workflow now runs code preflight checks before downloads, validates generated data afterwards, and uses serialized 120-minute `ubuntu-24.04` runs.
 - Manual data-refresh runs now default to validation-only; publication requires an explicit `publish` input on `main` while scheduled `main` runs continue to publish automatically.
 - Required data pull request checks now have a 20-minute bound with exact-head and merge postcondition diagnostics.
+- GitHub Actions now use immutable release commit SHAs with readable version comments, and repository policy rejects floating Action tags.
 
 ### Removed
 
