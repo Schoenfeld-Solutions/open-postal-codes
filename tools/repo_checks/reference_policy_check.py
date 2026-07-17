@@ -37,6 +37,7 @@ FORBIDDEN_TOKEN_PATTERN = re.compile(
     rf")(?![A-Za-z0-9])",
     re.IGNORECASE,
 )
+ISO_3166_2_CODE_PATTERN = re.compile(r"(?<![A-Z0-9])[A-Z]{2}-[A-Z0-9]{1,3}(?![A-Z0-9])")
 
 
 def tracked_files() -> tuple[Path, ...]:
@@ -71,7 +72,8 @@ def reference_errors_for_path(path: Path) -> list[str]:
         if reference.lower() in lowered:
             errors.append(f"{path}: contains prohibited reference")
             return errors
-    if FORBIDDEN_TOKEN_PATTERN.search(text):
+    token_scan_text = ISO_3166_2_CODE_PATTERN.sub("", text)
+    if FORBIDDEN_TOKEN_PATTERN.search(token_scan_text):
         errors.append(f"{path}: contains prohibited standalone token")
     return errors
 

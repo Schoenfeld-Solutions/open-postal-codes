@@ -32,10 +32,18 @@
     },
     "brandenburg": {
       "url": "https://download.geofabrik.de/europe/germany/brandenburg-latest.osm.pbf",
-      "content_length": 297144138,
-      "etag": "\"11b60f4a-6555c2f4435c2\"",
-      "last_modified": "Mon, 29 Jun 2026 03:37:58 GMT",
-      "md5": "d506304bf29a76db2375009085516ee2"
+      "content_length": 297756334,
+      "etag": "\"11bf66ae-656c6577444f1\"",
+      "last_modified": "Fri, 17 Jul 2026 03:42:11 GMT",
+      "md5": "c93c262d0a5c44462b9e0f0d90b26a75",
+      "accepted_at": "2026-07-17T03:53:35Z",
+      "verified_at": "2026-07-17T03:53:35Z",
+      "record_count": 463,
+      "unique_post_code_count": 393,
+      "state_codes": [
+        "DE-BE",
+        "DE-BB"
+      ]
     },
     "bremen": {
       "url": "https://download.geofabrik.de/europe/germany/bremen-latest.osm.pbf",
@@ -109,10 +117,17 @@
     },
     "sachsen-anhalt": {
       "url": "https://download.geofabrik.de/europe/germany/sachsen-anhalt-latest.osm.pbf",
-      "content_length": 172467697,
-      "etag": "\"a47a5f1-6555c303dcce5\"",
-      "last_modified": "Mon, 29 Jun 2026 03:38:14 GMT",
-      "md5": "15031ae108aada8b5247cebb6f59ce08"
+      "content_length": 172861327,
+      "etag": "\"a4da78f-656c656b10415\"",
+      "last_modified": "Fri, 17 Jul 2026 03:41:58 GMT",
+      "md5": "deaecfb5a9ae4bcdfcd5f88d70c13a65",
+      "accepted_at": "2026-07-17T03:53:35Z",
+      "verified_at": "2026-07-17T03:53:35Z",
+      "record_count": 252,
+      "unique_post_code_count": 186,
+      "state_codes": [
+        "DE-ST"
+      ]
     },
     "schleswig-holstein": {
       "url": "https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf",

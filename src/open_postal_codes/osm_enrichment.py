@@ -15,6 +15,7 @@ MIN_BOUNDARY_INTERSECTION_RATIO = 0.001
 class StateBoundary:
     """A first-level administrative boundary used for state enrichment."""
 
+    code: str
     name: str
     geometry: BaseGeometry
 
@@ -41,6 +42,7 @@ class AddressEnrichmentResult:
 
     evidence: dict[tuple[str, str, str, str], AddressEvidence]
     dropped_candidate_count: int
+    inferred_evidence_keys: frozenset[tuple[str, str, str, str]]
 
 
 class AddressAggregateLike(Protocol):
@@ -108,8 +110,11 @@ def accepted_address_evidence(
     country_geometry: BaseGeometry,
     states: list[StateBoundary],
     counties: list[CountyBoundary],
+    inferred_state_name: str = "",
+    inference_exclusion_geometry: BaseGeometry | None = None,
 ) -> AddressEnrichmentResult:
     evidence: dict[tuple[str, str, str, str], AddressEvidence] = {}
+    inferred_evidence_keys: set[tuple[str, str, str, str]] = set()
     dropped_candidate_count = 0
     for (code, city), aggregate in addresses.items():
         if aggregate.geometry is not None and not geometry_representative_in_country(
@@ -121,12 +126,25 @@ def accepted_address_evidence(
 
         state_name = ""
         county_name = ""
+        state_was_inferred = False
         if aggregate.geometry is not None:
             point = aggregate.geometry.representative_point()
             state_name = state_name_for_point(point, states)
+            if (
+                not state_name
+                and inferred_state_name
+                and (
+                    inference_exclusion_geometry is None
+                    or not inference_exclusion_geometry.covers(point)
+                )
+            ):
+                state_name = inferred_state_name
+                state_was_inferred = True
             county_name = county_name_for_point(point, counties)
 
         key = (code, city, state_name, county_name)
+        if state_was_inferred:
+            inferred_evidence_keys.add(key)
         existing = evidence.get(key)
         if existing is None:
             evidence[key] = AddressEvidence(count=aggregate.count, geometry=aggregate.geometry)
@@ -135,7 +153,9 @@ def accepted_address_evidence(
             if existing.geometry is None and aggregate.geometry is not None:
                 existing.geometry = aggregate.geometry
     return AddressEnrichmentResult(
-        evidence=evidence, dropped_candidate_count=dropped_candidate_count
+        evidence=evidence,
+        dropped_candidate_count=dropped_candidate_count,
+        inferred_evidence_keys=frozenset(inferred_evidence_keys),
     )
 
 

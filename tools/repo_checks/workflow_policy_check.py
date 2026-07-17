@@ -29,6 +29,16 @@ PR_FORBIDDEN_SNIPPETS = (
 )
 DATA_REFRESH_REQUIRED_SNIPPETS = (
     "workflow_dispatch:",
+    "publish:",
+    "default: false",
+    "type: boolean",
+    "cancel-in-progress: false",
+    "runs-on: ubuntu-24.04",
+    "timeout-minutes: 120",
+    "github.ref == 'refs/heads/main'",
+    "github.event_name == 'schedule'",
+    "github.event_name == 'workflow_dispatch' && inputs.publish",
+    "PUBLISH_ENABLED",
     "actions/create-github-app-token@v3",
     "DATA_REFRESH_APP_CLIENT_ID",
     "DATA_REFRESH_APP_PRIVATE_KEY",
@@ -36,17 +46,30 @@ DATA_REFRESH_REQUIRED_SNIPPETS = (
     "permission-pull-requests: write",
     "permission-checks: read",
     "persist-credentials: false",
+    "pytest -m unit --cov=open_postal_codes --cov-fail-under=90",
+    "ruff check .",
+    "ruff format --check .",
+    "mypy src tests tools",
     "python3 -u -m open_postal_codes.refresh_data",
+    '--report-path "${RUNNER_TEMP}/refresh-report.json"',
     "open_postal_codes.refresh_data",
     "tools.repo_checks.all_checks",
     "open_postal_codes.pages --output-root out",
+    "git diff --check",
+    "last-known-good fallback",
     "chore(data): refresh post code outputs",
     "gh pr checks",
     "--required --watch --fail-fast",
+    "timeout --signal=TERM --kill-after=30s 20m",
+    "headRefOid",
     "gh pr merge",
     "--squash",
     "--delete-branch",
     "--match-head-commit",
+    "mergedAt",
+    "if: always()",
+    "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+    "retention-days: 14",
 )
 DATA_REFRESH_FORBIDDEN_SNIPPETS = (
     "GH_TOKEN: ${{ github.token }}",
@@ -54,6 +77,20 @@ DATA_REFRESH_FORBIDDEN_SNIPPETS = (
     "data(dach): refresh post code outputs",
     'Path(\\"data/public',
     "python3 -m open_postal_codes.refresh_data",
+    "actions/cache@",
+)
+PUBLICATION_STEP_NAMES = (
+    "Generate publication token",
+    "Resolve GitHub App bot identity",
+    "Commit data changes",
+    "Open or update data pull request",
+    "Wait for required pull request checks",
+    "Merge data pull request",
+)
+ALWAYS_STEP_NAMES = (
+    "Ensure diagnostic report exists",
+    "Write final refresh summary",
+    "Upload refresh diagnostics",
 )
 ALLOWED_TOP_LEVEL_KEYS = {
     "name",
@@ -148,6 +185,60 @@ def validate_data_refresh_workflow(text: str) -> list[str]:
         errors.append(
             "data-refresh workflow write permissions must stay scoped to data pull requests"
         )
+
+    publish_expression = re.compile(
+        r"PUBLISH_ENABLED:\s*>-\s*"
+        r"\$\{\{\s*github\.ref == 'refs/heads/main'\s*&&\s*"
+        r"\(github\.event_name == 'schedule'\s*\|\|\s*"
+        r"\(github\.event_name == 'workflow_dispatch'\s*&&\s*inputs\.publish\)\)\s*\}\}",
+        re.DOTALL,
+    )
+    if publish_expression.search(text) is None:
+        errors.append(
+            "data-refresh publication must allow only schedules or opted-in manual runs on main"
+        )
+
+    if re.search(r"(?m)^\s+matrix:\s*$", text):
+        errors.append("data-refresh workflow must not use a source or country matrix")
+
+    ordered_steps = (
+        "Run code preflight checks",
+        "Refresh regional Geofabrik data",
+        "Validate generated data and package Pages",
+    )
+    step_positions = [text.find(f"- name: {step_name}") for step_name in ordered_steps]
+    if any(position < 0 for position in step_positions) or step_positions != sorted(step_positions):
+        errors.append(
+            "data-refresh workflow must run code preflight before refresh and data gates after"
+        )
+
+    publication_condition = (
+        "if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'"
+    )
+    for step_name in PUBLICATION_STEP_NAMES:
+        pattern = (
+            rf"(?m)^      - name: {re.escape(step_name)}\n"
+            rf"        {re.escape(publication_condition)}$"
+        )
+        if re.search(pattern, text) is None:
+            errors.append(
+                f"data-refresh publication step must use the main-only publish gate: {step_name}"
+            )
+
+    for step_name in ALWAYS_STEP_NAMES:
+        pattern = rf"(?m)^      - name: {re.escape(step_name)}\n        if: always\(\)$"
+        if re.search(pattern, text) is None:
+            errors.append(f"data-refresh diagnostic step must always run: {step_name}")
+
+    artifact_block = re.search(
+        r"(?ms)^      - name: Upload refresh diagnostics\n(?P<block>.*?)(?=^      - name:|\Z)",
+        text,
+    )
+    if artifact_block is not None and any(
+        snippet in artifact_block.group("block")
+        for snippet in ("geofabrik-pbf", ".osm.pbf", "data/public", "data/regional")
+    ):
+        errors.append("data-refresh diagnostic artifact must not upload PBF or data outputs")
 
     return errors
 

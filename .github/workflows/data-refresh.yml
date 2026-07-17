@@ -5,6 +5,11 @@ on:
     - cron: "17 2 * * 1"
   workflow_dispatch:
     inputs:
+      publish:
+        description: "Publish validated changes through the automated data pull request"
+        required: false
+        default: false
+        type: boolean
       regions:
         description: "Optional comma-separated Geofabrik region names for a scoped refresh"
         required: false
@@ -19,15 +24,21 @@ permissions:
 
 concurrency:
   group: data-refresh-post-code
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest
-    timeout-minutes: 240
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      PUBLISH_ENABLED: >-
+        ${{ github.ref == 'refs/heads/main' &&
+            (github.event_name == 'schedule' ||
+            (github.event_name == 'workflow_dispatch' && inputs.publish)) }}
 
     steps:
       - name: Validate automation configuration
+        if: env.PUBLISH_ENABLED == 'true'
         env:
           DATA_REFRESH_APP_CLIENT_ID: ${{ vars.DATA_REFRESH_APP_CLIENT_ID }}
           DATA_REFRESH_APP_PRIVATE_KEY: ${{ secrets.DATA_REFRESH_APP_PRIVATE_KEY }}
@@ -41,6 +52,7 @@ jobs:
           fi
 
       - name: Generate checkout token
+        if: env.PUBLISH_ENABLED == 'true'
         id: checkout-token
         uses: actions/create-github-app-token@v3
         with:
@@ -50,7 +62,7 @@ jobs:
 
       - uses: actions/checkout@v6
         with:
-          token: ${{ steps.checkout-token.outputs.token }}
+          token: ${{ steps.checkout-token.outputs.token || github.token }}
           persist-credentials: false
 
       - name: Set up Python
@@ -62,19 +74,26 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -e '.[dev]'
 
-      - name: Refresh regional Geofabrik data
+      - name: Run code preflight checks
         run: |
-          python3 -u -m open_postal_codes.refresh_data \
-            --download-root "${RUNNER_TEMP}/geofabrik-pbf" \
-            --countries "${{ inputs.countries }}" \
-            --regions "${{ inputs.regions }}"
-
-      - name: Run quality gates
-        run: |
-          python3 -m pytest --cov=open_postal_codes --cov-fail-under=90
+          python3 -m pytest -m unit --cov=open_postal_codes --cov-fail-under=90
           python3 -m ruff check .
           python3 -m ruff format --check .
           python3 -m mypy src tests tools
+
+      - name: Refresh regional Geofabrik data
+        env:
+          REQUESTED_COUNTRIES: ${{ inputs.countries }}
+          REQUESTED_REGIONS: ${{ inputs.regions }}
+        run: |
+          python3 -u -m open_postal_codes.refresh_data \
+            --download-root "${RUNNER_TEMP}/geofabrik-pbf" \
+            --countries "${REQUESTED_COUNTRIES}" \
+            --regions "${REQUESTED_REGIONS}" \
+            --report-path "${RUNNER_TEMP}/refresh-report.json"
+
+      - name: Validate generated data and package Pages
+        run: |
           python3 -m tools.repo_checks.all_checks
           python3 -m open_postal_codes.pages --output-root out
           git diff --check
@@ -82,27 +101,21 @@ jobs:
       - name: Detect data changes
         id: changes
         run: |
-          if git diff --quiet; then
-            echo "changed=false" >> "${GITHUB_OUTPUT}"
-          else
+          git diff --name-only -- \
+            data/public/v1 \
+            data/regional/v1 \
+            data/sources/geofabrik-regions.json \
+            > "${RUNNER_TEMP}/changed-data-files.txt"
+          if [ -s "${RUNNER_TEMP}/changed-data-files.txt" ]; then
             echo "changed=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "changed=false" >> "${GITHUB_OUTPUT}"
           fi
 
       - name: Collect refresh metadata
         id: metadata
         run: |
-          requested_countries="${{ inputs.countries }}"
-          requested_regions="${{ inputs.regions }}"
-          if [ -z "${requested_countries}" ]; then
-            requested_countries="de,at,ch"
-          fi
-          if [ -z "${requested_regions}" ]; then
-            requested_regions="all selected sources"
-          fi
-          {
-            echo "requested_countries=${requested_countries}"
-            echo "requested_regions=${requested_regions}"
-            python3 - <<'PY'
+          python3 - <<'PY' >> "${GITHUB_OUTPUT}"
           import json
           from pathlib import Path
 
@@ -116,45 +129,57 @@ jobs:
               records = max(sum(1 for _ in path.open(encoding="utf-8")) - 1, 0)
               print(f"records_{country}={records}")
           PY
-          } >> "${GITHUB_OUTPUT}"
-
-      - name: Write refresh summary
-        run: |
-          {
-            echo "## Data refresh summary"
-            echo ""
-            echo "- Countries: ${{ steps.metadata.outputs.requested_countries }}"
-            echo "- Regions: ${{ steps.metadata.outputs.requested_regions }}"
-            echo "- Data refreshed at: ${{ steps.metadata.outputs.data_refreshed_at }}"
-            echo "- DE records: ${{ steps.metadata.outputs.records_de }}"
-            echo "- AT records: ${{ steps.metadata.outputs.records_at }}"
-            echo "- CH records: ${{ steps.metadata.outputs.records_ch }}"
-            echo "- Tracked data changed: ${{ steps.changes.outputs.changed }}"
-            echo ""
-            echo "### Changed files"
-            changed_files="$(git diff --name-only data/public/v1 data/regional/v1 data/sources/geofabrik-regions.json)"
-            if [ -n "${changed_files}" ]; then
-              printf "%s\n" "${changed_files}" | sed "s/^/- \`/" | sed "s/$/\`/"
-            else
-              echo "- None"
-            fi
-          } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare data pull request body
-        if: steps.changes.outputs.changed == 'true'
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        env:
+          REQUESTED_COUNTRIES_INPUT: ${{ inputs.countries }}
+          REQUESTED_REGIONS_INPUT: ${{ inputs.regions }}
+          DATA_REFRESHED_AT: ${{ steps.metadata.outputs.data_refreshed_at }}
+          RECORDS_DE: ${{ steps.metadata.outputs.records_de }}
+          RECORDS_AT: ${{ steps.metadata.outputs.records_at }}
+          RECORDS_CH: ${{ steps.metadata.outputs.records_ch }}
+          REFRESH_REPORT_PATH: ${{ runner.temp }}/refresh-report.json
         run: |
+          requested_countries="${REQUESTED_COUNTRIES_INPUT:-de,at,ch}"
+          requested_regions="${REQUESTED_REGIONS_INPUT:-all selected sources}"
           changed_files="$(git diff --name-only data/public/v1 data/regional/v1 data/sources/geofabrik-regions.json)"
           {
             echo "Refreshes D-A-CH post code outputs from Geofabrik PBF files."
             echo ""
             echo "## Summary"
-            echo "- Countries: ${{ steps.metadata.outputs.requested_countries }}"
-            echo "- Regions: ${{ steps.metadata.outputs.requested_regions }}"
-            echo "- Data refreshed at: ${{ steps.metadata.outputs.data_refreshed_at }}"
-            echo "- DE records: ${{ steps.metadata.outputs.records_de }}"
-            echo "- AT records: ${{ steps.metadata.outputs.records_at }}"
-            echo "- CH records: ${{ steps.metadata.outputs.records_ch }}"
+            echo "- Countries: ${requested_countries}"
+            echo "- Regions: ${requested_regions}"
+            echo "- Data refreshed at: ${DATA_REFRESHED_AT}"
+            echo "- DE records: ${RECORDS_DE}"
+            echo "- AT records: ${RECORDS_AT}"
+            echo "- CH records: ${RECORDS_CH}"
             echo "- Quality gates passed in the refresh workflow."
+            echo ""
+            echo "## Source status"
+            echo ""
+            python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          def markdown(value: object) -> str:
+              return str(value).replace("`", "'").replace("\n", " ")
+
+          report = json.loads(
+              Path(os.environ["REFRESH_REPORT_PATH"]).read_text(encoding="utf-8")
+          )
+          sources = report.get("sources", [])
+          for source in sources if isinstance(sources, list) else []:
+              if not isinstance(source, dict):
+                  continue
+              name = markdown(source.get("region", "unknown"))
+              status = markdown(source.get("status", "unknown"))
+              fallback = " — **last-known-good fallback**" if status == "reused_last_good" else ""
+              error_class = source.get("error_class")
+              reason = f"; error class: `{markdown(error_class)}`" if error_class else ""
+              print(f"- `{name}`: `{status}`{fallback}{reason}")
+          PY
             echo ""
             echo "## Changed files"
             if [ -n "${changed_files}" ]; then
@@ -165,7 +190,7 @@ jobs:
           } > "${RUNNER_TEMP}/data-refresh-body.md"
 
       - name: Generate publication token
-        if: steps.changes.outputs.changed == 'true'
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
         id: publication-token
         uses: actions/create-github-app-token@v3
         with:
@@ -176,7 +201,7 @@ jobs:
           permission-checks: read
 
       - name: Resolve GitHub App bot identity
-        if: steps.changes.outputs.changed == 'true'
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
         id: app-user
         env:
           GH_TOKEN: ${{ steps.publication-token.outputs.token }}
@@ -184,7 +209,7 @@ jobs:
           echo "user_id=$(gh api "/users/${{ steps.publication-token.outputs.app-slug }}[bot]" --jq .id)" >> "${GITHUB_OUTPUT}"
 
       - name: Commit data changes
-        if: steps.changes.outputs.changed == 'true'
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
         id: commit
         env:
           GH_TOKEN: ${{ steps.publication-token.outputs.token }}
@@ -202,7 +227,7 @@ jobs:
           git push --force-with-lease origin HEAD:dev/data-refresh-post-code
 
       - name: Open or update data pull request
-        if: steps.changes.outputs.changed == 'true'
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
         id: data-pr
         env:
           GH_TOKEN: ${{ steps.publication-token.outputs.token }}
@@ -228,15 +253,36 @@ jobs:
           } >> "${GITHUB_OUTPUT}"
 
       - name: Wait for required pull request checks
-        if: steps.changes.outputs.changed == 'true'
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ steps.publication-token.outputs.token }}
         run: |
           sleep 20
-          gh pr checks "${{ steps.data-pr.outputs.number }}" --required --watch --fail-fast
+          set +e
+          timeout --signal=TERM --kill-after=30s 20m \
+            gh pr checks "${{ steps.data-pr.outputs.number }}" \
+              --required --watch --fail-fast
+          checks_status=$?
+          set -e
+          if [ "${checks_status}" -ne 0 ]; then
+            echo "Required checks failed or did not complete within 20 minutes." >&2
+            gh pr view "${{ steps.data-pr.outputs.number }}" \
+              --json url,state,headRefOid,mergeStateStatus >&2 || true
+            gh pr checks "${{ steps.data-pr.outputs.number }}" --required >&2 || true
+            exit "${checks_status}"
+          fi
+
+          checked_head="$(gh pr view "${{ steps.data-pr.outputs.number }}" --json headRefOid --jq .headRefOid)"
+          pr_state="$(gh pr view "${{ steps.data-pr.outputs.number }}" --json state --jq .state)"
+          if [ "${checked_head}" != "${{ steps.commit.outputs.head_sha }}" ] || [ "${pr_state}" != "OPEN" ]; then
+            echo "Pull request postcondition failed before merge." >&2
+            gh pr view "${{ steps.data-pr.outputs.number }}" \
+              --json url,state,headRefOid,mergeStateStatus >&2
+            exit 1
+          fi
 
       - name: Merge data pull request
-        if: steps.changes.outputs.changed == 'true'
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ steps.publication-token.outputs.token }}
         run: |
@@ -246,21 +292,227 @@ jobs:
             --match-head-commit "${{ steps.commit.outputs.head_sha }}" \
             --subject "chore(data): refresh post code outputs" \
             --body "Automated D-A-CH post code data refresh."
-          {
-            echo ""
-            echo "## Data refresh pull request"
-            echo ""
-            echo "- Pull request: ${{ steps.data-pr.outputs.url }}"
-            echo "- Head commit: ${{ steps.commit.outputs.head_sha }}"
-            echo "- Merge method: squash"
-            echo "- Branch deleted: yes"
-          } >> "${GITHUB_STEP_SUMMARY}"
+          merged_state="$(gh pr view "${{ steps.data-pr.outputs.number }}" --json state --jq .state)"
+          merged_head="$(gh pr view "${{ steps.data-pr.outputs.number }}" --json headRefOid --jq .headRefOid)"
+          merged_at="$(gh pr view "${{ steps.data-pr.outputs.number }}" --json mergedAt --jq .mergedAt)"
+          if [ "${merged_state}" != "MERGED" ] \
+            || [ "${merged_head}" != "${{ steps.commit.outputs.head_sha }}" ] \
+            || [ -z "${merged_at}" ]; then
+            echo "Pull request merge postcondition failed." >&2
+            gh pr view "${{ steps.data-pr.outputs.number }}" \
+              --json url,state,mergedAt,headRefOid,mergeCommit >&2
+            exit 1
+          fi
 
-      - name: Write failure summary
-        if: failure()
+          for attempt in 1 2 3; do
+            if ! git ls-remote --exit-code --heads origin dev/data-refresh-post-code >/dev/null 2>&1; then
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Merged refresh branch still exists after deletion checks." >&2
+          exit 1
+
+      - name: Ensure diagnostic report exists
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          REFRESH_REPORT_PATH: ${{ runner.temp }}/refresh-report.json
         run: |
-          {
-            echo "## Data refresh failed"
-            echo ""
-            echo "Review the first failed step above. If the refresh step passed and the quality gates failed, the generated data did not satisfy the repository guardrails and no pull request was opened."
-          } >> "${GITHUB_STEP_SUMMARY}"
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          report_path = Path(os.environ["REFRESH_REPORT_PATH"])
+          report_error = ""
+          if report_path.is_file():
+              try:
+                  report = json.loads(report_path.read_text(encoding="utf-8"))
+                  if not isinstance(report, dict):
+                      report_error = "report_root_is_not_an_object"
+              except (OSError, json.JSONDecodeError):
+                  report_error = "invalid_report_json"
+          else:
+              report_error = "workflow_failed_before_report"
+
+          if not report_error:
+              raise SystemExit(0)
+
+          report_path.parent.mkdir(parents=True, exist_ok=True)
+          report_path.write_text(
+              json.dumps(
+                  {
+                      "status": "failed",
+                      "error_class": report_error,
+                      "sources": [],
+                      "warnings": [
+                          "The refresh command did not produce a valid diagnostic report."
+                      ],
+                  },
+                  indent=2,
+                  sort_keys=True,
+              )
+              + "\n",
+              encoding="utf-8",
+          )
+          if os.environ["JOB_STATUS"] == "success":
+              raise SystemExit("successful refresh is missing a valid diagnostic report")
+          PY
+
+      - name: Upload refresh diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: data-refresh-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/refresh-report.json
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Write final refresh summary
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          TRACKED_DATA_CHANGED: ${{ steps.changes.outputs.changed }}
+          DATA_REFRESHED_AT: ${{ steps.metadata.outputs.data_refreshed_at }}
+          RECORDS_DE: ${{ steps.metadata.outputs.records_de }}
+          RECORDS_AT: ${{ steps.metadata.outputs.records_at }}
+          RECORDS_CH: ${{ steps.metadata.outputs.records_ch }}
+          DATA_PULL_REQUEST_URL: ${{ steps.data-pr.outputs.url }}
+          REQUESTED_COUNTRIES: ${{ inputs.countries }}
+          REQUESTED_REGIONS: ${{ inputs.regions }}
+          REFRESH_REPORT_PATH: ${{ runner.temp }}/refresh-report.json
+          CHANGED_FILES_PATH: ${{ runner.temp }}/changed-data-files.txt
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+          from typing import Any
+
+          def markdown(value: Any) -> str:
+              return str(value if value not in (None, "") else "unknown").replace(
+                  "|", "\\|"
+              ).replace("\n", " ")
+
+          report = json.loads(
+              Path(os.environ["REFRESH_REPORT_PATH"]).read_text(encoding="utf-8")
+          )
+          sources = report.get("sources", [])
+          if isinstance(sources, dict):
+              sources = [
+                  {"source": source_name, **details}
+                  for source_name, details in sources.items()
+                  if isinstance(details, dict)
+              ]
+          if not isinstance(sources, list):
+              sources = []
+
+          requested_countries = os.environ["REQUESTED_COUNTRIES"] or "de,at,ch"
+          requested_regions = (
+              os.environ["REQUESTED_REGIONS"] or "all selected sources"
+          )
+          lines = [
+              "## Data refresh summary",
+              "",
+              f"- Workflow result: {markdown(os.environ['JOB_STATUS'])}",
+              f"- Refresh result: {markdown(report.get('status'))}",
+              f"- Countries: {markdown(requested_countries)}",
+              f"- Regions: {markdown(requested_regions)}",
+              f"- Publication enabled: {markdown(os.environ['PUBLISH_ENABLED'])}",
+              f"- Tracked data changed: {markdown(os.environ['TRACKED_DATA_CHANGED'])}",
+              f"- Data refreshed at: {markdown(os.environ['DATA_REFRESHED_AT'])}",
+              f"- Records (DE / AT / CH): {markdown(os.environ['RECORDS_DE'])} / "
+              f"{markdown(os.environ['RECORDS_AT'])} / {markdown(os.environ['RECORDS_CH'])}",
+          ]
+          if report.get("error_class"):
+              lines.append(f"- Error class: {markdown(report['error_class'])}")
+          if os.environ["DATA_PULL_REQUEST_URL"]:
+              lines.append(
+                  f"- Pull request: {markdown(os.environ['DATA_PULL_REQUEST_URL'])}"
+              )
+
+          if sources:
+              lines.extend(
+                  [
+                      "",
+                      "### Source results",
+                      "",
+                      "| Source | Status | Records | Unique post codes | Inferred | Error |",
+                      "| --- | --- | ---: | ---: | ---: | --- |",
+                  ]
+              )
+              for source in sources:
+                  if not isinstance(source, dict):
+                      continue
+                  lines.append(
+                      "| "
+                      + " | ".join(
+                          markdown(value)
+                          for value in (
+                              source.get(
+                                  "source", source.get("region", source.get("name"))
+                              ),
+                              source.get("status"),
+                              source.get("records"),
+                              source.get("unique_post_codes"),
+                              source.get(
+                                  "inferred_records",
+                                  source.get("inferred_state_records"),
+                              ),
+                              source.get("error_class"),
+                          )
+                      )
+                      + " |"
+                  )
+
+          warnings = report.get("warnings", [])
+          if isinstance(warnings, list) and warnings:
+              lines.extend(["", "### Warnings", ""])
+              lines.extend(f"- {markdown(warning)}" for warning in warnings)
+
+          changed_files_path = Path(os.environ["CHANGED_FILES_PATH"])
+          if changed_files_path.is_file():
+              changed_files = changed_files_path.read_text(
+                  encoding="utf-8"
+              ).splitlines()
+          else:
+              changed_files_result = subprocess.run(
+                  [
+                      "git",
+                      "diff",
+                      "--name-only",
+                      "--",
+                      "data/public/v1",
+                      "data/regional/v1",
+                      "data/sources/geofabrik-regions.json",
+                  ],
+                  check=False,
+                  capture_output=True,
+                  text=True,
+              )
+              changed_files = (
+                  changed_files_result.stdout.splitlines()
+                  if changed_files_result.returncode == 0
+                  else []
+              )
+          lines.extend(["", "### Changed files", ""])
+          lines.extend(f"- `{markdown(path)}`" for path in changed_files)
+          if not changed_files:
+              lines.append("- None")
+
+          if os.environ["JOB_STATUS"] != "success":
+              lines.extend(
+                  [
+                      "",
+                      "The workflow stopped before publication or left the data pull request "
+                      "open. Review the first failed step and the diagnostic artifact.",
+                  ]
+              )
+
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open(
+              "a", encoding="utf-8"
+          ) as summary:
+              summary.write("\n".join(lines) + "\n")
+          PY

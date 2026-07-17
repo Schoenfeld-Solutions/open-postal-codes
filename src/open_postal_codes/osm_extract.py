@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -13,7 +15,15 @@ from shapely.geometry import Point
 from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
-from open_postal_codes.countries import DEFAULT_COUNTRY_CONFIG, CountryConfig, get_country_config
+from open_postal_codes.countries import (
+    DEFAULT_COUNTRY_CONFIG,
+    AdministrativeState,
+    CountryConfig,
+    GeofabrikIntegrityError,
+    GeofabrikRegion,
+    RemoteMetadata,
+    get_country_config,
+)
 from open_postal_codes.osm_enrichment import (
     CountyBoundary,
     StateBoundary,
@@ -52,6 +62,7 @@ class PostalBoundaryCandidate:
     code: str
     cities: tuple[str, ...]
     geometry: BaseGeometry
+    state_code: str
 
 
 @dataclass
@@ -60,6 +71,7 @@ class AddressAggregate:
 
     count: int
     geometry: BaseGeometry | None
+    state_code: str
 
 
 @dataclass(frozen=True)
@@ -70,6 +82,8 @@ class ExtractionResult:
     postal_boundary_count: int
     address_candidate_count: int
     dropped_candidate_count: int
+    observed_state_codes: tuple[str, ...]
+    inferred_state_records: int
 
 
 class _PostCodeExtractionHandler(osmium.SimpleHandler):
@@ -78,8 +92,9 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         self.country_config = country_config
         self.wkt_factory = osmium.geom.WKTFactory()
         self.country_geometries: list[BaseGeometry] = []
-        self.region_geometries: list[BaseGeometry] = []
         self.states: list[StateBoundary] = []
+        self.unrecognized_state_geometries: list[BaseGeometry] = []
+        self.observed_state_codes: set[str] = set()
         self.counties: list[CountyBoundary] = []
         self.fallback_counties: list[CountyBoundary] = []
         self.postal_boundaries: list[PostalBoundaryCandidate] = []
@@ -113,19 +128,37 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
             self.country_geometries.append(geometry)
             return
 
-        if _is_region_boundary(tags, self.country_config):
-            self.region_geometries.append(geometry)
-            name = normalize_text(tags.get("name"))
-            if name:
-                self.states.append(StateBoundary(name=name, geometry=geometry))
+        state_code = _state_code_from_tags(tags, self.country_config)
+        if state_code:
+            self.observed_state_codes.add(state_code)
+            administrative_state = _administrative_state_for_code(
+                self.country_config,
+                state_code,
+            )
+            if administrative_state is None or _has_foreign_country_tag(tags, self.country_config):
+                self.unrecognized_state_geometries.append(geometry)
+            else:
+                self.states.append(
+                    StateBoundary(
+                        code=administrative_state.code,
+                        name=administrative_state.name,
+                        geometry=geometry,
+                    )
+                )
 
-        if _is_county_boundary(tags, self.country_config):
+        if _is_county_boundary(tags, self.country_config) and not _has_foreign_country_tag(
+            tags,
+            self.country_config,
+        ):
             name = normalize_text(tags.get("name"))
             if name:
                 self.counties.append(CountyBoundary(name=name, geometry=geometry))
             return
 
-        if _is_county_fallback_boundary(tags, self.country_config):
+        if _is_county_fallback_boundary(
+            tags,
+            self.country_config,
+        ) and not _has_foreign_country_tag(tags, self.country_config):
             name = normalize_text(tags.get("name"))
             if name:
                 self.fallback_counties.append(CountyBoundary(name=name, geometry=geometry))
@@ -141,7 +174,7 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         if _has_foreign_country_tag(tags, self.country_config):
             self.dropped_candidate_count += 1
             return
-
+        state_code = normalize_text(tags.get("ISO3166-2")).upper()
         code = normalize_post_code(
             tags.get("postal_code") or tags.get("postcode"),
             country=self.country_config.code,
@@ -154,9 +187,7 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         if not code or not cities:
             self.dropped_candidate_count += 1
             return
-        self.postal_boundaries.append(
-            PostalBoundaryCandidate(code=code, cities=cities, geometry=geometry)
-        )
+        self.postal_boundaries.append(PostalBoundaryCandidate(code, cities, geometry, state_code))
 
     def _collect_address(
         self,
@@ -166,7 +197,7 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         if _has_foreign_country_tag(tags, self.country_config):
             self.dropped_candidate_count += 1
             return
-
+        state_code = normalize_text(tags.get("ISO3166-2")).upper()
         code = normalize_post_code(tags.get("addr:postcode"), country=self.country_config.code)
         city = normalize_text(tags.get("addr:city"))
         if not code or not city:
@@ -176,8 +207,11 @@ class _PostCodeExtractionHandler(osmium.SimpleHandler):
         key = (code, city)
         existing = self.addresses.get(key)
         if existing is None:
-            self.addresses[key] = AddressAggregate(count=1, geometry=geometry)
+            self.addresses[key] = AddressAggregate(1, geometry, state_code)
         else:
+            if existing.state_code != state_code and (existing.state_code or state_code):
+                self.dropped_candidate_count += 1
+                return
             existing.count += 1
             if existing.geometry is None and geometry is not None:
                 existing.geometry = geometry
@@ -189,10 +223,15 @@ def extract_post_codes_from_osm(
     *,
     country: str = DEFAULT_COUNTRY_CONFIG.code,
     min_address_evidence: int = DEFAULT_MIN_ADDRESS_EVIDENCE,
+    region: GeofabrikRegion | None = None,
 ) -> ExtractionResult:
     """Extract post code records from a PBF or OSM XML file."""
 
     country_config = get_country_config(country)
+    if region is not None and get_country_config(region.country).code != country_config.code:
+        raise ValueError(
+            f"region {region.name} belongs to {region.country}, not {country_config.slug}"
+        )
     handler = _PostCodeExtractionHandler(country_config)
     area_filter = osmium.filter.KeyFilter("boundary", "addr:postcode")
     object_filter = osmium.filter.KeyFilter("boundary", "addr:postcode")
@@ -208,13 +247,13 @@ def extract_post_codes_from_osm(
         elif isinstance(entity, osmium.osm.Area):
             handler.area(entity)
 
-    country_source_geometries = (
-        handler.country_geometries
-        or handler.region_geometries
-        or [state.geometry for state in handler.states]
-        or [county.geometry for county in handler.counties]
-        or [county.geometry for county in handler.fallback_counties]
-    )
+    country_source_geometries = [
+        *handler.country_geometries,
+        *(state.geometry for state in handler.states),
+        *handler.unrecognized_state_geometries,
+        *(county.geometry for county in handler.counties),
+        *(county.geometry for county in handler.fallback_counties),
+    ]
     if not country_source_geometries:
         raise ExtractionError(
             f"{country_config.name} administrative boundary was not found in the OSM file"
@@ -222,27 +261,71 @@ def extract_post_codes_from_osm(
 
     country_geometry = unary_union(country_source_geometries)
     states = country_states(country_geometry=country_geometry, states=handler.states)
+    observed_state_codes = tuple(sorted(handler.observed_state_codes))
+    inferred_primary_state = _primary_state_for_inference(
+        country_config=country_config,
+        region=region,
+        states=states,
+    )
+    inference_exclusion_geometry = (
+        unary_union(handler.unrecognized_state_geometries)
+        if handler.unrecognized_state_geometries
+        else None
+    )
     counties = country_counties(
         country_geometry=country_geometry,
         counties=handler.counties,
         fallback_counties=handler.fallback_counties,
     )
+    for key, aggregate in tuple(handler.addresses.items()):
+        if not _state_tag_matches_geometry(
+            aggregate.state_code,
+            aggregate.geometry,
+            states,
+            country_config,
+            region,
+        ):
+            handler.dropped_candidate_count += aggregate.count
+            del handler.addresses[key]
     address_enrichment = accepted_address_evidence(
         addresses=handler.addresses,
         country_geometry=country_geometry,
         states=states,
         counties=counties,
+        inferred_state_name=(inferred_primary_state.name if inferred_primary_state else ""),
+        inference_exclusion_geometry=inference_exclusion_geometry,
     )
     handler.dropped_candidate_count += address_enrichment.dropped_candidate_count
     address_evidence = address_enrichment.evidence
 
     boundary_records: list[PostCodeRecord] = []
+    inferred_record_identities: set[tuple[str, str, str, str, str, str]] = set()
     boundary_codes: set[str] = set()
     for candidate in handler.postal_boundaries:
         if not geometry_representative_in_country(candidate.geometry, country_geometry):
             handler.dropped_candidate_count += 1
             continue
+        if not _state_tag_matches_geometry(
+            candidate.state_code,
+            candidate.geometry,
+            states,
+            country_config,
+            region,
+        ):
+            handler.dropped_candidate_count += 1
+            continue
         state_names = state_names_for_boundary(candidate.geometry, states)
+        boundary_state_was_inferred = False
+        if (
+            not state_names
+            and inferred_primary_state is not None
+            and _geometry_allows_state_inference(
+                candidate.geometry,
+                inference_exclusion_geometry,
+            )
+        ):
+            state_names = (inferred_primary_state.name,)
+            boundary_state_was_inferred = True
         county_names = county_names_for_boundary(candidate.geometry, counties)
         for city in candidate.cities:
             candidate_states = candidate_states_for_city(
@@ -260,42 +343,49 @@ def extract_post_codes_from_osm(
                     address_evidence=address_evidence,
                 )
                 for county_name in candidate_counties:
-                    boundary_records.append(
-                        PostCodeRecord(
+                    record = PostCodeRecord(
+                        code=candidate.code,
+                        city=city,
+                        country=country_config.code,
+                        time_zone=country_config.time_zone,
+                        state=state_name,
+                        county=county_name,
+                        source=POSTAL_BOUNDARY_SOURCE,
+                        evidence_count=evidence_count(
                             code=candidate.code,
                             city=city,
-                            country=country_config.code,
-                            time_zone=country_config.time_zone,
                             state=state_name,
                             county=county_name,
-                            source=POSTAL_BOUNDARY_SOURCE,
-                            evidence_count=evidence_count(
-                                code=candidate.code,
-                                city=city,
-                                state=state_name,
-                                county=county_name,
-                                address_evidence=address_evidence,
-                            ),
-                        )
+                            address_evidence=address_evidence,
+                        ),
                     )
+                    boundary_records.append(record)
+                    evidence_key = (candidate.code, city, state_name, county_name)
+                    if (
+                        boundary_state_was_inferred
+                        and inferred_primary_state is not None
+                        and state_name == inferred_primary_state.name
+                    ) or evidence_key in address_enrichment.inferred_evidence_keys:
+                        inferred_record_identities.add(record.identity_key())
         boundary_codes.add(candidate.code)
 
     address_records: list[PostCodeRecord] = []
     for (code, city, state_name, county_name), evidence in address_evidence.items():
         if code in boundary_codes or evidence.count < min_address_evidence:
             continue
-        address_records.append(
-            PostCodeRecord(
-                code=code,
-                city=city,
-                country=country_config.code,
-                time_zone=country_config.time_zone,
-                state=state_name,
-                county=county_name,
-                source=ADDRESS_FALLBACK_SOURCE,
-                evidence_count=evidence.count,
-            )
+        record = PostCodeRecord(
+            code=code,
+            city=city,
+            country=country_config.code,
+            time_zone=country_config.time_zone,
+            state=state_name,
+            county=county_name,
+            source=ADDRESS_FALLBACK_SOURCE,
+            evidence_count=evidence.count,
         )
+        address_records.append(record)
+        if (code, city, state_name, county_name) in address_enrichment.inferred_evidence_keys:
+            inferred_record_identities.add(record.identity_key())
 
     records = dedupe_records([*boundary_records, *address_records])
     if not records:
@@ -306,6 +396,10 @@ def extract_post_codes_from_osm(
         postal_boundary_count=len(handler.postal_boundaries),
         address_candidate_count=handler.address_candidate_count,
         dropped_candidate_count=handler.dropped_candidate_count,
+        observed_state_codes=observed_state_codes,
+        inferred_state_records=sum(
+            record.identity_key() in inferred_record_identities for record in records
+        ),
     )
 
 
@@ -314,10 +408,11 @@ def extract_region_to_csv(
     output_path: Path,
     *,
     country: str = DEFAULT_COUNTRY_CONFIG.code,
+    region: GeofabrikRegion | None = None,
 ) -> ExtractionResult:
     """Extract one regional OSM file into a normalized regional CSV file."""
 
-    result = extract_post_codes_from_osm(input_path, country=country)
+    result = extract_post_codes_from_osm(input_path, country=country, region=region)
     write_post_code_csv(result.records, output_path)
     return result
 
@@ -334,13 +429,83 @@ def _is_country_boundary(tags: dict[str, str], country_config: CountryConfig) ->
     )
 
 
-def _is_region_boundary(tags: dict[str, str], country_config: CountryConfig) -> bool:
+def _state_code_from_tags(tags: dict[str, str], country_config: CountryConfig) -> str:
     iso_code = normalize_text(tags.get("ISO3166-2")).upper()
-    return (
+    if (
         tags.get("boundary") == "administrative"
         and tags.get("admin_level") in country_config.region_boundary_admin_levels
         and iso_code.startswith(f"{country_config.code}-")
+    ):
+        return iso_code
+    return ""
+
+
+def _administrative_state_for_code(
+    country_config: CountryConfig,
+    state_code: str,
+) -> AdministrativeState | None:
+    normalized_code = normalize_text(state_code).upper()
+    return next(
+        (state for state in country_config.states if state.code == normalized_code),
+        None,
     )
+
+
+def _primary_state_for_inference(
+    *,
+    country_config: CountryConfig,
+    region: GeofabrikRegion | None,
+    states: list[StateBoundary],
+) -> AdministrativeState | None:
+    if country_config.code != "DE" or region is None or region.primary_state_code is None:
+        return None
+
+    primary_state = _administrative_state_for_code(
+        country_config,
+        region.primary_state_code,
+    )
+    if primary_state is None:
+        raise ExtractionError(
+            f"{region.name} declares unknown primary state {region.primary_state_code}"
+        )
+
+    required_embedded_state_codes = set(region.required_state_codes) - {primary_state.code}
+    accepted_state_codes = {state.code for state in states if not state.geometry.is_empty}
+    if not required_embedded_state_codes.issubset(accepted_state_codes):
+        return None
+    return primary_state
+
+
+def _state_tag_matches_geometry(
+    state_code: str,
+    geometry: BaseGeometry | None,
+    states: list[StateBoundary],
+    country_config: CountryConfig,
+    region: GeofabrikRegion | None,
+) -> bool:
+    if not state_code:
+        return True
+    if _administrative_state_for_code(country_config, state_code) is None:
+        return False
+    if region is not None and state_code not in region.required_state_codes:
+        return False
+    if region is not None and state_code == region.primary_state_code:
+        return True
+    if geometry is None or geometry.is_empty:
+        return False
+    matching_states = [state for state in states if state.code == state_code]
+    return bool(state_names_for_boundary(geometry, matching_states))
+
+
+def _geometry_allows_state_inference(
+    geometry: BaseGeometry,
+    inference_exclusion_geometry: BaseGeometry | None,
+) -> bool:
+    if geometry.is_empty:
+        return False
+    if inference_exclusion_geometry is None:
+        return True
+    return not inference_exclusion_geometry.covers(geometry.representative_point())
 
 
 def _is_county_boundary(tags: dict[str, str], country_config: CountryConfig) -> bool:
@@ -368,10 +533,22 @@ def _is_postal_code_boundary(tags: dict[str, str]) -> bool:
 
 
 def _has_foreign_country_tag(tags: dict[str, str], country_config: CountryConfig) -> bool:
-    country = normalize_text(
-        tags.get("addr:country") or tags.get("is_in:country_code") or tags.get("country")
-    ).upper()
-    return bool(country and country != country_config.code)
+    countries = {
+        normalize_text(tags.get(key)).upper()
+        for key in (
+            "addr:country",
+            "is_in:country_code",
+            "ISO3166-1:alpha2",
+            "ISO3166-1",
+            "country",
+        )
+        if normalize_text(tags.get(key))
+    }
+    state_code = normalize_text(tags.get("ISO3166-2")).upper()
+    return bool(
+        any(country != country_config.code for country in countries)
+        or (state_code and not state_code.startswith(f"{country_config.code}-"))
+    )
 
 
 def _point_from_node(node: Any) -> BaseGeometry | None:
@@ -395,6 +572,49 @@ def _geometry_from_area(wkt_factory: Any, area: Any) -> BaseGeometry | None:
         return wkt.loads(wkt_factory.create_multipolygon(area))
     except (RuntimeError, ValueError):
         return None
+
+
+def download_region_once(
+    region: GeofabrikRegion, metadata: RemoteMetadata, target_path: Path
+) -> None:
+    """Download one PBF candidate and atomically accept it after integrity checks."""
+
+    temporary = target_path.with_suffix(f"{target_path.suffix}.part")
+    digest = hashlib.md5(usedforsecurity=False)
+    byte_count = 0
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with (
+            urllib.request.urlopen(region.url, timeout=120) as response,
+            temporary.open("wb") as output,
+        ):
+            while chunk := response.read(1024 * 1024):
+                output.write(chunk)
+                digest.update(chunk)
+                byte_count += len(chunk)
+    except BaseException:
+        temporary.unlink(missing_ok=True)
+        raise
+    if byte_count <= 0:
+        temporary.unlink(missing_ok=True)
+        raise GeofabrikIntegrityError(f"{region.url} downloaded as an empty file")
+    if byte_count != metadata.content_length or digest.hexdigest() != metadata.md5:
+        temporary.unlink(missing_ok=True)
+        detail = "size" if byte_count != metadata.content_length else "checksum"
+        raise GeofabrikIntegrityError(f"{region.url} {detail} mismatch")
+    temporary.replace(target_path)
+
+
+def existing_download_matches(path: Path, metadata: RemoteMetadata) -> bool:
+    """Return whether a local PBF matches the inventoried size and checksum."""
+
+    if not path.exists() or path.stat().st_size != metadata.content_length:
+        return False
+    digest = hashlib.md5(usedforsecurity=False)
+    with path.open("rb") as stream:
+        while chunk := stream.read(1024 * 1024):
+            digest.update(chunk)
+    return digest.hexdigest() == metadata.md5
 
 
 def parse_arguments(arguments: list[str] | None = None) -> argparse.Namespace:

@@ -5,13 +5,24 @@ from __future__ import annotations
 import csv
 import json
 import re
+import shutil
 import xml.etree.ElementTree as ElementTree
-from collections.abc import Iterable, Sequence
+from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass
+from datetime import UTC, datetime
 from pathlib import Path
+from tempfile import TemporaryDirectory
 from typing import Any, Literal
 
-from open_postal_codes.countries import DEFAULT_COUNTRY_CONFIG, get_country_config
+from open_postal_codes.countries import (
+    DEFAULT_COUNTRY_CONFIG,
+    CountryConfig,
+    GeofabrikRegion,
+    RemoteMetadata,
+    get_country_config,
+    remote_metadata_from_mapping,
+    remote_metadata_to_mapping,
+)
 
 POST_CODE_TITLE = "post_code"
 POST_CODE_FIELDS = (
@@ -32,6 +43,12 @@ DEFAULT_TIME_ZONE = DEFAULT_COUNTRY_CONFIG.time_zone
 PostCodeSource = Literal["postal_boundary", "address_fallback"]
 POSTAL_BOUNDARY_SOURCE: PostCodeSource = "postal_boundary"
 ADDRESS_FALLBACK_SOURCE: PostCodeSource = "address_fallback"
+
+
+class MetadataDocumentError(ValueError):
+    """A persisted refresh metadata document is malformed."""
+
+
 POST_CODE_SOURCES = (POSTAL_BOUNDARY_SOURCE, ADDRESS_FALLBACK_SOURCE)
 TRAILING_NOTE_PATTERN = re.compile(r"\s*\([^)]*\)\s*$")
 CITY_SEPARATOR_PATTERN = re.compile(r"\s*(?:,|;|\s+und\s+)\s*")
@@ -449,3 +466,182 @@ def write_public_post_code_files(records: Iterable[PostCodeRecord], output_root:
     write_post_code_json(ordered_records, output_root / "post_code.json")
     write_post_code_xml(ordered_records, output_root / "post_code.xml")
     return len(ordered_records)
+
+
+def replace_files_transactionally(
+    replacements: Sequence[tuple[Path, Path]], backup_root: Path
+) -> None:
+    """Replace files as one rollback-capable local transaction."""
+
+    canonical_targets = tuple(target.resolve() for _, target in replacements)
+    if len(set(canonical_targets)) != len(canonical_targets):
+        raise ValueError("transaction contains duplicate target paths")
+    backup_root.mkdir(parents=True, exist_ok=True)
+    committed: list[tuple[Path, Path | None]] = []
+    try:
+        for index, (staged, target) in enumerate(replacements):
+            target.parent.mkdir(parents=True, exist_ok=True)
+            backup = backup_root / str(index) if target.exists() else None
+            if backup is not None:
+                shutil.copy2(target, backup)
+            staged.replace(target)
+            committed.append((target, backup))
+    except BaseException:
+        for target, backup in reversed(committed):
+            if backup is None:
+                target.unlink(missing_ok=True)
+            else:
+                backup.replace(target)
+        raise
+
+
+def country_region_output_root(root: Path, country: CountryConfig) -> Path:
+    """Return the regional post code directory for one country."""
+
+    return root / country.slug / "post_code"
+
+
+def region_output_path(root: Path, region: GeofabrikRegion) -> Path:
+    """Return the persisted CSV path for one regional source."""
+
+    return country_region_output_root(root, get_country_config(region.country)) / region.output_name
+
+
+def public_country_output_root(root: Path, country: CountryConfig) -> Path:
+    """Return the public API data directory for one country."""
+
+    return root / country.slug
+
+
+def validate_refresh_paths(
+    download_root: Path,
+    metadata_path: Path,
+    region_root: Path,
+    public_root: Path,
+    report_path: Path | None,
+) -> None:
+    """Reject refresh paths whose writes could corrupt another output."""
+
+    download, metadata, regional, public = (
+        path.resolve() for path in (download_root, metadata_path, region_root, public_root)
+    )
+    report = report_path.resolve() if report_path is not None else None
+
+    def inside(path: Path, root: Path) -> bool:
+        return path == root or root in path.parents
+
+    if inside(regional, public) or inside(public, regional):
+        raise ValueError("regional and public output roots must not overlap")
+    if inside(metadata, regional) or inside(metadata, public):
+        raise ValueError("metadata path must not be inside an output root")
+    if inside(download, regional) or inside(download, public) or download == metadata:
+        raise ValueError("download root conflicts with a persisted output path")
+    if report is not None and (
+        report == metadata or inside(report, regional) or inside(report, public)
+    ):
+        raise ValueError("report path conflicts with a persisted output path")
+
+
+def write_json_atomically(path: Path, payload: Any) -> None:
+    """Write JSON through a sibling temporary file and atomically replace its target."""
+
+    temporary = path.with_name(f".{path.name}.tmp")
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        content = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+        temporary.write_text(content, encoding="utf-8")
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def load_metadata_document(path: Path) -> tuple[str, dict[str, RemoteMetadata]]:
+    """Load the full refresh timestamp and backward-compatible source metadata."""
+
+    if not path.exists():
+        return "", {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        metadata = {
+            name: remote_metadata_from_mapping(values)
+            for name, values in payload.get("regions", {}).items()
+        }
+    except (AttributeError, KeyError, TypeError, ValueError) as error:
+        raise MetadataDocumentError(f"invalid source metadata document: {path}") from error
+    return str(payload.get("generated_at", "")), metadata
+
+
+def load_metadata(path: Path) -> dict[str, RemoteMetadata]:
+    """Load persisted source metadata."""
+
+    return load_metadata_document(path)[1]
+
+
+def write_metadata_file(
+    path: Path, metadata: Mapping[str, RemoteMetadata], generated_at: str
+) -> None:
+    """Write one complete refresh metadata document."""
+
+    payload: dict[str, Any] = {
+        "generated_at": generated_at,
+        "source": "Geofabrik D-A-CH PBF files",
+        "regions": {
+            name: remote_metadata_to_mapping(values) for name, values in sorted(metadata.items())
+        },
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_metadata(
+    path: Path,
+    metadata: Mapping[str, RemoteMetadata],
+    *,
+    generated_at: str | None = None,
+) -> None:
+    """Atomically persist source metadata."""
+
+    temporary = path.with_name(f".{path.name}.tmp")
+    timestamp = generated_at or iso_timestamp(datetime.now(UTC))
+    try:
+        write_metadata_file(temporary, metadata, timestamp)
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def write_refresh_files_transactionally(
+    *,
+    metadata_path: Path,
+    metadata: Mapping[str, RemoteMetadata],
+    generated_at: str,
+    regional_outputs: Sequence[tuple[Iterable[PostCodeRecord], Path]],
+    public_outputs: Sequence[tuple[Iterable[PostCodeRecord], Path]],
+) -> None:
+    """Stage and atomically replace validated regional, public, and metadata files."""
+
+    metadata_path.parent.mkdir(parents=True, exist_ok=True)
+    with TemporaryDirectory(prefix="refresh-transaction-", dir=metadata_path.parent) as name:
+        root = Path(name)
+        replacements: list[tuple[Path, Path]] = []
+        for index, (records, target) in enumerate(regional_outputs):
+            staged = root / "regional" / str(index)
+            write_post_code_csv(records, staged)
+            replacements.append((staged, target))
+        for index, (records, target_root) in enumerate(public_outputs):
+            staged_root = root / "public" / str(index)
+            write_public_post_code_files(records, staged_root)
+            replacements.extend(
+                (staged_root / f"post_code.{suffix}", target_root / f"post_code.{suffix}")
+                for suffix in ("csv", "json", "xml")
+            )
+        staged_metadata = root / "metadata.json"
+        write_metadata_file(staged_metadata, metadata, generated_at)
+        replacements.append((staged_metadata, metadata_path))
+        replace_files_transactionally(replacements, root / "backups")
+
+
+def iso_timestamp(value: datetime) -> str:
+    """Format an offset-aware timestamp as whole-second UTC."""
+
+    return value.astimezone(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")

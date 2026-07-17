@@ -139,7 +139,7 @@ def test_austrian_boundary_records_use_country_config(tmp_path: Path) -> None:
             country="AT",
             county_admin_level="6",
             county_name="Wien",
-            state_name="Wien",
+            state_name="Untrusted OSM state label",
             state_iso_code="AT-9",
             extra="\n".join(
                 [
@@ -210,7 +210,7 @@ def test_swiss_boundary_uses_canton_state_without_county_fallback(tmp_path: Path
     assert [
         (record.code, record.city, record.country, record.state, record.county)
         for record in result.records
-    ] == [("8001", "Zuerich", "CH", "Kanton Zuerich", "")]
+    ] == [("8001", "Zuerich", "CH", "Zürich", "")]
 
 
 def test_austrian_address_fallback_rejects_foreign_country_tags(tmp_path: Path) -> None:
