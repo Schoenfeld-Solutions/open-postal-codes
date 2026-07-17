@@ -26,6 +26,8 @@ The format follows Keep a Changelog.
 - Professionalized static Pages portal with manifest summaries, copyable examples, light and dark modes, and a favicon.
 - GitHub App based data-refresh publication with pull request check waiting, guarded squash merge, and branch deletion.
 - Per-source data-refresh progress logs for long Geofabrik refresh runs.
+- Source-aware regional refresh recovery, transactional validation, and a bounded 21-day last-known-good fallback.
+- Always-on data-refresh JSON diagnostics and source-level Actions summaries with 14-day retention.
 
 ### Changed
 
@@ -43,6 +45,9 @@ The format follows Keep a Changelog.
 - The public data-quality unique post-code floor for Germany now keeps operational headroom while still guarding against extraction collapse.
 - The data-refresh workflow summary now emits per-country record counts without shell escaping failures.
 - The data-refresh workflow now runs refresh execution with unbuffered Python output.
+- The data-refresh workflow now runs code preflight checks before downloads, validates generated data afterwards, and uses serialized 120-minute `ubuntu-24.04` runs.
+- Manual data-refresh runs now default to validation-only; publication requires an explicit `publish` input on `main` while scheduled `main` runs continue to publish automatically.
+- Required data pull request checks now have a 20-minute bound with exact-head and merge postcondition diagnostics.
 
 ### Removed
 

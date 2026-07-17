@@ -46,18 +46,27 @@ on:
   schedule:
     - cron: "17 2 * * 1"
   workflow_dispatch:
+    inputs:
+      publish:
+        default: false
+        type: boolean
 
 permissions:
   contents: read
 
 concurrency:
   group: data-refresh-post-code
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest
-    timeout-minutes: 240
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      PUBLISH_ENABLED: >-
+        ${{ github.ref == 'refs/heads/main' &&
+            (github.event_name == 'schedule' ||
+            (github.event_name == 'workflow_dispatch' && inputs.publish)) }}
     steps:
       - uses: actions/create-github-app-token@v3
         id: checkout-token
@@ -69,10 +78,30 @@ jobs:
         with:
           token: ${{ steps.checkout-token.outputs.token }}
           persist-credentials: false
-      - run: python3 -u -m open_postal_codes.refresh_data
-      - run: python3 -m tools.repo_checks.all_checks
-      - run: python3 -m open_postal_codes.pages --output-root out
-      - uses: actions/create-github-app-token@v3
+      - name: Run code preflight checks
+        run: |
+          python3 -m pytest -m unit --cov=open_postal_codes --cov-fail-under=90
+          python3 -m ruff check .
+          python3 -m ruff format --check .
+          python3 -m mypy src tests tools
+      - name: Refresh regional Geofabrik data
+        run: |
+          python3 -u -m open_postal_codes.refresh_data \
+            --report-path "${RUNNER_TEMP}/refresh-report.json"
+      - name: Validate generated data and package Pages
+        run: |
+          python3 -m tools.repo_checks.all_checks
+          python3 -m open_postal_codes.pages --output-root out
+          git diff --check
+      - name: Detect data changes
+        id: changes
+        run: echo "changed=true" >> "${GITHUB_OUTPUT}"
+      - name: Prepare data pull request body
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        run: echo "last-known-good fallback"
+      - name: Generate publication token
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        uses: actions/create-github-app-token@v3
         id: publication-token
         with:
           client-id: ${{ vars.DATA_REFRESH_APP_CLIENT_ID }}
@@ -80,12 +109,41 @@ jobs:
           permission-contents: write
           permission-pull-requests: write
           permission-checks: read
-      - run: git commit -m "chore(data): refresh post code outputs"
-      - run: >
-          gh pr checks "${{ steps.data-pr.outputs.number }}" --required --watch --fail-fast
-      - run: >
-          gh pr merge "${{ steps.data-pr.outputs.number }}" --squash --delete-branch
-          --match-head-commit "${{ steps.commit.outputs.head_sha }}"
+      - name: Resolve GitHub App bot identity
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        run: echo identity
+      - name: Commit data changes
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        run: |
+          git commit -m "chore(data): refresh post code outputs"
+      - name: Open or update data pull request
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        run: echo open
+      - name: Wait for required pull request checks
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        run: |
+          timeout --signal=TERM --kill-after=30s 20m \
+            gh pr checks "${{ steps.data-pr.outputs.number }}" \
+              --required --watch --fail-fast
+          gh pr view --json headRefOid
+      - name: Merge data pull request
+        if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
+        run: |
+          gh pr merge "${{ steps.data-pr.outputs.number }}" --squash --delete-branch \
+            --match-head-commit "${{ steps.commit.outputs.head_sha }}"
+          gh pr view --json mergedAt
+      - name: Ensure diagnostic report exists
+        if: always()
+        run: echo report
+      - name: Write final refresh summary
+        if: always()
+        run: echo summary
+      - name: Upload refresh diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          path: ${{ runner.temp }}/refresh-report.json
+          retention-days: 14
 """
 
 PAGES_WORKFLOW = """\
@@ -196,10 +254,7 @@ def test_workflow_policy_rejects_missing_pr_quality_gates(tmp_path: Path) -> Non
 def test_workflow_policy_rejects_unindented_script_content(tmp_path: Path) -> None:
     write_workflows(
         tmp_path,
-        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
-            "      - run: python3 -u -m open_postal_codes.refresh_data\n",
-            "      - run: |\n          python3 - <<'PY'\nimport sys\n          PY\n",
-        ),
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW + "import sys\n",
     )
 
     errors = workflow_policy_check.validate_workflows(tmp_path)
@@ -210,15 +265,13 @@ def test_workflow_policy_rejects_unindented_script_content(tmp_path: Path) -> No
 def test_workflow_policy_rejects_default_token_for_data_pull_requests(
     tmp_path: Path,
 ) -> None:
-    checks_line = (
-        '          gh pr checks "${{ steps.data-pr.outputs.number }}" '
-        "--required --watch --fail-fast\n"
-    )
     write_workflows(
         tmp_path,
-        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
-            checks_line,
-            (checks_line + "        env:\n" + "          GH_TOKEN: ${{ github.token }}\n"),
+        data_refresh_workflow=(
+            DATA_REFRESH_WORKFLOW
+            + "      - run: echo unsafe\n"
+            + "        env:\n"
+            + "          GH_TOKEN: ${{ github.token }}\n"
         ),
     )
 
@@ -233,11 +286,8 @@ def test_workflow_policy_rejects_missing_automated_merge_guardrails(
     write_workflows(
         tmp_path,
         data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
-            "      - run: >\n"
-            '          gh pr merge "${{ steps.data-pr.outputs.number }}" --squash --delete-branch\n'
-            '          --match-head-commit "${{ steps.commit.outputs.head_sha }}"\n',
-            "",
-        ),
+            "gh pr merge", "gh pr no-merge"
+        ).replace("--match-head-commit", "--unchecked-head"),
     )
 
     errors = workflow_policy_check.validate_workflows(tmp_path)
@@ -292,3 +342,91 @@ def test_workflow_policy_rejects_buffered_data_refresh_invocation(
 
     assert any("python3 -u -m open_postal_codes.refresh_data" in error for error in errors)
     assert any("python3 -m open_postal_codes.refresh_data" in error for error in errors)
+
+
+def test_workflow_policy_rejects_cancelled_or_unbounded_refresh_runs(
+    tmp_path: Path,
+) -> None:
+    workflow = DATA_REFRESH_WORKFLOW.replace(
+        "  cancel-in-progress: false", "  cancel-in-progress: true"
+    ).replace("    timeout-minutes: 120", "    timeout-minutes: 240")
+    write_workflows(tmp_path, data_refresh_workflow=workflow)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("cancel-in-progress: false" in error for error in errors)
+    assert any("timeout-minutes: 120" in error for error in errors)
+
+
+def test_workflow_policy_rejects_publication_without_main_only_gate(
+    tmp_path: Path,
+) -> None:
+    write_workflows(
+        tmp_path,
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
+            "github.ref == 'refs/heads/main'", "github.ref != ''"
+        ),
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("github.ref == 'refs/heads/main'" in error for error in errors)
+
+
+def test_workflow_policy_rejects_ungated_publication_step(tmp_path: Path) -> None:
+    write_workflows(
+        tmp_path,
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
+            "      - name: Commit data changes\n"
+            "        if: env.PUBLISH_ENABLED == 'true' && "
+            "steps.changes.outputs.changed == 'true'\n",
+            "      - name: Commit data changes\n",
+        ),
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("main-only publish gate: Commit data changes" in error for error in errors)
+
+
+def test_workflow_policy_rejects_non_diagnostic_artifacts(tmp_path: Path) -> None:
+    write_workflows(
+        tmp_path,
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
+            "          path: ${{ runner.temp }}/refresh-report.json",
+            "          path: ${{ runner.temp }}/geofabrik-pbf",
+        ),
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("must not upload PBF or data outputs" in error for error in errors)
+
+
+def test_workflow_policy_rejects_matrix_and_manual_cache(tmp_path: Path) -> None:
+    workflow = DATA_REFRESH_WORKFLOW.replace(
+        "    steps:\n",
+        "    strategy:\n      matrix:\n        country: [de, at, ch]\n"
+        "    steps:\n      - uses: actions/cache@v4\n",
+        1,
+    )
+    write_workflows(tmp_path, data_refresh_workflow=workflow)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("must not use a source or country matrix" in error for error in errors)
+    assert any("actions/cache@" in error for error in errors)
+
+
+def test_workflow_policy_rejects_diagnostic_step_without_always(tmp_path: Path) -> None:
+    write_workflows(
+        tmp_path,
+        data_refresh_workflow=DATA_REFRESH_WORKFLOW.replace(
+            "      - name: Write final refresh summary\n        if: always()\n",
+            "      - name: Write final refresh summary\n",
+        ),
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("must always run: Write final refresh summary" in error for error in errors)

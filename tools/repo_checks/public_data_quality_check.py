@@ -7,24 +7,22 @@ import json
 import re
 import subprocess
 from collections.abc import Mapping
+from datetime import datetime
 from pathlib import Path
 from typing import Any, cast
 
 from open_postal_codes.countries import COUNTRY_CONFIGS
+from open_postal_codes.refresh_quality import COUNTRY_ABSOLUTE_FLOORS
 from tools.repo_checks.common import fail
 
 PUBLIC_DATA_ROOT = Path("data/public/v1")
 METADATA_PATH = Path("data/sources/geofabrik-regions.json")
 POST_CODE_EXTENSIONS = ("csv", "json", "xml")
 MINIMUM_RECORDS_BY_COUNTRY = {
-    "de": 8_000,
-    "at": 3_000,
-    "ch": 3_500,
+    country: floor.record_count for country, floor in COUNTRY_ABSOLUTE_FLOORS.items()
 }
 MINIMUM_UNIQUE_POST_CODES_BY_COUNTRY = {
-    "de": 7_800,
-    "at": 2_200,
-    "ch": 3_000,
+    country: floor.unique_post_code_count for country, floor in COUNTRY_ABSOLUTE_FLOORS.items()
 }
 SENTINEL_ROWS = {
     "de": ("28195", "Bremen", "DE", "W. Europe Standard Time"),
@@ -114,6 +112,21 @@ def validate_public_data(
                 f"{csv_path.relative_to(repository_root)} has {empty_state_count} rows "
                 "without state"
             )
+        actual_states = {row.get("state", "").strip() for row in rows}
+        actual_states.discard("")
+        expected_states = {state.name for state in country.states}
+        missing_states = sorted(expected_states.difference(actual_states))
+        if missing_states:
+            errors.append(
+                f"{csv_path.relative_to(repository_root)} is missing expected states: "
+                f"{', '.join(missing_states)}"
+            )
+        unexpected_states = sorted(actual_states.difference(expected_states))
+        if unexpected_states:
+            errors.append(
+                f"{csv_path.relative_to(repository_root)} has unexpected states: "
+                f"{', '.join(unexpected_states)}"
+            )
         sentinel_code, sentinel_city, sentinel_country, sentinel_time_zone = sentinel_rows[
             country.slug
         ]
@@ -136,11 +149,22 @@ def validate_public_data(
         for country in COUNTRY_CONFIGS
         for region in country.geofabrik_regions
     }
+    expected_state_codes = {
+        region.metadata_key: region.required_state_codes
+        for country in COUNTRY_CONFIGS
+        for region in country.geofabrik_regions
+    }
     actual_metadata = load_metadata_regions(repository_root / METADATA_PATH)
     missing_metadata_keys = sorted(set(expected_metadata).difference(actual_metadata))
     if missing_metadata_keys:
         errors.append(f"source metadata is missing keys: {', '.join(missing_metadata_keys)}")
-    errors.extend(validate_metadata_values(expected_metadata, actual_metadata))
+    errors.extend(
+        validate_metadata_values(
+            expected_metadata,
+            actual_metadata,
+            expected_state_codes=expected_state_codes,
+        )
+    )
 
     errors.extend(validate_tracked_pbf_files(tracked_pbf_files(repository_root)))
     return errors
@@ -149,6 +173,8 @@ def validate_public_data(
 def validate_metadata_values(
     expected_metadata: Mapping[str, str],
     actual_metadata: Mapping[str, Mapping[str, Any]],
+    *,
+    expected_state_codes: Mapping[str, tuple[str, ...]] | None = None,
 ) -> list[str]:
     errors: list[str] = []
 
@@ -179,7 +205,62 @@ def validate_metadata_values(
             if remote_field in metadata and not str(metadata[remote_field]).strip():
                 errors.append(f"source metadata {key} has empty {remote_field}")
 
+        for timestamp_field in ("accepted_at", "verified_at"):
+            if timestamp_field not in metadata:
+                continue
+            timestamp = metadata[timestamp_field]
+            if not isinstance(timestamp, str) or not _is_offset_aware_iso_timestamp(timestamp):
+                errors.append(
+                    f"source metadata {key} must have an offset-aware ISO 8601 {timestamp_field}"
+                )
+
+        record_count = metadata.get("record_count")
+        if "record_count" in metadata and (
+            not isinstance(record_count, int) or isinstance(record_count, bool) or record_count <= 0
+        ):
+            errors.append(f"source metadata {key} must have positive record_count")
+
+        unique_post_code_count = metadata.get("unique_post_code_count")
+        if "unique_post_code_count" in metadata and (
+            not isinstance(unique_post_code_count, int)
+            or isinstance(unique_post_code_count, bool)
+            or unique_post_code_count <= 0
+        ):
+            errors.append(f"source metadata {key} must have positive unique_post_code_count")
+        if (
+            isinstance(record_count, int)
+            and not isinstance(record_count, bool)
+            and isinstance(unique_post_code_count, int)
+            and not isinstance(unique_post_code_count, bool)
+            and unique_post_code_count > record_count
+        ):
+            errors.append(
+                f"source metadata {key} unique_post_code_count must not exceed record_count"
+            )
+
+        if "state_codes" in metadata:
+            state_codes = metadata["state_codes"]
+            if not (
+                isinstance(state_codes, list)
+                and state_codes
+                and all(isinstance(code, str) and code.strip() for code in state_codes)
+                and len(state_codes) == len(set(state_codes))
+            ):
+                errors.append(f"source metadata {key} must have unique non-empty state_codes")
+            elif expected_state_codes is not None:
+                expected_codes = set(expected_state_codes.get(key, ()))
+                if set(state_codes) != expected_codes:
+                    errors.append(f"source metadata {key} has unexpected state_codes")
+
     return errors
+
+
+def _is_offset_aware_iso_timestamp(value: str) -> bool:
+    try:
+        timestamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return timestamp.tzinfo is not None and timestamp.utcoffset() is not None
 
 
 def main() -> int:

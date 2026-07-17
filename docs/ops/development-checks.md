@@ -31,9 +31,15 @@ The checks protect post code contracts, API packaging, credits, structure, docum
 - public D-A-CH data files, metadata values, state completeness, record floors, unique post-code floors, sentinel rows, and tracked PBF files are checked
 - Pages artifacts are packaged into a temporary directory and checked for manifest, gzip, hash, record-count, and static-file consistency
 - GitHub workflows are checked for explicit permissions, concurrency, timeouts, weekly refresh cadence, and pull request gates without live PBF downloads
+- the data-refresh workflow is checked for code-first preflight ordering, main-only opt-in publication, serialized runs, bounded pull request waiting, always-on JSON diagnostics, and the absence of PBF matrices or caches
 - tracked public text is checked for prohibited provenance wording
 
 Pull request CI also packages the Pages artifact and runs `git diff --check`.
+
+The scheduled refresh splits the same controls into two phases. Unit, Ruff, format, and Mypy
+checks run before any PBF download. Repository data checks, Pages packaging, and the final
+`git diff --check` run only after candidate data has been generated, allowing a refresh to
+repair a previously invalid committed dataset while still validating the final output.
 
 ## Pull Request Dependency Review
 

@@ -17,6 +17,7 @@
 11. `0011-add-maintainability-guardrails.md`
 12. `0012-balance-repository-hardening-with-solo-maintenance.md`
 13. `0013-automate-data-refresh-pull-request-merge.md`
+14. `0014-resilient-regional-data-refresh.md`
 
 ## Rules
 

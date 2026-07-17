@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from open_postal_codes.countries import COUNTRY_CONFIGS
+from open_postal_codes.countries import COUNTRY_CONFIGS, CountryConfig
 from open_postal_codes.post_code import PostCodeRecord, write_public_post_code_files
 from tools.repo_checks import (
     boundary_truth_check,
@@ -78,11 +78,11 @@ def test_public_data_quality_rejects_low_record_count(tmp_path: Path) -> None:
 
     errors = public_data_quality_check.validate_public_data(
         tmp_path,
-        minimum_records_by_country={"de": 2, "at": 1, "ch": 1},
+        minimum_records_by_country={"de": 17, "at": 1, "ch": 1},
         minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
     )
 
-    assert any("expected at least 2" in error for error in errors)
+    assert any("expected at least 17" in error for error in errors)
 
 
 def test_public_data_quality_rejects_low_unique_post_code_count(tmp_path: Path) -> None:
@@ -91,18 +91,45 @@ def test_public_data_quality_rejects_low_unique_post_code_count(tmp_path: Path) 
     errors = public_data_quality_check.validate_public_data(
         tmp_path,
         minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
-        minimum_unique_post_codes_by_country={"de": 2, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 17, "at": 1, "ch": 1},
     )
 
-    assert any("unique post codes" in error and "expected at least 2" in error for error in errors)
+    assert any("unique post codes" in error and "expected at least 17" in error for error in errors)
 
 
 def test_public_data_quality_default_unique_floors_leave_operational_headroom() -> None:
     assert public_data_quality_check.MINIMUM_UNIQUE_POST_CODES_BY_COUNTRY == {
         "de": 7_800,
-        "at": 2_200,
+        "at": 2_000,
         "ch": 3_000,
     }
+
+
+def test_public_data_quality_default_record_floors_leave_operational_headroom() -> None:
+    assert public_data_quality_check.MINIMUM_RECORDS_BY_COUNTRY == {
+        "de": 8_000,
+        "at": 2_700,
+        "ch": 3_500,
+    }
+
+
+def test_public_data_quality_rejects_missing_brandenburg(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(
+        tmp_path,
+        records_by_country={
+            "de": [PostCodeRecord(code="28195", city="Bremen", state="Bremen")],
+            "at": [PostCodeRecord(code="1010", city="Wien", country="AT", state="Wien")],
+            "ch": [PostCodeRecord(code="8001", city="Zürich", country="CH", state="Zürich")],
+        },
+    )
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
+    )
+
+    assert any("missing expected states" in error and "Brandenburg" in error for error in errors)
 
 
 def test_public_data_quality_rejects_missing_metadata_key(tmp_path: Path) -> None:
@@ -140,6 +167,57 @@ def test_public_data_quality_rejects_malformed_metadata_values(tmp_path: Path) -
     assert any("at/austria must have positive content_length" in error for error in errors)
     assert any("at/austria must have a 32-character md5" in error for error in errors)
     assert any("at/austria has empty etag" in error for error in errors)
+
+
+def test_public_data_quality_accepts_legacy_and_valid_extended_metadata(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(
+        tmp_path,
+        metadata_overrides={
+            "at/austria": {
+                "accepted_at": "2026-07-01T12:00:00Z",
+                "verified_at": "2026-07-08T12:00:00+00:00",
+                "record_count": 2_979,
+                "unique_post_code_count": 2_000,
+                "state_codes": [state.code for state in COUNTRY_CONFIGS[1].states],
+            }
+        },
+    )
+
+    assert (
+        public_data_quality_check.validate_public_data(
+            tmp_path,
+            minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+            minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
+        )
+        == []
+    )
+
+
+def test_public_data_quality_rejects_invalid_extended_metadata(tmp_path: Path) -> None:
+    write_public_data_quality_fixture(
+        tmp_path,
+        metadata_overrides={
+            "at/austria": {
+                "accepted_at": "yesterday",
+                "verified_at": "2026-07-08T12:00:00",
+                "record_count": 0,
+                "unique_post_code_count": 2,
+                "state_codes": ["AT-9", "AT-9"],
+            }
+        },
+    )
+
+    errors = public_data_quality_check.validate_public_data(
+        tmp_path,
+        minimum_records_by_country={"de": 1, "at": 1, "ch": 1},
+        minimum_unique_post_codes_by_country={"de": 1, "at": 1, "ch": 1},
+    )
+
+    assert any("offset-aware ISO 8601 accepted_at" in error for error in errors)
+    assert any("offset-aware ISO 8601 verified_at" in error for error in errors)
+    assert any("positive record_count" in error for error in errors)
+    assert any("unique_post_code_count must not exceed record_count" in error for error in errors)
+    assert any("unique non-empty state_codes" in error for error in errors)
 
 
 def test_public_data_quality_rejects_missing_sentinel_row(tmp_path: Path) -> None:
@@ -247,6 +325,26 @@ def test_reference_policy_allows_normal_project_words(tmp_path: Path) -> None:
     assert reference_policy_check.reference_errors_for_path(path) == []
 
 
+def test_reference_policy_allows_iso_3166_2_code_with_prohibited_suffix(
+    tmp_path: Path,
+) -> None:
+    path = tmp_path / "states.py"
+    iso_code = "CH-" + "A" + "I"
+    path.write_text(f'AdministrativeState("{iso_code}", "Canton")\n', encoding="utf-8")
+
+    assert reference_policy_check.reference_errors_for_path(path) == []
+
+
+def test_reference_policy_still_rejects_standalone_prohibited_token(tmp_path: Path) -> None:
+    path = tmp_path / "README.md"
+    standalone_token = "A" + "I"
+    path.write_text(f"Generated with {standalone_token}.\n", encoding="utf-8")
+
+    assert reference_policy_check.reference_errors_for_path(path) == [
+        f"{path}: contains prohibited standalone token"
+    ]
+
+
 def write_public_data_quality_fixture(
     repository_root: Path,
     *,
@@ -255,9 +353,7 @@ def write_public_data_quality_fixture(
     metadata_overrides: dict[str, dict[str, object]] | None = None,
 ) -> None:
     records = records_by_country or {
-        "de": [PostCodeRecord(code="28195", city="Bremen", state="Bremen")],
-        "at": [PostCodeRecord(code="1010", city="Wien", country="AT", state="Wien")],
-        "ch": [PostCodeRecord(code="8001", city="Zürich", country="CH", state="Zürich")],
+        country.slug: complete_country_fixture_records(country) for country in COUNTRY_CONFIGS
     }
     for country, country_records in records.items():
         write_public_post_code_files(
@@ -294,3 +390,25 @@ def write_public_data_quality_fixture(
         ),
         encoding="utf-8",
     )
+
+
+def complete_country_fixture_records(country_config: CountryConfig) -> list[PostCodeRecord]:
+    sentinel_code, sentinel_city, _, _ = public_data_quality_check.SENTINEL_ROWS[
+        country_config.slug
+    ]
+    sentinel_state = {"de": "Bremen", "at": "Wien", "ch": "Zürich"}[country_config.slug]
+    ordered_states = [sentinel_state] + [
+        state.name for state in country_config.states if state.name != sentinel_state
+    ]
+    width = 5 if country_config.code == "DE" else 4
+    offset = {"de": 10_000, "at": 2_000, "ch": 3_000}[country_config.slug]
+    return [
+        PostCodeRecord(
+            code=sentinel_code if index == 0 else f"{offset + index:0{width}d}",
+            city=sentinel_city if index == 0 else state_name,
+            country=country_config.code,
+            state=state_name,
+            time_zone=country_config.time_zone,
+        )
+        for index, state_name in enumerate(ordered_states)
+    ]

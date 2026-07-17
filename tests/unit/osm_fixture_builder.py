@@ -93,6 +93,50 @@ def boundary_fixture(extra: str) -> str:
     )
 
 
+def regional_source_fixture(
+    *,
+    primary_county_name: str,
+    extra: str,
+    embedded_state_code: str | None = None,
+    embedded_state_name: str | None = None,
+) -> str:
+    """Build a regional extract covered by a county plus an optional embedded state."""
+
+    parts: list[str] = []
+    if embedded_state_code is not None and embedded_state_name is not None:
+        parts.extend(
+            [
+                nodes(1, [(0, 0), (0, 10), (2, 10), (2, 0)]),
+                closed_way(
+                    100,
+                    1,
+                    {
+                        "boundary": "administrative",
+                        "admin_level": "4",
+                        "ISO3166-2": embedded_state_code,
+                        "name": embedded_state_name,
+                    },
+                ),
+            ]
+        )
+    parts.extend(
+        [
+            nodes(10, [(2, 0), (2, 10), (10, 10), (10, 0)]),
+            closed_way(
+                110,
+                10,
+                {
+                    "boundary": "administrative",
+                    "admin_level": "6",
+                    "name": primary_county_name,
+                },
+            ),
+            extra,
+        ]
+    )
+    return "\n".join(parts)
+
+
 def country_boundary_fixture(
     *,
     country: str,
