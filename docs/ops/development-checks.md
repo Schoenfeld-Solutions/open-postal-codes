@@ -31,6 +31,7 @@ The checks protect post code contracts, API packaging, credits, structure, docum
 - public D-A-CH data files, metadata values, state completeness, record floors, unique post-code floors, sentinel rows, and tracked PBF files are checked
 - Pages artifacts are packaged into a temporary directory and checked for manifest, gzip, hash, record-count, and static-file consistency
 - GitHub workflows are checked for explicit permissions, concurrency, timeouts, weekly refresh cadence, and pull request gates without live PBF downloads
+- every third-party GitHub Action is pinned to an immutable 40-character commit SHA with a readable release-version comment; floating version tags are rejected
 - the data-refresh workflow is checked for code-first preflight ordering, main-only opt-in publication, serialized runs, bounded pull request waiting, always-on JSON diagnostics, and the absence of PBF matrices or caches
 - tracked public text is checked for prohibited provenance wording
 

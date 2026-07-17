@@ -8,6 +8,11 @@ from tools.repo_checks import workflow_policy_check
 
 pytestmark = pytest.mark.unit
 
+CHECKOUT_REVISION = "9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0"
+CHECKOUT_REFERENCE = f"actions/checkout@{CHECKOUT_REVISION}"
+CHECKOUT_PIN = f"{CHECKOUT_REFERENCE} # v7.0.0"
+APP_TOKEN_PIN = "actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0"
+UPLOAD_ARTIFACT_PIN = "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1"
 
 PULL_REQUEST_WORKFLOW = """\
 name: Pull Request Gates
@@ -68,13 +73,13 @@ jobs:
             (github.event_name == 'schedule' ||
             (github.event_name == 'workflow_dispatch' && inputs.publish)) }}
     steps:
-      - uses: actions/create-github-app-token@v3
+      - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         id: checkout-token
         with:
           client-id: ${{ vars.DATA_REFRESH_APP_CLIENT_ID }}
           private-key: ${{ secrets.DATA_REFRESH_APP_PRIVATE_KEY }}
           permission-contents: read
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           token: ${{ steps.checkout-token.outputs.token }}
           persist-credentials: false
@@ -101,7 +106,7 @@ jobs:
         run: echo "last-known-good fallback"
       - name: Generate publication token
         if: env.PUBLISH_ENABLED == 'true' && steps.changes.outputs.changed == 'true'
-        uses: actions/create-github-app-token@v3
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         id: publication-token
         with:
           client-id: ${{ vars.DATA_REFRESH_APP_CLIENT_ID }}
@@ -140,7 +145,7 @@ jobs:
         run: echo summary
       - name: Upload refresh diagnostics
         if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           path: ${{ runner.temp }}/refresh-report.json
           retention-days: 14
@@ -184,6 +189,12 @@ def write_workflows(
     (workflow_root / "pages.yml").write_text(pages_workflow, encoding="utf-8")
 
 
+def write_local_action(repository_root: Path, text: str) -> None:
+    action_root = repository_root / ".github/actions/check"
+    action_root.mkdir(parents=True)
+    (action_root / "action.yml").write_text(text, encoding="utf-8")
+
+
 def test_workflow_policy_accepts_current_workflows() -> None:
     assert workflow_policy_check.validate_workflows(Path.cwd()) == []
 
@@ -192,6 +203,163 @@ def test_workflow_policy_accepts_compliant_fixture(tmp_path: Path) -> None:
     write_workflows(tmp_path)
 
     assert workflow_policy_check.validate_workflows(tmp_path) == []
+
+
+def test_workflow_policy_allows_local_and_docker_actions(tmp_path: Path) -> None:
+    workflow = PULL_REQUEST_WORKFLOW.replace(
+        "    steps:\n",
+        "    steps:\n"
+        '      - uses: "./.github/actions/check"\n'
+        "      - uses: 'docker://alpine:3.20'\n",
+    )
+    write_workflows(tmp_path, pull_request_workflow=workflow)
+    write_local_action(tmp_path, "name: Check\nruns:\n  using: composite\n  steps: []\n")
+
+    assert workflow_policy_check.validate_workflows(tmp_path) == []
+
+
+def test_workflow_policy_rejects_floating_action_inside_local_composite(tmp_path: Path) -> None:
+    write_workflows(tmp_path)
+    write_local_action(
+        tmp_path,
+        "name: Check\nruns:\n  using: composite\n  steps:\n"
+        "    - uses: example/security-check@main # v1.2.3\n",
+    )
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any(".github/actions/check/action.yml" in error for error in errors)
+
+
+def test_workflow_policy_rejects_local_actions_outside_canonical_root(tmp_path: Path) -> None:
+    workflow = PULL_REQUEST_WORKFLOW.replace(
+        "    steps:\n", "    steps:\n      - uses: ./tools/check\n"
+    )
+    write_workflows(tmp_path, pull_request_workflow=workflow)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("local action must stay under .github/actions" in error for error in errors)
+
+
+def test_workflow_policy_rejects_symlinked_local_action_escape(tmp_path: Path) -> None:
+    workflow = PULL_REQUEST_WORKFLOW.replace(
+        "    steps:\n", "    steps:\n      - uses: ./.github/actions/check\n"
+    )
+    write_workflows(tmp_path, pull_request_workflow=workflow)
+    outside = tmp_path / "tools/check"
+    outside.mkdir(parents=True)
+    (outside / "action.yml").write_text("name: Escaped\n", encoding="utf-8")
+    link = tmp_path / ".github/actions/check"
+    link.parent.mkdir(parents=True)
+    link.symlink_to(outside, target_is_directory=True)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("local action must stay under .github/actions" in error for error in errors)
+
+
+def test_workflow_policy_checks_yaml_workflows(tmp_path: Path) -> None:
+    write_workflows(tmp_path)
+    workflow = PAGES_WORKFLOW.replace(
+        "      - run: python3 -m open_postal_codes.pages --output-root out",
+        "      - uses: example/security-check@main # v1.2.3",
+    )
+    (tmp_path / ".github/workflows/security.yaml").write_text(workflow, encoding="utf-8")
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("security.yaml" in error for error in errors)
+
+
+def test_workflow_policy_does_not_lock_required_actions_to_one_release(tmp_path: Path) -> None:
+    workflow = DATA_REFRESH_WORKFLOW.replace(
+        APP_TOKEN_PIN, f"actions/create-github-app-token@{'a' * 40} # v4.0.0"
+    ).replace(UPLOAD_ARTIFACT_PIN, f"actions/upload-artifact@{'b' * 40} # v8.0.0")
+    write_workflows(tmp_path, data_refresh_workflow=workflow)
+
+    assert workflow_policy_check.validate_workflows(tmp_path) == []
+
+
+def test_workflow_policy_requires_real_uses_line_for_required_action(tmp_path: Path) -> None:
+    workflow = DATA_REFRESH_WORKFLOW.replace(
+        f"        uses: {UPLOAD_ARTIFACT_PIN}",
+        f"        run: |\n          uses: {UPLOAD_ARTIFACT_PIN}",
+    )
+    write_workflows(tmp_path, data_refresh_workflow=workflow)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("missing required Action: actions/upload-artifact" in error for error in errors)
+
+
+@pytest.mark.parametrize(
+    "revision",
+    (
+        "v7",
+        "main",
+        "A" * 40,
+        "a" * 39,
+        "a" * 41,
+    ),
+)
+def test_workflow_policy_rejects_mutable_or_malformed_action_revisions(
+    tmp_path: Path,
+    revision: str,
+) -> None:
+    workflow = DATA_REFRESH_WORKFLOW.replace(
+        CHECKOUT_PIN,
+        f"actions/checkout@{revision} # v7.0.0",
+    )
+    write_workflows(tmp_path, data_refresh_workflow=workflow)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any(
+        "external action must pin exactly 40 lowercase hexadecimal characters" in error
+        for error in errors
+    )
+
+
+@pytest.mark.parametrize(
+    "comment_suffix",
+    (
+        "",
+        " # v7",
+        " # 7.0.0",
+        " # v07.0.0",
+        " # v7.0.0 extra",
+    ),
+)
+def test_workflow_policy_rejects_missing_or_malformed_action_version_comments(
+    tmp_path: Path,
+    comment_suffix: str,
+) -> None:
+    workflow = DATA_REFRESH_WORKFLOW.replace(
+        CHECKOUT_PIN,
+        f"{CHECKOUT_REFERENCE}{comment_suffix}",
+    )
+    write_workflows(tmp_path, data_refresh_workflow=workflow)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any("exact semantic-version comment" in error for error in errors)
+
+
+def test_workflow_policy_checks_external_actions_in_every_workflow(tmp_path: Path) -> None:
+    workflow = PAGES_WORKFLOW.replace(
+        "    steps:\n",
+        "    steps:\n      - uses: example/security-check@main # v1.2.3\n",
+    )
+    write_workflows(tmp_path, pages_workflow=workflow)
+
+    errors = workflow_policy_check.validate_workflows(tmp_path)
+
+    assert any(
+        "pages.yml" in error
+        and "external action must pin exactly 40 lowercase hexadecimal characters" in error
+        for error in errors
+    )
 
 
 def test_workflow_policy_rejects_missing_timeout(tmp_path: Path) -> None:
