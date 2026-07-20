@@ -1,27 +1,27 @@
 code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
 1010,Wien,AT,Wien,,W. Europe Standard Time,true,1,15,postal_boundary,3846
-1020,Wien,AT,Wien,,W. Europe Standard Time,true,1,11,postal_boundary,6776
+1020,Wien,AT,Wien,,W. Europe Standard Time,true,1,11,postal_boundary,6777
 1030,Wien,AT,Wien,,W. Europe Standard Time,true,1,13,postal_boundary,5359
 1040,Wien,AT,Wien,,W. Europe Standard Time,true,1,21,postal_boundary,2247
 1050,Wien,AT,Wien,,W. Europe Standard Time,true,1,18,postal_boundary,2957
 1060,Wien,AT,Wien,,W. Europe Standard Time,true,1,20,postal_boundary,2292
 1070,Wien,AT,Wien,,W. Europe Standard Time,true,1,19,postal_boundary,2670
 1080,Wien,AT,Wien,,W. Europe Standard Time,true,1,22,postal_boundary,1707
-1090,Wien,AT,Wien,,W. Europe Standard Time,true,1,16,postal_boundary,3320
+1090,Wien,AT,Wien,,W. Europe Standard Time,true,1,16,postal_boundary,3321
 1100,Wien,AT,Wien,,W. Europe Standard Time,true,1,4,postal_boundary,14594
 1110,Wien,AT,Wien,,W. Europe Standard Time,true,1,10,postal_boundary,7210
-1120,Wien,AT,Wien,,W. Europe Standard Time,true,1,9,postal_boundary,7247
+1120,Wien,AT,Wien,,W. Europe Standard Time,true,1,9,postal_boundary,7248
 1130,Wien,AT,Wien,,W. Europe Standard Time,true,1,5,postal_boundary,11364
 1140,Wien,AT,Wien,Bezirk St. Pölten,W. Europe Standard Time,true,1,1,postal_boundary,0
 1140,Wien,AT,Wien,Bezirk Tulln,W. Europe Standard Time,false,2,1,postal_boundary,0
-1150,Wien,AT,Wien,,W. Europe Standard Time,true,1,14,postal_boundary,4213
+1150,Wien,AT,Wien,,W. Europe Standard Time,true,1,14,postal_boundary,4217
 1160,Wien,AT,Wien,,W. Europe Standard Time,true,1,7,postal_boundary,8054
-1170,Wien,AT,Wien,,W. Europe Standard Time,true,1,8,postal_boundary,7373
-1180,Wien,AT,Wien,,W. Europe Standard Time,true,1,12,postal_boundary,5859
+1170,Wien,AT,Wien,,W. Europe Standard Time,true,1,8,postal_boundary,7374
+1180,Wien,AT,Wien,,W. Europe Standard Time,true,1,12,postal_boundary,5875
 1190,Wien,AT,Wien,,W. Europe Standard Time,true,1,6,postal_boundary,10413
-1200,Wien,AT,Wien,,W. Europe Standard Time,true,1,17,postal_boundary,3053
+1200,Wien,AT,Wien,,W. Europe Standard Time,true,1,17,postal_boundary,3052
 1210,Wien,AT,Wien,,W. Europe Standard Time,true,1,2,postal_boundary,21442
-1220,Wien,AT,Wien,,W. Europe Standard Time,true,1,1,postal_boundary,35502
+1220,Wien,AT,Wien,,W. Europe Standard Time,true,1,1,postal_boundary,35503
 1230,Wien,AT,Wien,,W. Europe Standard Time,true,1,3,postal_boundary,17237
 1300,Wien-Flughafen,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,22
 2000,Stockerau,AT,Niederösterreich,Bezirk Korneuburg,W. Europe Standard Time,true,1,1,postal_boundary,4278
@@ -34,7 +34,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2020,Hollabrunn,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,3235
 2022,Immendorf,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,1
 2023,Nappersdorf,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,0
-2024,Mailberg,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,398
+2024,Mailberg,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,400
 2031,Eggendorf im Thale,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,26
 2032,Enzersdorf im Thale,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,107
 2033,Kammersdorf,AT,Niederösterreich,Bezirk Hollabrunn,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -97,7 +97,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2163,Ottenthal,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,290
 2164,Wildendürnbach,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,665
 2165,Drasenhofen,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,762
-2170,Poysdorf,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,1699
+2170,Poysdorf,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,1708
 2171,Herrnbaumgarten,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,583
 2172,Schrattenberg,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,544
 2181,Dobermannsdorf,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,70
@@ -139,7 +139,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2265,Drösing,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,530
 2272,Niederabsdorf,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,47
 2273,Hohenau an der March,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,1230
-2274,Rabensburg,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,691
+2274,Rabensburg,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,690
 2275,Bernhardsthal,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,565
 2276,Reintal,AT,Niederösterreich,Bezirk Mistelbach,W. Europe Standard Time,true,1,1,postal_boundary,283
 2280,Glinzendorf,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,189
@@ -154,7 +154,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2293,Marchegg Stadt,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,0
 2294,Marchegg Bahnhof,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,0
 2295,Oberweiden,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,48
-2301,Groß-Enzersdorf,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,3503
+2301,Groß-Enzersdorf,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,3585
 2304,Orth an der Donau,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,909
 2305,Eckartsau,AT,Niederösterreich,Bezirk Gänserndorf,W. Europe Standard Time,true,1,1,postal_boundary,529
 2320,Schwechat,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,4045
@@ -169,7 +169,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2344,Maria Enzersdorf,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,2234
 2345,Brunn am Gebirge,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,3293
 2351,Wiener Neudorf,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,1442
-2352,Gumpoldskirchen,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,1115
+2352,Gumpoldskirchen,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,1166
 2353,Guntramsdorf,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,2742
 2355,Wiener Neudorf,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,2,address_fallback,3
 2361,Laxenburg,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,918
@@ -182,7 +182,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2391,Kaltenleutgeben,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,935
 2392,Sulz im Wienerwald,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,309
 2393,Sittendorf,AT,Niederösterreich,Bezirk Mödling,W. Europe Standard Time,true,1,1,postal_boundary,231
-2401,Fischamend,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,1429
+2401,Fischamend,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,1443
 2402,Maria Ellend,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,515
 2403,Regelsbrunn,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,210
 2404,Petronell,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -197,7 +197,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2425,Nickelsdorf,AT,Burgenland,Bezirk Neusiedl am See,W. Europe Standard Time,true,1,1,postal_boundary,880
 2431,Kleinneusiedl,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,1
 2432,Schwadorf,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,687
-2433,Margarethen am Moos,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,581
+2433,Margarethen am Moos,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,584
 2434,Götzendorf an der Leitha,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,949
 2435,Ebergassing,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,844
 2440,Gramatneusiedl,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,953
@@ -208,7 +208,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2443,Deutsch-Brodersdorf,AT,Niederösterreich,Bezirk Baden,W. Europe Standard Time,false,3,1,postal_boundary,0
 2443,Deutsch-Brodersdorf,AT,Niederösterreich,Bezirk Eisenstadt-Umgebung,W. Europe Standard Time,false,4,1,postal_boundary,0
 2444,Seibersdorf,AT,Niederösterreich,Bezirk Baden,W. Europe Standard Time,true,1,1,postal_boundary,255
-2451,Hof am Leithaberge,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,812
+2451,Hof am Leithaberge,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,813
 2452,Mannersdorf am Leithagebirge,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,1584
 2453,Sommerein,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,811
 2454,Trautmannsdorf an der Leitha,AT,Niederösterreich,Bezirk Bruck an der Leitha,W. Europe Standard Time,true,1,1,postal_boundary,476
@@ -277,7 +277,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2671,Küb,AT,Niederösterreich,Bezirk Neunkirchen,W. Europe Standard Time,true,1,1,postal_boundary,0
 2673,Breitenstein,AT,Niederösterreich,Bezirk Neunkirchen,W. Europe Standard Time,true,1,1,postal_boundary,186
 2680,Semmering,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,422
-2700,Wiener Neustadt,AT,Niederösterreich,Wiener Neustadt,W. Europe Standard Time,true,1,1,postal_boundary,11526
+2700,Wiener Neustadt,AT,Niederösterreich,Wiener Neustadt,W. Europe Standard Time,true,1,1,postal_boundary,11527
 2721,Bad Fischau,AT,Niederösterreich,Bezirk Wiener Neustadt,W. Europe Standard Time,true,1,1,postal_boundary,6
 2722,Winzendorf,AT,Niederösterreich,Bezirk Wiener Neustadt,W. Europe Standard Time,true,1,1,postal_boundary,179
 2723,Muthmannsdorf,AT,Niederösterreich,Bezirk Wiener Neustadt,W. Europe Standard Time,true,1,1,postal_boundary,1
@@ -403,7 +403,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3242,Texing,AT,Niederösterreich,Bezirk Melk,W. Europe Standard Time,true,1,1,postal_boundary,6
 3243,St. Leonhard am Forst,AT,Niederösterreich,Bezirk Melk,W. Europe Standard Time,true,1,1,postal_boundary,1110
 3244,Ruprechtshofen,AT,Niederösterreich,Bezirk Melk,W. Europe Standard Time,true,1,1,postal_boundary,753
-3250,Wieselburg,AT,Niederösterreich,Bezirk Scheibbs,W. Europe Standard Time,true,1,1,postal_boundary,1080
+3250,Wieselburg,AT,Niederösterreich,Bezirk Scheibbs,W. Europe Standard Time,true,1,1,postal_boundary,1079
 3251,Purgstall,AT,Niederösterreich,Bezirk Scheibbs,W. Europe Standard Time,true,1,1,postal_boundary,81
 3252,Petzenkirchen,AT,Niederösterreich,Bezirk Melk,W. Europe Standard Time,true,1,1,postal_boundary,517
 3253,Erlauf,AT,Niederösterreich,Bezirk Melk,W. Europe Standard Time,true,1,1,postal_boundary,377
@@ -655,10 +655,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3973,Karlstift,AT,Niederösterreich,Bezirk Gmünd,W. Europe Standard Time,true,1,1,postal_boundary,1
 4010,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,7,address_fallback,3
 4018,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,5,address_fallback,5
-4020,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,1,postal_boundary,12165
+4020,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,1,postal_boundary,12168
 4021,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,4,address_fallback,23
 4030,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,2,postal_boundary,6678
-4040,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,3,postal_boundary,6545
+4040,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,3,postal_boundary,6546
 4041,Linz,AT,Oberösterreich,Linz,W. Europe Standard Time,true,1,6,address_fallback,4
 4048,Puchenau,AT,Oberösterreich,Bezirk Urfahr-Umgebung,W. Europe Standard Time,true,1,1,address_fallback,1532
 4050,Bad Hall,AT,Oberösterreich,Bezirk Steyr-Land,W. Europe Standard Time,false,2,3,address_fallback,4
@@ -740,7 +740,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4121,Neufelden,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,false,3,2,address_fallback,8
 4121,Partenreit,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,false,4,1,address_fallback,5
 4122,Arnreit,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,true,1,1,address_fallback,331
-4131,Kirchberg ob der Donau,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,true,1,1,address_fallback,372
+4131,Kirchberg ob der Donau,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,true,1,1,address_fallback,374
 4131,Obermühl,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,false,2,1,address_fallback,11
 4132,Hörbich,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,false,2,2,address_fallback,24
 4132,Lembach,AT,Oberösterreich,Bezirk Rohrbach,W. Europe Standard Time,false,4,1,address_fallback,13
@@ -1062,7 +1062,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4581,Rosenau am Hengstpaß,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,true,1,1,address_fallback,317
 4582,Edlbach,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,false,2,2,address_fallback,50
 4582,Spital am Phyrn,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,false,3,1,address_fallback,34
-4582,Spital am Pyhrn,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,true,1,1,address_fallback,866
+4582,Spital am Pyhrn,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,true,1,1,address_fallback,871
 4591,Molln,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,true,1,1,address_fallback,1306
 4591,Rosenau am Hengstpaß,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,false,2,3,address_fallback,5
 4592,Grünburg,AT,Oberösterreich,Bezirk Kirchdorf,W. Europe Standard Time,false,2,3,address_fallback,78
@@ -1077,14 +1077,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4600,Schleißheim,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,3,1,address_fallback,487
 4600,Thalheim,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,4,1,address_fallback,5
 4600,Thalheim bei Wels,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,2,1,address_fallback,1573
-4600,Wels,AT,Oberösterreich,Wels,W. Europe Standard Time,true,1,1,address_fallback,11766
+4600,Wels,AT,Oberösterreich,Wels,W. Europe Standard Time,true,1,1,address_fallback,11765
 4611,Buchkirchen,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,1,address_fallback,1464
 4612,Buchkirchen,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,2,3,address_fallback,55
 4612,Fraham,AT,Oberösterreich,Bezirk Eferding,W. Europe Standard Time,false,3,3,address_fallback,17
 4612,Scharten,AT,Oberösterreich,Bezirk Eferding,W. Europe Standard Time,true,1,1,address_fallback,817
 4613,Buchkirchen,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,2,address_fallback,131
 4613,Mistelbach bei Wels,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,2,1,address_fallback,6
-4614,Marchtrenk,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,1,address_fallback,4404
+4614,Marchtrenk,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,1,address_fallback,4405
 4615,Holzhausen,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,1,address_fallback,327
 4615,Jebenstein,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,2,1,address_fallback,106
 4616,Weißkirchen an der Traun,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,1,address_fallback,1300
@@ -1101,7 +1101,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4632,Pichl,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,2,1,address_fallback,16
 4632,Pichl bei Wels,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,1,address_fallback,1009
 4632,Schlüßlberg,AT,Oberösterreich,Bezirk Grieskirchen,W. Europe Standard Time,false,3,2,address_fallback,3
-4633,Kematen am Innbach,AT,Oberösterreich,Bezirk Grieskirchen,W. Europe Standard Time,true,1,1,address_fallback,487
+4633,Kematen am Innbach,AT,Oberösterreich,Bezirk Grieskirchen,W. Europe Standard Time,true,1,1,address_fallback,485
 4641,Oberschauersberg,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,2,1,address_fallback,48
 4641,Steinhaus,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,true,1,1,address_fallback,793
 4641,Steinhaus bei Wels,AT,Oberösterreich,Bezirk Wels-Land,W. Europe Standard Time,false,3,1,address_fallback,8
@@ -1283,7 +1283,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4816,Laakirchen,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,false,2,4,address_fallback,33
 4817,Gschwandt,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,false,2,4,address_fallback,20
 4817,St. Konrad,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,true,1,1,address_fallback,367
-4820,Bad Ischl,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,true,1,1,address_fallback,4415
+4820,Bad Ischl,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,true,1,1,address_fallback,4421
 4821,Bad Ischl,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,true,1,2,address_fallback,86
 4822,Bad Goisern,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,false,2,1,address_fallback,17
 4822,Bad Goisern am Hallstättersee,AT,Oberösterreich,Bezirk Gmunden,W. Europe Standard Time,true,1,1,address_fallback,2987
@@ -1426,7 +1426,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4982,Obernberg am Inn,AT,Oberösterreich,Bezirk Ried,W. Europe Standard Time,true,1,1,address_fallback,569
 4983,St. Georgen bei Obernberg am Inn,AT,Oberösterreich,Bezirk Ried,W. Europe Standard Time,true,1,1,address_fallback,191
 4984,Weilbach,AT,Oberösterreich,Bezirk Ried,W. Europe Standard Time,true,1,1,address_fallback,224
-5020,Salzburg,AT,Salzburg,Salzburg,W. Europe Standard Time,true,1,1,postal_boundary,20639
+5020,Salzburg,AT,Salzburg,Salzburg,W. Europe Standard Time,true,1,1,postal_boundary,20642
 5023,Salzburg-Gnigl,AT,Salzburg,Salzburg,W. Europe Standard Time,true,1,1,postal_boundary,30
 5026,Salzburg-Aigen,AT,Salzburg,Salzburg,W. Europe Standard Time,true,1,1,postal_boundary,2
 5061,Elsbethen-Glasenbach,AT,Salzburg,Bezirk Salzburg-Umgebung,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -1532,7 +1532,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 5273,St. Veit im Innkreis,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,false,2,1,address_fallback,152
 5274,Burgkirchen,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,true,1,1,address_fallback,614
 5274,St. Peter am Hart,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,false,2,4,address_fallback,3
-5280,Braunau am Inn,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,true,1,1,address_fallback,3265
+5280,Braunau am Inn,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,true,1,1,address_fallback,3274
 5280,Burgkirchen,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,false,3,4,address_fallback,28
 5280,St. Peter am Hart,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,false,2,2,address_fallback,114
 5282,Braunau am Inn,AT,Oberösterreich,Bezirk Braunau,W. Europe Standard Time,true,1,2,address_fallback,1019
@@ -1541,7 +1541,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 5300,Hallwang,AT,Salzburg,Bezirk Salzburg-Umgebung,W. Europe Standard Time,true,1,1,postal_boundary,1623
 5301,Eugendorf,AT,Salzburg,Bezirk Salzburg-Umgebung,W. Europe Standard Time,true,1,1,postal_boundary,2013
 5302,Henndorf am Wallersee,AT,Salzburg,Bezirk Salzburg-Umgebung,W. Europe Standard Time,true,1,1,postal_boundary,1590
-5303,Thalgau,AT,Salzburg,Bezirk Salzburg-Umgebung,W. Europe Standard Time,true,1,1,postal_boundary,1819
+5303,Thalgau,AT,Salzburg,Bezirk Salzburg-Umgebung,W. Europe Standard Time,true,1,1,postal_boundary,1821
 5310,Mondsee,AT,Oberösterreich,Bezirk Vöcklabruck,W. Europe Standard Time,true,1,1,postal_boundary,994
 5311,Innerschwand am Mondsee,AT,Oberösterreich,Bezirk Vöcklabruck,W. Europe Standard Time,true,1,1,address_fallback,391
 5321,Koppl,AT,Salzburg,Bezirk Salzburg-Umgebung,W. Europe Standard Time,true,1,1,postal_boundary,737
@@ -2101,7 +2101,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 7571,Rudersdorf,AT,Burgenland,Bezirk Jennersdorf,W. Europe Standard Time,true,1,1,postal_boundary,693
 7572,Deutsch Kaltenbrunn,AT,Burgenland,Bezirk Jennersdorf,W. Europe Standard Time,true,1,1,postal_boundary,702
 7574,Burgauberg-Neudauberg,AT,Burgenland,Bezirk Güssing,W. Europe Standard Time,true,1,1,postal_boundary,581
-8010,Graz,AT,Steiermark,Graz,W. Europe Standard Time,true,1,1,postal_boundary,15084
+8010,Graz,AT,Steiermark,Graz,W. Europe Standard Time,true,1,1,postal_boundary,15095
 8020,Graz,AT,Steiermark,Graz,W. Europe Standard Time,true,1,2,postal_boundary,10048
 8036,Graz,AT,Steiermark,Graz,W. Europe Standard Time,true,1,3,postal_boundary,76
 8041,Graz-Liebenau,AT,Steiermark,Graz,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -2336,13 +2336,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8650,Kindberg,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,1240
 8652,Kindberg-Aumühl,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,0
 8653,Stanz im Mürztal,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,784
-8654,Fischbach,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,587
+8654,Fischbach,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,589
 8661,Wartberg im Mürztal,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,3
 8662,Mitterdorf im Mürztal,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,7
 8663,Dorf Veitsch,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,65
 8664,Großveitsch,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,0
 8665,Langenwang,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,1286
-8670,Krieglach,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,1836
+8670,Krieglach,AT,Steiermark,Bezirk Bruck-Mürzzuschlag,W. Europe Standard Time,true,1,1,postal_boundary,1850
 8671,Alpl,AT,Steiermark,Bezirk Weiz,W. Europe Standard Time,true,1,1,postal_boundary,1
 8672,St. Kathrein am Hauenstein,AT,Steiermark,Bezirk Weiz,W. Europe Standard Time,true,1,1,postal_boundary,252
 8673,Ratten,AT,Steiermark,Bezirk Weiz,W. Europe Standard Time,true,1,1,postal_boundary,357
@@ -2454,11 +2454,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8982,Tauplitz,AT,Steiermark,Bezirk Liezen,W. Europe Standard Time,true,1,1,postal_boundary,17
 8983,Bad Mitterndorf,AT,Steiermark,Bezirk Liezen,W. Europe Standard Time,true,1,1,postal_boundary,1540
 8984,Kainisch,AT,Steiermark,Bezirk Liezen,W. Europe Standard Time,true,1,1,postal_boundary,0
-8990,Bad Aussee,AT,Steiermark,Bezirk Liezen,W. Europe Standard Time,true,1,1,postal_boundary,586
+8990,Bad Aussee,AT,Steiermark,Bezirk Liezen,W. Europe Standard Time,true,1,1,postal_boundary,587
 8992,Altaussee,AT,Steiermark,Bezirk Liezen,W. Europe Standard Time,true,1,1,postal_boundary,1992
 8993,Grundlsee,AT,Steiermark,Bezirk Liezen,W. Europe Standard Time,true,1,1,postal_boundary,776
 9010,Klagenfurt am Wörthersee,AT,Kärnten,Klagenfurt am Wörthersee,W. Europe Standard Time,true,1,5,address_fallback,11
-9020,Klagenfurt am Wörthersee,AT,Kärnten,Klagenfurt am Wörthersee,W. Europe Standard Time,true,1,1,postal_boundary,6271
+9020,Klagenfurt am Wörthersee,AT,Kärnten,Klagenfurt am Wörthersee,W. Europe Standard Time,true,1,1,postal_boundary,6272
 9021,Klagenfurt am Wörthersee,AT,Kärnten,Klagenfurt am Wörthersee,W. Europe Standard Time,true,1,6,address_fallback,4
 9061,Klagenfurt am Wörthersee,AT,Kärnten,Klagenfurt am Wörthersee,W. Europe Standard Time,true,1,2,postal_boundary,1653
 9062,Moosburg,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,1603
@@ -2484,15 +2484,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9102,Diex,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,2,4,address_fallback,8
 9102,Völkermarkt,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,4,address_fallback,453
 9103,Diex,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,address_fallback,354
-9103,Völkermarkt,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,2,8,address_fallback,12
+9103,Völkermarkt,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,2,7,address_fallback,12
 9111,Diex,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,2,3,address_fallback,32
 9111,Haimburg,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,3,1,address_fallback,14
 9111,Völkermarkt,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,3,address_fallback,456
 9112,Diex,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,2,2,address_fallback,41
 9112,Griffen,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,address_fallback,1316
-9112,St. Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,5,address_fallback,15
-9113,Ruden,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,address_fallback,619
-9113,Völkermarkt,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,2,7,address_fallback,21
+9112,St. Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,4,address_fallback,15
+9113,Ruden,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,postal_boundary,619
 9121,Tainach,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,false,2,1,address_fallback,7
 9121,Völkermarkt,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,2,address_fallback,533
 9122,St. Kanzian am Klopeiner See,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,postal_boundary,2209
@@ -2508,11 +2507,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9143,St. Michael ob Bleiburg,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,postal_boundary,5
 9150,Bleiburg,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,postal_boundary,477
 9155,Neuhaus,AT,Kärnten,Bezirk Völkermarkt,W. Europe Standard Time,true,1,1,postal_boundary,442
-9161,Köttmannsdorf,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,false,2,2,address_fallback,112
-9161,Maria Rain,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,address_fallback,765
-9162,Feistritz im Rosental,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,false,2,2,address_fallback,281
-9162,Ferlach,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,3,address_fallback,434
-9163,Ferlach,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,2,address_fallback,460
+9161,Maria Rain,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,765
+9162,Strau,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,0
+9163,Unterbergen,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,0
 9170,Ferlach,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,2188
 9173,St. Margareten im Rosental,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,359
 9181,Feistritz im Rosental,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,833
@@ -2520,17 +2517,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9183,Rosenbach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,1
 9184,St. Jakob im Rosental,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,914
 9201,Krumpendorf am Wörthersee,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,1182
-9210,Krumpendorf am Wörthersee,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,false,4,2,address_fallback,26
-9210,Pörtschach,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,false,2,1,address_fallback,49
-9210,Pörtschach am Wörther See,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,address_fallback,1075
-9210,Pörtschach am Wörthersee,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,false,3,1,address_fallback,34
-9212,Sankt Martin am Techelsberg,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,false,2,1,address_fallback,20
-9212,Techelsberg am Wörther See,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,address_fallback,1034
+9210,Pörtschach am Wörther See,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,1075
+9212,Techelsberg am Wörther See,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,1034
 9220,Velden am Wörther See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,3428
-9231,Köstenberg,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,468
-9231,Velden am Wörther See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,2,address_fallback,64
-9232,Rosegg,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,680
-9241,Wernberg,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,1823
+9231,Köstenberg,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,468
+9232,Rosegg,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,680
+9241,Wernberg,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,1823
 9300,Frauenstein,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,false,2,1,address_fallback,591
 9300,Graßdorf,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,false,11,1,address_fallback,4
 9300,Hunnenbrunn,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,false,5,1,address_fallback,95
@@ -2591,24 +2583,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9374,Wieting,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,false,2,1,address_fallback,19
 9375,Hüttenberg,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,true,1,1,postal_boundary,377
 9376,Hüttenberg,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,true,1,2,address_fallback,311
-9400,Frantschach-St. Gertraud,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,2,address_fallback,29
+9400,Frantschach-St. Gertraud,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,1,address_fallback,29
 9400,St. Michael,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,2,address_fallback,12
 9400,Wolfsberg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,address_fallback,3365
 9411,St. Michael,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,1,address_fallback,521
 9411,Wolfsberg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,3,address_fallback,851
 9412,Wolfsberg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,4,address_fallback,727
-9413,Frantschach-Sankt Gertraud,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,1,address_fallback,4
-9413,Frantschach-St. Gertraud,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,address_fallback,821
-9413,Wolfsberg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,9,address_fallback,18
+9413,St. Gertraud,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,1
 9421,Eitweg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,1,address_fallback,3
 9421,St. Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,2,address_fallback,768
 9421,Wolfsberg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,8,address_fallback,76
-9422,Maria Rojach,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,1,address_fallback,7
-9422,St. Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,3,address_fallback,463
-9423,Lavamünd,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,3,address_fallback,3
-9423,St. Georgen im Lavanttal,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,address_fallback,676
+9422,Maria Rojach,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,7
+9423,St. Georgen,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,0
 9431,Sankt Stefan,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,1,address_fallback,269
-9431,St. Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,4,address_fallback,164
+9431,St. Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,3,address_fallback,164
 9431,St. Stefan,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,4,1,address_fallback,21
 9431,Wolfsberg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,2,address_fallback,2364
 9433,Sankt Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,4,1,address_fallback,3
@@ -2624,36 +2612,28 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9461,Wolfsberg,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,6,address_fallback,168
 9462,Bad Sankt Leonhard im Lavanttal,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,0
 9463,Reichenfels,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,707
-9470,Sankt Paul,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,4,1,address_fallback,5
-9470,St. Andrä,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,3,6,address_fallback,15
-9470,St. Georgen im Lavanttal,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,false,2,2,address_fallback,103
-9470,St. Paul im Lavanttal,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,address_fallback,1104
-9472,Lavamünd,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,2,address_fallback,390
-9473,Lavamünd,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,address_fallback,752
-9500,Villach,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,9348
+9470,St. Paul im Lavanttal,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,1104
+9472,Ettendorf,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,0
+9473,Lavamünd,AT,Kärnten,Bezirk Wolfsberg,W. Europe Standard Time,true,1,1,postal_boundary,752
+9500,Villach,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,9284
 9504,Warmbad-Villach,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,15
-9520,Annenheim,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,3,1,address_fallback,3
-9520,Stöcklweingarten,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,4
-9520,Treffen am Ossiacher See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,2,address_fallback,672
-9521,Treffen,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,10
-9521,Treffen am Ossiacher See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,937
+9520,Sattendorf,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,1
+9521,Treffen,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,10
 9523,Villach-Landskron,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,21
 9524,Villach-St. Magdalen,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,0
 9530,Bad Bleiberg,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,760
-9531,Nötsch im Gailtal,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,2,address_fallback,8
+9531,Kreuth,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,0
 9535,Schiefling am Wörthersee,AT,Kärnten,Bezirk Klagenfurt-Land,W. Europe Standard Time,true,1,1,postal_boundary,1009
 9536,St. Egyden,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,252
-9541,Treffen am Ossiacher See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,3,address_fallback,302
-9542,Afritz am See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,555
-9542,Treffen am Ossiacher See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,4,address_fallback,193
-9543,Arriach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,601
-9544,Feld am See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,520
-9545,Radenthein,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,1606
-9546,Bad Kleinkirchheim,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,1171
-9546,Radenthein,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,false,2,3,address_fallback,3
+9541,Einöde,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,0
+9542,Afritz am See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,555
+9543,Arriach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,601
+9544,Feld am See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,519
+9545,Radenthein,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,1606
+9546,Bad Kleinkirchheim,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,1171
 9551,Bodensdorf,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,3,1,address_fallback,5
 9551,Steindorf am Ossiacher See,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,address_fallback,1007
-9551,Treffen am Ossiacher See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,5,address_fallback,131
+9551,Treffen am Ossiacher See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,131
 9552,Himmelberg,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,2,3,address_fallback,29
 9552,Steindorf am Ossiacher See,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,2,address_fallback,365
 9554,St. Urban,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,address_fallback,576
@@ -2728,54 +2708,25 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9560,Wachsenberg,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,59,1,address_fallback,4
 9560,Waiern,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,22,1,address_fallback,22
 9560,Weit,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,64,1,address_fallback,3
-9562,Himmelberg,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,address_fallback,861
-9563,Gnesau,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,address_fallback,452
-9563,Himmelberg,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,2,4,address_fallback,3
-9564,Patergassen,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,2,1,address_fallback,5
-9564,Reichenau,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,address_fallback,612
-9565,Ebene Reichenau,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,false,2,1,address_fallback,10
-9565,Reichenau,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,2,address_fallback,540
+9562,Himmelberg,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,postal_boundary,861
+9563,Gnesau,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,postal_boundary,452
+9564,Patergassen,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,postal_boundary,5
+9565,Ebene Reichenau,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,postal_boundary,10
 9570,Ossiach,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,address_fallback,248
 9571,Albeck,AT,Kärnten,Bezirk Feldkirchen,W. Europe Standard Time,true,1,1,address_fallback,688
 9571,Deutsch-Griffen,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,false,2,2,address_fallback,6
 9572,Deutsch-Griffen,AT,Kärnten,Bezirk St. Veit an der Glan,W. Europe Standard Time,true,1,1,address_fallback,360
-9580,Egg am Faaker See,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,5
-9581,Finkenstein am Faaker See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,5,address_fallback,20
-9581,Kopein,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,5,1,address_fallback,7
-9581,Ledenitzen,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,711
-9581,Mallenitzen,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,4,1,address_fallback,8
-9581,Oberferlach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,3,1,address_fallback,12
-9581,Petschnitzen,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,6,1,address_fallback,4
-9581,Unteraichwald,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,7,2,address_fallback,4
-9581,Unterferlach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,8,1,address_fallback,4
-9582,Altfinkenstein,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,5,1,address_fallback,28
-9582,Finkenstein am Faaker See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,4,1,address_fallback,52
-9582,Latschach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,7,1,address_fallback,24
-9582,Latschach ober dem Faaker See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,265
-9582,Oberaichwald,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,117
-9582,Outschena,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,8,1,address_fallback,16
-9582,Pogöriach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,3,1,address_fallback,72
-9582,Ratnitz,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,10,1,address_fallback,5
-9582,Unteraichwald,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,9,1,address_fallback,14
-9582,Untergreuth,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,6,1,address_fallback,28
-9583,Faak am See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,611
-9583,Finkenstein am Faaker See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,2,address_fallback,45
-9584,Finkenstein,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,483
-9584,Finkenstein am Faaker See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,3,3,address_fallback,45
-9584,Goritschach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,72
-9584,Höfling,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,4,1,address_fallback,16
-9585,Finkenstein am Faaker See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,7,4,address_fallback,28
-9585,Gödersdorf,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,124
-9585,Müllnern,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,4,1,address_fallback,69
-9585,Neumüllnern,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,5,1,address_fallback,46
-9585,Stobitzen,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,3,1,address_fallback,72
-9585,Susalitsch,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,6,1,address_fallback,35
-9585,Techanting,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,163
-9586,Unterschütt,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,1
+9580,Villach-Drobollach am Faaker See,AT,Kärnten,Villach,W. Europe Standard Time,true,1,1,postal_boundary,3
+9581,Ledenitzen,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,711
+9582,Latschach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,24
+9583,Faak am See,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,611
+9584,Finkenstein,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,483
+9585,Gödersdorf,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,124
+9586,Fürnitz,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,397
 9587,Riegersdorf,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,102
 9601,Arnoldstein,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,1183
 9602,Thörl-Maglern,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,7
-9611,Nötsch im Gailtal,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,546
+9611,Nötsch,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,1
 9612,St. Georgen im Gailtal,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,4
 9613,Feistritz an der Gail,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,218
 9614,Vorderberg,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,1
@@ -2784,10 +2735,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9622,Weißbriach,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,2
 9623,St. Stefan an der Gail,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,6
 9624,Egg,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,0
-9631,Kirchbach,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,2,postal_boundary,82
-9631,Tröpolach,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,false,2,1,postal_boundary,7
+9631,Jenig,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,0
 9632,Kirchbach,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,312
-9633,Reisach,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,131
+9633,Reisach,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,132
 9634,Gundersheim,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,3
 9635,Dellach,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,456
 9640,Kötschach-Mauthen,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,1278
@@ -2796,7 +2746,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9653,Liesing,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,39
 9654,St. Lorenzen im Lesachtal,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,7
 9655,Maria Luggau,AT,Kärnten,Bezirk Hermagor,W. Europe Standard Time,true,1,1,postal_boundary,9
-9701,Ferndorf,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,5,3,address_fallback,5
+9701,Ferndorf,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,5,2,address_fallback,5
 9701,Paternion,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,4,4,address_fallback,15
 9701,Rothenthurn,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,false,2,1,address_fallback,46
 9701,Spittal an der Drau,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,2,address_fallback,569
@@ -2812,7 +2762,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9710,Stuben,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,52
 9711,Paternion,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,2,address_fallback,569
 9711,Stockenboi,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,3,address_fallback,44
-9712,Fresach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,534
+9712,Fresach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,postal_boundary,534
 9713,Stockenboi,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,true,1,1,address_fallback,328
 9713,Zlan,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,4
 9714,Paternion,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,3,address_fallback,16
@@ -2829,13 +2779,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9722,Töplitsch,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,2,1,address_fallback,173
 9722,Weißenbach,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,4,1,address_fallback,57
 9722,Weißenstein,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,5,2,address_fallback,34
-9751,Sachsenburg,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,452
-9753,Kleblach-Lind,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,422
+9751,Sachsenburg,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,452
+9753,Lind im Drautal,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,0
 9754,Steinfeld,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,582
-9761,Berg im Drautal,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,false,2,2,address_fallback,47
-9761,Greifenburg,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,663
+9761,Greifenburg,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,663
 9762,Weißensee,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,432
-9771,Berg im Drautal,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,343
+9771,Berg im Drautal,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,343
 9772,Dellach,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,0
 9773,Irschen,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,767
 9781,Oberdrauburg,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,297
@@ -2850,8 +2799,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9812,Lurnfeld,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,2,postal_boundary,387
 9813,Lurnfeld,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,542
 9814,Mühldorf,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,335
-9815,Reißeck,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,680
-9816,Reißeck,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,2,postal_boundary,476
+9815,Kolbnitz,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,7
+9816,Penk,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,0
 9821,Obervellach,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,845
 9822,Mallnitz,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,427
 9831,Flattach,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,536
@@ -2863,19 +2812,17 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9844,Heiligenblut,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,0
 9851,Lieserbrücke,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,623
 9851,Seeboden am Millstätter See,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,false,2,2,address_fallback,118
-9852,Trebesing,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,373
-9853,Gmünd in Kärnten,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,1155
+9852,Trebesing,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,373
+9853,Gmünd,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,3
 9854,Malta,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,518
-9861,Krems in Kärnten,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,2,postal_boundary,5
-9862,Krems in Kärnten,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,22
-9863,Rennweg am Katschberg,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,219
+9861,Eisentratten,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,489
+9862,Kremsbrücke,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,324
+9863,Rennweg,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,573
 9871,Seeboden,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,false,2,1,address_fallback,18
 9871,Seeboden am Millstätter See,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,1850
 9872,Millstatt,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,false,2,1,address_fallback,26
 9872,Millstatt am See,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,address_fallback,1458
-9873,Döbriach,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,false,2,1,address_fallback,49
-9873,Ferndorf,AT,Kärnten,Bezirk Villach-Land,W. Europe Standard Time,false,3,2,address_fallback,9
-9873,Radenthein,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,2,address_fallback,642
+9873,Döbriach,AT,Kärnten,Bezirk Spittal an der Drau,W. Europe Standard Time,true,1,1,postal_boundary,49
 9900,Lienz,AT,Tirol,Bezirk Lienz,W. Europe Standard Time,true,1,1,postal_boundary,2658
 9903,Oberlienz,AT,Tirol,Bezirk Lienz,W. Europe Standard Time,true,1,1,postal_boundary,474
 9904,Thurn,AT,Tirol,Bezirk Lienz,W. Europe Standard Time,true,1,1,postal_boundary,273

@@ -6,7 +6,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 53426,Schalkenbach,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,306
 53474,Bad Neuenahr-Ahrweiler,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,4080
 53489,Sinzig,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,2880
-53498,Bad Breisig,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,1518
+53498,Bad Breisig,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,1521
 53498,Gönnersdorf,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,false,3,1,postal_boundary,8
 53498,Waldorf,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,false,2,1,postal_boundary,22
 53501,Grafschaft,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,1930
@@ -20,7 +20,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 53506,Kesseling,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,false,5,1,postal_boundary,111
 53506,Lind,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,false,6,1,postal_boundary,8
 53506,Rech,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,false,3,1,postal_boundary,225
-53507,Dernau,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,657
+53507,Dernau,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,658
 53508,Mayschoß,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,199
 53518,Adenau,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,true,1,1,postal_boundary,1241
 53518,Herschbroich,DE,Rheinland-Pfalz,Landkreis Ahrweiler,W. Europe Standard Time,false,5,1,postal_boundary,109
@@ -70,9 +70,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 53578,Windhagen,DE,Rheinland-Pfalz,Landkreis Neuwied,W. Europe Standard Time,true,1,1,postal_boundary,721
 53579,Erpel,DE,Rheinland-Pfalz,Landkreis Neuwied,W. Europe Standard Time,true,1,1,postal_boundary,897
 53619,Rheinbreitbach,DE,Rheinland-Pfalz,Landkreis Neuwied,W. Europe Standard Time,true,1,1,postal_boundary,1511
-54290,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,5,postal_boundary,3090
-54292,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,4,postal_boundary,3238
-54293,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,2,postal_boundary,3862
+54290,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,5,postal_boundary,3092
+54292,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,4,postal_boundary,3233
+54293,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,2,postal_boundary,3863
 54294,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,3,postal_boundary,3632
 54295,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,6,postal_boundary,2951
 54296,Trier,DE,Rheinland-Pfalz,Trier,W. Europe Standard Time,true,1,1,postal_boundary,3977
@@ -192,7 +192,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 54612,Lasel Nimshuscheid Wawern,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,0
 54614,Schönecken,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,649
 54616,Winterspelt,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,406
-54617,Lützkampen,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,173
+54617,Lützkampen,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,188
 54619,Üttfeld,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,212
 54634,Bitburg,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,2406
 54636,Rittersdorf u.a.,DE,Rheinland-Pfalz,Eifelkreis Bitburg-Prüm,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -339,7 +339,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 56130,Bad Ems u.a.,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,false,2,1,postal_boundary,0
 56132,Becheln,DE,Rheinland-Pfalz,Rhein-Lahn-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,252
 56132,Dausenau,DE,Rheinland-Pfalz,Rhein-Lahn-Kreis,W. Europe Standard Time,false,4,1,postal_boundary,57
-56132,Frücht,DE,Rheinland-Pfalz,Rhein-Lahn-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,113
+56132,Frücht,DE,Rheinland-Pfalz,Rhein-Lahn-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,114
 56132,Kemmenau,DE,Rheinland-Pfalz,Rhein-Lahn-Kreis,W. Europe Standard Time,false,6,1,postal_boundary,7
 56132,Miellen,DE,Rheinland-Pfalz,Rhein-Lahn-Kreis,W. Europe Standard Time,false,5,1,postal_boundary,12
 56132,Nievern,DE,Rheinland-Pfalz,Rhein-Lahn-Kreis,W. Europe Standard Time,false,3,1,postal_boundary,94
@@ -352,7 +352,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 56179,Vallendar,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,true,1,1,postal_boundary,2284
 56182,Urbar,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,true,1,1,postal_boundary,110
 56191,Weitersburg,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,true,1,1,postal_boundary,615
-56203,Höhr-Grenzhausen,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,268
+56203,Höhr-Grenzhausen,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,269
 56204,Hillscheid,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,887
 56206,Hilgert,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,639
 56218,Mülheim-Kärlich,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,true,1,1,postal_boundary,3478
@@ -382,8 +382,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 56283,Gondershausen,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,532
 56283,Halsenbach,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,3,1,postal_boundary,304
 56283,Kratzenburg,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,8,1,postal_boundary,2
-56283,Mermuth,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,5,1,postal_boundary,110
-56283,Morshausen,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,6,1,postal_boundary,78
+56283,Mermuth,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,6,1,postal_boundary,110
+56283,Morshausen,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,5,1,postal_boundary,157
 56283,Ney,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,7,1,postal_boundary,23
 56283,Nörtershausen,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,2,1,postal_boundary,505
 56283,Wildenbungert,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,9,1,postal_boundary,0
@@ -391,12 +391,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 56288,Kastellaun,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1736
 56290,Beltheim,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,833
 56290,Buch,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,416
-56290,Dommershausen,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,4,1,postal_boundary,298
+56290,Dommershausen,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,3,1,postal_boundary,366
 56290,Gödenroth,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,5,1,postal_boundary,226
 56290,Lieg,DE,Rheinland-Pfalz,Landkreis Cochem-Zell,W. Europe Standard Time,false,6,1,postal_boundary,217
 56290,Lütz,DE,Rheinland-Pfalz,Landkreis Cochem-Zell,W. Europe Standard Time,false,7,1,postal_boundary,195
 56290,Macken,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,8,1,postal_boundary,195
-56290,Mörsdorf,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,3,1,postal_boundary,355
+56290,Mörsdorf,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,4,1,postal_boundary,355
 56290,Uhler,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,false,9,1,postal_boundary,170
 56291,Leiningen,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,0
 56294,Münstermaifeld,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,true,1,1,postal_boundary,1471
@@ -418,7 +418,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 56332,Dieblich,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,9,1,postal_boundary,125
 56332,Hatzenport...,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,10,1,postal_boundary,0
 56332,Lehmen,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,2,1,postal_boundary,587
-56332,Löf,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,true,1,1,postal_boundary,649
+56332,Löf,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,true,1,1,postal_boundary,650
 56332,Niederfell,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,7,1,postal_boundary,315
 56332,Oberfell,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,3,1,postal_boundary,465
 56332,Wolken,DE,Rheinland-Pfalz,Landkreis Mayen-Koblenz,W. Europe Standard Time,false,4,1,postal_boundary,454
@@ -562,7 +562,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 56865,Blankenrath u.a.,DE,Rheinland-Pfalz,Landkreis Cochem-Zell,W. Europe Standard Time,true,1,1,postal_boundary,0
 56867,Briedel,DE,Rheinland-Pfalz,Landkreis Cochem-Zell,W. Europe Standard Time,true,1,1,postal_boundary,35
 56869,Mastershausen,DE,Rheinland-Pfalz,Rhein-Hunsrück-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,25
-57518,Betzdorf,DE,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),W. Europe Standard Time,true,1,1,postal_boundary,3191
+57518,Betzdorf,DE,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),W. Europe Standard Time,true,1,1,postal_boundary,3433
 57520,Emmerzhausen,DE,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),W. Europe Standard Time,false,2,1,postal_boundary,338
 57520,Niederdreisbach,DE,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),W. Europe Standard Time,true,1,1,postal_boundary,346
 57520,Steinebach,DE,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),W. Europe Standard Time,false,3,1,postal_boundary,14
@@ -607,7 +607,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 57641,Oberlahr,DE,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),W. Europe Standard Time,true,1,1,postal_boundary,383
 57642,Alpenrod,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,506
 57644,Hattert,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,449
-57645,Nister,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,383
+57645,Nister,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,387
 57647,Enspel,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,false,2,1,postal_boundary,121
 57647,Nistertal,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,452
 57648,Unnau,DE,Rheinland-Pfalz,Westerwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,707
@@ -735,7 +735,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 67169,Kallstadt,DE,Rheinland-Pfalz,Landkreis Bad Dürkheim,W. Europe Standard Time,true,1,1,postal_boundary,500
 67227,Frankenthal,DE,Rheinland-Pfalz,Frankenthal (Pfalz),W. Europe Standard Time,true,1,1,postal_boundary,1
 67229,Gerolsheim,DE,Rheinland-Pfalz,Landkreis Bad Dürkheim,W. Europe Standard Time,true,1,1,postal_boundary,592
-67240,Bobenheim-Roxheim,DE,Rheinland-Pfalz,Rhein-Pfalz-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3135
+67240,Bobenheim-Roxheim,DE,Rheinland-Pfalz,Rhein-Pfalz-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3157
 67245,Lambsheim,DE,Rheinland-Pfalz,Rhein-Pfalz-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2274
 67246,Dirmstein,DE,Rheinland-Pfalz,Landkreis Bad Dürkheim,W. Europe Standard Time,true,1,1,postal_boundary,1053
 67251,Freinsheim,DE,Rheinland-Pfalz,Landkreis Bad Dürkheim,W. Europe Standard Time,true,1,1,postal_boundary,1657
@@ -817,9 +817,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 67596,Dittelsheim-Heßloch,DE,Rheinland-Pfalz,Landkreis Alzey-Worms,W. Europe Standard Time,true,1,1,postal_boundary,818
 67598,Gundersheim,DE,Rheinland-Pfalz,Landkreis Alzey-Worms,W. Europe Standard Time,true,1,1,postal_boundary,1123
 67599,Gundheim,DE,Rheinland-Pfalz,Landkreis Alzey-Worms,W. Europe Standard Time,true,1,1,postal_boundary,524
-67655,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,4,postal_boundary,4076
-67657,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,5,postal_boundary,4056
-67659,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,1,postal_boundary,6278
+67655,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,5,postal_boundary,4080
+67657,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,4,postal_boundary,4170
+67659,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,1,postal_boundary,6308
 67661,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,2,postal_boundary,4696
 67663,Kaiserslautern,DE,Rheinland-Pfalz,Kaiserslautern,W. Europe Standard Time,true,1,3,postal_boundary,4423
 67677,Enkenbach-Alsenborn,DE,Rheinland-Pfalz,Landkreis Kaiserslautern,W. Europe Standard Time,true,1,1,postal_boundary,2618
@@ -915,7 +915,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 76776,Neuburg am Rhein,DE,Rheinland-Pfalz,Landkreis Germersheim,W. Europe Standard Time,true,1,1,postal_boundary,1312
 76777,Neupotz,DE,Rheinland-Pfalz,Landkreis Germersheim,W. Europe Standard Time,true,1,1,postal_boundary,813
 76779,Scheibenhardt,DE,Rheinland-Pfalz,Landkreis Germersheim,W. Europe Standard Time,true,1,1,postal_boundary,252
-76829,Landau in der Pfalz,DE,Rheinland-Pfalz,Landau in der Pfalz,W. Europe Standard Time,true,1,1,postal_boundary,12562
+76829,Landau in der Pfalz,DE,Rheinland-Pfalz,Landau in der Pfalz,W. Europe Standard Time,true,1,1,postal_boundary,12560
 76831,Billigheim-Ingenheim,DE,Rheinland-Pfalz,Landkreis Südliche Weinstraße,W. Europe Standard Time,true,1,1,postal_boundary,1373
 76831,Birkweiler,DE,Rheinland-Pfalz,Landkreis Südliche Weinstraße,W. Europe Standard Time,false,2,1,postal_boundary,312
 76833,Frankweiler,DE,Rheinland-Pfalz,Landkreis Südliche Weinstraße,W. Europe Standard Time,true,1,1,postal_boundary,393
