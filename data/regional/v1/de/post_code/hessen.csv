@@ -4,7 +4,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 34119,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,10,postal_boundary,1504
 34121,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,3,postal_boundary,3382
 34123,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,9,postal_boundary,1724
-34125,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,4,postal_boundary,2793
+34125,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,4,postal_boundary,2792
 34127,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,11,postal_boundary,1357
 34128,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,1,postal_boundary,5194
 34130,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,7,postal_boundary,2500
@@ -12,15 +12,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 34132,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,5,postal_boundary,2767
 34134,Kassel,DE,Hessen,Kassel,W. Europe Standard Time,true,1,2,postal_boundary,3841
 34212,Melsungen,DE,Hessen,Schwalm-Eder-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3005
-34225,Baunatal,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,6596
+34225,Baunatal,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,6617
 34233,Fuldatal,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,2122
 34246,Vellmar,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,5123
 34253,Lohfelden,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,2500
 34260,Kaufungen,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,3694
 34266,Niestetal,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,1398
-34270,Schauenburg,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,2649
+34270,Schauenburg,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,2681
 34277,Fuldabrück,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,476
-34281,Gudensberg,DE,Hessen,Schwalm-Eder-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2734
+34281,Gudensberg,DE,Hessen,Schwalm-Eder-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2740
 34286,Spangenberg,DE,Hessen,Schwalm-Eder-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,576
 34289,Zierenberg,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,1027
 34292,Ahnatal,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,2030
@@ -55,11 +55,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 34479,Breuna,DE,Hessen,Landkreis Kassel,W. Europe Standard Time,true,1,1,postal_boundary,879
 34497,Korbach,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,7240
 34508,Willingen,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,0
-34513,Waldeck,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,3108
+34513,Waldeck,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,3128
 34516,Vöhl,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,2470
 34519,Diemelsee,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,2058
-34537,Bad Wildungen,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,5214
-34549,Edertal,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,2781
+34537,Bad Wildungen,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,5216
+34549,Edertal,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,2801
 34560,Fritzlar,DE,Hessen,Schwalm-Eder-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4736
 34576,Homberg,DE,Hessen,Schwalm-Eder-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,17
 34582,Borken,DE,Hessen,Schwalm-Eder-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,770
@@ -111,7 +111,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 35282,Rauschenberg,DE,Hessen,Landkreis Marburg-Biedenkopf,W. Europe Standard Time,true,1,1,postal_boundary,1506
 35285,Gemünden,DE,Hessen,Landkreis Waldeck-Frankenberg,W. Europe Standard Time,true,1,1,postal_boundary,0
 35287,Amöneburg,DE,Hessen,Landkreis Marburg-Biedenkopf,W. Europe Standard Time,true,1,1,postal_boundary,1838
-35288,Wohratal,DE,Hessen,Landkreis Marburg-Biedenkopf,W. Europe Standard Time,true,1,1,postal_boundary,840
+35288,Wohratal,DE,Hessen,Landkreis Marburg-Biedenkopf,W. Europe Standard Time,true,1,1,postal_boundary,843
 35305,Grünberg,DE,Hessen,Landkreis Gießen,W. Europe Standard Time,true,1,1,postal_boundary,4675
 35315,Homberg,DE,Hessen,Vogelsbergkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
 35321,Laubach,DE,Hessen,Landkreis Gießen,W. Europe Standard Time,true,1,1,postal_boundary,3483
@@ -155,7 +155,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 35614,Aßlar,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4095
 35619,Braunfels,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4202
 35625,Hüttenberg,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3452
-35630,Ehringshausen,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2665
+35630,Ehringshausen,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2914
 35633,Lahnau,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2557
 35638,Leun,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2122
 35641,Schöffengrund,DE,Hessen,Lahn-Dill-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2426
@@ -187,15 +187,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 35794,Mengerskirchen,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,1,postal_boundary,2108
 35796,Weinbach,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,1,postal_boundary,1642
 35799,Merenberg,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,1,postal_boundary,601
-36037,Fulda,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,2,postal_boundary,2453
+36037,Fulda,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,2,postal_boundary,2452
 36039,Fulda,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,3,postal_boundary,1789
-36041,Fulda,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,3933
-36043,Fulda,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,4,postal_boundary,1729
+36041,Fulda,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,3934
+36043,Fulda,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,4,postal_boundary,1730
 36088,Hünfeld,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,2189
 36093,Künzell,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,2284
 36100,Petersberg,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,1482
 36103,Flieden,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,2735
-36110,Schlitz,DE,Hessen,Vogelsbergkreis,W. Europe Standard Time,true,1,1,postal_boundary,2829
+36110,Schlitz,DE,Hessen,Vogelsbergkreis,W. Europe Standard Time,true,1,1,postal_boundary,2827
 36115,Ehrenberg,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,false,2,1,postal_boundary,207
 36115,Hilders,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,756
 36119,Neuhof,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,3434
@@ -209,7 +209,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 36151,Burghaun,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,1106
 36154,Hosenfeld,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,1484
 36157,Ebersburg,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,1499
-36160,Dipperz,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,1049
+36160,Dipperz,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,1050
 36163,Poppenhausen,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,929
 36166,Haunetal,DE,Hessen,Landkreis Hersfeld-Rotenburg,W. Europe Standard Time,true,1,1,postal_boundary,1117
 36167,Nüsttal,DE,Hessen,Landkreis Fulda,W. Europe Standard Time,true,1,1,postal_boundary,1091
@@ -287,7 +287,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 60313,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,37,postal_boundary,837
 60314,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,31,postal_boundary,1279
 60315,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,39,postal_boundary,14
-60316,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,26,postal_boundary,1797
+60316,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,26,postal_boundary,1796
 60318,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,27,postal_boundary,1672
 60320,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,22,postal_boundary,2038
 60322,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,28,postal_boundary,1646
@@ -337,11 +337,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 61273,Wehrheim,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,3253
 61276,Weilrod,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,2413
 61279,Grävenwiesbach,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,1666
-61348,Bad Homburg v.d. Höhe,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,3,postal_boundary,2602
+61348,Bad Homburg v.d. Höhe,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,3,postal_boundary,2601
 61350,Bad Homburg v.d. Höhe,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,4587
 61352,Bad Homburg v.d. Höhe,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,2,postal_boundary,2842
 61381,Friedrichsdorf,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,5825
-61389,Schmitten im Taunus,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,3383
+61389,Schmitten im Taunus,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,3386
 61440,Oberursel,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,1
 61449,Steinbach,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,10
 61462,Königstein im Taunus,DE,Hessen,Hochtaunuskreis,W. Europe Standard Time,true,1,1,postal_boundary,3251
@@ -362,7 +362,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 63263,Neu-Isenburg,DE,Hessen,Landkreis Offenbach,W. Europe Standard Time,true,1,1,postal_boundary,6303
 63303,Dreieich,DE,Hessen,Landkreis Offenbach,W. Europe Standard Time,true,1,1,postal_boundary,9450
 63322,Rödermark,DE,Hessen,Landkreis Offenbach,W. Europe Standard Time,true,1,1,postal_boundary,7442
-63329,Egelsbach,DE,Hessen,Landkreis Offenbach,W. Europe Standard Time,true,1,1,postal_boundary,3013
+63329,Egelsbach,DE,Hessen,Landkreis Offenbach,W. Europe Standard Time,true,1,1,postal_boundary,3014
 63450,Hanau,DE,Hessen,Hanau,W. Europe Standard Time,true,1,5,postal_boundary,2801
 63452,Hanau,DE,Hessen,Hanau,W. Europe Standard Time,true,1,3,postal_boundary,3525
 63454,Hanau,DE,Hessen,Hanau,W. Europe Standard Time,true,1,4,postal_boundary,3279
@@ -384,8 +384,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 63579,Freigericht,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4675
 63584,Gründau,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4907
 63589,Linsengericht,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2602
-63594,Hasselroth,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2411
-63599,Biebergemünd,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3073
+63594,Hasselroth,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2413
+63599,Biebergemünd,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3072
 63607,Wächtersbach,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3678
 63619,Bad Orb,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2829
 63628,Bad Soden-Salmünster,DE,Hessen,Main-Kinzig-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3834
@@ -412,12 +412,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 64293,Darmstadt,DE,Hessen,Darmstadt,W. Europe Standard Time,true,1,7,postal_boundary,2704
 64295,Darmstadt,DE,Hessen,Darmstadt,W. Europe Standard Time,true,1,3,postal_boundary,3804
 64297,Darmstadt,DE,Hessen,Darmstadt,W. Europe Standard Time,true,1,2,postal_boundary,5321
-64319,Pfungstadt,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,6424
+64319,Pfungstadt,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,6423
 64331,Weiterstadt,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,6671
 64342,Seeheim-Jugenheim,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,5050
 64347,Griesheim,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,6756
 64354,Reinheim,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,5308
-64367,Mühltal,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,4225
+64367,Mühltal,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,4227
 64372,Ober-Ramstadt,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,4402
 64380,Roßdorf,DE,Hessen,Landkreis Darmstadt-Dieburg,W. Europe Standard Time,true,1,1,postal_boundary,4014
 64385,Reichelsheim,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -453,7 +453,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 64732,Bad König,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,3035
 64739,Höchst im Odenwald,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,3032
 64743,Marbach,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
-64747,Breuberg,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,2192
+64747,Breuberg,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,2193
 64750,Lützelbach,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,2176
 64753,Brombachtal,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,1331
 64756,Mossautal,DE,Hessen,Odenwaldkreis,W. Europe Standard Time,true,1,1,postal_boundary,934
@@ -493,7 +493,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 65347,Eltville am Rhein,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,2,postal_boundary,512
 65366,Geisenheim,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3446
 65375,Oestrich-Winkel,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3176
-65385,Rüdesheim am Rhein,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2688
+65385,Rüdesheim am Rhein,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2689
 65388,Schlangenbad,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2102
 65391,Lorch,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1664
 65396,Walluf,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1197
@@ -508,8 +508,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 65510,Hünstetten,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,2790
 65510,Idstein,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3091
 65520,Bad Camberg,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,1,postal_boundary,3220
-65527,Niedernhausen,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3250
-65529,Waldems,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1690
+65527,Niedernhausen,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3253
+65529,Waldems,DE,Hessen,Rheingau-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1695
 65549,Limburg,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,1,postal_boundary,7
 65550,Limburg,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,3,postal_boundary,2
 65551,Limburg,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,2,postal_boundary,3
@@ -531,7 +531,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 65627,Elbtal,DE,Hessen,Landkreis Limburg-Weilburg,W. Europe Standard Time,true,1,1,postal_boundary,875
 65719,Hofheim am Taunus,DE,Hessen,Main-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,10730
 65760,Eschborn,DE,Hessen,Main-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4884
-65779,Kelkheim,DE,Hessen,Main-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2501
+65779,Kelkheim,DE,Hessen,Main-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2499
 65795,Hattersheim,DE,Hessen,Main-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2536
 65812,Bad Soden am Taunus,DE,Hessen,Main-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4931
 65817,Eppstein,DE,Hessen,Main-Taunus-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4055
@@ -542,7 +542,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 65929,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,3,postal_boundary,4064
 65931,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,8,postal_boundary,3559
 65933,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,13,postal_boundary,2930
-65934,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,19,postal_boundary,2167
+65934,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,19,postal_boundary,2168
 65936,Frankfurt am Main,DE,Hessen,Frankfurt am Main,W. Europe Standard Time,true,1,24,postal_boundary,1885
 68519,Viernheim,DE,Hessen,Kreis Bergstraße,W. Europe Standard Time,true,1,1,postal_boundary,7394
 68623,Lampertheim,DE,Hessen,Kreis Bergstraße,W. Europe Standard Time,true,1,1,postal_boundary,9353
@@ -559,5 +559,5 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 69488,Birkenau,DE,Hessen,Kreis Bergstraße,W. Europe Standard Time,true,1,1,postal_boundary,3267
 69509,Mörlenbach,DE,Hessen,Kreis Bergstraße,W. Europe Standard Time,true,1,1,postal_boundary,3136
 69517,Gorxheimertal,DE,Hessen,Kreis Bergstraße,W. Europe Standard Time,true,1,1,postal_boundary,1280
-69518,Abtsteinach,DE,Hessen,Kreis Bergstraße,W. Europe Standard Time,true,1,1,postal_boundary,824
+69518,Abtsteinach,DE,Hessen,Kreis Bergstraße,W. Europe Standard Time,true,1,1,postal_boundary,827
 81184,Karben,DE,Hessen,Wetteraukreis,W. Europe Standard Time,true,1,2,address_fallback,153

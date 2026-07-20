@@ -5,7 +5,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 67166,Brühl,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,2,address_fallback,11
 68159,Mannheim,DE,Baden-Württemberg,Mannheim,W. Europe Standard Time,true,1,13,postal_boundary,1241
 68161,Mannheim,DE,Baden-Württemberg,Mannheim,W. Europe Standard Time,true,1,11,postal_boundary,1415
-68163,Mannheim,DE,Baden-Württemberg,Mannheim,W. Europe Standard Time,true,1,7,postal_boundary,2758
+68163,Mannheim,DE,Baden-Württemberg,Mannheim,W. Europe Standard Time,true,1,7,postal_boundary,2754
 68165,Mannheim,DE,Baden-Württemberg,Mannheim,W. Europe Standard Time,true,1,12,postal_boundary,1364
 68167,Mannheim,DE,Baden-Württemberg,Mannheim,W. Europe Standard Time,true,1,9,postal_boundary,1756
 68169,Mannheim,DE,Baden-Württemberg,Mannheim,W. Europe Standard Time,true,1,10,postal_boundary,1565
@@ -25,7 +25,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 68723,Plankstadt,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,3007
 68723,Schwetzingen,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4566
 68753,Waghäusel,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,6425
-68766,Hockenheim,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5527
+68766,Hockenheim,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5526
 68775,Ketsch,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4005
 68782,Brühl,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3581
 68789,Sankt Leon-Rot,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -40,16 +40,16 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 69121,Heidelberg,DE,Baden-Württemberg,Heidelberg,W. Europe Standard Time,true,1,6,postal_boundary,2825
 69123,Heidelberg,DE,Baden-Württemberg,Heidelberg,W. Europe Standard Time,true,1,2,postal_boundary,4018
 69124,Heidelberg,DE,Baden-Württemberg,Heidelberg,W. Europe Standard Time,true,1,4,postal_boundary,3105
-69126,Heidelberg,DE,Baden-Württemberg,Heidelberg,W. Europe Standard Time,true,1,1,postal_boundary,4476
+69126,Heidelberg,DE,Baden-Württemberg,Heidelberg,W. Europe Standard Time,true,1,1,postal_boundary,4477
 69151,Neckargemünd,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4297
 69168,Wiesloch,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,6732
-69181,Leimen,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5669
+69181,Leimen,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5670
 69190,Walldorf,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4346
 69198,Schriesheim,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4059
 69207,Sandhausen,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3836
 69214,Eppelheim,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3133
 69221,Dossenheim,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2766
-69226,Nußloch,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3044
+69226,Nußloch,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3045
 69231,Rauenberg,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2724
 69234,Dielheim,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2913
 69242,Mühlhausen,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2769
@@ -73,7 +73,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 69493,Hirschberg an der Bergstraße,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2735
 69502,Hemsbach,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3057
 69514,Laudenbach,DE,Baden-Württemberg,Rhein-Neckar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1922
-70173,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,32,postal_boundary,1086
+70173,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,32,postal_boundary,1087
 70174,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,34,postal_boundary,882
 70176,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,30,postal_boundary,1462
 70178,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,31,postal_boundary,1301
@@ -102,7 +102,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 70439,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,16,postal_boundary,2937
 70469,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,2,postal_boundary,4697
 70499,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,1,postal_boundary,5140
-70563,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,6,postal_boundary,3968
+70563,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,6,postal_boundary,3971
 70565,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,10,postal_boundary,3362
 70567,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,7,postal_boundary,3961
 70569,Stuttgart,DE,Baden-Württemberg,Stuttgart,W. Europe Standard Time,true,1,9,postal_boundary,3524
@@ -124,7 +124,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 71065,Sindelfingen,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,3,postal_boundary,2377
 71067,Sindelfingen,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,4,postal_boundary,2017
 71069,Sindelfingen,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,1,postal_boundary,3756
-71083,Herrenberg,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,1,postal_boundary,9468
+71083,Herrenberg,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,1,postal_boundary,9469
 71088,Holzgerlingen,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,1,postal_boundary,3416
 71093,Weil im Schönbuch,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,1,postal_boundary,2874
 71101,Schönaich,DE,Baden-Württemberg,Landkreis Böblingen,W. Europe Standard Time,true,1,1,postal_boundary,2536
@@ -154,7 +154,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 71296,Heimsheim,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,713
 71297,Mönsheim,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,1404
 71299,Wimsheim,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,113
-71332,Waiblingen,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,true,1,3,postal_boundary,3588
+71332,Waiblingen,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,true,1,3,postal_boundary,3597
 71334,Waiblingen,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,3811
 71336,Waiblingen,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,true,1,2,postal_boundary,3793
 71364,71364 Affalterbach-Steinächle,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -187,7 +187,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 71636,Ludwigsburg,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,4,postal_boundary,3009
 71638,Ludwigsburg,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,3,postal_boundary,3048
 71640,Ludwigsburg,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,2,postal_boundary,3497
-71642,Ludwigsburg,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,4042
+71642,Ludwigsburg,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,4043
 71665,Vaihingen an der Enz,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,8920
 71672,Marbach am Neckar,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,3911
 71679,Asperg,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,3189
@@ -195,11 +195,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 71691,Freiberg am Neckar,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,2898
 71696,Möglingen,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,942
 71701,Schwieberdingen,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,2361
-71706,Markgröningen,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,3275
+71706,Markgröningen,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,3276
 71711,Murr,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,1753
 71711,Steinheim,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,false,2,1,postal_boundary,0
-71717,Beilstein,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,2074
-71720,Oberstenfeld,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,2699
+71717,Beilstein,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,2075
+71720,Oberstenfeld,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,2700
 71723,Großbottwar,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,2616
 71726,Benningen am Neckar,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,1737
 71729,Erdmannhausen,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,1471
@@ -209,7 +209,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 71739,Oberriexingen,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,854
 72070,Tübingen,DE,Baden-Württemberg,Landkreis Tübingen,W. Europe Standard Time,true,1,1,postal_boundary,5417
 72072,Tübingen,DE,Baden-Württemberg,Landkreis Tübingen,W. Europe Standard Time,true,1,2,postal_boundary,5363
-72074,Tübingen,DE,Baden-Württemberg,Landkreis Tübingen,W. Europe Standard Time,true,1,3,postal_boundary,4204
+72074,Tübingen,DE,Baden-Württemberg,Landkreis Tübingen,W. Europe Standard Time,true,1,3,postal_boundary,4205
 72076,Tübingen,DE,Baden-Württemberg,Landkreis Tübingen,W. Europe Standard Time,true,1,4,postal_boundary,2721
 72108,Rottenburg am Neckar,DE,Baden-Württemberg,Landkreis Tübingen,W. Europe Standard Time,true,1,1,postal_boundary,13939
 72116,Mössingen,DE,Baden-Württemberg,Landkreis Tübingen,W. Europe Standard Time,true,1,1,postal_boundary,6352
@@ -300,7 +300,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 72535,Heroldstatt,DE,Baden-Württemberg,Alb-Donau-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1254
 72537,Mehrstetten,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,509
 72539,Pfronstetten,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,640
-72555,Metzingen,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,6088
+72555,Metzingen,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,6094
 72574,Bad Urach,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,3614
 72581,Dettingen an der Erms,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,2793
 72582,Grabenstetten,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,622
@@ -311,7 +311,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 72622,Nürtingen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,10364
 72631,Aichtal,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,3145
 72636,Frickenhausen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,2822
-72639,Neuffen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1848
+72639,Neuffen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1849
 72644,Oberboihingen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1691
 72649,Wolfschlugen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1751
 72654,Neckartenzlingen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1701
@@ -319,7 +319,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 72657,Altenriet,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,637
 72658,Bempflingen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1141
 72660,Beuren,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1125
-72661,Grafenberg,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,858
+72661,Grafenberg,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,859
 72663,Großbettlingen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1316
 72664,Kohlberg,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,846
 72666,Neckartailfingen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1240
@@ -341,7 +341,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 72827,Wannweil,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,1754
 72829,Engstingen,DE,Baden-Württemberg,Landkreis Reutlingen,W. Europe Standard Time,true,1,1,postal_boundary,2050
 73033,Göppingen,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,2,postal_boundary,4242
-73035,Göppingen,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,1,postal_boundary,5043
+73035,Göppingen,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,1,postal_boundary,5046
 73037,Göppingen,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,3,postal_boundary,3663
 73054,Eislingen/Fils,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,1,postal_boundary,4799
 73061,Ebersbach an der Fils,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,1,postal_boundary,4310
@@ -372,7 +372,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 73117,Wangen,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,1,postal_boundary,1041
 73119,Zell unter Aichelberg,DE,Baden-Württemberg,Landkreis Göppingen,W. Europe Standard Time,true,1,1,postal_boundary,968
 73207,Plochingen,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,2771
-73230,Kirchheim unter Teck,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,9820
+73230,Kirchheim unter Teck,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,9821
 73235,Weilheim an der Teck,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,3012
 73240,Wendlingen am Neckar,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,3814
 73249,Wernau,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,1
@@ -491,14 +491,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 73663,Berglen,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2223
 73666,Baltmannsweiler,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,733
 73667,73667 Welzheim,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,false,2,1,postal_boundary,0
-73667,Kaisersbach,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,880
+73667,Kaisersbach,DE,Baden-Württemberg,Rems-Murr-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,879
 73669,Lichtenwald,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,964
 73728,Esslingen am Neckar,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,5,postal_boundary,3178
 73730,Esslingen am Neckar,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,2,postal_boundary,4045
 73732,Esslingen am Neckar,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,4213
 73733,Esslingen am Neckar,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,4,postal_boundary,3368
-73734,Esslingen am Neckar,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,3,postal_boundary,3900
-73760,Ostfildern,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,8187
+73734,Esslingen am Neckar,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,3,postal_boundary,3899
+73760,Ostfildern,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,8188
 73765,Neuhausen auf den Fildern,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,3099
 73770,Denkendorf,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,2518
 73773,Aichwald,DE,Baden-Württemberg,Landkreis Esslingen,W. Europe Standard Time,true,1,1,postal_boundary,2275
@@ -509,7 +509,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 74076,Heilbronn,DE,Baden-Württemberg,Heilbronn,W. Europe Standard Time,true,1,5,postal_boundary,3950
 74078,Heilbronn,DE,Baden-Württemberg,Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,6798
 74080,Heilbronn,DE,Baden-Württemberg,Heilbronn,W. Europe Standard Time,true,1,2,postal_boundary,4979
-74081,Heilbronn,DE,Baden-Württemberg,Heilbronn,W. Europe Standard Time,true,1,4,postal_boundary,4145
+74081,Heilbronn,DE,Baden-Württemberg,Heilbronn,W. Europe Standard Time,true,1,4,postal_boundary,4147
 74172,Neckarsulm,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,6885
 74177,Bad Friedrichshall,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,4828
 74182,Obersulm,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,4458
@@ -530,7 +530,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 74239,Hardthausen am Kocher,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1531
 74243,Langenbrettach,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1608
 74245,Löwenstein,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1082
-74246,Eberstadt,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1059
+74246,Eberstadt,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1060
 74248,Ellhofen,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1187
 74249,Jagsthausen,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1008
 74251,Lehrensteinsfeld,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,890
@@ -543,13 +543,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 74321,Bietigheim-Bissingen,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,9451
 74336,Brackenheim,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,5251
 74343,Sachsenheim,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,5451
-74348,Lauffen am Neckar,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,2589
+74348,Lauffen am Neckar,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,2590
 74354,Besigheim,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,3389
 74357,Bönnigheim,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,2334
-74360,Ilsfeld,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,3116
+74360,Ilsfeld,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,3117
 74363,Güglingen,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,894
 74366,Kirchheim am Neckar,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,1616
-74369,Löchgau,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,1605
+74369,Löchgau,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,1606
 74372,Sersheim,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,349
 74374,Zaberfeld,DE,Baden-Württemberg,Landkreis Heilbronn,W. Europe Standard Time,true,1,1,postal_boundary,1652
 74376,Gemmrigheim,DE,Baden-Württemberg,Landkreis Ludwigsburg,W. Europe Standard Time,true,1,1,postal_boundary,1271
@@ -605,21 +605,21 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 74597,u.a.,DE,Baden-Württemberg,Landkreis Schwäbisch Hall,W. Europe Standard Time,false,6,1,postal_boundary,0
 74597,u.a.,DE,Baden-Württemberg,Ostalbkreis,W. Europe Standard Time,false,7,1,postal_boundary,0
 74599,Wallhausen,DE,Baden-Württemberg,Landkreis Schwäbisch Hall,W. Europe Standard Time,true,1,1,postal_boundary,552
-74613,Öhringen,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,5321
+74613,Öhringen,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,5335
 74626,Bretzfeld,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,3730
 74629,Pfedelbach,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,3073
 74632,Neuenstein,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,2870
 74635,Kupferzell,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,605
-74638,Waldenburg,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,1047
+74638,Waldenburg,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,1056
 74639,Zweiflingen,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,407
 74653,Ingelfingen,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,false,2,1,postal_boundary,406
 74653,Künzelsau,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,2722
-74670,Forchtenberg,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,2443
+74670,Forchtenberg,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,2444
 74673,Mulfingen,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,952
 74676,Niedernhall,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,982
 74677,Dörzbach,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,1061
 74679,Weißbach,DE,Baden-Württemberg,Hohenlohekreis,W. Europe Standard Time,true,1,1,postal_boundary,109
-74706,Osterburken,DE,Baden-Württemberg,Neckar-Odenwald-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2430
+74706,Osterburken,DE,Baden-Württemberg,Neckar-Odenwald-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2431
 74722,Buchen,DE,Baden-Württemberg,Neckar-Odenwald-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2
 74731,Walldürn,DE,Baden-Württemberg,Neckar-Odenwald-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4368
 74736,Hardheim,DE,Baden-Württemberg,Neckar-Odenwald-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2144
@@ -691,7 +691,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 75245,Neulingen,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,2045
 75248,Ölbronn-Dürrn,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,163
 75249,Kieselbronn,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,90
-75305,Neuenbürg,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,2438
+75305,Neuenbürg,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,2439
 75323,Bad Wildbad,DE,Baden-Württemberg,Landkreis Calw,W. Europe Standard Time,true,1,1,postal_boundary,2568
 75328,Schömberg,DE,Baden-Württemberg,Landkreis Calw,W. Europe Standard Time,true,1,1,postal_boundary,2004
 75331,Engelsbrand,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,1403
@@ -715,7 +715,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 75428,Illingen,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,2484
 75433,Maulbronn,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,1652
 75438,Knittlingen,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,2603
-75443,Ötisheim,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,1666
+75443,Ötisheim,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,1667
 75446,Wiernsheim,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,211
 75447,Sternenfels,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,445
 75449,Wurmberg,DE,Baden-Württemberg,Enzkreis,W. Europe Standard Time,true,1,1,postal_boundary,427
@@ -741,7 +741,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 76332,Bad Herrenalb,DE,Baden-Württemberg,Landkreis Calw,W. Europe Standard Time,true,1,1,postal_boundary,2332
 76337,Waldbronn,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,3437
 76344,Eggenstein-Leopoldshafen,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,4289
-76351,Linkenheim-Hochstetten,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,3770
+76351,Linkenheim-Hochstetten,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,3775
 76356,Weingarten,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,364
 76359,Marxzell,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,1471
 76437,Rastatt,DE,Baden-Württemberg,Landkreis Rastatt,W. Europe Standard Time,true,1,1,postal_boundary,7556
@@ -765,7 +765,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 76596,Forbach,DE,Baden-Württemberg,Landkreis Rastatt,W. Europe Standard Time,true,1,1,postal_boundary,1114
 76597,Loffenau,DE,Baden-Württemberg,Landkreis Rastatt,W. Europe Standard Time,true,1,1,postal_boundary,496
 76599,Weisenbach,DE,Baden-Württemberg,Landkreis Rastatt,W. Europe Standard Time,true,1,1,postal_boundary,552
-76646,Bruchsal,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,9759
+76646,Bruchsal,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,9758
 76661,Philippsburg,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,4098
 76669,Bad Schönborn,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,3746
 76676,Graben-Neudorf,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,3615
@@ -778,7 +778,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 76706,Dettenheim,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,2471
 76707,Hambrücken,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,1859
 76709,Kronau,DE,Baden-Württemberg,Landkreis Karlsruhe,W. Europe Standard Time,true,1,1,postal_boundary,1882
-77652,Offenburg,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,3,postal_boundary,2922
+77652,Offenburg,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,3,postal_boundary,2934
 77654,Offenburg,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,4557
 77656,Offenburg,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,2,postal_boundary,3778
 77694,Kehl,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,8415
@@ -796,7 +796,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 77743,Neuried,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,940
 77746,Schutterwald,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,1286
 77749,Hohberg,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,549
-77756,Hausach,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,1391
+77756,Hausach,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,1393
 77761,Schiltach,DE,Baden-Württemberg,Landkreis Rottweil,W. Europe Standard Time,true,1,1,postal_boundary,1244
 77767,Appenweier,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,3871
 77770,Durbach,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,1365
@@ -827,7 +827,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 77886,Lauf,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,644
 77887,Sasbachwalden,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,535
 77889,Seebach,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,288
-77933,Lahr/Schwarzwald,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,8833
+77933,Lahr/Schwarzwald,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,8840
 77948,Friesenheim,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,3688
 77955,Ettenheim,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,2887
 77960,Seelbach,DE,Baden-Württemberg,Ortenaukreis,W. Europe Standard Time,true,1,1,postal_boundary,1063
@@ -860,7 +860,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 78144,Schramberg,DE,Baden-Württemberg,Landkreis Rottweil,W. Europe Standard Time,true,1,2,postal_boundary,1172
 78147,Vöhrenbach,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1041
 78148,Gütenbach,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,141
-78166,Donaueschingen,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5715
+78166,Donaueschingen,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5716
 78176,Blumberg,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2889
 78183,Hüfingen,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2276
 78187,Geisingen,DE,Baden-Württemberg,Landkreis Tuttlingen,W. Europe Standard Time,true,1,1,postal_boundary,2002
@@ -873,7 +873,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 78247,Hilzingen,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,2827
 78250,Tengen,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,1626
 78253,Eigeltingen,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,1281
-78256,Steißlingen,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,1544
+78256,Steißlingen,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,1545
 78259,Mühlhausen-Ehingen,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,1232
 78262,Gailingen am Hochrhein,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,888
 78266,Büsingen am Hochrhein,DE,Baden-Württemberg,Landkreis Konstanz,W. Europe Standard Time,true,1,1,postal_boundary,494
@@ -925,7 +925,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 78604,Rietheim-Weilheim,DE,Baden-Württemberg,Landkreis Tuttlingen,W. Europe Standard Time,true,1,1,postal_boundary,958
 78606,Seitingen-Oberflacht,DE,Baden-Württemberg,Landkreis Tuttlingen,W. Europe Standard Time,true,1,1,postal_boundary,851
 78607,Talheim,DE,Baden-Württemberg,Landkreis Tuttlingen,W. Europe Standard Time,true,1,1,postal_boundary,414
-78609,Tuningen,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1099
+78609,Tuningen,DE,Baden-Württemberg,Schwarzwald-Baar-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1100
 78628,Rottweil,DE,Baden-Württemberg,Landkreis Rottweil,W. Europe Standard Time,true,1,1,postal_boundary,6980
 78628,Villingendorf,DE,Baden-Württemberg,Landkreis Rottweil,W. Europe Standard Time,false,2,2,postal_boundary,2
 78647,Trossingen,DE,Baden-Württemberg,Landkreis Tuttlingen,W. Europe Standard Time,true,1,1,postal_boundary,4168
@@ -947,7 +947,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 78736,Epfendorf,DE,Baden-Württemberg,Landkreis Rottweil,W. Europe Standard Time,true,1,1,postal_boundary,1292
 78737,Fluorn-Winzeln,DE,Baden-Württemberg,Landkreis Rottweil,W. Europe Standard Time,true,1,1,postal_boundary,1235
 78739,Hardt,DE,Baden-Württemberg,Landkreis Rottweil,W. Europe Standard Time,true,1,1,postal_boundary,289
-79098,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,12,postal_boundary,1791
+79098,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,12,postal_boundary,1792
 79100,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,6,postal_boundary,2612
 79102,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,10,postal_boundary,2060
 79104,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,5,postal_boundary,2913
@@ -959,11 +959,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 79114,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,9,postal_boundary,2090
 79115,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,8,postal_boundary,2205
 79117,Freiburg im Breisgau,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,2,postal_boundary,3269
-79183,Waldkirch,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,3599
+79183,Waldkirch,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,3606
 79189,Bad Krozingen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,4471
 79194,Gundelfingen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,2752
 79194,Heuweiler,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,false,2,1,postal_boundary,58
-79199,Kirchzarten,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,2261
+79199,Kirchzarten,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,2263
 79206,Breisach am Rhein,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,4023
 79211,Denzlingen,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,2709
 79215,Biederbach,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,false,2,1,postal_boundary,153
@@ -977,9 +977,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 79241,Ihringen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,1772
 79244,Münstertal,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,297
 79249,Merzhausen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,1087
-79252,Stegen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,790
+79252,Stegen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,792
 79254,Oberried,DE,Baden-Württemberg,Freiburg im Breisgau,W. Europe Standard Time,true,1,1,postal_boundary,366
-79256,Buchenbach,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,487
+79256,Buchenbach,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,486
 79258,Hartheim,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,5
 79261,Gutach im Breisgau,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,312
 79263,Simonswald,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,305
@@ -1002,7 +1002,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 79297,Winden im Elztal,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,689
 79299,Wittnau,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,434
 79312,Emmendingen,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,5392
-79331,Teningen,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,1709
+79331,Teningen,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,1710
 79336,Herbolzheim,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,666
 79341,Kenzingen,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,1069
 79346,Endingen am Kaiserstuhl,DE,Baden-Württemberg,Landkreis Emmendingen,W. Europe Standard Time,true,1,1,postal_boundary,2194
@@ -1069,7 +1069,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 79736,Rickenbach,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,1302
 79737,Herrischried,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,1106
 79739,Schwörstadt,DE,Baden-Württemberg,Landkreis Lörrach,W. Europe Standard Time,true,1,1,postal_boundary,241
-79761,Waldshut-Tiengen,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,5684
+79761,Waldshut-Tiengen,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,5683
 79771,Klettgau,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,1523
 79774,Albbruck,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,2238
 79777,Ühlingen-Birkendorf,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,1352
@@ -1084,11 +1084,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 79805,Eggingen,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,524
 79807,Lottstetten,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,696
 79809,Weilheim,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,1087
-79822,Titisee-Neustadt,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,2590
+79822,Titisee-Neustadt,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,2591
 79837,Häusern,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,false,2,1,postal_boundary,401
 79837,Ibach,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,false,3,1,postal_boundary,162
 79837,St. Blasien,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,969
-79843,Löffingen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,1333
+79843,Löffingen,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,1334
 79848,Bonndorf im Schwarzwald,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,472
 79853,Lenzkirch,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,1509
 79856,Hinterzarten,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,773
@@ -1100,7 +1100,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 79872,Bernau im Schwarzwald,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,706
 79874,Breitnau,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,272
 79875,Dachsberg,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,655
-79877,Friedenweiler,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,523
+79877,Friedenweiler,DE,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,W. Europe Standard Time,true,1,1,postal_boundary,524
 79879,Wutach,DE,Baden-Württemberg,Landkreis Waldshut,W. Europe Standard Time,true,1,1,postal_boundary,408
 88045,Friedrichshafen,DE,Baden-Württemberg,Bodenseekreis,W. Europe Standard Time,true,1,2,postal_boundary,4146
 88046,Friedrichshafen,DE,Baden-Württemberg,Bodenseekreis,W. Europe Standard Time,true,1,3,postal_boundary,3502
@@ -1299,16 +1299,16 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 89616,Rottenacker,DE,Baden-Württemberg,Alb-Donau-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,70
 89617,Untermarchtal,DE,Baden-Württemberg,Alb-Donau-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,7
 89619,Unterstadion,DE,Baden-Württemberg,Alb-Donau-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,12
-97877,Wertheim,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4866
+97877,Wertheim,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,4867
 97896,Freudenberg,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,address_fallback,418
 97900,Külsheim,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1291
 97922,Lauda-Königshofen,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,10369
 97941,Tauberbischofsheim,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5766
-97944,Boxberg,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5832
+97944,Boxberg,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,5831
 97947,Grünsfeld,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2066
 97950,Großrinderfeld,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,916
 97953,Königheim,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,2126
-97956,Werbach,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,799
+97956,Werbach,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,804
 97957,Wittighausen,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,66
 97959,Assamstadt,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,1122
 97980,Bad Mergentheim,DE,Baden-Württemberg,Main-Tauber-Kreis,W. Europe Standard Time,true,1,1,postal_boundary,13971
