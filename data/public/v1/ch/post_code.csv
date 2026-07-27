@@ -7,7 +7,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1001,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,13,address_fallback,8
 1002,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,12,address_fallback,12
 1003,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,8,address_fallback,561
-1004,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,1,address_fallback,1183
+1004,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,1,address_fallback,1194
 1005,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,6,address_fallback,763
 1006,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,7,address_fallback,750
 1007,Lausanne,CH,Vaud,District de Lausanne,W. Europe Standard Time,true,1,2,address_fallback,1024
@@ -39,7 +39,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1026,Echandens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,57
 1027,Lonay,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,45
 1028,Préverenges,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,31
-1029,Villars-Sainte-Croix,CH,Vaud,District de l'Ouest lausannois,W. Europe Standard Time,true,1,1,address_fallback,20
+1029,Villars-Sainte-Croix,CH,Vaud,District de l'Ouest lausannois,W. Europe Standard Time,false,2,1,address_fallback,16
+1029,Villars-Ste-Croix,CH,Vaud,District de l'Ouest lausannois,W. Europe Standard Time,true,1,1,address_fallback,246
 1030,Bussigny,CH,Vaud,District de l'Ouest lausannois,W. Europe Standard Time,true,1,1,address_fallback,987
 1031,Mex VD,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,207
 1032,Crissier,CH,Vaud,District de l'Ouest lausannois,W. Europe Standard Time,false,2,2,address_fallback,4
@@ -50,7 +51,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1034,Boussens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,296
 1035,Bournens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,133
 1036,Sullens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,358
-1037,Etagnières,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,216
+1037,Etagnières,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,217
 1038,Bercher,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,356
 1040,Echallens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,1461
 1040,St-Barthélemy VD,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,false,3,1,address_fallback,227
@@ -66,7 +67,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1042,Bettens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,false,2,1,address_fallback,156
 1042,Bioley-Orjulaz,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,false,3,1,address_fallback,15
 1043,Sugnens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,101
-1044,Fey,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,14
+1044,Fey,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,239
 1045,Ogens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,32
 1046,Rueyres,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,94
 1047,Oppens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,73
@@ -101,7 +102,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1077,Servion,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,68
 1078,Essertes,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,144
 1080,Les Cullayes,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,236
-1081,Montpreveyres,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,28
+1081,Montpreveyres,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,178
 1082,Corcelles-le-Jorat,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,true,1,1,address_fallback,19
 1083,Mézières,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,34
 1083,Mézières VD,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,false,2,1,address_fallback,10
@@ -133,7 +134,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1115,Vullierens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,56
 1116,Cottens VD,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,129
 1117,Grancy,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,42
-1121,Bremblens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,16
+1121,Bremblens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,183
 1122,Romanel-sur-Morges,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,147
 1123,Aclens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,62
 1124,Gollion,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,238
@@ -143,9 +144,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1128,Reverolle,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,128
 1131,Tolochenaz,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,356
 1132,Lully VD,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,184
-1134,Vufflens-le-Château,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,21
-1135,Denens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,13
-1136,Bussy-Chardonney,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,124
+1134,Vufflens-le-Château,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,255
+1135,Denens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,222
+1136,Bussy-Chardonney,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,125
 1141,Sévery,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,88
 1142,Pampigny,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,339
 1143,Apples,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,422
@@ -232,7 +233,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1227,Genève,CH,Genève,,W. Europe Standard Time,false,4,13,address_fallback,4
 1227,Grand-Lancy,CH,Genève,,W. Europe Standard Time,false,3,2,address_fallback,7
 1227,Les Acacias,CH,Genève,,W. Europe Standard Time,false,2,1,address_fallback,305
-1228,Plan-les-Ouates,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,254
+1228,Plan-les-Ouates,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,255
 1231,Conches,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,61
 1232,Confignon,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,56
 1233,Bernex,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,101
@@ -252,7 +253,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1252,Meinier,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,39
 1253,Vandoeuvres,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,314
 1254,Jussy,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,19
-1255,Veyrier,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,29
+1255,Veyrier,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,31
 1256,Grand-Lancy,CH,Genève,,W. Europe Standard Time,false,2,4,address_fallback,3
 1256,Troinex,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,79
 1257,La Croix-de-Rozon,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,32
@@ -260,7 +261,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1258,Perly-Certoux,CH,Genève,,W. Europe Standard Time,false,2,1,address_fallback,5
 1260,Nyon,CH,Vaud,District de Nyon,W. Europe Standard Time,true,1,1,address_fallback,2395
 1261,Le Vaud,CH,Vaud,District de Nyon,W. Europe Standard Time,true,1,1,address_fallback,787
-1261,Longirod,CH,Vaud,District de Nyon,W. Europe Standard Time,false,2,1,address_fallback,25
+1261,Longirod,CH,Vaud,District de Nyon,W. Europe Standard Time,false,3,1,address_fallback,25
+1261,Marchissy,CH,Vaud,District de Nyon,W. Europe Standard Time,false,2,1,address_fallback,152
 1262,Eysins,CH,Vaud,District de Nyon,W. Europe Standard Time,true,1,1,address_fallback,13
 1263,Crassier,CH,Vaud,District de Nyon,W. Europe Standard Time,true,1,1,address_fallback,51
 1264,Saint-Cergue,CH,Vaud,District de Nyon,W. Europe Standard Time,true,1,1,address_fallback,106
@@ -288,7 +290,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1279,Chavannes-de-Bogis,CH,Vaud,District de Nyon,W. Europe Standard Time,true,1,1,address_fallback,18
 1281,Russin,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,4
 1283,Dardagny,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,36
-1283,La Plaine,CH,Genève,,W. Europe Standard Time,false,2,1,address_fallback,11
+1283,La Plaine,CH,Genève,,W. Europe Standard Time,false,2,1,address_fallback,13
 1284,Chancy,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,11
 1285,Athenaz (Avusy),CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,145
 1286,Soral,CH,Genève,,W. Europe Standard Time,true,1,1,address_fallback,5
@@ -322,7 +324,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1306,Daillens,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,263
 1307,Lussery-Villars,CH,Vaud,District du Gros-de-Vaud,W. Europe Standard Time,true,1,1,address_fallback,120
 1308,La Chaux (Cossonay),CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,143
-1312,Eclépens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,29
+1312,Eclépens,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,313
 1313,Ferreyres,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,98
 1315,La Sarraz,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,206
 1316,Chevilly,CH,Vaud,District de Morges,W. Europe Standard Time,true,1,1,address_fallback,109
@@ -351,7 +353,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1347,Le Sentier,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,true,1,1,address_fallback,627
 1347,Le Solliat,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,false,2,1,address_fallback,73
 1348,Le Brassus,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,true,1,1,address_fallback,424
-1350,Orbe,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,true,1,1,address_fallback,1597
+1350,Orbe,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,true,1,1,address_fallback,1598
 1352,Agiez,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,true,1,1,address_fallback,99
 1353,Bofflens,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,true,1,1,address_fallback,74
 1354,Montcherand,CH,Vaud,District du Jura-Nord vaudois,W. Europe Standard Time,true,1,1,address_fallback,151
@@ -489,7 +491,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1489,Murist,CH,Fribourg/Freiburg,District de la Broye,W. Europe Standard Time,true,1,1,address_fallback,366
 1509,Vucherens,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,true,1,1,address_fallback,103
 1510,Moudon,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,true,1,1,address_fallback,1115
-1510,Syens,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,false,2,1,address_fallback,8
+1510,Syens,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,false,2,1,address_fallback,60
 1512,Chavannes-sur-Moudon,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,true,1,1,address_fallback,83
 1513,Hermenches,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,true,1,1,address_fallback,69
 1513,Rossenges,CH,Vaud,District de la Broye-Vully,W. Europe Standard Time,false,2,1,address_fallback,37
@@ -571,7 +573,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1609,Fiaugères,CH,Fribourg/Freiburg,District de la Veveyse,W. Europe Standard Time,false,2,1,address_fallback,141
 1609,St-Martin FR,CH,Fribourg/Freiburg,District de la Veveyse,W. Europe Standard Time,true,1,1,address_fallback,229
 1610,Châtillens,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,false,2,1,address_fallback,122
-1610,Oron-la-Ville,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,373
+1610,Oron-la-Ville,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,374
 1610,Vuibroye,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,false,3,1,address_fallback,45
 1612,Ecoteaux,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,149
 1613,Maracon,CH,Vaud,District de Lavaux-Oron,W. Europe Standard Time,true,1,1,address_fallback,168
@@ -833,7 +835,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1800,Vevey,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,1912
 1801,Le Mont-Pèlerin,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,361
 1802,Corseaux,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,76
-1803,Chardonne,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,646
+1803,Chardonne,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,645
 1804,Corsier-sur-Vevey,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,95
 1805,Jongny,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,218
 1806,Saint-Légier-La Chiésaz,CH,Vaud,District de la Riviera-Pays-d'Enhaut,W. Europe Standard Time,true,1,1,address_fallback,231
@@ -946,7 +948,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1914,Auddes-sur-Riddes,CH,Valais/Wallis,Martigny,W. Europe Standard Time,false,2,1,address_fallback,150
 1914,Isérables,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,508
 1918,La Tzoumaz,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,1132
-1920,Martigny,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,3790
+1920,Martigny,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,3791
 1921,Martigny-Croix,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,1210
 1922,Les Granges (Salvan),CH,Valais/Wallis,Saint-Maurice,W. Europe Standard Time,false,2,1,address_fallback,125
 1922,Salvan,CH,Valais/Wallis,Saint-Maurice,W. Europe Standard Time,true,1,1,address_fallback,588
@@ -959,7 +961,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1927,Chemin,CH,Valais/Wallis,Entremont,W. Europe Standard Time,true,1,1,address_fallback,295
 1928,Ravoire,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,565
 1929,Trient,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,257
-1932,Bovernier,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,255
+1932,Bovernier,CH,Valais/Wallis,Martigny,W. Europe Standard Time,true,1,1,address_fallback,256
 1932,Les Valettes (Bovernier),CH,Valais/Wallis,Martigny,W. Europe Standard Time,false,2,1,address_fallback,217
 1933,Chamoille (Sembrancher),CH,Valais/Wallis,Entremont,W. Europe Standard Time,false,3,1,address_fallback,55
 1933,La Garde (Sembrancher),CH,Valais/Wallis,Entremont,W. Europe Standard Time,false,4,1,address_fallback,4
@@ -1006,7 +1008,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1955,St-Pierre-de-Clages,CH,Valais/Wallis,Conthey,W. Europe Standard Time,false,3,1,address_fallback,287
 1957,Ardon,CH,Valais/Wallis,Conthey,W. Europe Standard Time,true,1,1,address_fallback,1030
 1958,Saint-Léonard,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,3,1,address_fallback,4
-1958,St-Léonard,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,777
+1958,St-Léonard,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,778
 1958,Uvrier,CH,Valais/Wallis,Sion,W. Europe Standard Time,false,2,1,address_fallback,488
 1961,Vernamiège,CH,Valais/Wallis,Hérens,W. Europe Standard Time,true,1,1,address_fallback,12
 1962,Pont-de-la-Morge (Sion),CH,Valais/Wallis,Sion,W. Europe Standard Time,true,1,1,address_fallback,208
@@ -1077,11 +1079,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 1996,Condémines (Nendaz),CH,Valais/Wallis,Conthey,W. Europe Standard Time,false,7,1,address_fallback,64
 1996,Fey (Nendaz),CH,Valais/Wallis,Conthey,W. Europe Standard Time,false,4,1,address_fallback,188
 1996,Saclentse,CH,Valais/Wallis,Conthey,W. Europe Standard Time,false,2,1,address_fallback,243
-1997,Haute-Nendaz,CH,Valais/Wallis,Conthey,W. Europe Standard Time,true,1,1,address_fallback,2602
+1997,Haute-Nendaz,CH,Valais/Wallis,Conthey,W. Europe Standard Time,true,1,1,address_fallback,2603
 1997,Siviez (Nendaz),CH,Valais/Wallis,Conthey,W. Europe Standard Time,false,3,1,address_fallback,34
 1997,Sornard (Nendaz),CH,Valais/Wallis,Conthey,W. Europe Standard Time,false,2,1,address_fallback,291
 2000,Boudry,CH,Neuchâtel,Région Littoral,W. Europe Standard Time,false,2,2,address_fallback,12
-2000,Neuchâtel,CH,Neuchâtel,Région Littoral,W. Europe Standard Time,true,1,1,address_fallback,1780
+2000,Neuchâtel,CH,Neuchâtel,Région Littoral,W. Europe Standard Time,true,1,1,address_fallback,1782
 2001,Neuchâtel,CH,Neuchâtel,Région Littoral,W. Europe Standard Time,true,1,2,address_fallback,5
 2012,Auvernier,CH,Neuchâtel,Région Littoral,W. Europe Standard Time,true,1,1,address_fallback,47
 2013,Colombier,CH,Neuchâtel,Région Littoral,W. Europe Standard Time,false,2,1,address_fallback,72
@@ -1161,7 +1163,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2206,Les Geneveys-sur-Coffrane,CH,Neuchâtel,Région Val-de-Ruz,W. Europe Standard Time,true,1,1,address_fallback,94
 2207,Coffrane,CH,Neuchâtel,Région Val-de-Ruz,W. Europe Standard Time,true,1,1,address_fallback,53
 2208,Les Hauts-Geneveys,CH,Neuchâtel,Région Val-de-Ruz,W. Europe Standard Time,true,1,1,address_fallback,46
-2300,La Chaux-de-Fonds,CH,Neuchâtel,Région Montagnes,W. Europe Standard Time,true,1,1,address_fallback,4459
+2300,La Chaux-de-Fonds,CH,Neuchâtel,Région Montagnes,W. Europe Standard Time,true,1,1,address_fallback,4479
 2300,La Cibourg,CH,Neuchâtel,Région Montagnes,W. Europe Standard Time,false,2,1,address_fallback,34
 2300,La-Chaux-de-Fonds,CH,Neuchâtel,Région Montagnes,W. Europe Standard Time,false,3,1,address_fallback,7
 2300,Le Locle,CH,Neuchâtel,Région Montagnes,W. Europe Standard Time,false,4,2,address_fallback,7
@@ -1208,7 +1210,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2501,Biel/Bienne,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,5,address_fallback,13
 2502,Biel,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,false,3,2,address_fallback,7
 2502,Biel / Bienne,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,false,2,1,address_fallback,24
-2502,Biel/Bienne,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,2898
+2502,Biel/Bienne,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,2899
 2503,Biel,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,false,3,4,address_fallback,3
 2503,Biel/Bienne,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,2,address_fallback,2336
 2503,Bienne,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,false,4,1,address_fallback,3
@@ -1253,11 +1255,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2557,Studen,CH,Bern/Berne,Verwaltungskreis Seeland,W. Europe Standard Time,false,2,1,address_fallback,11
 2557,Studen BE,CH,Bern/Berne,Verwaltungskreis Seeland,W. Europe Standard Time,true,1,1,address_fallback,848
 2558,Aegerten,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,709
-2560,Nidau,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,403
+2560,Nidau,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,404
 2562,Port,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,953
 2563,Ipsach,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,968
 2564,Bellmund,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,549
-2565,Jens,CH,Bern/Berne,Verwaltungskreis Seeland,W. Europe Standard Time,true,1,1,address_fallback,361
+2565,Jens,CH,Bern/Berne,Verwaltungskreis Seeland,W. Europe Standard Time,true,1,1,address_fallback,364
 2572,Mörigen,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,false,2,1,address_fallback,409
 2572,Sutz,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,true,1,1,address_fallback,624
 2572,Sutz-Lattrigen,CH,Bern/Berne,Verwaltungskreis Biel/Bienne,W. Europe Standard Time,false,3,1,address_fallback,8
@@ -1371,10 +1373,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2888,Seleute,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,37
 2889,Ocourt,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,143
 2900,Eischoll,CH,Valais/Wallis,Westlich Raron,W. Europe Standard Time,false,2,1,address_fallback,60
-2900,Porrentruy,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,2480
+2900,Porrentruy,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,2479
 2902,Fontenais,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,546
-2903,Villars-sur-Fontenais,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,78
-2904,Bressaucourt,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,36
+2903,Villars-sur-Fontenais,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,115
+2904,Bressaucourt,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,189
 2905,Courtedoux,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,465
 2906,Chevenez,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,32
 2907,Rocourt,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,19
@@ -1383,10 +1385,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2912,Réclère,CH,Jura,District de Porrentruy,W. Europe Standard Time,false,2,1,address_fallback,10
 2914,Damvant,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,75
 2915,Bure,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,484
-2916,Fahy,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,7
+2916,Fahy,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,251
 2922,Courchavon,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,35
 2923,Courtemaîche,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,399
-2924,Montignez,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,157
+2924,Montignez,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,158
 2925,Buix,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,302
 2926,Boncourt,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,867
 2932,Coeuve,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,424
@@ -1395,7 +1397,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 2935,Beurnevésin,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,67
 2942,Alle,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,1133
 2943,Vendlincourt,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,500
-2944,Bonfol,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,30
+2944,Bonfol,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,258
 2946,Miécourt,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,11
 2947,Charmoille,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,41
 2950,Courgenay,CH,Jura,District de Porrentruy,W. Europe Standard Time,true,1,1,address_fallback,1015
@@ -1410,11 +1412,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3004,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,11,postal_boundary,699
 3005,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,9,postal_boundary,1277
 3006,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,postal_boundary,3938
-3007,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,4,postal_boundary,2240
+3007,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,4,postal_boundary,2250
 3008,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,7,postal_boundary,1594
 3010,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,15,postal_boundary,66
 3011,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,6,postal_boundary,1797
-3012,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,3,postal_boundary,2286
+3012,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,3,postal_boundary,2285
 3013,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,8,postal_boundary,1446
 3014,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,5,postal_boundary,1979
 3015,Bern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,14,postal_boundary,90
@@ -1445,7 +1447,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3053,Wiggiswil,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,false,4,1,address_fallback,61
 3054,Schüpfen,CH,Bern/Berne,Verwaltungskreis Seeland,W. Europe Standard Time,true,1,1,address_fallback,1464
 3063,Ittigen,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,postal_boundary,1902
-3065,Bolligen,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,2109
+3065,Bolligen,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,2104
 3066,Stettlen,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1155
 3067,Boll,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1413
 3068,Utzigen,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,942
@@ -1506,7 +1508,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3145,Niederscherli,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1290
 3147,Mittelhäusern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,458
 3148,Lanzenhäusern,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,692
-3150,Schwarzenburg,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1958
+3150,Schwarzenburg,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1960
 3152,Mamishaus,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,589
 3153,Rüschegg Gambach,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,436
 3154,Rüschegg Heubach,CH,Bern/Berne,Verwaltungskreis Bern-Mittelland,W. Europe Standard Time,true,1,1,address_fallback,994
@@ -1595,7 +1597,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3280,Greng,CH,Fribourg/Freiburg,Seebezirk / District du Lac,W. Europe Standard Time,false,3,1,address_fallback,37
 3280,Meyriez,CH,Fribourg/Freiburg,Seebezirk / District du Lac,W. Europe Standard Time,false,2,1,address_fallback,71
 3280,Muntelier,CH,Fribourg/Freiburg,Seebezirk / District du Lac,W. Europe Standard Time,false,5,2,address_fallback,4
-3280,Murten,CH,Fribourg/Freiburg,Seebezirk / District du Lac,W. Europe Standard Time,true,1,1,address_fallback,1231
+3280,Murten,CH,Fribourg/Freiburg,Seebezirk / District du Lac,W. Europe Standard Time,true,1,1,address_fallback,1235
 3280,Murten/Morat,CH,Fribourg/Freiburg,Seebezirk / District du Lac,W. Europe Standard Time,false,4,1,address_fallback,31
 3282,Bargen BE,CH,Bern/Berne,Verwaltungskreis Seeland,W. Europe Standard Time,true,1,1,address_fallback,520
 3283,Kallnach,CH,Bern/Berne,Verwaltungskreis Seeland,W. Europe Standard Time,true,1,1,address_fallback,806
@@ -1642,9 +1644,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3324,Mötschwil,CH,Bern/Berne,Verwaltungskreis Emmental,W. Europe Standard Time,false,2,1,address_fallback,49
 3325,Hettiswil bei Hindelbank,CH,Bern/Berne,Verwaltungskreis Emmental,W. Europe Standard Time,true,1,1,address_fallback,421
 3326,Krauchthal,CH,Bern/Berne,Verwaltungskreis Emmental,W. Europe Standard Time,true,1,1,address_fallback,794
-3360,Herzogenbuchsee,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,true,1,1,address_fallback,2278
+3360,Herzogenbuchsee,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,true,1,1,address_fallback,2279
 3362,Niederönz,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,true,1,1,address_fallback,602
-3363,Oberönz,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,true,1,1,address_fallback,359
+3363,Oberönz,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,true,1,1,address_fallback,360
 3365,Grasswil,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,true,1,1,address_fallback,433
 3365,Seeberg,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,false,2,1,address_fallback,261
 3366,Bettenhausen,CH,Bern/Berne,Verwaltungskreis Oberaargau,W. Europe Standard Time,true,1,1,address_fallback,256
@@ -1798,7 +1800,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3638,Blumenstein,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,678
 3638,Pohlern,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,false,2,1,address_fallback,191
 3645,Gwatt,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,false,3,1,address_fallback,38
-3645,Gwatt (Thun),CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,1252
+3645,Gwatt (Thun),CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,1251
 3645,Thun,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,false,4,8,address_fallback,3
 3645,Zwieselberg,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,false,2,1,address_fallback,207
 3646,Einigen,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,true,1,1,address_fallback,646
@@ -1811,7 +1813,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3656,Aeschlen ob Gunten,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,false,2,1,address_fallback,260
 3656,Ringoldswil,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,false,3,1,address_fallback,123
 3656,Tschingel ob Gunten,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,314
-3657,Schwanden (Sigriswil),CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,571
+3657,Schwanden (Sigriswil),CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,572
 3658,Merligen,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,611
 3661,Uetendorf,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,2549
 3662,Seftigen,CH,Bern/Berne,Verwaltungskreis Thun,W. Europe Standard Time,true,1,1,address_fallback,815
@@ -1838,7 +1840,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3713,Faltschen,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,false,2,1,address_fallback,23
 3713,Reichenbach,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,false,3,1,address_fallback,4
 3713,Reichenbach im Kandertal,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,true,1,1,address_fallback,1535
-3714,Frutigen,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,true,1,1,postal_boundary,3224
+3714,Frutigen,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,true,1,1,postal_boundary,3223
 3715,Adelboden,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,true,1,1,address_fallback,2892
 3716,Kandergrund,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,true,1,1,postal_boundary,568
 3717,Blausee-Mitholz,CH,Bern/Berne,Verwaltungskreis Frutigen-Niedersimmental,W. Europe Standard Time,true,1,1,address_fallback,258
@@ -1866,7 +1868,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3772,St. Stephan,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,796
 3773,Matten,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,false,2,1,address_fallback,14
 3773,Matten (St. Stephan),CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,724
-3775,Lenk,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,false,2,1,address_fallback,25
+3775,Lenk,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,false,2,1,address_fallback,23
 3775,Lenk im Simmental,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,2959
 3776,Oeschseite,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,334
 3777,Saanenmöser,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,424
@@ -1878,9 +1880,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3783,Grund bei Gstaad,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,529
 3784,Feutersoey,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,556
 3785,Gsteig b. Gstaad,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,false,2,1,address_fallback,3
-3785,Gsteig bei Gstaad,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,705
+3785,Gsteig bei Gstaad,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,704
 3792,Saanen,CH,Bern/Berne,Verwaltungskreis Obersimmental-Saanen,W. Europe Standard Time,true,1,1,address_fallback,1271
-3800,Interlaken,CH,Bern/Berne,Verwaltungskreis Interlaken-Oberhasli,W. Europe Standard Time,false,2,1,address_fallback,1718
+3800,Interlaken,CH,Bern/Berne,Verwaltungskreis Interlaken-Oberhasli,W. Europe Standard Time,false,2,1,address_fallback,1720
 3800,Matten,CH,Bern/Berne,Verwaltungskreis Interlaken-Oberhasli,W. Europe Standard Time,false,5,1,address_fallback,75
 3800,Matten bei Interlaken,CH,Bern/Berne,Verwaltungskreis Interlaken-Oberhasli,W. Europe Standard Time,false,3,1,address_fallback,1419
 3800,Sundlauenen,CH,Bern/Berne,Verwaltungskreis Interlaken-Oberhasli,W. Europe Standard Time,false,4,1,address_fallback,164
@@ -1950,7 +1952,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3907,Simplon Dorf,CH,Valais/Wallis,Brig,W. Europe Standard Time,false,2,1,address_fallback,209
 3907,Simplon Hospiz,CH,Valais/Wallis,Brig,W. Europe Standard Time,false,3,1,address_fallback,30
 3908,Saas-Balen,CH,Valais/Wallis,Visp,W. Europe Standard Time,true,1,1,address_fallback,535
-3910,Saas-Grund,CH,Valais/Wallis,Visp,W. Europe Standard Time,true,1,1,address_fallback,154
+3910,Saas-Grund,CH,Valais/Wallis,Visp,W. Europe Standard Time,true,1,1,address_fallback,155
 3911,Ried-Brig,CH,Valais/Wallis,Brig,W. Europe Standard Time,true,1,1,address_fallback,325
 3912,Termen,CH,Valais/Wallis,Brig,W. Europe Standard Time,true,1,1,address_fallback,532
 3913,Rosswald,CH,Valais/Wallis,Brig,W. Europe Standard Time,true,1,1,address_fallback,173
@@ -2012,13 +2014,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3956,Guttet-Feschel,CH,Valais/Wallis,Leuk,W. Europe Standard Time,true,1,1,address_fallback,470
 3957,Bratsch,CH,Valais/Wallis,Leuk,W. Europe Standard Time,true,1,1,address_fallback,74
 3957,Erschmatt,CH,Valais/Wallis,Leuk,W. Europe Standard Time,false,2,1,address_fallback,11
-3960,Corin,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,7,1,address_fallback,3
+3960,Chalais,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,7,2,address_fallback,4
+3960,Corin,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,8,1,address_fallback,3
 3960,Corin-de-la-Crête,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,3,1,address_fallback,152
 3960,Loc,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,5,1,address_fallback,107
 3960,Muraz (Sierre),CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,2,1,address_fallback,204
 3960,Niouc,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,4,1,address_fallback,125
-3960,Sierre,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,2423
-3960,Sierre / Siders,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,8,1,address_fallback,3
+3960,Sierre,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,2425
+3960,Sierre / Siders,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,9,1,address_fallback,3
 3960,Sierre/Siders,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,6,1,address_fallback,19
 3961,Ayer,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,5,1,address_fallback,585
 3961,Chandolin,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,6,1,address_fallback,523
@@ -2036,11 +2039,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3963,Crans-Montana,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,1491
 3963,Montana,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,3,1,address_fallback,304
 3963,Randogne,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,5,2,address_fallback,37
-3965,Chippis,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,353
-3966,Chalais,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,614
+3965,Chippis,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,476
+3966,Chalais,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,642
 3966,Réchy,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,2,1,address_fallback,497
 3967,Vercorin,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,940
-3968,Veyras,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,506
+3968,Veyras,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,511
 3970,Salgesch,CH,Valais/Wallis,Leuk,W. Europe Standard Time,true,1,1,address_fallback,937
 3971,Chermignon,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,2,1,address_fallback,276
 3971,Chermignon-d'en-Bas,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,286
@@ -2052,7 +2055,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 3976,Champzabé,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,2,1,address_fallback,35
 3976,Noës,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,222
 3977,Granges,CH,Valais/Wallis,Sierre,W. Europe Standard Time,false,2,1,address_fallback,6
-3977,Granges VS,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,834
+3977,Granges VS,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,835
 3978,Flanthey,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,343
 3979,Grône,CH,Valais/Wallis,Sierre,W. Europe Standard Time,true,1,1,address_fallback,1999
 3982,Bitsch,CH,Valais/Wallis,Östlich Raron,W. Europe Standard Time,true,1,1,address_fallback,91
@@ -2104,7 +2107,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4052,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,3,address_fallback,2700
 4053,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,7,address_fallback,2310
 4054,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,2,address_fallback,3592
-4055,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,8,address_fallback,2188
+4055,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,8,address_fallback,2200
 4056,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,5,address_fallback,2556
 4057,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,6,address_fallback,2396
 4058,Basel,CH,Basel-Stadt,,W. Europe Standard Time,true,1,1,address_fallback,3797
@@ -2129,7 +2132,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4116,Metzerlen-Mariastein,CH,Solothurn,Bezirk Dorneck,W. Europe Standard Time,false,2,1,address_fallback,4
 4117,Burg im Leimental,CH,Basel-Landschaft,Bezirk Laufen,W. Europe Standard Time,true,1,1,address_fallback,190
 4118,Rodersdorf,CH,Solothurn,Bezirk Dorneck,W. Europe Standard Time,true,1,1,address_fallback,265
-4123,Allschwil,CH,Basel-Landschaft,Bezirk Arlesheim,W. Europe Standard Time,true,1,1,address_fallback,5126
+4123,Allschwil,CH,Basel-Landschaft,Bezirk Arlesheim,W. Europe Standard Time,true,1,1,address_fallback,5125
 4124,Schönenbuch,CH,Basel-Landschaft,Bezirk Arlesheim,W. Europe Standard Time,true,1,1,address_fallback,667
 4125,Riehen,CH,Basel-Stadt,,W. Europe Standard Time,true,1,1,address_fallback,5043
 4126,Bettingen,CH,Basel-Stadt,,W. Europe Standard Time,true,1,1,address_fallback,397
@@ -2183,7 +2186,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4305,Olsberg,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,188
 4310,Rheinfelden,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,2229
 4312,Magden,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,1310
-4313,Möhlin,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,2746
+4313,Möhlin,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,2747
 4314,Zeiningen,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,836
 4315,Zuzgen,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,347
 4316,Hellikon,CH,Aargau,Bezirk Rheinfelden,W. Europe Standard Time,true,1,1,address_fallback,329
@@ -2198,7 +2201,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4333,Münchwilen AG,CH,Aargau,Bezirk Laufenburg,W. Europe Standard Time,false,2,1,address_fallback,43
 4334,Sisseln AG,CH,Aargau,Bezirk Laufenburg,W. Europe Standard Time,true,1,1,address_fallback,502
 4402,Frenkendorf,CH,Basel-Landschaft,Bezirk Liestal,W. Europe Standard Time,true,1,1,address_fallback,1640
-4410,Liestal,CH,Basel-Landschaft,Bezirk Liestal,W. Europe Standard Time,true,1,1,address_fallback,4685
+4410,Liestal,CH,Basel-Landschaft,Bezirk Liestal,W. Europe Standard Time,true,1,1,address_fallback,4686
 4411,Seltisberg,CH,Basel-Landschaft,Bezirk Liestal,W. Europe Standard Time,true,1,1,address_fallback,662
 4412,Nuglar,CH,Solothurn,Bezirk Dorneck,W. Europe Standard Time,true,1,1,address_fallback,626
 4413,Büren SO,CH,Solothurn,Bezirk Dorneck,W. Europe Standard Time,true,1,1,address_fallback,514
@@ -2349,8 +2352,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 4655,Stüsslingen,CH,Solothurn,Bezirk Gösgen,W. Europe Standard Time,true,1,1,address_fallback,565
 4656,Starrkirch-Wil,CH,Solothurn,Bezirk Olten,W. Europe Standard Time,true,1,1,address_fallback,594
 4657,Dulliken,CH,Solothurn,Bezirk Olten,W. Europe Standard Time,true,1,1,address_fallback,1615
-4658,Däniken,CH,Solothurn,Bezirk Olten,W. Europe Standard Time,false,2,1,address_fallback,14
-4658,Däniken SO,CH,Solothurn,Bezirk Olten,W. Europe Standard Time,true,1,1,address_fallback,1115
+4658,Däniken,CH,Solothurn,Bezirk Olten,W. Europe Standard Time,false,2,1,address_fallback,15
+4658,Däniken SO,CH,Solothurn,Bezirk Olten,W. Europe Standard Time,true,1,1,address_fallback,1113
 4663,Aarburg,CH,Aargau,Bezirk Zofingen,W. Europe Standard Time,true,1,1,address_fallback,1733
 4665,Oftringen,CH,Aargau,Bezirk Zofingen,W. Europe Standard Time,true,1,1,address_fallback,3329
 4701,Balstahl,CH,Solothurn,Bezirk Gäu,W. Europe Standard Time,true,1,1,address_fallback,4
@@ -2454,9 +2457,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 5032,Aarau Rohr,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,771
 5033,Buchs,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,false,2,1,address_fallback,370
 5033,Buchs (AG),CH,Aargau,Bezirk Aarau,W. Europe Standard Time,false,3,1,address_fallback,34
-5033,Buchs AG,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,1247
+5033,Buchs AG,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,1248
 5034,Suhr,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,2066
-5035,Unterentfelden,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,1074
+5035,Unterentfelden,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,1075
 5036,Oberentfelden,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,1790
 5037,Muhen,CH,Aargau,Bezirk Aarau,W. Europe Standard Time,true,1,1,address_fallback,1638
 5040,Schöftland,CH,Aargau,Bezirk Kulm,W. Europe Standard Time,true,1,1,address_fallback,1535
@@ -3038,7 +3041,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6513,Monte Carasso,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,1039
 6514,Sementina,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,818
 6515,Gudo,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,401
-6516,Cugnasco,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1114
+6516,Cugnasco,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1117
 6516,Cugnasco-Gerra,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,1,address_fallback,5
 6517,Arbedo,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,953
 6518,Gorduno,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,336
@@ -3074,12 +3077,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6565,S. Bernardino,CH,Graubünden/Grischun/Grigioni,Moesa,W. Europe Standard Time,true,1,1,address_fallback,406
 6571,Indemini,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,196
 6572,Quartino,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,487
-6573,Magadino,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,433
+6573,Magadino,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,435
 6574,Vira (Gambarogno),CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,571
 6574,Vira Gambarogno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,1,address_fallback,3
 6575,S. Nazzaro,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,1,address_fallback,299
 6575,San Nazzaro,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,3,1,address_fallback,19
-6575,Vairano,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,438
+6575,Vairano,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,443
 6576,Gerra (Gambarogno),CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,399
 6577,Ranzo,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,251
 6578,Caviano,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,300
@@ -3087,10 +3090,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6582,Pianezzo,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,490
 6583,S. Antonio (Val Morobbia),CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,289
 6584,Carena,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,102
-6592,S. Antonino,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,812
+6592,S. Antonino,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,824
 6593,Cadenazzo,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,713
 6594,Contone,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,344
-6595,Riazzino,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,525
+6595,Riazzino,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,532
 6596,Gordola,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1901
 6597,Agarone,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,482
 6598,Tenero,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,461
@@ -3098,32 +3101,32 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6599,Robasacco,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,114
 6600,Locarno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1343
 6600,Lorcarno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,4,1,address_fallback,3
-6600,Muralto,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,3,1,address_fallback,509
+6600,Muralto,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,3,1,address_fallback,510
 6600,Solduno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,1,address_fallback,609
 6601,Locarno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,3,address_fallback,3
 6605,Locarno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,2,address_fallback,487
 6612,Ascona,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1847
 6613,Porto Ronco,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,184
 6614,Brissago,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1326
-6616,Losone,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1743
-6618,Arcegno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,235
+6616,Losone,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1744
+6618,Arcegno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,237
 6622,Ronco Sopra Ascona,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,2,address_fallback,3
 6622,Ronco sopra Ascona,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,709
-6631,Corippo,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,234
-6632,Vogorno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,977
-6634,Brione (Verzasca),CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,461
-6636,Frasco,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,430
+6631,Corippo,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,240
+6632,Vogorno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,982
+6634,Brione (Verzasca),CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,462
+6636,Frasco,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,431
 6637,Sonogno,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,327
-6644,Orselina,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,490
+6644,Orselina,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,491
 6645,Brione sopra Minusio,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1012
 6646,Contra,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,339
-6647,Mergoscia,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,765
-6648,Minusio,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1610
+6647,Mergoscia,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,767
+6648,Minusio,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,1611
 6648,Mondacce,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,1,address_fallback,4
 6652,Tegna,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,484
 6653,Verscio,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,573
 6654,Cavigliano,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,470
-6655,Intragna,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,899
+6655,Intragna,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,898
 6655,Rasa,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,3,1,address_fallback,124
 6655,Verdasio,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,1,address_fallback,201
 6656,Golino,CH,Ticino,Distretto di Locarno,W. Europe Standard Time,true,1,1,address_fallback,176
@@ -3147,13 +3150,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6674,Riveo,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,false,2,1,address_fallback,138
 6674,Someo,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,436
 6675,Cevio,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,422
-6676,Bignasco,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,161
+6676,Bignasco,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,162
 6676,Gerra (Gambarogno),CH,Ticino,Distretto di Locarno,W. Europe Standard Time,false,2,2,address_fallback,4
 6677,Aurigeno,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,668
 6677,Moghegno,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,false,2,1,address_fallback,551
 6678,Coglio,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,false,3,1,address_fallback,165
 6678,Giumaglio,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,416
-6678,Lodano,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,false,2,1,address_fallback,363
+6678,Lodano,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,false,2,1,address_fallback,364
 6682,Linescio,CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,52
 6683,Niva (Vallemaggia),CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,true,1,1,address_fallback,78
 6684,Campo (Vallemaggia),CH,Ticino,Distretto di Vallemaggia,W. Europe Standard Time,false,2,1,address_fallback,196
@@ -3167,8 +3170,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6705,Cresciano,CH,Ticino,Distretto di Riviera,W. Europe Standard Time,true,1,1,address_fallback,295
 6707,Iragna,CH,Ticino,Distretto di Riviera,W. Europe Standard Time,true,1,1,address_fallback,233
 6710,Biasca,CH,Ticino,Distretto di Riviera,W. Europe Standard Time,true,1,1,address_fallback,2389
-6713,Malvaglia,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,true,1,1,address_fallback,746
-6714,Semione,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,true,1,1,address_fallback,806
+6713,Malvaglia,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,true,1,1,address_fallback,758
+6714,Semione,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,true,1,1,address_fallback,810
 6715,Dongio,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,true,1,1,address_fallback,190
 6716,Acquarossa,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,false,2,1,address_fallback,101
 6716,Leontica,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,true,1,1,address_fallback,230
@@ -3189,9 +3192,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6724,Ponto Valentino,CH,Ticino,Distretto di Blenio,W. Europe Standard Time,true,1,1,address_fallback,238
 6742,Pollegio,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,144
 6743,Bodio,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,2,1,address_fallback,3
-6743,Bodio TI,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,295
+6743,Bodio TI,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,312
 6744,Personico,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,221
-6745,Giornico,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,336
+6745,Giornico,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,387
 6746,Calonico,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,107
 6746,Lavorgo,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,3,1,address_fallback,87
 6746,Nivo,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,2,1,address_fallback,92
@@ -3202,49 +3205,49 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6760,Calpiogna,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,6,1,address_fallback,95
 6760,Campello,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,4,1,address_fallback,152
 6760,Carì,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,2,1,address_fallback,219
-6760,Faido,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,439
+6760,Faido,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,440
 6760,Molare,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,5,1,address_fallback,111
 6760,Rossura,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,3,1,address_fallback,158
 6763,Mairengo,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,2,1,address_fallback,129
 6763,Osco,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,222
 6764,Chiggiogna,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,148
-6772,Rodi-Fiesso,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,167
+6772,Rodi-Fiesso,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,172
 6773,Prato (Leventina),CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,170
-6774,Dalpe,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,330
+6774,Dalpe,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,333
 6775,Ambrì,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,303
 6776,Piotta,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,480
-6777,Quinto,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,500
+6777,Quinto,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,520
 6780,Airolo,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,1501
 6781,Bedretto,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,true,1,1,address_fallback,241
 6781,Villa Bedretto,CH,Ticino,Distretto di Leventina,W. Europe Standard Time,false,2,1,address_fallback,85
 6802,Rivera,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,793
-6803,Camignolo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,375
+6803,Camignolo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,376
 6804,Bironico,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,301
-6805,Mezzovico,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,583
+6805,Mezzovico,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,584
 6805,Mezzovico-Vira,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,10
 6806,Sigirino,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,354
 6807,Taverne,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,588
-6808,Torricella,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,373
-6809,Medeglia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,470
+6808,Torricella,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,375
+6809,Medeglia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,471
 6810,Isone,CH,Ticino,Distretto di Bellinzona,W. Europe Standard Time,true,1,1,address_fallback,22
 6814,Cadempino,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,349
 6814,Lamone,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,437
-6815,Melide,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,405
-6816,Bissone,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,309
-6817,Maroggia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,202
-6818,Melano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,449
-6821,Rovio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,400
+6815,Melide,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,408
+6816,Bissone,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,310
+6817,Maroggia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,204
+6818,Melano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,453
+6821,Rovio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,404
 6822,Arogno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,476
 6823,Pugerna,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,150
 6825,Capolago,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,313
-6826,Riva San Vitale,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,1001
+6826,Riva San Vitale,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,1003
 6827,Brusino Arsizio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,353
 6828,Balerna,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,849
-6830,Chiasso,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,844
+6830,Chiasso,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,845
 6832,Pedrinate,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,186
 6832,Seseglio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,false,2,1,address_fallback,110
-6833,Vacallo,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,757
-6834,Morbio Inferiore,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,1155
+6833,Vacallo,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,759
+6834,Morbio Inferiore,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,1170
 6835,Morbio Superiore,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,273
 6837,Bruzella,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,false,2,1,address_fallback,128
 6837,Caneggio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,151
@@ -3255,8 +3258,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6850,Mendrisio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,1657
 6852,Genestrerio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,352
 6853,Ligornetto,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,600
-6854,S. Pietro,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,512
-6855,Stabio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,834
+6854,S. Pietro,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,514
+6855,Stabio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,862
 6862,Rancate,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,612
 6863,Besazio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,244
 6864,Arzo,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,434
@@ -3269,11 +3272,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6875,Campora,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,false,3,1,address_fallback,40
 6875,Casima,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,false,2,1,address_fallback,64
 6875,Monte,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,90
-6877,Coldrerio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,720
+6877,Coldrerio,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,722
 6883,Novazzano,CH,Ticino,Distretto di Mendrisio,W. Europe Standard Time,true,1,1,address_fallback,763
-6900,Lugano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,2666
-6900,Massagno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,602
-6900,Paradiso,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,3,1,address_fallback,344
+6900,Lugano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,2667
+6900,Massagno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,607
+6900,Paradiso,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,3,1,address_fallback,347
 6901,Lugano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,3,address_fallback,3
 6912,Pazzallo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,333
 6913,Carabbia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,260
@@ -3282,19 +3285,19 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6916,Grancia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,72
 6917,Barbengo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,248
 6918,Figino,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,474
-6919,Carabietta,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,76
-6921,Vico Morcote,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,167
+6919,Carabietta,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,84
+6921,Vico Morcote,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,254
 6922,Morcote,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,366
-6924,Sorengo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,383
-6925,Gentilino,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,444
+6924,Sorengo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,384
+6925,Gentilino,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,449
 6926,Collina d'Oro,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,4
-6926,Montagnola,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,921
-6927,Agra,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,220
-6928,Manno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,456
-6929,Gravesano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,414
+6926,Montagnola,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,930
+6927,Agra,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,232
+6928,Manno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,464
+6929,Gravesano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,425
 6930,Bedano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,537
 6932,Breganzona,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,991
-6933,Muzzano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,345
+6933,Muzzano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,348
 6934,Bioggio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,486
 6935,Bosco Luganese,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,187
 6936,Cademario,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,376
@@ -3303,14 +3306,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6938,Vezio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,144
 6939,Arosio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,348
 6939,Mugena,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,179
-6942,Savosa,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,429
+6942,Savosa,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,430
 6943,Vezia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,470
-6944,Cureglia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,415
-6945,Origlio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,532
-6946,Ponte Capriasca,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,571
+6944,Cureglia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,425
+6945,Origlio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,555
+6946,Ponte Capriasca,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,596
 6947,Vaglio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,264
-6948,Porza,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,446
-6949,Comano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,683
+6948,Porza,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,450
+6949,Comano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,684
 6950,Tesserete,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,455
 6951,Bogno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,67
 6951,Colla,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,4,1,address_fallback,36
@@ -3347,7 +3350,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6977,Ruvigliana,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,275
 6978,Gandria,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,158
 6979,Brè sopra Lugano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,246
-6980,Castelrotto,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,256
+6980,Castelrotto,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,257
 6981,Banco,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,179
 6981,Bedigliora,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,202
 6981,Beride di Bedigliora,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,4,1,address_fallback,23
@@ -3357,32 +3360,30 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 6984,Pura,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,636
 6986,Curio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,311
 6986,Miglieglia,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,3,1,address_fallback,218
-6986,Novaggio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,427
+6986,Novaggio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,428
 6987,Caslano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,1456
-6988,Ponte Tresa,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,257
-6989,Purasca,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,238
+6988,Ponte Tresa,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,258
+6989,Purasca,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,239
 6990,Cassina d'Agno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,181
 6991,Neggio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,109
 6992,Cimo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,false,2,1,address_fallback,217
-6992,Vernate,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,299
+6992,Vernate,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,300
 6993,Iseo,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,71
 6994,Aranno,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,271
-6995,Madonna del Piano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,81
-6997,Sessa,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,451
-6998,Monteggio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,558
-6999,Astano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,309
-7000,Chur,CH,Graubünden/Grischun/Grigioni,Plessur,W. Europe Standard Time,true,1,1,address_fallback,6595
+6995,Madonna del Piano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,82
+6997,Sessa,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,454
+6998,Monteggio,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,557
+6999,Astano,CH,Ticino,Distretto di Lugano,W. Europe Standard Time,true,1,1,address_fallback,310
+7000,Chur,CH,Graubünden/Grischun/Grigioni,Plessur,W. Europe Standard Time,true,1,1,address_fallback,6596
 7012,Felsberg,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,980
 7013,Domat/Ems,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,1705
 7013,Tamins,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,false,2,2,address_fallback,5
 7014,Trin,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,469
 7015,Tamins,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,583
 7016,Trin Mulin,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,245
-7017,Flims Dorf,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,897
-7017,Flims-Waldhaus,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,false,2,1,address_fallback,11
+7017,Flims Dorf,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,969
 7018,Flims Waldhaus,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,446
-7018,Flims-Waldhaus,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,false,2,2,address_fallback,9
-7019,Fidaz,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,119
+7019,Fidaz,CH,Graubünden/Grischun/Grigioni,Imboden,W. Europe Standard Time,true,1,1,address_fallback,154
 7023,Haldenstein,CH,Graubünden/Grischun/Grigioni,Plessur,W. Europe Standard Time,true,1,1,address_fallback,441
 7026,Maladers,CH,Graubünden/Grischun/Grigioni,Plessur,W. Europe Standard Time,true,1,1,address_fallback,609
 7027,Calfreisen,CH,Graubünden/Grischun/Grigioni,Plessur,W. Europe Standard Time,false,3,1,address_fallback,56
@@ -3513,9 +3514,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 7226,Stels,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,177
 7228,Pusserein,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,100
 7228,Schuders,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,false,2,1,address_fallback,77
-7231,Pragg-Jenaz,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,248
-7232,Furna,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,275
-7233,Jenaz,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,270
+7231,Pragg-Jenaz,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,258
+7232,Furna,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,274
+7233,Jenaz,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,282
 7235,Fideris,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,547
 7240,Küblis,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,463
 7241,Conters im Prättigau,CH,Graubünden/Grischun/Grigioni,Prättigau/Davos,W. Europe Standard Time,true,1,1,address_fallback,158
@@ -3545,7 +3546,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 7304,Maienfeld,CH,Graubünden/Grischun/Grigioni,Landquart,W. Europe Standard Time,true,1,1,address_fallback,1314
 7306,Fläsch,CH,Graubünden/Grischun/Grigioni,Landquart,W. Europe Standard Time,true,1,1,address_fallback,409
 7307,Jenins,CH,Graubünden/Grischun/Grigioni,Landquart,W. Europe Standard Time,true,1,1,address_fallback,489
-7310,Bad Ragaz,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,1496
+7310,Bad Ragaz,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,1497
 7312,Pfäfers,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,192
 7313,St. Margrethenberg,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,52
 7314,Vadura,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,24
@@ -3614,7 +3615,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 7435,Splügen,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,true,1,1,address_fallback,134
 7436,Medels im Rheinwald,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,true,1,1,address_fallback,50
 7437,Nufenen,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,true,1,1,address_fallback,42
-7438,Hinterrhein,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,true,1,1,address_fallback,85
+7438,Hinterrhein,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,true,1,1,address_fallback,87
 7440,Andeer,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,true,1,1,address_fallback,464
 7440,Clugin,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,false,2,2,address_fallback,3
 7442,Clugin,CH,Graubünden/Grischun/Grigioni,Region Viamala,W. Europe Standard Time,true,1,1,address_fallback,36
@@ -3730,8 +3731,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8001,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,1,address_fallback,3393
 8002,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,14,address_fallback,1571
 8003,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,10,address_fallback,1851
-8004,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,2,address_fallback,3000
-8005,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,16,address_fallback,1503
+8004,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,2,address_fallback,2997
+8005,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,16,address_fallback,1504
 8006,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,5,address_fallback,2573
 8008,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,4,address_fallback,2759
 8010,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,32,address_fallback,3
@@ -3746,14 +3747,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8041,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,24,address_fallback,184
 8044,Gockhausen,CH,Zürich,Bezirk Uster,W. Europe Standard Time,false,2,1,address_fallback,216
 8044,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,13,address_fallback,1581
-8045,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,9,address_fallback,1938
+8045,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,9,address_fallback,1936
 8046,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,18,address_fallback,871
 8047,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,19,address_fallback,859
-8048,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,6,address_fallback,2466
-8049,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,22,address_fallback,404
-8050,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,8,address_fallback,2042
+8048,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,6,address_fallback,2465
+8049,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,22,address_fallback,405
+8050,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,8,address_fallback,2044
 8051,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,20,address_fallback,596
-8052,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,17,address_fallback,1234
+8052,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,17,address_fallback,1238
 8053,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,15,address_fallback,1563
 8055,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,11,address_fallback,1845
 8057,Zürich,CH,Zürich,Bezirk Zürich,W. Europe Standard Time,true,1,7,address_fallback,2351
@@ -3851,11 +3852,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8192,Zweidlen,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,false,2,1,address_fallback,215
 8192,Zweidlen-Glattfelden,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,false,3,1,address_fallback,4
 8193,Eglisau,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,1154
-8194,Hüntwangen,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,441
-8195,Wasterkingen,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,207
+8194,Hüntwangen,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,443
+8195,Wasterkingen,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,208
 8196,Wil,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,false,3,1,address_fallback,9
 8196,Wil (ZH),CH,Zürich,Bezirk Bülach,W. Europe Standard Time,false,2,1,address_fallback,27
-8196,Wil ZH,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,499
+8196,Wil ZH,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,502
 8197,Rafz,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,455
 8200,Schaffhausen,CH,Schaffhausen,Bezirk Schaffhausen,W. Europe Standard Time,true,1,1,address_fallback,2902
 8201,Schaffhausen,CH,Schaffhausen,Bezirk Schaffhausen,W. Europe Standard Time,true,1,4,address_fallback,58
@@ -3939,7 +3940,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8306,Wangen-Brüttisellen,CH,Zürich,Bezirk Uster,W. Europe Standard Time,false,2,1,address_fallback,6
 8307,Bietenholz,CH,Zürich,Bezirk Uster,W. Europe Standard Time,false,7,1,address_fallback,3
 8307,Bisikon,CH,Zürich,Bezirk Pfäffikon,W. Europe Standard Time,false,3,1,address_fallback,113
-8307,Effretikon,CH,Zürich,Bezirk Pfäffikon,W. Europe Standard Time,true,1,1,address_fallback,1344
+8307,Effretikon,CH,Zürich,Bezirk Pfäffikon,W. Europe Standard Time,true,1,1,address_fallback,1342
 8307,Kyburg,CH,Zürich,Bezirk Pfäffikon,W. Europe Standard Time,false,6,2,address_fallback,12
 8307,Ottikon,CH,Zürich,Bezirk Pfäffikon,W. Europe Standard Time,false,2,1,address_fallback,128
 8307,Ottikon b. Kemptthal,CH,Zürich,Bezirk Pfäffikon,W. Europe Standard Time,false,4,1,address_fallback,68
@@ -4004,13 +4005,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8374,Oberwangen TG,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,false,2,1,address_fallback,230
 8376,Au TG,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,false,2,1,address_fallback,20
 8376,Fischingen,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,157
-8400,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,1,address_fallback,5985
+8400,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,1,address_fallback,6040
 8401,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,7,address_fallback,14
 8402,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,8,address_fallback,3
 8404,Reutlingen (Winterthur),CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,false,3,1,address_fallback,10
 8404,Stadel (Winterthur),CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,false,2,1,address_fallback,15
-8404,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,2,address_fallback,1396
-8405,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,5,address_fallback,748
+8404,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,2,address_fallback,1397
+8405,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,5,address_fallback,839
 8405,Wnterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,false,2,1,address_fallback,4
 8406,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,4,address_fallback,1360
 8408,Winterthur,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,3,address_fallback,1372
@@ -4025,10 +4026,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8414,Buch am Irchel,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,336
 8415,Berg am Irchel,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,35
 8415,Gräslikon,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,false,2,1,address_fallback,26
-8416,Flaach,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,230
+8416,Flaach,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,267
 8418,Schlatt,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,false,2,1,address_fallback,15
 8418,Schlatt ZH,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,1,address_fallback,478
-8421,Dättlikon,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,1,address_fallback,54
+8421,Dättlikon,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,1,address_fallback,79
 8422,Pfungen,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,true,1,1,address_fallback,839
 8424,Embrach,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,2072
 8425,Oberembrach,CH,Zürich,Bezirk Bülach,W. Europe Standard Time,true,1,1,address_fallback,458
@@ -4050,8 +4051,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8454,Buchberg,CH,Schaffhausen,Bezirk Schaffhausen,W. Europe Standard Time,true,1,1,address_fallback,355
 8455,Rüdlingen,CH,Schaffhausen,Bezirk Schaffhausen,W. Europe Standard Time,true,1,1,address_fallback,328
 8457,Humlikon,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,187
-8458,Dorf,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,59
-8459,Volken,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,89
+8458,Dorf,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,72
+8459,Volken,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,102
 8460,Marthalen,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,437
 8461,Oerlingen,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,44
 8462,Rheinau,CH,Zürich,Bezirk Andelfingen,W. Europe Standard Time,true,1,1,address_fallback,778
@@ -4180,7 +4181,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8566,Ellighausen,CH,Thurgau,Bezirk Kreuzlingen,W. Europe Standard Time,false,3,1,address_fallback,62
 8566,Lippoldswilen,CH,Thurgau,Bezirk Kreuzlingen,W. Europe Standard Time,false,4,1,address_fallback,47
 8566,Neuwilen,CH,Thurgau,Bezirk Kreuzlingen,W. Europe Standard Time,true,1,1,address_fallback,212
-8570,Weinfelden,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,true,1,1,address_fallback,2300
+8570,Weinfelden,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,true,1,1,address_fallback,2301
 8572,Andhausen,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,false,3,1,address_fallback,63
 8572,Berg,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,false,2,1,address_fallback,141
 8572,Berg (TG),CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,false,6,1,address_fallback,3
@@ -4206,7 +4207,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8580,Biessenhofen,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,false,4,1,address_fallback,56
 8580,Hagenwil,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,false,6,1,address_fallback,7
 8580,Hagenwil b. Amriswil,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,false,5,1,address_fallback,38
-8580,Hefenhofen,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,false,2,1,address_fallback,431
+8580,Hefenhofen,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,false,2,1,address_fallback,430
 8580,Sommeri,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,false,3,1,address_fallback,159
 8581,Schocherswil,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,true,1,1,address_fallback,126
 8582,Dozwil,CH,Thurgau,Bezirk Arbon,W. Europe Standard Time,true,1,1,address_fallback,203
@@ -4263,7 +4264,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8607,Aathal-Seegräben,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,258
 8607,Seegräben,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,2,1,address_fallback,112
 8608,Bubikon,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,1035
-8610,Uster,CH,Zürich,Bezirk Uster,W. Europe Standard Time,true,1,1,address_fallback,3697
+8610,Uster,CH,Zürich,Bezirk Uster,W. Europe Standard Time,true,1,1,address_fallback,3696
 8614,Bertschikon (Gossau ZH),CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,332
 8614,Sulzbach (Uster),CH,Zürich,Bezirk Uster,W. Europe Standard Time,false,2,1,address_fallback,149
 8615,Freudwil,CH,Zürich,Bezirk Uster,W. Europe Standard Time,false,2,1,address_fallback,41
@@ -4288,18 +4289,18 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8626,Ottikon (Gossau),CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,3,1,address_fallback,4
 8627,Grüningen,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,998
 8630,Rüti,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,3,1,address_fallback,54
-8630,Rüti (ZH),CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,1620
-8630,Rüti ZH,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,2,1,address_fallback,738
+8630,Rüti (ZH),CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,1624
+8630,Rüti ZH,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,2,1,address_fallback,740
 8632,Dürnten,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,3,2,address_fallback,7
 8632,Tann,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,837
 8632,Tann ZH,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,2,1,address_fallback,145
 8633,Wolfhausen,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,967
 8634,Hombrechtikon,CH,Zürich,Bezirk Meilen,W. Europe Standard Time,true,1,1,address_fallback,1754
-8635,Dürnten,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,1299
+8635,Dürnten,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,1301
 8636,Goldingen,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,false,4,2,address_fallback,42
-8636,Wald,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,3,1,address_fallback,134
-8636,Wald (ZH),CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,2,1,address_fallback,149
-8636,Wald ZH,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,2184
+8636,Wald,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,2,1,address_fallback,156
+8636,Wald (ZH),CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,3,1,address_fallback,149
+8636,Wald ZH,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,2188
 8637,Laupen,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,3,1,address_fallback,44
 8637,Laupen (ZH),CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,false,2,1,address_fallback,52
 8637,Laupen ZH,CH,Zürich,Bezirk Hinwil,W. Europe Standard Time,true,1,1,address_fallback,526
@@ -4318,9 +4319,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8645,Rapperswil-Jona SG,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,false,5,1,address_fallback,22
 8646,Oberlangenhard ZH,CH,Zürich,Bezirk Winterthur,W. Europe Standard Time,false,2,2,address_fallback,3
 8646,Wagen,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,277
-8700,Küsnacht,CH,Zürich,Bezirk Meilen,W. Europe Standard Time,true,1,1,address_fallback,2302
+8700,Küsnacht,CH,Zürich,Bezirk Meilen,W. Europe Standard Time,true,1,1,address_fallback,2304
 8700,Küsnacht (ZH),CH,Zürich,Bezirk Meilen,W. Europe Standard Time,false,3,1,address_fallback,7
-8700,Küsnacht ZH,CH,Zürich,Bezirk Meilen,W. Europe Standard Time,false,2,1,address_fallback,657
+8700,Küsnacht ZH,CH,Zürich,Bezirk Meilen,W. Europe Standard Time,false,2,1,address_fallback,658
 8702,Zollikon,CH,Zürich,Bezirk Meilen,W. Europe Standard Time,true,1,1,address_fallback,1579
 8703,Erlenbach,CH,Zürich,Bezirk Meilen,W. Europe Standard Time,true,1,1,address_fallback,832
 8703,Erlenbach (ZH),CH,Zürich,Bezirk Meilen,W. Europe Standard Time,false,3,1,address_fallback,179
@@ -4384,6 +4385,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8757,Filzbach,CH,Glarus,,W. Europe Standard Time,true,1,1,address_fallback,446
 8758,Obstalden,CH,Glarus,,W. Europe Standard Time,true,1,1,address_fallback,438
 8762,Schwanden,CH,Glarus,,W. Europe Standard Time,true,1,1,address_fallback,1210
+8762,Schwanden GL,CH,Glarus,,W. Europe Standard Time,false,4,1,address_fallback,3
 8762,Schwändi,CH,Glarus,,W. Europe Standard Time,false,2,1,address_fallback,326
 8762,Sool,CH,Glarus,,W. Europe Standard Time,false,3,1,address_fallback,224
 8765,Engi,CH,Glarus,,W. Europe Standard Time,true,1,1,address_fallback,586
@@ -4470,8 +4472,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8866,Ziegelbrücke,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,142
 8867,Niederurnen,CH,Glarus,,W. Europe Standard Time,true,1,1,address_fallback,1292
 8868,Oberurnen,CH,Glarus,,W. Europe Standard Time,true,1,1,address_fallback,632
-8872,Weesen,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,626
-8873,Amden,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,893
+8872,Weesen,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,627
+8873,Amden,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,1,address_fallback,894
 8874,Mühlehorn,CH,Glarus,,W. Europe Standard Time,true,1,1,address_fallback,328
 8877,Murg,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,253
 8878,Quinten,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,80
@@ -4493,23 +4495,19 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8888,Heiligkreuz (Mels),CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,471
 8889,Pl,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,false,2,1,address_fallback,4
 8889,Plons SG,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,190
-8890,Flums,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,942
+8890,Flums,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,971
 8892,Berschis,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,241
-8893,Flums Hochwiese,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,154
-8894,Flumserberg Saxli,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,65
-8895,Flumserberg Portels,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,91
-8896,Flumserberg Bergheim,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,154
-8897,Flumserberg,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,false,2,1,address_fallback,104
-8897,Flumserberg Tannenheim,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,111
-8898,Flumserberg,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,false,3,2,address_fallback,40
-8898,Flumserberg Tannenbodenalp,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,90
-8898,Tannenboden,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,false,4,1,address_fallback,32
-8898,Tannenbodenalp,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,false,2,1,address_fallback,58
+8893,Flums Hochwiese,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,156
+8894,Flumserberg Saxli,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,121
+8895,Flumserberg Portels,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,123
+8896,Flumserberg Bergheim,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,241
+8897,Flumserberg Tannenheim,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,362
+8898,Flumserberg Tannenbodenalp,CH,St. Gallen,Wahlkreis Sarganserland,W. Europe Standard Time,true,1,1,address_fallback,226
 8902,Urdorf,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,832
 8903,Aesch (ZH),CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,false,4,2,address_fallback,3
-8903,Birmensdorf,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,false,3,1,address_fallback,6
-8903,Birmensdorf (ZH),CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,false,2,1,address_fallback,67
-8903,Birmensdorf ZH,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,1321
+8903,Birmensdorf,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,false,3,1,address_fallback,5
+8903,Birmensdorf (ZH),CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,false,2,1,address_fallback,52
+8903,Birmensdorf ZH,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,1336
 8904,Aesch,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,false,2,1,address_fallback,13
 8904,Aesch (ZH),CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,370
 8904,Aesch ZH,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,false,3,1,address_fallback,4
@@ -4524,8 +4522,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8910,Affoltern a.A.,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,false,2,1,address_fallback,20
 8910,Affoltern am Albis,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,1843
 8911,Rifferswil,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,364
-8912,Obfelden,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,1307
-8913,Ottenbach,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,111
+8912,Obfelden,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,1308
+8913,Ottenbach,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,113
 8914,Aeugst am Albis,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,450
 8914,Aeugstertal,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,false,2,1,address_fallback,67
 8915,Hausen am Albis,CH,Zürich,Bezirk Affoltern,W. Europe Standard Time,true,1,1,address_fallback,810
@@ -4547,22 +4545,22 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 8953,Berikon,CH,Aargau,Bezirk Bremgarten,W. Europe Standard Time,false,2,2,address_fallback,3
 8953,Dietikon,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,1253
 8954,Geroldswil,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,136
-8955,Oetwil an der Limmat,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,76
+8955,Oetwil an der Limmat,CH,Zürich,Bezirk Dietikon,W. Europe Standard Time,true,1,1,address_fallback,178
 8956,Killwangen,CH,Aargau,Bezirk Baden,W. Europe Standard Time,true,1,1,address_fallback,357
 8957,Spreitenbach,CH,Aargau,Bezirk Baden,W. Europe Standard Time,true,1,1,address_fallback,362
-8962,Bergdietikon,CH,Aargau,Bezirk Baden,W. Europe Standard Time,true,1,1,address_fallback,900
+8962,Bergdietikon,CH,Aargau,Bezirk Baden,W. Europe Standard Time,true,1,1,address_fallback,901
 8964,Rudolfstetten,CH,Aargau,Bezirk Bremgarten,W. Europe Standard Time,true,1,1,address_fallback,782
 8965,Berikon,CH,Aargau,Bezirk Bremgarten,W. Europe Standard Time,true,1,1,address_fallback,861
 8966,Oberwil-Lieli,CH,Aargau,Bezirk Bremgarten,W. Europe Standard Time,true,1,1,address_fallback,591
 8967,Widen,CH,Aargau,Bezirk Bremgarten,W. Europe Standard Time,true,1,1,address_fallback,823
-9000,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,1,address_fallback,5213
-9000,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,1,address_fallback,733
+9000,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,1,address_fallback,5212
+9000,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,1,address_fallback,735
 9001,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,9,address_fallback,14
 9001,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,8,address_fallback,12
 9004,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,10,address_fallback,4
 9006,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,11,address_fallback,3
 9008,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,4,address_fallback,1111
-9008,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,3,address_fallback,46
+9008,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,2,address_fallback,47
 9010,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,6,address_fallback,684
 9010,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,6,address_fallback,28
 9011,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,5,address_fallback,720
@@ -4570,7 +4568,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9012,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,8,address_fallback,453
 9012,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,9,address_fallback,3
 9014,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,2,address_fallback,1297
-9014,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,2,address_fallback,47
+9014,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,3,address_fallback,47
 9015,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,7,address_fallback,638
 9015,St.Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,false,2,7,address_fallback,20
 9016,St. Gallen,CH,St. Gallen,Wahlkreis St. Gallen,W. Europe Standard Time,true,1,3,address_fallback,1159
@@ -4594,20 +4592,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9044,Wald (AR),CH,Appenzell Ausserrhoden,Vorderland,W. Europe Standard Time,false,3,1,address_fallback,15
 9044,Wald AR,CH,Appenzell Ausserrhoden,Vorderland,W. Europe Standard Time,true,1,1,address_fallback,276
 9044,Zelg,CH,Appenzell Ausserrhoden,Vorderland,W. Europe Standard Time,false,5,1,address_fallback,4
-9050,Appenzell,CH,Appenzell Innerrhoden,,W. Europe Standard Time,true,1,1,address_fallback,2881
+9050,Appenzell,CH,Appenzell Innerrhoden,,W. Europe Standard Time,true,1,1,address_fallback,2882
 9050,Appenzell Eggerstanden,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,4,1,address_fallback,296
+9050,Appenzell Enggenhütten,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,6,1,address_fallback,107
 9050,Appenzell Meistersrüte,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,3,1,address_fallback,427
-9050,Appenzell Schlatt,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,5,1,address_fallback,41
+9050,Appenzell Schlatt,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,5,1,address_fallback,178
 9050,Appenzell Steinegg,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,2,1,address_fallback,438
-9052,Niederteufen,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,448
+9052,Niederteufen,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,455
 9052,Niederteufen (AR),CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,false,2,1,address_fallback,32
 9053,Teufen,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,false,3,1,address_fallback,21
 9053,Teufen (AR),CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,false,2,1,address_fallback,58
-9053,Teufen AR,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1029
-9054,Haslen AI,CH,Appenzell Innerrhoden,,W. Europe Standard Time,true,1,1,address_fallback,206
-9054,Haslen Al,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,2,1,address_fallback,7
-9055,Bühler,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,592
-9056,Gais,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1090
+9053,Teufen AR,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1049
+9054,Haslen AI,CH,Appenzell Innerrhoden,,W. Europe Standard Time,true,1,1,address_fallback,454
+9055,Bühler,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,621
+9056,Gais,CH,Appenzell Ausserrhoden,Mittelland,W. Europe Standard Time,true,1,1,address_fallback,1097
 9057,Schwende,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,3,1,address_fallback,95
 9057,Wasserauen,CH,Appenzell Innerrhoden,,W. Europe Standard Time,false,2,1,address_fallback,174
 9057,Weissbad,CH,Appenzell Innerrhoden,,W. Europe Standard Time,true,1,1,address_fallback,545
@@ -4726,7 +4724,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9434,Au,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,false,2,1,address_fallback,35
 9434,Au (SG),CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,false,3,1,address_fallback,5
 9434,Au SG,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,1103
-9435,Heerbrugg,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,935
+9435,Heerbrugg,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,936
 9436,Balgach,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,1185
 9437,Marbach,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,false,2,1,address_fallback,16
 9437,Marbach SG,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,712
@@ -4735,7 +4733,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9443,Widnau,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,2544
 9444,Diepoldsau,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,1956
 9445,Rebstein,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,1314
-9450,Altstätten,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,false,3,1,address_fallback,37
+9450,Altstätten,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,false,3,1,address_fallback,38
 9450,Altstätten (SG),CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,false,4,1,address_fallback,14
 9450,Altstätten SG,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,true,1,1,address_fallback,2599
 9450,Lüchingen,CH,St. Gallen,Wahlkreis Rheintal,W. Europe Standard Time,false,2,1,address_fallback,633
@@ -4766,9 +4764,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9471,Buchs (SG),CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,true,1,2,address_fallback,4
 9472,Grabs,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,true,1,1,address_fallback,1731
 9472,Grabserberg,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,false,2,1,address_fallback,389
-9473,Gams,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,true,1,1,address_fallback,846
-9473,Gasenzen,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,false,3,1,address_fallback,29
-9473,Grabs,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,false,2,2,address_fallback,123
+9473,Gams,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,true,1,1,address_fallback,1043
+9473,Gasenzen,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,false,2,1,address_fallback,28
+9473,Grabs,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,false,3,2,address_fallback,25
 9473,Sennwald,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,false,4,2,address_fallback,6
 9474,Weite,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,true,1,2,address_fallback,4
 9475,Sevelen,CH,St. Gallen,Wahlkreis Werdenberg,W. Europe Standard Time,true,1,1,address_fallback,1458
@@ -4791,9 +4789,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9503,Lanterswil,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,true,1,1,address_fallback,43
 9503,Stehrenberg,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,false,2,1,address_fallback,37
 9504,Friltschen,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,true,1,1,address_fallback,106
-9506,Lommis,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,227
+9506,Lommis,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,267
 9507,Stettfurt,CH,Thurgau,Bezirk Frauenfeld,W. Europe Standard Time,true,1,1,address_fallback,198
-9508,Weingarten-Kalthäusern,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,102
+9508,Weingarten-Kalthäusern,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,185
 9512,Rossrüti,CH,St. Gallen,Wahlkreis Wil,W. Europe Standard Time,true,1,1,address_fallback,394
 9514,Wuppenau,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,true,1,1,address_fallback,269
 9515,Hosenruck,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,true,1,1,address_fallback,184
@@ -4820,8 +4818,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9542,Münchwilen TG,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,641
 9543,St. Margarethen,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,false,2,1,address_fallback,57
 9543,St. Margarethen TG,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,277
-9545,Wängi,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,1135
-9546,Tuttwil,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,201
+9545,Wängi,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,1238
+9546,Tuttwil,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,208
 9547,Wittenwil,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,165
 9548,Matzingen,CH,Thurgau,Bezirk Frauenfeld,W. Europe Standard Time,true,1,1,address_fallback,420
 9552,Bronschhofen,CH,St. Gallen,Wahlkreis Wil,W. Europe Standard Time,true,1,1,address_fallback,761
@@ -4838,7 +4836,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9565,Oppikon,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,false,4,1,address_fallback,42
 9565,Rothenhausen,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,true,1,1,address_fallback,159
 9565,Schmidshof,CH,Thurgau,Bezirk Weinfelden,W. Europe Standard Time,false,5,1,address_fallback,20
-9573,Littenheid,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,16
+9573,Littenheid,CH,Thurgau,Bezirk Münchwilen,W. Europe Standard Time,true,1,1,address_fallback,20
 9601,Lütisburg Station,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,true,1,1,address_fallback,188
 9602,Bazenheid,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,true,1,1,address_fallback,698
 9602,Müselbach,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,false,2,1,address_fallback,89
@@ -4871,5 +4869,5 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 9655,Stein SG,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,true,1,1,address_fallback,177
 9656,Alt St. Johann,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,true,1,1,address_fallback,395
 9657,Unterwasser,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,true,1,1,address_fallback,494
-9658,Wildhaus,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,true,1,1,address_fallback,1169
+9658,Wildhaus,CH,St. Gallen,Wahlkreis Toggenburg,W. Europe Standard Time,true,1,1,address_fallback,1171
 9830,Uznach,CH,St. Gallen,Wahlkreis See-Gaster,W. Europe Standard Time,true,1,2,address_fallback,3

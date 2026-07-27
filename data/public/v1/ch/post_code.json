@@ -116,7 +116,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1183
+      "evidence_count": 1194
     },
     {
       "code": "1005",
@@ -528,11 +528,24 @@
       "state": "Vaud",
       "county": "District de l'Ouest lausannois",
       "time_zone": "W. Europe Standard Time",
+      "is_primary_location": false,
+      "location_rank": 2,
+      "postal_code_rank": 1,
+      "source": "address_fallback",
+      "evidence_count": 16
+    },
+    {
+      "code": "1029",
+      "city": "Villars-Ste-Croix",
+      "country": "CH",
+      "state": "Vaud",
+      "county": "District de l'Ouest lausannois",
+      "time_zone": "W. Europe Standard Time",
       "is_primary_location": true,
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 20
+      "evidence_count": 246
     },
     {
       "code": "1030",
@@ -675,7 +688,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 216
+      "evidence_count": 217
     },
     {
       "code": "1038",
@@ -883,7 +896,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 14
+      "evidence_count": 239
     },
     {
       "code": "1045",
@@ -1338,7 +1351,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 28
+      "evidence_count": 178
     },
     {
       "code": "1082",
@@ -1754,7 +1767,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 16
+      "evidence_count": 183
     },
     {
       "code": "1122",
@@ -1884,7 +1897,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 21
+      "evidence_count": 255
     },
     {
       "code": "1135",
@@ -1897,7 +1910,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 13
+      "evidence_count": 222
     },
     {
       "code": "1136",
@@ -1910,7 +1923,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 124
+      "evidence_count": 125
     },
     {
       "code": "1141",
@@ -3041,7 +3054,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 254
+      "evidence_count": 255
     },
     {
       "code": "1231",
@@ -3301,7 +3314,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 29
+      "evidence_count": 31
     },
     {
       "code": "1256",
@@ -3402,10 +3415,23 @@
       "county": "District de Nyon",
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
-      "location_rank": 2,
+      "location_rank": 3,
       "postal_code_rank": 1,
       "source": "address_fallback",
       "evidence_count": 25
+    },
+    {
+      "code": "1261",
+      "city": "Marchissy",
+      "country": "CH",
+      "state": "Vaud",
+      "county": "District de Nyon",
+      "time_zone": "W. Europe Standard Time",
+      "is_primary_location": false,
+      "location_rank": 2,
+      "postal_code_rank": 1,
+      "source": "address_fallback",
+      "evidence_count": 152
     },
     {
       "code": "1262",
@@ -3769,7 +3795,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 11
+      "evidence_count": 13
     },
     {
       "code": "1284",
@@ -4211,7 +4237,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 29
+      "evidence_count": 313
     },
     {
       "code": "1313",
@@ -4588,7 +4614,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1597
+      "evidence_count": 1598
     },
     {
       "code": "1352",
@@ -6382,7 +6408,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 8
+      "evidence_count": 60
     },
     {
       "code": "1512",
@@ -7448,7 +7474,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 373
+      "evidence_count": 374
     },
     {
       "code": "1610",
@@ -10854,7 +10880,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 646
+      "evidence_count": 645
     },
     {
       "code": "1804",
@@ -12323,7 +12349,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 3790
+      "evidence_count": 3791
     },
     {
       "code": "1921",
@@ -12492,7 +12518,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 255
+      "evidence_count": 256
     },
     {
       "code": "1932",
@@ -13103,7 +13129,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 777
+      "evidence_count": 778
     },
     {
       "code": "1958",
@@ -14026,7 +14052,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2602
+      "evidence_count": 2603
     },
     {
       "code": "1997",
@@ -14078,7 +14104,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1780
+      "evidence_count": 1782
     },
     {
       "code": "2001",
@@ -15118,7 +15144,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 4459
+      "evidence_count": 4479
     },
     {
       "code": "2300",
@@ -15729,7 +15755,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2898
+      "evidence_count": 2899
     },
     {
       "code": "2503",
@@ -16314,7 +16340,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 403
+      "evidence_count": 404
     },
     {
       "code": "2562",
@@ -16366,7 +16392,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 361
+      "evidence_count": 364
     },
     {
       "code": "2572",
@@ -17848,7 +17874,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2480
+      "evidence_count": 2479
     },
     {
       "code": "2902",
@@ -17874,7 +17900,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 78
+      "evidence_count": 115
     },
     {
       "code": "2904",
@@ -17887,7 +17913,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 36
+      "evidence_count": 189
     },
     {
       "code": "2905",
@@ -18004,7 +18030,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 7
+      "evidence_count": 251
     },
     {
       "code": "2922",
@@ -18043,7 +18069,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 157
+      "evidence_count": 158
     },
     {
       "code": "2925",
@@ -18160,7 +18186,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 30
+      "evidence_count": 258
     },
     {
       "code": "2946",
@@ -18355,7 +18381,7 @@
       "location_rank": 1,
       "postal_code_rank": 4,
       "source": "postal_boundary",
-      "evidence_count": 2240
+      "evidence_count": 2250
     },
     {
       "code": "3008",
@@ -18407,7 +18433,7 @@
       "location_rank": 1,
       "postal_code_rank": 3,
       "source": "postal_boundary",
-      "evidence_count": 2286
+      "evidence_count": 2285
     },
     {
       "code": "3013",
@@ -18810,7 +18836,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2109
+      "evidence_count": 2104
     },
     {
       "code": "3066",
@@ -19603,7 +19629,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1958
+      "evidence_count": 1960
     },
     {
       "code": "3152",
@@ -20760,7 +20786,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1231
+      "evidence_count": 1235
     },
     {
       "code": "3280",
@@ -21371,7 +21397,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2278
+      "evidence_count": 2279
     },
     {
       "code": "3362",
@@ -21397,7 +21423,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 359
+      "evidence_count": 360
     },
     {
       "code": "3365",
@@ -23399,7 +23425,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1252
+      "evidence_count": 1251
     },
     {
       "code": "3645",
@@ -23568,7 +23594,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 571
+      "evidence_count": 572
     },
     {
       "code": "3658",
@@ -23919,7 +23945,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "postal_boundary",
-      "evidence_count": 3224
+      "evidence_count": 3223
     },
     {
       "code": "3715",
@@ -24283,7 +24309,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 25
+      "evidence_count": 23
     },
     {
       "code": "3775",
@@ -24439,7 +24465,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 705
+      "evidence_count": 704
     },
     {
       "code": "3792",
@@ -24465,7 +24491,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1718
+      "evidence_count": 1720
     },
     {
       "code": "3800",
@@ -25375,7 +25401,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 154
+      "evidence_count": 155
     },
     {
       "code": "3911",
@@ -26172,13 +26198,26 @@
     },
     {
       "code": "3960",
-      "city": "Corin",
+      "city": "Chalais",
       "country": "CH",
       "state": "Valais/Wallis",
       "county": "Sierre",
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
       "location_rank": 7,
+      "postal_code_rank": 2,
+      "source": "address_fallback",
+      "evidence_count": 4
+    },
+    {
+      "code": "3960",
+      "city": "Corin",
+      "country": "CH",
+      "state": "Valais/Wallis",
+      "county": "Sierre",
+      "time_zone": "W. Europe Standard Time",
+      "is_primary_location": false,
+      "location_rank": 8,
       "postal_code_rank": 1,
       "source": "address_fallback",
       "evidence_count": 3
@@ -26246,7 +26285,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2423
+      "evidence_count": 2425
     },
     {
       "code": "3960",
@@ -26256,7 +26295,7 @@
       "county": "Sierre",
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
-      "location_rank": 8,
+      "location_rank": 9,
       "postal_code_rank": 1,
       "source": "address_fallback",
       "evidence_count": 3
@@ -26493,7 +26532,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 353
+      "evidence_count": 476
     },
     {
       "code": "3966",
@@ -26506,7 +26545,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 614
+      "evidence_count": 642
     },
     {
       "code": "3966",
@@ -26545,7 +26584,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 506
+      "evidence_count": 511
     },
     {
       "code": "3970",
@@ -26701,7 +26740,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 834
+      "evidence_count": 835
     },
     {
       "code": "3978",
@@ -27377,7 +27416,7 @@
       "location_rank": 1,
       "postal_code_rank": 8,
       "source": "address_fallback",
-      "evidence_count": 2188
+      "evidence_count": 2200
     },
     {
       "code": "4056",
@@ -27702,7 +27741,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 5126
+      "evidence_count": 5125
     },
     {
       "code": "4124",
@@ -28404,7 +28443,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2746
+      "evidence_count": 2747
     },
     {
       "code": "4314",
@@ -28599,7 +28638,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 4685
+      "evidence_count": 4686
     },
     {
       "code": "4411",
@@ -30562,7 +30601,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 14
+      "evidence_count": 15
     },
     {
       "code": "4658",
@@ -30575,7 +30614,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1115
+      "evidence_count": 1113
     },
     {
       "code": "4663",
@@ -31927,7 +31966,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1247
+      "evidence_count": 1248
     },
     {
       "code": "5034",
@@ -31953,7 +31992,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1074
+      "evidence_count": 1075
     },
     {
       "code": "5036",
@@ -39519,7 +39558,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1114
+      "evidence_count": 1117
     },
     {
       "code": "6516",
@@ -39987,7 +40026,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 433
+      "evidence_count": 435
     },
     {
       "code": "6574",
@@ -40052,7 +40091,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 438
+      "evidence_count": 443
     },
     {
       "code": "6576",
@@ -40156,7 +40195,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 812
+      "evidence_count": 824
     },
     {
       "code": "6593",
@@ -40195,7 +40234,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 525
+      "evidence_count": 532
     },
     {
       "code": "6596",
@@ -40299,7 +40338,7 @@
       "location_rank": 3,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 509
+      "evidence_count": 510
     },
     {
       "code": "6600",
@@ -40390,7 +40429,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1743
+      "evidence_count": 1744
     },
     {
       "code": "6618",
@@ -40403,7 +40442,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 235
+      "evidence_count": 237
     },
     {
       "code": "6622",
@@ -40442,7 +40481,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 234
+      "evidence_count": 240
     },
     {
       "code": "6632",
@@ -40455,7 +40494,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 977
+      "evidence_count": 982
     },
     {
       "code": "6634",
@@ -40468,7 +40507,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 461
+      "evidence_count": 462
     },
     {
       "code": "6636",
@@ -40481,7 +40520,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 430
+      "evidence_count": 431
     },
     {
       "code": "6637",
@@ -40507,7 +40546,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 490
+      "evidence_count": 491
     },
     {
       "code": "6645",
@@ -40546,7 +40585,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 765
+      "evidence_count": 767
     },
     {
       "code": "6648",
@@ -40559,7 +40598,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1610
+      "evidence_count": 1611
     },
     {
       "code": "6648",
@@ -40624,7 +40663,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 899
+      "evidence_count": 898
     },
     {
       "code": "6655",
@@ -40936,7 +40975,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 161
+      "evidence_count": 162
     },
     {
       "code": "6676",
@@ -41014,7 +41053,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 363
+      "evidence_count": 364
     },
     {
       "code": "6682",
@@ -41196,7 +41235,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 746
+      "evidence_count": 758
     },
     {
       "code": "6714",
@@ -41209,7 +41248,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 806
+      "evidence_count": 810
     },
     {
       "code": "6715",
@@ -41482,7 +41521,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 295
+      "evidence_count": 312
     },
     {
       "code": "6744",
@@ -41508,7 +41547,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 336
+      "evidence_count": 387
     },
     {
       "code": "6746",
@@ -41651,7 +41690,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 439
+      "evidence_count": 440
     },
     {
       "code": "6760",
@@ -41729,7 +41768,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 167
+      "evidence_count": 172
     },
     {
       "code": "6773",
@@ -41755,7 +41794,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 330
+      "evidence_count": 333
     },
     {
       "code": "6775",
@@ -41794,7 +41833,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 500
+      "evidence_count": 520
     },
     {
       "code": "6780",
@@ -41859,7 +41898,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 375
+      "evidence_count": 376
     },
     {
       "code": "6804",
@@ -41885,7 +41924,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 583
+      "evidence_count": 584
     },
     {
       "code": "6805",
@@ -41937,7 +41976,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 373
+      "evidence_count": 375
     },
     {
       "code": "6809",
@@ -41950,7 +41989,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 470
+      "evidence_count": 471
     },
     {
       "code": "6810",
@@ -42002,7 +42041,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 405
+      "evidence_count": 408
     },
     {
       "code": "6816",
@@ -42015,7 +42054,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 309
+      "evidence_count": 310
     },
     {
       "code": "6817",
@@ -42028,7 +42067,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 202
+      "evidence_count": 204
     },
     {
       "code": "6818",
@@ -42041,7 +42080,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 449
+      "evidence_count": 453
     },
     {
       "code": "6821",
@@ -42054,7 +42093,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 400
+      "evidence_count": 404
     },
     {
       "code": "6822",
@@ -42106,7 +42145,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1001
+      "evidence_count": 1003
     },
     {
       "code": "6827",
@@ -42145,7 +42184,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 844
+      "evidence_count": 845
     },
     {
       "code": "6832",
@@ -42184,7 +42223,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 757
+      "evidence_count": 759
     },
     {
       "code": "6834",
@@ -42197,7 +42236,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1155
+      "evidence_count": 1170
     },
     {
       "code": "6835",
@@ -42340,7 +42379,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 512
+      "evidence_count": 514
     },
     {
       "code": "6855",
@@ -42353,7 +42392,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 834
+      "evidence_count": 862
     },
     {
       "code": "6862",
@@ -42522,7 +42561,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 720
+      "evidence_count": 722
     },
     {
       "code": "6883",
@@ -42548,7 +42587,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2666
+      "evidence_count": 2667
     },
     {
       "code": "6900",
@@ -42561,7 +42600,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 602
+      "evidence_count": 607
     },
     {
       "code": "6900",
@@ -42574,7 +42613,7 @@
       "location_rank": 3,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 344
+      "evidence_count": 347
     },
     {
       "code": "6901",
@@ -42691,7 +42730,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 76
+      "evidence_count": 84
     },
     {
       "code": "6921",
@@ -42704,7 +42743,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 167
+      "evidence_count": 254
     },
     {
       "code": "6922",
@@ -42730,7 +42769,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 383
+      "evidence_count": 384
     },
     {
       "code": "6925",
@@ -42743,7 +42782,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 444
+      "evidence_count": 449
     },
     {
       "code": "6926",
@@ -42769,7 +42808,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 921
+      "evidence_count": 930
     },
     {
       "code": "6927",
@@ -42782,7 +42821,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 220
+      "evidence_count": 232
     },
     {
       "code": "6928",
@@ -42795,7 +42834,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 456
+      "evidence_count": 464
     },
     {
       "code": "6929",
@@ -42808,7 +42847,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 414
+      "evidence_count": 425
     },
     {
       "code": "6930",
@@ -42847,7 +42886,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 345
+      "evidence_count": 348
     },
     {
       "code": "6934",
@@ -42964,7 +43003,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 429
+      "evidence_count": 430
     },
     {
       "code": "6943",
@@ -42990,7 +43029,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 415
+      "evidence_count": 425
     },
     {
       "code": "6945",
@@ -43003,7 +43042,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 532
+      "evidence_count": 555
     },
     {
       "code": "6946",
@@ -43016,7 +43055,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 571
+      "evidence_count": 596
     },
     {
       "code": "6947",
@@ -43042,7 +43081,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 446
+      "evidence_count": 450
     },
     {
       "code": "6949",
@@ -43055,7 +43094,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 683
+      "evidence_count": 684
     },
     {
       "code": "6950",
@@ -43536,7 +43575,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 256
+      "evidence_count": 257
     },
     {
       "code": "6981",
@@ -43666,7 +43705,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 427
+      "evidence_count": 428
     },
     {
       "code": "6987",
@@ -43692,7 +43731,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 257
+      "evidence_count": 258
     },
     {
       "code": "6989",
@@ -43705,7 +43744,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 238
+      "evidence_count": 239
     },
     {
       "code": "6990",
@@ -43757,7 +43796,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 299
+      "evidence_count": 300
     },
     {
       "code": "6993",
@@ -43796,7 +43835,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 81
+      "evidence_count": 82
     },
     {
       "code": "6997",
@@ -43809,7 +43848,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 451
+      "evidence_count": 454
     },
     {
       "code": "6998",
@@ -43822,7 +43861,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 558
+      "evidence_count": 557
     },
     {
       "code": "6999",
@@ -43835,7 +43874,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 309
+      "evidence_count": 310
     },
     {
       "code": "7000",
@@ -43848,7 +43887,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 6595
+      "evidence_count": 6596
     },
     {
       "code": "7012",
@@ -43939,20 +43978,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 897
-    },
-    {
-      "code": "7017",
-      "city": "Flims-Waldhaus",
-      "country": "CH",
-      "state": "Graubünden/Grischun/Grigioni",
-      "county": "Imboden",
-      "time_zone": "W. Europe Standard Time",
-      "is_primary_location": false,
-      "location_rank": 2,
-      "postal_code_rank": 1,
-      "source": "address_fallback",
-      "evidence_count": 11
+      "evidence_count": 969
     },
     {
       "code": "7018",
@@ -43968,19 +43994,6 @@
       "evidence_count": 446
     },
     {
-      "code": "7018",
-      "city": "Flims-Waldhaus",
-      "country": "CH",
-      "state": "Graubünden/Grischun/Grigioni",
-      "county": "Imboden",
-      "time_zone": "W. Europe Standard Time",
-      "is_primary_location": false,
-      "location_rank": 2,
-      "postal_code_rank": 2,
-      "source": "address_fallback",
-      "evidence_count": 9
-    },
-    {
       "code": "7019",
       "city": "Fidaz",
       "country": "CH",
@@ -43991,7 +44004,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 119
+      "evidence_count": 154
     },
     {
       "code": "7023",
@@ -45694,7 +45707,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 248
+      "evidence_count": 258
     },
     {
       "code": "7232",
@@ -45707,7 +45720,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 275
+      "evidence_count": 274
     },
     {
       "code": "7233",
@@ -45720,7 +45733,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 270
+      "evidence_count": 282
     },
     {
       "code": "7235",
@@ -46110,7 +46123,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1496
+      "evidence_count": 1497
     },
     {
       "code": "7312",
@@ -47007,7 +47020,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 85
+      "evidence_count": 87
     },
     {
       "code": "7440",
@@ -48515,7 +48528,7 @@
       "location_rank": 1,
       "postal_code_rank": 2,
       "source": "address_fallback",
-      "evidence_count": 3000
+      "evidence_count": 2997
     },
     {
       "code": "8005",
@@ -48528,7 +48541,7 @@
       "location_rank": 1,
       "postal_code_rank": 16,
       "source": "address_fallback",
-      "evidence_count": 1503
+      "evidence_count": 1504
     },
     {
       "code": "8006",
@@ -48723,7 +48736,7 @@
       "location_rank": 1,
       "postal_code_rank": 9,
       "source": "address_fallback",
-      "evidence_count": 1938
+      "evidence_count": 1936
     },
     {
       "code": "8046",
@@ -48762,7 +48775,7 @@
       "location_rank": 1,
       "postal_code_rank": 6,
       "source": "address_fallback",
-      "evidence_count": 2466
+      "evidence_count": 2465
     },
     {
       "code": "8049",
@@ -48775,7 +48788,7 @@
       "location_rank": 1,
       "postal_code_rank": 22,
       "source": "address_fallback",
-      "evidence_count": 404
+      "evidence_count": 405
     },
     {
       "code": "8050",
@@ -48788,7 +48801,7 @@
       "location_rank": 1,
       "postal_code_rank": 8,
       "source": "address_fallback",
-      "evidence_count": 2042
+      "evidence_count": 2044
     },
     {
       "code": "8051",
@@ -48814,7 +48827,7 @@
       "location_rank": 1,
       "postal_code_rank": 17,
       "source": "address_fallback",
-      "evidence_count": 1234
+      "evidence_count": 1238
     },
     {
       "code": "8053",
@@ -50088,7 +50101,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 441
+      "evidence_count": 443
     },
     {
       "code": "8195",
@@ -50101,7 +50114,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 207
+      "evidence_count": 208
     },
     {
       "code": "8196",
@@ -50140,7 +50153,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 499
+      "evidence_count": 502
     },
     {
       "code": "8197",
@@ -51232,7 +51245,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1344
+      "evidence_count": 1342
     },
     {
       "code": "8307",
@@ -52077,7 +52090,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 5985
+      "evidence_count": 6040
     },
     {
       "code": "8401",
@@ -52142,7 +52155,7 @@
       "location_rank": 1,
       "postal_code_rank": 2,
       "source": "address_fallback",
-      "evidence_count": 1396
+      "evidence_count": 1397
     },
     {
       "code": "8405",
@@ -52155,7 +52168,7 @@
       "location_rank": 1,
       "postal_code_rank": 5,
       "source": "address_fallback",
-      "evidence_count": 748
+      "evidence_count": 839
     },
     {
       "code": "8405",
@@ -52350,7 +52363,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 230
+      "evidence_count": 267
     },
     {
       "code": "8418",
@@ -52389,7 +52402,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 54
+      "evidence_count": 79
     },
     {
       "code": "8422",
@@ -52675,7 +52688,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 59
+      "evidence_count": 72
     },
     {
       "code": "8459",
@@ -52688,7 +52701,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 89
+      "evidence_count": 102
     },
     {
       "code": "8460",
@@ -54365,7 +54378,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2300
+      "evidence_count": 2301
     },
     {
       "code": "8572",
@@ -54703,7 +54716,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 431
+      "evidence_count": 430
     },
     {
       "code": "8580",
@@ -55444,7 +55457,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 3697
+      "evidence_count": 3696
     },
     {
       "code": "8614",
@@ -55769,7 +55782,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1620
+      "evidence_count": 1624
     },
     {
       "code": "8630",
@@ -55782,7 +55795,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 738
+      "evidence_count": 740
     },
     {
       "code": "8632",
@@ -55860,7 +55873,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1299
+      "evidence_count": 1301
     },
     {
       "code": "8636",
@@ -55883,10 +55896,10 @@
       "county": "Bezirk Hinwil",
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
-      "location_rank": 3,
+      "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 134
+      "evidence_count": 156
     },
     {
       "code": "8636",
@@ -55896,7 +55909,7 @@
       "county": "Bezirk Hinwil",
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
-      "location_rank": 2,
+      "location_rank": 3,
       "postal_code_rank": 1,
       "source": "address_fallback",
       "evidence_count": 149
@@ -55912,7 +55925,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2184
+      "evidence_count": 2188
     },
     {
       "code": "8637",
@@ -56159,7 +56172,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2302
+      "evidence_count": 2304
     },
     {
       "code": "8700",
@@ -56185,7 +56198,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 657
+      "evidence_count": 658
     },
     {
       "code": "8702",
@@ -57005,6 +57018,19 @@
       "postal_code_rank": 1,
       "source": "address_fallback",
       "evidence_count": 1210
+    },
+    {
+      "code": "8762",
+      "city": "Schwanden GL",
+      "country": "CH",
+      "state": "Glarus",
+      "county": "",
+      "time_zone": "W. Europe Standard Time",
+      "is_primary_location": false,
+      "location_rank": 4,
+      "postal_code_rank": 1,
+      "source": "address_fallback",
+      "evidence_count": 3
     },
     {
       "code": "8762",
@@ -58135,7 +58161,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 626
+      "evidence_count": 627
     },
     {
       "code": "8873",
@@ -58148,7 +58174,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 893
+      "evidence_count": 894
     },
     {
       "code": "8874",
@@ -58434,7 +58460,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 942
+      "evidence_count": 971
     },
     {
       "code": "8892",
@@ -58460,7 +58486,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 154
+      "evidence_count": 156
     },
     {
       "code": "8894",
@@ -58473,7 +58499,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 65
+      "evidence_count": 121
     },
     {
       "code": "8895",
@@ -58486,7 +58512,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 91
+      "evidence_count": 123
     },
     {
       "code": "8896",
@@ -58499,20 +58525,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 154
-    },
-    {
-      "code": "8897",
-      "city": "Flumserberg",
-      "country": "CH",
-      "state": "St. Gallen",
-      "county": "Wahlkreis Sarganserland",
-      "time_zone": "W. Europe Standard Time",
-      "is_primary_location": false,
-      "location_rank": 2,
-      "postal_code_rank": 1,
-      "source": "address_fallback",
-      "evidence_count": 104
+      "evidence_count": 241
     },
     {
       "code": "8897",
@@ -58525,20 +58538,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 111
-    },
-    {
-      "code": "8898",
-      "city": "Flumserberg",
-      "country": "CH",
-      "state": "St. Gallen",
-      "county": "Wahlkreis Sarganserland",
-      "time_zone": "W. Europe Standard Time",
-      "is_primary_location": false,
-      "location_rank": 3,
-      "postal_code_rank": 2,
-      "source": "address_fallback",
-      "evidence_count": 40
+      "evidence_count": 362
     },
     {
       "code": "8898",
@@ -58551,33 +58551,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 90
-    },
-    {
-      "code": "8898",
-      "city": "Tannenboden",
-      "country": "CH",
-      "state": "St. Gallen",
-      "county": "Wahlkreis Sarganserland",
-      "time_zone": "W. Europe Standard Time",
-      "is_primary_location": false,
-      "location_rank": 4,
-      "postal_code_rank": 1,
-      "source": "address_fallback",
-      "evidence_count": 32
-    },
-    {
-      "code": "8898",
-      "city": "Tannenbodenalp",
-      "country": "CH",
-      "state": "St. Gallen",
-      "county": "Wahlkreis Sarganserland",
-      "time_zone": "W. Europe Standard Time",
-      "is_primary_location": false,
-      "location_rank": 2,
-      "postal_code_rank": 1,
-      "source": "address_fallback",
-      "evidence_count": 58
+      "evidence_count": 226
     },
     {
       "code": "8902",
@@ -58616,7 +58590,7 @@
       "location_rank": 3,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 6
+      "evidence_count": 5
     },
     {
       "code": "8903",
@@ -58629,7 +58603,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 67
+      "evidence_count": 52
     },
     {
       "code": "8903",
@@ -58642,7 +58616,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1321
+      "evidence_count": 1336
     },
     {
       "code": "8904",
@@ -58837,7 +58811,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1307
+      "evidence_count": 1308
     },
     {
       "code": "8913",
@@ -58850,7 +58824,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 111
+      "evidence_count": 113
     },
     {
       "code": "8914",
@@ -59136,7 +59110,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 76
+      "evidence_count": 178
     },
     {
       "code": "8956",
@@ -59175,7 +59149,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 900
+      "evidence_count": 901
     },
     {
       "code": "8964",
@@ -59240,7 +59214,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 5213
+      "evidence_count": 5212
     },
     {
       "code": "9000",
@@ -59253,7 +59227,7 @@
       "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 733
+      "evidence_count": 735
     },
     {
       "code": "9001",
@@ -59329,9 +59303,9 @@
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
       "location_rank": 2,
-      "postal_code_rank": 3,
+      "postal_code_rank": 2,
       "source": "address_fallback",
-      "evidence_count": 46
+      "evidence_count": 47
     },
     {
       "code": "9010",
@@ -59433,7 +59407,7 @@
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
       "location_rank": 2,
-      "postal_code_rank": 2,
+      "postal_code_rank": 3,
       "source": "address_fallback",
       "evidence_count": 47
     },
@@ -59747,7 +59721,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 2881
+      "evidence_count": 2882
     },
     {
       "code": "9050",
@@ -59761,6 +59735,19 @@
       "postal_code_rank": 1,
       "source": "address_fallback",
       "evidence_count": 296
+    },
+    {
+      "code": "9050",
+      "city": "Appenzell Enggenhütten",
+      "country": "CH",
+      "state": "Appenzell Innerrhoden",
+      "county": "",
+      "time_zone": "W. Europe Standard Time",
+      "is_primary_location": false,
+      "location_rank": 6,
+      "postal_code_rank": 1,
+      "source": "address_fallback",
+      "evidence_count": 107
     },
     {
       "code": "9050",
@@ -59786,7 +59773,7 @@
       "location_rank": 5,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 41
+      "evidence_count": 178
     },
     {
       "code": "9050",
@@ -59812,7 +59799,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 448
+      "evidence_count": 455
     },
     {
       "code": "9052",
@@ -59864,7 +59851,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1029
+      "evidence_count": 1049
     },
     {
       "code": "9054",
@@ -59877,20 +59864,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 206
-    },
-    {
-      "code": "9054",
-      "city": "Haslen Al",
-      "country": "CH",
-      "state": "Appenzell Innerrhoden",
-      "county": "",
-      "time_zone": "W. Europe Standard Time",
-      "is_primary_location": false,
-      "location_rank": 2,
-      "postal_code_rank": 1,
-      "source": "address_fallback",
-      "evidence_count": 7
+      "evidence_count": 454
     },
     {
       "code": "9055",
@@ -59903,7 +59877,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 592
+      "evidence_count": 621
     },
     {
       "code": "9056",
@@ -59916,7 +59890,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1090
+      "evidence_count": 1097
     },
     {
       "code": "9057",
@@ -61463,7 +61437,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 935
+      "evidence_count": 936
     },
     {
       "code": "9436",
@@ -61580,7 +61554,7 @@
       "location_rank": 3,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 37
+      "evidence_count": 38
     },
     {
       "code": "9450",
@@ -61983,7 +61957,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 846
+      "evidence_count": 1043
     },
     {
       "code": "9473",
@@ -61993,10 +61967,10 @@
       "county": "Wahlkreis Werdenberg",
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
-      "location_rank": 3,
+      "location_rank": 2,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 29
+      "evidence_count": 28
     },
     {
       "code": "9473",
@@ -62006,10 +61980,10 @@
       "county": "Wahlkreis Werdenberg",
       "time_zone": "W. Europe Standard Time",
       "is_primary_location": false,
-      "location_rank": 2,
+      "location_rank": 3,
       "postal_code_rank": 2,
       "source": "address_fallback",
-      "evidence_count": 123
+      "evidence_count": 25
     },
     {
       "code": "9473",
@@ -62308,7 +62282,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 227
+      "evidence_count": 267
     },
     {
       "code": "9507",
@@ -62334,7 +62308,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 102
+      "evidence_count": 185
     },
     {
       "code": "9512",
@@ -62685,7 +62659,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1135
+      "evidence_count": 1238
     },
     {
       "code": "9546",
@@ -62698,7 +62672,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 201
+      "evidence_count": 208
     },
     {
       "code": "9547",
@@ -62919,7 +62893,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 16
+      "evidence_count": 20
     },
     {
       "code": "9601",
@@ -63348,7 +63322,7 @@
       "location_rank": 1,
       "postal_code_rank": 1,
       "source": "address_fallback",
-      "evidence_count": 1169
+      "evidence_count": 1171
     },
     {
       "code": "9830",
