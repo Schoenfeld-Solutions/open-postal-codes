@@ -11,7 +11,7 @@
     <location_rank>4</location_rank>
     <postal_code_rank>10</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>34</evidence_count>
+    <evidence_count>33</evidence_count>
   </record>
   <record>
     <code>1000</code>
@@ -115,7 +115,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1200</evidence_count>
+    <evidence_count>1201</evidence_count>
   </record>
   <record>
     <code>1005</code>
@@ -141,7 +141,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>7</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>750</evidence_count>
+    <evidence_count>749</evidence_count>
   </record>
   <record>
     <code>1007</code>
@@ -193,7 +193,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>380</evidence_count>
+    <evidence_count>383</evidence_count>
   </record>
   <record>
     <code>1008</code>
@@ -336,7 +336,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>204</evidence_count>
+    <evidence_count>202</evidence_count>
   </record>
   <record>
     <code>1020</code>
@@ -1662,7 +1662,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1864</evidence_count>
+    <evidence_count>1865</evidence_count>
   </record>
   <record>
     <code>1112</code>
@@ -2546,7 +2546,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1612</evidence_count>
+    <evidence_count>1613</evidence_count>
   </record>
   <record>
     <code>1197</code>
@@ -2572,7 +2572,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1266</evidence_count>
+    <evidence_count>1268</evidence_count>
   </record>
   <record>
     <code>1202</code>
@@ -2585,7 +2585,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>627</evidence_count>
+    <evidence_count>629</evidence_count>
   </record>
   <record>
     <code>1203</code>
@@ -2598,7 +2598,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>6</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>330</evidence_count>
+    <evidence_count>331</evidence_count>
   </record>
   <record>
     <code>1204</code>
@@ -2624,7 +2624,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>3</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>713</evidence_count>
+    <evidence_count>714</evidence_count>
   </record>
   <record>
     <code>1206</code>
@@ -2650,7 +2650,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>5</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>419</evidence_count>
+    <evidence_count>420</evidence_count>
   </record>
   <record>
     <code>1208</code>
@@ -2793,7 +2793,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>336</evidence_count>
+    <evidence_count>338</evidence_count>
   </record>
   <record>
     <code>1218</code>
@@ -3001,7 +3001,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>356</evidence_count>
+    <evidence_count>357</evidence_count>
   </record>
   <record>
     <code>1227</code>
@@ -4184,7 +4184,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>55</evidence_count>
+    <evidence_count>56</evidence_count>
   </record>
   <record>
     <code>1306</code>
@@ -4310,11 +4310,11 @@
     <state>Vaud</state>
     <county>District du Jura-Nord vaudois</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>true</is_primary_location>
-    <location_rank>1</location_rank>
-    <postal_code_rank>1</postal_code_rank>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>182</evidence_count>
+    <evidence_count>9</evidence_count>
   </record>
   <record>
     <code>1321</code>
@@ -4323,11 +4323,11 @@
     <state>Vaud</state>
     <county>District du Jura-Nord vaudois</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>2</postal_code_rank>
+    <is_primary_location>true</is_primary_location>
+    <location_rank>1</location_rank>
+    <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>11</evidence_count>
+    <evidence_count>203</evidence_count>
   </record>
   <record>
     <code>1322</code>
@@ -4912,7 +4912,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3812</evidence_count>
+    <evidence_count>3815</evidence_count>
   </record>
   <record>
     <code>1401</code>
@@ -7369,7 +7369,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>99</evidence_count>
+    <evidence_count>100</evidence_count>
   </record>
   <record>
     <code>1608</code>
@@ -7746,7 +7746,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2514</evidence_count>
+    <evidence_count>2515</evidence_count>
   </record>
   <record>
     <code>1632</code>
@@ -8266,7 +8266,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>260</evidence_count>
+    <evidence_count>261</evidence_count>
   </record>
   <record>
     <code>1663</code>
@@ -8484,10 +8484,23 @@
     <county>District de la Glâne</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>4</location_rank>
+    <location_rank>5</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>13</evidence_count>
+  </record>
+  <record>
+    <code>1673</code>
+    <city>Gillarens</city>
+    <country>CH</country>
+    <state>Fribourg/Freiburg</state>
+    <county>District de la Glâne</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>3</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>76</evidence_count>
   </record>
   <record>
     <code>1673</code>
@@ -8497,10 +8510,10 @@
     <county>District de la Glâne</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
+    <location_rank>4</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>14</evidence_count>
+    <evidence_count>61</evidence_count>
   </record>
   <record>
     <code>1673</code>
@@ -8773,7 +8786,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>22</evidence_count>
+    <evidence_count>33</evidence_count>
   </record>
   <record>
     <code>1682</code>
@@ -10177,7 +10190,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>382</evidence_count>
+    <evidence_count>383</evidence_count>
   </record>
   <record>
     <code>1754</code>
@@ -10213,23 +10226,10 @@
     <county>District de la Sarine</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
+    <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5</evidence_count>
-  </record>
-  <record>
-    <code>1756</code>
-    <city>Onnens</city>
-    <country>CH</country>
-    <state>Fribourg/Freiburg</state>
-    <county>District de la Sarine</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>true</is_primary_location>
-    <location_rank>1</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>26</evidence_count>
+    <evidence_count>33</evidence_count>
   </record>
   <record>
     <code>1756</code>
@@ -10238,11 +10238,11 @@
     <state>Fribourg/Freiburg</state>
     <county>District de la Sarine</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
+    <is_primary_location>true</is_primary_location>
+    <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>12</evidence_count>
+    <evidence_count>95</evidence_count>
   </record>
   <record>
     <code>1757</code>
@@ -11217,7 +11217,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>27</evidence_count>
+    <evidence_count>26</evidence_count>
   </record>
   <record>
     <code>1844</code>
@@ -11347,7 +11347,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1770</evidence_count>
+    <evidence_count>1771</evidence_count>
   </record>
   <record>
     <code>1862</code>
@@ -12998,7 +12998,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3637</evidence_count>
+    <evidence_count>3642</evidence_count>
   </record>
   <record>
     <code>1951</code>
@@ -14051,7 +14051,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2607</evidence_count>
+    <evidence_count>2605</evidence_count>
   </record>
   <record>
     <code>1997</code>
@@ -14220,7 +14220,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>152</evidence_count>
+    <evidence_count>153</evidence_count>
   </record>
   <record>
     <code>2019</code>
@@ -15143,7 +15143,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>4504</evidence_count>
+    <evidence_count>4525</evidence_count>
   </record>
   <record>
     <code>2300</code>
@@ -16274,7 +16274,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1098</evidence_count>
+    <evidence_count>1099</evidence_count>
   </record>
   <record>
     <code>2556</code>
@@ -16482,7 +16482,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>651</evidence_count>
+    <evidence_count>650</evidence_count>
   </record>
   <record>
     <code>2576</code>
@@ -17158,7 +17158,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2643</evidence_count>
+    <evidence_count>2646</evidence_count>
   </record>
   <record>
     <code>2742</code>
@@ -17227,19 +17227,6 @@
   </record>
   <record>
     <code>2747</code>
-    <city>Corcelles</city>
-    <country>CH</country>
-    <state>Bern/Berne</state>
-    <county>Arrondissement administratif du Jura bernois</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>16</evidence_count>
-  </record>
-  <record>
-    <code>2747</code>
     <city>Corcelles BE</city>
     <country>CH</country>
     <state>Bern/Berne</state>
@@ -17249,7 +17236,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>122</evidence_count>
+    <evidence_count>142</evidence_count>
   </record>
   <record>
     <code>2747</code>
@@ -17951,7 +17938,20 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>282</evidence_count>
+    <evidence_count>412</evidence_count>
+  </record>
+  <record>
+    <code>2906</code>
+    <city>Haute-Ajoie</city>
+    <country>CH</country>
+    <state>Jura</state>
+    <county>District de Porrentruy</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>3</evidence_count>
   </record>
   <record>
     <code>2907</code>
@@ -17964,7 +17964,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>19</evidence_count>
+    <evidence_count>142</evidence_count>
   </record>
   <record>
     <code>2908</code>
@@ -18198,7 +18198,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>258</evidence_count>
+    <evidence_count>332</evidence_count>
   </record>
   <record>
     <code>2946</code>
@@ -18393,7 +18393,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>2250</evidence_count>
+    <evidence_count>2249</evidence_count>
   </record>
   <record>
     <code>3008</code>
@@ -18458,7 +18458,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>8</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>1446</evidence_count>
+    <evidence_count>1445</evidence_count>
   </record>
   <record>
     <code>3014</code>
@@ -18692,7 +18692,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>233</evidence_count>
+    <evidence_count>232</evidence_count>
   </record>
   <record>
     <code>3047</code>
@@ -18744,7 +18744,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>2669</evidence_count>
+    <evidence_count>2670</evidence_count>
   </record>
   <record>
     <code>3053</code>
@@ -19108,7 +19108,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1742</evidence_count>
+    <evidence_count>1741</evidence_count>
   </record>
   <record>
     <code>3086</code>
@@ -20317,7 +20317,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>653</evidence_count>
+    <evidence_count>654</evidence_count>
   </record>
   <record>
     <code>3236</code>
@@ -20343,7 +20343,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>368</evidence_count>
+    <evidence_count>363</evidence_count>
   </record>
   <record>
     <code>3238</code>
@@ -20772,7 +20772,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>71</evidence_count>
+    <evidence_count>72</evidence_count>
   </record>
   <record>
     <code>3280</code>
@@ -21071,7 +21071,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1536</evidence_count>
+    <evidence_count>1539</evidence_count>
   </record>
   <record>
     <code>3303</code>
@@ -21357,7 +21357,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>703</evidence_count>
+    <evidence_count>706</evidence_count>
   </record>
   <record>
     <code>3324</code>
@@ -21669,7 +21669,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>4733</evidence_count>
+    <evidence_count>4732</evidence_count>
   </record>
   <record>
     <code>3401</code>
@@ -22566,7 +22566,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>654</evidence_count>
+    <evidence_count>655</evidence_count>
   </record>
   <record>
     <code>3513</code>
@@ -22605,7 +22605,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>465</evidence_count>
+    <evidence_count>464</evidence_count>
   </record>
   <record>
     <code>3532</code>
@@ -22852,7 +22852,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3349</evidence_count>
+    <evidence_count>3350</evidence_count>
   </record>
   <record>
     <code>3601</code>
@@ -22865,7 +22865,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>6</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5</evidence_count>
+    <evidence_count>6</evidence_count>
   </record>
   <record>
     <code>3602</code>
@@ -23528,7 +23528,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>948</evidence_count>
+    <evidence_count>949</evidence_count>
   </record>
   <record>
     <code>3654</code>
@@ -23606,7 +23606,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>572</evidence_count>
+    <evidence_count>573</evidence_count>
   </record>
   <record>
     <code>3658</code>
@@ -23957,7 +23957,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>postal_boundary</source>
-    <evidence_count>3223</evidence_count>
+    <evidence_count>3224</evidence_count>
   </record>
   <record>
     <code>3715</code>
@@ -25023,7 +25023,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>689</evidence_count>
+    <evidence_count>688</evidence_count>
   </record>
   <record>
     <code>3856</code>
@@ -25478,7 +25478,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>47</evidence_count>
+    <evidence_count>121</evidence_count>
   </record>
   <record>
     <code>3917</code>
@@ -27103,7 +27103,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>583</evidence_count>
+    <evidence_count>585</evidence_count>
   </record>
   <record>
     <code>3993</code>
@@ -27181,7 +27181,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>214</evidence_count>
+    <evidence_count>220</evidence_count>
   </record>
   <record>
     <code>3995</code>
@@ -27194,7 +27194,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>204</evidence_count>
+    <evidence_count>212</evidence_count>
   </record>
   <record>
     <code>3995</code>
@@ -27207,7 +27207,7 @@
     <location_rank>3</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>102</evidence_count>
+    <evidence_count>103</evidence_count>
   </record>
   <record>
     <code>3996</code>
@@ -27363,7 +27363,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2612</evidence_count>
+    <evidence_count>2617</evidence_count>
   </record>
   <record>
     <code>4052</code>
@@ -27415,7 +27415,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>8</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2201</evidence_count>
+    <evidence_count>2216</evidence_count>
   </record>
   <record>
     <code>4056</code>
@@ -27831,7 +27831,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5772</evidence_count>
+    <evidence_count>5771</evidence_count>
   </record>
   <record>
     <code>4133</code>
@@ -28273,7 +28273,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>418</evidence_count>
+    <evidence_count>419</evidence_count>
   </record>
   <record>
     <code>4246</code>
@@ -28416,7 +28416,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2230</evidence_count>
+    <evidence_count>2231</evidence_count>
   </record>
   <record>
     <code>4312</code>
@@ -28689,7 +28689,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1552</evidence_count>
+    <evidence_count>1551</evidence_count>
   </record>
   <record>
     <code>4415</code>
@@ -29066,7 +29066,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2285</evidence_count>
+    <evidence_count>2286</evidence_count>
   </record>
   <record>
     <code>4451</code>
@@ -29144,7 +29144,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>627</evidence_count>
+    <evidence_count>628</evidence_count>
   </record>
   <record>
     <code>4458</code>
@@ -29989,7 +29989,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1061</evidence_count>
+    <evidence_count>1062</evidence_count>
   </record>
   <record>
     <code>4574</code>
@@ -30003,6 +30003,19 @@
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>7</evidence_count>
+  </record>
+  <record>
+    <code>4574</code>
+    <city>Nennigkofen</city>
+    <country>CH</country>
+    <state>Solothurn</state>
+    <county>Bezirk Bucheggberg</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>3</evidence_count>
   </record>
   <record>
     <code>4576</code>
@@ -30249,7 +30262,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>4502</evidence_count>
+    <evidence_count>4504</evidence_count>
   </record>
   <record>
     <code>4612</code>
@@ -30314,7 +30327,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>516</evidence_count>
+    <evidence_count>529</evidence_count>
   </record>
   <record>
     <code>4616</code>
@@ -30340,7 +30353,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>634</evidence_count>
+    <evidence_count>625</evidence_count>
   </record>
   <record>
     <code>4618</code>
@@ -30691,7 +30704,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2108</evidence_count>
+    <evidence_count>2107</evidence_count>
   </record>
   <record>
     <code>4704</code>
@@ -31094,7 +31107,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>4952</evidence_count>
+    <evidence_count>4950</evidence_count>
   </record>
   <record>
     <code>4901</code>
@@ -31133,7 +31146,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1851</evidence_count>
+    <evidence_count>1850</evidence_count>
   </record>
   <record>
     <code>4913</code>
@@ -31614,7 +31627,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3532</evidence_count>
+    <evidence_count>3534</evidence_count>
   </record>
   <record>
     <code>5001</code>
@@ -31991,7 +32004,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1080</evidence_count>
+    <evidence_count>1079</evidence_count>
   </record>
   <record>
     <code>5036</code>
@@ -32979,7 +32992,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>492</evidence_count>
+    <evidence_count>493</evidence_count>
   </record>
   <record>
     <code>5242</code>
@@ -33031,7 +33044,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>147</evidence_count>
+    <evidence_count>148</evidence_count>
   </record>
   <record>
     <code>5246</code>
@@ -33148,7 +33161,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>661</evidence_count>
+    <evidence_count>663</evidence_count>
   </record>
   <record>
     <code>5301</code>
@@ -33642,7 +33655,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>856</evidence_count>
+    <evidence_count>857</evidence_count>
   </record>
   <record>
     <code>5415</code>
@@ -33837,7 +33850,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>548</evidence_count>
+    <evidence_count>549</evidence_count>
   </record>
   <record>
     <code>5436</code>
@@ -35557,6 +35570,19 @@
   </record>
   <record>
     <code>6012</code>
+    <city>Kriens</city>
+    <country>CH</country>
+    <state>Luzern</state>
+    <county />
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>3</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>3</evidence_count>
+  </record>
+  <record>
+    <code>6012</code>
     <city>Obernau</city>
     <country>CH</country>
     <state>Luzern</state>
@@ -35566,7 +35592,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>441</evidence_count>
+    <evidence_count>440</evidence_count>
   </record>
   <record>
     <code>6013</code>
@@ -36359,7 +36385,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1339</evidence_count>
+    <evidence_count>1338</evidence_count>
   </record>
   <record>
     <code>6103</code>
@@ -36437,7 +36463,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>957</evidence_count>
+    <evidence_count>959</evidence_count>
   </record>
   <record>
     <code>6112</code>
@@ -36541,7 +36567,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1581</evidence_count>
+    <evidence_count>1580</evidence_count>
   </record>
   <record>
     <code>6132</code>
@@ -36879,7 +36905,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>733</evidence_count>
+    <evidence_count>734</evidence_count>
   </record>
   <record>
     <code>6192</code>
@@ -37841,7 +37867,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3639</evidence_count>
+    <evidence_count>3650</evidence_count>
   </record>
   <record>
     <code>6300</code>
@@ -38855,7 +38881,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>773</evidence_count>
+    <evidence_count>774</evidence_count>
   </record>
   <record>
     <code>6423</code>
@@ -39167,7 +39193,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2409</evidence_count>
+    <evidence_count>2410</evidence_count>
   </record>
   <record>
     <code>6461</code>
@@ -40363,7 +40389,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>3</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
+    <evidence_count>4</evidence_count>
   </record>
   <record>
     <code>6605</code>
@@ -40389,7 +40415,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1848</evidence_count>
+    <evidence_count>1850</evidence_count>
   </record>
   <record>
     <code>6613</code>
@@ -41858,7 +41884,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>241</evidence_count>
+    <evidence_count>240</evidence_count>
   </record>
   <record>
     <code>6781</code>
@@ -42001,7 +42027,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>56</evidence_count>
+    <evidence_count>229</evidence_count>
   </record>
   <record>
     <code>6814</code>
@@ -42183,7 +42209,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>845</evidence_count>
+    <evidence_count>844</evidence_count>
   </record>
   <record>
     <code>6832</code>
@@ -42235,7 +42261,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1170</evidence_count>
+    <evidence_count>1171</evidence_count>
   </record>
   <record>
     <code>6835</code>
@@ -42586,7 +42612,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2677</evidence_count>
+    <evidence_count>2679</evidence_count>
   </record>
   <record>
     <code>6900</code>
@@ -42755,7 +42781,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>366</evidence_count>
+    <evidence_count>367</evidence_count>
   </record>
   <record>
     <code>6924</code>
@@ -43457,7 +43483,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>788</evidence_count>
+    <evidence_count>789</evidence_count>
   </record>
   <record>
     <code>6966</code>
@@ -43886,7 +43912,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>6598</evidence_count>
+    <evidence_count>6602</evidence_count>
   </record>
   <record>
     <code>7012</code>
@@ -44003,7 +44029,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>154</evidence_count>
+    <evidence_count>156</evidence_count>
   </record>
   <record>
     <code>7023</code>
@@ -44358,7 +44384,7 @@
   </record>
   <record>
     <code>7084</code>
-    <city>Brienz/Brinzauls</city>
+    <city>Brienz/Brinzauls GR</city>
     <country>CH</country>
     <state>Graubünden/Grischun/Grigioni</state>
     <county>Albula/Alvra</county>
@@ -44367,20 +44393,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>121</evidence_count>
-  </record>
-  <record>
-    <code>7084</code>
-    <city>Brienz/Brinzauls GR</city>
-    <country>CH</country>
-    <state>Graubünden/Grischun/Grigioni</state>
-    <county>Albula/Alvra</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>68</evidence_count>
+    <evidence_count>166</evidence_count>
   </record>
   <record>
     <code>7104</code>
@@ -44393,7 +44406,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>270</evidence_count>
+    <evidence_count>260</evidence_count>
   </record>
   <record>
     <code>7106</code>
@@ -44406,7 +44419,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>99</evidence_count>
+    <evidence_count>105</evidence_count>
   </record>
   <record>
     <code>7107</code>
@@ -44419,7 +44432,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>117</evidence_count>
+    <evidence_count>137</evidence_count>
   </record>
   <record>
     <code>7109</code>
@@ -44432,7 +44445,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>98</evidence_count>
+    <evidence_count>112</evidence_count>
   </record>
   <record>
     <code>7110</code>
@@ -44523,7 +44536,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5</evidence_count>
+    <evidence_count>15</evidence_count>
   </record>
   <record>
     <code>7116</code>
@@ -44549,7 +44562,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>119</evidence_count>
+    <evidence_count>216</evidence_count>
   </record>
   <record>
     <code>7126</code>
@@ -44627,7 +44640,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>379</evidence_count>
+    <evidence_count>375</evidence_count>
   </record>
   <record>
     <code>7133</code>
@@ -44679,7 +44692,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>7</evidence_count>
+    <evidence_count>6</evidence_count>
   </record>
   <record>
     <code>7137</code>
@@ -44705,7 +44718,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>310</evidence_count>
+    <evidence_count>314</evidence_count>
   </record>
   <record>
     <code>7141</code>
@@ -45316,7 +45329,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1117</evidence_count>
+    <evidence_count>1121</evidence_count>
   </record>
   <record>
     <code>7205</code>
@@ -45329,7 +45342,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1389</evidence_count>
+    <evidence_count>1392</evidence_count>
   </record>
   <record>
     <code>7206</code>
@@ -45342,7 +45355,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1071</evidence_count>
+    <evidence_count>1072</evidence_count>
   </record>
   <record>
     <code>7208</code>
@@ -46239,7 +46252,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>471</evidence_count>
+    <evidence_count>470</evidence_count>
   </record>
   <record>
     <code>7411</code>
@@ -46278,7 +46291,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>447</evidence_count>
+    <evidence_count>448</evidence_count>
   </record>
   <record>
     <code>7412</code>
@@ -46447,7 +46460,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>178</evidence_count>
+    <evidence_count>179</evidence_count>
   </record>
   <record>
     <code>7422</code>
@@ -46889,7 +46902,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>464</evidence_count>
+    <evidence_count>440</evidence_count>
   </record>
   <record>
     <code>7440</code>
@@ -47032,7 +47045,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>139</evidence_count>
+    <evidence_count>144</evidence_count>
   </record>
   <record>
     <code>7451</code>
@@ -47045,7 +47058,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>98</evidence_count>
+    <evidence_count>100</evidence_count>
   </record>
   <record>
     <code>7452</code>
@@ -47058,7 +47071,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>231</evidence_count>
+    <evidence_count>235</evidence_count>
   </record>
   <record>
     <code>7452</code>
@@ -47149,7 +47162,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>36</evidence_count>
+    <evidence_count>37</evidence_count>
   </record>
   <record>
     <code>7456</code>
@@ -47188,7 +47201,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>73</evidence_count>
+    <evidence_count>89</evidence_count>
   </record>
   <record>
     <code>7459</code>
@@ -47201,7 +47214,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>130</evidence_count>
+    <evidence_count>138</evidence_count>
   </record>
   <record>
     <code>7460</code>
@@ -47214,7 +47227,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>674</evidence_count>
+    <evidence_count>675</evidence_count>
   </record>
   <record>
     <code>7462</code>
@@ -47266,7 +47279,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>253</evidence_count>
+    <evidence_count>187</evidence_count>
   </record>
   <record>
     <code>7473</code>
@@ -47279,7 +47292,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>58</evidence_count>
+    <evidence_count>59</evidence_count>
   </record>
   <record>
     <code>7477</code>
@@ -47383,7 +47396,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>228</evidence_count>
+    <evidence_count>315</evidence_count>
   </record>
   <record>
     <code>7493</code>
@@ -47526,7 +47539,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>800</evidence_count>
+    <evidence_count>792</evidence_count>
   </record>
   <record>
     <code>7505</code>
@@ -47539,7 +47552,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>624</evidence_count>
+    <evidence_count>622</evidence_count>
   </record>
   <record>
     <code>7512</code>
@@ -47656,7 +47669,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>330</evidence_count>
+    <evidence_count>332</evidence_count>
   </record>
   <record>
     <code>7517</code>
@@ -48059,7 +48072,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>171</evidence_count>
+    <evidence_count>210</evidence_count>
   </record>
   <record>
     <code>7602</code>
@@ -48241,7 +48254,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>111</evidence_count>
+    <evidence_count>112</evidence_count>
   </record>
   <record>
     <code>7743</code>
@@ -48345,7 +48358,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>3394</evidence_count>
+    <evidence_count>3401</evidence_count>
   </record>
   <record>
     <code>8002</code>
@@ -48384,7 +48397,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2997</evidence_count>
+    <evidence_count>3000</evidence_count>
   </record>
   <record>
     <code>8005</code>
@@ -48397,7 +48410,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>16</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1504</evidence_count>
+    <evidence_count>1505</evidence_count>
   </record>
   <record>
     <code>8006</code>
@@ -48423,7 +48436,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2758</evidence_count>
+    <evidence_count>2759</evidence_count>
   </record>
   <record>
     <code>8010</code>
@@ -48501,7 +48514,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>3</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2910</evidence_count>
+    <evidence_count>2911</evidence_count>
   </record>
   <record>
     <code>8037</code>
@@ -48631,7 +48644,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>6</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2466</evidence_count>
+    <evidence_count>2465</evidence_count>
   </record>
   <record>
     <code>8049</code>
@@ -48657,7 +48670,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>8</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2045</evidence_count>
+    <evidence_count>2042</evidence_count>
   </record>
   <record>
     <code>8051</code>
@@ -48943,7 +48956,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1095</evidence_count>
+    <evidence_count>1093</evidence_count>
   </record>
   <record>
     <code>8105</code>
@@ -50035,7 +50048,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2902</evidence_count>
+    <evidence_count>2904</evidence_count>
   </record>
   <record>
     <code>8201</code>
@@ -51400,7 +51413,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>162</evidence_count>
+    <evidence_count>112</evidence_count>
   </record>
   <record>
     <code>8330</code>
@@ -51413,7 +51426,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>814</evidence_count>
+    <evidence_count>1470</evidence_count>
   </record>
   <record>
     <code>8331</code>
@@ -51764,7 +51777,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>769</evidence_count>
+    <evidence_count>770</evidence_count>
   </record>
   <record>
     <code>8360</code>
@@ -51842,7 +51855,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>880</evidence_count>
+    <evidence_count>967</evidence_count>
   </record>
   <record>
     <code>8371</code>
@@ -51946,7 +51959,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>6040</evidence_count>
+    <evidence_count>6041</evidence_count>
   </record>
   <record>
     <code>8401</code>
@@ -52625,19 +52638,6 @@
     <evidence_count>33</evidence_count>
   </record>
   <record>
-    <code>8464</code>
-    <city>Guntalingen</city>
-    <country>CH</country>
-    <state>Zürich</state>
-    <county>Bezirk Andelfingen</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>6</evidence_count>
-  </record>
-  <record>
     <code>8465</code>
     <city>Rudolfingen</city>
     <country>CH</country>
@@ -52648,7 +52648,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>84</evidence_count>
+    <evidence_count>92</evidence_count>
   </record>
   <record>
     <code>8465</code>
@@ -52661,7 +52661,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>49</evidence_count>
+    <evidence_count>52</evidence_count>
   </record>
   <record>
     <code>8466</code>
@@ -52674,7 +52674,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>209</evidence_count>
+    <evidence_count>248</evidence_count>
   </record>
   <record>
     <code>8467</code>
@@ -52700,7 +52700,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>114</evidence_count>
+    <evidence_count>129</evidence_count>
   </record>
   <record>
     <code>8468</code>
@@ -52713,7 +52713,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>109</evidence_count>
+    <evidence_count>129</evidence_count>
   </record>
   <record>
     <code>8471</code>
@@ -52830,7 +52830,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>574</evidence_count>
+    <evidence_count>596</evidence_count>
   </record>
   <record>
     <code>8476</code>
@@ -52856,7 +52856,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>366</evidence_count>
+    <evidence_count>376</evidence_count>
   </record>
   <record>
     <code>8477</code>
@@ -52869,7 +52869,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>324</evidence_count>
+    <evidence_count>331</evidence_count>
   </record>
   <record>
     <code>8478</code>
@@ -53480,7 +53480,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>170</evidence_count>
+    <evidence_count>179</evidence_count>
   </record>
   <record>
     <code>8523</code>
@@ -53545,7 +53545,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>151</evidence_count>
+    <evidence_count>175</evidence_count>
   </record>
   <record>
     <code>8525</code>
@@ -53558,7 +53558,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>38</evidence_count>
+    <evidence_count>42</evidence_count>
   </record>
   <record>
     <code>8526</code>
@@ -53571,7 +53571,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>171</evidence_count>
+    <evidence_count>211</evidence_count>
   </record>
   <record>
     <code>8532</code>
@@ -54234,7 +54234,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2301</evidence_count>
+    <evidence_count>2303</evidence_count>
   </record>
   <record>
     <code>8572</code>
@@ -54962,7 +54962,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2290</evidence_count>
+    <evidence_count>2291</evidence_count>
   </record>
   <record>
     <code>8592</code>
@@ -55456,7 +55456,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>755</evidence_count>
+    <evidence_count>754</evidence_count>
   </record>
   <record>
     <code>8623</code>
@@ -55560,7 +55560,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>568</evidence_count>
+    <evidence_count>569</evidence_count>
   </record>
   <record>
     <code>8626</code>
@@ -55638,7 +55638,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1623</evidence_count>
+    <evidence_count>1622</evidence_count>
   </record>
   <record>
     <code>8630</code>
@@ -55651,7 +55651,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>740</evidence_count>
+    <evidence_count>742</evidence_count>
   </record>
   <record>
     <code>8632</code>
@@ -55690,7 +55690,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>145</evidence_count>
+    <evidence_count>146</evidence_count>
   </record>
   <record>
     <code>8633</code>
@@ -55703,7 +55703,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>967</evidence_count>
+    <evidence_count>968</evidence_count>
   </record>
   <record>
     <code>8634</code>
@@ -55730,19 +55730,6 @@
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>1301</evidence_count>
-  </record>
-  <record>
-    <code>8636</code>
-    <city>Goldingen</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>4</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>42</evidence_count>
   </record>
   <record>
     <code>8636</code>
@@ -55781,7 +55768,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2198</evidence_count>
+    <evidence_count>2203</evidence_count>
   </record>
   <record>
     <code>8637</code>
@@ -55833,7 +55820,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>348</evidence_count>
+    <evidence_count>413</evidence_count>
   </record>
   <record>
     <code>8640</code>
@@ -55843,52 +55830,13 @@
     <county>Höfe</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>5</location_rank>
+    <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>42</evidence_count>
   </record>
   <record>
     <code>8640</code>
-    <city>Jona</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>6</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
-  </record>
-  <record>
-    <code>8640</code>
-    <city>Rapperswil</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>457</evidence_count>
-  </record>
-  <record>
-    <code>8640</code>
-    <city>Rapperswil (SG)</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>86</evidence_count>
-  </record>
-  <record>
-    <code>8640</code>
     <city>Rapperswil SG</city>
     <country>CH</country>
     <state>St. Gallen</state>
@@ -55898,20 +55846,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>536</evidence_count>
-  </record>
-  <record>
-    <code>8640</code>
-    <city>Rapperswil-Jona</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>4</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>48</evidence_count>
+    <evidence_count>1331</evidence_count>
   </record>
   <record>
     <code>8645</code>
@@ -55924,33 +55859,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2817</evidence_count>
-  </record>
-  <record>
-    <code>8645</code>
-    <city>Jona (SG)</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>4</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>99</evidence_count>
-  </record>
-  <record>
-    <code>8645</code>
-    <city>Jona SG</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>105</evidence_count>
+    <evidence_count>3379</evidence_count>
   </record>
   <record>
     <code>8645</code>
@@ -55960,10 +55869,10 @@
     <county>Wahlkreis See-Gaster</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>6</location_rank>
+    <location_rank>3</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5</evidence_count>
+    <evidence_count>7</evidence_count>
   </record>
   <record>
     <code>8645</code>
@@ -55976,20 +55885,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>127</evidence_count>
-  </record>
-  <record>
-    <code>8645</code>
-    <city>Rapperswil-Jona SG</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>5</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>22</evidence_count>
+    <evidence_count>11</evidence_count>
   </record>
   <record>
     <code>8646</code>
@@ -56015,7 +55911,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>278</evidence_count>
+    <evidence_count>282</evidence_count>
   </record>
   <record>
     <code>8700</code>
@@ -56223,7 +56119,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>189</evidence_count>
+    <evidence_count>190</evidence_count>
   </record>
   <record>
     <code>8715</code>
@@ -56388,37 +56284,11 @@
     <state>St. Gallen</state>
     <county>Wahlkreis See-Gaster</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
+    <is_primary_location>true</is_primary_location>
+    <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>62</evidence_count>
-  </record>
-  <record>
-    <code>8725</code>
-    <city>Ernetschwil SG</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>139</evidence_count>
-  </record>
-  <record>
-    <code>8725</code>
-    <city>Geb</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>4</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
+    <evidence_count>231</evidence_count>
   </record>
   <record>
     <code>8725</code>
@@ -56427,24 +56297,11 @@
     <state>St. Gallen</state>
     <county>Wahlkreis See-Gaster</county>
     <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>true</is_primary_location>
-    <location_rank>1</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>168</evidence_count>
-  </record>
-  <record>
-    <code>8726</code>
-    <city>Ricken</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>44</evidence_count>
+    <evidence_count>194</evidence_count>
   </record>
   <record>
     <code>8726</code>
@@ -56457,7 +56314,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>76</evidence_count>
+    <evidence_count>171</evidence_count>
   </record>
   <record>
     <code>8727</code>
@@ -56470,7 +56327,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5</evidence_count>
+    <evidence_count>4</evidence_count>
   </record>
   <record>
     <code>8727</code>
@@ -56483,7 +56340,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>66</evidence_count>
+    <evidence_count>86</evidence_count>
   </record>
   <record>
     <code>8730</code>
@@ -56500,32 +56357,6 @@
   </record>
   <record>
     <code>8732</code>
-    <city>Eschenbach (SG)</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>3</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
-  </record>
-  <record>
-    <code>8732</code>
-    <city>Neuhaus</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>8</evidence_count>
-  </record>
-  <record>
-    <code>8732</code>
     <city>Neuhaus SG</city>
     <country>CH</country>
     <state>St. Gallen</state>
@@ -56535,33 +56366,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>315</evidence_count>
-  </record>
-  <record>
-    <code>8733</code>
-    <city>Eschenbach</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>48</evidence_count>
-  </record>
-  <record>
-    <code>8733</code>
-    <city>Eschenbach (SG)</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>51</evidence_count>
+    <evidence_count>337</evidence_count>
   </record>
   <record>
     <code>8733</code>
@@ -56574,7 +56379,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>990</evidence_count>
+    <evidence_count>1125</evidence_count>
   </record>
   <record>
     <code>8734</code>
@@ -56587,20 +56392,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>234</evidence_count>
-  </record>
-  <record>
-    <code>8734</code>
-    <city>Eschenbach (SG)</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>4</evidence_count>
+    <evidence_count>257</evidence_count>
   </record>
   <record>
     <code>8735</code>
@@ -56613,7 +56405,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>111</evidence_count>
+    <evidence_count>134</evidence_count>
   </record>
   <record>
     <code>8735</code>
@@ -56626,7 +56418,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>423</evidence_count>
+    <evidence_count>438</evidence_count>
   </record>
   <record>
     <code>8737</code>
@@ -56639,46 +56431,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>348</evidence_count>
-  </record>
-  <record>
-    <code>8737</code>
-    <city>Gommsiwald</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>61</evidence_count>
-  </record>
-  <record>
-    <code>8738</code>
-    <city>Gommiswald</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>9</evidence_count>
-  </record>
-  <record>
-    <code>8738</code>
-    <city>Uetliburg</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>231</evidence_count>
+    <evidence_count>417</evidence_count>
   </record>
   <record>
     <code>8738</code>
@@ -56691,20 +56444,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>257</evidence_count>
-  </record>
-  <record>
-    <code>8739</code>
-    <city>Rieden</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>18</evidence_count>
+    <evidence_count>538</evidence_count>
   </record>
   <record>
     <code>8739</code>
@@ -56717,7 +56457,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>282</evidence_count>
+    <evidence_count>337</evidence_count>
   </record>
   <record>
     <code>8750</code>
@@ -56968,19 +56708,6 @@
   </record>
   <record>
     <code>8773</code>
-    <city>Eschenbach SG</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis See-Gaster</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>6</evidence_count>
-  </record>
-  <record>
-    <code>8773</code>
     <city>Haslen</city>
     <country>CH</country>
     <state>Glarus</state>
@@ -57185,7 +56912,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>880</evidence_count>
+    <evidence_count>881</evidence_count>
   </record>
   <record>
     <code>8804</code>
@@ -57536,7 +57263,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>96</evidence_count>
+    <evidence_count>95</evidence_count>
   </record>
   <record>
     <code>8834</code>
@@ -58641,7 +58368,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>810</evidence_count>
+    <evidence_count>814</evidence_count>
   </record>
   <record>
     <code>8916</code>
@@ -58758,7 +58485,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1828</evidence_count>
+    <evidence_count>1855</evidence_count>
   </record>
   <record>
     <code>8933</code>
@@ -58836,7 +58563,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>653</evidence_count>
+    <evidence_count>654</evidence_count>
   </record>
   <record>
     <code>8953</code>
@@ -58862,7 +58589,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1256</evidence_count>
+    <evidence_count>1260</evidence_count>
   </record>
   <record>
     <code>8954</code>
@@ -58979,7 +58706,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>823</evidence_count>
+    <evidence_count>824</evidence_count>
   </record>
   <record>
     <code>9000</code>
@@ -58992,7 +58719,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>5212</evidence_count>
+    <evidence_count>5213</evidence_count>
   </record>
   <record>
     <code>9000</code>
@@ -59070,7 +58797,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>4</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1111</evidence_count>
+    <evidence_count>1120</evidence_count>
   </record>
   <record>
     <code>9008</code>
@@ -59226,7 +58953,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>3</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1158</evidence_count>
+    <evidence_count>1159</evidence_count>
   </record>
   <record>
     <code>9016</code>
@@ -59382,7 +59109,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>788</evidence_count>
+    <evidence_count>787</evidence_count>
   </record>
   <record>
     <code>9042</code>
@@ -59499,7 +59226,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2884</evidence_count>
+    <evidence_count>2887</evidence_count>
   </record>
   <record>
     <code>9050</code>
@@ -60318,7 +60045,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2080</evidence_count>
+    <evidence_count>2086</evidence_count>
   </record>
   <record>
     <code>9231</code>
@@ -60370,7 +60097,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>946</evidence_count>
+    <evidence_count>945</evidence_count>
   </record>
   <record>
     <code>9242</code>
@@ -60539,7 +60266,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1632</evidence_count>
+    <evidence_count>1658</evidence_count>
   </record>
   <record>
     <code>9304</code>
@@ -60721,7 +60448,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>453</evidence_count>
+    <evidence_count>450</evidence_count>
   </record>
   <record>
     <code>9320</code>
@@ -60747,7 +60474,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>677</evidence_count>
+    <evidence_count>679</evidence_count>
   </record>
   <record>
     <code>9323</code>
@@ -60994,7 +60721,7 @@
     <location_rank>2</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>70</evidence_count>
+    <evidence_count>83</evidence_count>
   </record>
   <record>
     <code>9411</code>
@@ -61020,7 +60747,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>947</evidence_count>
+    <evidence_count>949</evidence_count>
   </record>
   <record>
     <code>9422</code>
@@ -61085,7 +60812,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>927</evidence_count>
+    <evidence_count>931</evidence_count>
   </record>
   <record>
     <code>9426</code>
@@ -61098,7 +60825,20 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>57</evidence_count>
+    <evidence_count>153</evidence_count>
+  </record>
+  <record>
+    <code>9426</code>
+    <city>Lutzenburg</city>
+    <country>CH</country>
+    <state>Appenzell Ausserrhoden</state>
+    <county>Vorderland</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>12</evidence_count>
   </record>
   <record>
     <code>9427</code>
@@ -61108,7 +60848,7 @@
     <county>Vorderland</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
+    <location_rank>3</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>18</evidence_count>
@@ -61121,7 +60861,20 @@
     <county>Vorderland</county>
     <time_zone>W. Europe Standard Time</time_zone>
     <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
+    <location_rank>2</location_rank>
+    <postal_code_rank>2</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>67</evidence_count>
+  </record>
+  <record>
+    <code>9427</code>
+    <city>Walzenhausen</city>
+    <country>CH</country>
+    <state>Appenzell Ausserrhoden</state>
+    <county>Vorderland</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>4</location_rank>
     <postal_code_rank>2</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>8</evidence_count>
@@ -61137,7 +60890,20 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>750</evidence_count>
+    <evidence_count>753</evidence_count>
+  </record>
+  <record>
+    <code>9428</code>
+    <city>Oberegg</city>
+    <country>CH</country>
+    <state>Appenzell Ausserrhoden</state>
+    <county>Vorderland</county>
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>2</location_rank>
+    <postal_code_rank>1</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>6</evidence_count>
   </record>
   <record>
     <code>9428</code>
@@ -61150,7 +60916,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>600</evidence_count>
+    <evidence_count>747</evidence_count>
   </record>
   <record>
     <code>9430</code>
@@ -61296,6 +61062,19 @@
     <evidence_count>48</evidence_count>
   </record>
   <record>
+    <code>9442</code>
+    <city>Oberegg</city>
+    <country>CH</country>
+    <state>Appenzell Innerrhoden</state>
+    <county />
+    <time_zone>W. Europe Standard Time</time_zone>
+    <is_primary_location>false</is_primary_location>
+    <location_rank>3</location_rank>
+    <postal_code_rank>2</postal_code_rank>
+    <source>address_fallback</source>
+    <evidence_count>3</evidence_count>
+  </record>
+  <record>
     <code>9443</code>
     <city>Widnau</city>
     <country>CH</country>
@@ -61358,7 +61137,7 @@
     <location_rank>4</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>14</evidence_count>
+    <evidence_count>15</evidence_count>
   </record>
   <record>
     <code>9450</code>
@@ -61371,7 +61150,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2602</evidence_count>
+    <evidence_count>2603</evidence_count>
   </record>
   <record>
     <code>9450</code>
@@ -61397,7 +61176,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>605</evidence_count>
+    <evidence_count>608</evidence_count>
   </record>
   <record>
     <code>9452</code>
@@ -61648,32 +61427,6 @@
   </record>
   <record>
     <code>9470</code>
-    <city>Buchs</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis Werdenberg</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>4</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>123</evidence_count>
-  </record>
-  <record>
-    <code>9470</code>
-    <city>Buchs (SG)</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis Werdenberg</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>3</location_rank>
-    <postal_code_rank>1</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>234</evidence_count>
-  </record>
-  <record>
-    <code>9470</code>
     <city>Buchs SG</city>
     <country>CH</country>
     <state>St. Gallen</state>
@@ -61683,7 +61436,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>2166</evidence_count>
+    <evidence_count>2821</evidence_count>
   </record>
   <record>
     <code>9470</code>
@@ -61697,19 +61450,6 @@
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
     <evidence_count>409</evidence_count>
-  </record>
-  <record>
-    <code>9471</code>
-    <city>Buchs SG</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis Werdenberg</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>true</is_primary_location>
-    <location_rank>1</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>4</evidence_count>
   </record>
   <record>
     <code>9472</code>
@@ -62801,7 +62541,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>266</evidence_count>
+    <evidence_count>269</evidence_count>
   </record>
   <record>
     <code>9620</code>
@@ -62814,7 +62554,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>745</evidence_count>
+    <evidence_count>829</evidence_count>
   </record>
   <record>
     <code>9621</code>
@@ -62840,7 +62580,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>112</evidence_count>
+    <evidence_count>141</evidence_count>
   </record>
   <record>
     <code>9630</code>
@@ -62853,20 +62593,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1932</evidence_count>
-  </record>
-  <record>
-    <code>9630</code>
-    <city>wattwil</city>
-    <country>CH</country>
-    <state>St. Gallen</state>
-    <county>Wahlkreis Toggenburg</county>
-    <time_zone>W. Europe Standard Time</time_zone>
-    <is_primary_location>false</is_primary_location>
-    <location_rank>2</location_rank>
-    <postal_code_rank>2</postal_code_rank>
-    <source>address_fallback</source>
-    <evidence_count>3</evidence_count>
+    <evidence_count>1777</evidence_count>
   </record>
   <record>
     <code>9631</code>
@@ -62879,7 +62606,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>234</evidence_count>
+    <evidence_count>329</evidence_count>
   </record>
   <record>
     <code>9633</code>
@@ -62905,7 +62632,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>298</evidence_count>
+    <evidence_count>306</evidence_count>
   </record>
   <record>
     <code>9642</code>
@@ -62918,7 +62645,7 @@
     <location_rank>1</location_rank>
     <postal_code_rank>1</postal_code_rank>
     <source>address_fallback</source>
-    <evidence_count>1907</evidence_count>
+    <evidence_count>1911</evidence_count>
   </record>
   <record>
     <code>9643</code>
