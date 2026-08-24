@@ -22,7 +22,8 @@ validated last-known-good source for at most 21 days, and every run must explain
 - [x] Run one complete manual refresh on merged `main` without last-known-good fallback.
 - [x] Update and immutably pin GitHub Actions in a separate pull request.
 - [ ] Inspect the authenticated Dependabot update-job log and run `Check for updates`.
-- [ ] Observe the next Monday schedule as the final soak test.
+- [x] Observe the next Monday schedule as the final soak test.
+- [x] Remove the brittle Austrian record floor exposed by the 2026-08-24 soak run.
 
 ## Surprises & Discoveries
 
@@ -36,6 +37,8 @@ validated last-known-good source for at most 21 days, and every run must explain
   so a single total-record threshold is not a reliable collapse detector.
 - The successful full refresh warned that `actions/upload-artifact@v4.6.2` still targets the
   deprecated Node.js 20 runtime and was being forced onto Node.js 24.
+- The 2026-08-24 soak candidate retained all nine Austrian states and 2,243 unique post codes
+  while its 2,683 rows crossed the 2,700 emergency floor after only 1.3% source-level loss.
 
 ## Decision Log
 
@@ -89,10 +92,11 @@ that change comprises 206 passing tests with 92.75% coverage, 199 passing unit t
 format, Mypy, every repository check, Pages packaging, and `git diff --check`.
 `actions/setup-node` remains absent because the repository has no Node toolchain. The current
 Dependabot configuration is structurally valid and has no open update pull request, so it was
-not changed without job-log evidence. The authenticated update-job log and manual update run,
-plus the following Monday soak run, remain open. No threshold was tuned to the observed
-Austrian record count: the accepted 2,700/2,000 emergency floors remain combined with complete
-state coverage and stricter relative source and country deltas.
+not changed without job-log evidence. The authenticated update-job log and manual update run
+remain open. The 2026-08-24 soak run then demonstrated that Austrian row multiplicity can
+gradually cross an absolute record floor while meaningful coverage remains stable. The record
+floor was removed instead of tuned to 2,683. The 2,000 unique-post-code floor, all-nine-state
+contract, and stricter relative source and country deltas remain enforced.
 
 ## Context and Orientation
 

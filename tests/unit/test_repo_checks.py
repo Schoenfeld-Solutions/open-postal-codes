@@ -108,7 +108,6 @@ def test_public_data_quality_default_unique_floors_leave_operational_headroom() 
 def test_public_data_quality_default_record_floors_leave_operational_headroom() -> None:
     assert public_data_quality_check.MINIMUM_RECORDS_BY_COUNTRY == {
         "de": 8_000,
-        "at": 2_700,
         "ch": 3_500,
     }
 

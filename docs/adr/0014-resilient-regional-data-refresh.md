@@ -9,6 +9,10 @@
 
 Accepted.
 
+Amended on 2026-08-24 to remove Austria's absolute record-count floor after a healthy
+candidate crossed it through gradual row consolidation. Austria retains its absolute unique
+post-code floor, complete state coverage, and relative record and unique-post-code limits.
+
 ## Context
 
 The scheduled D-A-CH refresh on 2026-07-13 downloaded and processed every configured
@@ -64,13 +68,16 @@ model.
 Quality is enforced per source and per country. Source gates require known, non-empty states,
 the configured state set, a non-empty primary state, and bounded changes from the accepted
 baseline. Country gates require exactly 16 German states, nine Austrian states, and 26 Swiss
-cantons together with absolute collapse floors and relative record and unique-post-code
-deltas. Warning bands surface material movement before a hard threshold is reached.
+cantons together with absolute unique-post-code floors, applicable record floors, and
+relative record and unique-post-code deltas. Warning bands surface material movement before
+a hard threshold is reached.
 
-This replaces reliance on a single total-record floor. The Austrian emergency floor is 2,700
-records and 2,000 unique post codes, but relative deltas and complete state coverage remain
-mandatory. Source loss limits are 15% for records and 12% for unique post codes, with 25%
-maximum growth. Country loss limits are 10% and 5%, respectively, with 20% maximum growth.
+This replaces reliance on a single total-record floor. Austria has no absolute record floor
+because row multiplicity changes as OpenStreetMap place associations are consolidated. Its
+emergency floor remains 2,000 unique post codes, while relative deltas and complete state
+coverage remain mandatory. Source loss limits are 15% for records and 12% for unique post
+codes, with 25% maximum growth. Country loss limits are 10% and 5%, respectively, with 20%
+maximum growth.
 
 ### Workflow behavior
 
@@ -108,8 +115,9 @@ replace a known-good release.
 
 ## Alternatives considered
 
-- **Lower only the Austrian record floor:** rejected because it would not detect state loss or
-  a future relative collapse.
+- **Lower the Austrian record floor again:** rejected because row multiplicity has no stable
+  absolute minimum. Removing that one floor while retaining state coverage, unique-post-code
+  coverage, and relative loss limits protects the meaningful invariants.
 - **Fail the whole refresh for every regional defect:** rejected because it prevents unrelated
   validated sources from advancing during a bounded upstream incident.
 - **Download the full Germany PBF:** deferred because its bandwidth, storage, and runtime cost

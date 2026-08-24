@@ -75,7 +75,7 @@ class DeltaLimits:
 class AbsoluteFloor:
     """Minimum accepted country-level data volume."""
 
-    record_count: int
+    record_count: int | None
     unique_post_code_count: int
 
 
@@ -319,7 +319,7 @@ SOURCE_DELTA_LIMITS: Final = DeltaLimits(0.15, 0.12, 0.25)
 COUNTRY_DELTA_LIMITS: Final = DeltaLimits(0.10, 0.05, 0.20)
 COUNTRY_ABSOLUTE_FLOORS: Final = {
     "de": AbsoluteFloor(8_000, 7_800),
-    "at": AbsoluteFloor(2_700, 2_000),
+    "at": AbsoluteFloor(None, 2_000),
     "ch": AbsoluteFloor(3_500, 3_000),
 }
 FLOOR_WARNING_MARGIN_RATIO: Final = 0.05

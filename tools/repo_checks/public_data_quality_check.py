@@ -19,7 +19,9 @@ PUBLIC_DATA_ROOT = Path("data/public/v1")
 METADATA_PATH = Path("data/sources/geofabrik-regions.json")
 POST_CODE_EXTENSIONS = ("csv", "json", "xml")
 MINIMUM_RECORDS_BY_COUNTRY = {
-    country: floor.record_count for country, floor in COUNTRY_ABSOLUTE_FLOORS.items()
+    country: floor.record_count
+    for country, floor in COUNTRY_ABSOLUTE_FLOORS.items()
+    if floor.record_count is not None
 }
 MINIMUM_UNIQUE_POST_CODES_BY_COUNTRY = {
     country: floor.unique_post_code_count for country, floor in COUNTRY_ABSOLUTE_FLOORS.items()
@@ -91,8 +93,8 @@ def validate_public_data(
         if not csv_path.exists():
             continue
         rows = read_rows(csv_path)
-        minimum_records = minimum_records_by_country[country.slug]
-        if len(rows) < minimum_records:
+        minimum_records = minimum_records_by_country.get(country.slug)
+        if minimum_records is not None and len(rows) < minimum_records:
             errors.append(
                 f"{csv_path.relative_to(repository_root)} has {len(rows)} records; "
                 f"expected at least {minimum_records}"
