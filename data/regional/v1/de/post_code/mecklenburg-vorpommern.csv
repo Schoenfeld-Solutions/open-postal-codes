@@ -14,7 +14,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 17099,Galenbeck,DE,Mecklenburg-Vorpommern,Mecklenburgische Seenplatte,W. Europe Standard Time,false,2,1,postal_boundary,118
 17109,Demmin,DE,Mecklenburg-Vorpommern,Mecklenburgische Seenplatte,W. Europe Standard Time,true,1,1,postal_boundary,2867
 17111,Demmin u.a.,DE,Mecklenburg-Vorpommern,Mecklenburgische Seenplatte,W. Europe Standard Time,true,1,1,postal_boundary,0
-17121,Loitz,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,1559
+17121,Loitz,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,1558
 17126,Jarmen,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,912
 17129,Bentzin,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,112
 17139,Malchin,DE,Mecklenburg-Vorpommern,Mecklenburgische Seenplatte,W. Europe Standard Time,true,1,1,postal_boundary,1818
@@ -70,7 +70,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 17349,Groß Miltzow,DE,Mecklenburg-Vorpommern,Mecklenburgische Seenplatte,W. Europe Standard Time,true,1,1,postal_boundary,123
 17358,Torgelow,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,2322
 17367,Eggesin,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,1311
-17373,Ueckermünde,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,2582
+17373,Ueckermünde,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,2583
 17375,Meiersberg,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,196
 17375,Mönkebude u.a.,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,false,3,1,postal_boundary,0
 17375,Vogelsang-Warsin,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,false,2,1,postal_boundary,26
@@ -103,10 +103,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 17506,Gützkow,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,1050
 17509,Lubmin,DE,Mecklenburg-Vorpommern,Vorpommern-Greifswald,W. Europe Standard Time,true,1,1,postal_boundary,1117
 18055,Rostock,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,true,1,1,postal_boundary,6105
-18057,Rostock,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,true,1,3,postal_boundary,3369
+18057,Rostock,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,true,1,3,postal_boundary,3370
 18059,Papendorf u.a.,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,false,2,1,postal_boundary,0
 18059,Papendorf u.a.,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,false,3,1,postal_boundary,0
-18059,Rostock,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,true,1,2,postal_boundary,3642
+18059,Rostock,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,true,1,2,postal_boundary,3643
 18069,Lambrechtshagen,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,false,2,1,postal_boundary,923
 18069,Rostock,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,true,1,4,postal_boundary,3251
 18106,Rostock Evershagen,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -129,7 +129,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 18182,Rövershagen u.a.,DE,Mecklenburg-Vorpommern,Rostock,W. Europe Standard Time,false,4,1,postal_boundary,0
 18184,Broderstorf u.a.,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,false,2,1,postal_boundary,0
 18184,Roggentin,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,true,1,1,postal_boundary,1247
-18190,Sanitz,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,true,1,1,postal_boundary,2072
+18190,Sanitz,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,true,1,1,postal_boundary,2073
 18195,Grammow u.a.,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,false,2,1,postal_boundary,0
 18195,Tessin,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,true,1,1,postal_boundary,1240
 18196,Dummerstorf,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,true,1,1,postal_boundary,2676
@@ -163,10 +163,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 18292,Krakow,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,false,2,1,postal_boundary,0
 18299,Laage,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,true,1,1,postal_boundary,1910
 18299,Wardow u.a.,DE,Mecklenburg-Vorpommern,Landkreis Rostock,W. Europe Standard Time,false,2,1,postal_boundary,0
-18311,Ribnitz-Damgarten,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,4634
+18311,Ribnitz-Damgarten,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,4633
 18314,Löbnitz,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,257
 18317,Saal,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,942
-18320,Ahrenshagen-Daskow,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,716
+18320,Ahrenshagen-Daskow,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,717
 18320,Trinwillershagen u.a.,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,false,2,1,postal_boundary,0
 18334,Bad Sülze,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,571
 18337,Marlow,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,1646
@@ -176,7 +176,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 18375,Prerow a. Darß,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,0
 18435,Stralsund,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,3,postal_boundary,3227
 18437,Stralsund,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,2,postal_boundary,3556
-18439,Stralsund,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,4539
+18439,Stralsund,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,4537
 18442,Groß Kordshagen,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,false,6,1,postal_boundary,130
 18442,Jakobsdorf,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,false,7,1,postal_boundary,62
 18442,Lüssow,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,false,3,1,postal_boundary,363
@@ -196,20 +196,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 18516,Rakow,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,0
 18519,Miltzow u.a.,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,0
 18528,Bergen/ Rügen,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,0
-18546,Sassnitz,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,1826
+18546,Sassnitz,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,1827
 18551,Sagard,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,658
 18556,Dranske,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,581
 18565,Hiddensee,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,0
 18569,Gingst,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,344
 18573,Samtens,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,583
 18574,Garz/ Rügen,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,0
-18581,Putbus,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,832
+18581,Putbus,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,836
 18586,Sellin u.a.,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,0
 18609,Binz,DE,Mecklenburg-Vorpommern,Vorpommern-Rügen,W. Europe Standard Time,true,1,1,postal_boundary,588
 19053,Schwerin,DE,Mecklenburg-Vorpommern,Schwerin,W. Europe Standard Time,true,1,4,postal_boundary,2652
 19055,Schwerin,DE,Mecklenburg-Vorpommern,Schwerin,W. Europe Standard Time,true,1,3,postal_boundary,2930
 19057,Schwerin,DE,Mecklenburg-Vorpommern,Schwerin,W. Europe Standard Time,true,1,1,postal_boundary,4914
-19059,Schwerin,DE,Mecklenburg-Vorpommern,Schwerin,W. Europe Standard Time,true,1,6,postal_boundary,1223
+19059,Schwerin,DE,Mecklenburg-Vorpommern,Schwerin,W. Europe Standard Time,true,1,6,postal_boundary,1224
 19061,Schwerin,DE,Mecklenburg-Vorpommern,Schwerin,W. Europe Standard Time,true,1,2,postal_boundary,3756
 19063,Schwerin,DE,Mecklenburg-Vorpommern,Schwerin,W. Europe Standard Time,true,1,5,postal_boundary,1555
 19065,Pinnow,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,1006
@@ -250,7 +250,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 19306,Neustadt-Glewe,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,2256
 19357,Brunow,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,false,2,1,address_fallback,52
 19357,Dambeck,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,address_fallback,132
-19370,Parchim,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,4457
+19370,Parchim,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,4458
 19372,Spornitz,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,490
 19374,Domsühl,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,571
 19374,Mestlin,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,false,2,1,postal_boundary,312
@@ -260,7 +260,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 19386,Lübz,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,2115
 19386,Passow,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,false,2,1,postal_boundary,312
 19395,Plau am See,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,3063
-19399,Goldberg,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,1353
+19399,Goldberg,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,1354
 19406,Dabel u.a.,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,false,2,1,postal_boundary,0
 19406,Sternberg,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,1357
 19412,Brüel,DE,Mecklenburg-Vorpommern,Ludwigslust-Parchim,W. Europe Standard Time,true,1,1,postal_boundary,974
@@ -273,7 +273,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 23946,Boltenhagen,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,true,1,1,postal_boundary,1526
 23948,Klütz,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,true,1,1,postal_boundary,1291
 23966,Groß Krankow u.a.,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,false,2,1,postal_boundary,0
-23966,Wismar,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,true,1,1,postal_boundary,4339
+23966,Wismar,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,true,1,1,postal_boundary,4340
 23968,Barnekow,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,true,1,1,postal_boundary,244
 23968,Gägelow u.a.,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 23970,Wismar,DE,Mecklenburg-Vorpommern,Nordwestmecklenburg,W. Europe Standard Time,true,1,2,postal_boundary,2918
