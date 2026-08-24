@@ -309,14 +309,15 @@ def validate_country_candidate(
         errors.append(f"{scope} is missing expected states: {', '.join(missing_state_codes)}")
 
     floor = COUNTRY_ABSOLUTE_FLOORS[country.slug]
-    _validate_floor(
-        scope=scope,
-        metric_name="records",
-        candidate_value=metrics.record_count,
-        floor_value=floor.record_count,
-        errors=errors,
-        warnings=warnings,
-    )
+    if floor.record_count is not None:
+        _validate_floor(
+            scope=scope,
+            metric_name="records",
+            candidate_value=metrics.record_count,
+            floor_value=floor.record_count,
+            errors=errors,
+            warnings=warnings,
+        )
     _validate_floor(
         scope=scope,
         metric_name="unique post codes",

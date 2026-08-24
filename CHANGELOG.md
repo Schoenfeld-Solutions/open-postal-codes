@@ -49,6 +49,7 @@ The format follows Keep a Changelog.
 - Manual data-refresh runs now default to validation-only; publication requires an explicit `publish` input on `main` while scheduled `main` runs continue to publish automatically.
 - Required data pull request checks now have a 20-minute bound with exact-head and merge postcondition diagnostics.
 - GitHub Actions now use immutable release commit SHAs with readable version comments, and repository policy rejects floating Action tags.
+- Austria now relies on complete state coverage, a 2,000 unique-post-code floor, and relative loss limits instead of a brittle absolute record-count floor.
 
 ### Removed
 

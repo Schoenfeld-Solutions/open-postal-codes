@@ -65,7 +65,7 @@ These files are local artifacts. They are not committed, not uploaded by Pages, 
 - A run with an in-budget last-known-good source may publish other validated updates, but the source is marked `reused_last_good` in the report and pull request. Unknown programming failures are never hidden by fallback.
 - Source gates require known non-empty states, the configured state set, and bounded movement from the accepted source baseline. Country gates require all 16 German states, nine Austrian states, or 26 Swiss cantons together with absolute and relative collapse limits.
 - A source rejects record loss above 15%, unique-post-code loss above 12%, or growth above 25%. A country rejects record loss above 10%, unique-post-code loss above 5%, or growth above 20%.
-- The Austrian emergency floor is 2,700 records and 2,000 unique post codes. It is not sufficient on its own; complete state coverage and relative deltas remain mandatory.
+- Austria has no absolute record-count floor because valid place associations can consolidate over time. Its emergency floor is 2,000 unique post codes; complete state coverage and relative record and unique-post-code deltas remain mandatory.
 - Warning bands report material movement before a hard threshold is crossed.
 - A refresh with no tracked diff is a successful no-op.
 - Code-only unit, Ruff, formatting, and Mypy checks run before PBF downloads. Data, repository, Pages-package, and diff gates run after candidate generation.

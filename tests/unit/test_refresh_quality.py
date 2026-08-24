@@ -317,17 +317,24 @@ def test_source_growth_limit_applies_to_records_and_unique_post_codes() -> None:
     assert sum("maximum growth is 25.0%" in error for error in result.errors) == 2
 
 
-def test_austria_2979_records_with_all_states_and_2000_codes_passes() -> None:
+@pytest.mark.parametrize(("record_count", "is_valid"), [(2_683, True), (2_414, False)])
+def test_austria_record_volume_uses_relative_country_gate(
+    record_count: int, is_valid: bool
+) -> None:
     country = get_country_config("AT")
-    records = _records(country, record_count=2_979, unique_post_code_count=2_000)
+    baseline = calculate_record_metrics(
+        _records(country, record_count=2_719, unique_post_code_count=2_245),
+        country=country,
+    )
+    records = _records(country, record_count=record_count, unique_post_code_count=2_243)
 
-    result = validate_country_candidate(records, country=country)
+    result = validate_country_candidate(records, country=country, baseline=baseline)
 
-    assert result.is_valid
-    assert result.metrics.record_count == 2_979
-    assert result.metrics.unique_post_code_count == 2_000
+    assert result.is_valid is is_valid
+    assert result.metrics.record_count == record_count
+    assert result.metrics.unique_post_code_count == 2_243
     assert result.metrics.state_codes == tuple(state.code for state in country.states)
-    assert result.warnings == ("country at has 2000 unique post codes, within 5% of minimum 2000",)
+    assert (any("maximum loss is 10.0%" in error for error in result.errors)) is not is_valid
 
 
 def test_country_candidate_requires_every_configured_state() -> None:

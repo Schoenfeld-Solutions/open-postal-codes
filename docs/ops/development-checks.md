@@ -28,7 +28,7 @@ The checks protect post code contracts, API packaging, credits, structure, docum
 
 - source, test, and repository-check modules have line-count limits
 - domain code is kept separate from extraction, network refresh, Pages packaging, and private export code
-- public D-A-CH data files, metadata values, state completeness, record floors, unique post-code floors, sentinel rows, and tracked PBF files are checked
+- public D-A-CH data files, metadata values, state completeness, applicable record floors, unique post-code floors, sentinel rows, and tracked PBF files are checked
 - Pages artifacts are packaged into a temporary directory and checked for manifest, gzip, hash, record-count, and static-file consistency
 - GitHub workflows are checked for explicit permissions, concurrency, timeouts, weekly refresh cadence, and pull request gates without live PBF downloads
 - every third-party GitHub Action is pinned to an immutable 40-character commit SHA with a readable release-version comment; floating version tags are rejected
