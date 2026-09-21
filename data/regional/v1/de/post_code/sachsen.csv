@@ -1,7 +1,7 @@
 code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
-01067,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,21,postal_boundary,1759
+01067,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,21,postal_boundary,1758
 01069,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,20,postal_boundary,1844
-01097,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,23,postal_boundary,1676
+01097,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,23,postal_boundary,1677
 01099,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,3,postal_boundary,3479
 01108,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,15,postal_boundary,2159
 01109,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,1,postal_boundary,4706
@@ -16,8 +16,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 01187,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,18,postal_boundary,1949
 01189,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,25,postal_boundary,1594
 01217,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,14,postal_boundary,2273
-01219,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,11,postal_boundary,2477
-01237,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,24,postal_boundary,1606
+01219,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,11,postal_boundary,2479
+01237,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,24,postal_boundary,1607
 01239,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,27,postal_boundary,1425
 01257,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,19,postal_boundary,1914
 01259,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,4,postal_boundary,3238
@@ -25,10 +25,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 01279,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,16,postal_boundary,2061
 01307,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,28,postal_boundary,1303
 01309,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,9,postal_boundary,2722
-01324,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,17,postal_boundary,1989
+01324,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,17,postal_boundary,1988
 01326,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,6,postal_boundary,3188
 01328,Dresden,DE,Sachsen,Dresden,W. Europe Standard Time,true,1,2,postal_boundary,3841
-01445,Radebeul,DE,Sachsen,Meißen,W. Europe Standard Time,true,1,1,postal_boundary,8248
+01445,Radebeul,DE,Sachsen,Meißen,W. Europe Standard Time,true,1,1,postal_boundary,8249
 01454,Radeberg,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,4598
 01454,Wachau,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,false,2,1,postal_boundary,1157
 01458,Ottendorf-Okrilla,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,3271
@@ -58,9 +58,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 01665,Diera-Zehren,DE,Sachsen,Meißen,W. Europe Standard Time,false,2,1,postal_boundary,1444
 01665,Klipphausen,DE,Sachsen,Meißen,W. Europe Standard Time,true,1,1,postal_boundary,3069
 01665,Käbschütztal,DE,Sachsen,Meißen,W. Europe Standard Time,false,3,1,postal_boundary,786
-01683,Nossen,DE,Sachsen,Meißen,W. Europe Standard Time,true,1,1,postal_boundary,3265
+01683,Nossen,DE,Sachsen,Meißen,W. Europe Standard Time,true,1,1,postal_boundary,3264
 01689,Weinböhla,DE,Sachsen,Meißen,W. Europe Standard Time,true,1,1,postal_boundary,1209
-01705,Freital,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,8798
+01705,Freital,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,8803
 01723,Wilsdruff,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,4374
 01728,Bannewitz,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,2463
 01731,Kreischa,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,1253
@@ -74,9 +74,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 01774,Klingenberg,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,1980
 01776,Hermsdorf/Erzgeb.,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,0
 01778,Altenberg,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,2,postal_boundary,1132
-01796,Dohma,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,false,3,1,address_fallback,686
-01796,Pirna,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,address_fallback,8172
-01796,Struppen,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,false,2,1,address_fallback,1035
+01796,Dohma,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,false,3,1,postal_boundary,686
+01796,Pirna,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,8173
+01796,Struppen,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,false,2,1,postal_boundary,1034
 01809,Heidenau,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,2480
 01814,Bad Schandau,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,1425
 01816,Bad Gottleuba-Berggießhübel,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,1956
@@ -84,8 +84,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 01824,Königstein/Sächs.Schw.,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,0
 01825,Liebstadt,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,537
 01829,Wehlen,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,0
-01833,Dürrröhrsdorf-Dittersbach,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,false,2,1,address_fallback,1153
-01833,Stolpen,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,address_fallback,2101
+01833,Dürrröhrsdorf-Dittersbach,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,false,2,1,postal_boundary,1153
+01833,Stolpen,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,2101
 01844,Neustadt i. Sa.,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,0
 01847,Lohmen,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,996
 01848,Hohnstein,DE,Sachsen,Sächsische Schweiz-Osterzgebirge,W. Europe Standard Time,true,1,1,postal_boundary,1454
@@ -94,15 +94,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 01896,Pulsnitz,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1906
 01900,Bretnig-Hauswalde,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,false,2,1,postal_boundary,0
 01900,Großröhrsdorf,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,3047
-01904,Neukirch/Lausitz,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1839
+01904,Neukirch/Lausitz,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1837
 01906,Burkau,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1104
 01909,Frankenthal,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,false,2,1,postal_boundary,353
 01909,Großharthau,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1112
-01917,Kamenz,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,4237
+01917,Kamenz,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,4239
 01920,Elstra,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1045
 01920,Oßling u.a.,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,false,2,1,postal_boundary,0
 01936,Königsbrück u.a.,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,0
-02625,Bautzen,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,8135
+02625,Bautzen,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,8140
 02627,Hochkirch u.a.,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,false,2,1,postal_boundary,0
 02627,Weißenberg,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1452
 02633,Göda,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1272
@@ -137,8 +137,8 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 02797,Oybin,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,738
 02799,Großschönau,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,2,postal_boundary,554
 02826,Görlitz,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,4413
-02827,Görlitz,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,2,postal_boundary,4139
-02828,Görlitz,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,3,postal_boundary,2066
+02827,Görlitz,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,2,postal_boundary,4140
+02828,Görlitz,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,3,postal_boundary,2068
 02829,Markersdorf,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,1764
 02829,Neißeaue u.a.,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,0
 02894,Reichenbach,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -147,36 +147,36 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 02899,Schönau-Berzdorf,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,0
 02906,Hohendubrau u.a.,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,0
 02906,Niesky,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,3164
-02923,Horka,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,832
+02923,Horka,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,833
 02923,Hähnichen,DE,Sachsen,Görlitz,W. Europe Standard Time,false,3,1,postal_boundary,602
 02923,Kodersdorf,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,1043
 02929,Rothenburg/O.L.,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,192
 02943,Boxberg,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,0
 02943,Weißwasser,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,0
 02953,Bad Muskau,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,1152
-02953,Gablenz,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,663
+02953,Gablenz,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,664
 02953,Groß Düben,DE,Sachsen,Görlitz,W. Europe Standard Time,false,3,1,postal_boundary,184
 02956,Rietschen,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,1142
 02957,Krauschwitz,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,1355
 02957,Weißkeißel,DE,Sachsen,Görlitz,W. Europe Standard Time,false,2,1,postal_boundary,504
 02959,Schleife,DE,Sachsen,Görlitz,W. Europe Standard Time,true,1,1,postal_boundary,1096
-02977,Hoyerswerda,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,5543
+02977,Hoyerswerda,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,5541
 02979,Elsterheide,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1309
 02979,Spreetal,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,false,2,1,postal_boundary,762
 02991,Lauta,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,2813
-02994,Bernsdorf,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,2044
-02997,Wittichenau,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,2057
+02994,Bernsdorf,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,2046
+02997,Wittichenau,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,10
 02999,Lohsa,DE,Sachsen,Bautzen - Budyšin,W. Europe Standard Time,true,1,1,postal_boundary,1946
 04103,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,25,postal_boundary,1505
 04105,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,27,postal_boundary,1354
-04107,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,28,postal_boundary,1140
+04107,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,28,postal_boundary,1142
 04109,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,14,postal_boundary,2173
 04129,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,24,postal_boundary,1524
 04155,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,18,postal_boundary,1702
 04157,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,10,postal_boundary,2328
 04158,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,4,postal_boundary,3004
-04159,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,1,postal_boundary,3781
-04177,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,12,postal_boundary,2229
+04159,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,1,postal_boundary,3782
+04177,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,12,postal_boundary,2230
 04178,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,3,postal_boundary,3123
 04179,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,9,postal_boundary,2349
 04205,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,33,postal_boundary,757
@@ -184,9 +184,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 04209,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,31,postal_boundary,823
 04229,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,2,postal_boundary,3386
 04249,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,5,postal_boundary,2967
-04275,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,20,postal_boundary,1629
+04275,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,20,postal_boundary,1630
 04277,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,6,postal_boundary,2965
-04279,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,30,postal_boundary,1086
+04279,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,30,postal_boundary,1090
 04288,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,19,postal_boundary,1678
 04289,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,11,postal_boundary,2291
 04299,Leipzig,DE,Sachsen,Leipzig,W. Europe Standard Time,true,1,15,postal_boundary,1828
@@ -204,7 +204,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 04416,Markkleeberg,DE,Sachsen,Landkreis Leipzig,W. Europe Standard Time,true,1,1,postal_boundary,5703
 04420,Markranstädt,DE,Sachsen,Landkreis Leipzig,W. Europe Standard Time,true,1,1,postal_boundary,4652
 04425,Taucha,DE,Sachsen,Nordsachsen,W. Europe Standard Time,true,1,1,postal_boundary,3734
-04435,Schkeuditz,DE,Sachsen,Nordsachsen,W. Europe Standard Time,true,1,1,postal_boundary,4720
+04435,Schkeuditz,DE,Sachsen,Nordsachsen,W. Europe Standard Time,true,1,1,postal_boundary,4830
 04442,Zwenkau,DE,Sachsen,Landkreis Leipzig,W. Europe Standard Time,true,1,1,postal_boundary,2319
 04451,Borsdorf,DE,Sachsen,Landkreis Leipzig,W. Europe Standard Time,true,1,1,postal_boundary,879
 04463,Großpösna,DE,Sachsen,Landkreis Leipzig,W. Europe Standard Time,true,1,1,postal_boundary,606
@@ -277,7 +277,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 08144,Hirschfeld,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,455
 08147,Crinitzberg,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,670
 08209,Auerbach/Vogtl.,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,53
-08223,Falkenstein/Vogtl.,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,2012
+08223,Falkenstein/Vogtl.,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,2013
 08228,Rodewisch,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,1870
 08233,Treuen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,2963
 08236,Ellefeld,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,430
@@ -307,7 +307,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 08373,Remse,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,596
 08393,Meerane,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,4089
 08396,Waldenburg,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,1486
-08412,Werdau,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,6029
+08412,Werdau,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,6030
 08427,Fraureuth,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,1544
 08428,Langenbernsdorf,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,1355
 08451,Crimmitschau,DE,Sachsen,Zwickau,W. Europe Standard Time,true,1,1,postal_boundary,5373
@@ -318,11 +318,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 08491,Netzschkau,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,669
 08496,Neumark,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,637
 08499,Mylau,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,5
-08523,Plauen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,3532
+08523,Plauen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,3537
 08525,Plauen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,3,postal_boundary,3255
-08527,Plauen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,2,postal_boundary,3314
+08527,Plauen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,2,postal_boundary,3322
 08527,Rößnitz,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,false,2,1,postal_boundary,0
-08529,Plauen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,4,postal_boundary,2227
+08529,Plauen,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,4,postal_boundary,2232
 08538,Weischlitz u.a.,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
 08539,Rosenbach,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,0
 08541,Neuensalz,DE,Sachsen,Vogtlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,836
@@ -337,12 +337,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 09112,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,14,postal_boundary,1309
 09113,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,12,postal_boundary,1491
 09114,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,2,postal_boundary,3834
-09116,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,3,postal_boundary,3617
+09116,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,3,postal_boundary,3616
 09117,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,4,postal_boundary,3542
 09119,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,17,postal_boundary,1081
 09120,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,16,postal_boundary,1293
 09122,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,18,postal_boundary,676
-09123,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,6,postal_boundary,2882
+09123,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,6,postal_boundary,2885
 09125,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,5,postal_boundary,2978
 09126,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,7,postal_boundary,2331
 09127,Chemnitz,DE,Sachsen,Chemnitz,W. Europe Standard Time,true,1,1,postal_boundary,4047
@@ -376,7 +376,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 09366,Stollberg/Erzgeb.,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,4
 09376,Oelsnitz/Erzgebirge,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,2
 09380,Thalheim/Erzgebirge,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,1500
-09385,Lugau/Erzgeb.,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,159
+09385,Lugau/Erzgeb.,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,161
 09387,Jahnsdorf,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,4
 09390,Gornsdorf,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,98
 09392,Auerbach,DE,Sachsen,Erzgebirgskreis,W. Europe Standard Time,true,1,1,postal_boundary,655
@@ -434,7 +434,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 09623,Frauenstein,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,true,1,1,postal_boundary,1098
 09627,Bobritzsch,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,true,1,1,postal_boundary,0
 09629,Reinsberg,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,true,1,1,postal_boundary,989
-09633,Halsbrücke,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,true,1,1,postal_boundary,1762
+09633,Halsbrücke,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,true,1,1,postal_boundary,1763
 09634,Reinsberg,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,true,1,2,postal_boundary,197
 09638,Lichtenberg/Erzgeb.,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,true,1,1,postal_boundary,578
 09648,Kriebstein,DE,Sachsen,Mittelsachsen,W. Europe Standard Time,false,2,1,postal_boundary,273
