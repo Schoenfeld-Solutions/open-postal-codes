@@ -24,7 +24,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 03099,Kolkwitz,DE,Brandenburg,Spree-Neiße - Sprjewja-Nysa,W. Europe Standard Time,true,1,1,postal_boundary,3770
 03103,Neu-Seeland,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,false,2,1,postal_boundary,282
 03103,Neupetershain,DE,Brandenburg,Oberspreewald-Lausitz - Górne Błota-Łužyca,W. Europe Standard Time,true,1,1,postal_boundary,510
-03116,Drebkau,DE,Brandenburg,Spree-Neiße - Sprjewja-Nysa,W. Europe Standard Time,true,1,1,postal_boundary,2164
+03116,Drebkau,DE,Brandenburg,Spree-Neiße - Sprjewja-Nysa,W. Europe Standard Time,true,1,1,postal_boundary,2166
 03119,Welzow,DE,Brandenburg,Spree-Neiße - Sprjewja-Nysa,W. Europe Standard Time,true,1,1,postal_boundary,1290
 03130,Spremberg,DE,Brandenburg,Spree-Neiße - Sprjewja-Nysa,W. Europe Standard Time,true,1,1,postal_boundary,6599
 03130,Tschernitz u.a.,DE,Brandenburg,Spree-Neiße - Sprjewja-Nysa,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -47,7 +47,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 04895,Falkenberg/ Elster,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,0
 04910,Elsterwerda,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,2570
 04916,Herzberg/ Elster,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,0
-04924,Bad Liebenwerda,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,3026
+04924,Bad Liebenwerda,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,3027
 04928,Plessa,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,1,postal_boundary,1074
 04928,Schraden,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,false,2,1,postal_boundary,195
 04931,Bad Liebenwerda,DE,Brandenburg,Elbe-Elster,W. Europe Standard Time,true,1,2,postal_boundary,381
@@ -160,7 +160,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 12437,Berlin Baumschulenweg,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
 12439,Berlin Niederschöneweide,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
 12459,Berlin Oberschöneweide,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
-12487,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,3199
+12487,Berlin,DE,Berlin,,W. Europe Standard Time,true,1,5,postal_boundary,3198
 12489,Berlin Teltowkanal III,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
 12524,Berlin Altglienicke,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
 12526,Berlin Bohnsdorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -250,12 +250,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 14197,Berlin Wilmersdorf,DE,Berlin,,W. Europe Standard Time,true,1,8,postal_boundary,0
 14199,Berlin Schmargendorf,DE,Berlin,,W. Europe Standard Time,true,1,1,postal_boundary,0
 14467,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,5,postal_boundary,2959
-14469,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,1,postal_boundary,7251
+14469,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,1,postal_boundary,7252
 14471,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,7,postal_boundary,1887
 14473,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,8,postal_boundary,1646
 14476,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,2,postal_boundary,5443
-14478,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,6,postal_boundary,2346
-14480,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,4,postal_boundary,3365
+14478,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,6,postal_boundary,2348
+14480,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,4,postal_boundary,3366
 14482,Potsdam,DE,Brandenburg,Potsdam,W. Europe Standard Time,true,1,3,postal_boundary,4896
 14513,Teltow,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,6961
 14532,Kleinmachnow,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,6535
@@ -283,11 +283,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 14715,Stechow-Ferchesar,DE,Brandenburg,Havelland,W. Europe Standard Time,false,3,1,address_fallback,662
 14727,Premnitz,DE,Brandenburg,Havelland,W. Europe Standard Time,true,1,1,postal_boundary,2683
 14728,Rhinow,DE,Brandenburg,Havelland,W. Europe Standard Time,true,1,1,postal_boundary,581
-14770,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,3,postal_boundary,3581
-14772,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,2,postal_boundary,3633
+14770,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,3,address_fallback,3586
+14772,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,2,address_fallback,3633
 14774,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,4,postal_boundary,2484
-14776,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,1,postal_boundary,7782
-14778,Beetzsee,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,1417
+14776,Brandenburg an der Havel,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,true,1,1,postal_boundary,7783
+14778,Beetzsee,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,1420
 14778,Golzow u.a.,DE,Brandenburg,Brandenburg an der Havel,W. Europe Standard Time,false,4,1,postal_boundary,0
 14778,Golzow u.a.,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,false,5,1,postal_boundary,0
 14778,Wenzlow,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,false,3,1,postal_boundary,216
@@ -304,12 +304,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 14823,Niemegk,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,838
 14827,Wiesenburg,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,0
 14828,Görzke,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,595
-14913,Jüterbog,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,3798
-14913,Niederer Fläming,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,false,3,1,postal_boundary,1349
+14913,Jüterbog,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,3799
+14913,Niederer Fläming,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,false,3,1,postal_boundary,1379
 14913,Niedergörsdorf,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,false,2,1,postal_boundary,2264
-14929,Treuenbrietzen,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,2662
+14929,Treuenbrietzen,DE,Brandenburg,Potsdam-Mittelmark,W. Europe Standard Time,true,1,1,postal_boundary,2663
 14943,Luckenwalde,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,5620
-14947,Nuthe-Urstromtal,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,2731
+14947,Nuthe-Urstromtal,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,2732
 14959,Trebbin,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,3220
 14974,Ludwigsfelde,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,7094
 14979,Großbeeren,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,2848
@@ -370,7 +370,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 15757,Halbe,DE,Brandenburg,Dahme-Spreewald,W. Europe Standard Time,true,1,1,postal_boundary,1036
 15806,Zossen,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,6749
 15827,Blankenfelde-Mahlow,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,5654
-15831,Blankenfelde-Mahlow,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,2,postal_boundary,4669
+15831,Blankenfelde-Mahlow,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,2,postal_boundary,4670
 15834,Rangsdorf,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,4506
 15837,Baruth,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,2
 15838,Am Mellensee,DE,Brandenburg,Teltow-Fläming,W. Europe Standard Time,true,1,1,postal_boundary,3063
@@ -428,7 +428,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 16727,Oberkrämer,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,4853
 16727,Velten,DE,Brandenburg,Oberhavel,W. Europe Standard Time,false,2,1,postal_boundary,3064
 16761,Hennigsdorf,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,4339
-16766,Kremmen,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,3265
+16766,Kremmen,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,3267
 16767,Leegebruch,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,2681
 16775,Gransee,DE,Brandenburg,Oberhavel,W. Europe Standard Time,true,1,1,postal_boundary,1973
 16775,Löwenberg,DE,Brandenburg,Oberhavel,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -472,7 +472,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 17337,Uckerland,DE,Brandenburg,Uckermark,W. Europe Standard Time,true,1,1,address_fallback,1319
 19309,Lenzen,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,0
 19322,Rühstädt,DE,Brandenburg,Prignitz,W. Europe Standard Time,false,2,1,postal_boundary,259
-19322,Wittenberge,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,4837
+19322,Wittenberge,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,4838
 19336,Bad Wilsnack,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,1191
 19336,Legde/Quitzöbel,DE,Brandenburg,Prignitz,W. Europe Standard Time,false,2,1,postal_boundary,324
 19339,Plattenburg,DE,Brandenburg,Prignitz,W. Europe Standard Time,true,1,1,postal_boundary,1666
