@@ -1,5 +1,5 @@
 code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
-06108,Halle,DE,Sachsen-Anhalt,Halle (Saale),W. Europe Standard Time,true,1,1,postal_boundary,1
+06108,Halle,DE,Sachsen-Anhalt,Halle (Saale),W. Europe Standard Time,true,1,1,postal_boundary,2
 06110,Halle/ Saale,DE,Sachsen-Anhalt,Halle (Saale),W. Europe Standard Time,true,1,1,postal_boundary,0
 06112,Halle/ Saale,DE,Sachsen-Anhalt,Halle (Saale),W. Europe Standard Time,true,1,2,postal_boundary,0
 06114,Halle/ Saale,DE,Sachsen-Anhalt,Halle (Saale),W. Europe Standard Time,true,1,3,postal_boundary,0
@@ -48,7 +48,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 06366,Köthen,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,2,postal_boundary,7
 06369,Südliches Anhalt u.a.,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,0
 06385,Aken,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,3
-06386,Osternienburger Land,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,2065
+06386,Osternienburger Land,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,2066
 06388,Köthen,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,false,2,1,postal_boundary,143
 06388,Südliches Anhalt,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,1526
 06406,Bernburg,DE,Sachsen-Anhalt,Salzlandkreis,W. Europe Standard Time,true,1,1,postal_boundary,2901
@@ -83,7 +83,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 06632,Gröst,DE,Sachsen-Anhalt,Saalekreis,W. Europe Standard Time,true,1,1,address_fallback,169
 06632,Mücheln,DE,Sachsen-Anhalt,Saalekreis,W. Europe Standard Time,false,2,2,address_fallback,117
 06749,Bitterfeld-Wolfen,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,4367
-06766,Bitterfeld-Wolfen,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,2,postal_boundary,3195
+06766,Bitterfeld-Wolfen,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,2,postal_boundary,3801
 06772,Gräfenhainichen,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,2,postal_boundary,1536
 06773,Gräfenhainichen,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,2046
 06774,Muldestausee,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,5345
@@ -99,11 +99,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 06808,Bitterfeld-Wolfen,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,3,postal_boundary,985
 06809,Petersroda,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,true,1,1,postal_boundary,0
 06809,Roitzsch,DE,Sachsen-Anhalt,Anhalt-Bitterfeld,W. Europe Standard Time,false,2,1,postal_boundary,0
-06842,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,6,postal_boundary,1289
-06844,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,4,postal_boundary,2289
+06842,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,6,postal_boundary,1287
+06844,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,4,postal_boundary,2290
 06846,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,1,postal_boundary,3621
 06847,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,5,postal_boundary,2261
-06849,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,3,postal_boundary,2824
+06849,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,3,postal_boundary,2825
 06861,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,7,postal_boundary,454
 06862,Dessau-Roßlau,DE,Sachsen-Anhalt,Dessau-Roßlau,W. Europe Standard Time,true,1,2,postal_boundary,3217
 06868,Coswig,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,2,postal_boundary,1
@@ -111,9 +111,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 06886,Wittenberg,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,9347
 06888,Wittenberg,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,3,postal_boundary,1849
 06889,Wittenberg,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,2,postal_boundary,2537
-06895,Zahna-Elster,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,4386
+06895,Zahna-Elster,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,4385
 06901,Kemberg,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,4082
-06905,Bad Schmiedeberg,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,3294
+06905,Bad Schmiedeberg,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,3295
 06917,Jessen,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,1671
 06925,Annaburg,DE,Sachsen-Anhalt,Wittenberg,W. Europe Standard Time,true,1,1,postal_boundary,2525
 14715,Schollene,DE,Sachsen-Anhalt,Stendal,W. Europe Standard Time,true,1,1,address_fallback,397
@@ -129,7 +129,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 38489,Rohrberg,DE,Sachsen-Anhalt,Altmarkkreis Salzwedel,W. Europe Standard Time,false,2,1,postal_boundary,298
 38820,Halberstadt,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,5030
 38822,Groß Quenstedt,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,false,2,1,postal_boundary,348
-38822,Halberstadt,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,2,postal_boundary,401
+38822,Halberstadt,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,2,postal_boundary,405
 38828,Wegeleben,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,1080
 38829,Harsleben,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,320
 38835,Osterwieck,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,2810
@@ -137,7 +137,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 38838,Huy,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,1413
 38855,Nordharz,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,false,2,2,postal_boundary,0
 38855,Wernigerode,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,2696
-38871,Ilsenburg,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,2516
+38871,Ilsenburg,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,2515
 38871,Nordharz,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,false,2,1,postal_boundary,825
 38875,Oberharz am Brocken,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,1,postal_boundary,1490
 38877,Oberharz am Brocken,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,3,postal_boundary,729
@@ -148,20 +148,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 38895,Halberstadt,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,false,2,3,postal_boundary,189
 38899,Oberharz am Brocken,DE,Sachsen-Anhalt,Landkreis Harz,W. Europe Standard Time,true,1,2,postal_boundary,944
 39104,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,8,postal_boundary,2552
-39106,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,14,postal_boundary,830
-39108,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,9,postal_boundary,2494
-39110,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,3,postal_boundary,4093
-39112,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,10,postal_boundary,2285
-39114,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,1,postal_boundary,4633
+39106,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,14,postal_boundary,831
+39108,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,9,postal_boundary,2519
+39110,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,3,postal_boundary,4110
+39112,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,10,postal_boundary,2288
+39114,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,1,postal_boundary,4679
 39116,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,4,postal_boundary,4068
 39118,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,7,postal_boundary,2567
 39120,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,12,postal_boundary,1830
-39122,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,2,postal_boundary,4154
-39124,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,11,postal_boundary,2181
-39126,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,13,postal_boundary,1736
-39128,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,5,postal_boundary,3882
-39130,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,6,postal_boundary,2797
-39164,Wanzleben-Börde,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,5083
+39122,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,2,postal_boundary,4156
+39124,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,11,postal_boundary,2199
+39126,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,13,postal_boundary,1767
+39128,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,5,postal_boundary,3885
+39130,Magdeburg,DE,Sachsen-Anhalt,Magdeburg,W. Europe Standard Time,true,1,6,postal_boundary,2818
+39164,Wanzleben-Börde,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,5084
 39167,Hohe Börde,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,3795
 39171,Sülzetal,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,3476
 39175,Biederitz,DE,Sachsen-Anhalt,Jerichower Land,W. Europe Standard Time,true,1,1,postal_boundary,3185
@@ -195,7 +195,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 39317,Elbe-Parey,DE,Sachsen-Anhalt,Jerichower Land,W. Europe Standard Time,true,1,1,postal_boundary,2420
 39319,Jerichow,DE,Sachsen-Anhalt,Jerichower Land,W. Europe Standard Time,true,1,1,postal_boundary,2738
 39326,Wolmirstedt u.a.,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,0
-39340,Haldensleben,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,4422
+39340,Haldensleben,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,4424
 39343,Altenhausen u.a.,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,false,4,1,postal_boundary,0
 39343,Erxleben,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,true,1,1,postal_boundary,1269
 39343,Hillersleben,DE,Sachsen-Anhalt,Börde,W. Europe Standard Time,false,3,1,postal_boundary,1
