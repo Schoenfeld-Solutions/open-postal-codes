@@ -1,6 +1,6 @@
 code,city,country,state,county,time_zone,is_primary_location,location_rank,postal_code_rank,source,evidence_count
 63739,Aschaffenburg,DE,Bayern,Aschaffenburg,W. Europe Standard Time,true,1,3,postal_boundary,3204
-63741,Aschaffenburg,DE,Bayern,Aschaffenburg,W. Europe Standard Time,true,1,1,postal_boundary,5184
+63741,Aschaffenburg,DE,Bayern,Aschaffenburg,W. Europe Standard Time,true,1,1,postal_boundary,5185
 63743,Aschaffenburg,DE,Bayern,Aschaffenburg,W. Europe Standard Time,true,1,2,postal_boundary,3463
 63755,Alzenau,DE,Bayern,Landkreis Aschaffenburg,W. Europe Standard Time,true,1,1,postal_boundary,2307
 63762,Großostheim,DE,Bayern,Landkreis Aschaffenburg,W. Europe Standard Time,true,1,1,postal_boundary,5005
@@ -26,7 +26,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 63839,Kleinwallstadt,DE,Bayern,Landkreis Miltenberg,W. Europe Standard Time,true,1,1,postal_boundary,851
 63840,Hausen,DE,Bayern,Landkreis Miltenberg,W. Europe Standard Time,true,1,1,postal_boundary,82
 63843,Niedernberg,DE,Bayern,Landkreis Miltenberg,W. Europe Standard Time,true,1,1,postal_boundary,119
-63846,Laufach,DE,Bayern,Landkreis Aschaffenburg,W. Europe Standard Time,true,1,1,postal_boundary,1577
+63846,Laufach,DE,Bayern,Landkreis Aschaffenburg,W. Europe Standard Time,true,1,1,postal_boundary,1578
 63849,Leidersbach,DE,Bayern,Landkreis Miltenberg,W. Europe Standard Time,true,1,1,postal_boundary,224
 63853,Mömlingen,DE,Bayern,Landkreis Miltenberg,W. Europe Standard Time,true,1,1,postal_boundary,1438
 63856,Bessenbach,DE,Bayern,Landkreis Aschaffenburg,W. Europe Standard Time,true,1,1,postal_boundary,160
@@ -66,12 +66,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 63939,Wörth a.Main,DE,Bayern,Landkreis Miltenberg,W. Europe Standard Time,true,1,1,postal_boundary,0
 74594,Schnelldorf,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,2,address_fallback,10
 74731,Eichenbühl,DE,Bayern,Landkreis Miltenberg,W. Europe Standard Time,true,1,2,address_fallback,4
-80331,München,DE,Bayern,München,W. Europe Standard Time,true,1,30,postal_boundary,1669
-80333,München,DE,Bayern,München,W. Europe Standard Time,true,1,35,postal_boundary,1548
+80331,München,DE,Bayern,München,W. Europe Standard Time,true,1,30,postal_boundary,1671
+80333,München,DE,Bayern,München,W. Europe Standard Time,true,1,35,postal_boundary,1549
 80335,München,DE,Bayern,München,W. Europe Standard Time,true,1,50,postal_boundary,1117
 80336,München,DE,Bayern,München,W. Europe Standard Time,true,1,61,postal_boundary,960
-80337,München,DE,Bayern,München,W. Europe Standard Time,true,1,56,postal_boundary,1026
-80339,München,DE,Bayern,München,W. Europe Standard Time,true,1,32,postal_boundary,1634
+80337,München,DE,Bayern,München,W. Europe Standard Time,true,1,56,postal_boundary,1028
+80339,München,DE,Bayern,München,W. Europe Standard Time,true,1,32,postal_boundary,1639
 80469,München,DE,Bayern,München,W. Europe Standard Time,true,1,29,postal_boundary,1690
 80538,München,DE,Bayern,München,W. Europe Standard Time,true,1,57,postal_boundary,979
 80539,München,DE,Bayern,München,W. Europe Standard Time,true,1,72,postal_boundary,523
@@ -84,7 +84,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 80687,München,DE,Bayern,München,W. Europe Standard Time,true,1,22,postal_boundary,1966
 80689,München,DE,Bayern,München,W. Europe Standard Time,true,1,9,postal_boundary,3796
 80796,München,DE,Bayern,München,W. Europe Standard Time,true,1,59,postal_boundary,973
-80797,München,DE,Bayern,München,W. Europe Standard Time,true,1,63,postal_boundary,915
+80797,München,DE,Bayern,München,W. Europe Standard Time,true,1,63,postal_boundary,917
 80798,München,DE,Bayern,München,W. Europe Standard Time,true,1,68,postal_boundary,652
 80799,München,DE,Bayern,München,W. Europe Standard Time,true,1,55,postal_boundary,1067
 80801,München,DE,Bayern,München,W. Europe Standard Time,true,1,65,postal_boundary,783
@@ -92,24 +92,24 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 80803,München,DE,Bayern,München,W. Europe Standard Time,true,1,71,postal_boundary,603
 80804,München,DE,Bayern,München,W. Europe Standard Time,true,1,64,postal_boundary,835
 80805,München,DE,Bayern,München,W. Europe Standard Time,true,1,31,postal_boundary,1651
-80807,München,DE,Bayern,München,W. Europe Standard Time,true,1,33,postal_boundary,1621
-80809,München,DE,Bayern,München,W. Europe Standard Time,true,1,66,postal_boundary,742
+80807,München,DE,Bayern,München,W. Europe Standard Time,true,1,33,postal_boundary,1625
+80809,München,DE,Bayern,München,W. Europe Standard Time,true,1,66,postal_boundary,751
 80933,München,DE,Bayern,München,W. Europe Standard Time,true,1,62,postal_boundary,926
 80935,München,DE,Bayern,München,W. Europe Standard Time,true,1,15,postal_boundary,2400
-80937,München,DE,Bayern,München,W. Europe Standard Time,true,1,58,postal_boundary,977
-80939,München,DE,Bayern,München,W. Europe Standard Time,true,1,7,postal_boundary,3947
-80992,München,DE,Bayern,München,W. Europe Standard Time,true,1,26,postal_boundary,1744
-80993,München,DE,Bayern,München,W. Europe Standard Time,true,1,25,postal_boundary,1793
+80937,München,DE,Bayern,München,W. Europe Standard Time,true,1,58,postal_boundary,979
+80939,München,DE,Bayern,München,W. Europe Standard Time,true,1,7,postal_boundary,3948
+80992,München,DE,Bayern,München,W. Europe Standard Time,true,1,26,postal_boundary,1747
+80993,München,DE,Bayern,München,W. Europe Standard Time,true,1,25,postal_boundary,1803
 80995,München,DE,Bayern,München,W. Europe Standard Time,true,1,4,postal_boundary,4911
 80997,München,DE,Bayern,München,W. Europe Standard Time,true,1,19,postal_boundary,2178
-80999,München,DE,Bayern,München,W. Europe Standard Time,true,1,5,postal_boundary,4526
-81241,München,DE,Bayern,München,W. Europe Standard Time,true,1,24,postal_boundary,1932
+80999,München,DE,Bayern,München,W. Europe Standard Time,true,1,5,postal_boundary,4527
+81241,München,DE,Bayern,München,W. Europe Standard Time,true,1,24,postal_boundary,1935
 81243,München,DE,Bayern,München,W. Europe Standard Time,true,1,11,postal_boundary,3443
 81245,München,DE,Bayern,München,W. Europe Standard Time,true,1,2,postal_boundary,5343
 81247,München,DE,Bayern,München,W. Europe Standard Time,true,1,60,postal_boundary,973
 81248,München,DE,Bayern,München,W. Europe Standard Time,true,1,74,postal_boundary,386
 81249,München,DE,Bayern,München,W. Europe Standard Time,true,1,8,postal_boundary,3911
-81369,München,DE,Bayern,München,W. Europe Standard Time,true,1,21,postal_boundary,2100
+81369,München,DE,Bayern,München,W. Europe Standard Time,true,1,21,postal_boundary,2099
 81371,München,DE,Bayern,München,W. Europe Standard Time,true,1,53,postal_boundary,1081
 81373,München,DE,Bayern,München,W. Europe Standard Time,true,1,38,postal_boundary,1484
 81375,München,DE,Bayern,München,W. Europe Standard Time,true,1,28,postal_boundary,1720
@@ -120,25 +120,25 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 81477,München,DE,Bayern,München,W. Europe Standard Time,true,1,70,postal_boundary,634
 81479,München,DE,Bayern,München,W. Europe Standard Time,true,1,42,postal_boundary,1346
 81539,München,DE,Bayern,München,W. Europe Standard Time,true,1,40,postal_boundary,1457
-81541,München,DE,Bayern,München,W. Europe Standard Time,true,1,45,postal_boundary,1251
+81541,München,DE,Bayern,München,W. Europe Standard Time,true,1,45,postal_boundary,1252
 81543,München,DE,Bayern,München,W. Europe Standard Time,true,1,44,postal_boundary,1258
 81545,München,DE,Bayern,München,W. Europe Standard Time,true,1,41,postal_boundary,1395
 81547,München,DE,Bayern,München,W. Europe Standard Time,true,1,34,postal_boundary,1563
-81549,München,DE,Bayern,München,W. Europe Standard Time,true,1,14,postal_boundary,2598
+81549,München,DE,Bayern,München,W. Europe Standard Time,true,1,14,postal_boundary,2599
 81667,München,DE,Bayern,München,W. Europe Standard Time,true,1,69,postal_boundary,638
 81669,München,DE,Bayern,München,W. Europe Standard Time,true,1,52,postal_boundary,1085
-81671,München,DE,Bayern,München,W. Europe Standard Time,true,1,46,postal_boundary,1232
-81673,München,DE,Bayern,München,W. Europe Standard Time,true,1,37,postal_boundary,1486
-81675,München,DE,Bayern,München,W. Europe Standard Time,true,1,73,postal_boundary,417
-81677,München,DE,Bayern,München,W. Europe Standard Time,true,1,51,postal_boundary,1100
-81679,München,DE,Bayern,München,W. Europe Standard Time,true,1,67,postal_boundary,705
+81671,München,DE,Bayern,München,W. Europe Standard Time,true,1,46,postal_boundary,1231
+81673,München,DE,Bayern,München,W. Europe Standard Time,true,1,37,postal_boundary,1487
+81675,München,DE,Bayern,München,W. Europe Standard Time,true,1,73,postal_boundary,418
+81677,München,DE,Bayern,München,W. Europe Standard Time,true,1,51,postal_boundary,1101
+81679,München,DE,Bayern,München,W. Europe Standard Time,true,1,67,postal_boundary,706
 81735,München,DE,Bayern,München,W. Europe Standard Time,true,1,54,postal_boundary,1069
 81737,München,DE,Bayern,München,W. Europe Standard Time,true,1,16,postal_boundary,2399
 81739,München,DE,Bayern,München,W. Europe Standard Time,true,1,6,postal_boundary,4076
-81825,München,DE,Bayern,München,W. Europe Standard Time,true,1,3,postal_boundary,5116
+81825,München,DE,Bayern,München,W. Europe Standard Time,true,1,3,postal_boundary,5119
 81827,München,DE,Bayern,München,W. Europe Standard Time,true,1,1,postal_boundary,5646
 81829,München,DE,Bayern,München,W. Europe Standard Time,true,1,12,postal_boundary,3237
-81925,München,DE,Bayern,München,W. Europe Standard Time,true,1,18,postal_boundary,2282
+81925,München,DE,Bayern,München,W. Europe Standard Time,true,1,18,postal_boundary,2283
 81927,München,DE,Bayern,München,W. Europe Standard Time,true,1,13,postal_boundary,2614
 81929,Daglfing,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,0
 81929,Daglfing,DE,Bayern,München,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -160,17 +160,17 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 82069,Schäftlarn,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,270
 82110,Germering,DE,Bayern,Landkreis Fürstenfeldbruck,W. Europe Standard Time,true,1,1,postal_boundary,7413
 82131,Gauting,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,5785
-82140,Olching,DE,Bayern,Landkreis Fürstenfeldbruck,W. Europe Standard Time,true,1,1,postal_boundary,6613
+82140,Olching,DE,Bayern,Landkreis Fürstenfeldbruck,W. Europe Standard Time,true,1,1,postal_boundary,6614
 82152,Planegg/Krailling,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,0
 82152,Planegg/Krailling,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,false,2,1,postal_boundary,0
-82166,Gräfelfing,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,2948
+82166,Gräfelfing,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,2950
 82178,Puchheim,DE,Bayern,Landkreis Fürstenfeldbruck,W. Europe Standard Time,true,1,1,postal_boundary,4839
 82194,Gröbenzell,DE,Bayern,Landkreis Fürstenfeldbruck,W. Europe Standard Time,true,1,1,postal_boundary,5598
 82205,Gilching,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,4796
 82211,Herrsching a. Ammersee,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,3
 82216,Maisach,DE,Bayern,Landkreis Fürstenfeldbruck,W. Europe Standard Time,true,1,1,postal_boundary,3570
 82223,Eichenau,DE,Bayern,Landkreis Fürstenfeldbruck,W. Europe Standard Time,true,1,1,postal_boundary,3572
-82229,Seefeld,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,2098
+82229,Seefeld,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,2108
 82234,Weßling,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,513
 82236,Übersee,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,2,address_fallback,3
 82237,Wörthsee,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,213
@@ -198,13 +198,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 82319,Starnberg,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,2825
 82327,Tutzing,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,1773
 82335,Berg,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,353
-82340,Feldafing,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,989
+82340,Feldafing,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,992
 82343,Pöcking,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,1355
 82346,Andechs,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,201
 82347,Bernried am Starnberger See,DE,Bayern,Landkreis Weilheim-Schongau,W. Europe Standard Time,true,1,1,postal_boundary,304
 82349,Pentenried,DE,Bayern,Landkreis Starnberg,W. Europe Standard Time,true,1,1,postal_boundary,1
 82362,Weilheim i. OB,DE,Bayern,Landkreis Weilheim-Schongau,W. Europe Standard Time,true,1,1,postal_boundary,2
-82377,Penzberg,DE,Bayern,Landkreis Weilheim-Schongau,W. Europe Standard Time,true,1,1,postal_boundary,4337
+82377,Penzberg,DE,Bayern,Landkreis Weilheim-Schongau,W. Europe Standard Time,true,1,1,postal_boundary,4338
 82380,Peißenberg,DE,Bayern,Landkreis Weilheim-Schongau,W. Europe Standard Time,true,1,1,postal_boundary,694
 82383,Hohenpeißenberg,DE,Bayern,Landkreis Weilheim-Schongau,W. Europe Standard Time,true,1,1,postal_boundary,1196
 82386,Huglfing,DE,Bayern,Landkreis Weilheim-Schongau,W. Europe Standard Time,true,1,1,postal_boundary,40
@@ -250,24 +250,24 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 82497,Unterammergau,DE,Bayern,Landkreis Garmisch-Partenkirchen,W. Europe Standard Time,true,1,1,postal_boundary,64
 82499,Wallgau,DE,Bayern,Landkreis Garmisch-Partenkirchen,W. Europe Standard Time,true,1,1,postal_boundary,334
 82515,Wolfratshausen,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,3782
-82538,Geretsried,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,3940
+82538,Geretsried,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,3941
 82541,Münsing,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,266
 82544,Egling,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,275
 82547,Eurasburg,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,296
 82549,Königsdorf,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,330
 83022,Rosenheim,DE,Bayern,Rosenheim,W. Europe Standard Time,true,1,3,postal_boundary,3048
 83024,Rosenheim,DE,Bayern,Rosenheim,W. Europe Standard Time,true,1,2,postal_boundary,3461
-83026,Rosenheim,DE,Bayern,Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,5570
+83026,Rosenheim,DE,Bayern,Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,5573
 83043,Bad Aibling,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,5156
-83052,Bruckmühl,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,4674
+83052,Bruckmühl,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,4677
 83059,Kolbermoor,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,4375
-83064,Raubling,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,3194
+83064,Raubling,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,3196
 83071,Stephanskirchen,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,2921
 83075,Bad Feilnbach,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,2038
 83080,Oberaudorf,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1262
-83083,Riedering,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,271
+83083,Riedering,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,310
 83088,Kiefersfelden,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1930
-83093,Bad Endorf,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1910
+83093,Bad Endorf,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1911
 83098,Brannenburg,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1771
 83101,Rohrdorf,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1133
 83104,Tuntenhausen,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1580
@@ -297,14 +297,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 83242,Reit im Winkl,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1053
 83246,Unterwössen,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1398
 83250,Marquartstein,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,934
-83253,Rimsting,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1184
+83253,Rimsting,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1186
 83254,Breitbrunn a. Chiemsee,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,12
 83256,Chiemsee,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,76
 83257,Gstadt a. Chiemsee,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,2
 83259,Schleching,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,864
 83276,Truchtlaching,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,address_fallback,3
 83278,Traunstein,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,5450
-83301,Traunreut,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,2265
+83301,Traunreut,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,2274
 83308,Trostberg,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,873
 83313,Siegsdorf,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,3046
 83317,Teisendorf,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,1473
@@ -313,7 +313,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 83334,Inzell,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1484
 83339,Chieming,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1467
 83342,Tacherting,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,411
-83346,Bergen,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1507
+83346,Bergen,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1509
 83349,Palling,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,592
 83352,Altenmarkt a.d. Alz,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,14
 83355,Grabenstätt,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1245
@@ -330,14 +330,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 83374,Traunreut,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,2,postal_boundary,11
 83376,Seeon-Seebruck,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,3,postal_boundary,0
 83377,Vachendorf,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,562
-83379,Wonneberg,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,327
+83379,Wonneberg,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,328
 83395,Freilassing,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,1976
-83404,Ainring,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,581
+83404,Ainring,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,582
 83410,Laufen,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,1868
 83413,Fridolfing,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,187
 83416,Saaldorf,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,1
 83417,Kirchanschöring,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,202
-83435,Bad Reichenhall,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,3313
+83435,Bad Reichenhall,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,3337
 83451,Piding,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,851
 83454,Anger,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,997
 83457,Bayerisch Gmain,DE,Bayern,Landkreis Berchtesgadener Land,W. Europe Standard Time,true,1,1,postal_boundary,511
@@ -370,15 +370,15 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 83569,Vogtareuth,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,951
 83607,Holzkirchen,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,4208
 83620,Feldkirchen-Westerham,DE,Bayern,Landkreis Rosenheim,W. Europe Standard Time,true,1,1,postal_boundary,1403
-83623,Dietramszell,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,579
+83623,Dietramszell,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,578
 83624,Otterfing,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,1340
 83626,Valley,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,676
 83627,Warngau,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,928
 83629,Weyarn,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,546
-83646,Bad Tölz,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,2081
+83646,Bad Tölz,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,2084
 83646,Wackersberg,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,false,2,1,postal_boundary,304
 83661,Lenggries,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,2173
-83666,Waakirchen,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,647
+83666,Waakirchen,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,648
 83670,Bad Heilbrunn,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,1013
 83671,Benediktbeuern,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,293
 83673,Bichl,DE,Bayern,Landkreis Bad Tölz-Wolfratshausen,W. Europe Standard Time,true,1,1,postal_boundary,649
@@ -389,7 +389,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 83684,Tegernsee,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,1042
 83700,Rottach-Egern,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,2068
 83703,Gmund a. Tegernsee,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,0
-83707,Bad Wiessee,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,1292
+83707,Bad Wiessee,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,1293
 83708,Kreuth,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,599
 83714,Miesbach,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,2427
 83727,Schliersee,DE,Bayern,Landkreis Miesbach,W. Europe Standard Time,true,1,1,postal_boundary,1321
@@ -409,7 +409,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 84056,Rottenburg a.d. Laaber,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,70
 84061,Ergoldsbach,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,167
 84066,Mallersdorf-Pfaffenberg,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,185
-84069,Schierling,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,248
+84069,Schierling,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,250
 84072,Au in der Hallertau,DE,Bayern,Landkreis Freising,W. Europe Standard Time,true,1,1,postal_boundary,153
 84076,Pfeffenhausen,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,67
 84079,Bruckberg,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,1914
@@ -431,7 +431,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 84107,Weihmichl,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,152
 84109,Wörth a.d. Isar,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,0
 84130,Dingolfing,DE,Bayern,Landkreis Dingolfing-Landau,W. Europe Standard Time,true,1,1,postal_boundary,2323
-84137,Vilsbiburg,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,3511
+84137,Vilsbiburg,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,3510
 84140,Gangkofen,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,896
 84144,Geisenhausen,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,2443
 84149,Velden,DE,Bayern,Landkreis Landshut,W. Europe Standard Time,true,1,1,postal_boundary,1981
@@ -467,7 +467,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 84339,Unterdietfurt,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,296
 84347,Pfarrkirchen,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,300
 84359,Simbach a. Inn,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,0
-84364,Bad Birnbach,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,87
+84364,Bad Birnbach,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,89
 84367,Tann,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,148
 84371,Triftern,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,54
 84375,Kirchdorf a. Inn,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,1
@@ -493,14 +493,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 84478,Waldkraiburg,DE,Bayern,Landkreis Mühldorf am Inn,W. Europe Standard Time,true,1,1,postal_boundary,4040
 84489,Burghausen,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,3251
 84494,Neumarkt-Sankt Veit,DE,Bayern,Landkreis Mühldorf am Inn,W. Europe Standard Time,true,1,1,postal_boundary,1105
-84503,Altötting,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,1968
+84503,Altötting,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,1975
 84508,Burgkirchen an der Alz,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,2465
 84513,Töging a. Inn,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,57
 84518,Garching a.d. Alz,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,0
 84524,Neuötting,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,1464
 84529,Tittmoning,DE,Bayern,Landkreis Traunstein,W. Europe Standard Time,true,1,1,postal_boundary,1134
 84533,Marktl,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,691
-84539,Ampfing,DE,Bayern,Landkreis Mühldorf am Inn,W. Europe Standard Time,true,1,1,postal_boundary,1726
+84539,Ampfing,DE,Bayern,Landkreis Mühldorf am Inn,W. Europe Standard Time,true,1,1,postal_boundary,1727
 84543,Winhöring,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,859
 84544,Aschau a. Inn,DE,Bayern,Landkreis Mühldorf am Inn,W. Europe Standard Time,true,1,1,postal_boundary,38
 84546,Egglkofen,DE,Bayern,Landkreis Mühldorf am Inn,W. Europe Standard Time,true,1,1,postal_boundary,441
@@ -527,11 +527,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 84577,Tüßling,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,306
 84579,Unterneukirchen,DE,Bayern,Landkreis Altötting,W. Europe Standard Time,true,1,1,postal_boundary,55
 85049,Ingolstadt,DE,Bayern,Ingolstadt,W. Europe Standard Time,true,1,2,postal_boundary,6720
-85051,Ingolstadt,DE,Bayern,Ingolstadt,W. Europe Standard Time,true,1,1,postal_boundary,8540
+85051,Ingolstadt,DE,Bayern,Ingolstadt,W. Europe Standard Time,true,1,1,postal_boundary,8538
 85053,Ingolstadt,DE,Bayern,Ingolstadt,W. Europe Standard Time,true,1,4,postal_boundary,3538
 85055,Ingolstadt,DE,Bayern,Ingolstadt,W. Europe Standard Time,true,1,3,postal_boundary,6223
 85057,Ingolstadt,DE,Bayern,Ingolstadt,W. Europe Standard Time,true,1,5,postal_boundary,2158
-85072,Eichstätt,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,3072
+85072,Eichstätt,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,3073
 85077,Manching,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,3140
 85080,Gaimersheim,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,3832
 85084,Reichertshofen,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,1263
@@ -562,7 +562,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 85135,Titting,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,715
 85137,Walting,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,744
 85139,Wettstetten,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,1546
-85221,Dachau,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,4326
+85221,Dachau,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,4331
 85229,Markt Indersdorf,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,2717
 85232,Bergkirchen,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1073
 85235,Odelzhausen,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1403
@@ -570,13 +570,13 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 85241,Hebertshausen,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1580
 85244,Röhrmoos,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,598
 85247,Schwabhausen,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1571
-85250,Altomünster,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,2747
+85250,Altomünster,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,2750
 85253,Erdweg,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1911
 85254,Sulzemoos,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,380
 85256,Vierkirchen,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,753
 85258,Weichs,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,774
 85259,Sulzemoos,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,2,postal_boundary,324
-85276,Pfaffenhofen a.d. Ilm,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,3399
+85276,Pfaffenhofen a.d. Ilm,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,3401
 85283,Wolnzach,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,2324
 85290,Geisenfeld,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,1476
 85293,Reichertshausen,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,566
@@ -585,7 +585,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 85301,Schweitenkirchen,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,204
 85302,Gerolsbach,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,584
 85304,Ilmmünster,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,654
-85305,Jetzendorf,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,974
+85305,Jetzendorf,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,986
 85307,Paunzhausen,DE,Bayern,Landkreis Freising,W. Europe Standard Time,true,1,1,postal_boundary,70
 85309,Pörnbach,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,334
 85354,Freising,DE,Bayern,Landkreis Freising,W. Europe Standard Time,true,1,1,postal_boundary,5673
@@ -623,7 +623,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 85467,Neuching,DE,Bayern,Landkreis Erding,W. Europe Standard Time,true,1,1,postal_boundary,70
 85469,Walpertskirchen,DE,Bayern,Landkreis Erding,W. Europe Standard Time,true,1,1,postal_boundary,331
 85521,Ottobrunn/Riemerling,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,0
-85540,Haar,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,3344
+85540,Haar,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,3346
 85551,Kirchheim b. München,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,0
 85560,Ebersberg,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,3268
 85567,Grafing b. München,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,102
@@ -631,10 +631,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 85579,Neubiberg,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,3251
 85586,Poing,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,3304
 85591,Vaterstetten,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,3162
-85598,Baldham,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,3
+85598,Baldham,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,5
 85599,Parsdorf/Hergolding,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,0
 85604,Zorneding,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,2647
-85609,Aschheim,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,2394
+85609,Aschheim,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,2400
 85614,Kirchseeon,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,2366
 85617,Aßling,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,208
 85622,Feldkirchen,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,1481
@@ -647,7 +647,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 85646,Anzing,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,1221
 85649,Brunnthal,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,1016
 85652,Pliening,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,226
-85653,Aying,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,1476
+85653,Aying,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,1475
 85656,Buch a. Buchrain,DE,Bayern,Landkreis Erding,W. Europe Standard Time,true,1,1,postal_boundary,20
 85658,Egmating,DE,Bayern,Landkreis Ebersberg,W. Europe Standard Time,true,1,1,postal_boundary,664
 85659,Forstern,DE,Bayern,Landkreis Erding,W. Europe Standard Time,true,1,1,postal_boundary,258
@@ -665,16 +665,16 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 85774,Unterföhring,DE,Bayern,Landkreis München,W. Europe Standard Time,true,1,1,postal_boundary,1597
 85777,Fahrenzhausen,DE,Bayern,Landkreis Freising,W. Europe Standard Time,true,1,1,postal_boundary,1602
 85778,Haimhausen,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1752
-86150,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,7,postal_boundary,2865
+86150,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,7,postal_boundary,2866
 86152,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,13,postal_boundary,1954
 86153,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,14,postal_boundary,1606
 86154,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,10,postal_boundary,2357
 86156,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,3,postal_boundary,5154
 86157,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,6,postal_boundary,3392
-86159,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,11,postal_boundary,2352
+86159,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,11,postal_boundary,2354
 86161,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,12,postal_boundary,2276
 86163,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,4,postal_boundary,3805
-86165,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,8,postal_boundary,2481
+86165,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,8,postal_boundary,2482
 86167,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,9,postal_boundary,2424
 86169,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,5,postal_boundary,3662
 86179,Augsburg,DE,Bayern,Augsburg,W. Europe Standard Time,true,1,2,postal_boundary,5368
@@ -686,16 +686,16 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 86368,Gersthofen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,2804
 86381,Krumbach,DE,Bayern,Landkreis Günzburg,W. Europe Standard Time,true,1,1,postal_boundary,2
 86391,Stadtbergen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,4052
-86399,Bobingen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,4928
+86399,Bobingen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,4929
 86405,Meitingen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,2865
-86415,Mering,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,3917
+86415,Mering,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,3920
 86420,Diedorf,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,3352
 86424,Dinkelscherben,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,807
 86438,Kissing,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,3707
 86441,Zusmarshausen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,557
 86444,Affing,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,1353
 86447,Aindling,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,723
-86450,Altenmünster,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,490
+86450,Altenmünster,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,491
 86453,Dasing,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,1704
 86456,Gablingen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,738
 86459,Gessertshausen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,1010
@@ -732,7 +732,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 86517,Wehringen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,1071
 86519,Wiesenbach,DE,Bayern,Landkreis Günzburg,W. Europe Standard Time,true,1,1,postal_boundary,364
 86529,Schrobenhausen,DE,Bayern,Landkreis Neuburg-Schrobenhausen,W. Europe Standard Time,true,1,1,postal_boundary,2378
-86551,Aichach,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,6623
+86551,Aichach,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,6622
 86554,Pöttmes,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,1902
 86556,Kühbach,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,1456
 86558,Hohenwart,DE,Bayern,Landkreis Pfaffenhofen an der Ilm,W. Europe Standard Time,true,1,1,postal_boundary,629
@@ -741,7 +741,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 86562,Berg im Gau,DE,Bayern,Landkreis Neuburg-Schrobenhausen,W. Europe Standard Time,true,1,1,postal_boundary,25
 86564,Brunnen,DE,Bayern,Landkreis Neuburg-Schrobenhausen,W. Europe Standard Time,true,1,1,postal_boundary,235
 86565,Gachenbach,DE,Bayern,Landkreis Neuburg-Schrobenhausen,W. Europe Standard Time,true,1,1,postal_boundary,618
-86567,Hilgertshausen-Tandern,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1065
+86567,Hilgertshausen-Tandern,DE,Bayern,Landkreis Dachau,W. Europe Standard Time,true,1,1,postal_boundary,1074
 86568,Hollenbach,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,798
 86570,Inchenhofen,DE,Bayern,Landkreis Aichach-Friedberg,W. Europe Standard Time,true,1,1,postal_boundary,794
 86571,Langenmosen,DE,Bayern,Landkreis Neuburg-Schrobenhausen,W. Europe Standard Time,true,1,1,postal_boundary,128
@@ -759,7 +759,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 86650,Wemding,DE,Bayern,Landkreis Donau-Ries,W. Europe Standard Time,true,1,1,postal_boundary,1933
 86653,Monheim,DE,Bayern,Landkreis Donau-Ries,W. Europe Standard Time,true,1,1,postal_boundary,679
 86655,Harburg,DE,Bayern,Landkreis Donau-Ries,W. Europe Standard Time,true,1,1,postal_boundary,3
-86657,Bissingen,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,272
+86657,Bissingen,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,359
 86660,Tapfheim,DE,Bayern,Landkreis Donau-Ries,W. Europe Standard Time,true,1,1,postal_boundary,1080
 86663,Asbach-Bäumenheim,DE,Bayern,Landkreis Donau-Ries,W. Europe Standard Time,true,1,1,postal_boundary,800
 86666,Burgheim,DE,Bayern,Landkreis Neuburg-Schrobenhausen,W. Europe Standard Time,true,1,1,postal_boundary,349
@@ -813,12 +813,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 86757,Wallerstein,DE,Bayern,Landkreis Donau-Ries,W. Europe Standard Time,true,1,1,postal_boundary,1006
 86759,Wechingen,DE,Bayern,Landkreis Donau-Ries,W. Europe Standard Time,true,1,1,postal_boundary,191
 86807,Buchloe,DE,Bayern,Landkreis Ostallgäu,W. Europe Standard Time,true,1,1,postal_boundary,3851
-86825,Bad Wörishofen,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,4351
+86825,Bad Wörishofen,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,4352
 86830,Schwabmünchen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,4171
 86833,Ettringen,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,331
 86836,Untermeitingen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,1567
 86842,Türkheim,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,2327
-86845,Großaitingen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,1486
+86845,Großaitingen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,1488
 86850,Fischach,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,709
 86853,Langerringen,DE,Bayern,Landkreis Augsburg,W. Europe Standard Time,true,1,1,postal_boundary,998
 86854,Amberg,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,540
@@ -847,7 +847,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 86923,Finning,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,652
 86925,Fuchstal,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,1406
 86926,Greifenberg,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,714
-86928,Hofstetten,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,197
+86928,Hofstetten,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,198
 86929,Penzing,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,791
 86931,Prittriching,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,393
 86932,Pürgen,DE,Bayern,Landkreis Landsberg am Lech,W. Europe Standard Time,true,1,1,postal_boundary,920
@@ -907,10 +907,10 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 87545,Burgberg im Allgäu,DE,Bayern,Landkreis Oberallgäu,W. Europe Standard Time,true,1,1,postal_boundary,8
 87547,Missen-Wilhams,DE,Bayern,Landkreis Oberallgäu,W. Europe Standard Time,true,1,1,postal_boundary,446
 87549,Rettenberg,DE,Bayern,Landkreis Oberallgäu,W. Europe Standard Time,true,1,1,postal_boundary,1300
-87561,Oberstdorf,DE,Bayern,Landkreis Oberallgäu,W. Europe Standard Time,true,1,1,postal_boundary,2321
+87561,Oberstdorf,DE,Bayern,Landkreis Oberallgäu,W. Europe Standard Time,true,1,1,postal_boundary,2322
 87600,Kaufbeuren,DE,Bayern,Kaufbeuren,W. Europe Standard Time,true,1,1,postal_boundary,10642
 87616,Marktoberdorf,DE,Bayern,Landkreis Ostallgäu,W. Europe Standard Time,true,1,1,postal_boundary,5516
-87629,Füssen,DE,Bayern,Landkreis Ostallgäu,W. Europe Standard Time,true,1,1,postal_boundary,4318
+87629,Füssen,DE,Bayern,Landkreis Ostallgäu,W. Europe Standard Time,true,1,1,postal_boundary,4317
 87634,Obergünzburg,DE,Bayern,Landkreis Ostallgäu,W. Europe Standard Time,true,1,1,postal_boundary,2148
 87637,Seeg,DE,Bayern,Landkreis Ostallgäu,W. Europe Standard Time,true,1,1,postal_boundary,887
 87640,Biessenhofen,DE,Bayern,Landkreis Ostallgäu,W. Europe Standard Time,true,1,1,postal_boundary,1472
@@ -964,7 +964,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 87760,Lachen,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,210
 87761,Lauben,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,261
 87763,Lautrach,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,385
-87764,Legau,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,928
+87764,Legau,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,927
 87766,Memmingerberg,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,221
 87767,Niederrieden,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,11
 87769,Oberrieden,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,520
@@ -976,19 +976,19 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 87778,Stetten,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,20
 87779,Trunkelsberg,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,25
 87781,Ungerhausen,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,413
-87782,Unteregg,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,580
+87782,Unteregg,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,587
 87784,Westerheim,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,696
 87785,Winterrieden,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,15
 87787,Wolfertschwenden,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,524
 87789,Woringen,DE,Bayern,Landkreis Unterallgäu,W. Europe Standard Time,true,1,1,postal_boundary,294
 88131,Bodolz,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,false,2,1,postal_boundary,786
-88131,Lindau (Bodensee),DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,6119
+88131,Lindau (Bodensee),DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,6121
 88138,Sigmarszell,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,891
 88142,Wasserburg,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,0
 88145,Hergatz,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,792
 88145,Opfenbach,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,false,2,1,postal_boundary,523
 88149,Nonnenhorn,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,615
-88161,Lindenberg im Allgäu,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,2418
+88161,Lindenberg im Allgäu,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,2422
 88167,Röthenbach,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,0
 88171,Weiler-Simmerberg,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,1685
 88175,Scheidegg,DE,Bayern,Landkreis Lindau,W. Europe Standard Time,true,1,1,postal_boundary,1332
@@ -1035,7 +1035,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 89367,Waldstetten,DE,Bayern,Landkreis Günzburg,W. Europe Standard Time,true,1,1,postal_boundary,42
 89368,Winterbach,DE,Bayern,Landkreis Günzburg,W. Europe Standard Time,true,1,1,postal_boundary,152
 89407,Dillingen a.d. Donau,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,10
-89415,Lauingen,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,0
+89415,Lauingen,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,9
 89420,Höchstädt a.d. Donau,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,0
 89423,Gundelfingen a.d. Donau,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,0
 89426,Wittislingen,DE,Bayern,Landkreis Dillingen an der Donau,W. Europe Standard Time,true,1,1,postal_boundary,30
@@ -1054,12 +1054,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 90402,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,24,postal_boundary,1779
 90403,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,22,postal_boundary,1850
 90408,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,27,postal_boundary,1498
-90409,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,23,postal_boundary,1795
+90409,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,23,postal_boundary,1796
 90411,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,5,postal_boundary,4299
-90419,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,16,postal_boundary,2288
+90419,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,16,postal_boundary,2289
 90425,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,9,postal_boundary,3669
 90427,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,2,postal_boundary,5024
-90429,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,17,postal_boundary,2186
+90429,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,17,postal_boundary,2185
 90431,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,10,postal_boundary,3567
 90439,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,26,postal_boundary,1712
 90441,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,14,postal_boundary,2350
@@ -1071,7 +1071,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 90459,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,18,postal_boundary,2100
 90461,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,12,postal_boundary,2386
 90469,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,15,postal_boundary,2331
-90471,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,13,postal_boundary,2353
+90471,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,13,postal_boundary,2354
 90473,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,21,postal_boundary,1888
 90475,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,3,postal_boundary,4414
 90478,Nürnberg,DE,Bayern,Nürnberg,W. Europe Standard Time,true,1,28,postal_boundary,1455
@@ -1087,12 +1087,12 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 90537,Feuchter Forst,DE,Bayern,Landkreis Roth,W. Europe Standard Time,false,2,1,postal_boundary,0
 90537,Nürnberg-Feucht,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,false,3,1,postal_boundary,0
 90537,Nürnberg-Feucht,DE,Bayern,Landkreis Roth,W. Europe Standard Time,false,4,1,postal_boundary,0
-90542,Eckental,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,2715
+90542,Eckental,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,2716
 90547,Stein,DE,Bayern,Landkreis Fürth,W. Europe Standard Time,true,1,1,postal_boundary,2241
 90552,Röthenbach an der Pegnitz,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,43
 90556,Cadolzburg,DE,Bayern,Landkreis Fürth,W. Europe Standard Time,true,1,1,postal_boundary,3267
 90559,Burgthann,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,867
-90562,Heroldsberg,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,1322
+90562,Heroldsberg,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,1320
 90571,Behringersdorfer Forst,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,false,2,1,postal_boundary,0
 90571,Schwaig b. Nürnberg,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,4
 90574,Roßtal,DE,Bayern,Landkreis Fürth,W. Europe Standard Time,true,1,1,postal_boundary,2575
@@ -1115,14 +1115,14 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 90765,Fürth,DE,Bayern,Fürth,W. Europe Standard Time,true,1,2,postal_boundary,6050
 90766,Fürth,DE,Bayern,Fürth,W. Europe Standard Time,true,1,3,postal_boundary,4922
 90768,Fürth,DE,Bayern,Fürth,W. Europe Standard Time,true,1,1,postal_boundary,6381
-91052,Erlangen,DE,Bayern,Erlangen,W. Europe Standard Time,true,1,3,postal_boundary,4830
-91054,Erlangen,DE,Bayern,Erlangen,W. Europe Standard Time,true,1,4,postal_boundary,4232
-91056,Erlangen,DE,Bayern,Erlangen,W. Europe Standard Time,true,1,1,postal_boundary,8889
+91052,Erlangen,DE,Bayern,Erlangen,W. Europe Standard Time,true,1,3,postal_boundary,4831
+91054,Erlangen,DE,Bayern,Erlangen,W. Europe Standard Time,true,1,4,postal_boundary,4235
+91056,Erlangen,DE,Bayern,Erlangen,W. Europe Standard Time,true,1,1,postal_boundary,8895
 91058,Erlangen,DE,Bayern,Erlangen,W. Europe Standard Time,true,1,2,postal_boundary,6283
-91074,Herzogenaurach,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,6836
+91074,Herzogenaurach,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,6837
 91077,Neunkirchen a. Brand,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,28
 91080,Marloffstein,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,false,2,1,postal_boundary,603
-91080,Uttenreuth,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,1556
+91080,Uttenreuth,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,1567
 91083,Baiersdorf,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,2335
 91085,Weisendorf,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,877
 91086,Aurachtal,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,514
@@ -1134,20 +1134,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 91096,Möhrendorf/Mark,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,0
 91097,Oberreichenbach,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,470
 91099,Poxdorf,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,462
-91126,Schwabach,DE,Bayern,Schwabach,W. Europe Standard Time,true,1,1,postal_boundary,10800
-91154,Roth,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,3436
-91161,Hilpoltstein,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,3885
+91126,Schwabach,DE,Bayern,Schwabach,W. Europe Standard Time,true,1,1,postal_boundary,10802
+91154,Roth,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,3449
+91161,Hilpoltstein,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,3888
 91166,Georgensgmünd,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,865
 91171,Greding,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,602
-91174,Spalt,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,997
+91174,Spalt,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,996
 91177,Thalmässing,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,1556
 91180,Heideck,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,324
 91183,Abenberg,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,922
 91186,Büchenbach,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,1367
 91187,Röttenbach bei Schwabach,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,0
 91189,Rohr,DE,Bayern,Landkreis Roth,W. Europe Standard Time,true,1,1,postal_boundary,609
-91207,Lauf an der Pegnitz,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,6670
-91217,Hersbruck,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,3807
+91207,Lauf an der Pegnitz,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,6669
+91217,Hersbruck,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,3821
 91220,Schnaittach,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,2646
 91224,Pommelsbrunn,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,789
 91227,Leinburg,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,720
@@ -1169,29 +1169,29 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 91281,Kirchenthumbach,DE,Bayern,Landkreis Neustadt an der Waldnaab,W. Europe Standard Time,true,1,1,postal_boundary,140
 91282,Betzenstein,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,867
 91284,Neuhaus a.d.Pegnitz,DE,Bayern,Landkreis Nürnberger Land,W. Europe Standard Time,true,1,1,postal_boundary,852
-91286,Obertrubach,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,235
+91286,Obertrubach,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,265
 91287,Plech,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,239
 91289,Schnabelwaid,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,318
 91301,Forchheim,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,8392
 91315,Höchstadt a.d.Aisch,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,333
-91320,Ebermannstadt,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,1897
+91320,Ebermannstadt,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,1869
 91322,Gräfenberg,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,412
 91325,Adelsdorf,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,2259
 91327,Gößweinstein,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,538
 91330,Eggolsheim,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,1958
-91332,Heiligenstadt i. OFr.,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,1183
+91332,Heiligenstadt i. OFr.,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,1185
 91334,Hemhofen,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,1525
 91336,Heroldsbach,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,1313
 91338,Igensdorf,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,790
 91341,Röttenbach bei Erlangen,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,0
-91344,Waischenfeld,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,725
-91346,Wiesenttal,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,433
+91344,Waischenfeld,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,724
+91346,Wiesenttal,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,434
 91347,Aufseß,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,110
 91349,Egloffstein,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,640
 91350,Gremsdorf,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,51
 91352,Hallerndorf,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,431
 91353,Hausen,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,1179
-91355,Hiltpoltstein,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,389
+91355,Hiltpoltstein,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,387
 91356,Kirchehrenbach,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,756
 91358,Kunreuth,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,459
 91359,Leutenbach,DE,Bayern,Landkreis Forchheim,W. Europe Standard Time,true,1,1,postal_boundary,386
@@ -1229,9 +1229,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 91487,Vestenbergsgreuth,DE,Bayern,Landkreis Erlangen-Höchstadt,W. Europe Standard Time,true,1,1,postal_boundary,308
 91489,Wilhelmsdorf,DE,Bayern,Landkreis Neustadt an der Aisch-Bad Windsheim,W. Europe Standard Time,true,1,1,postal_boundary,23
 91522,Ansbach,DE,Bayern,Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,7312
-91541,Rothenburg ob der Tauber,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,2639
-91550,Dinkelsbühl,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,3980
-91555,Feuchtwangen,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,2652
+91541,Rothenburg ob der Tauber,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,2640
+91550,Dinkelsbühl,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,3981
+91555,Feuchtwangen,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,2653
 91560,Heilsbronn,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,2884
 91564,Neuendettelsau,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,1622
 91567,Herrieden,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,721
@@ -1276,11 +1276,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 91635,Windelsbach,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,35
 91637,Wörnitz,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,193
 91639,Wolframs-Eschenbach,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,972
-91710,Gunzenhausen,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,5073
+91710,Gunzenhausen,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,5072
 91717,Wassertrüdingen,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,1593
 91719,Heidenheim,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,28
 91720,Absberg,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,83
-91722,Arberg,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,469
+91722,Arberg,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,470
 91723,Dittenheim,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,148
 91725,Ehingen,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,496
 91726,Gerolfingen,DE,Bayern,Landkreis Ansbach,W. Europe Standard Time,true,1,1,postal_boundary,373
@@ -1311,7 +1311,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 91798,Höttingen,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,1
 91799,Langenaltheim,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,46
 91801,Markt Berolzheim,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,13
-91802,Meinheim,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,204
+91802,Meinheim,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,205
 91804,Mörnsheim,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,576
 91805,Polsingen,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,3
 91807,Solnhofen,DE,Bayern,Landkreis Weißenburg-Gunzenhausen,W. Europe Standard Time,true,1,1,postal_boundary,42
@@ -1347,7 +1347,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 92318,Neumarkt i.d. OPf.,DE,Bayern,Landkreis Neumarkt in der Oberpfalz,W. Europe Standard Time,true,1,1,postal_boundary,0
 92331,Parsberg,DE,Bayern,Landkreis Neumarkt in der Oberpfalz,W. Europe Standard Time,true,1,1,postal_boundary,284
 92334,Berching,DE,Bayern,Landkreis Neumarkt in der Oberpfalz,W. Europe Standard Time,true,1,1,postal_boundary,322
-92339,Beilngries,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,298
+92339,Beilngries,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,300
 92342,Freystadt,DE,Bayern,Landkreis Neumarkt in der Oberpfalz,W. Europe Standard Time,true,1,1,postal_boundary,2971
 92345,Dietfurt a.d. Altmühl,DE,Bayern,Landkreis Eichstätt,W. Europe Standard Time,true,1,1,postal_boundary,0
 92345,Dietfurt a.d. Altmühl,DE,Bayern,Landkreis Neumarkt in der Oberpfalz,W. Europe Standard Time,false,2,1,postal_boundary,0
@@ -1376,7 +1376,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 92526,Oberviechtach,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,1765
 92533,Wernberg-Köblitz,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,594
 92536,Pfreimd,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,1502
-92539,Schönsee,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,1043
+92539,Schönsee,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,1040
 92540,Altendorf,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,28
 92542,Dieterskirchen,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,356
 92543,Guteneck,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,114
@@ -1429,7 +1429,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 92729,Weiherhammer,DE,Bayern,Landkreis Neustadt an der Waldnaab,W. Europe Standard Time,true,1,1,postal_boundary,228
 93047,Regensburg,DE,Bayern,Regensburg,W. Europe Standard Time,true,1,7,postal_boundary,2574
 93049,Regensburg,DE,Bayern,Regensburg,W. Europe Standard Time,true,1,2,postal_boundary,4334
-93051,Regensburg,DE,Bayern,Regensburg,W. Europe Standard Time,true,1,3,postal_boundary,3988
+93051,Regensburg,DE,Bayern,Regensburg,W. Europe Standard Time,true,1,3,postal_boundary,3989
 93053,Regensburg,DE,Bayern,Regensburg,W. Europe Standard Time,true,1,4,postal_boundary,3783
 93055,Regensburg,DE,Bayern,Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,5715
 93057,Regensburg,DE,Bayern,Regensburg,W. Europe Standard Time,true,1,6,postal_boundary,3521
@@ -1449,7 +1449,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 93098,Mintraching,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,202
 93099,Mötzing,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,220
 93101,Pfakofen,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,1
-93102,Pfatter,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,1308
+93102,Pfatter,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,1309
 93104,Sünching,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,483
 93105,Tegernheim,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,1302
 93107,Thalmassing,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,733
@@ -1457,7 +1457,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 93128,Regenstauf,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,658
 93133,Burglengenfeld,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,3047
 93138,Lappersdorf,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,3771
-93142,Maxhütte-Haidhof,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,694
+93142,Maxhütte-Haidhof,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,703
 93149,Nittenau,DE,Bayern,Landkreis Schwandorf,W. Europe Standard Time,true,1,1,postal_boundary,1980
 93152,Nittendorf,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,396
 93155,Hemau,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,644
@@ -1482,7 +1482,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 93192,Wald,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,76
 93194,Walderbach,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,167
 93195,Wolfsegg,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,68
-93197,Zeitlarn,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,1082
+93197,Zeitlarn,DE,Bayern,Landkreis Regensburg,W. Europe Standard Time,true,1,1,postal_boundary,1083
 93199,Zell,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,115
 93309,Kelheim,DE,Bayern,Landkreis Kelheim,W. Europe Standard Time,true,1,1,postal_boundary,2781
 93326,Abensberg,DE,Bayern,Landkreis Kelheim,W. Europe Standard Time,true,1,1,postal_boundary,2322
@@ -1501,7 +1501,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 93356,Teugn,DE,Bayern,Landkreis Kelheim,W. Europe Standard Time,true,1,1,postal_boundary,17
 93358,Train,DE,Bayern,Landkreis Kelheim,W. Europe Standard Time,true,1,1,postal_boundary,36
 93359,Wildenberg,DE,Bayern,Landkreis Kelheim,W. Europe Standard Time,true,1,1,postal_boundary,11
-93413,Cham,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,3976
+93413,Cham,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,3977
 93426,Roding,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,2695
 93437,Furth i. Wald,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,0
 93444,Kötzting,DE,Bayern,Landkreis Cham,W. Europe Standard Time,true,1,1,postal_boundary,0
@@ -1581,9 +1581,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 94169,Thurmansbang,DE,Bayern,Landkreis Freyung-Grafenau,W. Europe Standard Time,true,1,1,postal_boundary,209
 94209,Regen,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,2656
 94227,Zwiesel,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,1295
-94234,Viechtach,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,801
+94234,Viechtach,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,800
 94239,Zachenberg,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,132
-94244,Teisnach,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,149
+94244,Teisnach,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,150
 94249,Bodenmais,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,905
 94250,Achslach,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,15
 94252,Bayerisch Eisenstein,DE,Bayern,Landkreis Regen,W. Europe Standard Time,true,1,1,postal_boundary,220
@@ -1606,7 +1606,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 94336,Hunderdorf,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,255
 94339,Leiblfing,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,634
 94342,Straßkirchen,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,43
-94344,Wiesenfelden,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,436
+94344,Wiesenfelden,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,444
 94345,Aholfing,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,657
 94347,Ascha,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,238
 94348,Atting,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,608
@@ -1638,11 +1638,11 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 94436,Simbach,DE,Bayern,Landkreis Dingolfing-Landau,W. Europe Standard Time,true,1,1,postal_boundary,871
 94437,Mamming,DE,Bayern,Landkreis Dingolfing-Landau,W. Europe Standard Time,true,1,1,postal_boundary,142
 94439,Roßbach,DE,Bayern,Landkreis Rottal-Inn,W. Europe Standard Time,true,1,1,postal_boundary,41
-94447,Plattling,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,1766
-94469,Deggendorf,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,6308
+94447,Plattling,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,1779
+94469,Deggendorf,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,6391
 94474,Vilshofen an der Donau,DE,Bayern,Landkreis Passau,W. Europe Standard Time,true,1,1,postal_boundary,2106
 94481,Grafenau,DE,Bayern,Landkreis Freyung-Grafenau,W. Europe Standard Time,true,1,1,postal_boundary,1098
-94486,Osterhofen,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,1795
+94486,Osterhofen,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,1821
 94491,Hengersberg,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,671
 94496,Ortenburg,DE,Bayern,Landkreis Passau,W. Europe Standard Time,true,1,1,postal_boundary,708
 94501,Aldersbach,DE,Bayern,Landkreis Passau,W. Europe Standard Time,true,1,1,postal_boundary,279
@@ -1671,7 +1671,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 94551,Lalling,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,245
 94553,Mariaposching,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,349
 94554,Moos,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,79
-94556,Neuschönau,DE,Bayern,Landkreis Freyung-Grafenau,W. Europe Standard Time,true,1,1,postal_boundary,403
+94556,Neuschönau,DE,Bayern,Landkreis Freyung-Grafenau,W. Europe Standard Time,true,1,1,postal_boundary,405
 94557,Niederalteich,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,411
 94559,Niederwinkling,DE,Bayern,Landkreis Straubing-Bogen,W. Europe Standard Time,true,1,1,postal_boundary,334
 94560,Offenberg,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,1184
@@ -1686,7 +1686,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 94575,Windorf,DE,Bayern,Landkreis Passau,W. Europe Standard Time,true,1,1,postal_boundary,625
 94577,Winzer,DE,Bayern,Landkreis Deggendorf,W. Europe Standard Time,true,1,1,postal_boundary,517
 94579,Zenting,DE,Bayern,Landkreis Freyung-Grafenau,W. Europe Standard Time,true,1,1,postal_boundary,91
-95028,Hof,DE,Bayern,Hof,W. Europe Standard Time,true,1,1,postal_boundary,3993
+95028,Hof,DE,Bayern,Hof,W. Europe Standard Time,true,1,1,postal_boundary,3992
 95030,Hof,DE,Bayern,Hof,W. Europe Standard Time,true,1,3,postal_boundary,2930
 95032,Hof,DE,Bayern,Hof,W. Europe Standard Time,true,1,2,postal_boundary,3201
 95100,Selb,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,2631
@@ -1714,9 +1714,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 95192,Lichtenberg,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,164
 95194,Regnitzlosau,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,729
 95195,Röslau,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,320
-95197,Schauenstein,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,352
+95197,Schauenstein,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,354
 95199,Thierstein,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,485
-95213,Münchberg,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,1309
+95213,Münchberg,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,1319
 95233,Helmbrechts,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,3469
 95234,Sparneck,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,591
 95236,Stammbach,DE,Bayern,Landkreis Hof,W. Europe Standard Time,true,1,1,postal_boundary,200
@@ -1751,7 +1751,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 95478,Kemnath,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,1995
 95482,Gefrees,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,266
 95485,Warmensteinach,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,858
-95488,Eckersdorf,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,1742
+95488,Eckersdorf,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,1745
 95490,Mistelgau,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,1407
 95491,Ahorntal,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,749
 95493,Bischofsgrün,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,710
@@ -1764,7 +1764,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 95503,Hummeltal,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,805
 95505,Immenreuth,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,446
 95506,Kastl,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,519
-95508,Kulmain,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,815
+95508,Kulmain,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,816
 95509,Marktschorgast,DE,Bayern,Landkreis Kulmbach,W. Europe Standard Time,true,1,1,postal_boundary,556
 95511,Mistelbach,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,232
 95512,Neudrossenfeld,DE,Bayern,Landkreis Kulmbach,W. Europe Standard Time,true,1,1,postal_boundary,1377
@@ -1772,7 +1772,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 95515,Plankenfels,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,86
 95517,Emtmannsberg,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,383
 95519,Vorbach,DE,Bayern,Landkreis Neustadt an der Waldnaab,W. Europe Standard Time,true,1,1,postal_boundary,43
-95615,Marktredwitz,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,3901
+95615,Marktredwitz,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,3902
 95632,Wunsiedel,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,2929
 95643,Tirschenreuth,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,835
 95652,Waldsassen,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,2025
@@ -1792,7 +1792,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 95692,Konnersreuth,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,174
 95694,Mehlmeisel,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,459
 95695,Mähring,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,117
-95697,Nagel,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,605
+95697,Nagel,DE,Bayern,Landkreis Wunsiedel im Fichtelgebirge,W. Europe Standard Time,true,1,1,postal_boundary,707
 95698,Neualbenreuth,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,156
 95700,Neusorg,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,118
 95701,Pechbrunn,DE,Bayern,Landkreis Tirschenreuth,W. Europe Standard Time,true,1,1,postal_boundary,131
@@ -1816,7 +1816,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 96129,Strullendorf,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,2227
 96132,Schlüsselfeld,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,1870
 96135,Stegaurach,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,2072
-96138,Burgebrach,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,2001
+96138,Burgebrach,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,2004
 96142,Hollfeld,DE,Bayern,Landkreis Bayreuth,W. Europe Standard Time,true,1,1,postal_boundary,1801
 96145,Seßlach,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,887
 96146,Altendorf,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,627
@@ -1831,7 +1831,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 96160,Geiselwind,DE,Bayern,Landkreis Kitzingen,W. Europe Standard Time,true,1,1,postal_boundary,273
 96161,Gerach,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,331
 96163,Gundelsheim,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,1073
-96164,Kemmern,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,780
+96164,Kemmern,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,784
 96166,Kirchlauter,DE,Bayern,Landkreis Haßberge,W. Europe Standard Time,true,1,1,postal_boundary,99
 96167,Königsfeld,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,436
 96169,Lauter,DE,Bayern,Landkreis Bamberg,W. Europe Standard Time,true,1,1,postal_boundary,423
@@ -1864,7 +1864,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 96250,Ebensfeld,DE,Bayern,Landkreis Lichtenfels,W. Europe Standard Time,true,1,1,postal_boundary,1797
 96253,Untersiemau,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,501
 96257,Redwitz a.d. Rodach,DE,Bayern,Landkreis Lichtenfels,W. Europe Standard Time,true,1,1,postal_boundary,0
-96260,Weismain,DE,Bayern,Landkreis Lichtenfels,W. Europe Standard Time,true,1,1,postal_boundary,1518
+96260,Weismain,DE,Bayern,Landkreis Lichtenfels,W. Europe Standard Time,true,1,1,postal_boundary,1536
 96264,Altenkunstadt,DE,Bayern,Landkreis Lichtenfels,W. Europe Standard Time,true,1,1,postal_boundary,1462
 96268,Mitwitz,DE,Bayern,Landkreis Kronach,W. Europe Standard Time,true,1,1,postal_boundary,748
 96269,Großheirath,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,676
@@ -1891,9 +1891,9 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 96369,Weißenbrunn,DE,Bayern,Landkreis Kronach,W. Europe Standard Time,true,1,1,postal_boundary,965
 96450,Coburg,DE,Bayern,Coburg,W. Europe Standard Time,true,1,1,postal_boundary,7813
 96465,Neustadt b. Coburg,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,0
-96472,Rödental,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,4115
+96472,Rödental,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,4114
 96476,Rodach b. Coburg,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,0
-96479,Weitramsdorf,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,798
+96479,Weitramsdorf,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,799
 96482,Ahorn,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,577
 96484,Meeder,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,659
 96486,Lautertal,DE,Bayern,Landkreis Coburg,W. Europe Standard Time,true,1,1,postal_boundary,1467
@@ -1903,20 +1903,20 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 97070,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,3,postal_boundary,2095
 97072,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,7,postal_boundary,1261
 97074,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,2907
-97076,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,4,postal_boundary,2087
-97078,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,8,postal_boundary,993
+97076,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,4,postal_boundary,2086
+97078,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,8,postal_boundary,994
 97080,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,5,postal_boundary,2068
 97082,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,6,postal_boundary,1693
 97084,Würzburg,DE,Bayern,Würzburg,W. Europe Standard Time,true,1,2,postal_boundary,2768
-97199,Ochsenfurt,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,2437
+97199,Ochsenfurt,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,2438
 97204,Höchberg,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,2980
 97209,Veitshöchheim,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,2004
 97215,Uffenheim,DE,Bayern,Landkreis Neustadt an der Aisch-Bad Windsheim,W. Europe Standard Time,true,1,1,postal_boundary,1046
-97218,Gerbrunn,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,805
+97218,Gerbrunn,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,804
 97222,Rimpar,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,700
 97225,Zellingen,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,498
 97228,Rottendorf,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,1162
-97230,Estenfeld,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,1162
+97230,Estenfeld,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,1163
 97232,Giebelstadt,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,1459
 97234,Guttenberger Wald,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 97234,Reichenberg,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,1448
@@ -1942,7 +1942,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 97262,Hausen bei Würzburg,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,672
 97264,Helmstadt,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,264
 97265,Hettstadt,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,1149
-97267,Himmelstadt,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,490
+97267,Himmelstadt,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,491
 97268,Kirchheim,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,106
 97270,Irtenberger Wald,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,false,2,1,postal_boundary,0
 97270,Kist,DE,Bayern,Landkreis Würzburg,W. Europe Standard Time,true,1,1,postal_boundary,866
@@ -1985,7 +1985,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 97421,Schweinfurt,DE,Bayern,Schweinfurt,W. Europe Standard Time,true,1,3,postal_boundary,1966
 97422,Schweinfurt,DE,Bayern,Schweinfurt,W. Europe Standard Time,true,1,1,postal_boundary,4392
 97424,Schweinfurt,DE,Bayern,Schweinfurt,W. Europe Standard Time,true,1,2,postal_boundary,2311
-97437,Haßfurt,DE,Bayern,Landkreis Haßberge,W. Europe Standard Time,true,1,1,postal_boundary,2301
+97437,Haßfurt,DE,Bayern,Landkreis Haßberge,W. Europe Standard Time,true,1,1,postal_boundary,2302
 97440,Werneck,DE,Bayern,Landkreis Schweinfurt,W. Europe Standard Time,true,1,1,postal_boundary,1318
 97447,Gerolzhofen,DE,Bayern,Landkreis Schweinfurt,W. Europe Standard Time,true,1,1,postal_boundary,1173
 97450,Arnstein,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,188
@@ -2069,7 +2069,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 97753,Karlstadt,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,4851
 97762,Hammelburg,DE,Bayern,Landkreis Bad Kissingen,W. Europe Standard Time,true,1,1,postal_boundary,888
 97769,Bad Brückenau,DE,Bayern,Landkreis Bad Kissingen,W. Europe Standard Time,true,1,1,postal_boundary,312
-97772,Wildflecken,DE,Bayern,Landkreis Bad Kissingen,W. Europe Standard Time,true,1,1,postal_boundary,329
+97772,Wildflecken,DE,Bayern,Landkreis Bad Kissingen,W. Europe Standard Time,true,1,1,postal_boundary,366
 97773,Aura i. Sinngrund,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,0
 97775,Burgsinn,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,52
 97776,Eußenheim,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,359
@@ -2089,7 +2089,7 @@ code,city,country,state,county,time_zone,is_primary_location,location_rank,posta
 97797,Wartmannsroth,DE,Bayern,Landkreis Bad Kissingen,W. Europe Standard Time,true,1,1,postal_boundary,164
 97799,Zeitlofs,DE,Bayern,Landkreis Bad Kissingen,W. Europe Standard Time,true,1,1,postal_boundary,319
 97816,Lohr a. Main,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,8
-97828,Marktheidenfeld,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,2176
+97828,Marktheidenfeld,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,2175
 97833,Frammersbach,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,486
 97834,Birkenfeld,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,602
 97836,Bischbrunn,DE,Bayern,Landkreis Main-Spessart,W. Europe Standard Time,true,1,1,postal_boundary,48
